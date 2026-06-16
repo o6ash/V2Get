@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 06:54
+  type: vless
+  server: fast.cd-tur4.ir
+  port: 443
+  uuid: 4fcb91d0-bbc4-480c-b362-216d4a79bb5c
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: pan3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-16 05:27
   type: vless
   server: 172.67.74.10
@@ -85,20 +98,6 @@ proxies:
     public-key: UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng
     short-id: 8d17b7ebab7b99d7
 - name: 'V2Get🛰️ 2026-06-16 09:21 #3'
-  type: vless
-  server: 162.159.38.119
-  port: 443
-  uuid: f7e3ff36-276c-4477-b6d4-47257500d869
-  udp: true
-  network: ws
-  tls: true
-  servername: pon.antalmani.mm.am
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=3000
-    headers:
-      Host: pon.antalmani.mm.am
-- name: 'V2Get🛰️ 2026-06-16 09:21 #4'
   type: vmess
   server: 82.198.246.9
   port: 180
@@ -107,7 +106,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-06-16 09:21 #5'
+- name: 'V2Get🛰️ 2026-06-16 09:21 #4'
   type: vless
   server: 104.19.250.20
   port: 443
@@ -951,6 +950,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 06:54
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-16 01:49
@@ -958,7 +958,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-16 09:21 #2'
   - 'V2Get🛰️ 2026-06-16 09:21 #3'
   - 'V2Get🛰️ 2026-06-16 09:21 #4'
-  - 'V2Get🛰️ 2026-06-16 09:21 #5'
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 19:51
@@ -1032,6 +1031,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 06:54
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-16 01:49
@@ -1039,7 +1039,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-16 09:21 #2'
   - 'V2Get🛰️ 2026-06-16 09:21 #3'
   - 'V2Get🛰️ 2026-06-16 09:21 #4'
-  - 'V2Get🛰️ 2026-06-16 09:21 #5'
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 19:51
