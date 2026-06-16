@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 12:07
+  type: trojan
+  server: 45.130.125.220
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: linkkon-a.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: index.html=mitivpn
+    headers:
+      Host: linkkon-a.ir
 - name: V2Get🛰️ 2026-06-16 17:47
   type: vless
   server: redirect.novianft.ir
@@ -284,20 +298,6 @@ proxies:
   reality-opts:
     public-key: WTlOZgac-ZhH5QWvii7NU6dQrjgEoyO-ir2GxkxZkXk
     short-id: da
-- name: V2Get🛰️ 2026-06-16 12:07
-  type: trojan
-  server: 45.130.125.220
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: linkkon-a.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: index.html=mitivpn
-    headers:
-      Host: linkkon-a.ir
 - name: V2Get🛰️ 2026-06-15 21:14
   type: vless
   server: 46.229.243.138
@@ -1065,6 +1065,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 17:47
   - V2Get🛰️ 2026-06-16 15:03
   - V2Get🛰️ 2026-06-16 17:46
@@ -1086,7 +1087,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 17:37
   - 'V2Get🛰️ 2026-06-16 17:37 #2'
   - V2Get🛰️ 2026-06-16 17:30
-  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-15 21:14
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 22:00
@@ -1153,6 +1153,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 17:47
   - V2Get🛰️ 2026-06-16 15:03
   - V2Get🛰️ 2026-06-16 17:46
@@ -1174,7 +1175,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 17:37
   - 'V2Get🛰️ 2026-06-16 17:37 #2'
   - V2Get🛰️ 2026-06-16 17:30
-  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-15 21:14
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 22:00
