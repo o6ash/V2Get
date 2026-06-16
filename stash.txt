@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 07:00
+  type: vless
+  server: 91.107.185.59
+  port: 44728
+  uuid: 3face59d-a711-4999-9c69-7e48e2c6ed77
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: rOoltQhWKsF2PCZV4fIkxxsl7tg6-WUmQWMqJHEF6SM
+    short-id: dbb6ea0b
 - name: V2Get🛰️ 2026-06-15 16:56
   type: vless
   server: 31.76.115.10
@@ -810,18 +824,6 @@ proxies:
   reality-opts:
     public-key: 66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc
     short-id: de8d3223e7d85761
-- name: 'V2Get🛰️ 2026-06-16 05:36 #3'
-  type: vless
-  server: 162.159.34.60
-  port: 80
-  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: amirvpn.amirhm00100.workers.dev
 - name: V2Get🛰️ 2026-06-16 05:35
   type: vless
   server: 192.169.222.40
@@ -1028,6 +1030,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 07:00
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-15 18:43
   - V2Get🛰️ 2026-06-15 18:55
@@ -1093,7 +1096,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 05:36
   - V2Get🛰️ 2026-06-15 17:02
   - 'V2Get🛰️ 2026-06-16 05:36 #2'
-  - 'V2Get🛰️ 2026-06-16 05:36 #3'
   - V2Get🛰️ 2026-06-16 05:35
   - V2Get🛰️ 2026-06-16 05:14
   - 'V2Get🛰️ 2026-06-16 05:14 #2'
@@ -1117,6 +1119,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 07:00
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-15 18:43
   - V2Get🛰️ 2026-06-15 18:55
@@ -1182,7 +1185,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 05:36
   - V2Get🛰️ 2026-06-15 17:02
   - 'V2Get🛰️ 2026-06-16 05:36 #2'
-  - 'V2Get🛰️ 2026-06-16 05:36 #3'
   - V2Get🛰️ 2026-06-16 05:35
   - V2Get🛰️ 2026-06-16 05:14
   - 'V2Get🛰️ 2026-06-16 05:14 #2'
