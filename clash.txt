@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 18:55
+  type: trojan
+  server: 104.16.72.70
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: gamingdll.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /index.php/ed=mitivpn
+    headers:
+      Host: gamingdll.ir
+- name: V2Get🛰️ 2026-06-16 12:07
+  type: trojan
+  server: 45.130.125.220
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: linkkon-a.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: index.html=mitivpn
+    headers:
+      Host: linkkon-a.ir
 - name: V2Get🛰️ 2026-06-16 15:37
   type: vless
   server: ge-ip.gameirani.com
@@ -124,19 +152,6 @@ proxies:
   - h2
   - http/1.1
 - name: 'V2Get🛰️ 2026-06-16 15:35 #3'
-  type: vless
-  server: 188.114.96.233
-  port: 8443
-  uuid: 9cfe1a11-9093-4706-9b3b-3ee0bab6b53b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: s3.alivpn.qzz.io
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-06-16 15:35 #4'
   type: vless
   server: 65.109.189.154
   port: 2052
@@ -277,20 +292,6 @@ proxies:
   reality-opts:
     public-key: BWFQ-BxFck2L0gjbXILc0Sh_rOy_YH9YYFf5kw5SsAI
     short-id: c5a3ab7b
-- name: V2Get🛰️ 2026-06-16 12:07
-  type: trojan
-  server: 45.130.125.220
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: linkkon-a.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: index.html=mitivpn
-    headers:
-      Host: linkkon-a.ir
 - name: V2Get🛰️ 2026-06-16 11:08
   type: vless
   server: 74.49.214.31
@@ -427,7 +428,7 @@ proxies:
     path: /eyJqdW5rIjoiUHNMRXZld3JoWW5BIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: ez-73eafc.hzhdyehxhcjbdss.workers.dev
-- name: V2Get🛰️ 2026-06-15 18:55
+- name: 'V2Get🛰️ 2026-06-15 18:55 #2'
   type: ss
   server: 82.38.31.35
   port: 8080
@@ -1138,6 +1139,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 18:55
+  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 15:37
   - 'V2Get🛰️ 2026-06-16 15:37 #2'
   - 'V2Get🛰️ 2026-06-16 15:37 #3'
@@ -1148,7 +1151,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 15:35
   - 'V2Get🛰️ 2026-06-16 15:35 #2'
   - 'V2Get🛰️ 2026-06-16 15:35 #3'
-  - 'V2Get🛰️ 2026-06-16 15:35 #4'
   - V2Get🛰️ 2026-06-16 15:34
   - V2Get🛰️ 2026-06-16 02:00
   - 'V2Get🛰️ 2026-06-16 15:34 #2'
@@ -1162,7 +1164,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 16:47
-  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 11:08
   - V2Get🛰️ 2026-06-16 15:30
   - V2Get🛰️ 2026-06-16 15:24
@@ -1176,7 +1177,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 15:18
   - V2Get🛰️ 2026-06-16 15:20
   - V2Get🛰️ 2026-06-16 15:08
-  - V2Get🛰️ 2026-06-15 18:55
+  - 'V2Get🛰️ 2026-06-15 18:55 #2'
   - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-15 16:48
   - V2Get🛰️ 2026-06-16 02:06
@@ -1242,6 +1243,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 18:55
+  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 15:37
   - 'V2Get🛰️ 2026-06-16 15:37 #2'
   - 'V2Get🛰️ 2026-06-16 15:37 #3'
@@ -1252,7 +1255,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 15:35
   - 'V2Get🛰️ 2026-06-16 15:35 #2'
   - 'V2Get🛰️ 2026-06-16 15:35 #3'
-  - 'V2Get🛰️ 2026-06-16 15:35 #4'
   - V2Get🛰️ 2026-06-16 15:34
   - V2Get🛰️ 2026-06-16 02:00
   - 'V2Get🛰️ 2026-06-16 15:34 #2'
@@ -1266,7 +1268,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-15 16:47
-  - V2Get🛰️ 2026-06-16 12:07
   - V2Get🛰️ 2026-06-16 11:08
   - V2Get🛰️ 2026-06-16 15:30
   - V2Get🛰️ 2026-06-16 15:24
@@ -1280,7 +1281,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 15:18
   - V2Get🛰️ 2026-06-16 15:20
   - V2Get🛰️ 2026-06-16 15:08
-  - V2Get🛰️ 2026-06-15 18:55
+  - 'V2Get🛰️ 2026-06-15 18:55 #2'
   - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-15 16:48
   - V2Get🛰️ 2026-06-16 02:06
