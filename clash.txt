@@ -12,15 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-17 02:00
+- name: V2Get🛰️ 2026-06-16 00:32
   type: vless
-  server: local.connectingissues.ir
-  port: 80
-  uuid: 0650e3f2-ab16-44af-bc91-e8d30cda2d70
+  server: 199.232.78.159
+  port: 443
+  uuid: 3f61815a-1c63-456a-ad05-655374dfd7c8
   udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-17 02:00 #2'
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-17 02:00
   type: vless
   server: global.connectingissues.ir
   port: 80
@@ -28,7 +33,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-17 02:00 #3'
+- name: 'V2Get🛰️ 2026-06-17 02:00 #2'
   type: vless
   server: mci.connectingissues.ir
   port: 80
@@ -36,15 +41,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-17 02:00 #4'
-  type: vless
-  server: 104.21.17.144
-  port: 2086
-  uuid: b3939095-14db-47ec-9c15-2619440cc54e
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-17 02:00 #5'
+- name: 'V2Get🛰️ 2026-06-17 02:00 #3'
   type: vless
   server: snapp.ir
   port: 2087
@@ -62,15 +59,7 @@ proxies:
     path: /BetForward
     headers:
       Host: dns.xelivo.ir
-- name: 'V2Get🛰️ 2026-06-17 02:00 #6'
-  type: vless
-  server: noora.ir
-  port: 2086
-  uuid: b3939095-14db-47ec-9c15-2619440cc54e
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-17 02:00 #7'
+- name: 'V2Get🛰️ 2026-06-17 02:00 #4'
   type: vless
   server: snapp.ir
   port: 2087
@@ -88,6 +77,30 @@ proxies:
     path: /BetForward
     headers:
       Host: dns.darafiq.ir
+- name: 'V2Get🛰️ 2026-06-17 02:00 #5'
+  type: vless
+  server: local.connectingissues.ir
+  port: 80
+  uuid: 0650e3f2-ab16-44af-bc91-e8d30cda2d70
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-06-17 02:00 #6'
+  type: vless
+  server: 104.21.17.144
+  port: 2086
+  uuid: b3939095-14db-47ec-9c15-2619440cc54e
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-06-17 02:00 #7'
+  type: vless
+  server: noora.ir
+  port: 2086
+  uuid: b3939095-14db-47ec-9c15-2619440cc54e
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-17 02:00 #8'
   type: vless
   server: 198.41.203.219
@@ -645,23 +658,6 @@ proxies:
     path: /master_dj_021
     headers:
       Host: black-king-f47d.masterdj2000.workers.dev
-- name: 'V2Get🛰️ 2026-06-17 01:30 #4'
-  type: vless
-  server: 104.17.101.35
-  port: 2053
-  uuid: 6f5b1cd2-0703-41e2-aa75-11748d3a687c
-  udp: true
-  network: ws
-  tls: true
-  servername: s1.veryfast45.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: s1.veryfast45.ir
 - name: V2Get🛰️ 2026-06-16 11:29
   type: vless
   server: 199.232.244.3
@@ -1170,6 +1166,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-17 02:00
   - 'V2Get🛰️ 2026-06-17 02:00 #2'
   - 'V2Get🛰️ 2026-06-17 02:00 #3'
@@ -1225,7 +1222,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 21:43
   - 'V2Get🛰️ 2026-06-17 01:30 #2'
   - 'V2Get🛰️ 2026-06-17 01:30 #3'
-  - 'V2Get🛰️ 2026-06-17 01:30 #4'
   - V2Get🛰️ 2026-06-16 11:29
   - V2Get🛰️ 2026-06-17 01:15
   - V2Get🛰️ 2026-06-15 16:53
@@ -1273,6 +1269,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-17 02:00
   - 'V2Get🛰️ 2026-06-17 02:00 #2'
   - 'V2Get🛰️ 2026-06-17 02:00 #3'
@@ -1328,7 +1325,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 21:43
   - 'V2Get🛰️ 2026-06-17 01:30 #2'
   - 'V2Get🛰️ 2026-06-17 01:30 #3'
-  - 'V2Get🛰️ 2026-06-17 01:30 #4'
   - V2Get🛰️ 2026-06-16 11:29
   - V2Get🛰️ 2026-06-17 01:15
   - V2Get🛰️ 2026-06-15 16:53
