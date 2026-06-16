@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 00:32
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 3f61815a-1c63-456a-ad05-655374dfd7c8
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 02:00
   type: vless
   server: snapp.ir
@@ -482,23 +495,6 @@ proxies:
     path: /master_dj_021
     headers:
       Host: black-king-f47d.masterdj2000.workers.dev
-- name: 'V2Get🛰️ 2026-06-17 01:30 #2'
-  type: vless
-  server: 104.17.101.35
-  port: 2053
-  uuid: 6f5b1cd2-0703-41e2-aa75-11748d3a687c
-  udp: true
-  network: ws
-  tls: true
-  servername: s1.veryfast45.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: s1.veryfast45.ir
 - name: V2Get🛰️ 2026-06-15 16:53
   type: vless
   server: 104.17.177.24
@@ -907,6 +903,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-17 02:00
   - 'V2Get🛰️ 2026-06-17 02:00 #2'
   - V2Get🛰️ 2026-06-17 00:03
@@ -942,7 +939,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 01:04
   - V2Get🛰️ 2026-06-15 21:43
   - V2Get🛰️ 2026-06-17 01:30
-  - 'V2Get🛰️ 2026-06-17 01:30 #2'
   - V2Get🛰️ 2026-06-15 16:53
   - V2Get🛰️ 2026-06-15 17:18
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
@@ -980,6 +976,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 00:32
   - V2Get🛰️ 2026-06-17 02:00
   - 'V2Get🛰️ 2026-06-17 02:00 #2'
   - V2Get🛰️ 2026-06-17 00:03
@@ -1015,7 +1012,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 01:04
   - V2Get🛰️ 2026-06-15 21:43
   - V2Get🛰️ 2026-06-17 01:30
-  - 'V2Get🛰️ 2026-06-17 01:30 #2'
   - V2Get🛰️ 2026-06-15 16:53
   - V2Get🛰️ 2026-06-15 17:18
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
