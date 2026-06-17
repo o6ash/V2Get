@@ -12,7 +12,75 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 11:20
+  type: vless
+  server: fr3.nomac.ir
+  port: 8443
+  uuid: 63c11055-0ba1-4914-89f1-4096b51431e9
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: K5-jL-m537jMtxDUTfl1FW9EnWdHjJOBECdxbOGAcQI
+    short-id: 6ba85179e30d4fc2
 - name: V2Get🛰️ 2026-06-17 11:16
+  type: vless
+  server: 213.165.56.30
+  port: 9443
+  uuid: d56897c3-a83d-4572-9b97-25440bb189c5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FUrYQkpMWHhiL-7Z-okEFd9fAkTv0mt6Tpktd4vyoDE
+    short-id: a1b2c3d4e5f6789a
+- name: V2Get🛰️ 2026-06-16 21:53
+  type: vless
+  server: panel.dibaux.ir
+  port: 80
+  uuid: 69330ab9-eb51-4bb6-9c07-3f2401c476af
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /stream
+    headers:
+      Host: panel.dibaux.ir
+- name: V2Get🛰️ 2026-06-16 11:23
+  type: vless
+  server: 172.67.220.1
+  port: 2053
+  uuid: 750b1fd0-fcd7-48bf-a7b6-92cbbda1b502
+  udp: true
+  network: ws
+  tls: true
+  servername: kish.arshia-nova.ir
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /onfkjsnkdlvmd
+    headers:
+      Host: kish.arshia-nova.ir
+- name: V2Get🛰️ 2026-06-17 10:42
+  type: vless
+  server: 37.152.188.63
+  port: 443
+  uuid: 15d3018a-4d97-4dc4-833a-2384111710bd
+  udp: true
+  network: tcp
+  tls: true
+  servername: algorithmmarket.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-06-17 11:16 #2'
   type: vless
   server: 103.227.84.59
   port: 443
@@ -51,34 +119,6 @@ proxies:
   tls: true
   servername: cdn7-09.vk-cdnvideo.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-06-16 21:53
-  type: vless
-  server: panel.dibaux.ir
-  port: 80
-  uuid: 69330ab9-eb51-4bb6-9c07-3f2401c476af
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /stream
-    headers:
-      Host: panel.dibaux.ir
-- name: V2Get🛰️ 2026-06-16 11:23
-  type: vless
-  server: 172.67.220.1
-  port: 2053
-  uuid: 750b1fd0-fcd7-48bf-a7b6-92cbbda1b502
-  udp: true
-  network: ws
-  tls: true
-  servername: kish.arshia-nova.ir
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /onfkjsnkdlvmd
-    headers:
-      Host: kish.arshia-nova.ir
 - name: V2Get🛰️ 2026-06-17 11:13
   type: vless
   server: nop.jupitter.ir
@@ -400,19 +440,6 @@ proxies:
   client-fingerprint: safari
   alpn:
   - http/1.1
-- name: V2Get🛰️ 2026-06-17 10:42
-  type: vless
-  server: 37.152.188.63
-  port: 443
-  uuid: 15d3018a-4d97-4dc4-833a-2384111710bd
-  udp: true
-  network: tcp
-  tls: true
-  servername: algorithmmarket.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-06-15 21:00
   type: vless
   server: 172.64.145.202
@@ -562,20 +589,6 @@ proxies:
 - name: V2Get🛰️ 2026-06-15 22:15
   type: vless
   server: 31.76.91.24
-  port: 443
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jp.s3-cloud.org
-  client-fingerprint: edge
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: 7a3f9e2b1c8d4f6a
-- name: V2Get🛰️ 2026-06-15 18:55
-  type: vless
-  server: 31.76.91.19
   port: 443
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
   udp: true
@@ -1099,16 +1112,6 @@ proxies:
     path: /ws
     headers:
       Host: sdt.jison.ir
-- name: V2Get🛰️ 2026-06-16 00:48
-  type: vless
-  server: 162.249.126.69
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn7-09.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-15 23:32
   type: vless
   server: 31.56.117.211
@@ -1151,11 +1154,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 11:20
   - V2Get🛰️ 2026-06-17 11:16
-  - V2Get🛰️ 2026-06-17 10:03
-  - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-16 11:23
+  - V2Get🛰️ 2026-06-17 10:42
+  - 'V2Get🛰️ 2026-06-17 11:16 #2'
+  - V2Get🛰️ 2026-06-17 10:03
+  - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-17 11:13
   - V2Get🛰️ 2026-06-15 17:22
   - V2Get🛰️ 2026-06-15 18:29
@@ -1182,7 +1188,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 20:35
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
   - V2Get🛰️ 2026-06-16 12:08
-  - V2Get🛰️ 2026-06-17 10:42
   - V2Get🛰️ 2026-06-15 21:00
   - 'V2Get🛰️ 2026-06-17 11:00 #2'
   - V2Get🛰️ 2026-06-15 22:40
@@ -1196,7 +1201,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 03:06
   - V2Get🛰️ 2026-06-17 10:49
   - V2Get🛰️ 2026-06-15 22:15
-  - V2Get🛰️ 2026-06-15 18:55
   - 'V2Get🛰️ 2026-06-17 10:49 #2'
   - V2Get🛰️ 2026-06-17 10:48
   - 'V2Get🛰️ 2026-06-17 10:48 #2'
@@ -1236,7 +1240,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 09:26
   - 'V2Get🛰️ 2026-06-17 09:26 #2'
   - V2Get🛰️ 2026-06-17 00:03
-  - V2Get🛰️ 2026-06-16 00:48
   - V2Get🛰️ 2026-06-15 23:32
   - V2Get🛰️ 2026-06-16 20:04
   - V2Get🛰️ 2026-06-16 20:10
@@ -1246,11 +1249,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 11:20
   - V2Get🛰️ 2026-06-17 11:16
-  - V2Get🛰️ 2026-06-17 10:03
-  - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-16 11:23
+  - V2Get🛰️ 2026-06-17 10:42
+  - 'V2Get🛰️ 2026-06-17 11:16 #2'
+  - V2Get🛰️ 2026-06-17 10:03
+  - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-17 11:13
   - V2Get🛰️ 2026-06-15 17:22
   - V2Get🛰️ 2026-06-15 18:29
@@ -1277,7 +1283,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 20:35
   - 'V2Get🛰️ 2026-06-15 17:18 #2'
   - V2Get🛰️ 2026-06-16 12:08
-  - V2Get🛰️ 2026-06-17 10:42
   - V2Get🛰️ 2026-06-15 21:00
   - 'V2Get🛰️ 2026-06-17 11:00 #2'
   - V2Get🛰️ 2026-06-15 22:40
@@ -1291,7 +1296,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 03:06
   - V2Get🛰️ 2026-06-17 10:49
   - V2Get🛰️ 2026-06-15 22:15
-  - V2Get🛰️ 2026-06-15 18:55
   - 'V2Get🛰️ 2026-06-17 10:49 #2'
   - V2Get🛰️ 2026-06-17 10:48
   - 'V2Get🛰️ 2026-06-17 10:48 #2'
@@ -1331,7 +1335,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 09:26
   - 'V2Get🛰️ 2026-06-17 09:26 #2'
   - V2Get🛰️ 2026-06-17 00:03
-  - V2Get🛰️ 2026-06-16 00:48
   - V2Get🛰️ 2026-06-15 23:32
   - V2Get🛰️ 2026-06-16 20:04
   - V2Get🛰️ 2026-06-16 20:10
