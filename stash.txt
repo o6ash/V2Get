@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 22:25
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
 - name: V2Get🛰️ 2026-06-16 21:59
   type: vless
   server: www.copy5.ir.vidboxco.ir
@@ -363,24 +375,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: 'V2Get🛰️ 2026-06-17 00:20 #4'
-  type: vless
-  server: 151.101.109.223
-  port: 443
-  uuid: a6a523c0-9ba0-0b34-dc52-a05ccd128502
-  udp: true
-  network: ws
-  tls: true
-  servername: global.fastly.com
-  client-fingerprint: firefox
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: nlwfgggffffii.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 08:10
   type: trojan
   server: 103.45.245.208
@@ -906,6 +900,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 22:25
   - V2Get🛰️ 2026-06-16 21:59
   - V2Get🛰️ 2026-06-16 22:00
   - V2Get🛰️ 2026-06-17 06:49
@@ -933,7 +928,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 07:51
   - V2Get🛰️ 2026-06-16 22:41
   - V2Get🛰️ 2026-06-15 17:51
-  - 'V2Get🛰️ 2026-06-17 00:20 #4'
   - V2Get🛰️ 2026-06-17 08:10
   - V2Get🛰️ 2026-06-17 07:58
   - V2Get🛰️ 2026-06-16 10:26
@@ -982,6 +976,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 22:25
   - V2Get🛰️ 2026-06-16 21:59
   - V2Get🛰️ 2026-06-16 22:00
   - V2Get🛰️ 2026-06-17 06:49
@@ -1009,7 +1004,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 07:51
   - V2Get🛰️ 2026-06-16 22:41
   - V2Get🛰️ 2026-06-15 17:51
-  - 'V2Get🛰️ 2026-06-17 00:20 #4'
   - V2Get🛰️ 2026-06-17 08:10
   - V2Get🛰️ 2026-06-17 07:58
   - V2Get🛰️ 2026-06-16 10:26
