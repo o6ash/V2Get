@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 00:37
+  type: vless
+  server: 91.107.190.49
+  port: 44728
+  uuid: cbc2209d-2c41-467a-95f8-0e387ad6a97f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: rOoltQhWKsF2PCZV4fIkxxsl7tg6-WUmQWMqJHEF6SM
+    short-id: dbb6ea0b
 - name: V2Get🛰️ 2026-06-16 02:48
   type: vless
   server: speedtest.net
@@ -556,19 +570,6 @@ proxies:
     path: /
     headers:
       Host: cfoo-n0d.pages.dev
-- name: V2Get🛰️ 2026-06-17 04:26
-  type: vless
-  server: 130.162.130.105
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  network: ws
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: 'V2Get🛰️ 2026-06-16 09:43 #2'
   type: vless
   server: 91.107.174.146
@@ -1123,6 +1124,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 00:37
   - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-17 04:45
   - V2Get🛰️ 2026-06-15 17:43
@@ -1175,7 +1177,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:31
   - 'V2Get🛰️ 2026-06-16 21:31 #2'
-  - V2Get🛰️ 2026-06-17 04:26
   - 'V2Get🛰️ 2026-06-16 09:43 #2'
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-16 21:31 #3'
@@ -1227,6 +1228,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 00:37
   - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-17 04:45
   - V2Get🛰️ 2026-06-15 17:43
@@ -1279,7 +1281,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:31
   - 'V2Get🛰️ 2026-06-16 21:31 #2'
-  - V2Get🛰️ 2026-06-17 04:26
   - 'V2Get🛰️ 2026-06-16 09:43 #2'
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-16 21:31 #3'
