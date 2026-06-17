@@ -12,6 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 16:48
+  type: vless
+  server: 141.193.213.10
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  udp: true
+  network: ws
+  tls: true
+  servername: octopusss4.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
+- name: V2Get🛰️ 2026-06-18 01:53
+  type: vless
+  server: 185.80.130.25
+  port: 23190
+  uuid: 8ffceee1-545a-4a55-b771-d58a16acd01d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 185.80.130.25
 - name: V2Get🛰️ 2026-06-15 21:14
   type: vless
   server: 46.229.243.138
@@ -258,16 +284,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-15 21:13
-  type: vless
-  server: 77.74.123.165
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn3-87.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-15 23:07
   type: vless
   server: sca30.mysilipdir.com
@@ -279,7 +295,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: 'V2Get🛰️ 2026-06-15 21:13 #2'
+- name: V2Get🛰️ 2026-06-15 21:13
   type: vless
   server: 46.229.243.134
   port: 8443
@@ -587,14 +603,6 @@ proxies:
     path: /hdgrbws
     headers:
       Host: terazhediii.info
-- name: V2Get🛰️ 2026-06-16 18:43
-  type: vless
-  server: 167.233.151.227
-  port: 53650
-  uuid: cd188f35-eb8e-448f-8919-8b698b2e79d6
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-17 11:31
   type: vless
   server: snapp.ir
@@ -1030,6 +1038,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 16:48
+  - V2Get🛰️ 2026-06-18 01:53
   - V2Get🛰️ 2026-06-15 21:14
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 21:26
@@ -1050,9 +1060,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 01:41
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-15 16:56
-  - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-15 23:07
-  - 'V2Get🛰️ 2026-06-15 21:13 #2'
+  - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-17 21:52
   - V2Get🛰️ 2026-06-18 00:50
   - V2Get🛰️ 2026-06-17 23:39
@@ -1076,7 +1085,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 23:52
   - V2Get🛰️ 2026-06-16 14:43
   - V2Get🛰️ 2026-06-17 19:47
-  - V2Get🛰️ 2026-06-16 18:43
   - V2Get🛰️ 2026-06-17 11:31
   - V2Get🛰️ 2026-06-18 01:05
   - V2Get🛰️ 2026-06-18 01:04
@@ -1120,6 +1128,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 16:48
+  - V2Get🛰️ 2026-06-18 01:53
   - V2Get🛰️ 2026-06-15 21:14
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 21:26
@@ -1140,9 +1150,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 01:41
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-15 16:56
-  - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-15 23:07
-  - 'V2Get🛰️ 2026-06-15 21:13 #2'
+  - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-17 21:52
   - V2Get🛰️ 2026-06-18 00:50
   - V2Get🛰️ 2026-06-17 23:39
@@ -1166,7 +1175,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 23:52
   - V2Get🛰️ 2026-06-16 14:43
   - V2Get🛰️ 2026-06-17 19:47
-  - V2Get🛰️ 2026-06-16 18:43
   - V2Get🛰️ 2026-06-17 11:31
   - V2Get🛰️ 2026-06-18 01:05
   - V2Get🛰️ 2026-06-18 01:04
