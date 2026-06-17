@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 02:48
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 04:45
   type: vless
   server: 91.107.190.49
@@ -192,17 +204,6 @@ proxies:
     path: /
     headers:
       Host: cfoo-n0d.pages.dev
-- name: V2Get🛰️ 2026-06-17 04:30
-  type: vmess
-  server: uk.vpnjantit.com
-  port: 10000
-  uuid: 3c05ef9e-6582-11f1-a6e5-1727059cff63
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /vpnjantit
 - name: 'V2Get🛰️ 2026-06-16 20:04 #2'
   type: vless
   server: 77.74.123.181
@@ -225,7 +226,7 @@ proxies:
     path: /fp=randomized
     headers:
       Host: cnmfangbinxing.cnmfangbinxing.workers.dev
-- name: 'V2Get🛰️ 2026-06-17 04:30 #2'
+- name: V2Get🛰️ 2026-06-17 04:30
   type: vless
   server: 45.198.91.249
   port: 8443
@@ -238,7 +239,7 @@ proxies:
   reality-opts:
     public-key: _CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM
     short-id: 6419bed7fd0a2cff
-- name: 'V2Get🛰️ 2026-06-17 04:30 #3'
+- name: 'V2Get🛰️ 2026-06-17 04:30 #2'
   type: vless
   server: 104.17.148.105
   port: 2087
@@ -929,6 +930,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-17 04:45
   - V2Get🛰️ 2026-06-15 17:43
   - V2Get🛰️ 2026-06-16 03:19
@@ -944,11 +946,10 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-17 00:29
   - V2Get🛰️ 2026-06-16 20:04
-  - V2Get🛰️ 2026-06-17 04:30
   - 'V2Get🛰️ 2026-06-16 20:04 #2'
   - V2Get🛰️ 2026-06-16 10:43
+  - V2Get🛰️ 2026-06-17 04:30
   - 'V2Get🛰️ 2026-06-17 04:30 #2'
-  - 'V2Get🛰️ 2026-06-17 04:30 #3'
   - V2Get🛰️ 2026-06-15 20:57
   - V2Get🛰️ 2026-06-16 20:05
   - V2Get🛰️ 2026-06-15 18:25
@@ -1008,6 +1009,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-17 04:45
   - V2Get🛰️ 2026-06-15 17:43
   - V2Get🛰️ 2026-06-16 03:19
@@ -1023,11 +1025,10 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-17 00:29
   - V2Get🛰️ 2026-06-16 20:04
-  - V2Get🛰️ 2026-06-17 04:30
   - 'V2Get🛰️ 2026-06-16 20:04 #2'
   - V2Get🛰️ 2026-06-16 10:43
+  - V2Get🛰️ 2026-06-17 04:30
   - 'V2Get🛰️ 2026-06-17 04:30 #2'
-  - 'V2Get🛰️ 2026-06-17 04:30 #3'
   - V2Get🛰️ 2026-06-15 20:57
   - V2Get🛰️ 2026-06-16 20:05
   - V2Get🛰️ 2026-06-15 18:25
