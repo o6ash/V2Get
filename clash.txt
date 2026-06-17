@@ -12,15 +12,24 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-16 19:36
+- name: V2Get🛰️ 2026-06-16 05:27
   type: vless
-  server: euro.connectingissues.ir
-  port: 80
-  uuid: 718ff826-3d64-441c-b1ec-54a1d7394931
+  server: 172.67.74.10
+  port: 443
+  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
   udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-16 19:36 #2'
+  network: ws
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h2
+  ws-opts:
+    path: /download.php
+    headers:
+      Host: sertraline.adaspoloandco.com
+- name: V2Get🛰️ 2026-06-16 19:36
   type: vless
   server: mci.connectingissues.ir
   port: 80
@@ -28,7 +37,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-16 19:36 #3'
+- name: 'V2Get🛰️ 2026-06-16 19:36 #2'
   type: vless
   server: global.connectingissues.ir
   port: 80
@@ -1137,9 +1146,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 19:36
   - 'V2Get🛰️ 2026-06-16 19:36 #2'
-  - 'V2Get🛰️ 2026-06-16 19:36 #3'
   - V2Get🛰️ 2026-06-16 21:08
   - V2Get🛰️ 2026-06-17 00:03
   - V2Get🛰️ 2026-06-15 17:28
@@ -1241,9 +1250,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 19:36
   - 'V2Get🛰️ 2026-06-16 19:36 #2'
-  - 'V2Get🛰️ 2026-06-16 19:36 #3'
   - V2Get🛰️ 2026-06-16 21:08
   - V2Get🛰️ 2026-06-17 00:03
   - V2Get🛰️ 2026-06-15 17:28
