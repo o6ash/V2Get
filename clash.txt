@@ -12,6 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 00:41
+  type: vless
+  server: 87.120.106.101
+  port: 34634
+  uuid: e439364c-09b5-4df6-bd06-8c9f3ae4ef06
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: V2Get🛰️ 2026-06-18 21:11
+  type: vless
+  server: fast.cd-tur4.ir
+  port: 443
+  uuid: 1df05cde-34a0-44ce-8059-44a7b1e7782b
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-15 23:07
   type: vless
   server: sca16.myfymain.com
@@ -295,20 +320,6 @@ proxies:
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
-- name: 'V2Get🛰️ 2026-06-15 22:15 #5'
-  type: vless
-  server: 45.195.137.72
-  port: 8443
-  uuid: 97bf06ad-c9a8-4ea4-afb5-9092cc092214
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
-    short-id: cf9d145ad8f1ea55
 - name: V2Get🛰️ 2026-06-18 16:12
   type: vless
   server: 193.233.137.60
@@ -324,7 +335,7 @@ proxies:
     short-id: 9e0df5878ac2f3c8
   grpc-opts:
     grpc-service-name: yourServiceName
-- name: 'V2Get🛰️ 2026-06-15 22:15 #6'
+- name: 'V2Get🛰️ 2026-06-15 22:15 #5'
   type: vless
   server: 31.76.91.28
   port: 443
@@ -352,19 +363,6 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: V2Get🛰️ 2026-06-18 21:11
-  type: vless
-  server: fast.cd-tur4.ir
-  port: 443
-  uuid: 1df05cde-34a0-44ce-8059-44a7b1e7782b
-  udp: true
-  network: ws
-  tls: true
-  servername: default.ssl.fastly.net
-  ws-opts:
-    path: /
-    headers:
-      Host: bazaryabab.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 23:39
   type: trojan
   server: 104.24.50.97
@@ -1206,6 +1204,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 00:41
+  - V2Get🛰️ 2026-06-18 21:11
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-19 00:36
   - 'V2Get🛰️ 2026-06-19 00:36 #2'
@@ -1231,11 +1231,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 23:32
   - V2Get🛰️ 2026-06-17 15:40
   - V2Get🛰️ 2026-06-19 00:30
-  - 'V2Get🛰️ 2026-06-15 22:15 #5'
   - V2Get🛰️ 2026-06-18 16:12
-  - 'V2Get🛰️ 2026-06-15 22:15 #6'
+  - 'V2Get🛰️ 2026-06-15 22:15 #5'
   - V2Get🛰️ 2026-06-15 17:44
-  - V2Get🛰️ 2026-06-18 21:11
   - V2Get🛰️ 2026-06-17 23:39
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-17 22:42
@@ -1311,6 +1309,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 00:41
+  - V2Get🛰️ 2026-06-18 21:11
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-19 00:36
   - 'V2Get🛰️ 2026-06-19 00:36 #2'
@@ -1336,11 +1336,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 23:32
   - V2Get🛰️ 2026-06-17 15:40
   - V2Get🛰️ 2026-06-19 00:30
-  - 'V2Get🛰️ 2026-06-15 22:15 #5'
   - V2Get🛰️ 2026-06-18 16:12
-  - 'V2Get🛰️ 2026-06-15 22:15 #6'
+  - 'V2Get🛰️ 2026-06-15 22:15 #5'
   - V2Get🛰️ 2026-06-15 17:44
-  - V2Get🛰️ 2026-06-18 21:11
   - V2Get🛰️ 2026-06-17 23:39
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-17 22:42
