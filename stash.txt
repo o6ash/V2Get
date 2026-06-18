@@ -12,6 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 11:37
+  type: trojan
+  server: 104.21.18.41
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
+    headers:
+      Host: linkkon-w.ir
+- name: V2Get🛰️ 2026-06-17 15:41
+  type: vless
+  server: 140.248.185.253
+  port: 443
+  uuid: 9a1ca418-134f-4750-b97a-55ea81135742
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: pan1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-16 10:26
   type: vless
   server: fast.cd-tur4.ir
@@ -66,19 +93,6 @@ proxies:
   reality-opts:
     public-key: Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU
     short-id: 28a059440d3d5ba1
-- name: V2Get🛰️ 2026-06-17 15:41
-  type: vless
-  server: 140.248.185.253
-  port: 443
-  uuid: 9a1ca418-134f-4750-b97a-55ea81135742
-  udp: true
-  network: ws
-  tls: true
-  servername: default.ssl.fastly.net
-  ws-opts:
-    path: /
-    headers:
-      Host: pan1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-18 04:52
   type: trojan
   server: 141.193.213.30
@@ -497,20 +511,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-06-17 11:37
-  type: trojan
-  server: 104.21.18.41
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: linkkon-w.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /cdn=mitivpn
-    headers:
-      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-17 10:39
   type: trojan
   server: 188.114.97.6
@@ -837,11 +837,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-16 10:26
   - V2Get🛰️ 2026-06-17 21:26
   - V2Get🛰️ 2026-06-17 18:54
   - V2Get🛰️ 2026-06-15 18:29
-  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-18 04:52
   - V2Get🛰️ 2026-06-16 07:43
   - V2Get🛰️ 2026-06-18 04:43
@@ -877,7 +878,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-16 22:41
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-17 10:39
   - 'V2Get🛰️ 2026-06-15 23:53 #4'
   - V2Get🛰️ 2026-06-18 02:21
@@ -910,11 +910,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-16 10:26
   - V2Get🛰️ 2026-06-17 21:26
   - V2Get🛰️ 2026-06-17 18:54
   - V2Get🛰️ 2026-06-15 18:29
-  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-18 04:52
   - V2Get🛰️ 2026-06-16 07:43
   - V2Get🛰️ 2026-06-18 04:43
@@ -950,7 +951,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-16 22:41
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-17 10:39
   - 'V2Get🛰️ 2026-06-15 23:53 #4'
   - V2Get🛰️ 2026-06-18 02:21
