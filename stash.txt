@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 21:53
+  type: vless
+  server: panel.dibaux.ir
+  port: 80
+  uuid: 69330ab9-eb51-4bb6-9c07-3f2401c476af
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /stream
+    headers:
+      Host: panel.dibaux.ir
 - name: V2Get🛰️ 2026-06-17 21:30
   type: vless
   server: 173.245.59.109
@@ -674,20 +686,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: V2Get🛰️ 2026-06-15 17:59
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.robotdecorative.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.robotdecorative.com
 - name: V2Get🛰️ 2026-06-16 07:43
   type: trojan
   server: 104.18.152.229
@@ -984,6 +982,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-18 01:45
   - V2Get🛰️ 2026-06-17 22:42
@@ -1035,7 +1034,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:09
   - V2Get🛰️ 2026-06-16 00:22
   - V2Get🛰️ 2026-06-15 22:48
-  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-16 07:43
   - V2Get🛰️ 2026-06-18 04:43
   - V2Get🛰️ 2026-06-18 03:34
@@ -1066,6 +1064,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-18 01:45
   - V2Get🛰️ 2026-06-17 22:42
@@ -1117,7 +1116,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:09
   - V2Get🛰️ 2026-06-16 00:22
   - V2Get🛰️ 2026-06-15 22:48
-  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-16 07:43
   - V2Get🛰️ 2026-06-18 04:43
   - V2Get🛰️ 2026-06-18 03:34
