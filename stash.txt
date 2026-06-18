@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 03:24
+  type: vless
+  server: 65.109.199.53
+  port: 52219
+  uuid: 45dd64ae-574a-4e35-a3e8-ff29d7493aeb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
+    short-id: f8
 - name: V2Get🛰️ 2026-06-18 05:49
   type: trojan
   server: 151.101.110.219
@@ -961,20 +975,6 @@ proxies:
   reality-opts:
     public-key: -g0bzNFN2Of9vbBXL5ZWXQ5GIrwS1uZlFPcmphN0PiI
     short-id: bbcdcac5
-- name: V2Get🛰️ 2026-06-19 00:53
-  type: vless
-  server: 162.159.38.87
-  port: 443
-  uuid: 51fd7401-7ad7-4573-8940-40b2f2259c3a
-  udp: true
-  network: ws
-  tls: true
-  servername: m1.amirsub.dpdns.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /proxyip=?u=b54837d7af
-    headers:
-      Host: m1.amirsub.dpdns.org
 - name: 'V2Get🛰️ 2026-06-19 00:36 #2'
   type: vless
   server: 9sbisocj5c11.dxdx5.com
@@ -1193,6 +1193,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 03:24
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-16 01:21
@@ -1266,7 +1267,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-19 00:36
   - V2Get🛰️ 2026-06-19 00:51
-  - V2Get🛰️ 2026-06-19 00:53
   - 'V2Get🛰️ 2026-06-19 00:36 #2'
   - V2Get🛰️ 2026-06-19 01:01
   - V2Get🛰️ 2026-06-19 01:07
@@ -1290,6 +1290,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 03:24
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-16 01:21
@@ -1363,7 +1364,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-19 00:36
   - V2Get🛰️ 2026-06-19 00:51
-  - V2Get🛰️ 2026-06-19 00:53
   - 'V2Get🛰️ 2026-06-19 00:36 #2'
   - V2Get🛰️ 2026-06-19 01:01
   - V2Get🛰️ 2026-06-19 01:07
