@@ -12,6 +12,24 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 01:24
+  type: vless
+  server: 91.193.58.201
+  port: 443
+  uuid: 3584a1b7-2951-4195-af81-ef46f290ab98
+  udp: true
+  network: ws
+  tls: true
+  servername: GGNL.downloadgameiran.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: GGNL.downloadgameiran.ir
 - name: V2Get🛰️ 2026-06-16 21:15
   type: vless
   server: 195.96.132.125
@@ -112,16 +130,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-17 15:05
-  type: trojan
-  server: 172.64.147.223
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: V2Get🛰️ 2026-06-16 09:21
   type: vless
   server: 162.159.38.119
@@ -882,6 +890,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 01:24
   - V2Get🛰️ 2026-06-16 21:15
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-15 17:18
@@ -890,7 +899,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-17 22:21
-  - V2Get🛰️ 2026-06-17 15:05
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-17 16:01
@@ -957,6 +965,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 01:24
   - V2Get🛰️ 2026-06-16 21:15
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-15 17:18
@@ -965,7 +974,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-17 22:21
-  - V2Get🛰️ 2026-06-17 15:05
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-17 16:01
