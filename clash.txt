@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 04:00
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 52c0dab9-2187-49a4-8e31-f1db94bd7a9e
+  udp: true
+  network: ws
+  tls: true
+  servername: speedtest.net
+  ws-opts:
+    path: /
+    headers:
+      Host: alesis724.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-15 17:59
   type: trojan
   server: 216.24.57.1
@@ -1056,14 +1069,6 @@ proxies:
   tls: true
   servername: r1.mizulina.top
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-06-17 23:41
-  type: vless
-  server: 89.125.151.152
-  port: 20630
-  uuid: 0ba2d2bb-ef88-47dd-9c8f-2c44aa0e8261
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-15 22:40
   type: vless
   server: 85.234.114.53
@@ -1103,6 +1108,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 04:00
   - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-18 03:52
   - V2Get🛰️ 2026-06-18 01:46
@@ -1195,7 +1201,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 00:12
   - V2Get🛰️ 2026-06-17 21:15
   - 'V2Get🛰️ 2026-06-15 18:25 #2'
-  - V2Get🛰️ 2026-06-17 23:41
   - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-17 23:19
   - 'V2Get🛰️ 2026-06-17 23:19 #2'
@@ -1205,6 +1210,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 04:00
   - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-18 03:52
   - V2Get🛰️ 2026-06-18 01:46
@@ -1297,7 +1303,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 00:12
   - V2Get🛰️ 2026-06-17 21:15
   - 'V2Get🛰️ 2026-06-15 18:25 #2'
-  - V2Get🛰️ 2026-06-17 23:41
   - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-17 23:19
   - 'V2Get🛰️ 2026-06-17 23:19 #2'
