@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 12:36
+  type: vless
+  server: 95.133.245.170
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: qq
+- name: V2Get🛰️ 2026-06-16 02:54
+  type: vless
+  server: sc-thenetherlands2.09vpn.com
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands2.09vpn.com
 - name: V2Get🛰️ 2026-06-17 10:39
   type: trojan
   server: 188.114.97.6
@@ -26,6 +48,31 @@ proxies:
     path: index.php?mitivpn
     headers:
       Host: cdn.95r.ir
+- name: V2Get🛰️ 2026-06-18 20:03
+  type: vless
+  server: www.speedtest.org
+  port: 443
+  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+  udp: true
+  network: ws
+  tls: true
+  servername: shegeftihaaa.net
+  ws-opts:
+    path: /rsedgws
+    headers:
+      Host: shegeftihaaa.net
+- name: V2Get🛰️ 2026-06-16 21:53
+  type: vless
+  server: panel.dibaux.ir
+  port: 80
+  uuid: 69330ab9-eb51-4bb6-9c07-3f2401c476af
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /stream
+    headers:
+      Host: panel.dibaux.ir
 - name: V2Get🛰️ 2026-06-18 05:49
   type: trojan
   server: 151.101.110.219
@@ -170,18 +217,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-06-16 21:53
-  type: vless
-  server: panel.dibaux.ir
-  port: 80
-  uuid: 69330ab9-eb51-4bb6-9c07-3f2401c476af
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /stream
-    headers:
-      Host: panel.dibaux.ir
 - name: V2Get🛰️ 2026-06-16 10:43
   type: vless
   server: 46.229.243.140
@@ -205,31 +240,6 @@ proxies:
     path: /
     headers:
       Host: bazaryabab.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-18 20:03
-  type: vless
-  server: www.speedtest.org
-  port: 443
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-  udp: true
-  network: ws
-  tls: true
-  servername: shegeftihaaa.net
-  ws-opts:
-    path: /rsedgws
-    headers:
-      Host: shegeftihaaa.net
-- name: V2Get🛰️ 2026-06-16 02:54
-  type: vless
-  server: sc-thenetherlands2.09vpn.com
-  port: 80
-  uuid: e73df646-1f62-41bf-8c50-653497d603d0
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands2.09vpn.com
 - name: V2Get🛰️ 2026-06-18 12:48
   type: vless
   server: www.speedtest.net
@@ -916,20 +926,6 @@ proxies:
   reality-opts:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 28047c78b3f5ee2c
-- name: 'V2Get🛰️ 2026-06-18 18:50 #2'
-  type: vless
-  server: rezerv.yunus.guru
-  port: 443
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rezerv.yunus.guru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: S4WFc-SD_FpmmQdM21Of7O6XmYaLlmwcmlbgO4lZQQg
-    short-id: a7ec6c3316eddb11
 - name: V2Get🛰️ 2026-06-18 11:07
   type: vless
   server: fr.eorqen.ir
@@ -1015,7 +1011,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 12:36
+  - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-17 10:39
+  - V2Get🛰️ 2026-06-18 20:03
+  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-17 22:12
@@ -1027,11 +1027,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 20:41
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-15 20:00
-  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 20:41
-  - V2Get🛰️ 2026-06-18 20:03
-  - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-16 01:21
   - V2Get🛰️ 2026-06-18 16:07
@@ -1088,7 +1085,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-18 12:48 #2'
   - 'V2Get🛰️ 2026-06-18 12:48 #3'
   - V2Get🛰️ 2026-06-18 18:50
-  - 'V2Get🛰️ 2026-06-18 18:50 #2'
   - V2Get🛰️ 2026-06-18 11:07
   - V2Get🛰️ 2026-06-18 18:31
   - V2Get🛰️ 2026-06-18 16:26
@@ -1102,7 +1098,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 12:36
+  - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-17 10:39
+  - V2Get🛰️ 2026-06-18 20:03
+  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-17 22:12
@@ -1114,11 +1114,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 20:41
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-15 20:00
-  - V2Get🛰️ 2026-06-16 21:53
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 20:41
-  - V2Get🛰️ 2026-06-18 20:03
-  - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-16 01:21
   - V2Get🛰️ 2026-06-18 16:07
@@ -1175,7 +1172,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-18 12:48 #2'
   - 'V2Get🛰️ 2026-06-18 12:48 #3'
   - V2Get🛰️ 2026-06-18 18:50
-  - 'V2Get🛰️ 2026-06-18 18:50 #2'
   - V2Get🛰️ 2026-06-18 11:07
   - V2Get🛰️ 2026-06-18 18:31
   - V2Get🛰️ 2026-06-18 16:26
