@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 09:21
+  type: vless
+  server: 162.159.38.119
+  port: 443
+  uuid: f7e3ff36-276c-4477-b6d4-47257500d869
+  udp: true
+  network: ws
+  tls: true
+  servername: pon.antalmani.mm.am
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?ed=3000
+    headers:
+      Host: pon.antalmani.mm.am
 - name: V2Get🛰️ 2026-06-17 21:30
   type: vless
   server: 173.245.59.109
@@ -286,14 +300,6 @@ proxies:
   reality-opts:
     public-key: VpqQFx37AYb5TV2cGoEv79H9oSuH_xYLvAr4kzIYdl0
     short-id: 88321a8cc636889a
-- name: V2Get🛰️ 2026-06-18 04:23
-  type: vless
-  server: 103.118.255.19
-  port: 44058
-  uuid: 65498631-4e25-49ce-8789-b57547d8c261
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-18 04:00
   type: vless
   server: 199.232.78.160
@@ -861,6 +867,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-17 16:01
@@ -881,7 +888,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 04:43
   - V2Get🛰️ 2026-06-18 03:52
   - V2Get🛰️ 2026-06-18 03:34
-  - V2Get🛰️ 2026-06-18 04:23
   - V2Get🛰️ 2026-06-18 04:00
   - V2Get🛰️ 2026-06-16 18:43
   - V2Get🛰️ 2026-06-17 13:30
@@ -935,6 +941,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 21:30
   - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-17 16:01
@@ -955,7 +962,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 04:43
   - V2Get🛰️ 2026-06-18 03:52
   - V2Get🛰️ 2026-06-18 03:34
-  - V2Get🛰️ 2026-06-18 04:23
   - V2Get🛰️ 2026-06-18 04:00
   - V2Get🛰️ 2026-06-16 18:43
   - V2Get🛰️ 2026-06-17 13:30
