@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 00:26
+  type: vless
+  server: cloudflare.czkcdn.cn
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  udp: true
+  network: ws
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: V2Get🛰️ 2026-06-17 10:30
+  type: vless
+  server: cdn4.portalcode.ir
+  port: 2095
+  uuid: 78aa1ac4-516a-44f6-9d6e-4ba21c7f67fb
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-18 03:35
   type: vless
   server: suolar.yellowsky.ir
@@ -803,13 +824,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: V2Get🛰️ 2026-06-16 06:19
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 - name: V2Get🛰️ 2026-06-16 09:18
   type: ss
   server: 141.98.101.178
@@ -826,13 +840,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-06-15 20:57
-  type: ss
-  server: de5.taskflowhub.org
-  port: 2083
-  cipher: aes-256-gcm
-  password: 7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=
-  udp: true
 - name: V2Get🛰️ 2026-06-15 16:48
   type: vless
   server: 141.193.213.10
@@ -1104,6 +1111,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 00:26
+  - V2Get🛰️ 2026-06-17 10:30
   - V2Get🛰️ 2026-06-18 03:35
   - V2Get🛰️ 2026-06-18 03:34
   - V2Get🛰️ 2026-06-15 18:25
@@ -1174,10 +1183,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 10:03
   - V2Get🛰️ 2026-06-17 21:52
   - V2Get🛰️ 2026-06-15 16:47
-  - V2Get🛰️ 2026-06-16 06:19
   - V2Get🛰️ 2026-06-16 09:18
   - V2Get🛰️ 2026-06-15 17:03
-  - V2Get🛰️ 2026-06-15 20:57
   - V2Get🛰️ 2026-06-15 16:48
   - V2Get🛰️ 2026-06-17 04:26
   - V2Get🛰️ 2026-06-18 01:24
@@ -1206,6 +1213,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 00:26
+  - V2Get🛰️ 2026-06-17 10:30
   - V2Get🛰️ 2026-06-18 03:35
   - V2Get🛰️ 2026-06-18 03:34
   - V2Get🛰️ 2026-06-15 18:25
@@ -1276,10 +1285,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 10:03
   - V2Get🛰️ 2026-06-17 21:52
   - V2Get🛰️ 2026-06-15 16:47
-  - V2Get🛰️ 2026-06-16 06:19
   - V2Get🛰️ 2026-06-16 09:18
   - V2Get🛰️ 2026-06-15 17:03
-  - V2Get🛰️ 2026-06-15 20:57
   - V2Get🛰️ 2026-06-15 16:48
   - V2Get🛰️ 2026-06-17 04:26
   - V2Get🛰️ 2026-06-18 01:24
