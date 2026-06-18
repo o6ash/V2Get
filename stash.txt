@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 19:35
+  type: vless
+  server: gerardo.ns.cloudflare.com
+  port: 80
+  uuid: f7e3ff36-276c-4477-b6d4-47257500d869
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /?ed=3000
+    headers:
+      Host: pon.antalmani.mm.am
 - name: V2Get🛰️ 2026-06-17 15:05
   type: trojan
   server: 172.64.147.223
@@ -487,14 +499,6 @@ proxies:
     path: /?ed=3000
     headers:
       Host: pon.antalmani.mm.am
-- name: 'V2Get🛰️ 2026-06-15 23:53 #3'
-  type: trojan
-  server: 38.54.13.189
-  port: 443
-  password: lhvfOzkRQqNd9cLDwpryrAkFGgqzlZR9Fi
-  udp: true
-  sni: 38.54.13.189
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-15 23:54
   type: trojan
   server: 103.125.219.70
@@ -869,6 +873,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 19:35
   - V2Get🛰️ 2026-06-17 15:05
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 21:30
@@ -905,7 +910,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 20:41
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - V2Get🛰️ 2026-06-17 19:51
-  - 'V2Get🛰️ 2026-06-15 23:53 #3'
   - V2Get🛰️ 2026-06-15 23:54
   - V2Get🛰️ 2026-06-18 02:52
   - V2Get🛰️ 2026-06-15 18:15
@@ -943,6 +947,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 19:35
   - V2Get🛰️ 2026-06-17 15:05
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-17 21:30
@@ -979,7 +984,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 20:41
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - V2Get🛰️ 2026-06-17 19:51
-  - 'V2Get🛰️ 2026-06-15 23:53 #3'
   - V2Get🛰️ 2026-06-15 23:54
   - V2Get🛰️ 2026-06-18 02:52
   - V2Get🛰️ 2026-06-15 18:15
