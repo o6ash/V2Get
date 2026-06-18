@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 15:04
+  type: vless
+  server: 151.101.109.223
+  port: 443
+  uuid: 59241135-5d22-4b88-9b77-52c527ff33ce
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-18 16:34
   type: vless
   server: snapp.ir
@@ -520,19 +533,6 @@ proxies:
   reality-opts:
     public-key: 7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s
     short-id: 247fd6dab1a34a48
-- name: V2Get🛰️ 2026-06-15 23:41
-  type: vless
-  server: seti.wizardp.org
-  port: 2045
-  uuid: 1b5a4488-d2c1-495b-af79-99534e5b1bd3
-  udp: true
-  network: grpc
-  tls: true
-  servername: play.google.com
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  grpc-opts:
-    grpc-service-name: xyz
 - name: 'V2Get🛰️ 2026-06-18 16:14 #3'
   type: vless
   server: 2.27.26.41
@@ -1187,6 +1187,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 15:04
   - V2Get🛰️ 2026-06-18 16:34
   - V2Get🛰️ 2026-06-16 11:00
   - V2Get🛰️ 2026-06-17 13:57
@@ -1230,7 +1231,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 13:15
   - 'V2Get🛰️ 2026-06-18 16:14 #2'
   - V2Get🛰️ 2026-06-16 10:46
-  - V2Get🛰️ 2026-06-15 23:41
   - 'V2Get🛰️ 2026-06-18 16:14 #3'
   - V2Get🛰️ 2026-06-15 20:32
   - V2Get🛰️ 2026-06-15 18:58
@@ -1293,6 +1293,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 15:04
   - V2Get🛰️ 2026-06-18 16:34
   - V2Get🛰️ 2026-06-16 11:00
   - V2Get🛰️ 2026-06-17 13:57
@@ -1336,7 +1337,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 13:15
   - 'V2Get🛰️ 2026-06-18 16:14 #2'
   - V2Get🛰️ 2026-06-16 10:46
-  - V2Get🛰️ 2026-06-15 23:41
   - 'V2Get🛰️ 2026-06-18 16:14 #3'
   - V2Get🛰️ 2026-06-15 20:32
   - V2Get🛰️ 2026-06-15 18:58
