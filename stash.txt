@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 11:37
+  type: trojan
+  server: 104.21.18.41
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
+    headers:
+      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-18 14:43
   type: trojan
   server: 13.36.49.219
@@ -442,20 +456,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-06-17 11:37
-  type: trojan
-  server: 104.21.18.41
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: linkkon-w.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /cdn=mitivpn
-    headers:
-      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-15 23:07
   type: vless
   server: sca16.myfymain.com
@@ -1083,6 +1083,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-18 14:43
   - V2Get🛰️ 2026-06-18 12:51
   - V2Get🛰️ 2026-06-15 17:03
@@ -1119,7 +1120,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 23:53
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-16 10:10
   - V2Get🛰️ 2026-06-18 12:48
@@ -1178,6 +1178,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-18 14:43
   - V2Get🛰️ 2026-06-18 12:51
   - V2Get🛰️ 2026-06-15 17:03
@@ -1214,7 +1215,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 23:53
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-16 10:10
   - V2Get🛰️ 2026-06-18 12:48
