@@ -12,6 +12,58 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 20:41
+  type: vless
+  server: 165.227.236.227
+  port: 8880
+  uuid: 53b8b074-c180-41d9-80dc-55979e0ddc58
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-18 05:49
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-17 11:37
+  type: trojan
+  server: 104.21.18.41
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
+    headers:
+      Host: linkkon-w.ir
+- name: V2Get🛰️ 2026-06-19 01:11
+  type: vless
+  server: shun.iraniannimdown.ir
+  port: 405
+  uuid: 41583d3a-7672-4944-9ae4-5086f008b5d1
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: wv3oGPBZ3q3yAOcSTait3fqDtYRZWY9y0aebve9xGB0
+    short-id: eff431
+  grpc-opts:
+    grpc-service-name: ''
 - name: V2Get🛰️ 2026-06-19 02:40
   type: vless
   server: mcifastly.hajimamadcloud.com.tr
@@ -100,17 +152,6 @@ proxies:
 - name: V2Get🛰️ 2026-06-15 18:34
   type: vless
   server: sca8.myfymain.com
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
-- name: V2Get🛰️ 2026-06-17 00:14
-  type: vless
-  server: 151.115.166.221
   port: 8880
   uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
   udp: true
@@ -755,17 +796,6 @@ proxies:
     path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed=2560
     headers:
       Host: bpb-expo--10rayly4zy.expo.app
-- name: 'V2Get🛰️ 2026-06-16 02:01 #2'
-  type: vless
-  server: 151.115.166.76
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-16 16:02
   type: ss
   server: 82.38.31.194
@@ -1026,21 +1056,6 @@ proxies:
     path: /
     headers:
       Host: srv14.hamiibar.com
-- name: V2Get🛰️ 2026-06-19 01:11
-  type: vless
-  server: shun.iraniannimdown.ir
-  port: 405
-  uuid: 41583d3a-7672-4944-9ae4-5086f008b5d1
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: wv3oGPBZ3q3yAOcSTait3fqDtYRZWY9y0aebve9xGB0
-    short-id: eff431
-  grpc-opts:
-    grpc-service-name: ''
 - name: V2Get🛰️ 2026-06-15 20:41
   type: vless
   server: auth.vercel.com
@@ -1073,20 +1088,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-16 20:26
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 9f135709-60a1-4a9b-b31c-78d326d8752a
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.middle.cc.cd
-  client-fingerprint: firefox
-  alpn:
-  - h3
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-06-18 22:01
   type: vless
   server: 51.83.251.22
@@ -1301,6 +1302,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 20:41
+  - V2Get🛰️ 2026-06-18 05:49
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-19 01:11
   - V2Get🛰️ 2026-06-19 02:40
   - V2Get🛰️ 2026-06-17 14:43
   - V2Get🛰️ 2026-06-18 15:10
@@ -1308,7 +1313,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 10:39
   - 'V2Get🛰️ 2026-06-17 14:43 #2'
   - V2Get🛰️ 2026-06-15 18:34
-  - V2Get🛰️ 2026-06-17 00:14
   - V2Get🛰️ 2026-06-15 19:42
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-19 02:33
@@ -1358,7 +1362,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 02:18 #2'
   - V2Get🛰️ 2026-06-18 23:46
   - V2Get🛰️ 2026-06-17 19:57
-  - 'V2Get🛰️ 2026-06-16 02:01 #2'
   - V2Get🛰️ 2026-06-16 16:02
   - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-15 20:28
@@ -1379,11 +1382,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-18 23:46 #2'
   - V2Get🛰️ 2026-06-19 01:29
   - 'V2Get🛰️ 2026-06-19 01:29 #2'
-  - V2Get🛰️ 2026-06-19 01:11
   - V2Get🛰️ 2026-06-15 20:41
   - 'V2Get🛰️ 2026-06-19 01:07 #2'
   - V2Get🛰️ 2026-06-18 23:26
-  - V2Get🛰️ 2026-06-16 20:26
   - V2Get🛰️ 2026-06-18 22:01
   - V2Get🛰️ 2026-06-15 20:00
   - 'V2Get🛰️ 2026-06-19 00:51 #2'
@@ -1407,6 +1408,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 20:41
+  - V2Get🛰️ 2026-06-18 05:49
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-19 01:11
   - V2Get🛰️ 2026-06-19 02:40
   - V2Get🛰️ 2026-06-17 14:43
   - V2Get🛰️ 2026-06-18 15:10
@@ -1414,7 +1419,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 10:39
   - 'V2Get🛰️ 2026-06-17 14:43 #2'
   - V2Get🛰️ 2026-06-15 18:34
-  - V2Get🛰️ 2026-06-17 00:14
   - V2Get🛰️ 2026-06-15 19:42
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-19 02:33
@@ -1464,7 +1468,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 02:18 #2'
   - V2Get🛰️ 2026-06-18 23:46
   - V2Get🛰️ 2026-06-17 19:57
-  - 'V2Get🛰️ 2026-06-16 02:01 #2'
   - V2Get🛰️ 2026-06-16 16:02
   - V2Get🛰️ 2026-06-15 17:18
   - V2Get🛰️ 2026-06-15 20:28
@@ -1485,11 +1488,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-18 23:46 #2'
   - V2Get🛰️ 2026-06-19 01:29
   - 'V2Get🛰️ 2026-06-19 01:29 #2'
-  - V2Get🛰️ 2026-06-19 01:11
   - V2Get🛰️ 2026-06-15 20:41
   - 'V2Get🛰️ 2026-06-19 01:07 #2'
   - V2Get🛰️ 2026-06-18 23:26
-  - V2Get🛰️ 2026-06-16 20:26
   - V2Get🛰️ 2026-06-18 22:01
   - V2Get🛰️ 2026-06-15 20:00
   - 'V2Get🛰️ 2026-06-19 00:51 #2'
