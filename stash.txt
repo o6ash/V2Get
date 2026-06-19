@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 16:49
+  type: vless
+  server: ipclf.bhralrqmy.com
+  port: 2053
+  uuid: 2f60be6f-be0c-48b4-9772-b56f42b51ba1
+  udp: true
+  network: ws
+  tls: true
+  servername: rry3dos5a.ninemapps.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: rry3dos5a.ninemapps.com
 - name: V2Get🛰️ 2026-06-17 16:08
   type: vless
   server: 104.18.33.45
@@ -1074,21 +1088,13 @@ proxies:
   reality-opts:
     public-key: SRx_6rZZrRgWuFz_U7NWxm_INn2kcfYlwC299jk_9nA
     short-id: '8455'
-- name: V2Get🛰️ 2026-06-15 17:28
-  type: vless
-  server: 195.181.173.194
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  udp: true
-  network: tcp
-  tls: true
-  servername: ams1.fromblancwithlove.com
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 16:49
   - V2Get🛰️ 2026-06-17 16:08
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-16 12:36
@@ -1175,13 +1181,13 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 23:26
   - 'V2Get🛰️ 2026-06-19 00:51 #2'
   - V2Get🛰️ 2026-06-19 00:09
-  - V2Get🛰️ 2026-06-15 17:28
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 16:49
   - V2Get🛰️ 2026-06-17 16:08
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-16 12:36
@@ -1268,7 +1274,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 23:26
   - 'V2Get🛰️ 2026-06-19 00:51 #2'
   - V2Get🛰️ 2026-06-19 00:09
-  - V2Get🛰️ 2026-06-15 17:28
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
