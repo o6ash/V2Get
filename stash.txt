@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 05:49
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-06-18 05:49 #2'
+  type: trojan
+  server: 151.101.1.194
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-s2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-15 17:02
   type: vless
   server: 185.229.191.149
@@ -448,16 +478,6 @@ proxies:
   tls: true
   servername: cdn3-87.vk-cdnvideo.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-06-16 18:14
-  type: vless
-  server: 46.229.243.94
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn3-87.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-18 11:07
   type: vless
   server: 103.215.239.73
@@ -576,21 +596,6 @@ proxies:
     path: /eyJqdW5rIjoicWtVZHVzcmNDUVciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
       Host: jokername.rezatony2026.workers.dev
-- name: V2Get🛰️ 2026-06-18 05:49
-  type: trojan
-  server: 151.101.1.194
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-s2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-15 16:51
   type: vless
   server: sca13.myfymain.com
@@ -1025,6 +1030,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 05:49
+  - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-19 05:35
   - V2Get🛰️ 2026-06-19 05:34
@@ -1061,7 +1068,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 13:30
   - V2Get🛰️ 2026-06-16 20:04
   - 'V2Get🛰️ 2026-06-15 21:13 #2'
-  - V2Get🛰️ 2026-06-16 18:14
   - V2Get🛰️ 2026-06-18 11:07
   - V2Get🛰️ 2026-06-18 23:46
   - V2Get🛰️ 2026-06-16 18:21
@@ -1072,7 +1078,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 02:01
   - V2Get🛰️ 2026-06-15 23:42
   - V2Get🛰️ 2026-06-19 02:56
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-15 16:51
   - V2Get🛰️ 2026-06-16 19:01
   - V2Get🛰️ 2026-06-19 01:29
@@ -1113,6 +1118,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 05:49
+  - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-19 05:35
   - V2Get🛰️ 2026-06-19 05:34
@@ -1149,7 +1156,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 13:30
   - V2Get🛰️ 2026-06-16 20:04
   - 'V2Get🛰️ 2026-06-15 21:13 #2'
-  - V2Get🛰️ 2026-06-16 18:14
   - V2Get🛰️ 2026-06-18 11:07
   - V2Get🛰️ 2026-06-18 23:46
   - V2Get🛰️ 2026-06-16 18:21
@@ -1160,7 +1166,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 02:01
   - V2Get🛰️ 2026-06-15 23:42
   - V2Get🛰️ 2026-06-19 02:56
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-15 16:51
   - V2Get🛰️ 2026-06-16 19:01
   - V2Get🛰️ 2026-06-19 01:29
