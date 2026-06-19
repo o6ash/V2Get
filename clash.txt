@@ -12,6 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 01:16
+  type: vless
+  server: 178.83.46.29
+  port: 8044
+  uuid: 6e25f7b4-efce-425a-af98-3f310623bfa2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-19 00:48
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  udp: true
+  network: ws
+  tls: true
+  servername: terazhediii.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
+- name: V2Get🛰️ 2026-06-17 17:13
+  type: vless
+  server: 172.64.147.255
+  port: 80
+  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: tt.andishehparenting.com
 - name: V2Get🛰️ 2026-06-17 21:15
   type: vless
   server: 159.195.22.155
@@ -311,19 +345,6 @@ proxies:
       Host: cdn.qorilo.ir
 - name: V2Get🛰️ 2026-06-20 00:58
   type: vless
-  server: 45.130.125.101
-  port: 8443
-  uuid: 6a9bc6a6-9543-4f40-b8b5-9fa31e881473
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cji.new-persian-song.ir
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-- name: 'V2Get🛰️ 2026-06-20 00:58 #2'
-  type: vless
   server: 45.130.125.162
   port: 8443
   uuid: 6a9bc6a6-9543-4f40-b8b5-9fa31e881473
@@ -332,7 +353,7 @@ proxies:
   tls: true
   servername: ssd.mojaz-persian-music.ir
   client-fingerprint: chrome
-- name: 'V2Get🛰️ 2026-06-20 00:58 #3'
+- name: 'V2Get🛰️ 2026-06-20 00:58 #2'
   type: vless
   server: 45.130.125.162
   port: 443
@@ -446,19 +467,6 @@ proxies:
   - h2
 - name: 'V2Get🛰️ 2026-06-20 00:55 #2'
   type: vless
-  server: 66.33.23.103
-  port: 443
-  uuid: 36284b89-03c0-4ec4-9ed9-e20e19d136cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: relay-production-9e5f.up.railway.app
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h2
-- name: 'V2Get🛰️ 2026-06-20 00:55 #3'
-  type: vless
   server: 66.33.23.32
   port: 443
   uuid: 36284b89-03c0-4ec4-9ed9-e20e19d136cf
@@ -470,7 +478,7 @@ proxies:
   alpn:
   - http/1.1
   - h2
-- name: 'V2Get🛰️ 2026-06-20 00:55 #4'
+- name: 'V2Get🛰️ 2026-06-20 00:55 #3'
   type: vless
   server: 66.33.23.114
   port: 443
@@ -853,7 +861,7 @@ proxies:
   reality-opts:
     public-key: 9WCa12k9THrR6jP0YUpcMq_rx_0cGSIMk_ppYSpc_To
     short-id: ef84
-- name: V2Get🛰️ 2026-06-19 00:48
+- name: 'V2Get🛰️ 2026-06-19 00:48 #2'
   type: trojan
   server: 45.130.125.126
   port: 443
@@ -1292,24 +1300,15 @@ proxies:
   network: tcp
   tls: true
   servername: cdn9-33.vk-cdnvideo.com
-- name: V2Get🛰️ 2026-06-15 23:53
-  type: vless
-  server: love.ns.cloudflare.com
-  port: 80
-  uuid: f7e3ff36-276c-4477-b6d4-47257500d869
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /?ed=3000
-    headers:
-      Host: pon.antalmani.mm.am
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 01:16
+  - V2Get🛰️ 2026-06-19 00:48
+  - V2Get🛰️ 2026-06-17 17:13
   - V2Get🛰️ 2026-06-17 21:15
   - V2Get🛰️ 2026-06-20 01:10
   - V2Get🛰️ 2026-06-16 20:20
@@ -1335,7 +1334,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 01:00
   - V2Get🛰️ 2026-06-20 00:58
   - 'V2Get🛰️ 2026-06-20 00:58 #2'
-  - 'V2Get🛰️ 2026-06-20 00:58 #3'
   - V2Get🛰️ 2026-06-20 00:56
   - 'V2Get🛰️ 2026-06-20 00:56 #2'
   - 'V2Get🛰️ 2026-06-20 00:56 #3'
@@ -1346,7 +1344,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:55
   - 'V2Get🛰️ 2026-06-20 00:55 #2'
   - 'V2Get🛰️ 2026-06-20 00:55 #3'
-  - 'V2Get🛰️ 2026-06-20 00:55 #4'
   - V2Get🛰️ 2026-06-20 00:49
   - V2Get🛰️ 2026-06-19 19:39
   - 'V2Get🛰️ 2026-06-20 00:49 #2'
@@ -1374,7 +1371,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:20
   - V2Get🛰️ 2026-06-19 22:27
   - V2Get🛰️ 2026-06-19 23:25
-  - V2Get🛰️ 2026-06-19 00:48
+  - 'V2Get🛰️ 2026-06-19 00:48 #2'
   - V2Get🛰️ 2026-06-17 18:48
   - 'V2Get🛰️ 2026-06-19 17:25 #3'
   - V2Get🛰️ 2026-06-16 03:20
@@ -1409,13 +1406,15 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-18 20:19
-  - V2Get🛰️ 2026-06-15 23:53
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 01:16
+  - V2Get🛰️ 2026-06-19 00:48
+  - V2Get🛰️ 2026-06-17 17:13
   - V2Get🛰️ 2026-06-17 21:15
   - V2Get🛰️ 2026-06-20 01:10
   - V2Get🛰️ 2026-06-16 20:20
@@ -1441,7 +1440,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 01:00
   - V2Get🛰️ 2026-06-20 00:58
   - 'V2Get🛰️ 2026-06-20 00:58 #2'
-  - 'V2Get🛰️ 2026-06-20 00:58 #3'
   - V2Get🛰️ 2026-06-20 00:56
   - 'V2Get🛰️ 2026-06-20 00:56 #2'
   - 'V2Get🛰️ 2026-06-20 00:56 #3'
@@ -1452,7 +1450,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:55
   - 'V2Get🛰️ 2026-06-20 00:55 #2'
   - 'V2Get🛰️ 2026-06-20 00:55 #3'
-  - 'V2Get🛰️ 2026-06-20 00:55 #4'
   - V2Get🛰️ 2026-06-20 00:49
   - V2Get🛰️ 2026-06-19 19:39
   - 'V2Get🛰️ 2026-06-20 00:49 #2'
@@ -1480,7 +1477,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:20
   - V2Get🛰️ 2026-06-19 22:27
   - V2Get🛰️ 2026-06-19 23:25
-  - V2Get🛰️ 2026-06-19 00:48
+  - 'V2Get🛰️ 2026-06-19 00:48 #2'
   - V2Get🛰️ 2026-06-17 18:48
   - 'V2Get🛰️ 2026-06-19 17:25 #3'
   - V2Get🛰️ 2026-06-16 03:20
@@ -1515,7 +1512,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-18 20:19
-  - V2Get🛰️ 2026-06-15 23:53
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
