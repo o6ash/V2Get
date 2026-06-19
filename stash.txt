@@ -12,6 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 06:31
+  type: vless
+  server: 65.109.199.53
+  port: 52219
+  uuid: fbcc244f-07f3-43d2-91c9-cd51a8e29277
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
+    short-id: f8
+- name: V2Get🛰️ 2026-06-17 00:05
+  type: vless
+  server: 195.133.93.39
+  port: 443
+  uuid: 6743d75a-11d0-4428-8eef-ed0c13fc6b52
+  udp: true
+  network: grpc
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tehEdgeGxaEl2Rwke0ok5ojcJjamAXvnRhy_CBjilVM
+    short-id: 8610f67d462bdb76
+  grpc-opts:
+    grpc-service-name: Tel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAYTel:@VPN_KING_V2RAY
 - name: V2Get🛰️ 2026-06-19 05:28
   type: vless
   server: 65.109.199.53
@@ -733,24 +762,6 @@ proxies:
     short-id: 6ba85179e30d4fc2
   grpc-opts:
     grpc-service-name: xyz
-- name: V2Get🛰️ 2026-06-19 02:40
-  type: vless
-  server: mcifastly.hajimamadcloud.com.tr
-  port: 443
-  uuid: 083953b8-ef4b-4119-bb80-8f394bf9930e
-  udp: true
-  network: ws
-  tls: true
-  servername: global.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snappfood.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-18 20:41
   type: vless
   server: 165.227.236.227
@@ -887,20 +898,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: V2Get🛰️ 2026-06-17 04:25
-  type: vless
-  server: 162.159.44.7
-  port: 2053
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  udp: true
-  network: ws
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: josni.hoyes.cloudns.ch
 - name: V2Get🛰️ 2026-06-19 00:51
   type: vless
   server: reality2.pouriau.com
@@ -1010,6 +1007,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 06:31
+  - V2Get🛰️ 2026-06-17 00:05
   - V2Get🛰️ 2026-06-19 05:28
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-19 06:09
@@ -1071,7 +1070,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-19 02:50
   - 'V2Get🛰️ 2026-06-18 11:07 #2'
-  - V2Get🛰️ 2026-06-19 02:40
   - V2Get🛰️ 2026-06-18 20:41
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-15 19:42
@@ -1083,7 +1081,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 22:46
   - V2Get🛰️ 2026-06-19 02:19
   - V2Get🛰️ 2026-06-17 19:47
-  - V2Get🛰️ 2026-06-17 04:25
   - V2Get🛰️ 2026-06-19 00:51
   - V2Get🛰️ 2026-06-19 01:07
   - V2Get🛰️ 2026-06-15 20:41
@@ -1099,6 +1096,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 06:31
+  - V2Get🛰️ 2026-06-17 00:05
   - V2Get🛰️ 2026-06-19 05:28
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-19 06:09
@@ -1160,7 +1159,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-19 02:50
   - 'V2Get🛰️ 2026-06-18 11:07 #2'
-  - V2Get🛰️ 2026-06-19 02:40
   - V2Get🛰️ 2026-06-18 20:41
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-15 19:42
@@ -1172,7 +1170,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 22:46
   - V2Get🛰️ 2026-06-19 02:19
   - V2Get🛰️ 2026-06-17 19:47
-  - V2Get🛰️ 2026-06-17 04:25
   - V2Get🛰️ 2026-06-19 00:51
   - V2Get🛰️ 2026-06-19 01:07
   - V2Get🛰️ 2026-06-15 20:41
