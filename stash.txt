@@ -12,6 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 16:53
+  type: vless
+  server: client.jison.ir
+  port: 443
+  uuid: 06a368f4-e62e-4486-97a1-4c60bb7a0eed
+  udp: true
+  network: ws
+  tls: true
+  servername: fty.jison.ir
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sdt.jison.ir
 - name: V2Get🛰️ 2026-06-19 09:25
   type: vless
   server: 172.67.251.233
@@ -620,23 +637,6 @@ proxies:
     path: /
     headers:
       Host: rry3dos5a.ninemapps.com
-- name: V2Get🛰️ 2026-06-18 16:53
-  type: vless
-  server: client.jison.ir
-  port: 443
-  uuid: 06a368f4-e62e-4486-97a1-4c60bb7a0eed
-  udp: true
-  network: ws
-  tls: true
-  servername: fty.jison.ir
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sdt.jison.ir
 - name: V2Get🛰️ 2026-06-18 23:47
   type: vless
   server: 45.159.12.18
@@ -1132,6 +1132,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-19 09:25
   - 'V2Get🛰️ 2026-06-19 09:25 #2'
   - 'V2Get🛰️ 2026-06-19 09:25 #3'
@@ -1178,7 +1179,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 08:05
   - V2Get🛰️ 2026-06-19 08:00
   - V2Get🛰️ 2026-06-15 16:49
-  - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-18 23:47
   - V2Get🛰️ 2026-06-17 16:08
   - V2Get🛰️ 2026-06-16 12:36
@@ -1226,6 +1226,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-19 09:25
   - 'V2Get🛰️ 2026-06-19 09:25 #2'
   - 'V2Get🛰️ 2026-06-19 09:25 #3'
@@ -1272,7 +1273,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 08:05
   - V2Get🛰️ 2026-06-19 08:00
   - V2Get🛰️ 2026-06-15 16:49
-  - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-18 23:47
   - V2Get🛰️ 2026-06-17 16:08
   - V2Get🛰️ 2026-06-16 12:36
