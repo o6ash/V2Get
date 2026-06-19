@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 18:13
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: c2f0a8f0-36fe-4a94-824b-bca271ca642b
+  udp: true
+  network: ws
+  tls: true
+  servername: alphacdn.alphashops.shop
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: alphacdn.alphashops.shop
+- name: V2Get🛰️ 2026-06-19 17:15
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 41b90a88-64b3-4337-9c60-c901df3e5b44
+  udp: true
+  network: ws
+  tls: true
+  servername: t09.tzteam.online
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t09.tzteam.online
 - name: V2Get🛰️ 2026-06-20 02:17
   type: vless
   server: 13.212.207.241
@@ -286,20 +314,6 @@ proxies:
     path: /MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1
     headers:
       Host: summer-butterfly-21b6.mohsenzzx.workers.dev
-- name: V2Get🛰️ 2026-06-19 17:15
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 41b90a88-64b3-4337-9c60-c901df3e5b44
-  udp: true
-  network: ws
-  tls: true
-  servername: t09.tzteam.online
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: t09.tzteam.online
 - name: V2Get🛰️ 2026-06-20 02:13
   type: vless
   server: snapp.ir
@@ -1115,21 +1129,6 @@ proxies:
   reality-opts:
     public-key: IV870by48fv-uhnpCvJRrCCtahUqNAuvkPE4rE9sPEE
     short-id: abc950ff
-- name: V2Get🛰️ 2026-06-18 05:49
-  type: trojan
-  server: 151.101.1.194
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-s2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-18 20:19
   type: vless
   server: 46.229.243.145
@@ -1145,6 +1144,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 18:13
+  - V2Get🛰️ 2026-06-19 17:15
   - V2Get🛰️ 2026-06-20 02:17
   - 'V2Get🛰️ 2026-06-20 02:17 #2'
   - 'V2Get🛰️ 2026-06-20 02:17 #3'
@@ -1166,7 +1167,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 02:16 #11'
   - 'V2Get🛰️ 2026-06-20 02:16 #12'
   - V2Get🛰️ 2026-06-19 15:57
-  - V2Get🛰️ 2026-06-19 17:15
   - V2Get🛰️ 2026-06-20 02:13
   - V2Get🛰️ 2026-06-20 02:07
   - 'V2Get🛰️ 2026-06-20 02:07 #2'
@@ -1230,7 +1230,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:25
   - V2Get🛰️ 2026-06-19 23:21
   - V2Get🛰️ 2026-06-19 23:14
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-18 20:19
 - name: ♻️ Auto Select
   type: url-test
@@ -1238,6 +1237,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 18:13
+  - V2Get🛰️ 2026-06-19 17:15
   - V2Get🛰️ 2026-06-20 02:17
   - 'V2Get🛰️ 2026-06-20 02:17 #2'
   - 'V2Get🛰️ 2026-06-20 02:17 #3'
@@ -1259,7 +1260,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 02:16 #11'
   - 'V2Get🛰️ 2026-06-20 02:16 #12'
   - V2Get🛰️ 2026-06-19 15:57
-  - V2Get🛰️ 2026-06-19 17:15
   - V2Get🛰️ 2026-06-20 02:13
   - V2Get🛰️ 2026-06-20 02:07
   - 'V2Get🛰️ 2026-06-20 02:07 #2'
@@ -1323,7 +1323,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:25
   - V2Get🛰️ 2026-06-19 23:21
   - V2Get🛰️ 2026-06-19 23:14
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-18 20:19
 rules:
 - GEOIP,private,DIRECT,no-resolve
