@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 20:26
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9f135709-60a1-4a9b-b31c-78d326d8752a
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.middle.cc.cd
+  client-fingerprint: firefox
+  alpn:
+  - h3
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-06-15 19:36
   type: vmess
   server: node-fr.connectsuite.org
@@ -1072,23 +1086,6 @@ proxies:
   reality-opts:
     public-key: -g0bzNFN2Of9vbBXL5ZWXQ5GIrwS1uZlFPcmphN0PiI
     short-id: bbcdcac5
-- name: V2Get🛰️ 2026-06-19 01:01
-  type: vless
-  server: client.jison.ir
-  port: 443
-  uuid: 9c513774-57f1-4047-8d88-67544bb662f3
-  udp: true
-  network: ws
-  tls: true
-  servername: fty.jison.ir
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sdt.jison.ir
 - name: V2Get🛰️ 2026-06-19 01:07
   type: vless
   server: hikvision-plus.com
@@ -1212,6 +1209,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 20:26
   - V2Get🛰️ 2026-06-15 19:36
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-19 05:28
@@ -1301,7 +1299,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 16:02
   - V2Get🛰️ 2026-06-19 00:36
   - V2Get🛰️ 2026-06-19 00:51
-  - V2Get🛰️ 2026-06-19 01:01
   - V2Get🛰️ 2026-06-19 01:07
   - 'V2Get🛰️ 2026-06-19 01:29 #2'
   - V2Get🛰️ 2026-06-15 20:41
@@ -1318,6 +1315,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 20:26
   - V2Get🛰️ 2026-06-15 19:36
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-19 05:28
@@ -1407,7 +1405,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 16:02
   - V2Get🛰️ 2026-06-19 00:36
   - V2Get🛰️ 2026-06-19 00:51
-  - V2Get🛰️ 2026-06-19 01:01
   - V2Get🛰️ 2026-06-19 01:07
   - 'V2Get🛰️ 2026-06-19 01:29 #2'
   - V2Get🛰️ 2026-06-15 20:41
