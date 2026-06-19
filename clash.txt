@@ -12,6 +12,59 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 11:37
+  type: trojan
+  server: 104.21.18.41
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
+    headers:
+      Host: linkkon-w.ir
+- name: V2Get🛰️ 2026-06-18 14:17
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fa957c2e-2eef-42e6-804b-a2a16fab0781
+  udp: true
+  network: xhttp
+  tls: true
+  servername: us.dns.xn--q9jyb4c
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-06-20 01:31
+  type: vless
+  server: 188.114.97.6
+  port: 2053
+  uuid: e91968bc-2784-4a85-b482-2c09410b8b92
+  udp: true
+  network: ws
+  tls: true
+  servername: wIspy-FROg-Ad70.sfHuRFVhgEfYj.WORKErS.Dev
+  ws-opts:
+    path: /eyJqdW5rIjoieThXekpZYmQzOWFFN2FzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: wispy-frog-ad70.sfhurfvhgefyj.workers.dev
+- name: V2Get🛰️ 2026-06-20 01:19
+  type: vless
+  server: 104.21.12.61
+  port: 2087
+  uuid: 677c973a-8a3f-4d62-a941-0766b9d7886b
+  udp: true
+  network: ws
+  tls: true
+  servername: free.nadermusic.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /@naderkochike/join_for_more_configs!
+    headers:
+      Host: free.nadermusic.ir.
 - name: V2Get🛰️ 2026-06-18 16:53
   type: vless
   server: client.jison.ir
@@ -182,29 +235,6 @@ proxies:
   udp: true
   sni: www.spotwebs.click
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-16 00:25
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: V2Get🛰️ 2026-06-20 01:19
-  type: vless
-  server: 104.21.12.61
-  port: 2087
-  uuid: 677c973a-8a3f-4d62-a941-0766b9d7886b
-  udp: true
-  network: ws
-  tls: true
-  servername: free.nadermusic.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /@naderkochike/join_for_more_configs!
-    headers:
-      Host: free.nadermusic.ir.
 - name: 'V2Get🛰️ 2026-06-20 01:19 #2'
   type: vless
   server: 45.80.111.1
@@ -921,14 +951,6 @@ proxies:
   alpn:
   - h3
   - h2
-- name: V2Get🛰️ 2026-06-19 22:27
-  type: trojan
-  server: 83.228.230.226
-  port: 443
-  password: SoftNetConnect
-  udp: true
-  sni: www.yahoo.com
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-19 00:48 #2'
   type: trojan
   server: 45.130.125.126
@@ -1161,20 +1183,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-18 17:47
-  type: vless
-  server: 108.162.196.86
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
 - name: 'V2Get🛰️ 2026-06-19 23:40 #2'
   type: vless
   server: 162.249.126.60
@@ -1298,6 +1306,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-18 14:17
+  - V2Get🛰️ 2026-06-20 01:31
+  - V2Get🛰️ 2026-06-20 01:19
   - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-18 16:12
   - V2Get🛰️ 2026-06-18 16:35
@@ -1312,8 +1324,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 19:51
   - V2Get🛰️ 2026-06-20 01:01
   - V2Get🛰️ 2026-06-15 23:53
-  - V2Get🛰️ 2026-06-16 00:25
-  - V2Get🛰️ 2026-06-20 01:19
   - 'V2Get🛰️ 2026-06-20 01:19 #2'
   - 'V2Get🛰️ 2026-06-20 01:19 #3'
   - 'V2Get🛰️ 2026-06-20 01:19 #4'
@@ -1368,7 +1378,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-20 00:23
   - V2Get🛰️ 2026-06-20 00:20
-  - V2Get🛰️ 2026-06-19 22:27
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
   - V2Get🛰️ 2026-06-17 18:48
   - 'V2Get🛰️ 2026-06-19 17:25 #3'
@@ -1387,7 +1396,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 23:41 #2'
   - V2Get🛰️ 2026-06-19 00:30
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-18 17:47
   - 'V2Get🛰️ 2026-06-19 23:40 #2'
   - V2Get🛰️ 2026-06-19 19:24
   - V2Get🛰️ 2026-06-19 23:35
@@ -1404,6 +1412,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 11:37
+  - V2Get🛰️ 2026-06-18 14:17
+  - V2Get🛰️ 2026-06-20 01:31
+  - V2Get🛰️ 2026-06-20 01:19
   - V2Get🛰️ 2026-06-18 16:53
   - V2Get🛰️ 2026-06-18 16:12
   - V2Get🛰️ 2026-06-18 16:35
@@ -1418,8 +1430,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 19:51
   - V2Get🛰️ 2026-06-20 01:01
   - V2Get🛰️ 2026-06-15 23:53
-  - V2Get🛰️ 2026-06-16 00:25
-  - V2Get🛰️ 2026-06-20 01:19
   - 'V2Get🛰️ 2026-06-20 01:19 #2'
   - 'V2Get🛰️ 2026-06-20 01:19 #3'
   - 'V2Get🛰️ 2026-06-20 01:19 #4'
@@ -1474,7 +1484,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-20 00:23
   - V2Get🛰️ 2026-06-20 00:20
-  - V2Get🛰️ 2026-06-19 22:27
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
   - V2Get🛰️ 2026-06-17 18:48
   - 'V2Get🛰️ 2026-06-19 17:25 #3'
@@ -1493,7 +1502,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 23:41 #2'
   - V2Get🛰️ 2026-06-19 00:30
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-18 17:47
   - 'V2Get🛰️ 2026-06-19 23:40 #2'
   - V2Get🛰️ 2026-06-19 19:24
   - V2Get🛰️ 2026-06-19 23:35
