@@ -12,6 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 08:46
+  type: vless
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: V2Get🛰️ 2026-06-16 10:43
+  type: vless
+  server: 45.131.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: 'V2Get🛰️ 2026-06-19 08:46 #2'
+  type: vless
+  server: 185.191.118.133
+  port: 443
+  uuid: fb081516-90c5-4fb4-905a-a0b010a53b20
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.tradingview.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3Jd6aGidCvif3QMF5HczIiYvLGAD4t7mUVignyztHRY
+    short-id: 7f3e6a9d0c5b8214
 - name: V2Get🛰️ 2026-06-19 10:03
   type: trojan
   server: 63.183.26.234
@@ -197,18 +234,6 @@ proxies:
   reality-opts:
     public-key: EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGnLaL33k
     short-id: 3620820fe66d6731
-- name: V2Get🛰️ 2026-06-19 08:46
-  type: vless
-  server: 8.34.70.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime09.workers.dev
 - name: V2Get🛰️ 2026-06-16 10:59
   type: vless
   server: 89.22.238.213
@@ -315,18 +340,6 @@ proxies:
     path: index.html=mitivpn
     headers:
       Host: linkkon-a.ir
-- name: V2Get🛰️ 2026-06-16 10:43
-  type: vless
-  server: 45.131.7.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
 - name: V2Get🛰️ 2026-06-19 00:43
   type: vless
   server: 45.130.125.101
@@ -349,19 +362,6 @@ proxies:
   network: tcp
   tls: true
   servername: ams1.fromblancwithlove.com
-- name: 'V2Get🛰️ 2026-06-19 08:46 #2'
-  type: vless
-  server: 185.191.118.133
-  port: 443
-  uuid: fb081516-90c5-4fb4-905a-a0b010a53b20
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.tradingview.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 3Jd6aGidCvif3QMF5HczIiYvLGAD4t7mUVignyztHRY
-    short-id: 7f3e6a9d0c5b8214
 - name: 'V2Get🛰️ 2026-06-19 00:43 #2'
   type: vless
   server: 45.130.125.162
@@ -1281,6 +1281,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 08:46
+  - V2Get🛰️ 2026-06-16 10:43
+  - 'V2Get🛰️ 2026-06-19 08:46 #2'
   - V2Get🛰️ 2026-06-19 10:03
   - 'V2Get🛰️ 2026-06-19 10:03 #2'
   - V2Get🛰️ 2026-06-19 10:02
@@ -1296,7 +1299,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 16:58
   - V2Get🛰️ 2026-06-19 09:25
   - V2Get🛰️ 2026-06-15 17:12
-  - V2Get🛰️ 2026-06-19 08:46
   - V2Get🛰️ 2026-06-16 10:59
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-17 18:54
@@ -1305,10 +1307,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-17 22:42
   - V2Get🛰️ 2026-06-16 12:07
-  - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-19 00:43
   - V2Get🛰️ 2026-06-17 12:06
-  - 'V2Get🛰️ 2026-06-19 08:46 #2'
   - 'V2Get🛰️ 2026-06-19 00:43 #2'
   - V2Get🛰️ 2026-06-19 07:14
   - 'V2Get🛰️ 2026-06-19 07:14 #2'
@@ -1387,6 +1387,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 08:46
+  - V2Get🛰️ 2026-06-16 10:43
+  - 'V2Get🛰️ 2026-06-19 08:46 #2'
   - V2Get🛰️ 2026-06-19 10:03
   - 'V2Get🛰️ 2026-06-19 10:03 #2'
   - V2Get🛰️ 2026-06-19 10:02
@@ -1402,7 +1405,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 16:58
   - V2Get🛰️ 2026-06-19 09:25
   - V2Get🛰️ 2026-06-15 17:12
-  - V2Get🛰️ 2026-06-19 08:46
   - V2Get🛰️ 2026-06-16 10:59
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-17 18:54
@@ -1411,10 +1413,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-17 22:42
   - V2Get🛰️ 2026-06-16 12:07
-  - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-19 00:43
   - V2Get🛰️ 2026-06-17 12:06
-  - 'V2Get🛰️ 2026-06-19 08:46 #2'
   - 'V2Get🛰️ 2026-06-19 00:43 #2'
   - V2Get🛰️ 2026-06-19 07:14
   - 'V2Get🛰️ 2026-06-19 07:14 #2'
