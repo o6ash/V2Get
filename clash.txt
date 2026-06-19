@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 05:56
+  type: vless
+  server: 72.60.189.172
+  port: 443
+  uuid: f6f62b37-e002-42c2-8c32-51fe3da6750f
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ciEOYnFRicl1_ibRKw70jTDZKIMV7R88Qic4GpVzSXA
+    short-id: 55cbb453c4bea99b
 - name: V2Get🛰️ 2026-06-18 05:49
   type: trojan
   server: 151.101.110.219
@@ -77,18 +90,6 @@ proxies:
   alpn:
   - http/1.1
   - h2
-- name: 'V2Get🛰️ 2026-06-19 05:35 #2'
-  type: trojan
-  server: news.microsoft.com
-  port: 443
-  password: 87873670-6845-11f1-94a5-1239d0255272
-  udp: true
-  sni: uk1.test3.net
-  network: ws
-  ws-opts:
-    path: /howdy
-    headers:
-      Host: uk1.test3.net
 - name: V2Get🛰️ 2026-06-19 05:34
   type: trojan
   server: news.microsoft.com
@@ -1214,12 +1215,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 05:56
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-16 21:43
   - V2Get🛰️ 2026-06-19 05:35
-  - 'V2Get🛰️ 2026-06-19 05:35 #2'
   - V2Get🛰️ 2026-06-19 05:34
   - V2Get🛰️ 2026-06-19 05:28
   - V2Get🛰️ 2026-06-19 05:15
@@ -1320,12 +1321,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 05:56
   - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-16 21:43
   - V2Get🛰️ 2026-06-19 05:35
-  - 'V2Get🛰️ 2026-06-19 05:35 #2'
   - V2Get🛰️ 2026-06-19 05:34
   - V2Get🛰️ 2026-06-19 05:28
   - V2Get🛰️ 2026-06-19 05:15
