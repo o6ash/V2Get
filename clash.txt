@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 02:29
+  type: vless
+  server: 8.6.112.34
+  port: 443
+  uuid: a491b1c4-1141-4f59-9731-e0621f6e452f
+  udp: true
+  network: ws
+  tls: true
+  servername: website.yaroo383mardak.online
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /@mahdi_383ir
+    headers:
+      Host: website.yaroo383mardak.online
 - name: V2Get🛰️ 2026-06-19 23:14
   type: vless
   server: 3.146.135.219
@@ -1200,15 +1216,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-19 23:40
-  type: vless
-  server: 162.249.126.60
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn9-33.vk-cdnvideo.com
 - name: V2Get🛰️ 2026-06-18 20:19
   type: vless
   server: 46.229.243.145
@@ -1224,6 +1231,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-18 12:48
@@ -1322,7 +1330,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:38
   - V2Get🛰️ 2026-06-16 20:47
   - V2Get🛰️ 2026-06-16 11:00
-  - V2Get🛰️ 2026-06-19 23:40
   - V2Get🛰️ 2026-06-18 20:19
 - name: ♻️ Auto Select
   type: url-test
@@ -1330,6 +1337,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-18 12:48
@@ -1428,7 +1436,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 00:38
   - V2Get🛰️ 2026-06-16 20:47
   - V2Get🛰️ 2026-06-16 11:00
-  - V2Get🛰️ 2026-06-19 23:40
   - V2Get🛰️ 2026-06-18 20:19
 rules:
 - GEOIP,private,DIRECT,no-resolve
