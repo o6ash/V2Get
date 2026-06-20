@@ -12,6 +12,50 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 13:56
+  type: vless
+  server: 104.26.14.85
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+- name: V2Get🛰️ 2026-06-19 21:25
+  type: vless
+  server: www.speedtest.net
+  port: 8880
+  uuid: dc979488-6ece-49f2-821c-bfa7ecb3e061
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-19 15:25
+  type: vless
+  server: 217.28.48.29
+  port: 25752
+  uuid: 27f2ae85-3e15-4a9a-9c71-49ee032e7b26
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-15 17:59
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.robotdecorative.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.robotdecorative.com
 - name: V2Get🛰️ 2026-06-20 14:39
   type: vless
   server: 83.228.225.64
@@ -288,18 +332,6 @@ proxies:
     short-id: 01d1bf2d4755d40c
 - name: 'V2Get🛰️ 2026-06-20 18:07 #6'
   type: vless
-  server: 185.143.234.200
-  port: 8080
-  uuid: 70d47995-3b31-4da3-a76b-804df83c71ba
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn.namavax.ir
-- name: 'V2Get🛰️ 2026-06-20 18:07 #7'
-  type: vless
   server: 104.21.92.165
   port: 8443
   uuid: 1ee0113f-4f1d-4bb4-a581-ff8783a51fd2
@@ -315,7 +347,7 @@ proxies:
     path: /api/v2
     headers:
       Host: server1.downloadkhand.ir
-- name: 'V2Get🛰️ 2026-06-20 18:07 #8'
+- name: 'V2Get🛰️ 2026-06-20 18:07 #7'
   type: vless
   server: 104.16.174.39
   port: 443
@@ -445,18 +477,6 @@ proxies:
     path: api-v1
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: V2Get🛰️ 2026-06-20 18:02
-  type: vless
-  server: cctvhikvision.center
-  port: 2052
-  uuid: 51c44e72-6382-44bc-aed3-41933194577d
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /api-v1
-    headers:
-      Host: uwu.blueknightnet.qzz.io
 - name: V2Get🛰️ 2026-06-18 13:29
   type: vless
   server: bypass.fr-gt-01.com
@@ -498,20 +518,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-06-15 17:59
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.robotdecorative.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.robotdecorative.com
 - name: V2Get🛰️ 2026-06-18 23:15
   type: vless
   server: 188.114.97.6
@@ -993,21 +999,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-19 23:47
-  type: vless
-  server: s2.cvbesty.ir
-  port: 58784
-  uuid: 83bea1c3-4386-44cc-96de-e72e529a4244
-  udp: true
-  network: grpc
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: THDZjFEtOb85UM7wb9gMkaQeL2sJBarNw4RJ-mBrdWM
-    short-id: 3f5684
-  grpc-opts:
-    grpc-service-name: ''
 - name: V2Get🛰️ 2026-06-15 20:58
   type: vless
   server: 151.115.164.167
@@ -1185,6 +1176,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 13:56
+  - V2Get🛰️ 2026-06-19 21:25
+  - V2Get🛰️ 2026-06-19 15:25
+  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-20 14:39
   - V2Get🛰️ 2026-06-20 13:00
   - V2Get🛰️ 2026-06-20 18:10
@@ -1208,7 +1203,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-20 18:07 #6'
   - 'V2Get🛰️ 2026-06-20 18:07 #7'
-  - 'V2Get🛰️ 2026-06-20 18:07 #8'
   - V2Get🛰️ 2026-06-19 23:53
   - V2Get🛰️ 2026-06-20 17:52
   - V2Get🛰️ 2026-06-20 18:03
@@ -1219,11 +1213,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 18:03 #4'
   - 'V2Get🛰️ 2026-06-20 18:03 #5'
   - V2Get🛰️ 2026-06-15 18:40
-  - V2Get🛰️ 2026-06-20 18:02
   - V2Get🛰️ 2026-06-18 13:29
   - V2Get🛰️ 2026-06-19 11:36
   - V2Get🛰️ 2026-06-19 11:28
-  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-18 23:15
   - V2Get🛰️ 2026-06-16 13:57
   - V2Get🛰️ 2026-06-20 12:25
@@ -1263,7 +1255,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:11
   - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-19 23:47
   - V2Get🛰️ 2026-06-15 20:58
   - V2Get🛰️ 2026-06-15 17:28
   - V2Get🛰️ 2026-06-20 00:58
@@ -1284,6 +1275,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 13:56
+  - V2Get🛰️ 2026-06-19 21:25
+  - V2Get🛰️ 2026-06-19 15:25
+  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-20 14:39
   - V2Get🛰️ 2026-06-20 13:00
   - V2Get🛰️ 2026-06-20 18:10
@@ -1307,7 +1302,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-20 18:07 #6'
   - 'V2Get🛰️ 2026-06-20 18:07 #7'
-  - 'V2Get🛰️ 2026-06-20 18:07 #8'
   - V2Get🛰️ 2026-06-19 23:53
   - V2Get🛰️ 2026-06-20 17:52
   - V2Get🛰️ 2026-06-20 18:03
@@ -1318,11 +1312,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 18:03 #4'
   - 'V2Get🛰️ 2026-06-20 18:03 #5'
   - V2Get🛰️ 2026-06-15 18:40
-  - V2Get🛰️ 2026-06-20 18:02
   - V2Get🛰️ 2026-06-18 13:29
   - V2Get🛰️ 2026-06-19 11:36
   - V2Get🛰️ 2026-06-19 11:28
-  - V2Get🛰️ 2026-06-15 17:59
   - V2Get🛰️ 2026-06-18 23:15
   - V2Get🛰️ 2026-06-16 13:57
   - V2Get🛰️ 2026-06-20 12:25
@@ -1362,7 +1354,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:11
   - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-19 23:47
   - V2Get🛰️ 2026-06-15 20:58
   - V2Get🛰️ 2026-06-15 17:28
   - V2Get🛰️ 2026-06-20 00:58
