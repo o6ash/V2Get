@@ -12,20 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-20 12:25
-  type: vless
-  server: 185.147.127.101
-  port: 40443
-  uuid: 1a5d6dea-3769-43b1-a39d-7225cf01b2bd
+- name: V2Get🛰️ 2026-06-18 05:49
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MiTiVPN
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: a-GLfBU_yhZcBKPODh1zl-Ypj-jm4nYN_fkHBhMGAGs
-    short-id: d56f
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-20 11:46
+  type: trojan
+  server: 140.248.185.253
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-s2.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-06-20 11:46 #2'
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -40,6 +57,19 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-20 12:25
+  type: vless
+  server: 185.147.127.101
+  port: 40443
+  uuid: 1a5d6dea-3769-43b1-a39d-7225cf01b2bd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  reality-opts:
+    public-key: a-GLfBU_yhZcBKPODh1zl-Ypj-jm4nYN_fkHBhMGAGs
+    short-id: d56f
 - name: V2Get🛰️ 2026-06-16 20:10
   type: vless
   server: 79.127.240.44
@@ -57,36 +87,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-20 11:46 #2'
-  type: trojan
-  server: 140.248.185.253
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-s2.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-18 05:49
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-06-20 14:38 #2'
   type: vless
   server: mio.game2lizard.com
@@ -941,12 +941,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-20 12:25
+  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-20 11:46
+  - 'V2Get🛰️ 2026-06-20 11:46 #2'
+  - V2Get🛰️ 2026-06-20 12:25
   - V2Get🛰️ 2026-06-16 20:10
   - V2Get🛰️ 2026-06-20 14:38
-  - 'V2Get🛰️ 2026-06-20 11:46 #2'
-  - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-20 14:38 #2'
   - V2Get🛰️ 2026-06-20 14:49
   - V2Get🛰️ 2026-06-20 11:53
@@ -1022,12 +1022,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-20 12:25
+  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-20 11:46
+  - 'V2Get🛰️ 2026-06-20 11:46 #2'
+  - V2Get🛰️ 2026-06-20 12:25
   - V2Get🛰️ 2026-06-16 20:10
   - V2Get🛰️ 2026-06-20 14:38
-  - 'V2Get🛰️ 2026-06-20 11:46 #2'
-  - V2Get🛰️ 2026-06-18 05:49
   - 'V2Get🛰️ 2026-06-20 14:38 #2'
   - V2Get🛰️ 2026-06-20 14:49
   - V2Get🛰️ 2026-06-20 11:53
