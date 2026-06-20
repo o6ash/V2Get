@@ -12,6 +12,76 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 00:01
+  type: vless
+  server: 91.107.155.189
+  port: 2053
+  uuid: 7c47eb1d-58b3-4019-9c4c-3ad3df670cfa
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.amazon.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: _OgIJfIF-EODjjW67wOmdVzqeehBLxcV68jOfwe9rU0
+    short-id: 16d00b55
+- name: 'V2Get🛰️ 2026-06-21 00:01 #2'
+  type: trojan
+  server: 66.33.23.33
+  port: 443
+  password: ec797c83-0b8d-4d5c-b556-1d786ca074c3
+  udp: true
+  sni: r-production-260d.up.railway.app
+  network: ws
+  ws-opts:
+    path: /tj
+    headers:
+      Host: r-production-260d.up.railway.app
+- name: V2Get🛰️ 2026-06-20 23:59
+  type: vless
+  server: 66.33.23.33
+  port: 443
+  uuid: ec797c83-0b8d-4d5c-b556-1d786ca074c3
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-production-260d.up.railway.app
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-06-20 20:37
+  type: vless
+  server: thomas.proxy.rlwy.net
+  port: 39392
+  uuid: ec797c83-0b8d-4d5c-b556-1d786ca074c3
+  udp: true
+  network: xhttp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: CrEL0U-ugDvMuUfmR5sM0GLZryu7oDMmA-3v812Vljo
+    short-id: 0123456789abcdef
+- name: V2Get🛰️ 2026-06-20 16:13
+  type: vless
+  server: 141.193.154.182
+  port: 10000
+  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-19 00:48
+  type: trojan
+  server: 45.130.125.126
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.multiplydose.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 - name: V2Get🛰️ 2026-06-18 12:58
   type: vless
   server: www.speedtest.net
@@ -133,19 +203,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: V2Get🛰️ 2026-06-20 20:37
-  type: vless
-  server: thomas.proxy.rlwy.net
-  port: 39392
-  uuid: ec797c83-0b8d-4d5c-b556-1d786ca074c3
-  udp: true
-  network: xhttp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CrEL0U-ugDvMuUfmR5sM0GLZryu7oDMmA-3v812Vljo
-    short-id: 0123456789abcdef
 - name: V2Get🛰️ 2026-06-17 10:38
   type: vless
   server: 104.26.12.222
@@ -188,14 +245,6 @@ proxies:
   password: SoftNetConnect
   udp: true
   sni: www.yahoo.com
-- name: V2Get🛰️ 2026-06-20 16:13
-  type: vless
-  server: 141.193.154.182
-  port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-20 19:30 #3'
   type: trojan
   server: 83.228.224.161
@@ -278,18 +327,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-19 00:48
-  type: trojan
-  server: 45.130.125.126
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
 - name: V2Get🛰️ 2026-06-20 23:48
   type: ss
   server: 159.69.21.145
@@ -562,16 +599,6 @@ proxies:
     path: /ws/9229da01-d8d4-0d1a-0e33-eb59a8b25234
     headers:
       Host: rvg-production-3182.up.railway.app
-- name: V2Get🛰️ 2026-06-16 10:43
-  type: vless
-  server: 46.229.243.140
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn3-87.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-17 11:37
   type: trojan
   server: 104.21.18.41
@@ -757,29 +784,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-06-20 20:59 #2'
   type: vless
   server: fin.oplatasite.ru
-  port: 8443
-  uuid: 9cc56b5d-2a44-4fd1-91e3-659b06255c11
-  udp: true
-  network: tcp
-  tls: true
-  servername: vpn.oplatasite.ru
-  client-fingerprint: edge
-- name: 'V2Get🛰️ 2026-06-19 00:48 #3'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  udp: true
-  network: ws
-  tls: true
-  servername: vangoghhh.info
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: 'V2Get🛰️ 2026-06-20 20:59 #3'
-  type: vless
-  server: nl.oplatasite.ru
   port: 8443
   uuid: 9cc56b5d-2a44-4fd1-91e3-659b06255c11
   udp: true
@@ -1182,6 +1186,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 00:01
+  - 'V2Get🛰️ 2026-06-21 00:01 #2'
+  - V2Get🛰️ 2026-06-20 23:59
+  - V2Get🛰️ 2026-06-20 20:37
+  - V2Get🛰️ 2026-06-20 16:13
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-18 12:58
   - V2Get🛰️ 2026-06-20 19:30
   - V2Get🛰️ 2026-06-20 12:55
@@ -1192,12 +1202,10 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 01:19
   - V2Get🛰️ 2026-06-18 12:59
   - 'V2Get🛰️ 2026-06-18 12:59 #2'
-  - V2Get🛰️ 2026-06-20 20:37
   - V2Get🛰️ 2026-06-17 10:38
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-20 20:59
   - 'V2Get🛰️ 2026-06-20 19:30 #2'
-  - V2Get🛰️ 2026-06-20 16:13
   - 'V2Get🛰️ 2026-06-20 19:30 #3'
   - V2Get🛰️ 2026-06-18 12:48
   - 'V2Get🛰️ 2026-06-20 19:30 #4'
@@ -1205,7 +1213,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 20:34
   - V2Get🛰️ 2026-06-20 23:31
   - V2Get🛰️ 2026-06-18 05:49
-  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-20 23:48
   - V2Get🛰️ 2026-06-20 23:47
   - V2Get🛰️ 2026-06-15 21:14
@@ -1230,7 +1237,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-16 10:59
   - V2Get🛰️ 2026-06-20 23:32
-  - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-18 23:15
@@ -1247,8 +1253,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 23:09 #2'
   - 'V2Get🛰️ 2026-06-20 23:00 #2'
   - 'V2Get🛰️ 2026-06-20 20:59 #2'
-  - 'V2Get🛰️ 2026-06-19 00:48 #3'
-  - 'V2Get🛰️ 2026-06-20 20:59 #3'
   - V2Get🛰️ 2026-06-19 21:55
   - 'V2Get🛰️ 2026-06-20 22:44 #2'
   - V2Get🛰️ 2026-06-20 22:45
@@ -1287,6 +1291,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 00:01
+  - 'V2Get🛰️ 2026-06-21 00:01 #2'
+  - V2Get🛰️ 2026-06-20 23:59
+  - V2Get🛰️ 2026-06-20 20:37
+  - V2Get🛰️ 2026-06-20 16:13
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-18 12:58
   - V2Get🛰️ 2026-06-20 19:30
   - V2Get🛰️ 2026-06-20 12:55
@@ -1297,12 +1307,10 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 01:19
   - V2Get🛰️ 2026-06-18 12:59
   - 'V2Get🛰️ 2026-06-18 12:59 #2'
-  - V2Get🛰️ 2026-06-20 20:37
   - V2Get🛰️ 2026-06-17 10:38
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-20 20:59
   - 'V2Get🛰️ 2026-06-20 19:30 #2'
-  - V2Get🛰️ 2026-06-20 16:13
   - 'V2Get🛰️ 2026-06-20 19:30 #3'
   - V2Get🛰️ 2026-06-18 12:48
   - 'V2Get🛰️ 2026-06-20 19:30 #4'
@@ -1310,7 +1318,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 20:34
   - V2Get🛰️ 2026-06-20 23:31
   - V2Get🛰️ 2026-06-18 05:49
-  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-20 23:48
   - V2Get🛰️ 2026-06-20 23:47
   - V2Get🛰️ 2026-06-15 21:14
@@ -1335,7 +1342,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-16 10:59
   - V2Get🛰️ 2026-06-20 23:32
-  - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-17 11:37
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-18 23:15
@@ -1352,8 +1358,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-20 23:09 #2'
   - 'V2Get🛰️ 2026-06-20 23:00 #2'
   - 'V2Get🛰️ 2026-06-20 20:59 #2'
-  - 'V2Get🛰️ 2026-06-19 00:48 #3'
-  - 'V2Get🛰️ 2026-06-20 20:59 #3'
   - V2Get🛰️ 2026-06-19 21:55
   - 'V2Get🛰️ 2026-06-20 22:44 #2'
   - V2Get🛰️ 2026-06-20 22:45
