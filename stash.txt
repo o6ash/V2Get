@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 20:00
+  type: vless
+  server: 104.16.72.70
+  port: 443
+  uuid: 9f135709-60a1-4a9b-b31c-78d326d8752a
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.middle.cc.cd
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-06-20 18:07
   type: vless
   server: 104.21.92.165
@@ -29,20 +41,6 @@ proxies:
     path: /api/v2
     headers:
       Host: server1.downloadkhand.ir
-- name: V2Get🛰️ 2026-06-19 15:57
-  type: vless
-  server: 104.18.34.140
-  port: 443
-  uuid: 9ce7ac33-5004-40ea-8236-15bc2d25a37c
-  udp: true
-  network: ws
-  tls: true
-  servername: summer-butterfly-21b6.mohsenzzx.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1-MaSTeRSeRVeR1
-    headers:
-      Host: summer-butterfly-21b6.mohsenzzx.workers.dev
 - name: V2Get🛰️ 2026-06-20 18:22
   type: vless
   server: kilime.xubi.org
@@ -924,8 +922,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 20:00
   - V2Get🛰️ 2026-06-20 18:07
-  - V2Get🛰️ 2026-06-19 15:57
   - V2Get🛰️ 2026-06-20 18:22
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-20 18:21
@@ -1002,8 +1000,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 20:00
   - V2Get🛰️ 2026-06-20 18:07
-  - V2Get🛰️ 2026-06-19 15:57
   - V2Get🛰️ 2026-06-20 18:22
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-20 18:21
