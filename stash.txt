@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 15:46
+  type: vless
+  server: italy.mymarzban.com
+  port: 5000
+  uuid: dc979488-6ece-49f2-821c-bfa7ecb3e061
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+- name: V2Get🛰️ 2026-06-19 17:52
+  type: vless
+  server: 116.203.78.220
+  port: 14099
+  uuid: 4d3c389c-8477-4875-aa65-dabf2c303de8
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-19 19:20
+  type: vless
+  server: 18.185.25.147
+  port: 443
+  uuid: c430370a-4b00-4686-bfb9-36ef1b989dcd
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-19 19:00
   type: vless
   server: 172.66.3.252
@@ -367,14 +395,6 @@ proxies:
   reality-opts:
     public-key: 6FTPxkRxzV_0Hb7lNCmNkUqnk-OdOJ-Ao1qPYa_-21g
     short-id: d7abeb515312dc2f
-- name: V2Get🛰️ 2026-06-19 19:20
-  type: vless
-  server: 18.185.25.147
-  port: 443
-  uuid: c430370a-4b00-4686-bfb9-36ef1b989dcd
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-20 04:27
   type: vless
   server: thomas.proxy.rlwy.net
@@ -876,14 +896,6 @@ proxies:
   reality-opts:
     public-key: 65T6l7e51lwKu1rzQ4FgqVPe-JyG43IqPLw6r9U2v10
     short-id: 0befa76540b5db79
-- name: 'V2Get🛰️ 2026-06-15 18:28 #2'
-  type: vless
-  server: cdn9-33.vk-cdnvideo.com
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
 - name: V2Get🛰️ 2026-06-20 12:26
   type: vless
   server: 89.208.113.157
@@ -1131,19 +1143,6 @@ proxies:
   reality-opts:
     public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
     short-id: f8
-- name: V2Get🛰️ 2026-06-20 11:11
-  type: vless
-  server: 94.156.179.71
-  port: 443
-  uuid: 967064b5-3272-431e-8dce-9519acfb94be
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de2.zestful.bond
-  reality-opts:
-    public-key: KS0F6q2PTY1s6y2sH5PdrznYqprIkUBtS1masvcrJjo
-    short-id: 823257b7b9ab9d02
 - name: V2Get🛰️ 2026-06-20 12:09
   type: vless
   server: swelight.soltankabos.ir
@@ -1164,6 +1163,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 15:46
+  - V2Get🛰️ 2026-06-19 17:52
+  - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-19 15:57
   - V2Get🛰️ 2026-06-16 03:17
@@ -1193,7 +1195,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-20 00:46
-  - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-20 04:27
   - V2Get🛰️ 2026-06-20 14:06
   - 'V2Get🛰️ 2026-06-20 14:06 #2'
@@ -1234,7 +1235,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 13:17
   - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-20 13:18
-  - 'V2Get🛰️ 2026-06-15 18:28 #2'
   - V2Get🛰️ 2026-06-20 12:26
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-15 19:10
@@ -1255,7 +1255,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 12:04
   - V2Get🛰️ 2026-06-20 12:34
   - V2Get🛰️ 2026-06-20 12:33
-  - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-20 12:09
 - name: ♻️ Auto Select
   type: url-test
@@ -1263,6 +1262,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 15:46
+  - V2Get🛰️ 2026-06-19 17:52
+  - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-19 15:57
   - V2Get🛰️ 2026-06-16 03:17
@@ -1292,7 +1294,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-20 00:46
-  - V2Get🛰️ 2026-06-19 19:20
   - V2Get🛰️ 2026-06-20 04:27
   - V2Get🛰️ 2026-06-20 14:06
   - 'V2Get🛰️ 2026-06-20 14:06 #2'
@@ -1333,7 +1334,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 13:17
   - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-20 13:18
-  - 'V2Get🛰️ 2026-06-15 18:28 #2'
   - V2Get🛰️ 2026-06-20 12:26
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-15 19:10
@@ -1354,7 +1354,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 12:04
   - V2Get🛰️ 2026-06-20 12:34
   - V2Get🛰️ 2026-06-20 12:33
-  - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-20 12:09
 rules:
 - GEOIP,private,DIRECT,no-resolve
