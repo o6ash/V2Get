@@ -12,6 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 00:55
+  type: vless
+  server: tmesubgift.up.railway.app
+  port: 443
+  uuid: 0b2c62fb-f1d2-dcec-1159-b7084862501c
+  udp: true
+  network: ws
+  tls: true
+  servername: tmesubgift.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/0b2c62fb-f1d2-dcec-1159-b7084862501c
+    headers:
+      Host: tmesubgift.up.railway.app
+- name: V2Get🛰️ 2026-06-16 12:08
+  type: vless
+  server: 45.130.125.158
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  udp: true
+  network: ws
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  client-fingerprint: ios
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
 - name: V2Get🛰️ 2026-06-21 00:49
   type: vless
   server: 104.21.65.231
@@ -102,18 +136,6 @@ proxies:
   reality-opts:
     public-key: IiXOtrr72OAumtdjHDdvqxwyiInUq8_5b2wG477U40k
     short-id: cee5cf0cb56d9912
-- name: V2Get🛰️ 2026-06-21 00:40
-  type: vless
-  server: 65.21.109.91
-  port: 80
-  uuid: 0c7b248c-f51a-4afc-a174-fdf320f1fa1d
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /notbin
-    headers:
-      Host: speedtest.com
 - name: V2Get🛰️ 2026-06-20 23:43
   type: vless
   server: 104.26.2.228
@@ -1175,30 +1197,14 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-16 12:08
-  type: vless
-  server: 45.130.125.158
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  network: ws
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  client-fingerprint: ios
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 00:55
+  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-21 00:49
   - 'V2Get🛰️ 2026-06-21 00:49 #2'
   - 'V2Get🛰️ 2026-06-21 00:49 #3'
@@ -1207,7 +1213,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:47
   - V2Get🛰️ 2026-06-20 20:37
   - V2Get🛰️ 2026-06-21 00:44
-  - V2Get🛰️ 2026-06-21 00:40
   - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-20 19:04
   - V2Get🛰️ 2026-06-20 23:04
@@ -1298,13 +1303,14 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 22:13
   - V2Get🛰️ 2026-06-20 20:07
   - V2Get🛰️ 2026-06-15 22:56
-  - V2Get🛰️ 2026-06-16 12:08
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 00:55
+  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-21 00:49
   - 'V2Get🛰️ 2026-06-21 00:49 #2'
   - 'V2Get🛰️ 2026-06-21 00:49 #3'
@@ -1313,7 +1319,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:47
   - V2Get🛰️ 2026-06-20 20:37
   - V2Get🛰️ 2026-06-21 00:44
-  - V2Get🛰️ 2026-06-21 00:40
   - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-20 19:04
   - V2Get🛰️ 2026-06-20 23:04
@@ -1404,7 +1409,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 22:13
   - V2Get🛰️ 2026-06-20 20:07
   - V2Get🛰️ 2026-06-15 22:56
-  - V2Get🛰️ 2026-06-16 12:08
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
