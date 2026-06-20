@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 02:22
+  type: vless
+  server: 65.109.219.2
+  port: 110
+  uuid: bb789aaa-c07a-47ae-987f-5adba035e8c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-21 01:59
+  type: vless
+  server: 65.109.219.2
+  port: 52219
+  uuid: 39e01e3e-5161-43e0-9a27-cc3316177466
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.oracle.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
+    short-id: f8
 - name: V2Get🛰️ 2026-06-16 01:06
   type: vless
   server: 88.218.120.60
@@ -26,20 +47,6 @@ proxies:
   reality-opts:
     public-key: -psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg
     short-id: 612d8fa72c
-- name: V2Get🛰️ 2026-06-21 02:12
-  type: vless
-  server: cd6.videobazi.com
-  port: 443
-  uuid: 070136f6-727e-045f-a9ff-7c985988bb8a
-  udp: true
-  network: ws
-  tls: true
-  servername: yellow-firefly-7c08.ping51429.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sync
-    headers:
-      Host: yellow-firefly-7c08.ping51429.workers.dev
 - name: V2Get🛰️ 2026-06-17 13:49
   type: vless
   server: 188.114.97.4
@@ -233,19 +240,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-21 01:59
-  type: vless
-  server: 65.109.219.2
-  port: 52219
-  uuid: 39e01e3e-5161-43e0-9a27-cc3316177466
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.oracle.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
-    short-id: f8
 - name: V2Get🛰️ 2026-06-17 19:00
   type: vless
   server: 46.246.34.10
@@ -1215,8 +1209,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 02:22
+  - V2Get🛰️ 2026-06-21 01:59
   - V2Get🛰️ 2026-06-16 01:06
-  - V2Get🛰️ 2026-06-21 02:12
   - V2Get🛰️ 2026-06-17 13:49
   - V2Get🛰️ 2026-06-21 00:01
   - V2Get🛰️ 2026-06-18 17:47
@@ -1233,7 +1228,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 00:49 #2'
   - 'V2Get🛰️ 2026-06-21 00:49 #3'
   - 'V2Get🛰️ 2026-06-21 00:49 #4'
-  - V2Get🛰️ 2026-06-21 01:59
   - V2Get🛰️ 2026-06-17 19:00
   - 'V2Get🛰️ 2026-06-21 00:49 #5'
   - V2Get🛰️ 2026-06-20 23:32
@@ -1321,8 +1315,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 02:22
+  - V2Get🛰️ 2026-06-21 01:59
   - V2Get🛰️ 2026-06-16 01:06
-  - V2Get🛰️ 2026-06-21 02:12
   - V2Get🛰️ 2026-06-17 13:49
   - V2Get🛰️ 2026-06-21 00:01
   - V2Get🛰️ 2026-06-18 17:47
@@ -1339,7 +1334,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 00:49 #2'
   - 'V2Get🛰️ 2026-06-21 00:49 #3'
   - 'V2Get🛰️ 2026-06-21 00:49 #4'
-  - V2Get🛰️ 2026-06-21 01:59
   - V2Get🛰️ 2026-06-17 19:00
   - 'V2Get🛰️ 2026-06-21 00:49 #5'
   - V2Get🛰️ 2026-06-20 23:32
