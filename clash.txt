@@ -12,6 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 18:00
+  type: vless
+  server: 95.182.80.48
+  port: 15370
+  uuid: 8e13e299-1bbf-46da-a297-8ee19fe4c914
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: oYCopzg1jDV54b-i8nR9_ULi7uivm_qfCM95LwRBfXU
+    short-id: '61'
+- name: V2Get🛰️ 2026-06-20 06:17
+  type: vless
+  server: poland.mymarzban.com
+  port: 5000
+  uuid: 6270a1e6-44ab-4f9d-8d0f-b313a7f97c51
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+- name: V2Get🛰️ 2026-06-19 02:51
+  type: vless
+  server: z9.asamping.ir
+  port: 2052
+  uuid: e0346ac5-f345-44d9-a969-54378934e49f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: z5.asamping.ir
 - name: V2Get🛰️ 2026-06-20 10:03
   type: trojan
   server: 63.181.146.220
@@ -209,18 +246,6 @@ proxies:
     path: /rdfgtws
     headers:
       Host: vangoghhh.info
-- name: V2Get🛰️ 2026-06-19 02:51
-  type: vless
-  server: z9.asamping.ir
-  port: 2052
-  uuid: e0346ac5-f345-44d9-a969-54378934e49f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: z5.asamping.ir
 - name: V2Get🛰️ 2026-06-17 10:39
   type: trojan
   server: 188.114.97.6
@@ -1091,19 +1116,6 @@ proxies:
   reality-opts:
     public-key: v0vhjyFJPMzOUrM5l1PgoQCr83mHd1rNAIK2hi8ID1s
     short-id: a8
-- name: V2Get🛰️ 2026-06-20 07:12
-  type: vless
-  server: karandish.mahkocholo.com
-  port: 58055
-  uuid: abf52aa8-efd8-4849-8ded-fda151d4308b
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: eiDyRuMGa0Jyb2Ff4w1Pb7zTri5h38R2w0kZj0uksF4
-    short-id: 374b32ed91f8f023
 - name: V2Get🛰️ 2026-06-15 21:40
   type: ss
   server: 82.38.31.181
@@ -1138,22 +1150,6 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-06-16 02:29
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: a491b1c4-1141-4f59-9731-e0621f6e452f
-  udp: true
-  network: ws
-  tls: true
-  servername: website.yaroo383mardak.online
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /@mahdi_383ir
-    headers:
-      Host: website.yaroo383mardak.online
 - name: V2Get🛰️ 2026-06-20 06:13
   type: vmess
   server: 160.250.247.70
@@ -1234,6 +1230,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 18:00
+  - V2Get🛰️ 2026-06-20 06:17
+  - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-20 10:03
   - 'V2Get🛰️ 2026-06-20 10:03 #2'
   - V2Get🛰️ 2026-06-18 12:48
@@ -1250,7 +1249,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 09:32
   - V2Get🛰️ 2026-06-19 19:00
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
-  - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-17 18:48
@@ -1322,11 +1320,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 20:59
   - V2Get🛰️ 2026-06-20 00:46
   - V2Get🛰️ 2026-06-20 07:57
-  - V2Get🛰️ 2026-06-20 07:12
   - V2Get🛰️ 2026-06-15 21:40
   - V2Get🛰️ 2026-06-16 23:38
   - V2Get🛰️ 2026-06-16 20:26
-  - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-20 06:13
   - V2Get🛰️ 2026-06-20 00:56
   - V2Get🛰️ 2026-06-16 23:35
@@ -1339,6 +1335,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 18:00
+  - V2Get🛰️ 2026-06-20 06:17
+  - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-20 10:03
   - 'V2Get🛰️ 2026-06-20 10:03 #2'
   - V2Get🛰️ 2026-06-18 12:48
@@ -1355,7 +1354,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 09:32
   - V2Get🛰️ 2026-06-19 19:00
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
-  - V2Get🛰️ 2026-06-19 02:51
   - V2Get🛰️ 2026-06-17 10:39
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-17 18:48
@@ -1427,11 +1425,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 20:59
   - V2Get🛰️ 2026-06-20 00:46
   - V2Get🛰️ 2026-06-20 07:57
-  - V2Get🛰️ 2026-06-20 07:12
   - V2Get🛰️ 2026-06-15 21:40
   - V2Get🛰️ 2026-06-16 23:38
   - V2Get🛰️ 2026-06-16 20:26
-  - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-20 06:13
   - V2Get🛰️ 2026-06-20 00:56
   - V2Get🛰️ 2026-06-16 23:35
