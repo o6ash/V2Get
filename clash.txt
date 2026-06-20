@@ -12,6 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 00:49
+  type: vless
+  server: snapp.ir
+  port: 2087
+  uuid: 7263fa75-a100-4dd6-3093-e45eadd73733
+  udp: true
+  network: ws
+  tls: true
+  servername: dns.rorvex.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /BetForward
+    headers:
+      Host: dns.rorvex.ir
+- name: V2Get🛰️ 2026-06-19 02:51
+  type: vless
+  server: z9.asamping.ir
+  port: 2052
+  uuid: e0346ac5-f345-44d9-a969-54378934e49f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: z5.asamping.ir
+- name: V2Get🛰️ 2026-06-20 09:07
+  type: vless
+  server: 188.114.99.160
+  port: 8443
+  uuid: 608dbf39-ad3d-462f-a177-81752f8e87ce
+  udp: true
+  network: ws
+  tls: true
+  servername: server.movies-centerdigi.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: server.movies-centerdigi.ir
 - name: V2Get🛰️ 2026-06-16 02:01
   type: vless
   server: sca29.myfymain.com
@@ -49,18 +92,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-06-19 02:51
-  type: vless
-  server: z9.asamping.ir
-  port: 2052
-  uuid: e0346ac5-f345-44d9-a969-54378934e49f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: z5.asamping.ir
 - name: 'V2Get🛰️ 2026-06-20 08:43 #3'
   type: vless
   server: s8.meoshop.ir
@@ -503,23 +534,6 @@ proxies:
   network: tcp
   tls: true
   servername: ams1.fromblancwithlove.com
-- name: V2Get🛰️ 2026-06-20 09:07
-  type: vless
-  server: 188.114.99.160
-  port: 8443
-  uuid: 608dbf39-ad3d-462f-a177-81752f8e87ce
-  udp: true
-  network: ws
-  tls: true
-  servername: server.movies-centerdigi.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: server.movies-centerdigi.ir
 - name: 'V2Get🛰️ 2026-06-18 10:30 #2'
   type: vless
   server: 185.229.191.41
@@ -630,20 +644,6 @@ proxies:
   alpn:
   - http/1.1
   - h2
-- name: V2Get🛰️ 2026-06-19 21:56
-  type: vless
-  server: 45.198.87.15
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
 - name: V2Get🛰️ 2026-06-15 18:29
   type: vless
   server: 89.169.39.55
@@ -1181,7 +1181,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-06-20 00:49
+- name: 'V2Get🛰️ 2026-06-20 00:49 #2'
   type: vless
   server: snapp.ir
   port: 2087
@@ -1201,10 +1201,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 00:49
+  - V2Get🛰️ 2026-06-19 02:51
+  - V2Get🛰️ 2026-06-20 09:07
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-20 08:43
   - 'V2Get🛰️ 2026-06-20 08:43 #2'
-  - V2Get🛰️ 2026-06-19 02:51
   - 'V2Get🛰️ 2026-06-20 08:43 #3'
   - 'V2Get🛰️ 2026-06-20 08:43 #4'
   - V2Get🛰️ 2026-06-20 09:16
@@ -1243,7 +1245,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 16:38
   - 'V2Get🛰️ 2026-06-19 16:38 #2'
   - V2Get🛰️ 2026-06-18 10:30
-  - V2Get🛰️ 2026-06-20 09:07
   - 'V2Get🛰️ 2026-06-18 10:30 #2'
   - V2Get🛰️ 2026-06-18 12:05
   - V2Get🛰️ 2026-06-16 06:22
@@ -1253,7 +1254,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-19 13:00
-  - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-19 21:51
   - V2Get🛰️ 2026-06-16 00:22
@@ -1298,17 +1298,19 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 08:00
   - V2Get🛰️ 2026-06-15 23:53
   - V2Get🛰️ 2026-06-20 01:19
-  - V2Get🛰️ 2026-06-20 00:49
+  - 'V2Get🛰️ 2026-06-20 00:49 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 00:49
+  - V2Get🛰️ 2026-06-19 02:51
+  - V2Get🛰️ 2026-06-20 09:07
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-20 08:43
   - 'V2Get🛰️ 2026-06-20 08:43 #2'
-  - V2Get🛰️ 2026-06-19 02:51
   - 'V2Get🛰️ 2026-06-20 08:43 #3'
   - 'V2Get🛰️ 2026-06-20 08:43 #4'
   - V2Get🛰️ 2026-06-20 09:16
@@ -1347,7 +1349,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 16:38
   - 'V2Get🛰️ 2026-06-19 16:38 #2'
   - V2Get🛰️ 2026-06-18 10:30
-  - V2Get🛰️ 2026-06-20 09:07
   - 'V2Get🛰️ 2026-06-18 10:30 #2'
   - V2Get🛰️ 2026-06-18 12:05
   - V2Get🛰️ 2026-06-16 06:22
@@ -1357,7 +1358,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-19 13:00
-  - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-19 21:51
   - V2Get🛰️ 2026-06-16 00:22
@@ -1402,7 +1402,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 08:00
   - V2Get🛰️ 2026-06-15 23:53
   - V2Get🛰️ 2026-06-20 01:19
-  - V2Get🛰️ 2026-06-20 00:49
+  - 'V2Get🛰️ 2026-06-20 00:49 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
