@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 07:57
+  type: vless
+  server: 65.21.109.91
+  port: 80
+  uuid: 275cd593-5bba-4d06-8579-7d179e05559e
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /notbin
+    headers:
+      Host: speedtest.com
 - name: V2Get🛰️ 2026-06-16 02:29
   type: vless
   server: 8.6.112.34
@@ -212,16 +224,6 @@ proxies:
   reality-opts:
     public-key: eiDyRuMGa0Jyb2Ff4w1Pb7zTri5h38R2w0kZj0uksF4
     short-id: 002a3297421349
-- name: V2Get🛰️ 2026-06-16 23:45
-  type: vless
-  server: 162.249.126.198
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn9-33.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-16 21:32
   type: vless
   server: 95.133.245.111
@@ -977,6 +979,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 07:57
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
@@ -993,7 +996,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 17:14
   - V2Get🛰️ 2026-06-20 07:05
   - 'V2Get🛰️ 2026-06-20 07:05 #2'
-  - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:32
   - V2Get🛰️ 2026-06-15 17:44
   - V2Get🛰️ 2026-06-19 15:57
@@ -1059,6 +1061,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 07:57
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
@@ -1075,7 +1078,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 17:14
   - V2Get🛰️ 2026-06-20 07:05
   - 'V2Get🛰️ 2026-06-20 07:05 #2'
-  - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:32
   - V2Get🛰️ 2026-06-15 17:44
   - V2Get🛰️ 2026-06-19 15:57
