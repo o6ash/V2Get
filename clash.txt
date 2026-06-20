@@ -12,6 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 07:57
+  type: vless
+  server: 65.21.109.91
+  port: 80
+  uuid: 275cd593-5bba-4d06-8579-7d179e05559e
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /notbin
+    headers:
+      Host: speedtest.com
+- name: 'V2Get🛰️ 2026-06-20 07:57 #2'
+  type: vless
+  server: 65.21.109.91
+  port: 443
+  uuid: 275cd593-5bba-4d06-8579-7d179e05559e
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: v0vhjyFJPMzOUrM5l1PgoQCr83mHd1rNAIK2hi8ID1s
+    short-id: a8
+- name: V2Get🛰️ 2026-06-20 00:55
+  type: vless
+  server: 66.33.23.103
+  port: 443
+  uuid: 36284b89-03c0-4ec4-9ed9-e20e19d136cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: relay-production-9e5f.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h2
 - name: V2Get🛰️ 2026-06-16 02:29
   type: vless
   server: 8.6.112.34
@@ -212,16 +250,6 @@ proxies:
   reality-opts:
     public-key: eiDyRuMGa0Jyb2Ff4w1Pb7zTri5h38R2w0kZj0uksF4
     short-id: 002a3297421349
-- name: V2Get🛰️ 2026-06-16 23:45
-  type: vless
-  server: 162.249.126.198
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn9-33.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-16 21:32
   type: vless
   server: 95.133.245.111
@@ -540,22 +568,9 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-20 00:55
-  type: vless
-  server: 66.33.23.114
-  port: 443
-  uuid: 36284b89-03c0-4ec4-9ed9-e20e19d136cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: relay-production-9e5f.up.railway.app
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h2
 - name: 'V2Get🛰️ 2026-06-20 00:55 #2'
   type: vless
-  server: 66.33.23.103
+  server: 66.33.23.114
   port: 443
   uuid: 36284b89-03c0-4ec4-9ed9-e20e19d136cf
   udp: true
@@ -628,13 +643,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-20 03:59
-  type: ss
-  server: n2.cover20.ir
-  port: 13641
-  cipher: chacha20-ietf-poly1305
-  password: g+JHluDR+DexrVwBv9seYupPm0dHEsQpHtoYJ7J01sE=
-  udp: true
 - name: V2Get🛰️ 2026-06-20 03:48
   type: vless
   server: 198.202.211.1
@@ -1231,6 +1239,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 07:57
+  - 'V2Get🛰️ 2026-06-20 07:57 #2'
+  - V2Get🛰️ 2026-06-20 00:55
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
@@ -1247,7 +1258,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 17:14
   - V2Get🛰️ 2026-06-20 07:05
   - 'V2Get🛰️ 2026-06-20 07:05 #2'
-  - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:32
   - V2Get🛰️ 2026-06-15 17:44
   - V2Get🛰️ 2026-06-19 15:57
@@ -1274,14 +1284,12 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 21:15
   - V2Get🛰️ 2026-06-15 17:07
   - V2Get🛰️ 2026-06-19 13:58
-  - V2Get🛰️ 2026-06-20 00:55
   - 'V2Get🛰️ 2026-06-20 00:55 #2'
   - 'V2Get🛰️ 2026-06-20 00:56 #2'
   - 'V2Get🛰️ 2026-06-20 00:55 #3'
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-20 04:27
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-20 03:59
   - V2Get🛰️ 2026-06-20 03:48
   - V2Get🛰️ 2026-06-19 16:23
   - V2Get🛰️ 2026-06-19 22:16
@@ -1337,6 +1345,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 07:57
+  - 'V2Get🛰️ 2026-06-20 07:57 #2'
+  - V2Get🛰️ 2026-06-20 00:55
   - V2Get🛰️ 2026-06-16 02:29
   - V2Get🛰️ 2026-06-19 23:14
   - V2Get🛰️ 2026-06-19 19:00
@@ -1353,7 +1364,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 17:14
   - V2Get🛰️ 2026-06-20 07:05
   - 'V2Get🛰️ 2026-06-20 07:05 #2'
-  - V2Get🛰️ 2026-06-16 23:45
   - V2Get🛰️ 2026-06-16 21:32
   - V2Get🛰️ 2026-06-15 17:44
   - V2Get🛰️ 2026-06-19 15:57
@@ -1380,14 +1390,12 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 21:15
   - V2Get🛰️ 2026-06-15 17:07
   - V2Get🛰️ 2026-06-19 13:58
-  - V2Get🛰️ 2026-06-20 00:55
   - 'V2Get🛰️ 2026-06-20 00:55 #2'
   - 'V2Get🛰️ 2026-06-20 00:56 #2'
   - 'V2Get🛰️ 2026-06-20 00:55 #3'
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-20 04:27
   - V2Get🛰️ 2026-06-15 23:07
-  - V2Get🛰️ 2026-06-20 03:59
   - V2Get🛰️ 2026-06-20 03:48
   - V2Get🛰️ 2026-06-19 16:23
   - V2Get🛰️ 2026-06-19 22:16
