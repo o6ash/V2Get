@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 11:19
+  type: vless
+  server: 185.226.93.26
+  port: 34634
+  uuid: 57a55b8b-8a96-4c90-87a1-b3739126e624
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 - name: V2Get🛰️ 2026-06-21 12:14
   type: vless
   server: 199.232.78.159
@@ -271,21 +283,6 @@ proxies:
     path: /
     headers:
       Host: newgit.jisucf.cloudns.biz
-- name: V2Get🛰️ 2026-06-20 12:08
-  type: vless
-  server: free1.ziroxcompany.ir
-  port: 8880
-  uuid: 77f5211d-055e-494c-af83-4ae460d982b3
-  udp: true
-  network: grpc
-  tls: true
-  servername: free.ziroxcompany.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: /dashboard
 - name: V2Get🛰️ 2026-06-20 16:13
   type: vless
   server: 141.193.154.182
@@ -1191,6 +1188,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 11:19
   - V2Get🛰️ 2026-06-21 12:14
   - V2Get🛰️ 2026-06-21 11:43
   - 'V2Get🛰️ 2026-06-21 12:14 #2'
@@ -1212,7 +1210,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 09:25
   - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-20 11:11
-  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-21 08:52
@@ -1296,6 +1293,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 11:19
   - V2Get🛰️ 2026-06-21 12:14
   - V2Get🛰️ 2026-06-21 11:43
   - 'V2Get🛰️ 2026-06-21 12:14 #2'
@@ -1317,7 +1315,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 09:25
   - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-20 11:11
-  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-21 08:52
