@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 15:25
+  type: vless
+  server: 217.28.48.29
+  port: 25752
+  uuid: 27f2ae85-3e15-4a9a-9c71-49ee032e7b26
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-21 10:58
+  type: vless
+  server: local.cloud-play.ir
+  port: 80
+  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-21 10:59
+  type: vless
+  server: mci.cloud-play.ir
+  port: 80
+  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-06-21 10:58 #2'
+  type: vless
+  server: euro.cloud-play.ir
+  port: 80
+  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-06-21 10:58 #3'
+  type: vless
+  server: global.cloud-play.ir
+  port: 80
+  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-21 06:34
   type: vless
   server: 142.91.108.139
@@ -264,21 +304,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-17 14:34
-  type: vless
-  server: nl2.panel11.ru
-  port: 443
-  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nl2.panel11.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: N1HRDSdKHqdbSX_N5SUfFiokXcN-jQzu-Na244bA21I
-    short-id: c64556c616970b14
-- name: V2Get🛰️ 2026-06-21 10:59
+- name: 'V2Get🛰️ 2026-06-21 10:59 #2'
   type: vless
   server: 89.167.79.198
   port: 443
@@ -291,30 +317,6 @@ proxies:
   reality-opts:
     public-key: m0laydpddP-MhAgDbMB_QGrSk4-nrIvDSoIHK_Q8Uy4
     short-id: a796a1f52722b3a5
-- name: 'V2Get🛰️ 2026-06-21 10:59 #2'
-  type: vless
-  server: mci.cloud-play.ir
-  port: 80
-  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-21 10:58
-  type: vless
-  server: euro.cloud-play.ir
-  port: 80
-  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-21 10:58 #2'
-  type: vless
-  server: global.cloud-play.ir
-  port: 80
-  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-19 00:48 #2'
   type: trojan
   server: 45.130.125.126
@@ -327,14 +329,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'V2Get🛰️ 2026-06-21 10:58 #3'
-  type: vless
-  server: local.cloud-play.ir
-  port: 80
-  uuid: 6253100c-3ff4-42d9-b183-7fe46e5a9039
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-20 23:00
   type: vless
   server: 198.41.223.119
@@ -1178,6 +1172,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 15:25
+  - V2Get🛰️ 2026-06-21 10:58
+  - V2Get🛰️ 2026-06-21 10:59
+  - 'V2Get🛰️ 2026-06-21 10:58 #2'
+  - 'V2Get🛰️ 2026-06-21 10:58 #3'
   - V2Get🛰️ 2026-06-21 06:34
   - V2Get🛰️ 2026-06-21 11:10
   - V2Get🛰️ 2026-06-21 11:09
@@ -1199,13 +1198,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 22:29
   - V2Get🛰️ 2026-06-17 21:15
   - V2Get🛰️ 2026-06-15 21:27
-  - V2Get🛰️ 2026-06-17 14:34
-  - V2Get🛰️ 2026-06-21 10:59
   - 'V2Get🛰️ 2026-06-21 10:59 #2'
-  - V2Get🛰️ 2026-06-21 10:58
-  - 'V2Get🛰️ 2026-06-21 10:58 #2'
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
-  - 'V2Get🛰️ 2026-06-21 10:58 #3'
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-20 12:08
   - 'V2Get🛰️ 2026-06-19 00:48 #3'
@@ -1282,6 +1276,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 15:25
+  - V2Get🛰️ 2026-06-21 10:58
+  - V2Get🛰️ 2026-06-21 10:59
+  - 'V2Get🛰️ 2026-06-21 10:58 #2'
+  - 'V2Get🛰️ 2026-06-21 10:58 #3'
   - V2Get🛰️ 2026-06-21 06:34
   - V2Get🛰️ 2026-06-21 11:10
   - V2Get🛰️ 2026-06-21 11:09
@@ -1303,13 +1302,8 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 22:29
   - V2Get🛰️ 2026-06-17 21:15
   - V2Get🛰️ 2026-06-15 21:27
-  - V2Get🛰️ 2026-06-17 14:34
-  - V2Get🛰️ 2026-06-21 10:59
   - 'V2Get🛰️ 2026-06-21 10:59 #2'
-  - V2Get🛰️ 2026-06-21 10:58
-  - 'V2Get🛰️ 2026-06-21 10:58 #2'
   - 'V2Get🛰️ 2026-06-19 00:48 #2'
-  - 'V2Get🛰️ 2026-06-21 10:58 #3'
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-20 12:08
   - 'V2Get🛰️ 2026-06-19 00:48 #3'
