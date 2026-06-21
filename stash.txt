@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 18:01
+  type: vless
+  server: 5.75.207.247
+  port: 443
+  uuid: 577581e7-d526-42f1-adb0-6559357b0575
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: AQdYxjoMA0fxO8O9BX5bW4EMfRyiH09K0Hwjwse51AM
+    short-id: 99c8
 - name: V2Get🛰️ 2026-06-22 02:45
   type: vless
   server: 162.159.39.165
@@ -26,6 +40,28 @@ proxies:
     path: /
     headers:
       Host: gentle-dawn-e9dc.farsam18.workers.dev
+- name: V2Get🛰️ 2026-06-15 17:02
+  type: vless
+  server: 77.74.123.162
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn7-39.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: V2Get🛰️ 2026-06-22 02:18
+  type: vless
+  server: cd4.videobazi.com
+  port: 8080
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: tr-cd.sublink-vip2.com
 - name: V2Get🛰️ 2026-06-22 00:01
   type: vless
   server: 152.233.28.199
@@ -68,16 +104,6 @@ proxies:
   tls: true
   servername: ams1.fromblancwithlove.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-06-15 17:02
-  type: vless
-  server: 77.74.123.162
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn7-39.vk-cdnvideo.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-19 18:44
   type: vmess
   server: 104.17.121.43
@@ -94,18 +120,6 @@ proxies:
     path: /
     headers:
       Host: omkuzygiv.com
-- name: V2Get🛰️ 2026-06-22 02:18
-  type: vless
-  server: cd4.videobazi.com
-  port: 8080
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: tr-cd.sublink-vip2.com
 - name: V2Get🛰️ 2026-06-21 14:09
   type: vless
   server: 185.229.190.245
@@ -921,17 +935,6 @@ proxies:
     path: /
     headers:
       Host: ez-7b9ef1.amirmohammad139318.workers.dev
-- name: V2Get🛰️ 2026-06-18 16:26
-  type: vless
-  server: 151.115.166.129
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-21 12:32
   type: trojan
   server: 151.101.110.219
@@ -965,14 +968,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-22 02:45
+  - V2Get🛰️ 2026-06-15 17:02
+  - V2Get🛰️ 2026-06-22 02:18
   - V2Get🛰️ 2026-06-22 00:01
   - V2Get🛰️ 2026-06-21 12:33
   - V2Get🛰️ 2026-06-22 01:58
   - V2Get🛰️ 2026-06-15 21:13
-  - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-19 18:44
-  - V2Get🛰️ 2026-06-22 02:18
   - V2Get🛰️ 2026-06-21 14:09
   - V2Get🛰️ 2026-06-15 22:21
   - V2Get🛰️ 2026-06-19 00:48
@@ -1040,7 +1044,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 22:52
   - V2Get🛰️ 2026-06-21 22:39
   - V2Get🛰️ 2026-06-21 21:35
-  - V2Get🛰️ 2026-06-18 16:26
   - V2Get🛰️ 2026-06-21 12:32
   - V2Get🛰️ 2026-06-21 22:14
 - name: ♻️ Auto Select
@@ -1049,14 +1052,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-22 02:45
+  - V2Get🛰️ 2026-06-15 17:02
+  - V2Get🛰️ 2026-06-22 02:18
   - V2Get🛰️ 2026-06-22 00:01
   - V2Get🛰️ 2026-06-21 12:33
   - V2Get🛰️ 2026-06-22 01:58
   - V2Get🛰️ 2026-06-15 21:13
-  - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-19 18:44
-  - V2Get🛰️ 2026-06-22 02:18
   - V2Get🛰️ 2026-06-21 14:09
   - V2Get🛰️ 2026-06-15 22:21
   - V2Get🛰️ 2026-06-19 00:48
@@ -1124,7 +1128,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 22:52
   - V2Get🛰️ 2026-06-21 22:39
   - V2Get🛰️ 2026-06-21 21:35
-  - V2Get🛰️ 2026-06-18 16:26
   - V2Get🛰️ 2026-06-21 12:32
   - V2Get🛰️ 2026-06-21 22:14
 rules:
