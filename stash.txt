@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 16:13
+  type: vless
+  server: 141.193.154.182
+  port: 10000
+  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-19 00:48
+  type: trojan
+  server: 45.130.125.126
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.multiplydose.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 - name: V2Get🛰️ 2026-06-17 14:34
   type: vless
   server: nl2.panel11.ru
@@ -31,26 +51,6 @@ proxies:
   server: 45.13.119.219
   port: 8888
   uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-19 00:48
-  type: trojan
-  server: 45.130.125.126
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: V2Get🛰️ 2026-06-20 16:13
-  type: vless
-  server: 141.193.154.182
-  port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1080,10 +1080,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 16:13
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-17 14:34
   - V2Get🛰️ 2026-06-20 09:15
-  - V2Get🛰️ 2026-06-19 00:48
-  - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-21 12:07
   - V2Get🛰️ 2026-06-21 13:01
   - V2Get🛰️ 2026-06-21 13:00
@@ -1172,10 +1172,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 16:13
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-17 14:34
   - V2Get🛰️ 2026-06-20 09:15
-  - V2Get🛰️ 2026-06-19 00:48
-  - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-21 12:07
   - V2Get🛰️ 2026-06-21 13:01
   - V2Get🛰️ 2026-06-21 13:00
