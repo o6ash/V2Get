@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 16:35
+  type: ss
+  server: 185.213.20.110
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: V2Get🛰️ 2026-06-21 07:30
+  type: vless
+  server: 65.109.219.2
+  port: 52219
+  uuid: 4f009c13-b9d5-4e3d-90b7-534b2808ac72
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.oracle.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cKE3i_J1asS5PgauqF-Ci8OlabLXmfUo1KaJ0Kc_rWQ
+    short-id: f8
 - name: V2Get🛰️ 2026-06-21 07:28
   type: vless
   server: digipay.ir
@@ -24,30 +44,6 @@ proxies:
     path: /nigger
     headers:
       Host: subiranlink.pro
-- name: V2Get🛰️ 2026-06-16 10:38
-  type: vless
-  server: 47.79.144.103
-  port: 25242
-  uuid: a12b0d31-f599-498e-b76e-8558a14b766b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /a12b0d31
-- name: V2Get🛰️ 2026-06-19 00:48
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-  udp: true
-  network: ws
-  tls: true
-  servername: terazhediii.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /hdgrbws
-    headers:
-      Host: terazhediii.info
 - name: 'V2Get🛰️ 2026-06-21 07:28 #2'
   type: vless
   server: 212.100.171.210
@@ -61,20 +57,24 @@ proxies:
   reality-opts:
     public-key: Y0a7YZ1nnGcqvxmdCPVK_JbSzXSZVb8P7TRZg2IZCm0
     short-id: a897b1b28228
-- name: V2Get🛰️ 2026-06-18 12:48
-  type: vless
-  server: www.speedtest.net
+- name: V2Get🛰️ 2026-06-18 23:58
+  type: trojan
+  server: 185.126.236.190
   port: 443
-  uuid: 2d0f4a5d-fe76-448f-8810-5f8b0d2cd237
+  password: VGBzLm49=M_i02Az30tIeonkQw180t-edg
+  udp: true
+  sni: 185.126.236.190
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-16 10:38
+  type: vless
+  server: 47.79.144.103
+  port: 25242
+  uuid: a12b0d31-f599-498e-b76e-8558a14b766b
   udp: true
   network: ws
-  tls: true
-  servername: kijuyjfjydhy14.mamadfkl.workers.dev
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: /V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--V2rayNGSelllBoT--
-    headers:
-      Host: kijuyjfjydhy14.mamadfkl.workers.dev
+    path: /a12b0d31
 - name: V2Get🛰️ 2026-06-20 20:16
   type: vless
   server: 104.17.113.202
@@ -309,14 +309,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-18 23:58
-  type: trojan
-  server: 185.126.236.190
-  port: 443
-  password: VGBzLm49=M_i02Az30tIeonkQw180t-edg
-  udp: true
-  sni: 185.126.236.190
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-19 13:11 #5'
   type: vless
   server: 84.32.25.137
@@ -798,7 +790,7 @@ proxies:
     path: /ws
     headers:
       Host: alphacdn.alphashops.shop
-- name: 'V2Get🛰️ 2026-06-19 00:48 #2'
+- name: V2Get🛰️ 2026-06-19 00:48
   type: vless
   server: 188.114.97.6
   port: 443
@@ -1214,11 +1206,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-21 07:30
   - V2Get🛰️ 2026-06-21 07:28
-  - V2Get🛰️ 2026-06-16 10:38
-  - V2Get🛰️ 2026-06-19 00:48
   - 'V2Get🛰️ 2026-06-21 07:28 #2'
-  - V2Get🛰️ 2026-06-18 12:48
+  - V2Get🛰️ 2026-06-18 23:58
+  - V2Get🛰️ 2026-06-16 10:38
   - V2Get🛰️ 2026-06-20 20:16
   - V2Get🛰️ 2026-06-21 02:22
   - V2Get🛰️ 2026-06-19 13:10
@@ -1239,7 +1232,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 13:11 #4'
   - 'V2Get🛰️ 2026-06-20 22:24 #2'
   - V2Get🛰️ 2026-06-21 07:12
-  - V2Get🛰️ 2026-06-18 23:58
   - 'V2Get🛰️ 2026-06-19 13:11 #5'
   - V2Get🛰️ 2026-06-15 23:53
   - V2Get🛰️ 2026-06-18 15:46
@@ -1279,7 +1271,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 00:43
   - V2Get🛰️ 2026-06-21 04:04
   - V2Get🛰️ 2026-06-15 18:13
-  - 'V2Get🛰️ 2026-06-19 00:48 #2'
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-20 22:45
   - V2Get🛰️ 2026-06-20 22:44
   - V2Get🛰️ 2026-06-20 20:59
@@ -1319,11 +1311,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-21 07:30
   - V2Get🛰️ 2026-06-21 07:28
-  - V2Get🛰️ 2026-06-16 10:38
-  - V2Get🛰️ 2026-06-19 00:48
   - 'V2Get🛰️ 2026-06-21 07:28 #2'
-  - V2Get🛰️ 2026-06-18 12:48
+  - V2Get🛰️ 2026-06-18 23:58
+  - V2Get🛰️ 2026-06-16 10:38
   - V2Get🛰️ 2026-06-20 20:16
   - V2Get🛰️ 2026-06-21 02:22
   - V2Get🛰️ 2026-06-19 13:10
@@ -1344,7 +1337,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-19 13:11 #4'
   - 'V2Get🛰️ 2026-06-20 22:24 #2'
   - V2Get🛰️ 2026-06-21 07:12
-  - V2Get🛰️ 2026-06-18 23:58
   - 'V2Get🛰️ 2026-06-19 13:11 #5'
   - V2Get🛰️ 2026-06-15 23:53
   - V2Get🛰️ 2026-06-18 15:46
@@ -1384,7 +1376,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 00:43
   - V2Get🛰️ 2026-06-21 04:04
   - V2Get🛰️ 2026-06-15 18:13
-  - 'V2Get🛰️ 2026-06-19 00:48 #2'
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-20 22:45
   - V2Get🛰️ 2026-06-20 22:44
   - V2Get🛰️ 2026-06-20 20:59
