@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-17 15:41
+  type: vless
+  server: 140.248.185.253
+  port: 443
+  uuid: 9a1ca418-134f-4750-b97a-55ea81135742
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: pan1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-20 23:00
   type: vless
   server: 198.41.223.119
@@ -1023,19 +1036,6 @@ proxies:
   network: tcp
   tls: true
   servername: ams1.fromblancwithlove.com
-- name: V2Get🛰️ 2026-06-20 21:06
-  type: trojan
-  server: 172.64.150.28
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  alpn:
-  - h2
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: V2Get🛰️ 2026-06-20 12:22
   type: vless
   server: 18.153.81.34
@@ -1081,6 +1081,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-21 03:37
@@ -1161,7 +1162,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 21:50
   - V2Get🛰️ 2026-06-20 14:25
   - V2Get🛰️ 2026-06-18 16:07
-  - V2Get🛰️ 2026-06-20 21:06
   - V2Get🛰️ 2026-06-20 12:22
   - V2Get🛰️ 2026-06-20 22:24
   - V2Get🛰️ 2026-06-20 22:13
@@ -1172,6 +1172,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-21 03:37
@@ -1252,7 +1253,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 21:50
   - V2Get🛰️ 2026-06-20 14:25
   - V2Get🛰️ 2026-06-18 16:07
-  - V2Get🛰️ 2026-06-20 21:06
   - V2Get🛰️ 2026-06-20 12:22
   - V2Get🛰️ 2026-06-20 22:24
   - V2Get🛰️ 2026-06-20 22:13
