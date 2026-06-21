@@ -12,6 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 00:41
+  type: vless
+  server: hyst.purplrose.ir
+  port: 8443
+  uuid: 5e042049-f74d-4ccc-a3ac-db27bca2ce99
+  udp: true
+  network: ws
+  tls: true
+  servername: bastani.purplrose.ir
+  client-fingerprint: random
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: bastani.purplrose.ir
 - name: V2Get🛰️ 2026-06-22 01:26
   type: vless
   server: 185.226.93.26
@@ -785,20 +802,6 @@ proxies:
   network: tcp
   tls: true
   servername: ams1.fromblancwithlove.com
-- name: V2Get🛰️ 2026-06-17 19:47
-  type: vless
-  server: octopusss5.info
-  port: 443
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-  udp: true
-  network: ws
-  tls: true
-  servername: octopusss5.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /udfyfws
-    headers:
-      Host: octopusss5.info
 - name: V2Get🛰️ 2026-06-21 22:52
   type: vless
   server: 51.250.98.184
@@ -908,6 +911,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 00:41
   - V2Get🛰️ 2026-06-22 01:26
   - V2Get🛰️ 2026-06-21 22:54
   - V2Get🛰️ 2026-06-19 17:25
@@ -974,7 +978,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-16 12:08 #2'
   - V2Get🛰️ 2026-06-16 10:43
   - 'V2Get🛰️ 2026-06-17 19:00 #2'
-  - V2Get🛰️ 2026-06-17 19:47
   - V2Get🛰️ 2026-06-21 22:52
   - V2Get🛰️ 2026-06-21 22:39
   - V2Get🛰️ 2026-06-21 21:35
@@ -989,6 +992,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 00:41
   - V2Get🛰️ 2026-06-22 01:26
   - V2Get🛰️ 2026-06-21 22:54
   - V2Get🛰️ 2026-06-19 17:25
@@ -1055,7 +1059,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-16 12:08 #2'
   - V2Get🛰️ 2026-06-16 10:43
   - 'V2Get🛰️ 2026-06-17 19:00 #2'
-  - V2Get🛰️ 2026-06-17 19:47
   - V2Get🛰️ 2026-06-21 22:52
   - V2Get🛰️ 2026-06-21 22:39
   - V2Get🛰️ 2026-06-21 21:35
