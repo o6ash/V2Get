@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 16:13
+  type: vless
+  server: 141.193.154.182
+  port: 10000
+  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-22 01:58
   type: vless
   server: iknk.themonji.com
@@ -681,20 +689,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8pT59ebr3ztDQCqH
   udp: true
-- name: V2Get🛰️ 2026-06-21 19:41
-  type: vless
-  server: free.cratel.qzz.io
-  port: 2083
-  uuid: e2600ed3-eb3c-420d-9081-389c67b543b8
-  udp: true
-  network: ws
-  tls: true
-  servername: cratel.qzz.io
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@CratelNetwork
-    headers:
-      Host: cratel.qzz.io
 - name: V2Get🛰️ 2026-06-21 15:48
   type: vless
   server: 108.162.194.165
@@ -1094,6 +1088,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-22 01:58
   - V2Get🛰️ 2026-06-16 00:02
   - V2Get🛰️ 2026-06-22 01:51
@@ -1154,7 +1149,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 16:29
   - V2Get🛰️ 2026-06-21 18:45
   - V2Get🛰️ 2026-06-21 23:18
-  - V2Get🛰️ 2026-06-21 19:41
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-20 12:08
@@ -1197,6 +1191,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-22 01:58
   - V2Get🛰️ 2026-06-16 00:02
   - V2Get🛰️ 2026-06-22 01:51
@@ -1257,7 +1252,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 16:29
   - V2Get🛰️ 2026-06-21 18:45
   - V2Get🛰️ 2026-06-21 23:18
-  - V2Get🛰️ 2026-06-21 19:41
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-20 12:08
