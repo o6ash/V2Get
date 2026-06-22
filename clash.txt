@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 12:32
+  type: trojan
+  server: 151.101.69.219
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: speedtest.net
+  alpn:
+  - h2
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-77.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-06-21 12:32 #2'
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: global.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-6.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-22 19:54
   type: vless
   server: s1.zynavo.ir
@@ -622,13 +650,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: a1ebf7650909af2e30dd560b9746e351
   udp: true
-- name: V2Get🛰️ 2026-06-19 21:25
-  type: ss
-  server: 78.129.155.63
-  port: 3030
-  cipher: aes-256-gcm
-  password: kSLjbrBc84
-  udp: true
 - name: V2Get🛰️ 2026-06-20 20:06
   type: vless
   server: 217.217.247.253
@@ -1101,25 +1122,14 @@ proxies:
   udp: true
   sni: 207.126.167.162
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-21 12:32
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: global.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-6.global.ssl.fastly.net
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 12:32
+  - 'V2Get🛰️ 2026-06-21 12:32 #2'
   - V2Get🛰️ 2026-06-22 19:54
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-16 11:00
@@ -1175,7 +1185,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 18:38
   - V2Get🛰️ 2026-06-22 01:51
   - V2Get🛰️ 2026-06-21 22:24
-  - V2Get🛰️ 2026-06-19 21:25
   - V2Get🛰️ 2026-06-20 20:06
   - V2Get🛰️ 2026-06-21 14:50
   - V2Get🛰️ 2026-06-20 12:26
@@ -1217,13 +1226,14 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 17:27
   - 'V2Get🛰️ 2026-06-16 03:18 #2'
   - V2Get🛰️ 2026-06-15 23:53
-  - V2Get🛰️ 2026-06-21 12:32
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 12:32
+  - 'V2Get🛰️ 2026-06-21 12:32 #2'
   - V2Get🛰️ 2026-06-22 19:54
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-16 11:00
@@ -1279,7 +1289,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 18:38
   - V2Get🛰️ 2026-06-22 01:51
   - V2Get🛰️ 2026-06-21 22:24
-  - V2Get🛰️ 2026-06-19 21:25
   - V2Get🛰️ 2026-06-20 20:06
   - V2Get🛰️ 2026-06-21 14:50
   - V2Get🛰️ 2026-06-20 12:26
@@ -1321,7 +1330,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 17:27
   - 'V2Get🛰️ 2026-06-16 03:18 #2'
   - V2Get🛰️ 2026-06-15 23:53
-  - V2Get🛰️ 2026-06-21 12:32
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
