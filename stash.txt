@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 20:58
+  type: vless
+  server: 151.115.164.167
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
 - name: V2Get🛰️ 2026-06-21 09:25
   type: vless
   server: 147.185.161.152
@@ -523,20 +534,6 @@ proxies:
   password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
   udp: true
   sni: 45.61.52.243
-- name: V2Get🛰️ 2026-06-19 01:02
-  type: vless
-  server: 45.130.125.158
-  port: 8443
-  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
-  udp: true
-  network: ws
-  tls: true
-  servername: srv03.perfectbulk.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: srv03.perfectbulk.info
 - name: V2Get🛰️ 2026-06-20 23:41
   type: vmess
   server: vip3.sanaiehdasti.com
@@ -931,6 +928,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 20:58
   - V2Get🛰️ 2026-06-21 09:25
   - V2Get🛰️ 2026-06-15 18:28
   - 'V2Get🛰️ 2026-06-21 09:25 #2'
@@ -972,7 +970,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-18 03:02
-  - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-20 23:41
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-22 08:20 #2'
@@ -1009,6 +1006,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 20:58
   - V2Get🛰️ 2026-06-21 09:25
   - V2Get🛰️ 2026-06-15 18:28
   - 'V2Get🛰️ 2026-06-21 09:25 #2'
@@ -1050,7 +1048,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-18 03:02
-  - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-20 23:41
   - V2Get🛰️ 2026-06-15 23:42
   - 'V2Get🛰️ 2026-06-22 08:20 #2'
