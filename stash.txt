@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-22 18:30
+  type: vless
+  server: api-cdn-de.hazelbush.tech
+  port: 443
+  uuid: c5cee5cd-b824-4dc6-9dae-fb0a73e8ff95
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-cdn-de.hazelbush.tech
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: DQCCicYk5v1SwgtUzfzOlsW4PAz2gaD_08gzGvfnP18
 - name: V2Get🛰️ 2026-06-19 15:25
   type: vless
   server: 217.28.48.29
@@ -676,18 +689,6 @@ proxies:
     path: /
     headers:
       Host: tr-cd.sublink-vip2.com
-- name: 'V2Get🛰️ 2026-06-22 17:52 #2'
-  type: vless
-  server: www.parsvds.com
-  port: 8080
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: tr-cd.sublink-vip2.com
 - name: V2Get🛰️ 2026-06-17 14:43
   type: vless
   server: sca10.myfymain.com
@@ -1007,6 +1008,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-22 18:30
   - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-22 16:54
   - V2Get🛰️ 2026-06-22 17:31
@@ -1063,7 +1065,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 22:24
   - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-16 12:24
-  - 'V2Get🛰️ 2026-06-22 17:52 #2'
   - V2Get🛰️ 2026-06-17 14:43
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-16 03:17
@@ -1097,6 +1098,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-22 18:30
   - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-22 16:54
   - V2Get🛰️ 2026-06-22 17:31
@@ -1153,7 +1155,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 22:24
   - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-16 12:24
-  - 'V2Get🛰️ 2026-06-22 17:52 #2'
   - V2Get🛰️ 2026-06-17 14:43
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-16 03:17
