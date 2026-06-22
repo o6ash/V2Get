@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-22 14:31
+  type: vless
+  server: 104.18.32.47
+  port: 2087
+  uuid: f12a5e31-05b8-4520-b3a4-e9da1f08ceb6
+  udp: true
+  network: ws
+  tls: true
+  servername: chandeht4.newappdominfastlogin4.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: chandeht4.newappdominfastlogin4.com
 - name: V2Get🛰️ 2026-06-22 22:10
   type: vless
   server: 45.194.10.68
@@ -995,18 +1009,13 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: V2Get🛰️ 2026-06-17 11:24
-  type: trojan
-  server: 130.94.78.17
-  port: 443
-  password: PoSQBShqwNV9wKX4WHxDoLxbvp4eQYnD8v
-  udp: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-22 14:31
   - V2Get🛰️ 2026-06-22 22:10
   - V2Get🛰️ 2026-06-23 02:00
   - 'V2Get🛰️ 2026-06-23 02:00 #2'
@@ -1091,13 +1100,13 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-23 00:37
   - V2Get🛰️ 2026-06-23 00:31
-  - V2Get🛰️ 2026-06-17 11:24
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-22 14:31
   - V2Get🛰️ 2026-06-22 22:10
   - V2Get🛰️ 2026-06-23 02:00
   - 'V2Get🛰️ 2026-06-23 02:00 #2'
@@ -1182,7 +1191,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-23 00:37
   - V2Get🛰️ 2026-06-23 00:31
-  - V2Get🛰️ 2026-06-17 11:24
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
