@@ -12,17 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-22 13:05
+- name: V2Get🛰️ 2026-06-21 16:21
   type: vless
-  server: 108.162.194.165
-  port: 2053
-  uuid: 06081ec9-2f11-4839-bb5b-04764ea922e7
+  server: 45.130.125.162
+  port: 443
+  uuid: f4013b10-838a-4dda-abe1-1dad4ecdc6c8
+  udp: true
+  network: ws
+  tls: true
+  servername: ssd.mojaz-persian-music.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=80
+    headers:
+      Host: ssd.mojaz-persian-music.ir
+- name: V2Get🛰️ 2026-06-22 14:11
+  type: vless
+  server: 45.130.125.162
+  port: 8443
+  uuid: f4013b10-838a-4dda-abe1-1dad4ecdc6c8
   udp: true
   network: xhttp
   tls: true
-  servername: ca4.26cloud.ir
-  client-fingerprint: random
-- name: 'V2Get🛰️ 2026-06-22 13:05 #2'
+  servername: cji.new-persian-song.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+- name: 'V2Get🛰️ 2026-06-21 16:21 #2'
+  type: vless
+  server: 45.130.125.101
+  port: 8443
+  uuid: f4013b10-838a-4dda-abe1-1dad4ecdc6c8
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cji.new-persian-song.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+- name: V2Get🛰️ 2026-06-22 13:05
   type: vless
   server: www.speedtest.net
   port: 2053
@@ -187,22 +217,6 @@ proxies:
   password: y3o3ra6edy5nfc6hyb2n
   udp: true
 - name: 'V2Get🛰️ 2026-06-22 14:01 #3'
-  type: vless
-  server: 7d17a0c3abfe3c8c.nazi.deldadehtarin.ir
-  port: 8443
-  uuid: dd8d3617-5185-447c-a25d-3ada2f840e00
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: play.google.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  reality-opts:
-    public-key: LGsUSDRM9uI4-_XMbdjI1QHW-YauehcPFsaWx0R37EI
-    short-id: dad3488446359a87
-- name: 'V2Get🛰️ 2026-06-22 14:01 #4'
   type: vless
   server: 4c27416e4ef0c1cf.movies.deldadehtarin.ir
   port: 8443
@@ -981,18 +995,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-06-16 12:08
-  type: vless
-  server: 95.133.245.113
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn7-39.vk-cdnvideo.com
-  client-fingerprint: safari
-  alpn:
-  - http/1.1
 - name: V2Get🛰️ 2026-06-21 02:11
   type: vless
   server: 5.180.173.222
@@ -1111,8 +1113,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 16:21
+  - V2Get🛰️ 2026-06-22 14:11
+  - 'V2Get🛰️ 2026-06-21 16:21 #2'
   - V2Get🛰️ 2026-06-22 13:05
-  - 'V2Get🛰️ 2026-06-22 13:05 #2'
   - V2Get🛰️ 2026-06-22 13:53
   - V2Get🛰️ 2026-06-22 13:46
   - 'V2Get🛰️ 2026-06-22 13:53 #2'
@@ -1128,7 +1132,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 05:24
   - V2Get🛰️ 2026-06-19 21:19
   - 'V2Get🛰️ 2026-06-22 14:01 #3'
-  - 'V2Get🛰️ 2026-06-22 14:01 #4'
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-20 23:41
   - V2Get🛰️ 2026-06-20 16:13
@@ -1199,7 +1202,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 14:46
   - V2Get🛰️ 2026-06-15 21:44
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-21 02:11
   - 'V2Get🛰️ 2026-06-22 08:19 #4'
   - V2Get🛰️ 2026-06-21 16:01
@@ -1216,8 +1218,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 16:21
+  - V2Get🛰️ 2026-06-22 14:11
+  - 'V2Get🛰️ 2026-06-21 16:21 #2'
   - V2Get🛰️ 2026-06-22 13:05
-  - 'V2Get🛰️ 2026-06-22 13:05 #2'
   - V2Get🛰️ 2026-06-22 13:53
   - V2Get🛰️ 2026-06-22 13:46
   - 'V2Get🛰️ 2026-06-22 13:53 #2'
@@ -1233,7 +1237,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 05:24
   - V2Get🛰️ 2026-06-19 21:19
   - 'V2Get🛰️ 2026-06-22 14:01 #3'
-  - 'V2Get🛰️ 2026-06-22 14:01 #4'
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-20 23:41
   - V2Get🛰️ 2026-06-20 16:13
@@ -1304,7 +1307,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 14:46
   - V2Get🛰️ 2026-06-15 21:44
   - V2Get🛰️ 2026-06-16 08:03
-  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-21 02:11
   - 'V2Get🛰️ 2026-06-22 08:19 #4'
   - V2Get🛰️ 2026-06-21 16:01
