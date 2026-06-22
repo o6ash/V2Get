@@ -12,6 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 16:47
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: pagess.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: www.pagess.ir
+- name: 'V2Get🛰️ 2026-06-21 16:47 #2'
+  type: trojan
+  server: 104.16.72.70
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: pagess.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: www.pagess.ir
 - name: V2Get🛰️ 2026-06-15 17:02
   type: vless
   server: 185.229.191.149
@@ -85,19 +111,6 @@ proxies:
     path: /
     headers:
       Host: ez-f24424.ezaccess1fbd72f.workers.dev
-- name: V2Get🛰️ 2026-06-21 16:47
-  type: trojan
-  server: 104.16.72.70
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: pagess.ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: www.pagess.ir
 - name: 'V2Get🛰️ 2026-06-22 13:47 #2'
   type: vless
   server: ez-f24424.ezaccess1fbd72f.workers.dev
@@ -607,21 +620,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-22 13:27
-  type: vless
-  server: 104.16.7.70
-  port: 443
-  uuid: 5f4620eb-8fdf-4456-b342-ee093f58cd0e
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: MAM.steamzy.ir
 - name: V2Get🛰️ 2026-06-22 13:07
   type: vless
   server: ser3.fredomiran.com
@@ -1100,6 +1098,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 16:47
+  - 'V2Get🛰️ 2026-06-21 16:47 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-21 17:11
   - 'V2Get🛰️ 2026-06-21 17:11 #2'
@@ -1107,7 +1107,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-22 13:47
-  - V2Get🛰️ 2026-06-21 16:47
   - 'V2Get🛰️ 2026-06-22 13:47 #2'
   - V2Get🛰️ 2026-06-22 13:46
   - 'V2Get🛰️ 2026-06-22 13:46 #2'
@@ -1157,7 +1156,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-22 13:32 #5'
   - 'V2Get🛰️ 2026-06-22 13:32 #6'
   - V2Get🛰️ 2026-06-22 11:22
-  - V2Get🛰️ 2026-06-22 13:27
   - V2Get🛰️ 2026-06-22 13:07
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-21 22:06
@@ -1204,6 +1202,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 16:47
+  - 'V2Get🛰️ 2026-06-21 16:47 #2'
   - V2Get🛰️ 2026-06-15 17:02
   - V2Get🛰️ 2026-06-21 17:11
   - 'V2Get🛰️ 2026-06-21 17:11 #2'
@@ -1211,7 +1211,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-22 13:47
-  - V2Get🛰️ 2026-06-21 16:47
   - 'V2Get🛰️ 2026-06-22 13:47 #2'
   - V2Get🛰️ 2026-06-22 13:46
   - 'V2Get🛰️ 2026-06-22 13:46 #2'
@@ -1261,7 +1260,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-22 13:32 #5'
   - 'V2Get🛰️ 2026-06-22 13:32 #6'
   - V2Get🛰️ 2026-06-22 11:22
-  - V2Get🛰️ 2026-06-22 13:27
   - V2Get🛰️ 2026-06-22 13:07
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-21 22:06
