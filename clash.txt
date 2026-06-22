@@ -12,6 +12,75 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 10:47
+  type: vless
+  server: 45.8.228.110
+  port: 443
+  uuid: 18655112-fd8a-44e7-a30c-37388c05816b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: kIwNoNzk1uJnZD1evWxURZskv9ZY0aGoUjrAbn3uVXQ
+    short-id: 4d3ff920673f7534
+- name: V2Get🛰️ 2026-06-21 16:47
+  type: trojan
+  server: 104.16.72.70
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: pagess.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: www.pagess.ir
+- name: V2Get🛰️ 2026-06-21 22:06
+  type: vless
+  server: all44.allenshop100.ir
+  port: 443
+  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: 98fa0b00d09419f7
+- name: V2Get🛰️ 2026-06-20 12:26
+  type: vless
+  server: 217.217.247.251
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: enterprisekitten.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: V2Get🛰️ 2026-06-20 12:08
+  type: vless
+  server: free1.ziroxcompany.ir
+  port: 8880
+  uuid: 77f5211d-055e-494c-af83-4ae460d982b3
+  udp: true
+  network: grpc
+  tls: true
+  servername: free.ziroxcompany.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: /dashboard
 - name: V2Get🛰️ 2026-06-19 17:08
   type: vless
   server: 83.168.71.216
@@ -127,21 +196,6 @@ proxies:
   reality-opts:
     public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
     short-id: 4e590fdc
-- name: V2Get🛰️ 2026-06-20 12:08
-  type: vless
-  server: free1.ziroxcompany.ir
-  port: 8880
-  uuid: 77f5211d-055e-494c-af83-4ae460d982b3
-  udp: true
-  network: grpc
-  tls: true
-  servername: free.ziroxcompany.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: /dashboard
 - name: V2Get🛰️ 2026-06-19 21:55
   type: vless
   server: 155.117.137.160
@@ -163,20 +217,6 @@ proxies:
   password: SoftNetConnect
   udp: true
   sni: play.google.com
-- name: V2Get🛰️ 2026-06-18 10:47
-  type: vless
-  server: 45.8.228.110
-  port: 443
-  uuid: 18655112-fd8a-44e7-a30c-37388c05816b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: kIwNoNzk1uJnZD1evWxURZskv9ZY0aGoUjrAbn3uVXQ
-    short-id: 4d3ff920673f7534
 - name: V2Get🛰️ 2026-06-21 09:29
   type: vless
   server: 193.247.82.40
@@ -249,33 +289,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-21 22:06
-  type: vless
-  server: all44.allenshop100.ir
-  port: 443
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-    short-id: 98fa0b00d09419f7
-- name: V2Get🛰️ 2026-06-20 12:26
-  type: vless
-  server: 217.217.247.251
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: enterprisekitten.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
 - name: 'V2Get🛰️ 2026-06-22 03:35 #3'
   type: vless
   server: riga1.ns.asriranfun.ir
@@ -677,22 +690,9 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: V2Get🛰️ 2026-06-21 16:47
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: pagess.ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: www.pagess.ir
 - name: 'V2Get🛰️ 2026-06-21 16:47 #2'
   type: trojan
-  server: 104.16.72.70
+  server: 188.114.97.6
   port: 443
   password: MITIVPN
   udp: true
@@ -1151,6 +1151,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 10:47
+  - V2Get🛰️ 2026-06-21 16:47
+  - V2Get🛰️ 2026-06-21 22:06
+  - V2Get🛰️ 2026-06-20 12:26
+  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-20 22:35
@@ -1161,18 +1166,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 16:01 #2'
   - V2Get🛰️ 2026-06-22 03:35
   - V2Get🛰️ 2026-06-21 16:00
-  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 21:55
   - V2Get🛰️ 2026-06-21 16:07
-  - V2Get🛰️ 2026-06-18 10:47
   - V2Get🛰️ 2026-06-21 09:29
   - V2Get🛰️ 2026-06-22 06:46
   - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-20 19:04
   - 'V2Get🛰️ 2026-06-21 16:01 #3'
   - 'V2Get🛰️ 2026-06-22 03:35 #2'
-  - V2Get🛰️ 2026-06-21 22:06
-  - V2Get🛰️ 2026-06-20 12:26
   - 'V2Get🛰️ 2026-06-22 03:35 #3'
   - V2Get🛰️ 2026-06-22 04:40
   - 'V2Get🛰️ 2026-06-22 03:35 #4'
@@ -1207,7 +1208,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-22 03:10
   - V2Get🛰️ 2026-06-22 03:08
-  - V2Get🛰️ 2026-06-21 16:47
   - 'V2Get🛰️ 2026-06-21 16:47 #2'
   - V2Get🛰️ 2026-06-22 01:51
   - V2Get🛰️ 2026-06-15 16:58
@@ -1254,6 +1254,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 10:47
+  - V2Get🛰️ 2026-06-21 16:47
+  - V2Get🛰️ 2026-06-21 22:06
+  - V2Get🛰️ 2026-06-20 12:26
+  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-19 21:56
   - V2Get🛰️ 2026-06-20 22:35
@@ -1264,18 +1269,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 16:01 #2'
   - V2Get🛰️ 2026-06-22 03:35
   - V2Get🛰️ 2026-06-21 16:00
-  - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 21:55
   - V2Get🛰️ 2026-06-21 16:07
-  - V2Get🛰️ 2026-06-18 10:47
   - V2Get🛰️ 2026-06-21 09:29
   - V2Get🛰️ 2026-06-22 06:46
   - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-20 19:04
   - 'V2Get🛰️ 2026-06-21 16:01 #3'
   - 'V2Get🛰️ 2026-06-22 03:35 #2'
-  - V2Get🛰️ 2026-06-21 22:06
-  - V2Get🛰️ 2026-06-20 12:26
   - 'V2Get🛰️ 2026-06-22 03:35 #3'
   - V2Get🛰️ 2026-06-22 04:40
   - 'V2Get🛰️ 2026-06-22 03:35 #4'
@@ -1310,7 +1311,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-22 03:10
   - V2Get🛰️ 2026-06-22 03:08
-  - V2Get🛰️ 2026-06-21 16:47
   - 'V2Get🛰️ 2026-06-21 16:47 #2'
   - V2Get🛰️ 2026-06-22 01:51
   - V2Get🛰️ 2026-06-15 16:58
