@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 21:15
+  type: vless
+  server: 89.106.64.15
+  port: 7000
+  uuid: 0a715ede-593a-4018-8406-66e2c3b1169c
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-19 00:48
   type: vless
   server: 188.114.97.6
@@ -237,20 +245,6 @@ proxies:
   reality-opts:
     public-key: E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU
     short-id: 28711478c2a20a18
-- name: V2Get🛰️ 2026-06-17 18:54
-  type: trojan
-  server: 172.67.210.215
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: linkkon-w.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-19 19:00
   type: vless
   server: 172.66.3.252
@@ -1165,6 +1159,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 21:15
   - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-22 12:13
   - V2Get🛰️ 2026-06-22 04:40
@@ -1183,7 +1178,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 20:25
   - V2Get🛰️ 2026-06-19 20:53
-  - V2Get🛰️ 2026-06-17 18:54
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-20 00:58
   - V2Get🛰️ 2026-06-21 22:14
@@ -1268,6 +1262,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 21:15
   - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-22 12:13
   - V2Get🛰️ 2026-06-22 04:40
@@ -1286,7 +1281,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 12:08
   - V2Get🛰️ 2026-06-19 20:25
   - V2Get🛰️ 2026-06-19 20:53
-  - V2Get🛰️ 2026-06-17 18:54
   - V2Get🛰️ 2026-06-19 19:00
   - V2Get🛰️ 2026-06-20 00:58
   - V2Get🛰️ 2026-06-21 22:14
