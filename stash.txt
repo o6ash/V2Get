@@ -12,6 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-22 16:54
+  type: trojan
+  server: 199.232.173.194
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: fastly.com
+  alpn:
+  - http/1.1
+  - h2
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn--4.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-22 17:31
+  type: trojan
+  server: 146.75.121.194
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: fastly.com
+  alpn:
+  - h2
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn--3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-22 12:06
   type: vless
   server: 38.107.232.146
@@ -540,37 +571,6 @@ proxies:
   - http/1.1
   ws-opts:
     path: /a81aef49-ee1d-47db-a4f9-6aeb100af560
-- name: V2Get🛰️ 2026-06-22 16:54
-  type: trojan
-  server: 199.232.173.194
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: fastly.com
-  alpn:
-  - http/1.1
-  - h2
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn--4.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-22 17:31
-  type: trojan
-  server: 146.75.121.194
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: fastly.com
-  alpn:
-  - h2
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn--3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 11:31
   type: vless
   server: snapp.ir
@@ -1007,6 +1007,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-22 16:54
+  - V2Get🛰️ 2026-06-22 17:31
   - V2Get🛰️ 2026-06-22 12:06
   - V2Get🛰️ 2026-06-22 12:25
   - V2Get🛰️ 2026-06-22 12:26
@@ -1051,8 +1053,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 07:11
   - V2Get🛰️ 2026-06-22 16:36
   - V2Get🛰️ 2026-06-22 17:00
-  - V2Get🛰️ 2026-06-22 16:54
-  - V2Get🛰️ 2026-06-22 17:31
   - V2Get🛰️ 2026-06-17 11:31
   - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-17 11:30
@@ -1097,6 +1097,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-22 16:54
+  - V2Get🛰️ 2026-06-22 17:31
   - V2Get🛰️ 2026-06-22 12:06
   - V2Get🛰️ 2026-06-22 12:25
   - V2Get🛰️ 2026-06-22 12:26
@@ -1141,8 +1143,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 07:11
   - V2Get🛰️ 2026-06-22 16:36
   - V2Get🛰️ 2026-06-22 17:00
-  - V2Get🛰️ 2026-06-22 16:54
-  - V2Get🛰️ 2026-06-22 17:31
   - V2Get🛰️ 2026-06-17 11:31
   - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-17 11:30
