@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 03:17
+  type: vless
+  server: 37.114.48.146
+  port: 9443
+  uuid: 7d876627-abf5-4865-8ff4-03f37d49de5d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: bero-3.bexum.fun
+  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-22 08:19
   type: vless
   server: germnode.dostupnet.ru
@@ -647,20 +658,6 @@ proxies:
     path: /@CratelNetwork
     headers:
       Host: cratel.qzz.io
-- name: V2Get🛰️ 2026-06-23 01:36
-  type: vless
-  server: free.cratel.qzz.io
-  port: 2083
-  uuid: 3bb489c4-4862-4de8-9a6b-b9b8bb4d3a63
-  udp: true
-  network: ws
-  tls: true
-  servername: cratel.qzz.io
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@CratelNetwork
-    headers:
-      Host: cratel.qzz.io
 - name: V2Get🛰️ 2026-06-23 01:55
   type: vless
   server: 147.45.41.227
@@ -1156,6 +1153,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 03:17
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-22 11:16
   - V2Get🛰️ 2026-06-19 03:05
@@ -1209,7 +1207,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 14:31
   - V2Get🛰️ 2026-06-22 22:10
   - V2Get🛰️ 2026-06-23 01:54
-  - V2Get🛰️ 2026-06-23 01:36
   - V2Get🛰️ 2026-06-23 01:55
   - V2Get🛰️ 2026-06-15 23:32
   - V2Get🛰️ 2026-06-22 15:38
@@ -1259,6 +1256,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 03:17
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-22 11:16
   - V2Get🛰️ 2026-06-19 03:05
@@ -1312,7 +1310,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 14:31
   - V2Get🛰️ 2026-06-22 22:10
   - V2Get🛰️ 2026-06-23 01:54
-  - V2Get🛰️ 2026-06-23 01:36
   - V2Get🛰️ 2026-06-23 01:55
   - V2Get🛰️ 2026-06-15 23:32
   - V2Get🛰️ 2026-06-22 15:38
