@@ -12,39 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-22 08:20
+- name: V2Get🛰️ 2026-06-23 09:15
   type: vless
-  server: 72.56.245.170
-  port: 40443
-  uuid: 403c1990-0922-43e9-9027-03ef38c92c87
+  server: 185.92.223.128
+  port: 41022
+  uuid: e241d34c-647b-4545-b414-bc4cfafa24ac
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: www.google.com:443
   tls: true
-  servername: deepl.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Y15uAAl8fpWhma1FIWyZujgRKdwxYaaF4zIyWyu9vSo
-    short-id: 5cc0
 - name: V2Get🛰️ 2026-06-23 10:04
-  type: vless
-  server: ger.villy-tun.ir
-  port: 443
-  uuid: 793bab08-60f8-4a93-b78e-3b2bd7cf4d80
-  udp: true
-  network: ws
-  tls: true
-  servername: ger.villy-tun.ir
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /H?ed=2560
-    headers:
-      Host: ger.villy-tun.ir
-- name: 'V2Get🛰️ 2026-06-23 10:04 #2'
   type: vless
   server: turk.villy-tun.ir
   port: 443
@@ -62,6 +41,88 @@ proxies:
     path: /H?ed=2560
     headers:
       Host: turk.villy-tun.ir
+- name: V2Get🛰️ 2026-06-23 07:27
+  type: vless
+  server: arvancloud.ir
+  port: 2052
+  uuid: be038985-be2b-47a9-8d7b-5b661fca92f0
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: dj.storyhost.ir
+- name: V2Get🛰️ 2026-06-16 22:25
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: V2Get🛰️ 2026-06-17 02:40
+  type: vless
+  server: de22.fastplus7.site
+  port: 2086
+  uuid: 0d1c3cee-2952-4a3e-a03e-fbe99d32dc72
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: de21.fastplus11.ir
+- name: V2Get🛰️ 2026-06-17 08:36
+  type: vless
+  server: 31.76.91.33
+  port: 443
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp.s3-cloud.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+- name: 'V2Get🛰️ 2026-06-23 10:04 #2'
+  type: vless
+  server: ger.villy-tun.ir
+  port: 443
+  uuid: 793bab08-60f8-4a93-b78e-3b2bd7cf4d80
+  udp: true
+  network: ws
+  tls: true
+  servername: ger.villy-tun.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /H?ed=2560
+    headers:
+      Host: ger.villy-tun.ir
+- name: V2Get🛰️ 2026-06-22 08:20
+  type: vless
+  server: 72.56.245.170
+  port: 40443
+  uuid: 403c1990-0922-43e9-9027-03ef38c92c87
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Y15uAAl8fpWhma1FIWyZujgRKdwxYaaF4zIyWyu9vSo
+    short-id: 5cc0
 - name: V2Get🛰️ 2026-06-23 10:03
   type: vless
   server: c1.puffy-shop.ir
@@ -86,20 +147,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-17 08:36
-  type: vless
-  server: 31.76.91.33
-  port: 443
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jp.s3-cloud.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: 7a3f9e2b1c8d4f6a
 - name: 'V2Get🛰️ 2026-06-22 15:37 #2'
   type: vless
   server: solar.appleseraj.ir
@@ -141,18 +188,6 @@ proxies:
   reality-opts:
     public-key: SCByzESuj4gGSN9R0DnblJ6MLSZQssEq4oY80tumeRA
     short-id: 734504b24fd1
-- name: V2Get🛰️ 2026-06-16 22:25
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
 - name: V2Get🛰️ 2026-06-21 09:26
   type: vless
   server: 212.69.86.220
@@ -346,20 +381,6 @@ proxies:
   reality-opts:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
     short-id: 98fa0b00d09419f7
-- name: V2Get🛰️ 2026-06-17 04:19
-  type: vless
-  server: 45.81.58.159
-  port: 2096
-  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
-  udp: true
-  network: ws
-  tls: true
-  servername: e832b8629fff3263.hozheen.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws?ed=2560
-    headers:
-      Host: newgen14.hozheen.ir
 - name: V2Get🛰️ 2026-06-23 09:43
   type: vless
   server: 45.130.125.114
@@ -643,18 +664,6 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: V2Get🛰️ 2026-06-23 07:27
-  type: vless
-  server: arvancloud.ir
-  port: 2052
-  uuid: be038985-be2b-47a9-8d7b-5b661fca92f0
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: dj.storyhost.ir
 - name: 'V2Get🛰️ 2026-06-23 09:19 #2'
   type: vless
   server: gb2.univesalsrv.com
@@ -678,18 +687,6 @@ proxies:
   reality-opts:
     public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
     short-id: b7b70c104ad267b8
-- name: V2Get🛰️ 2026-06-17 02:40
-  type: vless
-  server: de22.fastplus7.site
-  port: 2086
-  uuid: 0d1c3cee-2952-4a3e-a03e-fbe99d32dc72
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: de21.fastplus11.ir
 - name: V2Get🛰️ 2026-06-22 17:23
   type: vless
   server: 172.67.111.141
@@ -1084,16 +1081,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-22 08:20
+  - V2Get🛰️ 2026-06-23 09:15
   - V2Get🛰️ 2026-06-23 10:04
+  - V2Get🛰️ 2026-06-23 07:27
+  - V2Get🛰️ 2026-06-16 22:25
+  - V2Get🛰️ 2026-06-17 02:40
+  - V2Get🛰️ 2026-06-17 08:36
   - 'V2Get🛰️ 2026-06-23 10:04 #2'
+  - V2Get🛰️ 2026-06-22 08:20
   - V2Get🛰️ 2026-06-23 10:03
   - V2Get🛰️ 2026-06-22 15:37
-  - V2Get🛰️ 2026-06-17 08:36
   - 'V2Get🛰️ 2026-06-22 15:37 #2'
   - 'V2Get🛰️ 2026-06-22 15:37 #3'
   - V2Get🛰️ 2026-06-23 09:19
-  - V2Get🛰️ 2026-06-16 22:25
   - V2Get🛰️ 2026-06-21 09:26
   - V2Get🛰️ 2026-06-20 11:38
   - V2Get🛰️ 2026-06-23 07:57
@@ -1109,7 +1109,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 09:25 #2'
   - 'V2Get🛰️ 2026-06-21 09:25 #3'
   - V2Get🛰️ 2026-06-22 10:50
-  - V2Get🛰️ 2026-06-17 04:19
   - V2Get🛰️ 2026-06-23 09:43
   - 'V2Get🛰️ 2026-06-23 09:43 #2'
   - V2Get🛰️ 2026-06-23 09:42
@@ -1133,10 +1132,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-23 09:34 #4'
   - 'V2Get🛰️ 2026-06-23 09:34 #5'
   - V2Get🛰️ 2026-06-16 12:08
-  - V2Get🛰️ 2026-06-23 07:27
   - 'V2Get🛰️ 2026-06-23 09:19 #2'
   - V2Get🛰️ 2026-06-22 16:43
-  - V2Get🛰️ 2026-06-17 02:40
   - V2Get🛰️ 2026-06-22 17:23
   - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-20 23:59
@@ -1174,16 +1171,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-22 08:20
+  - V2Get🛰️ 2026-06-23 09:15
   - V2Get🛰️ 2026-06-23 10:04
+  - V2Get🛰️ 2026-06-23 07:27
+  - V2Get🛰️ 2026-06-16 22:25
+  - V2Get🛰️ 2026-06-17 02:40
+  - V2Get🛰️ 2026-06-17 08:36
   - 'V2Get🛰️ 2026-06-23 10:04 #2'
+  - V2Get🛰️ 2026-06-22 08:20
   - V2Get🛰️ 2026-06-23 10:03
   - V2Get🛰️ 2026-06-22 15:37
-  - V2Get🛰️ 2026-06-17 08:36
   - 'V2Get🛰️ 2026-06-22 15:37 #2'
   - 'V2Get🛰️ 2026-06-22 15:37 #3'
   - V2Get🛰️ 2026-06-23 09:19
-  - V2Get🛰️ 2026-06-16 22:25
   - V2Get🛰️ 2026-06-21 09:26
   - V2Get🛰️ 2026-06-20 11:38
   - V2Get🛰️ 2026-06-23 07:57
@@ -1199,7 +1199,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 09:25 #2'
   - 'V2Get🛰️ 2026-06-21 09:25 #3'
   - V2Get🛰️ 2026-06-22 10:50
-  - V2Get🛰️ 2026-06-17 04:19
   - V2Get🛰️ 2026-06-23 09:43
   - 'V2Get🛰️ 2026-06-23 09:43 #2'
   - V2Get🛰️ 2026-06-23 09:42
@@ -1223,10 +1222,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-23 09:34 #4'
   - 'V2Get🛰️ 2026-06-23 09:34 #5'
   - V2Get🛰️ 2026-06-16 12:08
-  - V2Get🛰️ 2026-06-23 07:27
   - 'V2Get🛰️ 2026-06-23 09:19 #2'
   - V2Get🛰️ 2026-06-22 16:43
-  - V2Get🛰️ 2026-06-17 02:40
   - V2Get🛰️ 2026-06-22 17:23
   - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-20 23:59
