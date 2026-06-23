@@ -12,6 +12,81 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-23 16:02
+  type: vless
+  server: 91.107.252.230
+  port: 41250
+  uuid: 98ccd79f-64fb-418f-84e0-999a09319300
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-16 06:23
+  type: ss
+  server: 82.38.31.15
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-06-24 01:11
+  type: vless
+  server: 45.198.105.248
+  port: 8443
+  uuid: 977f2eea-9f37-417b-bdc3-5abfba1e54df
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+    short-id: d3ee47fc2f553c44
+- name: V2Get🛰️ 2026-06-21 23:27
+  type: vless
+  server: 194.152.44.21
+  port: 2052
+  uuid: 42e0d02c-b75c-4b9d-bc15-773aa3cbe6bd
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-20 11:38
+  type: vless
+  server: lv.faygo.bot
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: enterprisekitten.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: V2Get🛰️ 2026-06-23 14:28
+  type: vless
+  server: sw-2.coinbridge.nl
+  port: 443
+  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  udp: true
+  network: grpc
+  tls: true
+  servername: google.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
+    short-id: d5c7f84e37e0c12d
+  grpc-opts:
+    grpc-service-name: data-sync
+- name: V2Get🛰️ 2026-06-24 01:09
+  type: vless
+  server: 86.38.214.77
+  port: 2096
+  uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
+  udp: true
+  network: xhttp
+  tls: true
+  servername: c.tiptop-3.top
 - name: V2Get🛰️ 2026-06-24 01:10
   type: vless
   server: 186.246.6.210
@@ -38,7 +113,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-06-24 01:09
+- name: 'V2Get🛰️ 2026-06-24 01:09 #2'
   type: vless
   server: 46.149.67.166
   port: 443
@@ -51,31 +126,6 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: 'V2Get🛰️ 2026-06-24 01:09 #2'
-  type: vless
-  server: 86.38.214.77
-  port: 2096
-  uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
-  udp: true
-  network: xhttp
-  tls: true
-  servername: c.tiptop-3.top
-- name: 'V2Get🛰️ 2026-06-24 01:09 #3'
-  type: vless
-  server: 89.116.46.68
-  port: 8443
-  uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
-  udp: true
-  network: ws
-  tls: true
-  servername: c.tiptop-3.top
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: c.tiptop-3.top
 - name: V2Get🛰️ 2026-06-24 01:08
   type: vless
   server: 86.38.214.33
@@ -88,6 +138,14 @@ proxies:
   client-fingerprint: chrome
 - name: 'V2Get🛰️ 2026-06-24 01:08 #2'
   type: vless
+  server: 168.222.49.27
+  port: 25722
+  uuid: d13f51fd-7f13-48af-afd2-f64a90a5d5b1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-06-24 01:08 #3'
+  type: vless
   server: 86.38.214.179
   port: 2096
   uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
@@ -95,20 +153,12 @@ proxies:
   network: xhttp
   tls: true
   servername: b.tiptop-2.top
-- name: 'V2Get🛰️ 2026-06-24 01:08 #3'
+- name: 'V2Get🛰️ 2026-06-24 01:08 #4'
   type: trojan
   server: 92.119.35.120
   port: 443
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   udp: true
-- name: 'V2Get🛰️ 2026-06-24 01:08 #4'
-  type: vless
-  server: 168.222.49.27
-  port: 25722
-  uuid: d13f51fd-7f13-48af-afd2-f64a90a5d5b1
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-24 01:08 #5'
   type: trojan
   server: 92.119.35.130
@@ -133,20 +183,6 @@ proxies:
       Host: b.tiptop-3.top
 - name: 'V2Get🛰️ 2026-06-24 01:08 #7'
   type: vless
-  server: 159.223.245.209
-  port: 8080
-  uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: StrEB3OijJbvlCxbx_8zihrMUFINJevlyDwkrK0dVR8
-    short-id: 40b0779d9e26dbc5
-- name: 'V2Get🛰️ 2026-06-24 01:08 #8'
-  type: vless
   server: 94.140.0.204
   port: 8443
   uuid: 1625be68-8ed9-47b5-ab00-0d03c27f9082
@@ -161,7 +197,7 @@ proxies:
     path: /
     headers:
       Host: d.tiptop-3.top
-- name: 'V2Get🛰️ 2026-06-24 01:08 #9'
+- name: 'V2Get🛰️ 2026-06-24 01:08 #8'
   type: vless
   server: 86.38.214.207
   port: 8443
@@ -238,14 +274,6 @@ proxies:
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
   udp: true
   sni: 207.126.167.241
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-20 22:19
-  type: trojan
-  server: 198.52.244.10
-  port: 443
-  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
-  udp: true
-  sni: 198.52.244.10
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-24 01:03
   type: trojan
@@ -444,23 +472,6 @@ proxies:
   client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-24 00:56
   type: vless
-  server: www.quran.com
-  port: 443
-  uuid: 00722148-3d6c-403d-854e-581b105ceffd
-  udp: true
-  network: ws
-  tls: true
-  servername: 7GvDXUTz.devlad.org
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v3/ws/events
-    headers:
-      Host: G6za0AIZL1z0Zh.devlad.org
-- name: 'V2Get🛰️ 2026-06-24 00:56 #2'
-  type: vless
   server: zeus-panel-idoxmd.zeus-ptqez6.workers.dev
   port: 2053
   uuid: f9214951-be93-4e3d-8c14-b9ba991f8f30
@@ -473,7 +484,7 @@ proxies:
     path: /
     headers:
       Host: zeus-panel-idoxmd.zeus-ptqez6.workers.dev
-- name: 'V2Get🛰️ 2026-06-24 00:56 #3'
+- name: 'V2Get🛰️ 2026-06-24 00:56 #2'
   type: vless
   server: zeus-panel-idoxmd.zeus-ptqez6.workers.dev
   port: 80
@@ -907,37 +918,6 @@ proxies:
     path: /rdfgtws
     headers:
       Host: vangoghhh.info
-- name: V2Get🛰️ 2026-06-24 00:08
-  type: vless
-  server: sub.arshia-nova.ir
-  port: 2087
-  uuid: 469c3d0a-a276-441d-bd03-d46cb84f5909
-  udp: true
-  network: ws
-  tls: true
-  servername: homayon198.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /login
-    headers:
-      Host: homayon198.ir
-- name: V2Get🛰️ 2026-06-21 14:20
-  type: vless
-  server: d2.cvbesty.ir
-  port: 39980
-  uuid: f77bcbf0-76ac-462f-b789-22f99838bcd9
-  udp: true
-  network: grpc
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: rvASQZqW6BWYuVuV_wfzoaTz3kPXRB1i6VJlUYUwZB4
-    short-id: 3e64c3
-  grpc-opts:
-    grpc-service-name: ''
 - name: V2Get🛰️ 2026-06-19 16:38
   type: vless
   server: 185.229.191.110
@@ -1165,11 +1145,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-23 16:02
+  - V2Get🛰️ 2026-06-16 06:23
+  - V2Get🛰️ 2026-06-24 01:11
+  - V2Get🛰️ 2026-06-21 23:27
+  - V2Get🛰️ 2026-06-20 11:38
+  - V2Get🛰️ 2026-06-23 14:28
+  - V2Get🛰️ 2026-06-24 01:09
   - V2Get🛰️ 2026-06-24 01:10
   - 'V2Get🛰️ 2026-06-24 01:10 #2'
-  - V2Get🛰️ 2026-06-24 01:09
   - 'V2Get🛰️ 2026-06-24 01:09 #2'
-  - 'V2Get🛰️ 2026-06-24 01:09 #3'
   - V2Get🛰️ 2026-06-24 01:08
   - 'V2Get🛰️ 2026-06-24 01:08 #2'
   - 'V2Get🛰️ 2026-06-24 01:08 #3'
@@ -1178,7 +1163,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 01:08 #6'
   - 'V2Get🛰️ 2026-06-24 01:08 #7'
   - 'V2Get🛰️ 2026-06-24 01:08 #8'
-  - 'V2Get🛰️ 2026-06-24 01:08 #9'
   - V2Get🛰️ 2026-06-24 01:07
   - V2Get🛰️ 2026-06-24 01:04
   - 'V2Get🛰️ 2026-06-24 01:04 #2'
@@ -1187,7 +1171,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - 'V2Get🛰️ 2026-06-24 01:04 #4'
   - 'V2Get🛰️ 2026-06-15 23:53 #3'
-  - V2Get🛰️ 2026-06-20 22:19
   - V2Get🛰️ 2026-06-24 01:03
   - 'V2Get🛰️ 2026-06-15 23:53 #4'
   - 'V2Get🛰️ 2026-06-24 01:03 #2'
@@ -1208,7 +1191,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 22:21
   - V2Get🛰️ 2026-06-24 00:56
   - 'V2Get🛰️ 2026-06-24 00:56 #2'
-  - 'V2Get🛰️ 2026-06-24 00:56 #3'
   - V2Get🛰️ 2026-06-24 00:55
   - V2Get🛰️ 2026-06-15 18:35
   - 'V2Get🛰️ 2026-06-24 00:55 #2'
@@ -1243,8 +1225,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:45
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-22 16:14
-  - V2Get🛰️ 2026-06-24 00:08
-  - V2Get🛰️ 2026-06-21 14:20
   - V2Get🛰️ 2026-06-19 16:38
   - V2Get🛰️ 2026-06-23 23:53
   - 'V2Get🛰️ 2026-06-23 23:53 #2'
@@ -1270,11 +1250,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-23 16:02
+  - V2Get🛰️ 2026-06-16 06:23
+  - V2Get🛰️ 2026-06-24 01:11
+  - V2Get🛰️ 2026-06-21 23:27
+  - V2Get🛰️ 2026-06-20 11:38
+  - V2Get🛰️ 2026-06-23 14:28
+  - V2Get🛰️ 2026-06-24 01:09
   - V2Get🛰️ 2026-06-24 01:10
   - 'V2Get🛰️ 2026-06-24 01:10 #2'
-  - V2Get🛰️ 2026-06-24 01:09
   - 'V2Get🛰️ 2026-06-24 01:09 #2'
-  - 'V2Get🛰️ 2026-06-24 01:09 #3'
   - V2Get🛰️ 2026-06-24 01:08
   - 'V2Get🛰️ 2026-06-24 01:08 #2'
   - 'V2Get🛰️ 2026-06-24 01:08 #3'
@@ -1283,7 +1268,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 01:08 #6'
   - 'V2Get🛰️ 2026-06-24 01:08 #7'
   - 'V2Get🛰️ 2026-06-24 01:08 #8'
-  - 'V2Get🛰️ 2026-06-24 01:08 #9'
   - V2Get🛰️ 2026-06-24 01:07
   - V2Get🛰️ 2026-06-24 01:04
   - 'V2Get🛰️ 2026-06-24 01:04 #2'
@@ -1292,7 +1276,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-15 23:53 #2'
   - 'V2Get🛰️ 2026-06-24 01:04 #4'
   - 'V2Get🛰️ 2026-06-15 23:53 #3'
-  - V2Get🛰️ 2026-06-20 22:19
   - V2Get🛰️ 2026-06-24 01:03
   - 'V2Get🛰️ 2026-06-15 23:53 #4'
   - 'V2Get🛰️ 2026-06-24 01:03 #2'
@@ -1313,7 +1296,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 22:21
   - V2Get🛰️ 2026-06-24 00:56
   - 'V2Get🛰️ 2026-06-24 00:56 #2'
-  - 'V2Get🛰️ 2026-06-24 00:56 #3'
   - V2Get🛰️ 2026-06-24 00:55
   - V2Get🛰️ 2026-06-15 18:35
   - 'V2Get🛰️ 2026-06-24 00:55 #2'
@@ -1348,8 +1330,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:45
   - V2Get🛰️ 2026-06-15 18:28
   - V2Get🛰️ 2026-06-22 16:14
-  - V2Get🛰️ 2026-06-24 00:08
-  - V2Get🛰️ 2026-06-21 14:20
   - V2Get🛰️ 2026-06-19 16:38
   - V2Get🛰️ 2026-06-23 23:53
   - 'V2Get🛰️ 2026-06-23 23:53 #2'
