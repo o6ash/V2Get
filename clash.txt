@@ -12,17 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-15 18:58
-  type: vless
-  server: sca33.myfymain.com
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-23 19:19
   type: vless
   server: 178.83.45.142
@@ -36,6 +25,17 @@ proxies:
   reality-opts:
     public-key: nm_XWU_p2aKwh8sIJ5eeAgELgdg0Lw2zJ2ct3DaBdk0
     short-id: e34569
+- name: V2Get🛰️ 2026-06-15 18:58
+  type: vless
+  server: sca33.myfymain.com
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
 - name: V2Get🛰️ 2026-06-23 19:18
   type: trojan
   server: 45.130.125.2
@@ -1168,8 +1168,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-23 19:19
+  - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-23 19:18
   - 'V2Get🛰️ 2026-06-23 19:18 #2'
   - 'V2Get🛰️ 2026-06-23 19:18 #3'
@@ -1268,8 +1268,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-23 19:19
+  - V2Get🛰️ 2026-06-15 18:58
   - V2Get🛰️ 2026-06-23 19:18
   - 'V2Get🛰️ 2026-06-23 19:18 #2'
   - 'V2Get🛰️ 2026-06-23 19:18 #3'
