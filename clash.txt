@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 00:48
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  udp: true
+  network: ws
+  tls: true
+  servername: terazhediii.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
 - name: V2Get🛰️ 2026-06-22 17:42
   type: vless
   server: xn-riga.easyodin.ir
@@ -318,22 +332,6 @@ proxies:
     path: index.php?mitivpn
     headers:
       Host: cdn.95r.ir
-- name: V2Get🛰️ 2026-06-22 16:54
-  type: trojan
-  server: 199.232.173.194
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: fastly.com
-  alpn:
-  - http/1.1
-  - h2
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn--4.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-23 02:43
   type: trojan
   server: 188.114.96.6
@@ -1144,6 +1142,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-22 17:42
   - V2Get🛰️ 2026-06-22 17:16
   - V2Get🛰️ 2026-06-21 18:24
@@ -1172,7 +1171,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 19:41
   - V2Get🛰️ 2026-06-22 10:51
   - V2Get🛰️ 2026-06-17 10:39
-  - V2Get🛰️ 2026-06-22 16:54
   - V2Get🛰️ 2026-06-23 02:43
   - 'V2Get🛰️ 2026-06-23 02:43 #2'
   - V2Get🛰️ 2026-06-17 13:36
@@ -1247,6 +1245,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 00:48
   - V2Get🛰️ 2026-06-22 17:42
   - V2Get🛰️ 2026-06-22 17:16
   - V2Get🛰️ 2026-06-21 18:24
@@ -1275,7 +1274,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 19:41
   - V2Get🛰️ 2026-06-22 10:51
   - V2Get🛰️ 2026-06-17 10:39
-  - V2Get🛰️ 2026-06-22 16:54
   - V2Get🛰️ 2026-06-23 02:43
   - 'V2Get🛰️ 2026-06-23 02:43 #2'
   - V2Get🛰️ 2026-06-17 13:36
