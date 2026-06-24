@@ -12,6 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-19 23:53
+  type: vless
+  server: t-panel.wasmer.app
+  port: 443
+  uuid: 9cd65844-3f28-4081-8d70-b5c61815f45d
+  udp: true
+  network: ws
+  tls: true
+  servername: t-panel.wasmer.app
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/9cd65844-3f28-4081-8d70-b5c61815f45d
+    headers:
+      Host: t-panel.wasmer.app
+- name: V2Get🛰️ 2026-06-18 11:26
+  type: vless
+  server: de.ipsenter.org
+  port: 443
+  uuid: c381ed79-f3c9-4028-85ae-687795d89ece
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ
+    short-id: 1128da54b05ec30c
 - name: V2Get🛰️ 2026-06-16 08:05
   type: vmess
   server: 47.250.149.51
@@ -542,20 +571,6 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: s5.868001.xyz
-- name: V2Get🛰️ 2026-06-15 18:41
-  type: vless
-  server: cdn.netraidly.ru
-  port: 40443
-  uuid: 4bf5a71c-d726-4585-b095-7396675706d5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU
-    short-id: c84f
 - name: V2Get🛰️ 2026-06-20 16:13
   type: vless
   server: 141.193.154.182
@@ -728,20 +743,6 @@ proxies:
     path: /eyJqdW5rIjoiSVIwdkdQSmhrT0xRNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSJdfQ==?ed=2560
     headers:
       Host: tiny-shadow-2432.quillypanel26.workers.dev
-- name: V2Get🛰️ 2026-06-23 02:43
-  type: trojan
-  server: 188.114.96.6
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: f6r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: f6r.ir
 - name: V2Get🛰️ 2026-06-16 21:50
   type: vless
   server: 151.115.165.172
@@ -1018,6 +1019,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-19 23:53
+  - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 08:05
   - V2Get🛰️ 2026-06-20 11:52
   - V2Get🛰️ 2026-06-24 04:51
@@ -1061,7 +1064,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 04:01
   - V2Get🛰️ 2026-06-24 03:57
   - V2Get🛰️ 2026-06-23 23:41
-  - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-16 09:11
@@ -1076,7 +1078,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 11:38
   - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-23 07:30
-  - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-16 21:50
   - V2Get🛰️ 2026-06-24 03:29
   - V2Get🛰️ 2026-06-24 03:26
@@ -1103,6 +1104,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-19 23:53
+  - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 08:05
   - V2Get🛰️ 2026-06-20 11:52
   - V2Get🛰️ 2026-06-24 04:51
@@ -1146,7 +1149,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 04:01
   - V2Get🛰️ 2026-06-24 03:57
   - V2Get🛰️ 2026-06-23 23:41
-  - V2Get🛰️ 2026-06-15 18:41
   - V2Get🛰️ 2026-06-20 16:13
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-16 09:11
@@ -1161,7 +1163,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 11:38
   - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-23 07:30
-  - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-16 21:50
   - V2Get🛰️ 2026-06-24 03:29
   - V2Get🛰️ 2026-06-24 03:26
