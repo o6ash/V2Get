@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-24 13:17
+  type: trojan
+  server: 151.101.193.242
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: f6r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /usa=mitivpn
+    headers:
+      Host: f6r.ir
+- name: 'V2Get🛰️ 2026-06-24 13:17 #2'
+  type: trojan
+  server: 151.101.1.242
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: www.f6r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: www.f6r.ir
 - name: V2Get🛰️ 2026-06-16 19:09
   type: vless
   server: 159.195.149.186
@@ -433,20 +461,6 @@ proxies:
   tls: true
   grpc-opts:
     grpc-service-name: '@V2RAYNGRAISI,@V2RAYNGRAISI,@V2RAYNGRAISI,@V2RAYNGRAISI,@V2RAYNGRAISI,@V2RAYNGRAISI,'
-- name: V2Get🛰️ 2026-06-24 16:45
-  type: vless
-  server: 85.192.49.4
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fll.gazladder.work
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
-    short-id: b415b8d7a6106ace
 - name: V2Get🛰️ 2026-06-23 02:43
   type: trojan
   server: 172.66.47.69
@@ -488,20 +502,6 @@ proxies:
     path: /GOrbEh
     headers:
       Host: rubifen.adaspoloandco.com
-- name: V2Get🛰️ 2026-06-24 13:17
-  type: trojan
-  server: 151.101.1.242
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: www.f6r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: www.f6r.ir
 - name: V2Get🛰️ 2026-06-24 17:39
   type: vless
   server: turk.villy-tun.ir
@@ -1126,6 +1126,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-24 13:17
+  - 'V2Get🛰️ 2026-06-24 13:17 #2'
   - V2Get🛰️ 2026-06-16 19:09
   - V2Get🛰️ 2026-06-24 14:32
   - V2Get🛰️ 2026-06-19 16:57
@@ -1160,11 +1162,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 16:39
   - V2Get🛰️ 2026-06-24 15:29
   - V2Get🛰️ 2026-06-24 15:20
-  - V2Get🛰️ 2026-06-24 16:45
   - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-24 16:28
   - V2Get🛰️ 2026-06-17 13:49
-  - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-24 17:39
   - V2Get🛰️ 2026-06-20 19:04
   - 'V2Get🛰️ 2026-06-24 14:27 #2'
@@ -1219,6 +1219,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-24 13:17
+  - 'V2Get🛰️ 2026-06-24 13:17 #2'
   - V2Get🛰️ 2026-06-16 19:09
   - V2Get🛰️ 2026-06-24 14:32
   - V2Get🛰️ 2026-06-19 16:57
@@ -1253,11 +1255,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 16:39
   - V2Get🛰️ 2026-06-24 15:29
   - V2Get🛰️ 2026-06-24 15:20
-  - V2Get🛰️ 2026-06-24 16:45
   - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-24 16:28
   - V2Get🛰️ 2026-06-17 13:49
-  - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-24 17:39
   - V2Get🛰️ 2026-06-20 19:04
   - 'V2Get🛰️ 2026-06-24 14:27 #2'
