@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-24 02:26
+  type: vless
+  server: ip2.cloudfeller.ir
+  port: 443
+  uuid: 8933a967-2f9d-4ec8-8172-a28445cadead
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.fredomiran.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-06-15 18:18
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: V2Get🛰️ 2026-06-24 08:38
   type: vless
   server: fl.gamelistak.com
@@ -314,15 +334,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-18 23:31
-  type: vless
-  server: 87.249.139.244
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  udp: true
-  network: tcp
-  tls: true
-  servername: ams1.fromblancwithlove.com
 - name: V2Get🛰️ 2026-06-24 02:32
   type: vless
   server: 103.169.142.140
@@ -450,20 +461,6 @@ proxies:
     short-id: 6ba85179e30d4fc2
   grpc-opts:
     grpc-service-name: xyz
-- name: V2Get🛰️ 2026-06-24 07:17
-  type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: 16f5a9be-0264-4444-8680-14a550433f84
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-15 22:14
   type: ss
   server: 82.38.31.16
@@ -1162,6 +1159,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-24 02:26
+  - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-24 08:38
   - V2Get🛰️ 2026-06-21 21:17
   - 'V2Get🛰️ 2026-06-24 08:38 #2'
@@ -1188,7 +1187,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 08:05 #4'
   - 'V2Get🛰️ 2026-06-24 08:05 #5'
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
-  - V2Get🛰️ 2026-06-18 23:31
   - V2Get🛰️ 2026-06-24 02:32
   - 'V2Get🛰️ 2026-06-24 08:05 #6'
   - V2Get🛰️ 2026-06-24 08:00
@@ -1201,7 +1199,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 19:32
   - V2Get🛰️ 2026-06-18 23:15
   - V2Get🛰️ 2026-06-20 14:39
-  - V2Get🛰️ 2026-06-24 07:17
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-16 10:26
   - V2Get🛰️ 2026-06-21 13:43
@@ -1263,6 +1260,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-24 02:26
+  - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-24 08:38
   - V2Get🛰️ 2026-06-21 21:17
   - 'V2Get🛰️ 2026-06-24 08:38 #2'
@@ -1289,7 +1288,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 08:05 #4'
   - 'V2Get🛰️ 2026-06-24 08:05 #5'
   - 'V2Get🛰️ 2026-06-18 05:49 #2'
-  - V2Get🛰️ 2026-06-18 23:31
   - V2Get🛰️ 2026-06-24 02:32
   - 'V2Get🛰️ 2026-06-24 08:05 #6'
   - V2Get🛰️ 2026-06-24 08:00
@@ -1302,7 +1300,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 19:32
   - V2Get🛰️ 2026-06-18 23:15
   - V2Get🛰️ 2026-06-20 14:39
-  - V2Get🛰️ 2026-06-24 07:17
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-16 10:26
   - V2Get🛰️ 2026-06-21 13:43
