@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-24 13:17
+  type: trojan
+  server: 151.101.1.242
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: www.f6r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: www.f6r.ir
+- name: V2Get🛰️ 2026-06-20 23:00
+  type: vless
+  server: 94.242.55.42
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: enterprisekitten.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
 - name: V2Get🛰️ 2026-06-21 13:46
   type: vless
   server: ir.dashping2.ir
@@ -384,7 +412,7 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-24 13:17
+- name: 'V2Get🛰️ 2026-06-24 13:17 #2'
   type: trojan
   server: 151.101.193.242
   port: 443
@@ -898,32 +926,6 @@ proxies:
     path: /nexus
     headers:
       Host: your.nexuschat.fun
-- name: 'V2Get🛰️ 2026-06-25 00:05 #2'
-  type: vless
-  server: 199.181.197.80
-  port: 2083
-  uuid: 20ae4b98-91bf-4892-80c8-4dee85515a54
-  udp: true
-  network: ws
-  tls: true
-  servername: ez-9abab7.ezaccess1451dbd.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-9abab7.ezaccess1451dbd.workers.dev
-- name: V2Get🛰️ 2026-06-22 13:36
-  type: trojan
-  server: 172.67.180.92
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
 - name: V2Get🛰️ 2026-06-25 00:04
   type: vless
   server: ez-a215e5.ezaccess155e83c.workers.dev
@@ -1086,6 +1088,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-24 13:17
+  - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-21 13:46
   - V2Get🛰️ 2026-06-20 00:23
   - V2Get🛰️ 2026-06-15 17:18
@@ -1114,7 +1118,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-25 00:42
   - V2Get🛰️ 2026-06-21 22:14
-  - V2Get🛰️ 2026-06-24 13:17
+  - 'V2Get🛰️ 2026-06-24 13:17 #2'
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-22 14:42
   - V2Get🛰️ 2026-06-24 14:27
@@ -1154,8 +1158,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 20:03
   - 'V2Get🛰️ 2026-06-24 12:47 #2'
   - V2Get🛰️ 2026-06-25 00:05
-  - 'V2Get🛰️ 2026-06-25 00:05 #2'
-  - V2Get🛰️ 2026-06-22 13:36
   - V2Get🛰️ 2026-06-25 00:04
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-24 23:54
@@ -1174,6 +1176,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-24 13:17
+  - V2Get🛰️ 2026-06-20 23:00
   - V2Get🛰️ 2026-06-21 13:46
   - V2Get🛰️ 2026-06-20 00:23
   - V2Get🛰️ 2026-06-15 17:18
@@ -1202,7 +1206,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-25 00:42
   - V2Get🛰️ 2026-06-21 22:14
-  - V2Get🛰️ 2026-06-24 13:17
+  - 'V2Get🛰️ 2026-06-24 13:17 #2'
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-22 14:42
   - V2Get🛰️ 2026-06-24 14:27
@@ -1242,8 +1246,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 20:03
   - 'V2Get🛰️ 2026-06-24 12:47 #2'
   - V2Get🛰️ 2026-06-25 00:05
-  - 'V2Get🛰️ 2026-06-25 00:05 #2'
-  - V2Get🛰️ 2026-06-22 13:36
   - V2Get🛰️ 2026-06-25 00:04
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-24 23:54
