@@ -12,18 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-22 17:52
-  type: vless
-  server: 151.101.130.219
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-25 00:42
   type: vless
   server: fast.cd-tur4.ir
@@ -37,6 +25,18 @@ proxies:
     path: /
     headers:
       Host: bazaryabab.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-22 17:52
+  type: vless
+  server: 151.101.130.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-15 20:41
   type: vless
   server: auth.vercel.com
@@ -1196,8 +1196,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-25 00:42
+  - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-15 20:41
   - V2Get🛰️ 2026-06-25 00:37
   - 'V2Get🛰️ 2026-06-25 00:37 #2'
@@ -1299,8 +1299,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-25 00:42
+  - V2Get🛰️ 2026-06-22 17:52
   - V2Get🛰️ 2026-06-15 20:41
   - V2Get🛰️ 2026-06-25 00:37
   - 'V2Get🛰️ 2026-06-25 00:37 #2'
