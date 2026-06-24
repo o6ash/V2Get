@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-23 02:43
+  type: trojan
+  server: 89.116.180.49
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: f6r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /nl=mitivpn
+    headers:
+      Host: f6r.ir
 - name: V2Get🛰️ 2026-06-24 11:42
   type: vless
   server: 172.67.215.201
@@ -730,22 +744,6 @@ proxies:
     path: /
     headers:
       Host: newip.global.ssl.fastly.neT.
-- name: V2Get🛰️ 2026-06-15 21:59
-  type: vless
-  server: 45.196.224.110
-  port: 8443
-  uuid: ad7b2fde-d820-4dfe-be66-09fde32ddf61
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rbc.ru
-  client-fingerprint: firefox
-  alpn:
-  - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
-  reality-opts:
-    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
-    short-id: 364994a6f61fc955
 - name: 'V2Get🛰️ 2026-06-24 18:26 #2'
   type: vless
   server: 63.178.21.29
@@ -1033,6 +1031,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-24 11:42
   - V2Get🛰️ 2026-06-15 20:10
   - V2Get🛰️ 2026-06-24 19:13
@@ -1088,7 +1087,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 20:11
   - V2Get🛰️ 2026-06-21 14:44
   - V2Get🛰️ 2026-06-24 15:24
-  - V2Get🛰️ 2026-06-15 21:59
   - 'V2Get🛰️ 2026-06-24 18:26 #2'
   - V2Get🛰️ 2026-06-24 20:03
   - 'V2Get🛰️ 2026-06-24 18:26 #3'
@@ -1117,6 +1115,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-23 02:43
   - V2Get🛰️ 2026-06-24 11:42
   - V2Get🛰️ 2026-06-15 20:10
   - V2Get🛰️ 2026-06-24 19:13
@@ -1172,7 +1171,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 20:11
   - V2Get🛰️ 2026-06-21 14:44
   - V2Get🛰️ 2026-06-24 15:24
-  - V2Get🛰️ 2026-06-15 21:59
   - 'V2Get🛰️ 2026-06-24 18:26 #2'
   - V2Get🛰️ 2026-06-24 20:03
   - 'V2Get🛰️ 2026-06-24 18:26 #3'
