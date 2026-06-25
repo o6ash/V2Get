@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 02:46
+  type: vless
+  server: www.speedtest.net
+  port: 8080
+  uuid: 39eb6d15-e27a-4f2e-b865-b49a15b2d5f6
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-24 14:27
+  type: vless
+  server: 104.16.72.70
+  port: 443
+  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
+  udp: true
+  network: ws
+  tls: true
+  servername: unnes.ac.id.yxls.eu.cc
+  ws-opts:
+    path: /ca-cl
+    headers:
+      Host: unnes.ac.id.yxls.eu.cc
 - name: V2Get🛰️ 2026-06-21 16:13
   type: vless
   server: skko.consolgame.ir
@@ -127,7 +148,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-24 14:27
+- name: 'V2Get🛰️ 2026-06-24 14:27 #2'
   type: vless
   server: 104.16.72.70
   port: 443
@@ -548,23 +569,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-23 17:43
-  type: vless
-  server: 173.245.59.191
-  port: 8443
-  uuid: 5acc4610-f2d7-44c9-bbe6-c0ee6a058aac
-  udp: true
-  network: ws
-  tls: true
-  servername: maple.adaspoloandco.com¬e=@FreeOnlineVPN
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /uploader.php
-    headers:
-      Host: maple.adaspoloandco.com
 - name: V2Get🛰️ 2026-06-17 19:47
   type: vless
   server: 173.245.58.75
@@ -579,19 +583,6 @@ proxies:
     path: /hdgrbws
     headers:
       Host: terazhediii.info
-- name: 'V2Get🛰️ 2026-06-24 14:27 #2'
-  type: vless
-  server: 104.16.72.70
-  port: 443
-  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
-  udp: true
-  network: ws
-  tls: true
-  servername: unnes.ac.id.yxls.eu.cc
-  ws-opts:
-    path: /ca-cl
-    headers:
-      Host: unnes.ac.id.yxls.eu.cc
 - name: V2Get🛰️ 2026-06-26 01:14
   type: vless
   server: cctvhikvision.center
@@ -1206,6 +1197,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 02:46
+  - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-06-21 16:13
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-22 14:39
@@ -1216,7 +1209,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 02:28
   - V2Get🛰️ 2026-06-26 01:38
   - V2Get🛰️ 2026-06-21 15:05
-  - V2Get🛰️ 2026-06-24 14:27
+  - 'V2Get🛰️ 2026-06-24 14:27 #2'
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-26 02:24
@@ -1251,9 +1244,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 21:08
   - V2Get🛰️ 2026-06-25 22:31
   - V2Get🛰️ 2026-06-26 01:28
-  - V2Get🛰️ 2026-06-23 17:43
   - V2Get🛰️ 2026-06-17 19:47
-  - 'V2Get🛰️ 2026-06-24 14:27 #2'
   - V2Get🛰️ 2026-06-26 01:14
   - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-21 01:26
@@ -1309,6 +1300,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 02:46
+  - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-06-21 16:13
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-22 14:39
@@ -1319,7 +1312,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 02:28
   - V2Get🛰️ 2026-06-26 01:38
   - V2Get🛰️ 2026-06-21 15:05
-  - V2Get🛰️ 2026-06-24 14:27
+  - 'V2Get🛰️ 2026-06-24 14:27 #2'
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-26 02:24
@@ -1354,9 +1347,7 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 21:08
   - V2Get🛰️ 2026-06-25 22:31
   - V2Get🛰️ 2026-06-26 01:28
-  - V2Get🛰️ 2026-06-23 17:43
   - V2Get🛰️ 2026-06-17 19:47
-  - 'V2Get🛰️ 2026-06-24 14:27 #2'
   - V2Get🛰️ 2026-06-26 01:14
   - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-21 01:26
