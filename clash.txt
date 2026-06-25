@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-23 23:37
+  type: vless
+  server: 151.101.0.60
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-22 17:29
   type: vless
   server: speedtest.net
@@ -338,15 +350,6 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-16 20:10
-  type: vless
-  server: 79.127.240.44
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  udp: true
-  network: tcp
-  tls: true
-  servername: de1.fromblancwithlove.com
 - name: 'V2Get🛰️ 2026-06-25 02:43 #2'
   type: vless
   server: c6422f53520d5482c6422f53520d5482.dadnode.ir
@@ -1238,6 +1241,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-23 23:37
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-25 04:44
   - V2Get🛰️ 2026-06-25 04:40
@@ -1263,7 +1267,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-25 02:43
-  - V2Get🛰️ 2026-06-16 20:10
   - 'V2Get🛰️ 2026-06-25 02:43 #2'
   - V2Get🛰️ 2026-06-21 23:57
   - 'V2Get🛰️ 2026-06-25 02:46 #2'
@@ -1342,6 +1345,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-23 23:37
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-25 04:44
   - V2Get🛰️ 2026-06-25 04:40
@@ -1367,7 +1371,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-25 02:43
-  - V2Get🛰️ 2026-06-16 20:10
   - 'V2Get🛰️ 2026-06-25 02:43 #2'
   - V2Get🛰️ 2026-06-21 23:57
   - 'V2Get🛰️ 2026-06-25 02:46 #2'
