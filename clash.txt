@@ -12,6 +12,63 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 02:54
+  type: vless
+  server: 199.181.197.60
+  port: 2087
+  uuid: 20ae4b98-91bf-4892-80c8-4dee85515a54
+  udp: true
+  network: ws
+  tls: true
+  servername: ez-9abab7.ezaccess1451db
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ez-9abab7.ezaccess1451dbd.workers.dev
+- name: V2Get🛰️ 2026-06-18 02:10
+  type: vless
+  server: 104.16.7.70
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  tls: true
+  servername: sni.111000.dynv6.net
+  ws-opts:
+    path: /?Telegram🇨🇳+@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+- name: V2Get🛰️ 2026-06-16 02:48
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-16 12:08
+  type: vless
+  server: 45.130.125.158
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  udp: true
+  network: ws
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  client-fingerprint: ios
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
 - name: V2Get🛰️ 2026-06-16 11:11
   type: vless
   server: s2.dipvpn.ru
@@ -86,18 +143,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: V2Get🛰️ 2026-06-16 02:48
-  type: vless
-  server: speedtest.net
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-25 02:47
   type: vless
   server: 104.21.51.9
@@ -161,19 +206,6 @@ proxies:
   reality-opts:
     public-key: wE5jSGRlAYu7TPx2qPBP3bCBbk7xtjNqU8wFVtRVDBc
     short-id: 8e246e81a2aa0375
-- name: V2Get🛰️ 2026-06-18 02:10
-  type: vless
-  server: 104.16.7.70
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  tls: true
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /?Telegram🇨🇳+@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
 - name: V2Get🛰️ 2026-06-21 23:57
   type: vless
   server: 104.18.47.140
@@ -709,20 +741,6 @@ proxies:
     path: /
     headers:
       Host: tr-cd.sublink-vip2.com
-- name: V2Get🛰️ 2026-06-25 02:54
-  type: vless
-  server: 199.181.197.60
-  port: 2087
-  uuid: 20ae4b98-91bf-4892-80c8-4dee85515a54
-  udp: true
-  network: ws
-  tls: true
-  servername: ez-9abab7.ezaccess1451db
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-9abab7.ezaccess1451dbd.workers.dev
 - name: 'V2Get🛰️ 2026-06-25 02:46 #3'
   type: vless
   server: 162.159.248.247
@@ -737,24 +755,6 @@ proxies:
   - h2
   - h3
   - http/1.1
-- name: V2Get🛰️ 2026-06-16 12:08
-  type: vless
-  server: 45.130.125.158
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  network: ws
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  client-fingerprint: ios
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: 'V2Get🛰️ 2026-06-24 14:27 #3'
   type: vless
   server: 104.16.72.70
@@ -1227,19 +1227,21 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 02:54
+  - V2Get🛰️ 2026-06-18 02:10
+  - V2Get🛰️ 2026-06-16 02:48
+  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-16 11:11
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-19 15:30
   - V2Get🛰️ 2026-06-25 02:46
   - V2Get🛰️ 2026-06-24 15:24
   - V2Get🛰️ 2026-06-15 18:11
-  - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-25 02:43
   - V2Get🛰️ 2026-06-16 20:10
   - 'V2Get🛰️ 2026-06-25 02:43 #2'
-  - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-21 23:57
   - 'V2Get🛰️ 2026-06-25 02:46 #2'
   - V2Get🛰️ 2026-06-24 14:27
@@ -1285,9 +1287,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 18:24 #2'
   - 'V2Get🛰️ 2026-06-25 02:43 #3'
   - V2Get🛰️ 2026-06-25 02:40
-  - V2Get🛰️ 2026-06-25 02:54
   - 'V2Get🛰️ 2026-06-25 02:46 #3'
-  - V2Get🛰️ 2026-06-16 12:08
   - 'V2Get🛰️ 2026-06-24 14:27 #3'
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-25 02:28
@@ -1331,19 +1331,21 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 02:54
+  - V2Get🛰️ 2026-06-18 02:10
+  - V2Get🛰️ 2026-06-16 02:48
+  - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-16 11:11
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-19 15:30
   - V2Get🛰️ 2026-06-25 02:46
   - V2Get🛰️ 2026-06-24 15:24
   - V2Get🛰️ 2026-06-15 18:11
-  - V2Get🛰️ 2026-06-16 02:48
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-25 02:43
   - V2Get🛰️ 2026-06-16 20:10
   - 'V2Get🛰️ 2026-06-25 02:43 #2'
-  - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-21 23:57
   - 'V2Get🛰️ 2026-06-25 02:46 #2'
   - V2Get🛰️ 2026-06-24 14:27
@@ -1389,9 +1391,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-21 18:24 #2'
   - 'V2Get🛰️ 2026-06-25 02:43 #3'
   - V2Get🛰️ 2026-06-25 02:40
-  - V2Get🛰️ 2026-06-25 02:54
   - 'V2Get🛰️ 2026-06-25 02:46 #3'
-  - V2Get🛰️ 2026-06-16 12:08
   - 'V2Get🛰️ 2026-06-24 14:27 #3'
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-25 02:28
