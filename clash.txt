@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 04:02
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: baa35e3d-bff3-4dd2-bdf7-0efa49842404
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
+- name: V2Get🛰️ 2026-06-20 11:11
+  type: vless
+  server: 104.17.9.5
+  port: 443
+  uuid: 5fbbf263-0518-446c-8ef2-13b2001aa69d
+  udp: true
+  network: ws
+  tls: true
+  servername: newgit.jisucf.cloudns.biz
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: newgit.jisucf.cloudns.biz
 - name: V2Get🛰️ 2026-06-25 02:54
   type: vless
   server: 199.181.197.60
@@ -362,22 +392,6 @@ proxies:
     public-key: 7Tl6MxuH1PZpbKIETVPK1he_MjOLtUeMTFiEek9HQiM
     short-id: c14cf5fef100
 - name: 'V2Get🛰️ 2026-06-25 04:05 #2'
-  type: trojan
-  server: 37.156.42.12
-  port: 80
-  password: v9nxntt6grgi9dkl
-  udp: true
-  sni: yahoo.con
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-25 04:05 #3'
-  type: trojan
-  server: 991827262gsgs-8822nbeoaoznzznzb.poki-pakipon.ir
-  port: 80
-  password: v9nxntt6grgi9dkl
-  udp: true
-  sni: yahoo.con
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-25 04:05 #4'
   type: vless
   server: 991827262gsgs-8822nbeoaoznzznzb.poki-pakipon.ir
   port: 443
@@ -1227,6 +1241,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 04:02
+  - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-25 02:54
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-16 02:48
@@ -1256,8 +1272,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 00:31
   - V2Get🛰️ 2026-06-25 04:05
   - 'V2Get🛰️ 2026-06-25 04:05 #2'
-  - 'V2Get🛰️ 2026-06-25 04:05 #3'
-  - 'V2Get🛰️ 2026-06-25 04:05 #4'
   - V2Get🛰️ 2026-06-23 21:32
   - V2Get🛰️ 2026-06-25 03:53
   - V2Get🛰️ 2026-06-15 18:55
@@ -1331,6 +1345,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 04:02
+  - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-25 02:54
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-16 02:48
@@ -1360,8 +1376,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 00:31
   - V2Get🛰️ 2026-06-25 04:05
   - 'V2Get🛰️ 2026-06-25 04:05 #2'
-  - 'V2Get🛰️ 2026-06-25 04:05 #3'
-  - 'V2Get🛰️ 2026-06-25 04:05 #4'
   - V2Get🛰️ 2026-06-23 21:32
   - V2Get🛰️ 2026-06-25 03:53
   - V2Get🛰️ 2026-06-15 18:55
