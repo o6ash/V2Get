@@ -12,6 +12,48 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 23:10
+  type: trojan
+  server: manager.xyzxz.qzz.io
+  port: 443
+  password: YNuQCAHivL
+  udp: true
+  sni: manager.xyzxz.qzz.io
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  network: grpc
+  grpc-opts:
+    grpc-service-name: /58079/mehdi
+- name: V2Get🛰️ 2026-06-26 02:52
+  type: vless
+  server: 172.66.162.109
+  port: 8443
+  uuid: 8dce60ab-0707-413c-aa99-28ce2f52dfe0
+  udp: true
+  network: xhttp
+  tls: true
+  servername: De1.velarlink.dpdns.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-06-18 05:49
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 03:20
   type: vless
   server: 5.75.207.247
@@ -39,6 +81,29 @@ proxies:
   reality-opts:
     public-key: m0laydpddP-MhAgDbMB_QGrSk4-nrIvDSoIHK_Q8Uy4
     short-id: a796a1f52722b3a5
+- name: V2Get🛰️ 2026-06-26 03:11
+  type: vless
+  server: cdntrkkk.serendpiti.ir
+  port: 80
+  uuid: 00870c04-d720-45e5-b5b9-87ea18a86c13
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /mmdoll
+- name: 'V2Get🛰️ 2026-06-26 03:11 #2'
+  type: vless
+  server: trktaklink.serendpiti.ir
+  port: 3063
+  uuid: 00870c04-d720-45e5-b5b9-87ea18a86c13
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EtiM7XLtU6WHAiolMrQLVQfWNsMULqePxiVih0RDhEo
+    short-id: 8e0d72d781fc925b
 - name: V2Get🛰️ 2026-06-18 05:09
   type: vless
   server: 172.67.74.10
@@ -65,42 +130,6 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: V2Get🛰️ 2026-06-26 02:52
-  type: vless
-  server: 172.66.162.109
-  port: 8443
-  uuid: 8dce60ab-0707-413c-aa99-28ce2f52dfe0
-  udp: true
-  network: xhttp
-  tls: true
-  servername: De1.velarlink.dpdns.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: V2Get🛰️ 2026-06-26 03:11
-  type: vless
-  server: trktaklink.serendpiti.ir
-  port: 3063
-  uuid: 00870c04-d720-45e5-b5b9-87ea18a86c13
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EtiM7XLtU6WHAiolMrQLVQfWNsMULqePxiVih0RDhEo
-    short-id: 8e0d72d781fc925b
-- name: 'V2Get🛰️ 2026-06-26 03:11 #2'
-  type: vless
-  server: cdntrkkk.serendpiti.ir
-  port: 80
-  uuid: 00870c04-d720-45e5-b5b9-87ea18a86c13
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /mmdoll
 - name: V2Get🛰️ 2026-06-20 09:15
   type: vless
   server: 162.159.19.67
@@ -268,20 +297,6 @@ proxies:
   reality-opts:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
     short-id: 98fa0b00d09419f7
-- name: V2Get🛰️ 2026-06-22 22:46
-  type: vless
-  server: britain.mymarzban.com
-  port: 9110
-  uuid: ebb981c8-086f-4469-a3d2-e50f4135ed06
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: play.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: jPN1rT1d60wJZL-f6YkJr6bit3ZBGabU8qT89CzXewo
-    short-id: f27c6afae47825a0
 - name: V2Get🛰️ 2026-06-26 02:28
   type: vless
   server: ukr.arain-gogamecenter.ir
@@ -598,21 +613,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-18 05:49
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-22 17:29
   type: vless
   server: speedtest.net
@@ -1185,13 +1185,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 23:10
+  - V2Get🛰️ 2026-06-26 02:52
+  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 03:15
-  - V2Get🛰️ 2026-06-18 05:09
-  - V2Get🛰️ 2026-06-26 02:59
-  - V2Get🛰️ 2026-06-26 02:52
   - V2Get🛰️ 2026-06-26 03:11
   - 'V2Get🛰️ 2026-06-26 03:11 #2'
+  - V2Get🛰️ 2026-06-18 05:09
+  - V2Get🛰️ 2026-06-26 02:59
   - V2Get🛰️ 2026-06-20 09:15
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-24 17:27
@@ -1205,7 +1207,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 02:51
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-22 14:39
-  - V2Get🛰️ 2026-06-22 22:46
   - V2Get🛰️ 2026-06-26 02:28
   - V2Get🛰️ 2026-06-17 17:13
   - V2Get🛰️ 2026-06-26 02:24
@@ -1234,7 +1235,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-22 13:37
   - 'V2Get🛰️ 2026-06-26 01:38 #2'
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-19 23:41
@@ -1286,13 +1286,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 23:10
+  - V2Get🛰️ 2026-06-26 02:52
+  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 03:15
-  - V2Get🛰️ 2026-06-18 05:09
-  - V2Get🛰️ 2026-06-26 02:59
-  - V2Get🛰️ 2026-06-26 02:52
   - V2Get🛰️ 2026-06-26 03:11
   - 'V2Get🛰️ 2026-06-26 03:11 #2'
+  - V2Get🛰️ 2026-06-18 05:09
+  - V2Get🛰️ 2026-06-26 02:59
   - V2Get🛰️ 2026-06-20 09:15
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-24 17:27
@@ -1306,7 +1308,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 02:51
   - V2Get🛰️ 2026-06-21 22:06
   - V2Get🛰️ 2026-06-22 14:39
-  - V2Get🛰️ 2026-06-22 22:46
   - V2Get🛰️ 2026-06-26 02:28
   - V2Get🛰️ 2026-06-17 17:13
   - V2Get🛰️ 2026-06-26 02:24
@@ -1335,7 +1336,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:29
   - V2Get🛰️ 2026-06-22 13:37
   - 'V2Get🛰️ 2026-06-26 01:38 #2'
-  - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-22 17:29
   - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-19 23:41
