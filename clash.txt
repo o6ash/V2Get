@@ -12,6 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 17:43
+  type: vless
+  server: 185.18.250.127
+  port: 2096
+  uuid: 2ee26119-94e5-40b4-ba3a-16354021b600
+  udp: true
+  network: ws
+  tls: true
+  servername: 69565ce3109804e7813f98ee.mmdbay.blog
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /graphql
+    headers:
+      Host: 69565ce3109804e7813f98ee.mmdbay.blog
 - name: V2Get🛰️ 2026-06-25 04:02
   type: vless
   server: 5.75.207.247
@@ -1199,19 +1216,6 @@ proxies:
   reality-opts:
     public-key: -sirwzF9HjIp1PVRK-z-2Ux39ufs6_W1cBw1cFoHXHc
     short-id: a852
-- name: V2Get🛰️ 2026-06-25 00:10
-  type: vless
-  server: srv6.privacypathcloud.com
-  port: 2083
-  uuid: ba1c6da5-fa72-45cb-aa35-5dc31674becf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: blackaids.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-06-17 01:49
   type: vless
   server: 5.45.184.133
@@ -1241,6 +1245,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 17:43
   - V2Get🛰️ 2026-06-25 04:02
   - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-25 02:54
@@ -1336,7 +1341,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-24 23:29
   - V2Get🛰️ 2026-06-22 08:46
-  - V2Get🛰️ 2026-06-25 00:10
   - V2Get🛰️ 2026-06-17 01:49
   - V2Get🛰️ 2026-06-24 21:01
 - name: ♻️ Auto Select
@@ -1345,6 +1349,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 17:43
   - V2Get🛰️ 2026-06-25 04:02
   - V2Get🛰️ 2026-06-20 11:11
   - V2Get🛰️ 2026-06-25 02:54
@@ -1440,7 +1445,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-24 23:29
   - V2Get🛰️ 2026-06-22 08:46
-  - V2Get🛰️ 2026-06-25 00:10
   - V2Get🛰️ 2026-06-17 01:49
   - V2Get🛰️ 2026-06-24 21:01
 rules:
