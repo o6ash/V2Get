@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 21:44
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: V2Get🛰️ 2026-06-21 02:11
+  type: vless
+  server: 5.180.173.222
+  port: 448
+  uuid: 626b07bd-81c4-4212-be7a-27442a579620
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.googletagmanager.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo
+    short-id: 15052edc8120b63d
 - name: V2Get🛰️ 2026-06-25 09:17
   type: vless
   server: zeus-panel-g75bgi.zeus-1e8zqa.workers.dev
@@ -40,15 +70,6 @@ proxies:
     path: /
     headers:
       Host: zeus-panel-g75bgi.zeus-1e8zqa.workers.dev
-- name: 'V2Get🛰️ 2026-06-25 09:17 #3'
-  type: vless
-  server: endpoint.vipdatanetwork.com
-  port: 25494
-  uuid: ecf3b76c-e920-43cb-b733-8b68d7f538dc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-18 02:10
   type: vless
   server: 104.16.7.70
@@ -280,14 +301,6 @@ proxies:
     path: /
     headers:
       Host: ssl.myblog.org.tr
-- name: V2Get🛰️ 2026-06-24 20:18
-  type: vless
-  server: hm.khoycityman.ir
-  port: 41319
-  uuid: 1ea04eb0-1470-4c41-ab75-8e3de65b0ef6
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-24 21:33
   type: trojan
   server: 37.156.44.50
@@ -923,9 +936,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 21:44
+  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-25 09:17
   - 'V2Get🛰️ 2026-06-25 09:17 #2'
-  - 'V2Get🛰️ 2026-06-25 09:17 #3'
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-20 20:59
   - V2Get🛰️ 2026-06-15 22:56
@@ -944,7 +958,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-24 00:31
   - V2Get🛰️ 2026-06-24 14:27
-  - V2Get🛰️ 2026-06-24 20:18
   - V2Get🛰️ 2026-06-24 21:33
   - V2Get🛰️ 2026-06-24 21:28
   - V2Get🛰️ 2026-06-23 12:55
@@ -1001,9 +1014,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 21:44
+  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-25 09:17
   - 'V2Get🛰️ 2026-06-25 09:17 #2'
-  - 'V2Get🛰️ 2026-06-25 09:17 #3'
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-20 20:59
   - V2Get🛰️ 2026-06-15 22:56
@@ -1022,7 +1036,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-24 00:31
   - V2Get🛰️ 2026-06-24 14:27
-  - V2Get🛰️ 2026-06-24 20:18
   - V2Get🛰️ 2026-06-24 21:33
   - V2Get🛰️ 2026-06-24 21:28
   - V2Get🛰️ 2026-06-23 12:55
