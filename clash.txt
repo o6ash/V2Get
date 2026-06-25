@@ -12,19 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-16 03:19
-  type: vless
-  server: 37.233.82.140
-  port: 40478
-  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
-    short-id: 3c
 - name: V2Get🛰️ 2026-06-25 05:04
   type: vless
   server: 5.75.207.247
@@ -39,6 +26,45 @@ proxies:
   reality-opts:
     public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
     short-id: 77b0689f
+- name: V2Get🛰️ 2026-06-25 04:02
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: baa35e3d-bff3-4dd2-bdf7-0efa49842404
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
+- name: V2Get🛰️ 2026-06-16 02:09
+  type: trojan
+  server: 198.62.62.23
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: V2Get🛰️ 2026-06-16 03:19
+  type: vless
+  server: 37.233.82.140
+  port: 40478
+  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+    short-id: 3c
 - name: V2Get🛰️ 2026-06-25 05:11
   type: vless
   server: 5.75.207.247
@@ -243,20 +269,6 @@ proxies:
     path: /
     headers:
       Host: ez-8e6568.ezaccess171a5bd.workers.dev
-- name: V2Get🛰️ 2026-06-25 04:02
-  type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: baa35e3d-bff3-4dd2-bdf7-0efa49842404
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-20 11:53
   type: vless
   server: 162.249.126.198
@@ -289,18 +301,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-16 02:09
-  type: trojan
-  server: 198.62.62.23
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 - name: 'V2Get🛰️ 2026-06-25 04:05 #3'
   type: vless
   server: 991827262gsgs-8822nbeoaoznzznzb.poki-pakipon.ir
@@ -1228,8 +1228,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-25 05:04
+  - V2Get🛰️ 2026-06-25 04:02
+  - V2Get🛰️ 2026-06-16 02:09
+  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-25 05:11
   - 'V2Get🛰️ 2026-06-25 05:11 #2'
   - V2Get🛰️ 2026-06-16 15:30
@@ -1246,11 +1248,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-25 04:05 #2'
   - V2Get🛰️ 2026-06-25 04:44
   - V2Get🛰️ 2026-06-25 04:40
-  - V2Get🛰️ 2026-06-25 04:02
   - V2Get🛰️ 2026-06-20 11:53
   - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-25 02:53
-  - V2Get🛰️ 2026-06-16 02:09
   - 'V2Get🛰️ 2026-06-25 04:05 #3'
   - V2Get🛰️ 2026-06-25 03:39
   - V2Get🛰️ 2026-06-21 13:16
@@ -1331,8 +1331,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-25 05:04
+  - V2Get🛰️ 2026-06-25 04:02
+  - V2Get🛰️ 2026-06-16 02:09
+  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-25 05:11
   - 'V2Get🛰️ 2026-06-25 05:11 #2'
   - V2Get🛰️ 2026-06-16 15:30
@@ -1349,11 +1351,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-25 04:05 #2'
   - V2Get🛰️ 2026-06-25 04:44
   - V2Get🛰️ 2026-06-25 04:40
-  - V2Get🛰️ 2026-06-25 04:02
   - V2Get🛰️ 2026-06-20 11:53
   - V2Get🛰️ 2026-06-15 21:13
   - V2Get🛰️ 2026-06-25 02:53
-  - V2Get🛰️ 2026-06-16 02:09
   - 'V2Get🛰️ 2026-06-25 04:05 #3'
   - V2Get🛰️ 2026-06-25 03:39
   - V2Get🛰️ 2026-06-21 13:16
