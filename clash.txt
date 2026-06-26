@@ -12,19 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-15 18:18
+- name: V2Get🛰️ 2026-06-20 01:43
   type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: 70252937-5c61-4fb0-8656-d1a16261b795
+  server: 45.145.41.39
+  port: 443
+  uuid: 5c6ec644-1187-470d-82ed-ce01ac927109
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: group.shalana.xyz
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: group.shalana.xyz
+  servername: pinterest.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 5XQtnf0tfYGf0Zux0lc88Uvto7dlA8-3ICVZMcc43Ts
+- name: V2Get🛰️ 2026-06-26 09:26
+  type: vless
+  server: aelix-gb.mymarzban.com
+  port: 6300
+  uuid: 4a2871f0-33b7-4958-8aa3-f615b472c0ba
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
 - name: V2Get🛰️ 2026-06-23 12:55
   type: trojan
   server: 198.202.211.1
@@ -38,18 +50,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: V2Get🛰️ 2026-06-25 19:36
-  type: trojan
-  server: 151.101.121.242
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: www.f6r.ir
-  network: ws
-  ws-opts:
-    path: https://t.me/oneclickvpnkeys
-    headers:
-      Host: www.f6r.ir
 - name: V2Get🛰️ 2026-06-15 18:55
   type: trojan
   server: 43.169.18.179
@@ -62,6 +62,31 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: V2Get🛰️ 2026-06-15 18:18
+  type: vless
+  server: 188.114.97.6
+  port: 2096
+  uuid: 70252937-5c61-4fb0-8656-d1a16261b795
+  udp: true
+  network: ws
+  tls: true
+  servername: group.shalana.xyz
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: group.shalana.xyz
+- name: V2Get🛰️ 2026-06-25 19:36
+  type: trojan
+  server: 151.101.121.242
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: www.f6r.ir
+  network: ws
+  ws-opts:
+    path: https://t.me/oneclickvpnkeys
+    headers:
+      Host: www.f6r.ir
 - name: V2Get🛰️ 2026-06-26 09:11
   type: vless
   server: manager.xyzxz.qzz.io
@@ -148,18 +173,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-06-16 12:17
-  type: vless
-  server: de.vpnbase.net
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
 - name: V2Get🛰️ 2026-06-17 13:36
   type: trojan
   server: 45.131.4.118
@@ -1144,17 +1157,6 @@ proxies:
     short-id: 7a3f9e2b1c8d4f6a
   grpc-opts:
     grpc-service-name: grpc
-- name: V2Get🛰️ 2026-06-16 02:01
-  type: vless
-  server: 151.115.164.134
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-26 03:28
   type: vless
   server: telewebion.com.fin2.shakhle.ir
@@ -1228,10 +1230,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-20 01:43
+  - V2Get🛰️ 2026-06-26 09:26
   - V2Get🛰️ 2026-06-23 12:55
-  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-15 18:55
+  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-26 09:11
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-26 09:01
@@ -1239,7 +1243,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 16:08
   - V2Get🛰️ 2026-06-24 05:32
   - V2Get🛰️ 2026-06-16 01:21
-  - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-17 13:36
   - 'V2Get🛰️ 2026-06-26 09:01 #2'
   - 'V2Get🛰️ 2026-06-26 09:01 #3'
@@ -1316,7 +1319,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 01:51
   - V2Get🛰️ 2026-06-26 03:35
   - 'V2Get🛰️ 2026-06-26 03:35 #2'
-  - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-26 03:28
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-20 09:15
@@ -1329,10 +1331,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-20 01:43
+  - V2Get🛰️ 2026-06-26 09:26
   - V2Get🛰️ 2026-06-23 12:55
-  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-15 18:55
+  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-26 09:11
   - V2Get🛰️ 2026-06-18 02:10
   - V2Get🛰️ 2026-06-26 09:01
@@ -1340,7 +1344,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 16:08
   - V2Get🛰️ 2026-06-24 05:32
   - V2Get🛰️ 2026-06-16 01:21
-  - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-17 13:36
   - 'V2Get🛰️ 2026-06-26 09:01 #2'
   - 'V2Get🛰️ 2026-06-26 09:01 #3'
@@ -1417,7 +1420,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 01:51
   - V2Get🛰️ 2026-06-26 03:35
   - 'V2Get🛰️ 2026-06-26 03:35 #2'
-  - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-26 03:28
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-20 09:15
