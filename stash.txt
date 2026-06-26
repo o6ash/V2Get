@@ -12,6 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-22 00:01
+  type: vless
+  server: 31.76.32.114
+  port: 108
+  uuid: 08c063d4-17d8-4d44-8f1c-6a1e782d3a1e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-26 03:35
+  type: vless
+  server: 138.124.4.132
+  port: 443
+  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  udp: true
+  network: grpc
+  tls: true
+  servername: google.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
+    short-id: d5c7f84e37e0c12d
+  grpc-opts:
+    grpc-service-name: data-sync
 - name: V2Get🛰️ 2026-06-16 03:00
   type: vless
   server: v2ray.simspeedup.com
@@ -82,21 +105,6 @@ proxies:
   reality-opts:
     public-key: NKL_wMX8dn09Y8pABdtSoop2zyaT4CnYPGJu8_m52jI
     short-id: 5fc027d907f46ee9
-- name: V2Get🛰️ 2026-06-26 03:35
-  type: vless
-  server: 138.124.4.132
-  port: 443
-  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
-  udp: true
-  network: grpc
-  tls: true
-  servername: google.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
-    short-id: d5c7f84e37e0c12d
-  grpc-opts:
-    grpc-service-name: data-sync
 - name: V2Get🛰️ 2026-06-23 21:52
   type: vless
   server: 217.9.12.58
@@ -708,20 +716,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-17 19:47
-  type: vless
-  server: 173.245.58.75
-  port: 443
-  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-  udp: true
-  network: ws
-  tls: true
-  servername: terazhediii.info
-  client-fingerprint: chrome
-  ws-opts:
-    path: /hdgrbws
-    headers:
-      Host: terazhediii.info
 - name: V2Get🛰️ 2026-06-21 01:26
   type: vless
   server: 217.217.244.129
@@ -1014,12 +1008,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-22 00:01
+  - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-16 03:00
   - V2Get🛰️ 2026-06-16 01:54
   - V2Get🛰️ 2026-06-15 17:12
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-16 19:32
-  - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-23 21:52
   - 'V2Get🛰️ 2026-06-26 03:35 #2'
   - V2Get🛰️ 2026-06-20 11:53
@@ -1069,7 +1064,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-17 11:01
   - V2Get🛰️ 2026-06-25 21:08
-  - V2Get🛰️ 2026-06-17 19:47
   - V2Get🛰️ 2026-06-21 01:26
   - V2Get🛰️ 2026-06-26 01:11
   - V2Get🛰️ 2026-06-25 17:24
@@ -1098,12 +1092,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-22 00:01
+  - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-16 03:00
   - V2Get🛰️ 2026-06-16 01:54
   - V2Get🛰️ 2026-06-15 17:12
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-16 19:32
-  - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-23 21:52
   - 'V2Get🛰️ 2026-06-26 03:35 #2'
   - V2Get🛰️ 2026-06-20 11:53
@@ -1153,7 +1148,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 23:41
   - V2Get🛰️ 2026-06-17 11:01
   - V2Get🛰️ 2026-06-25 21:08
-  - V2Get🛰️ 2026-06-17 19:47
   - V2Get🛰️ 2026-06-21 01:26
   - V2Get🛰️ 2026-06-26 01:11
   - V2Get🛰️ 2026-06-25 17:24
