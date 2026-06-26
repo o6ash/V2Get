@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 18:10
+  type: vless
+  server: jsjeke.consolgame.ir
+  port: 1153
+  uuid: 77fc16d2-5145-4aa3-952c-7caaf25cd921
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU
+    short-id: 28711478c2a20a18
 - name: V2Get🛰️ 2026-06-16 05:27
   type: vless
   server: 198.202.211.1
@@ -43,13 +56,6 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
 - name: V2Get🛰️ 2026-06-26 05:31
-  type: ss
-  server: 130.94.0.150
-  port: 21376
-  cipher: chacha20-ietf-poly1305
-  password: U7+at2Sny7zODyHS1OS6QRepL8-5maNUFF
-  udp: true
-- name: 'V2Get🛰️ 2026-06-26 05:31 #2'
   type: vless
   server: 188.114.96.3
   port: 443
@@ -59,7 +65,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-06-26 05:31 #3'
+- name: 'V2Get🛰️ 2026-06-26 05:31 #2'
   type: vless
   server: www.speedtest.net
   port: 443
@@ -75,14 +81,6 @@ proxies:
     path: /VeJJ5MwyXaAbhkV8?ed=2560
     headers:
       Host: cxrolvpn.freev2-edb.workers.dev
-- name: V2Get🛰️ 2026-06-25 15:48
-  type: vless
-  server: 57.131.18.123
-  port: 13355
-  uuid: 3461131f-6db9-4c8c-b663-fdcf2e6f4619
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-22 08:19
   type: vless
   server: ams-02.gni-daed.ru
@@ -96,6 +94,21 @@ proxies:
   reality-opts:
     public-key: Np5eNpCJdcXe4IvMs0stzE-sMtlphhTnZeuCkhjQXzQ
     short-id: a8389289e18af5f4
+- name: 'V2Get🛰️ 2026-06-26 05:31 #3'
+  type: ss
+  server: 130.94.0.150
+  port: 21376
+  cipher: chacha20-ietf-poly1305
+  password: U7+at2Sny7zODyHS1OS6QRepL8-5maNUFF
+  udp: true
+- name: V2Get🛰️ 2026-06-25 15:48
+  type: vless
+  server: 57.131.18.123
+  port: 13355
+  uuid: 3461131f-6db9-4c8c-b663-fdcf2e6f4619
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-06-26 05:31 #4'
   type: vless
   server: ercf-ma.rainzone.site
@@ -898,21 +911,6 @@ proxies:
     path: /proxyip=dc844a1f.tp15333.ip.090227.xyz
     headers:
       Host: nbhhh.mrcool.kdns.fr
-- name: V2Get🛰️ 2026-06-20 11:46
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 02:50
   type: vless
   server: 93.114.98.241
@@ -1170,13 +1168,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 18:10
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-20 20:03
   - V2Get🛰️ 2026-06-26 05:31
   - 'V2Get🛰️ 2026-06-26 05:31 #2'
+  - V2Get🛰️ 2026-06-22 08:19
   - 'V2Get🛰️ 2026-06-26 05:31 #3'
   - V2Get🛰️ 2026-06-25 15:48
-  - V2Get🛰️ 2026-06-22 08:19
   - 'V2Get🛰️ 2026-06-26 05:31 #4'
   - 'V2Get🛰️ 2026-06-26 05:31 #5'
   - 'V2Get🛰️ 2026-06-26 05:31 #6'
@@ -1241,7 +1240,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 02:59
   - 'V2Get🛰️ 2026-06-20 09:15 #2'
-  - V2Get🛰️ 2026-06-20 11:46
   - V2Get🛰️ 2026-06-26 02:50
   - V2Get🛰️ 2026-06-26 02:51
   - V2Get🛰️ 2026-06-21 22:06
@@ -1270,13 +1268,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 18:10
   - V2Get🛰️ 2026-06-16 05:27
   - V2Get🛰️ 2026-06-20 20:03
   - V2Get🛰️ 2026-06-26 05:31
   - 'V2Get🛰️ 2026-06-26 05:31 #2'
+  - V2Get🛰️ 2026-06-22 08:19
   - 'V2Get🛰️ 2026-06-26 05:31 #3'
   - V2Get🛰️ 2026-06-25 15:48
-  - V2Get🛰️ 2026-06-22 08:19
   - 'V2Get🛰️ 2026-06-26 05:31 #4'
   - 'V2Get🛰️ 2026-06-26 05:31 #5'
   - 'V2Get🛰️ 2026-06-26 05:31 #6'
@@ -1341,7 +1340,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 02:59
   - 'V2Get🛰️ 2026-06-20 09:15 #2'
-  - V2Get🛰️ 2026-06-20 11:46
   - V2Get🛰️ 2026-06-26 02:50
   - V2Get🛰️ 2026-06-26 02:51
   - V2Get🛰️ 2026-06-21 22:06
