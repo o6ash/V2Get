@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 22:40
+  type: vless
+  server: 85.234.114.53
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  servername: r1.mizulina.top
+  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-21 22:14
   type: vless
   server: 167.82.0.1
@@ -280,19 +291,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-27 02:19 #2'
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 425ef0c5-4e79-4aa5-bf9e-b847a0f73601
-  udp: true
-  network: ws
-  tls: true
-  servername: telegram.vpnazadie.store
-  ws-opts:
-    path: /vless-tls
-    headers:
-      Host: vpnazadie.store
 - name: V2Get🛰️ 2026-06-25 23:58
   type: trojan
   server: 151.101.56.6
@@ -1092,6 +1090,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-21 22:14
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-17 19:47
@@ -1112,7 +1111,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-23 11:33
   - V2Get🛰️ 2026-06-27 02:19
-  - 'V2Get🛰️ 2026-06-27 02:19 #2'
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-27 02:27
   - V2Get🛰️ 2026-06-26 12:20
@@ -1181,6 +1179,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-21 22:14
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-17 19:47
@@ -1201,7 +1200,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-23 11:33
   - V2Get🛰️ 2026-06-27 02:19
-  - 'V2Get🛰️ 2026-06-27 02:19 #2'
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-27 02:27
   - V2Get🛰️ 2026-06-26 12:20
