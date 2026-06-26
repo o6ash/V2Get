@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-24 19:25
+  type: vless
+  server: love.ns.cloudflare.com
+  port: 443
+  uuid: e277ac9b-3225-3381-a9fb-3585419f7142
+  udp: true
+  network: ws
+  tls: true
+  servername: media08.halalkhor.info
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /media08
+    headers:
+      Host: media08.halalkhor.info
+- name: V2Get🛰️ 2026-06-24 17:27
+  type: vless
+  server: de.lesss.ir
+  port: 443
+  uuid: f23fb93e-7668-49f4-935e-dc18b9e18f8e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1lMHY_oEqthg10oDrHSq9gSwYdqqNb6ZQc9JEewyzVk
+    short-id: bc7c4660adb53714
 - name: V2Get🛰️ 2026-06-26 22:33
   type: trojan
   server: 164.38.155.135
@@ -67,20 +97,6 @@ proxies:
     path: /de=mitivpn
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-24 17:27
-  type: vless
-  server: de.lesss.ir
-  port: 443
-  uuid: f23fb93e-7668-49f4-935e-dc18b9e18f8e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1lMHY_oEqthg10oDrHSq9gSwYdqqNb6ZQc9JEewyzVk
-    short-id: bc7c4660adb53714
 - name: V2Get🛰️ 2026-06-27 01:49
   type: vless
   server: 104.16.72.101
@@ -718,20 +734,6 @@ proxies:
     path: /
     headers:
       Host: zeus-panel-ps2w8r.ww32324324.workers.dev
-- name: V2Get🛰️ 2026-06-26 23:56
-  type: vless
-  server: nova-mango-vault-2e63.wolf-fbi-red.workers.dev
-  port: 443
-  uuid: fdb12587-1c15-4883-8d7a-9894641e183c
-  udp: true
-  network: ws
-  tls: true
-  servername: nova-mango-vault-2e63.wolf-fbi-red.workers.dev
-  client-fingerprint: random
-  ws-opts:
-    path: /?u=3e3fff3b5b
-    headers:
-      Host: nova-mango-vault-2e63.wolf-fbi-red.workers.dev
 - name: V2Get🛰️ 2026-06-18 22:53
   type: trojan
   server: 45.130.125.112
@@ -1052,11 +1054,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-24 19:25
+  - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-26 22:33
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-27 02:02
   - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-27 01:49
   - V2Get🛰️ 2026-06-19 13:14
   - 'V2Get🛰️ 2026-06-27 01:49 #2'
@@ -1106,7 +1109,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 18:47
   - 'V2Get🛰️ 2026-06-27 00:12 #2'
   - 'V2Get🛰️ 2026-06-27 00:12 #3'
-  - V2Get🛰️ 2026-06-26 23:56
   - V2Get🛰️ 2026-06-18 22:53
   - V2Get🛰️ 2026-06-27 00:34
   - V2Get🛰️ 2026-06-27 00:18
@@ -1138,11 +1140,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-24 19:25
+  - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-26 22:33
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-27 02:02
   - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-27 01:49
   - V2Get🛰️ 2026-06-19 13:14
   - 'V2Get🛰️ 2026-06-27 01:49 #2'
@@ -1192,7 +1195,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 18:47
   - 'V2Get🛰️ 2026-06-27 00:12 #2'
   - 'V2Get🛰️ 2026-06-27 00:12 #3'
-  - V2Get🛰️ 2026-06-26 23:56
   - V2Get🛰️ 2026-06-18 22:53
   - V2Get🛰️ 2026-06-27 00:34
   - V2Get🛰️ 2026-06-27 00:18
