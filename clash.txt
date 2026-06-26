@@ -12,6 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-26 05:50
+  type: vless
+  server: manager.xyzxz.qzz.io
+  port: 443
+  uuid: 7c31217a-0320-44bc-9a03-714d3e107202
+  udp: true
+  network: grpc
+  tls: true
+  servername: manager.xyzxz.qzz.io
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: /49104/mehdi
+- name: V2Get🛰️ 2026-06-26 06:26
+  type: vless
+  server: 188.95.12.226
+  port: 8080
+  uuid: 39eb6d15-e27a-4f2e-b865-b49a15b2d5f6
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-23 23:33
+  type: vless
+  server: 45.80.111.140
+  port: 80
+  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5.868001.xyz
 - name: V2Get🛰️ 2026-06-21 14:50
   type: vless
   server: fi.faygo.bot
@@ -51,18 +87,6 @@ proxies:
   servername: ve.ylkszy.eu.org
   ws-opts:
     path: /?ed
-- name: V2Get🛰️ 2026-06-23 23:33
-  type: vless
-  server: 45.80.111.140
-  port: 80
-  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5.868001.xyz
 - name: V2Get🛰️ 2026-06-16 07:45
   type: trojan
   server: 104.16.174.117
@@ -597,22 +621,6 @@ proxies:
   reality-opts:
     public-key: EtiM7XLtU6WHAiolMrQLVQfWNsMULqePxiVih0RDhEo
     short-id: 8e0d72d781fc925b
-- name: V2Get🛰️ 2026-06-26 04:36
-  type: vless
-  server: manager.xyzxz.qzz.io
-  port: 443
-  uuid: 7f9146e3-4663-4ebd-bc40-b21968c36d52
-  udp: true
-  network: grpc
-  tls: true
-  servername: manager.xyzxz.qzz.io
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: /11995/mehdi
 - name: V2Get🛰️ 2026-06-26 04:35
   type: vless
   server: 5.75.207.247
@@ -1077,14 +1085,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 'V2Get🛰️ 2026-06-25 19:44 #2'
-  type: trojan
-  server: 83.228.226.164
-  port: 443
-  password: SoftNetConnect
-  udp: true
-  sni: www.yahoo.com
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-23 12:55
   type: trojan
   server: 198.202.211.1
@@ -1172,10 +1172,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-26 05:50
+  - V2Get🛰️ 2026-06-26 06:26
+  - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-21 14:50
   - V2Get🛰️ 2026-06-16 14:54
   - V2Get🛰️ 2026-06-16 20:45
-  - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-16 07:45
   - V2Get🛰️ 2026-06-22 12:38
   - V2Get🛰️ 2026-06-25 16:35
@@ -1219,7 +1221,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 01:39
   - V2Get🛰️ 2026-06-26 03:11
   - 'V2Get🛰️ 2026-06-26 03:11 #2'
-  - V2Get🛰️ 2026-06-26 04:36
   - V2Get🛰️ 2026-06-26 04:35
   - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-19 00:48
@@ -1259,7 +1260,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-25 19:44
   - V2Get🛰️ 2026-06-16 17:26
-  - 'V2Get🛰️ 2026-06-25 19:44 #2'
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-22 15:37
   - V2Get🛰️ 2026-06-25 23:54
@@ -1272,10 +1272,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-26 05:50
+  - V2Get🛰️ 2026-06-26 06:26
+  - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-21 14:50
   - V2Get🛰️ 2026-06-16 14:54
   - V2Get🛰️ 2026-06-16 20:45
-  - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-16 07:45
   - V2Get🛰️ 2026-06-22 12:38
   - V2Get🛰️ 2026-06-25 16:35
@@ -1319,7 +1321,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 01:39
   - V2Get🛰️ 2026-06-26 03:11
   - 'V2Get🛰️ 2026-06-26 03:11 #2'
-  - V2Get🛰️ 2026-06-26 04:36
   - V2Get🛰️ 2026-06-26 04:35
   - V2Get🛰️ 2026-06-16 12:08
   - V2Get🛰️ 2026-06-19 00:48
@@ -1359,7 +1360,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-25 19:44
   - V2Get🛰️ 2026-06-16 17:26
-  - 'V2Get🛰️ 2026-06-25 19:44 #2'
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-22 15:37
   - V2Get🛰️ 2026-06-25 23:54
