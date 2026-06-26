@@ -12,6 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 16:27
+  type: vless
+  server: g-de2-x9cr8bwsquaj.radshim.com
+  port: 8443
+  uuid: dc109a0f-04e7-4e27-8df0-4decdc4fc90c
+  udp: true
+  network: httpupgrade
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-06-24 17:27
+  type: vless
+  server: de.lesss.ir
+  port: 443
+  uuid: f23fb93e-7668-49f4-935e-dc18b9e18f8e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1lMHY_oEqthg10oDrHSq9gSwYdqqNb6ZQc9JEewyzVk
+    short-id: bc7c4660adb53714
+- name: V2Get🛰️ 2026-06-25 21:43
+  type: vless
+  server: mci.cloud-play.ir
+  port: 80
+  uuid: 903123fd-84fd-45d9-abc8-08c83d704224
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-20 23:43
   type: vless
   server: 104.26.2.228
@@ -52,14 +86,6 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime07.workers.dev
-- name: V2Get🛰️ 2026-06-24 18:11
-  type: vless
-  server: snapp.ir
-  port: 2052
-  uuid: 7b81a350-89c3-47da-a3a9-5f2b65313d03
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-15 23:07
   type: vless
   server: sca30.mysilipdir.com
@@ -560,16 +586,6 @@ proxies:
       Host: delta090.qzz.io
 - name: 'V2Get🛰️ 2026-06-26 05:31 #3'
   type: vless
-  server: 6.call-me-seyed.ir
-  port: 2052
-  uuid: 2e409cdc-d0c9-4fc0-b285-9371034b8002
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-06-26 05:31 #4'
-  type: vless
   server: 45.130.125.160
   port: 443
   uuid: 406d8436-0eb9-4eb2-84fb-960e076ffba6
@@ -1015,18 +1031,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-15 18:55
-  type: trojan
-  server: 43.169.18.179
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.creationlong.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
 - name: V2Get🛰️ 2026-06-18 05:49
   type: trojan
   server: 151.101.110.219
@@ -1210,10 +1214,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 16:27
+  - V2Get🛰️ 2026-06-24 17:27
+  - V2Get🛰️ 2026-06-25 21:43
   - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
-  - V2Get🛰️ 2026-06-24 18:11
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-26 07:30
@@ -1254,7 +1260,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 05:31
   - 'V2Get🛰️ 2026-06-26 05:31 #2'
   - 'V2Get🛰️ 2026-06-26 05:31 #3'
-  - 'V2Get🛰️ 2026-06-26 05:31 #4'
   - V2Get🛰️ 2026-06-24 15:25
   - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-26 05:26
@@ -1289,7 +1294,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-26 03:28
   - V2Get🛰️ 2026-06-26 03:30
-  - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 02:59
@@ -1311,10 +1315,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 16:27
+  - V2Get🛰️ 2026-06-24 17:27
+  - V2Get🛰️ 2026-06-25 21:43
   - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
-  - V2Get🛰️ 2026-06-24 18:11
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-26 07:30
@@ -1355,7 +1361,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 05:31
   - 'V2Get🛰️ 2026-06-26 05:31 #2'
   - 'V2Get🛰️ 2026-06-26 05:31 #3'
-  - 'V2Get🛰️ 2026-06-26 05:31 #4'
   - V2Get🛰️ 2026-06-24 15:25
   - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-26 05:26
@@ -1390,7 +1395,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:01
   - V2Get🛰️ 2026-06-26 03:28
   - V2Get🛰️ 2026-06-26 03:30
-  - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-18 05:49
   - V2Get🛰️ 2026-06-26 03:20
   - V2Get🛰️ 2026-06-26 02:59
