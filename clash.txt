@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 23:58
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 07:11
   type: vless
   server: 77.91.68.70
@@ -713,20 +727,6 @@ proxies:
     path: /download.php
     headers:
       Host: sertraline.adaspoloandco.com
-- name: V2Get🛰️ 2026-06-25 23:58
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - h2
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 13:49
   type: vless
   server: 188.114.97.4
@@ -1193,6 +1193,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-26 07:11
   - V2Get🛰️ 2026-06-23 19:42
   - V2Get🛰️ 2026-06-22 17:52
@@ -1249,7 +1250,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 13:47
   - V2Get🛰️ 2026-06-18 05:09
   - V2Get🛰️ 2026-06-16 05:21
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:49
   - V2Get🛰️ 2026-06-26 04:56
   - V2Get🛰️ 2026-06-26 03:11
@@ -1293,6 +1293,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-26 07:11
   - V2Get🛰️ 2026-06-23 19:42
   - V2Get🛰️ 2026-06-22 17:52
@@ -1349,7 +1350,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 13:47
   - V2Get🛰️ 2026-06-18 05:09
   - V2Get🛰️ 2026-06-16 05:21
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:49
   - V2Get🛰️ 2026-06-26 04:56
   - V2Get🛰️ 2026-06-26 03:11
