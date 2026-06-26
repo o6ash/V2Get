@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-20 23:43
+  type: vless
+  server: 104.26.2.228
+  port: 2096
+  uuid: c5657bbd-6ee6-4417-91af-b7a8cd7e599f
+  udp: true
+  network: ws
+  tls: true
+  servername: caci.lezzatflow.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  ws-opts:
+    path: /
+    headers:
+      Host: caci.lezzatflow.ir
 - name: V2Get🛰️ 2026-06-15 17:08
   type: trojan
   server: 188.114.97.6
@@ -1161,20 +1177,6 @@ proxies:
     path: /
     headers:
       Host: ez-9abab7.ezaccess1451dbd.workers.dev
-- name: V2Get🛰️ 2026-06-25 23:35
-  type: vless
-  server: 199.181.197.60
-  port: 2053
-  uuid: 20ae4b98-91bf-4892-80c8-4dee85515a54
-  udp: true
-  network: ws
-  tls: true
-  servername: ez-9abab7.ezaccess1451dbd.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-9abab7.ezaccess1451dbd.workers.dev
 - name: V2Get🛰️ 2026-06-25 23:26
   type: trojan
   server: jp007.421421.xyz
@@ -1208,6 +1210,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
   - V2Get🛰️ 2026-06-24 18:11
@@ -1300,7 +1303,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 17:26
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-25 23:54
-  - V2Get🛰️ 2026-06-25 23:35
   - V2Get🛰️ 2026-06-25 23:26
   - V2Get🛰️ 2026-06-15 21:59
 - name: ♻️ Auto Select
@@ -1309,6 +1311,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-20 23:43
   - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
   - V2Get🛰️ 2026-06-24 18:11
@@ -1401,7 +1404,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 17:26
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-25 23:54
-  - V2Get🛰️ 2026-06-25 23:35
   - V2Get🛰️ 2026-06-25 23:26
   - V2Get🛰️ 2026-06-15 21:59
 rules:
