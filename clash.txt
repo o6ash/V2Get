@@ -12,6 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 18:18
+  type: vless
+  server: 188.114.97.6
+  port: 2096
+  uuid: 70252937-5c61-4fb0-8656-d1a16261b795
+  udp: true
+  network: ws
+  tls: true
+  servername: group.shalana.xyz
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: group.shalana.xyz
+- name: V2Get🛰️ 2026-06-23 12:55
+  type: trojan
+  server: 198.202.211.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.creationlong.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: V2Get🛰️ 2026-06-25 19:36
+  type: trojan
+  server: 151.101.121.242
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: www.f6r.ir
+  network: ws
+  ws-opts:
+    path: https://t.me/oneclickvpnkeys
+    headers:
+      Host: www.f6r.ir
 - name: V2Get🛰️ 2026-06-15 18:55
   type: trojan
   server: 43.169.18.179
@@ -376,14 +414,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: V2Get🛰️ 2026-06-19 15:25
-  type: vless
-  server: 217.28.48.29
-  port: 25752
-  uuid: 27f2ae85-3e15-4a9a-9c71-49ee032e7b26
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-26 08:12
   type: vless
   server: 00hyt.izumii.ir
@@ -669,18 +699,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-15 17:08
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: mitivpn.sddde.ssddl.globddal.fassdtdly.cow.mitivpn.site
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: https://chatgpt.com
 - name: V2Get🛰️ 2026-06-18 10:30
   type: vless
   server: 162.120.94.30
@@ -901,20 +919,6 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: 'V2Get🛰️ 2026-06-16 14:54 #2'
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  network: ws
-  tls: true
-  servername: bab-6.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
 - name: V2Get🛰️ 2026-06-22 12:38
   type: vless
   server: chatgpt.com
@@ -1224,6 +1228,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-23 12:55
+  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-26 09:11
   - V2Get🛰️ 2026-06-18 02:10
@@ -1253,7 +1260,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-23 16:40
   - V2Get🛰️ 2026-06-16 03:17
-  - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-26 08:12
   - V2Get🛰️ 2026-06-24 01:04
   - V2Get🛰️ 2026-06-18 13:10
@@ -1277,7 +1283,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 07:30
   - V2Get🛰️ 2026-06-18 16:27
   - V2Get🛰️ 2026-06-25 21:43
-  - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-25 15:48
@@ -1295,7 +1300,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 05:50
   - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-21 14:50
-  - 'V2Get🛰️ 2026-06-16 14:54 #2'
   - V2Get🛰️ 2026-06-22 12:38
   - V2Get🛰️ 2026-06-24 12:40
   - V2Get🛰️ 2026-06-26 05:31
@@ -1325,6 +1329,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 18:18
+  - V2Get🛰️ 2026-06-23 12:55
+  - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-15 18:55
   - V2Get🛰️ 2026-06-26 09:11
   - V2Get🛰️ 2026-06-18 02:10
@@ -1354,7 +1361,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-23 16:40
   - V2Get🛰️ 2026-06-16 03:17
-  - V2Get🛰️ 2026-06-19 15:25
   - V2Get🛰️ 2026-06-26 08:12
   - V2Get🛰️ 2026-06-24 01:04
   - V2Get🛰️ 2026-06-18 13:10
@@ -1378,7 +1384,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 07:30
   - V2Get🛰️ 2026-06-18 16:27
   - V2Get🛰️ 2026-06-25 21:43
-  - V2Get🛰️ 2026-06-15 17:08
   - V2Get🛰️ 2026-06-18 10:30
   - V2Get🛰️ 2026-06-15 23:07
   - V2Get🛰️ 2026-06-25 15:48
@@ -1396,7 +1401,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 05:50
   - V2Get🛰️ 2026-06-23 23:33
   - V2Get🛰️ 2026-06-21 14:50
-  - 'V2Get🛰️ 2026-06-16 14:54 #2'
   - V2Get🛰️ 2026-06-22 12:38
   - V2Get🛰️ 2026-06-24 12:40
   - V2Get🛰️ 2026-06-26 05:31
