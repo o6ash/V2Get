@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-21 15:05
+  type: vless
+  server: 151.115.167.174
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
 - name: V2Get🛰️ 2026-06-22 00:01
   type: vless
   server: 31.76.32.114
@@ -631,17 +642,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-21 15:05
-  type: vless
-  server: 151.115.167.174
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-16 12:17
   type: vless
   server: de.vpnbase.net
@@ -1152,6 +1152,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-21 15:05
   - V2Get🛰️ 2026-06-22 00:01
   - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-24 13:56
@@ -1204,7 +1205,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 21:02
   - V2Get🛰️ 2026-06-15 22:41
   - V2Get🛰️ 2026-06-26 01:38
-  - V2Get🛰️ 2026-06-21 15:05
   - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-26 02:23
   - V2Get🛰️ 2026-06-15 18:45
@@ -1253,6 +1253,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-21 15:05
   - V2Get🛰️ 2026-06-22 00:01
   - V2Get🛰️ 2026-06-26 03:35
   - V2Get🛰️ 2026-06-24 13:56
@@ -1305,7 +1306,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 21:02
   - V2Get🛰️ 2026-06-15 22:41
   - V2Get🛰️ 2026-06-26 01:38
-  - V2Get🛰️ 2026-06-21 15:05
   - V2Get🛰️ 2026-06-16 12:17
   - V2Get🛰️ 2026-06-26 02:23
   - V2Get🛰️ 2026-06-15 18:45
