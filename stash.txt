@@ -12,20 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-25 23:58
+- name: V2Get🛰️ 2026-06-15 22:30
+  type: vmess
+  server: 57.131.32.191
+  port: 8443
+  uuid: 848af33c-81f2-40c9-93b2-4681d056936b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: OV-Italy1.09vpn.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: OV-Italy1.09vpn.com
+- name: V2Get🛰️ 2026-06-25 23:57
   type: trojan
-  server: 151.101.56.6
+  server: 151.101.110.219
   port: 443
   password: Mitivpn
   udp: true
   sni: ssl.fastly.com
   alpn:
-  - h2
+  - http/1.1
   network: ws
   ws-opts:
     path: /de=mitivpn
     headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 07:11
   type: vless
   server: 77.91.68.70
@@ -39,44 +55,63 @@ proxies:
   reality-opts:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
     short-id: 0e
-- name: V2Get🛰️ 2026-06-23 19:42
+- name: V2Get🛰️ 2026-06-26 07:02
   type: vless
-  server: 199.232.245.208
-  port: 443
-  uuid: 0cc72cd6-29b2-4dcc-af4d-2907d19a0680
-  udp: true
-  network: ws
-  tls: true
-  servername: default.ssl.fastly.net
-  ws-opts:
-    path: /
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-22 17:52
-  type: vless
-  server: 151.101.0.1
+  server: 104.21.112.1
   port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
   udp: true
   network: ws
   skip-cert-verify: true
   ws-opts:
-    path: /
+    path: /Tel-@V2ray_Alpha
     headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-25 07:01
+      Host: masaleini.mahsaamini.dpdns.org
+- name: V2Get🛰️ 2026-06-24 03:00
   type: vless
-  server: 140.248.185.253
+  server: mpt.com.mm
   port: 443
-  uuid: be9bf82b-b48b-4b7e-9cba-3b86801058ba
+  uuid: a3585167-b919-4067-c770-972d53aedc5e
   udp: true
   network: ws
   tls: true
-  servername: default.ssl.fastly.net
+  servername: vip.sirsis2.my.id
+  alpn:
+  - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: bazaryabab.global.ssl.fastly.net
+      Host: vip.sirsis2.my.id
+- name: V2Get🛰️ 2026-06-16 03:18
+  type: trojan
+  server: 66.81.247.155
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmloud.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'V2Get🛰️ 2026-06-26 07:02 #2'
+  type: vless
+  server: 162.159.9.83
+  port: 443
+  uuid: 82241d60-2bdf-4de7-9a29-2d57ebc09b76
+  udp: true
+  network: ws
+  tls: true
+  servername: h18I2JaM-v6hTJQ-F-vwAI0PvGltC6On.hGhOrBAni-MC70.WoRkErS.dev
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /eyJqdW5rIjoiSWVocjJHeWRvSGxYaThvIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: h18i2jam-v6htjq-f-vwai0pvgltc6on.hghorbani-mc70.workers.dev
 - name: V2Get🛰️ 2026-06-26 07:05
   type: trojan
   server: manager.xyzxz.qzz.io
@@ -100,7 +135,33 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-- name: V2Get🛰️ 2026-06-26 07:02
+- name: V2Get🛰️ 2026-06-25 23:58
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-22 17:52
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-06-26 07:02 #3'
   type: vless
   server: 147.182.183.207
   port: 443
@@ -178,18 +239,6 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: 'V2Get🛰️ 2026-06-26 07:02 #2'
-  type: vless
-  server: 104.21.112.1
-  port: 80
-  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /Tel-@V2ray_Alpha
-    headers:
-      Host: masaleini.mahsaamini.dpdns.org
 - name: V2Get🛰️ 2026-06-21 09:16
   type: trojan
   server: 193.148.19.210
@@ -198,51 +247,6 @@ proxies:
   udp: true
   sni: www.vk.com
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-06-26 07:02 #3'
-  type: vless
-  server: 162.159.9.83
-  port: 443
-  uuid: 82241d60-2bdf-4de7-9a29-2d57ebc09b76
-  udp: true
-  network: ws
-  tls: true
-  servername: h18I2JaM-v6hTJQ-F-vwAI0PvGltC6On.hGhOrBAni-MC70.WoRkErS.dev
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /eyJqdW5rIjoiSWVocjJHeWRvSGxYaThvIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
-    headers:
-      Host: h18i2jam-v6htjq-f-vwai0pvgltc6on.hghorbani-mc70.workers.dev
-- name: V2Get🛰️ 2026-06-16 03:18
-  type: trojan
-  server: 66.81.247.155
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: V2Get🛰️ 2026-06-24 03:00
-  type: vless
-  server: mpt.com.mm
-  port: 443
-  uuid: a3585167-b919-4067-c770-972d53aedc5e
-  udp: true
-  network: ws
-  tls: true
-  servername: vip.sirsis2.my.id
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.sirsis2.my.id
 - name: V2Get🛰️ 2026-06-15 18:17
   type: vless
   server: dx.mmhh.eu.cc
@@ -1064,24 +1068,24 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-15 22:30
+  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-26 07:11
-  - V2Get🛰️ 2026-06-23 19:42
-  - V2Get🛰️ 2026-06-22 17:52
-  - V2Get🛰️ 2026-06-25 07:01
+  - V2Get🛰️ 2026-06-26 07:02
+  - V2Get🛰️ 2026-06-24 03:00
+  - V2Get🛰️ 2026-06-16 03:18
+  - 'V2Get🛰️ 2026-06-26 07:02 #2'
   - V2Get🛰️ 2026-06-26 07:05
   - 'V2Get🛰️ 2026-06-26 07:05 #2'
-  - V2Get🛰️ 2026-06-26 07:02
+  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-22 17:52
+  - 'V2Get🛰️ 2026-06-26 07:02 #3'
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-26 06:41
   - V2Get🛰️ 2026-06-26 06:40
   - V2Get🛰️ 2026-06-15 17:32
   - V2Get🛰️ 2026-06-15 19:42
-  - 'V2Get🛰️ 2026-06-26 07:02 #2'
   - V2Get🛰️ 2026-06-21 09:16
-  - 'V2Get🛰️ 2026-06-26 07:02 #3'
-  - V2Get🛰️ 2026-06-16 03:18
-  - V2Get🛰️ 2026-06-24 03:00
   - V2Get🛰️ 2026-06-15 18:17
   - V2Get🛰️ 2026-06-25 19:53
   - V2Get🛰️ 2026-06-26 05:50
@@ -1150,24 +1154,24 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-15 22:30
+  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-26 07:11
-  - V2Get🛰️ 2026-06-23 19:42
-  - V2Get🛰️ 2026-06-22 17:52
-  - V2Get🛰️ 2026-06-25 07:01
+  - V2Get🛰️ 2026-06-26 07:02
+  - V2Get🛰️ 2026-06-24 03:00
+  - V2Get🛰️ 2026-06-16 03:18
+  - 'V2Get🛰️ 2026-06-26 07:02 #2'
   - V2Get🛰️ 2026-06-26 07:05
   - 'V2Get🛰️ 2026-06-26 07:05 #2'
-  - V2Get🛰️ 2026-06-26 07:02
+  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-22 17:52
+  - 'V2Get🛰️ 2026-06-26 07:02 #3'
   - V2Get🛰️ 2026-06-16 09:21
   - V2Get🛰️ 2026-06-26 06:41
   - V2Get🛰️ 2026-06-26 06:40
   - V2Get🛰️ 2026-06-15 17:32
   - V2Get🛰️ 2026-06-15 19:42
-  - 'V2Get🛰️ 2026-06-26 07:02 #2'
   - V2Get🛰️ 2026-06-21 09:16
-  - 'V2Get🛰️ 2026-06-26 07:02 #3'
-  - V2Get🛰️ 2026-06-16 03:18
-  - V2Get🛰️ 2026-06-24 03:00
   - V2Get🛰️ 2026-06-15 18:17
   - V2Get🛰️ 2026-06-25 19:53
   - V2Get🛰️ 2026-06-26 05:50
