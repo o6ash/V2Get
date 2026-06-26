@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 05:21
+  type: vless
+  server: 104.26.14.85
+  port: 443
+  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
+  udp: true
+  network: ws
+  tls: true
+  servername: sertraline.adaspoloandco.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h2
+  ws-opts:
+    path: /download.php
+    headers:
+      Host: sertraline.adaspoloandco.com
+- name: V2Get🛰️ 2026-06-16 08:02
+  type: vless
+  server: 91.193.58.17
+  port: 2083
+  uuid: af475b0e-0c07-40fe-b4db-3dea2c0a481d
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-cmliu.lyqnihao.dpdns.org
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-cmliu.lyqnihao.dpdns.org
 - name: V2Get🛰️ 2026-06-15 18:07
   type: vless
   server: 173.245.59.191
@@ -865,21 +895,6 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-- name: V2Get🛰️ 2026-06-22 06:46
-  type: vless
-  server: sw-1.coinbridge.nl
-  port: 443
-  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
-  udp: true
-  network: grpc
-  tls: true
-  servername: google.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
-    short-id: d5c7f84e37e0c12d
-  grpc-opts:
-    grpc-service-name: data-sync
 - name: V2Get🛰️ 2026-06-23 09:04
   type: vless
   server: 199.232.245.208
@@ -956,20 +971,6 @@ proxies:
     path: /
     headers:
       Host: ez-9abab7.ezaccess1451dbd.workers.dev
-- name: V2Get🛰️ 2026-06-25 02:54
-  type: vless
-  server: 199.181.197.60
-  port: 2087
-  uuid: 20ae4b98-91bf-4892-80c8-4dee85515a54
-  udp: true
-  network: ws
-  tls: true
-  servername: ez-9abab7.ezaccess1451db
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-9abab7.ezaccess1451dbd.workers.dev
 - name: V2Get🛰️ 2026-06-25 23:35
   type: vless
   server: 199.181.197.60
@@ -1028,6 +1029,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 05:21
+  - V2Get🛰️ 2026-06-16 08:02
   - V2Get🛰️ 2026-06-15 18:07
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-25 01:51
@@ -1094,14 +1097,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 14:27 #3'
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-25 19:44
-  - V2Get🛰️ 2026-06-22 06:46
   - V2Get🛰️ 2026-06-23 09:04
   - 'V2Get🛰️ 2026-06-25 19:44 #2'
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-25 23:54
   - 'V2Get🛰️ 2026-06-25 23:54 #2'
   - V2Get🛰️ 2026-06-24 22:06
-  - V2Get🛰️ 2026-06-25 02:54
   - V2Get🛰️ 2026-06-25 23:35
   - V2Get🛰️ 2026-06-25 23:26
   - V2Get🛰️ 2026-06-15 21:59
@@ -1112,6 +1113,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 05:21
+  - V2Get🛰️ 2026-06-16 08:02
   - V2Get🛰️ 2026-06-15 18:07
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-25 01:51
@@ -1178,14 +1181,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-24 14:27 #3'
   - V2Get🛰️ 2026-06-15 17:03
   - V2Get🛰️ 2026-06-25 19:44
-  - V2Get🛰️ 2026-06-22 06:46
   - V2Get🛰️ 2026-06-23 09:04
   - 'V2Get🛰️ 2026-06-25 19:44 #2'
   - V2Get🛰️ 2026-06-23 12:55
   - V2Get🛰️ 2026-06-25 23:54
   - 'V2Get🛰️ 2026-06-25 23:54 #2'
   - V2Get🛰️ 2026-06-24 22:06
-  - V2Get🛰️ 2026-06-25 02:54
   - V2Get🛰️ 2026-06-25 23:35
   - V2Get🛰️ 2026-06-25 23:26
   - V2Get🛰️ 2026-06-15 21:59
