@@ -12,6 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-18 23:31
+  type: vless
+  server: 87.249.139.244
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams1.fromblancwithlove.com
+- name: V2Get🛰️ 2026-06-28 02:30
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: 4e9c2339-4136-4a44-b490-b13cc8ecef83
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-28 02:29
   type: trojan
   server: www.speedtest.net
@@ -243,7 +266,7 @@ proxies:
     short-id: e3d38cee79d4f94c
 - name: 'V2Get🛰️ 2026-06-27 19:46 #2'
   type: vless
-  server: 45.195.137.129
+  server: 45.195.137.120
   port: 8443
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
   udp: true
@@ -256,19 +279,6 @@ proxies:
     short-id: e3d38cee79d4f94c
 - name: 'V2Get🛰️ 2026-06-27 19:46 #3'
   type: vless
-  server: 45.195.137.120
-  port: 8443
-  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
-    short-id: e3d38cee79d4f94c
-- name: 'V2Get🛰️ 2026-06-27 19:46 #4'
-  type: vless
   server: 45.195.137.75
   port: 8443
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
@@ -280,7 +290,7 @@ proxies:
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
     short-id: e3d38cee79d4f94c
-- name: 'V2Get🛰️ 2026-06-27 19:46 #5'
+- name: 'V2Get🛰️ 2026-06-27 19:46 #4'
   type: vless
   server: 45.195.137.29
   port: 8443
@@ -359,20 +369,6 @@ proxies:
     path: /GOrbEh
     headers:
       Host: rubifen.adaspoloandco.com
-- name: V2Get🛰️ 2026-06-25 23:57
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-18 12:48
   type: vless
   server: www.speedtest.net
@@ -1133,6 +1129,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-18 23:31
+  - V2Get🛰️ 2026-06-28 02:30
   - V2Get🛰️ 2026-06-28 02:29
   - V2Get🛰️ 2026-06-27 22:41
   - V2Get🛰️ 2026-06-16 03:18
@@ -1154,13 +1152,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-27 19:46 #2'
   - 'V2Get🛰️ 2026-06-27 19:46 #3'
   - 'V2Get🛰️ 2026-06-27 19:46 #4'
-  - 'V2Get🛰️ 2026-06-27 19:46 #5'
   - V2Get🛰️ 2026-06-24 10:02
   - 'V2Get🛰️ 2026-06-28 02:19 #2'
   - 'V2Get🛰️ 2026-06-28 02:19 #3'
   - V2Get🛰️ 2026-06-24 18:26
   - V2Get🛰️ 2026-06-17 13:49
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-28 02:08
   - 'V2Get🛰️ 2026-06-28 02:08 #2'
@@ -1226,6 +1222,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-18 23:31
+  - V2Get🛰️ 2026-06-28 02:30
   - V2Get🛰️ 2026-06-28 02:29
   - V2Get🛰️ 2026-06-27 22:41
   - V2Get🛰️ 2026-06-16 03:18
@@ -1247,13 +1245,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-27 19:46 #2'
   - 'V2Get🛰️ 2026-06-27 19:46 #3'
   - 'V2Get🛰️ 2026-06-27 19:46 #4'
-  - 'V2Get🛰️ 2026-06-27 19:46 #5'
   - V2Get🛰️ 2026-06-24 10:02
   - 'V2Get🛰️ 2026-06-28 02:19 #2'
   - 'V2Get🛰️ 2026-06-28 02:19 #3'
   - V2Get🛰️ 2026-06-24 18:26
   - V2Get🛰️ 2026-06-17 13:49
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-18 12:48
   - V2Get🛰️ 2026-06-28 02:08
   - 'V2Get🛰️ 2026-06-28 02:08 #2'
