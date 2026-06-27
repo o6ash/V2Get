@@ -12,12 +12,151 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-18 16:35
+- name: V2Get🛰️ 2026-06-18 22:53
+  type: trojan
+  server: 45.130.125.112
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-06-25 16:04
+  type: vless
+  server: fastly.videobazi.com
+  port: 443
+  uuid: 40bf0425-e1b5-41a0-aad8-b482d2aee498
+  udp: true
+  network: xhttp
+  tls: true
+  servername: default.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-16 06:19
   type: ss
-  server: 185.213.20.110
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-06-17 05:04
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: 0ab59a11983d4ce7862d156c164d927d
+  udp: true
+  sni: FAST-Route-DD4E2D.FREEfiReMO7964.WOrkeRS.DEV
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiajRMMndudHIiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxMDkuMTIyLjE5OC4xMjciXX0=?ed=2560
+    headers:
+      Host: FAST-RouTE-Dd4E2d.fREefIREmO7964.wOrKerS.dev
+- name: V2Get🛰️ 2026-06-26 23:46
+  type: vless
+  server: 104.16.75.207
+  port: 2087
+  uuid: ef0adf73-a279-4bd3-9f1b-bb5f4137ddb3
+  udp: true
+  network: tcp
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-06-16 18:23
+  type: vless
+  server: 151.115.164.120
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
+- name: V2Get🛰️ 2026-06-18 00:12
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: V2Get🛰️ 2026-06-19 22:06
+  type: vless
+  server: 77.73.131.154
+  port: 443
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: vindobona.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5GhMSJXQv1wXHVD999YHRRj83m-7VKH8qb_vTxBGbng
+    short-id: 08
+- name: V2Get🛰️ 2026-06-24 12:35
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-06-16 06:22
+  type: ss
+  server: 149.104.109.74
+  port: 21273
+  cipher: chacha20-ietf-poly1305
+  password: Ll6cYfXM5DzQbdtMMb72A_jqVnNljU3yqe
+  udp: true
+- name: V2Get🛰️ 2026-06-20 12:22
+  type: vless
+  server: 18.153.81.34
+  port: 443
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-06-25 23:57
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-16 02:01
+  type: vless
+  server: 151.115.164.134
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
+- name: V2Get🛰️ 2026-06-16 09:00
+  type: ss
+  server: 82.38.31.184
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: V2Get🛰️ 2026-06-24 19:25
   type: vless
@@ -49,20 +188,6 @@ proxies:
   reality-opts:
     public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
     short-id: 77b0689f
-- name: V2Get🛰️ 2026-06-21 02:11
-  type: vless
-  server: 5.180.173.222
-  port: 448
-  uuid: 626b07bd-81c4-4212-be7a-27442a579620
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.googletagmanager.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo
-    short-id: 15052edc8120b63d
 - name: V2Get🛰️ 2026-06-26 22:20
   type: vless
   server: 45.194.10.240
@@ -90,14 +215,19 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: V2Get🛰️ 2026-06-27 05:13
+- name: V2Get🛰️ 2026-06-27 05:38
   type: vless
-  server: 203.18.98.154
-  port: 20818
-  uuid: e7bf11b9-9ec8-4874-9248-ac5f62d02829
+  server: 185.48.251.195
+  port: 448
+  uuid: 7fc0fd86-79a9-48dd-87e8-669758e9ffa8
   udp: true
   network: tcp
-  skip-cert-verify: true
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ncuqENP8uAV8w18kOQJlfWCC7dWjnUY1UY_5Iwtf21o
+    short-id: 181c8972132cca60
 - name: 'V2Get🛰️ 2026-06-26 22:20 #2'
   type: vless
   server: 45.194.10.251
@@ -111,19 +241,27 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: V2Get🛰️ 2026-06-25 19:43
-  type: vless
-  server: rvg-production-1ab7.up.railway.app
-  port: 443
-  uuid: deffbfcd-0626-365b-ff92-9b93f2fd6459
+- name: V2Get🛰️ 2026-06-18 16:35
+  type: ss
+  server: 185.213.20.110
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  network: ws
+- name: V2Get🛰️ 2026-06-21 02:11
+  type: vless
+  server: 5.180.173.222
+  port: 448
+  uuid: 626b07bd-81c4-4212-be7a-27442a579620
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: rvg-production-1ab7.up.railway.app
-  ws-opts:
-    path: /ws/deffbfcd-0626-365b-ff92-9b93f2fd6459
-    headers:
-      Host: rvg-production-1ab7.up.railway.app
+  servername: www.googletagmanager.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo
+    short-id: 15052edc8120b63d
 - name: V2Get🛰️ 2026-06-16 03:06
   type: vless
   server: 108.165.236.144
@@ -177,19 +315,6 @@ proxies:
     path: /de=mitivpn
     headers:
       Host: 4-4-3-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-27 05:38
-  type: vless
-  server: 185.48.251.195
-  port: 448
-  uuid: 7fc0fd86-79a9-48dd-87e8-669758e9ffa8
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ncuqENP8uAV8w18kOQJlfWCC7dWjnUY1UY_5Iwtf21o
-    short-id: 181c8972132cca60
 - name: V2Get🛰️ 2026-06-21 13:16
   type: vless
   server: 188.114.97.5
@@ -301,19 +426,6 @@ proxies:
   reality-opts:
     public-key: AQdYxjoMA0fxO8O9BX5bW4EMfRyiH09K0Hwjwse51AM
     short-id: 1bcb6db5
-- name: V2Get🛰️ 2026-06-16 17:29
-  type: vless
-  server: 172.64.145.166
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  network: ws
-  tls: true
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
 - name: V2Get🛰️ 2026-06-27 05:21
   type: vless
   server: 162.159.16.239
@@ -328,7 +440,7 @@ proxies:
     path: /lY4xhKGq8xGZL3CP2na2X60FJ
     headers:
       Host: cdn-n5.roxi.cc
-- name: 'V2Get🛰️ 2026-06-27 05:13 #2'
+- name: V2Get🛰️ 2026-06-27 05:13
   type: vless
   server: ez-a215e5.ezaccess155e83c.workers.dev
   port: 2086
@@ -391,15 +503,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-18 15:03
-  type: vless
-  server: 185.229.191.69
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  udp: true
-  network: tcp
-  tls: true
-  servername: ams1.fromblancwithlove.com
 - name: V2Get🛰️ 2026-06-24 11:26
   type: vless
   server: 104.24.8.161
@@ -428,19 +531,6 @@ proxies:
   reality-opts:
     public-key: K7v4Rsxa-9lBsD_IQrzXREfIME_bFmwELHQAE3Yp1ng
     short-id: b9988c11
-- name: V2Get🛰️ 2026-06-16 08:45
-  type: vless
-  server: www.zsu.gov.ua
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  network: ws
-  tls: true
-  servername: misaka.cndyw.ggff.net
-  ws-opts:
-    path: /?ed=2560fp=random
-    headers:
-      Host: misaka.cndyw.ggff.net
 - name: V2Get🛰️ 2026-06-27 05:19
   type: vless
   server: 138.252.100.85
@@ -464,7 +554,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: 'V2Get🛰️ 2026-06-27 05:13 #3'
+- name: 'V2Get🛰️ 2026-06-27 05:13 #2'
   type: vless
   server: ez-a215e5.ezaccess155e83c.workers.dev
   port: 2095
@@ -523,46 +613,10 @@ proxies:
     path: /
     headers:
       Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: 'V2Get🛰️ 2026-06-27 05:13 #4'
-  type: vless
-  server: ez-a215e5.ezaccess155e83c.workers.dev
-  port: 2082
-  uuid: 24e2ebcf-53b4-4b0a-a552-45911fb10dda
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-a215e5.ezaccess155e83c.workers.dev
-- name: 'V2Get🛰️ 2026-06-27 05:13 #5'
+- name: 'V2Get🛰️ 2026-06-27 05:13 #3'
   type: vless
   server: ez-a215e5.ezaccess155e83c.workers.dev
   port: 2052
-  uuid: 24e2ebcf-53b4-4b0a-a552-45911fb10dda
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-a215e5.ezaccess155e83c.workers.dev
-- name: 'V2Get🛰️ 2026-06-27 05:13 #6'
-  type: vless
-  server: ez-a215e5.ezaccess155e83c.workers.dev
-  port: 8880
-  uuid: 24e2ebcf-53b4-4b0a-a552-45911fb10dda
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-a215e5.ezaccess155e83c.workers.dev
-- name: V2Get🛰️ 2026-06-27 05:12
-  type: vless
-  server: ez-a215e5.ezaccess155e83c.workers.dev
-  port: 8080
   uuid: 24e2ebcf-53b4-4b0a-a552-45911fb10dda
   udp: true
   network: ws
@@ -713,20 +767,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: V2Get🛰️ 2026-06-20 11:52
-  type: vless
-  server: 194.164.217.139
-  port: 448
-  uuid: d61b4e1b-4745-484f-8362-18537825a7af
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
-    short-id: 05fdaa8a05be46a9
-- name: 'V2Get🛰️ 2026-06-16 08:45 #2'
+- name: V2Get🛰️ 2026-06-16 08:45
   type: vless
   server: itarmy.com.ua
   port: 2095
@@ -808,19 +849,6 @@ proxies:
   reality-opts:
     public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
     short-id: 8c09fb78b12f
-- name: V2Get🛰️ 2026-06-26 13:07
-  type: vless
-  server: 213.165.42.219
-  port: 443
-  uuid: 31a7c9a2-0f42-4f5f-ae32-29b165f48ac3
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mNPCrTF4rKb_SRmOH-9-IBs5ihK6Pn4SH29iZtKmiX0
-    short-id: abcd1234
 - name: V2Get🛰️ 2026-06-19 17:25
   type: vless
   server: 45.130.125.126
@@ -837,18 +865,6 @@ proxies:
     path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed
     headers:
       Host: bpb-expo--10rayly4zy.expo.app
-- name: V2Get🛰️ 2026-06-27 04:25
-  type: vless
-  server: 66.33.22.157
-  port: 443
-  uuid: 22eca63b-d75b-46f9-a522-32f589454a2b
-  udp: true
-  network: grpc
-  tls: true
-  servername: a.shoma.qzz.io
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-06-27 04:20
   type: vless
   server: 104.18.4.130
@@ -1028,34 +1044,6 @@ proxies:
     path: /
     headers:
       Host: cdn.mizbanertebatfarda.ir
-- name: V2Get🛰️ 2026-06-27 02:40
-  type: vless
-  server: 45.131.186.103
-  port: 443
-  uuid: 98fdfffe-28d8-4580-a4d1-2d7e15bdde4a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.jsdelivr.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 1XDLWa8CNBQH2h3yauxbplirPLnNKkdjj6ptOyUUIgY
-    short-id: 3bd054289dc0748b
-- name: V2Get🛰️ 2026-06-27 02:41
-  type: vless
-  server: 5.231.119.69
-  port: 43000
-  uuid: 13cd46c5-11ad-4fba-942c-dca81db10e9b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 5.231.119.69
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qW7T2Al32COoPb231YvOcMdwkrE5ME5qigFs7hOkdEE
-    short-id: 54e02b5b
 - name: V2Get🛰️ 2026-06-27 02:27
   type: vless
   server: 101.33.75.233
@@ -1100,20 +1088,6 @@ proxies:
     path: /
     headers:
       Host: srv75.perfectbulk.info
-- name: V2Get🛰️ 2026-06-17 13:36
-  type: trojan
-  server: 45.131.4.118
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: linkkon-w.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-27 01:46
   type: vless
   server: 104.16.72.101
@@ -1196,20 +1170,32 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-18 22:53
+  - V2Get🛰️ 2026-06-25 16:04
+  - V2Get🛰️ 2026-06-16 06:19
+  - V2Get🛰️ 2026-06-17 05:04
+  - V2Get🛰️ 2026-06-26 23:46
+  - V2Get🛰️ 2026-06-16 18:23
+  - V2Get🛰️ 2026-06-18 00:12
+  - V2Get🛰️ 2026-06-19 22:06
+  - V2Get🛰️ 2026-06-24 12:35
+  - V2Get🛰️ 2026-06-16 06:22
+  - V2Get🛰️ 2026-06-20 12:22
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-16 02:01
+  - V2Get🛰️ 2026-06-16 09:00
   - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-27 05:45
-  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-26 22:20
   - V2Get🛰️ 2026-06-25 16:57
-  - V2Get🛰️ 2026-06-27 05:13
+  - V2Get🛰️ 2026-06-27 05:38
   - 'V2Get🛰️ 2026-06-26 22:20 #2'
-  - V2Get🛰️ 2026-06-25 19:43
+  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-16 03:06
   - V2Get🛰️ 2026-06-24 09:50
   - V2Get🛰️ 2026-06-16 14:54
   - V2Get🛰️ 2026-06-25 23:58
-  - V2Get🛰️ 2026-06-27 05:38
   - V2Get🛰️ 2026-06-21 13:16
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-15 21:59
@@ -1219,28 +1205,22 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 17:22
   - V2Get🛰️ 2026-06-25 11:32
   - V2Get🛰️ 2026-06-26 23:36
-  - V2Get🛰️ 2026-06-16 17:29
   - V2Get🛰️ 2026-06-27 05:21
-  - 'V2Get🛰️ 2026-06-27 05:13 #2'
+  - V2Get🛰️ 2026-06-27 05:13
   - V2Get🛰️ 2026-06-26 20:42
   - V2Get🛰️ 2026-06-23 19:35
   - V2Get🛰️ 2026-06-25 13:19
   - V2Get🛰️ 2026-06-17 13:57
-  - V2Get🛰️ 2026-06-18 15:03
   - V2Get🛰️ 2026-06-24 11:26
   - V2Get🛰️ 2026-06-16 03:00
-  - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-27 05:19
   - V2Get🛰️ 2026-06-18 15:04
-  - 'V2Get🛰️ 2026-06-27 05:13 #3'
+  - 'V2Get🛰️ 2026-06-27 05:13 #2'
   - V2Get🛰️ 2026-06-20 06:13
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-16 09:42
   - V2Get🛰️ 2026-06-15 18:30
-  - 'V2Get🛰️ 2026-06-27 05:13 #4'
-  - 'V2Get🛰️ 2026-06-27 05:13 #5'
-  - 'V2Get🛰️ 2026-06-27 05:13 #6'
-  - V2Get🛰️ 2026-06-27 05:12
+  - 'V2Get🛰️ 2026-06-27 05:13 #3'
   - V2Get🛰️ 2026-06-15 18:06
   - V2Get🛰️ 2026-06-17 15:04
   - V2Get🛰️ 2026-06-27 04:58
@@ -1254,17 +1234,14 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:58
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-20 17:32
-  - V2Get🛰️ 2026-06-20 11:52
-  - 'V2Get🛰️ 2026-06-16 08:45 #2'
+  - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-15 18:15
   - V2Get🛰️ 2026-06-23 16:47
   - V2Get🛰️ 2026-06-18 22:25
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 10:43
-  - V2Get🛰️ 2026-06-26 13:07
   - V2Get🛰️ 2026-06-19 17:25
-  - V2Get🛰️ 2026-06-27 04:25
   - V2Get🛰️ 2026-06-27 04:20
   - V2Get🛰️ 2026-06-27 03:22
   - V2Get🛰️ 2026-06-27 03:41
@@ -1279,12 +1256,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 02:49
   - V2Get🛰️ 2026-06-25 11:53
   - 'V2Get🛰️ 2026-06-27 02:49 #2'
-  - V2Get🛰️ 2026-06-27 02:40
-  - V2Get🛰️ 2026-06-27 02:41
   - V2Get🛰️ 2026-06-27 02:27
   - V2Get🛰️ 2026-06-27 01:48
   - V2Get🛰️ 2026-06-23 16:59
-  - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-27 01:46
   - 'V2Get🛰️ 2026-06-27 01:46 #2'
   - V2Get🛰️ 2026-06-24 03:39
@@ -1298,20 +1272,32 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-18 22:53
+  - V2Get🛰️ 2026-06-25 16:04
+  - V2Get🛰️ 2026-06-16 06:19
+  - V2Get🛰️ 2026-06-17 05:04
+  - V2Get🛰️ 2026-06-26 23:46
+  - V2Get🛰️ 2026-06-16 18:23
+  - V2Get🛰️ 2026-06-18 00:12
+  - V2Get🛰️ 2026-06-19 22:06
+  - V2Get🛰️ 2026-06-24 12:35
+  - V2Get🛰️ 2026-06-16 06:22
+  - V2Get🛰️ 2026-06-20 12:22
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-16 02:01
+  - V2Get🛰️ 2026-06-16 09:00
   - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-27 05:45
-  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-26 22:20
   - V2Get🛰️ 2026-06-25 16:57
-  - V2Get🛰️ 2026-06-27 05:13
+  - V2Get🛰️ 2026-06-27 05:38
   - 'V2Get🛰️ 2026-06-26 22:20 #2'
-  - V2Get🛰️ 2026-06-25 19:43
+  - V2Get🛰️ 2026-06-18 16:35
+  - V2Get🛰️ 2026-06-21 02:11
   - V2Get🛰️ 2026-06-16 03:06
   - V2Get🛰️ 2026-06-24 09:50
   - V2Get🛰️ 2026-06-16 14:54
   - V2Get🛰️ 2026-06-25 23:58
-  - V2Get🛰️ 2026-06-27 05:38
   - V2Get🛰️ 2026-06-21 13:16
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-15 21:59
@@ -1321,28 +1307,22 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 17:22
   - V2Get🛰️ 2026-06-25 11:32
   - V2Get🛰️ 2026-06-26 23:36
-  - V2Get🛰️ 2026-06-16 17:29
   - V2Get🛰️ 2026-06-27 05:21
-  - 'V2Get🛰️ 2026-06-27 05:13 #2'
+  - V2Get🛰️ 2026-06-27 05:13
   - V2Get🛰️ 2026-06-26 20:42
   - V2Get🛰️ 2026-06-23 19:35
   - V2Get🛰️ 2026-06-25 13:19
   - V2Get🛰️ 2026-06-17 13:57
-  - V2Get🛰️ 2026-06-18 15:03
   - V2Get🛰️ 2026-06-24 11:26
   - V2Get🛰️ 2026-06-16 03:00
-  - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-27 05:19
   - V2Get🛰️ 2026-06-18 15:04
-  - 'V2Get🛰️ 2026-06-27 05:13 #3'
+  - 'V2Get🛰️ 2026-06-27 05:13 #2'
   - V2Get🛰️ 2026-06-20 06:13
   - V2Get🛰️ 2026-06-15 20:17
   - V2Get🛰️ 2026-06-16 09:42
   - V2Get🛰️ 2026-06-15 18:30
-  - 'V2Get🛰️ 2026-06-27 05:13 #4'
-  - 'V2Get🛰️ 2026-06-27 05:13 #5'
-  - 'V2Get🛰️ 2026-06-27 05:13 #6'
-  - V2Get🛰️ 2026-06-27 05:12
+  - 'V2Get🛰️ 2026-06-27 05:13 #3'
   - V2Get🛰️ 2026-06-15 18:06
   - V2Get🛰️ 2026-06-17 15:04
   - V2Get🛰️ 2026-06-27 04:58
@@ -1356,17 +1336,14 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:58
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-20 17:32
-  - V2Get🛰️ 2026-06-20 11:52
-  - 'V2Get🛰️ 2026-06-16 08:45 #2'
+  - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-15 18:15
   - V2Get🛰️ 2026-06-23 16:47
   - V2Get🛰️ 2026-06-18 22:25
   - V2Get🛰️ 2026-06-15 22:14
   - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 10:43
-  - V2Get🛰️ 2026-06-26 13:07
   - V2Get🛰️ 2026-06-19 17:25
-  - V2Get🛰️ 2026-06-27 04:25
   - V2Get🛰️ 2026-06-27 04:20
   - V2Get🛰️ 2026-06-27 03:22
   - V2Get🛰️ 2026-06-27 03:41
@@ -1381,12 +1358,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 02:49
   - V2Get🛰️ 2026-06-25 11:53
   - 'V2Get🛰️ 2026-06-27 02:49 #2'
-  - V2Get🛰️ 2026-06-27 02:40
-  - V2Get🛰️ 2026-06-27 02:41
   - V2Get🛰️ 2026-06-27 02:27
   - V2Get🛰️ 2026-06-27 01:48
   - V2Get🛰️ 2026-06-23 16:59
-  - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-27 01:46
   - 'V2Get🛰️ 2026-06-27 01:46 #2'
   - V2Get🛰️ 2026-06-24 03:39
