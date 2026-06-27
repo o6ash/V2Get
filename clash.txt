@@ -12,6 +12,90 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-26 22:33
+  type: trojan
+  server: 164.38.155.135
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: 95r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=De
+    headers:
+      Host: 95r.ir
+- name: V2Get🛰️ 2026-06-19 13:14
+  type: trojan
+  server: 199.181.197.176
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
+    headers:
+      Host: linkkon-w.ir
+- name: V2Get🛰️ 2026-06-25 23:58
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-06-26 22:33 #2'
+  type: trojan
+  server: 94.140.0.100
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: 95r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=Usa
+    headers:
+      Host: 95r.ir
+- name: 'V2Get🛰️ 2026-06-26 22:33 #3'
+  type: trojan
+  server: 91.193.58.201
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: 95r.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: 95r.ir
+- name: V2Get🛰️ 2026-06-17 13:36
+  type: trojan
+  server: 45.131.4.118
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-25 19:36
   type: vless
   server: 5.180.173.171
@@ -349,19 +433,6 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: V2Get🛰️ 2026-06-27 11:33
-  type: vless
-  server: hm.khoycityman.ir
-  port: 443
-  uuid: 2a2a24da-da1b-4988-bf33-82cf7601870f
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cAprase508p_Y7olUKMa-aqER9NcBqaCZ8xyvll4Xgk
-    short-id: f563cb8c
 - name: V2Get🛰️ 2026-06-26 21:56
   type: trojan
   server: 104.16.72.101
@@ -457,62 +528,6 @@ proxies:
     path: /de=mitivpn
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-25 23:58
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - h2
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-17 13:36
-  type: trojan
-  server: 45.131.4.118
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: linkkon-w.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: linkkon-w.ir
-- name: V2Get🛰️ 2026-06-26 22:33
-  type: trojan
-  server: 94.140.0.100
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: 95r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=Usa
-    headers:
-      Host: 95r.ir
-- name: 'V2Get🛰️ 2026-06-26 22:33 #2'
-  type: trojan
-  server: 91.193.58.201
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: 95r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=NL
-    headers:
-      Host: 95r.ir
 - name: 'V2Get🛰️ 2026-06-27 22:21 #2'
   type: vless
   server: 45.194.10.5
@@ -869,20 +884,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: V2Get🛰️ 2026-06-22 16:55
-  type: vless
-  server: 5.75.207.247
-  port: 2360
-  uuid: 94b9fc22-3e10-41d6-aea5-ef412fc5b206
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: c6
 - name: 'V2Get🛰️ 2026-06-27 20:24 #3'
   type: trojan
   server: 37.156.44.215
@@ -1204,6 +1205,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-26 22:33
+  - V2Get🛰️ 2026-06-19 13:14
+  - V2Get🛰️ 2026-06-25 23:58
+  - 'V2Get🛰️ 2026-06-26 22:33 #2'
+  - 'V2Get🛰️ 2026-06-26 22:33 #3'
+  - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-24 16:45
   - V2Get🛰️ 2026-06-17 19:47
@@ -1231,7 +1238,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 22:36
   - V2Get🛰️ 2026-06-16 01:17
   - V2Get🛰️ 2026-06-23 21:52
-  - V2Get🛰️ 2026-06-27 11:33
   - V2Get🛰️ 2026-06-26 21:56
   - V2Get🛰️ 2026-06-27 00:17
   - V2Get🛰️ 2026-06-26 03:28
@@ -1240,10 +1246,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 12:26
   - V2Get🛰️ 2026-06-27 22:02
   - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-25 23:58
-  - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-26 22:33
-  - 'V2Get🛰️ 2026-06-26 22:33 #2'
   - 'V2Get🛰️ 2026-06-27 22:21 #2'
   - V2Get🛰️ 2026-06-27 20:38
   - V2Get🛰️ 2026-06-15 23:53
@@ -1275,7 +1277,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 21:35
   - V2Get🛰️ 2026-06-27 20:24
   - 'V2Get🛰️ 2026-06-27 20:24 #2'
-  - V2Get🛰️ 2026-06-22 16:55
   - 'V2Get🛰️ 2026-06-27 20:24 #3'
   - V2Get🛰️ 2026-06-16 03:17
   - V2Get🛰️ 2026-06-16 02:09
@@ -1309,6 +1310,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-26 22:33
+  - V2Get🛰️ 2026-06-19 13:14
+  - V2Get🛰️ 2026-06-25 23:58
+  - 'V2Get🛰️ 2026-06-26 22:33 #2'
+  - 'V2Get🛰️ 2026-06-26 22:33 #3'
+  - V2Get🛰️ 2026-06-17 13:36
   - V2Get🛰️ 2026-06-25 19:36
   - V2Get🛰️ 2026-06-24 16:45
   - V2Get🛰️ 2026-06-17 19:47
@@ -1336,7 +1343,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 22:36
   - V2Get🛰️ 2026-06-16 01:17
   - V2Get🛰️ 2026-06-23 21:52
-  - V2Get🛰️ 2026-06-27 11:33
   - V2Get🛰️ 2026-06-26 21:56
   - V2Get🛰️ 2026-06-27 00:17
   - V2Get🛰️ 2026-06-26 03:28
@@ -1345,10 +1351,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-20 12:26
   - V2Get🛰️ 2026-06-27 22:02
   - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-25 23:58
-  - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-26 22:33
-  - 'V2Get🛰️ 2026-06-26 22:33 #2'
   - 'V2Get🛰️ 2026-06-27 22:21 #2'
   - V2Get🛰️ 2026-06-27 20:38
   - V2Get🛰️ 2026-06-15 23:53
@@ -1380,7 +1382,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 21:35
   - V2Get🛰️ 2026-06-27 20:24
   - 'V2Get🛰️ 2026-06-27 20:24 #2'
-  - V2Get🛰️ 2026-06-22 16:55
   - 'V2Get🛰️ 2026-06-27 20:24 #3'
   - V2Get🛰️ 2026-06-16 03:17
   - V2Get🛰️ 2026-06-16 02:09
