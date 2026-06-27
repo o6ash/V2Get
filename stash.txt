@@ -12,14 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-16 05:24
+- name: V2Get🛰️ 2026-06-15 20:41
   type: vless
-  server: 109.120.132.142
-  port: 40617
-  uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
+  server: betty.ns.cloudflare.com
+  port: 443
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  udp: true
+  network: ws
+  tls: true
+  servername: amoosamiii.net
+  ws-opts:
+    path: /poiuyws
+    headers:
+      Host: amoosamiii.net
+- name: V2Get🛰️ 2026-06-16 11:41
+  type: vless
+  server: 91.218.143.194
+  port: 43798
+  uuid: b7725d23-840a-4f8e-993c-69b40424cfc0
   udp: true
   network: tcp
-  skip-cert-verify: true
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU
+    short-id: f71c22
 - name: V2Get🛰️ 2026-06-24 19:08
   type: vless
   server: 51.158.206.103
@@ -34,6 +52,14 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
+- name: V2Get🛰️ 2026-06-16 05:24
+  type: vless
+  server: 109.120.132.142
+  port: 40617
+  uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-27 06:03
   type: vmess
   server: myvpshosting.name.ng
@@ -748,20 +774,6 @@ proxies:
     path: /
     headers:
       Host: newip.global.ssl.fastly.neT.
-- name: V2Get🛰️ 2026-06-18 11:26
-  type: vless
-  server: de.ipsenter.org
-  port: 443
-  uuid: c381ed79-f3c9-4028-85ae-687795d89ece
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4-ou3SyJYZ2ptF0vXFdc02yIRTF4VF8m2XcUKJPsUyQ
-    short-id: 1128da54b05ec30c
 - name: V2Get🛰️ 2026-06-16 10:43
   type: vless
   server: 83.222.20.64
@@ -970,20 +982,6 @@ proxies:
     path: /
     headers:
       Host: c.eoa.ccwu.cc
-- name: V2Get🛰️ 2026-06-27 01:48
-  type: vless
-  server: 104.16.72.101
-  port: 443
-  uuid: 31fc82da-1136-4a84-a596-7fbba8026c1d
-  udp: true
-  network: ws
-  tls: true
-  servername: dfs8545fads4ds5.another-appleid.ccwu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /gateway/ws/a8d2f91c
-    headers:
-      Host: dfs8545fads4ds5.another-appleid.ccwu.cc
 - name: V2Get🛰️ 2026-06-23 16:59
   type: vless
   server: 45.130.125.114
@@ -1055,8 +1053,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-16 05:24
+  - V2Get🛰️ 2026-06-15 20:41
+  - V2Get🛰️ 2026-06-16 11:41
   - V2Get🛰️ 2026-06-24 19:08
+  - V2Get🛰️ 2026-06-16 05:24
   - V2Get🛰️ 2026-06-27 06:03
   - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-16 02:54
@@ -1114,7 +1114,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:58
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-23 16:47
-  - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-27 04:20
@@ -1130,7 +1129,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:53
   - 'V2Get🛰️ 2026-06-27 02:49 #2'
   - V2Get🛰️ 2026-06-27 02:27
-  - V2Get🛰️ 2026-06-27 01:48
   - V2Get🛰️ 2026-06-23 16:59
   - V2Get🛰️ 2026-06-27 01:46
   - 'V2Get🛰️ 2026-06-27 01:46 #2'
@@ -1142,8 +1140,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-16 05:24
+  - V2Get🛰️ 2026-06-15 20:41
+  - V2Get🛰️ 2026-06-16 11:41
   - V2Get🛰️ 2026-06-24 19:08
+  - V2Get🛰️ 2026-06-16 05:24
   - V2Get🛰️ 2026-06-27 06:03
   - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-16 02:54
@@ -1201,7 +1201,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:58
   - V2Get🛰️ 2026-06-21 14:40
   - V2Get🛰️ 2026-06-23 16:47
-  - V2Get🛰️ 2026-06-18 11:26
   - V2Get🛰️ 2026-06-16 10:43
   - V2Get🛰️ 2026-06-19 17:25
   - V2Get🛰️ 2026-06-27 04:20
@@ -1217,7 +1216,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 11:53
   - 'V2Get🛰️ 2026-06-27 02:49 #2'
   - V2Get🛰️ 2026-06-27 02:27
-  - V2Get🛰️ 2026-06-27 01:48
   - V2Get🛰️ 2026-06-23 16:59
   - V2Get🛰️ 2026-06-27 01:46
   - 'V2Get🛰️ 2026-06-27 01:46 #2'
