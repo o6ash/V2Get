@@ -12,20 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-19 13:14
+- name: V2Get🛰️ 2026-06-25 23:57
   type: trojan
-  server: 199.181.197.176
+  server: 151.101.110.219
   port: 443
-  password: MiTiVPN
+  password: Mitivpn
   udp: true
-  sni: linkkon-w.ir
+  sni: ssl.fastly.com
   alpn:
   - http/1.1
   network: ws
   ws-opts:
-    path: /cdn=mitivpn
+    path: /de=mitivpn
     headers:
-      Host: linkkon-w.ir
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-25 23:58
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-17 13:36
   type: trojan
   server: 45.131.4.118
@@ -38,6 +52,20 @@ proxies:
   network: ws
   ws-opts:
     path: /ed=mitivpn
+    headers:
+      Host: linkkon-w.ir
+- name: V2Get🛰️ 2026-06-19 13:14
+  type: trojan
+  server: 199.181.197.176
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: linkkon-w.ir
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /cdn=mitivpn
     headers:
       Host: linkkon-w.ir
 - name: V2Get🛰️ 2026-06-26 22:33
@@ -66,20 +94,6 @@ proxies:
   network: ws
   ws-opts:
     path: /MiTiVPN=NL
-    headers:
-      Host: 95r.ir
-- name: 'V2Get🛰️ 2026-06-26 22:33 #3'
-  type: trojan
-  server: 164.38.155.135
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: 95r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=De
     headers:
       Host: 95r.ir
 - name: V2Get🛰️ 2026-06-19 00:30
@@ -300,20 +314,6 @@ proxies:
   reality-opts:
     public-key: cAprase508p_Y7olUKMa-aqER9NcBqaCZ8xyvll4Xgk
     short-id: f563cb8c
-- name: V2Get🛰️ 2026-06-25 23:58
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - h2
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 14:27
   type: vless
   server: h1.garletshopino.com
@@ -1176,11 +1176,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-19 13:14
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
+  - V2Get🛰️ 2026-06-19 13:14
   - V2Get🛰️ 2026-06-26 22:33
   - 'V2Get🛰️ 2026-06-26 22:33 #2'
-  - 'V2Get🛰️ 2026-06-26 22:33 #3'
   - V2Get🛰️ 2026-06-19 00:30
   - V2Get🛰️ 2026-06-27 22:21
   - 'V2Get🛰️ 2026-06-27 22:21 #2'
@@ -1199,7 +1200,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-23 14:43
   - V2Get🛰️ 2026-06-17 12:16
   - V2Get🛰️ 2026-06-27 11:33
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-26 14:27
   - V2Get🛰️ 2026-06-27 22:07
   - V2Get🛰️ 2026-06-15 23:42
@@ -1280,11 +1280,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-19 13:14
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
+  - V2Get🛰️ 2026-06-19 13:14
   - V2Get🛰️ 2026-06-26 22:33
   - 'V2Get🛰️ 2026-06-26 22:33 #2'
-  - 'V2Get🛰️ 2026-06-26 22:33 #3'
   - V2Get🛰️ 2026-06-19 00:30
   - V2Get🛰️ 2026-06-27 22:21
   - 'V2Get🛰️ 2026-06-27 22:21 #2'
@@ -1303,7 +1304,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-23 14:43
   - V2Get🛰️ 2026-06-17 12:16
   - V2Get🛰️ 2026-06-27 11:33
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-26 14:27
   - V2Get🛰️ 2026-06-27 22:07
   - V2Get🛰️ 2026-06-15 23:42
