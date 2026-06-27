@@ -12,6 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 06:23
+  type: vless
+  server: 91.199.50.37
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.alibaba.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+    short-id: c906f73d3ba8211f
+- name: V2Get🛰️ 2026-06-16 09:18
+  type: ss
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: V2Get🛰️ 2026-06-24 19:25
+  type: vless
+  server: love.ns.cloudflare.com
+  port: 443
+  uuid: e277ac9b-3225-3381-a9fb-3585419f7142
+  udp: true
+  network: ws
+  tls: true
+  servername: media08.halalkhor.info
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /media08
+    headers:
+      Host: media08.halalkhor.info
 - name: V2Get🛰️ 2026-06-16 15:34
   type: ss
   server: 149.22.87.204
@@ -768,20 +805,6 @@ proxies:
     short-id: d5c7f84e37e0c12d
   grpc-opts:
     grpc-service-name: data-sync
-- name: V2Get🛰️ 2026-06-16 20:47
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
 - name: V2Get🛰️ 2026-06-17 23:04
   type: vmess
   server: 172.111.146.64
@@ -850,22 +873,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-06-24 19:25
-  type: vless
-  server: love.ns.cloudflare.com
-  port: 443
-  uuid: e277ac9b-3225-3381-a9fb-3585419f7142
-  udp: true
-  network: ws
-  tls: true
-  servername: media08.halalkhor.info
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /media08
-    headers:
-      Host: media08.halalkhor.info
 - name: V2Get🛰️ 2026-06-26 22:20
   type: vless
   server: 45.194.10.240
@@ -1000,19 +1007,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: V2Get🛰️ 2026-06-15 20:17
-  type: vless
-  server: 104.18.34.124
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: 'V2Get🛰️ 2026-06-27 05:13 #2'
   type: vless
   server: ez-a215e5.ezaccess155e83c.workers.dev
@@ -1193,6 +1187,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-16 06:23
+  - V2Get🛰️ 2026-06-16 09:18
+  - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-16 15:34
   - V2Get🛰️ 2026-06-16 03:18
   - V2Get🛰️ 2026-06-26 23:00
@@ -1256,7 +1253,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-16 11:11
   - V2Get🛰️ 2026-06-20 19:40
-  - V2Get🛰️ 2026-06-16 20:47
   - V2Get🛰️ 2026-06-17 23:04
   - V2Get🛰️ 2026-06-20 09:15
   - V2Get🛰️ 2026-06-16 06:19
@@ -1264,7 +1260,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 05:04
   - V2Get🛰️ 2026-06-26 23:46
   - V2Get🛰️ 2026-06-20 12:22
-  - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-26 22:20
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-20 13:47
@@ -1276,7 +1271,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 05:13
   - V2Get🛰️ 2026-06-17 13:57
   - V2Get🛰️ 2026-06-18 15:04
-  - V2Get🛰️ 2026-06-15 20:17
   - 'V2Get🛰️ 2026-06-27 05:13 #2'
   - V2Get🛰️ 2026-06-15 18:06
   - V2Get🛰️ 2026-06-17 15:04
@@ -1297,6 +1291,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-16 06:23
+  - V2Get🛰️ 2026-06-16 09:18
+  - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-16 15:34
   - V2Get🛰️ 2026-06-16 03:18
   - V2Get🛰️ 2026-06-26 23:00
@@ -1360,7 +1357,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 02:54
   - V2Get🛰️ 2026-06-16 11:11
   - V2Get🛰️ 2026-06-20 19:40
-  - V2Get🛰️ 2026-06-16 20:47
   - V2Get🛰️ 2026-06-17 23:04
   - V2Get🛰️ 2026-06-20 09:15
   - V2Get🛰️ 2026-06-16 06:19
@@ -1368,7 +1364,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-17 05:04
   - V2Get🛰️ 2026-06-26 23:46
   - V2Get🛰️ 2026-06-20 12:22
-  - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-26 22:20
   - V2Get🛰️ 2026-06-15 21:00
   - V2Get🛰️ 2026-06-20 13:47
@@ -1380,7 +1375,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 05:13
   - V2Get🛰️ 2026-06-17 13:57
   - V2Get🛰️ 2026-06-18 15:04
-  - V2Get🛰️ 2026-06-15 20:17
   - 'V2Get🛰️ 2026-06-27 05:13 #2'
   - V2Get🛰️ 2026-06-15 18:06
   - V2Get🛰️ 2026-06-17 15:04
