@@ -12,6 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-26 23:20
+  type: vless
+  server: ps2.dservice.ir
+  port: 2095
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /DL?ed=2053
+    headers:
+      Host: ps2.dservice.ir
+- name: V2Get🛰️ 2026-06-25 00:42
+  type: vless
+  server: fast.cd-tur4.ir
+  port: 443
+  uuid: be9bf82b-b48b-4b7e-9cba-3b86801058ba
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-27 03:41
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: 1e39c73e-bfb8-49d5-adae-b40bceb80ea2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-21 12:23
   type: vless
   server: 108.162.192.75
@@ -118,20 +157,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-27 03:41
-  type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: 1e39c73e-bfb8-49d5-adae-b40bceb80ea2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-25 02:47
   type: vless
   server: 104.21.51.9
@@ -374,23 +399,6 @@ proxies:
     path: /playlist?ed=2560
     headers:
       Host: xekafom278.pages.dev
-- name: V2Get🛰️ 2026-06-16 04:01
-  type: vless
-  server: 141.193.213.30
-  port: 2053
-  uuid: 64a28ed6-2238-42d9-8452-b83674f741e5
-  udp: true
-  network: ws
-  tls: true
-  servername: sunny-comet-55.curiocar.com
-  client-fingerprint: edge
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?ed=2053
-    headers:
-      Host: sunny-comet-55.curiocar.com
 - name: V2Get🛰️ 2026-06-24 19:25
   type: vless
   server: love.ns.cloudflare.com
@@ -949,20 +957,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: V2Get🛰️ 2026-06-27 00:34
-  type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: 03b95710-6889-4994-b267-edf7419388e2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-18 14:52
   type: vless
   server: 51.158.206.93
@@ -1060,6 +1054,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-26 23:20
+  - V2Get🛰️ 2026-06-25 00:42
+  - V2Get🛰️ 2026-06-27 03:41
   - V2Get🛰️ 2026-06-21 12:23
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-16 20:45
@@ -1068,7 +1065,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-26 17:12
   - V2Get🛰️ 2026-06-20 11:46
-  - V2Get🛰️ 2026-06-27 03:41
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-23 00:42
@@ -1087,7 +1083,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 23:55
   - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-27 02:49
-  - V2Get🛰️ 2026-06-16 04:01
   - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-27 02:41
   - V2Get🛰️ 2026-06-25 11:53
@@ -1131,7 +1126,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 00:12
   - 'V2Get🛰️ 2026-06-27 00:12 #2'
   - V2Get🛰️ 2026-06-18 22:53
-  - V2Get🛰️ 2026-06-27 00:34
   - V2Get🛰️ 2026-06-18 14:52
   - 'V2Get🛰️ 2026-06-26 23:36 #2'
   - V2Get🛰️ 2026-06-20 21:34
@@ -1146,6 +1140,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-26 23:20
+  - V2Get🛰️ 2026-06-25 00:42
+  - V2Get🛰️ 2026-06-27 03:41
   - V2Get🛰️ 2026-06-21 12:23
   - V2Get🛰️ 2026-06-24 17:27
   - V2Get🛰️ 2026-06-16 20:45
@@ -1154,7 +1151,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-26 17:12
   - V2Get🛰️ 2026-06-20 11:46
-  - V2Get🛰️ 2026-06-27 03:41
   - V2Get🛰️ 2026-06-25 02:47
   - V2Get🛰️ 2026-06-16 08:45
   - V2Get🛰️ 2026-06-23 00:42
@@ -1173,7 +1169,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 23:55
   - V2Get🛰️ 2026-06-15 22:40
   - V2Get🛰️ 2026-06-27 02:49
-  - V2Get🛰️ 2026-06-16 04:01
   - V2Get🛰️ 2026-06-24 19:25
   - V2Get🛰️ 2026-06-27 02:41
   - V2Get🛰️ 2026-06-25 11:53
@@ -1217,7 +1212,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 00:12
   - 'V2Get🛰️ 2026-06-27 00:12 #2'
   - V2Get🛰️ 2026-06-18 22:53
-  - V2Get🛰️ 2026-06-27 00:34
   - V2Get🛰️ 2026-06-18 14:52
   - 'V2Get🛰️ 2026-06-26 23:36 #2'
   - V2Get🛰️ 2026-06-20 21:34
