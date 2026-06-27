@@ -12,6 +12,48 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 23:57
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-25 23:58
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-26 18:32
+  type: vless
+  server: 192.71.82.2
+  port: 443
+  uuid: a5c05c1e-aa68-443f-8598-09800244bd4b
+  udp: true
+  network: ws
+  tls: true
+  servername: kingcloud.biack.ir
+  client-fingerprint: firefox
+  alpn:
+  - h3
+  ws-opts:
+    path: /LiL?ed=2560
 - name: V2Get🛰️ 2026-06-27 16:33
   type: vless
   server: 3.70.132.250
@@ -110,20 +152,6 @@ proxies:
   reality-opts:
     public-key: EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig
     short-id: 28415a7918168947
-- name: V2Get🛰️ 2026-06-26 18:32
-  type: vless
-  server: 192.71.82.2
-  port: 443
-  uuid: a5c05c1e-aa68-443f-8598-09800244bd4b
-  udp: true
-  network: ws
-  tls: true
-  servername: kingcloud.biack.ir
-  client-fingerprint: firefox
-  alpn:
-  - h3
-  ws-opts:
-    path: /LiL?ed=2560
 - name: V2Get🛰️ 2026-06-26 17:25
   type: vless
   server: 213.176.77.65
@@ -138,20 +166,6 @@ proxies:
   reality-opts:
     public-key: 1kAsEwUWwatnjpeQ2qUwHSccFucFOKzXVICm9tC0eWA
     short-id: 25425ff6fa
-- name: V2Get🛰️ 2026-06-25 23:57
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-27 23:06
   type: vless
   server: 132.243.213.174
@@ -357,20 +371,6 @@ proxies:
     path: /MiTiVPN=De
     headers:
       Host: 95r.ir
-- name: V2Get🛰️ 2026-06-25 23:58
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - h2
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-20 21:15
   type: vless
   server: 89.106.64.15
@@ -1202,6 +1202,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-27 16:33
   - V2Get🛰️ 2026-06-27 12:38
   - V2Get🛰️ 2026-06-16 10:21
@@ -1209,9 +1212,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-27 23:08 #2'
   - V2Get🛰️ 2026-06-17 11:01
   - V2Get🛰️ 2026-06-17 20:11
-  - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-26 17:25
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-27 23:06
   - 'V2Get🛰️ 2026-06-27 23:06 #2'
   - V2Get🛰️ 2026-06-17 13:36
@@ -1229,7 +1230,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-22 15:37
   - V2Get🛰️ 2026-06-26 22:33
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-20 21:15
   - V2Get🛰️ 2026-06-27 23:01
   - V2Get🛰️ 2026-06-26 11:26
@@ -1306,6 +1306,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-25 23:58
+  - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-27 16:33
   - V2Get🛰️ 2026-06-27 12:38
   - V2Get🛰️ 2026-06-16 10:21
@@ -1313,9 +1316,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-06-27 23:08 #2'
   - V2Get🛰️ 2026-06-17 11:01
   - V2Get🛰️ 2026-06-17 20:11
-  - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-26 17:25
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-27 23:06
   - 'V2Get🛰️ 2026-06-27 23:06 #2'
   - V2Get🛰️ 2026-06-17 13:36
@@ -1333,7 +1334,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-15 16:56
   - V2Get🛰️ 2026-06-22 15:37
   - V2Get🛰️ 2026-06-26 22:33
-  - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-20 21:15
   - V2Get🛰️ 2026-06-27 23:01
   - V2Get🛰️ 2026-06-26 11:26
