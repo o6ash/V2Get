@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-25 23:57
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-16 18:23
   type: vless
   server: 151.115.164.120
@@ -524,20 +538,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: linkkon-w.ir
-- name: V2Get🛰️ 2026-06-25 23:57
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-26 22:33
   type: trojan
   server: 94.140.0.100
@@ -1146,6 +1146,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:11
   - V2Get🛰️ 2026-06-19 01:02
@@ -1185,7 +1186,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 12:30
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-26 22:33
   - 'V2Get🛰️ 2026-06-26 22:33 #2'
   - V2Get🛰️ 2026-06-19 21:55
@@ -1239,6 +1239,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:11
   - V2Get🛰️ 2026-06-19 01:02
@@ -1278,7 +1279,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 12:30
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-26 22:33
   - 'V2Get🛰️ 2026-06-26 22:33 #2'
   - V2Get🛰️ 2026-06-19 21:55
