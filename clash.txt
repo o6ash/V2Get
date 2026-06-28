@@ -12,6 +12,59 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-15 16:58
+  type: vless
+  server: 51.195.116.82
+  port: 443
+  uuid: 21c25bef-eb3b-44a8-9b26-fa7f674e5bfc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: speedtest.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: RWE5ORdQ2SzuFWX8DlaRP415wbhee9ynJkqC7yFPgQw
+    short-id: d13ddfca12760d03
+- name: V2Get🛰️ 2026-06-25 15:06
+  type: vless
+  server: 96.62.214.87
+  port: 29745
+  uuid: f6f44df3-d229-4dd8-a944-e7bc3a4c6b94
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.google.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: zSOPQOHAiacl2VMETsLXTE_Gln5ECllb6YKy1oyv1V0
+    short-id: c3
+- name: V2Get🛰️ 2026-06-15 16:56
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: V2Get🛰️ 2026-06-28 06:39
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: 5f190c28-2d55-407d-a48e-736c980b5f91
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-17 15:41
   type: vmess
   server: 67.220.85.46
@@ -333,17 +386,6 @@ proxies:
   reality-opts:
     public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
     short-id: 77b0689f
-- name: V2Get🛰️ 2026-06-15 18:25
-  type: vless
-  server: 85.234.114.53
-  port: 22231
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: r1.mizulina.top
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-06-28 05:09
   type: vless
   server: 5.75.207.247
@@ -690,20 +732,6 @@ proxies:
     path: ?ed=2048
     headers:
       Host: nurenbbbb.appleseraj.ir
-- name: V2Get🛰️ 2026-06-24 04:50
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: A4u^p(_UR*F6
-  udp: true
-  sni: 027.ELeCTroCelLco-CF-027.wORkERS.dEv
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidlhnMXN5OXFUSiIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: 027.electrocellco-cf-027.workers.dev
 - name: V2Get🛰️ 2026-06-22 16:14
   type: vless
   server: 91.193.58.77
@@ -818,20 +846,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: linkkon-w.ir
-- name: V2Get🛰️ 2026-06-19 21:55
-  type: vless
-  server: ru.faygo.bot
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: enterprisekitten.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
 - name: 'V2Get🛰️ 2026-06-25 23:58 #2'
   type: trojan
   server: iranpoems.ir
@@ -861,17 +875,6 @@ proxies:
 - name: V2Get🛰️ 2026-06-16 02:01
   type: vless
   server: 151.115.164.134
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
-- name: V2Get🛰️ 2026-06-16 19:00
-  type: vless
-  server: 151.115.164.116
   port: 8880
   uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
   udp: true
@@ -1169,6 +1172,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-15 16:58
+  - V2Get🛰️ 2026-06-25 15:06
+  - V2Get🛰️ 2026-06-15 16:56
+  - V2Get🛰️ 2026-06-28 06:39
   - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-25 11:10
   - V2Get🛰️ 2026-06-28 06:22
@@ -1197,7 +1204,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 16:08
   - V2Get🛰️ 2026-06-21 13:51
   - V2Get🛰️ 2026-06-28 05:37
-  - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-28 05:09
   - V2Get🛰️ 2026-06-27 15:57
   - V2Get🛰️ 2026-06-27 15:56
@@ -1226,7 +1232,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 03:49
   - V2Get🛰️ 2026-06-23 16:57
   - V2Get🛰️ 2026-06-25 11:56
-  - V2Get🛰️ 2026-06-24 04:50
   - V2Get🛰️ 2026-06-22 16:14
   - 'V2Get🛰️ 2026-06-28 03:37 #2'
   - V2Get🛰️ 2026-06-21 12:23
@@ -1236,11 +1241,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-19 21:55
   - 'V2Get🛰️ 2026-06-25 23:58 #2'
   - V2Get🛰️ 2026-06-22 10:51
   - V2Get🛰️ 2026-06-16 02:01
-  - V2Get🛰️ 2026-06-16 19:00
   - V2Get🛰️ 2026-06-17 13:56
   - V2Get🛰️ 2026-06-27 01:46
   - V2Get🛰️ 2026-06-28 02:38
@@ -1269,6 +1272,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-15 16:58
+  - V2Get🛰️ 2026-06-25 15:06
+  - V2Get🛰️ 2026-06-15 16:56
+  - V2Get🛰️ 2026-06-28 06:39
   - V2Get🛰️ 2026-06-17 15:41
   - V2Get🛰️ 2026-06-25 11:10
   - V2Get🛰️ 2026-06-28 06:22
@@ -1297,7 +1304,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-25 16:08
   - V2Get🛰️ 2026-06-21 13:51
   - V2Get🛰️ 2026-06-28 05:37
-  - V2Get🛰️ 2026-06-15 18:25
   - V2Get🛰️ 2026-06-28 05:09
   - V2Get🛰️ 2026-06-27 15:57
   - V2Get🛰️ 2026-06-27 15:56
@@ -1326,7 +1332,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 03:49
   - V2Get🛰️ 2026-06-23 16:57
   - V2Get🛰️ 2026-06-25 11:56
-  - V2Get🛰️ 2026-06-24 04:50
   - V2Get🛰️ 2026-06-22 16:14
   - 'V2Get🛰️ 2026-06-28 03:37 #2'
   - V2Get🛰️ 2026-06-21 12:23
@@ -1336,11 +1341,9 @@ proxy-groups:
   - V2Get🛰️ 2026-06-21 15:48
   - V2Get🛰️ 2026-06-15 22:15
   - V2Get🛰️ 2026-06-17 13:36
-  - V2Get🛰️ 2026-06-19 21:55
   - 'V2Get🛰️ 2026-06-25 23:58 #2'
   - V2Get🛰️ 2026-06-22 10:51
   - V2Get🛰️ 2026-06-16 02:01
-  - V2Get🛰️ 2026-06-16 19:00
   - V2Get🛰️ 2026-06-17 13:56
   - V2Get🛰️ 2026-06-27 01:46
   - V2Get🛰️ 2026-06-28 02:38
