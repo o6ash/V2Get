@@ -12,20 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-28 02:30
+- name: V2Get🛰️ 2026-06-19 10:15
   type: vless
-  server: 5.75.207.247
-  port: 44004
-  uuid: 4e9c2339-4136-4a44-b490-b13cc8ecef83
+  server: 77.110.127.191
+  port: 9443
+  uuid: e0de62c9-f317-4275-b7e5-8da7b7fa9bc6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
-    short-id: 77b0689f
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /pourya
 - name: V2Get🛰️ 2026-06-27 15:57
   type: vless
   server: fn.fifapes.monster
@@ -52,6 +48,20 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /ws
+- name: V2Get🛰️ 2026-06-28 02:30
+  type: vless
+  server: 5.75.207.247
+  port: 44004
+  uuid: 4e9c2339-4136-4a44-b490-b13cc8ecef83
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
 - name: V2Get🛰️ 2026-06-24 14:27
   type: vless
   server: 104.16.72.70
@@ -1048,16 +1058,6 @@ proxies:
   reality-opts:
     public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
     short-id: e915
-- name: 'V2Get🛰️ 2026-06-16 03:19 #2'
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: 'V2Get🛰️ 2026-06-27 23:42 #2'
   type: vless
   server: 62.112.222.47
@@ -1100,10 +1100,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-28 02:30
+  - V2Get🛰️ 2026-06-19 10:15
   - V2Get🛰️ 2026-06-27 15:57
   - V2Get🛰️ 2026-06-27 15:56
   - V2Get🛰️ 2026-06-28 01:06
+  - V2Get🛰️ 2026-06-28 02:30
   - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-06-18 15:04
   - V2Get🛰️ 2026-06-15 20:57
@@ -1179,7 +1180,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-28 00:34
   - 'V2Get🛰️ 2026-06-28 00:34 #2'
-  - 'V2Get🛰️ 2026-06-16 03:19 #2'
   - 'V2Get🛰️ 2026-06-27 23:42 #2'
   - V2Get🛰️ 2026-06-27 15:00
   - V2Get🛰️ 2026-06-27 19:53
@@ -1189,10 +1189,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-28 02:30
+  - V2Get🛰️ 2026-06-19 10:15
   - V2Get🛰️ 2026-06-27 15:57
   - V2Get🛰️ 2026-06-27 15:56
   - V2Get🛰️ 2026-06-28 01:06
+  - V2Get🛰️ 2026-06-28 02:30
   - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-06-18 15:04
   - V2Get🛰️ 2026-06-15 20:57
@@ -1268,7 +1269,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-22 08:19
   - V2Get🛰️ 2026-06-28 00:34
   - 'V2Get🛰️ 2026-06-28 00:34 #2'
-  - 'V2Get🛰️ 2026-06-16 03:19 #2'
   - 'V2Get🛰️ 2026-06-27 23:42 #2'
   - V2Get🛰️ 2026-06-27 15:00
   - V2Get🛰️ 2026-06-27 19:53
