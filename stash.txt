@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-26 11:26
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-06-23 16:16
   type: vless
   server: 217.217.247.246
@@ -447,14 +461,6 @@ proxies:
   reality-opts:
     public-key: UkoqOh9VtAhhMrlKY3wAmijgjCrLIKMZT-An0NjrHng
     short-id: 8d17b7ebab7b99d7
-- name: V2Get🛰️ 2026-06-27 15:56
-  type: vless
-  server: gr1.fifapes.monster
-  port: 8882
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-25 23:58
   type: trojan
   server: 151.101.56.6
@@ -990,6 +996,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-26 11:26
   - V2Get🛰️ 2026-06-23 16:16
   - V2Get🛰️ 2026-06-28 01:06
   - V2Get🛰️ 2026-06-16 05:24
@@ -1024,7 +1031,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 13:14
   - V2Get🛰️ 2026-06-17 13:56
   - V2Get🛰️ 2026-06-16 09:21
-  - V2Get🛰️ 2026-06-27 15:56
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-28 06:22
   - V2Get🛰️ 2026-06-28 05:43
@@ -1072,6 +1078,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-26 11:26
   - V2Get🛰️ 2026-06-23 16:16
   - V2Get🛰️ 2026-06-28 01:06
   - V2Get🛰️ 2026-06-16 05:24
@@ -1106,7 +1113,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-19 13:14
   - V2Get🛰️ 2026-06-17 13:56
   - V2Get🛰️ 2026-06-16 09:21
-  - V2Get🛰️ 2026-06-27 15:56
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-28 06:22
   - V2Get🛰️ 2026-06-28 05:43
