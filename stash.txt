@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-27 22:36
+  type: vless
+  server: rvg-production-b337.up.railway.app
+  port: 443
+  uuid: 3195e102-c157-eed6-eaa5-13ae596360e2
+  udp: true
+  network: ws
+  tls: true
+  servername: rvg-production-b337.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/3195e102-c157-eed6-eaa5-13ae596360e2
+    headers:
+      Host: rvg-production-b337.up.railway.app
 - name: V2Get🛰️ 2026-06-25 13:29
   type: vless
   server: 45.194.10.83
@@ -882,20 +898,6 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: V2Get🛰️ 2026-06-25 12:03
-  type: vless
-  server: 185.137.157.72
-  port: 443
-  uuid: 55a5044d-5b35-405f-971c-ea7aacaafcb4
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg
-    short-id: d23753491eefde7e
 - name: V2Get🛰️ 2026-06-28 01:39
   type: vless
   server: ee.janusgate.org
@@ -993,6 +995,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-27 22:36
   - V2Get🛰️ 2026-06-25 13:29
   - V2Get🛰️ 2026-06-28 07:50
   - 'V2Get🛰️ 2026-06-28 07:50 #2'
@@ -1062,7 +1065,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 03:37
   - V2Get🛰️ 2026-06-24 04:46
   - V2Get🛰️ 2026-06-21 15:48
-  - V2Get🛰️ 2026-06-25 12:03
   - V2Get🛰️ 2026-06-28 01:39
   - V2Get🛰️ 2026-06-27 19:47
   - V2Get🛰️ 2026-06-18 12:48
@@ -1076,6 +1078,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-27 22:36
   - V2Get🛰️ 2026-06-25 13:29
   - V2Get🛰️ 2026-06-28 07:50
   - 'V2Get🛰️ 2026-06-28 07:50 #2'
@@ -1145,7 +1148,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 03:37
   - V2Get🛰️ 2026-06-24 04:46
   - V2Get🛰️ 2026-06-21 15:48
-  - V2Get🛰️ 2026-06-25 12:03
   - V2Get🛰️ 2026-06-28 01:39
   - V2Get🛰️ 2026-06-27 19:47
   - V2Get🛰️ 2026-06-18 12:48
