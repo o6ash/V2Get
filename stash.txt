@@ -12,6 +12,48 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-28 03:49
+  type: vless
+  server: 5.75.207.247
+  port: 41083
+  uuid: 2f493e4d-0704-40f0-ac6a-3756d2e5e6b8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ
+    short-id: 77b0689f
+- name: V2Get🛰️ 2026-06-16 03:19
+  type: trojan
+  server: 104.17.121.9
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: V2Get🛰️ 2026-06-22 16:14
+  type: vless
+  server: 91.193.58.77
+  port: 443
+  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
+  udp: true
+  network: ws
+  tls: true
+  servername: unnes.ac.id.yxls.eu.cc
+  ws-opts:
+    path: /ca-cl
+    headers:
+      Host: unnes.ac.id.yxls.eu.cc
 - name: V2Get🛰️ 2026-06-28 01:35
   type: vless
   server: dd.teain.org
@@ -52,21 +94,6 @@ proxies:
     path: /odiyfws
     headers:
       Host: octopusss.net
-- name: V2Get🛰️ 2026-06-16 03:19
-  type: trojan
-  server: 104.17.121.9
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 - name: V2Get🛰️ 2026-06-23 16:57
   type: vless
   server: brenna.ns.cloudflare.com
@@ -128,20 +155,6 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: V2Get🛰️ 2026-06-28 03:34
-  type: vless
-  server: zeus-panel-e5p070.kingworkermpeekconfig.workers.dev
-  port: 2053
-  uuid: 9d4ab116-bb75-430a-b9c7-cfd815f4de2c
-  udp: true
-  network: ws
-  tls: true
-  servername: zeus-panel-e5p070.kingworkermpeekconfig.workers.dev
-  client-fingerprint: ios
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-e5p070.kingworkermpeekconfig.workers.dev
 - name: V2Get🛰️ 2026-06-28 03:33
   type: vless
   server: 5.75.207.247
@@ -361,19 +374,6 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: V2Get🛰️ 2026-06-22 16:14
-  type: vless
-  server: 91.193.58.77
-  port: 443
-  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
-  udp: true
-  network: ws
-  tls: true
-  servername: unnes.ac.id.yxls.eu.cc
-  ws-opts:
-    path: /ca-cl
-    headers:
-      Host: unnes.ac.id.yxls.eu.cc
 - name: V2Get🛰️ 2026-06-25 12:30
   type: trojan
   server: 92.119.35.117
@@ -1108,16 +1108,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-28 03:49
+  - V2Get🛰️ 2026-06-16 03:19
+  - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-28 01:35
   - V2Get🛰️ 2026-06-28 03:37
   - V2Get🛰️ 2026-06-21 12:23
-  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-23 16:57
   - V2Get🛰️ 2026-06-25 11:56
   - 'V2Get🛰️ 2026-06-16 03:19 #2'
   - V2Get🛰️ 2026-06-24 04:46
   - V2Get🛰️ 2026-06-16 19:00
-  - V2Get🛰️ 2026-06-28 03:34
   - V2Get🛰️ 2026-06-28 03:33
   - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-28 02:30
@@ -1134,7 +1135,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 23:22
   - V2Get🛰️ 2026-06-23 16:16
   - V2Get🛰️ 2026-06-21 15:48
-  - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-25 12:30
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
@@ -1198,16 +1198,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-28 03:49
+  - V2Get🛰️ 2026-06-16 03:19
+  - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-28 01:35
   - V2Get🛰️ 2026-06-28 03:37
   - V2Get🛰️ 2026-06-21 12:23
-  - V2Get🛰️ 2026-06-16 03:19
   - V2Get🛰️ 2026-06-23 16:57
   - V2Get🛰️ 2026-06-25 11:56
   - 'V2Get🛰️ 2026-06-16 03:19 #2'
   - V2Get🛰️ 2026-06-24 04:46
   - V2Get🛰️ 2026-06-16 19:00
-  - V2Get🛰️ 2026-06-28 03:34
   - V2Get🛰️ 2026-06-28 03:33
   - V2Get🛰️ 2026-06-26 18:32
   - V2Get🛰️ 2026-06-28 02:30
@@ -1224,7 +1225,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-27 23:22
   - V2Get🛰️ 2026-06-23 16:16
   - V2Get🛰️ 2026-06-21 15:48
-  - V2Get🛰️ 2026-06-22 16:14
   - V2Get🛰️ 2026-06-25 12:30
   - V2Get🛰️ 2026-06-25 23:58
   - V2Get🛰️ 2026-06-17 13:36
