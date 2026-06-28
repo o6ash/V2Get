@@ -12,6 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-28 06:17
+  type: vless
+  server: n8.ramito.ir
+  port: 2052
+  uuid: ba31df08-ea56-4ba0-be05-faa28ea40dce
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-06-16 03:18
   type: trojan
   server: 141.193.213.21
@@ -447,20 +457,6 @@ proxies:
     path: /eyJqdW5rIjoiTlFFR0p0azZ4eUV0YVJoaiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
       Host: ez-ca4a2e.pages.dev
-- name: V2Get🛰️ 2026-06-24 13:17
-  type: trojan
-  server: 151.101.193.242
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: f6r.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: f6r.ir
 - name: V2Get🛰️ 2026-06-19 01:02
   type: vless
   server: 45.130.125.158
@@ -1069,6 +1065,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-28 06:17
   - V2Get🛰️ 2026-06-16 03:18
   - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-15 18:03
@@ -1104,7 +1101,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 04:40
   - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-24 11:26
-  - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-16 18:23
@@ -1157,6 +1153,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-28 06:17
   - V2Get🛰️ 2026-06-16 03:18
   - V2Get🛰️ 2026-06-15 18:18
   - V2Get🛰️ 2026-06-15 18:03
@@ -1192,7 +1189,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-28 04:40
   - V2Get🛰️ 2026-06-21 18:01
   - V2Get🛰️ 2026-06-24 11:26
-  - V2Get🛰️ 2026-06-24 13:17
   - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-25 23:57
   - V2Get🛰️ 2026-06-16 18:23
