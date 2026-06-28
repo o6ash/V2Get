@@ -12,31 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-25 23:57
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-06-16 18:23
-  type: vless
-  server: 151.115.164.120
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: V2Get🛰️ 2026-06-28 04:11
   type: vless
   server: panel.maha1dress.ir
@@ -77,6 +52,31 @@ proxies:
     path: /ws?ed=2560
     headers:
       Host: com.hozheen.ir
+- name: V2Get🛰️ 2026-06-25 23:57
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-06-16 18:23
+  type: vless
+  server: 151.115.164.120
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
 - name: V2Get🛰️ 2026-06-28 04:09
   type: vless
   server: 45.85.118.1
@@ -1146,11 +1146,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:11
   - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-25 23:26
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:09
   - 'V2Get🛰️ 2026-06-28 04:09 #2'
   - V2Get🛰️ 2026-06-22 23:55
@@ -1239,11 +1239,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-25 23:57
-  - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:11
   - V2Get🛰️ 2026-06-19 01:02
   - V2Get🛰️ 2026-06-25 23:26
+  - V2Get🛰️ 2026-06-25 23:57
+  - V2Get🛰️ 2026-06-16 18:23
   - V2Get🛰️ 2026-06-28 04:09
   - 'V2Get🛰️ 2026-06-28 04:09 #2'
   - V2Get🛰️ 2026-06-22 23:55
