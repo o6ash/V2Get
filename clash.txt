@@ -12,60 +12,7 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-06-16 01:21
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-07-06 00:56
-  type: vless
-  server: 5.252.26.85
-  port: 443
-  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
-    short-id: 8af36420
 - name: V2Get🛰️ 2026-07-06 01:57
-  type: vless
-  server: 82.22.40.203
-  port: 443
-  uuid: 497631c4-a1a4-45ff-a86a-f42873473bb6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.quattro-tech.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-- name: 'V2Get🛰️ 2026-07-06 01:57 #2'
-  type: vless
-  server: 185.215.184.74
-  port: 443
-  uuid: 497631c4-a1a4-0014-a86a-f42873473bb6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ee.quattro-tech.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-- name: 'V2Get🛰️ 2026-07-06 01:57 #3'
   type: vless
   server: 213.171.30.172
   port: 9881
@@ -80,6 +27,67 @@ proxies:
     short-id: aabbccdd
   grpc-opts:
     grpc-service-name: grpc-tunnel
+- name: V2Get🛰️ 2026-07-06 01:49
+  type: vless
+  server: 89.167.22.49
+  port: 80
+  uuid: 7faf366b-7d4c-40dc-92e7-80585464ddf5
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-07-06 00:56
+  type: vless
+  server: 5.252.26.85
+  port: 443
+  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
+    short-id: 8af36420
+- name: V2Get🛰️ 2026-06-16 01:21
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'V2Get🛰️ 2026-07-06 01:57 #2'
+  type: vless
+  server: 82.22.40.203
+  port: 443
+  uuid: 497631c4-a1a4-45ff-a86a-f42873473bb6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.quattro-tech.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+- name: 'V2Get🛰️ 2026-07-06 01:57 #3'
+  type: vless
+  server: 185.215.184.74
+  port: 443
+  uuid: 497631c4-a1a4-0014-a86a-f42873473bb6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ee.quattro-tech.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: 'V2Get🛰️ 2026-07-06 01:57 #4'
   type: vless
   server: britain.oorluma.ir
@@ -157,14 +165,6 @@ proxies:
   uuid: ab49ea5f-f7a3-4248-a237-27758f4bae09
   udp: true
   network: httpupgrade
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-06 01:49
-  type: vless
-  server: 89.167.22.49
-  port: 80
-  uuid: 7faf366b-7d4c-40dc-92e7-80585464ddf5
-  udp: true
-  network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-07-05 05:01
   type: vless
@@ -1223,9 +1223,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-06-16 01:21
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-06 01:57
+  - V2Get🛰️ 2026-07-06 01:49
+  - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-06-16 01:21
   - 'V2Get🛰️ 2026-07-06 01:57 #2'
   - 'V2Get🛰️ 2026-07-06 01:57 #3'
   - 'V2Get🛰️ 2026-07-06 01:57 #4'
@@ -1235,7 +1236,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-06 01:54 #2'
   - 'V2Get🛰️ 2026-07-06 01:54 #3'
   - V2Get🛰️ 2026-07-06 00:04
-  - V2Get🛰️ 2026-07-06 01:49
   - V2Get🛰️ 2026-07-05 05:01
   - V2Get🛰️ 2026-07-05 11:42
   - V2Get🛰️ 2026-07-05 22:41
@@ -1329,9 +1329,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-06-16 01:21
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-06 01:57
+  - V2Get🛰️ 2026-07-06 01:49
+  - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-06-16 01:21
   - 'V2Get🛰️ 2026-07-06 01:57 #2'
   - 'V2Get🛰️ 2026-07-06 01:57 #3'
   - 'V2Get🛰️ 2026-07-06 01:57 #4'
@@ -1341,7 +1342,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-06 01:54 #2'
   - 'V2Get🛰️ 2026-07-06 01:54 #3'
   - V2Get🛰️ 2026-07-06 00:04
-  - V2Get🛰️ 2026-07-06 01:49
   - V2Get🛰️ 2026-07-05 05:01
   - V2Get🛰️ 2026-07-05 11:42
   - V2Get🛰️ 2026-07-05 22:41
