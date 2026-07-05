@@ -12,13 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-05 12:56
-  type: ss
-  server: 38.180.221.145
-  port: 17283
-  cipher: chacha20-ietf-poly1305
-  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
+- name: V2Get🛰️ 2026-06-20 21:34
+  type: vless
+  server: 198.41.208.42
+  port: 443
+  uuid: 9ce7ac33-5004-40ea-8236-15bc2d25a37c
   udp: true
+  network: ws
+  tls: true
+  servername: calm-base-e99e.pofokjimi.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /V2ngFast--V2ngFast--V2ngFast--V2ngFast--V2ngFast--V2ngFast--V2ngFast
+    headers:
+      Host: calm-base-e99e.pofokjimi.workers.dev
 - name: V2Get🛰️ 2026-07-06 00:56
   type: vless
   server: 5.252.26.85
@@ -32,6 +39,13 @@ proxies:
   reality-opts:
     public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
     short-id: 8af36420
+- name: V2Get🛰️ 2026-07-05 12:56
+  type: ss
+  server: 38.180.221.145
+  port: 17283
+  cipher: chacha20-ietf-poly1305
+  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
+  udp: true
 - name: V2Get🛰️ 2026-07-05 19:11
   type: ss
   server: 82.38.31.35
@@ -1162,28 +1176,15 @@ proxies:
     path: /ws
     headers:
       Host: rukr.speedload.ru
-- name: V2Get🛰️ 2026-07-05 16:24
-  type: vless
-  server: 45.196.182.17
-  port: 443
-  uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
-    short-id: d020b987f84eb78a
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-05 12:56
+  - V2Get🛰️ 2026-06-20 21:34
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-05 12:56
   - V2Get🛰️ 2026-07-05 19:11
   - V2Get🛰️ 2026-07-05 07:22
   - V2Get🛰️ 2026-07-04 15:54
@@ -1278,15 +1279,15 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 02:23
   - V2Get🛰️ 2026-06-16 18:19
   - V2Get🛰️ 2026-07-05 10:09
-  - V2Get🛰️ 2026-07-05 16:24
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-05 12:56
+  - V2Get🛰️ 2026-06-20 21:34
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-05 12:56
   - V2Get🛰️ 2026-07-05 19:11
   - V2Get🛰️ 2026-07-05 07:22
   - V2Get🛰️ 2026-07-04 15:54
@@ -1381,7 +1382,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-18 02:23
   - V2Get🛰️ 2026-06-16 18:19
   - V2Get🛰️ 2026-07-05 10:09
-  - V2Get🛰️ 2026-07-05 16:24
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
