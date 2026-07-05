@@ -12,6 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-06 00:32
+  type: vless
+  server: s2.zynavo.ir
+  port: 2087
+  uuid: fd3e2222-8c4d-4f90-5063-5a43cf28dc63
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.zynavo.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-07-06 00:16
+  type: vless
+  server: us.mobileemdad.top
+  port: 42538
+  uuid: 34957d4c-8b10-4fc1-90c1-01eaabe356c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-07-06 00:12
+  type: vless
+  server: du.mobileemdad.top
+  port: 42542
+  uuid: 34957d4c-8b10-4fc1-90c1-01eaabe356c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-07-05 21:14
+  type: vless
+  server: 51.210.2.9
+  port: 443
+  uuid: 176868f5-09fd-49fb-b09a-fe958e686341
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wqokZbgd9ky0tEL6SFLXx3Btlqr_zj8vCGzT3zgcvns
+    short-id: e5ec34265efc
 - name: V2Get🛰️ 2026-07-05 21:05
   type: ss
   server: bot.sobhanpor.ir
@@ -134,20 +177,6 @@ proxies:
   network: tcp
   tls: true
   servername: 186.190.211.188
-- name: V2Get🛰️ 2026-06-16 00:22
-  type: vless
-  server: 104.26.0.7
-  port: 443
-  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
-  udp: true
-  network: ws
-  tls: true
-  servername: sertraline.adaspoloandco.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: sertraline.adaspoloandco.com
 - name: V2Get🛰️ 2026-07-04 15:55
   type: vless
   server: server.xv98.ir
@@ -176,19 +205,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: V2Get🛰️ 2026-07-05 21:14
-  type: vless
-  server: 51.210.2.9
-  port: 443
-  uuid: 176868f5-09fd-49fb-b09a-fe958e686341
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wqokZbgd9ky0tEL6SFLXx3Btlqr_zj8vCGzT3zgcvns
-    short-id: e5ec34265efc
 - name: V2Get🛰️ 2026-06-16 01:55
   type: vless
   server: 45.130.125.229
@@ -252,14 +268,6 @@ proxies:
   reality-opts:
     public-key: Rb0425FK9dw-iJ9dqDnklCEOKFBguv4OI_uidzP3hE4
     short-id: f9af798aa0
-- name: V2Get🛰️ 2026-07-06 00:16
-  type: vless
-  server: us.mobileemdad.top
-  port: 42538
-  uuid: 34957d4c-8b10-4fc1-90c1-01eaabe356c7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-06-20 19:36
   type: vless
   server: sca38.speedmeter.shop
@@ -426,14 +434,6 @@ proxies:
   reality-opts:
     public-key: KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg
     short-id: d020b987f84eb78a
-- name: V2Get🛰️ 2026-07-06 00:12
-  type: vless
-  server: du.mobileemdad.top
-  port: 42542
-  uuid: 34957d4c-8b10-4fc1-90c1-01eaabe356c7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-07-06 00:09
   type: vless
   server: da.mobileemdad.top
@@ -1203,6 +1203,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-06 00:32
+  - V2Get🛰️ 2026-07-06 00:16
+  - V2Get🛰️ 2026-07-06 00:12
+  - V2Get🛰️ 2026-07-05 21:14
   - V2Get🛰️ 2026-07-05 21:05
   - V2Get🛰️ 2026-07-06 00:28
   - 'V2Get🛰️ 2026-07-05 21:05 #2'
@@ -1217,17 +1221,14 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 23:44
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-28 18:58
-  - V2Get🛰️ 2026-06-16 00:22
   - V2Get🛰️ 2026-07-04 15:55
   - V2Get🛰️ 2026-07-05 18:00
   - V2Get🛰️ 2026-06-24 02:03
-  - V2Get🛰️ 2026-07-05 21:14
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:24
   - V2Get🛰️ 2026-07-05 21:24
   - V2Get🛰️ 2026-07-05 23:18
   - V2Get🛰️ 2026-07-05 22:43
-  - V2Get🛰️ 2026-07-06 00:16
   - V2Get🛰️ 2026-06-20 19:36
   - V2Get🛰️ 2026-07-05 20:20
   - 'V2Get🛰️ 2026-07-05 20:20 #2'
@@ -1240,7 +1241,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-06 00:14 #4'
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
   - 'V2Get🛰️ 2026-07-05 23:18 #3'
-  - V2Get🛰️ 2026-07-06 00:12
   - V2Get🛰️ 2026-07-06 00:09
   - V2Get🛰️ 2026-07-05 01:31
   - 'V2Get🛰️ 2026-07-06 00:09 #2'
@@ -1307,6 +1307,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-06 00:32
+  - V2Get🛰️ 2026-07-06 00:16
+  - V2Get🛰️ 2026-07-06 00:12
+  - V2Get🛰️ 2026-07-05 21:14
   - V2Get🛰️ 2026-07-05 21:05
   - V2Get🛰️ 2026-07-06 00:28
   - 'V2Get🛰️ 2026-07-05 21:05 #2'
@@ -1321,17 +1325,14 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 23:44
   - V2Get🛰️ 2026-06-19 17:08
   - V2Get🛰️ 2026-06-28 18:58
-  - V2Get🛰️ 2026-06-16 00:22
   - V2Get🛰️ 2026-07-04 15:55
   - V2Get🛰️ 2026-07-05 18:00
   - V2Get🛰️ 2026-06-24 02:03
-  - V2Get🛰️ 2026-07-05 21:14
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:24
   - V2Get🛰️ 2026-07-05 21:24
   - V2Get🛰️ 2026-07-05 23:18
   - V2Get🛰️ 2026-07-05 22:43
-  - V2Get🛰️ 2026-07-06 00:16
   - V2Get🛰️ 2026-06-20 19:36
   - V2Get🛰️ 2026-07-05 20:20
   - 'V2Get🛰️ 2026-07-05 20:20 #2'
@@ -1344,7 +1345,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-06 00:14 #4'
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
   - 'V2Get🛰️ 2026-07-05 23:18 #3'
-  - V2Get🛰️ 2026-07-06 00:12
   - V2Get🛰️ 2026-07-06 00:09
   - V2Get🛰️ 2026-07-05 01:31
   - 'V2Get🛰️ 2026-07-06 00:09 #2'
