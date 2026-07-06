@@ -12,18 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-04 06:00
-  type: vless
-  server: speedtest.net
-  port: 80
-  uuid: 6194f73e-67de-445a-b83c-c963e42d5592
+- name: V2Get🛰️ 2026-06-24 14:27
+  type: trojan
+  server: 104.16.72.70
+  port: 443
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
   udp: true
+  sni: space.byu.id.yxls.eu.cc
   network: ws
-  skip-cert-verify: true
   ws-opts:
-    path: /
+    path: /br-orcl
     headers:
-      Host: pinghub.global.ssl.fastly.net
+      Host: space.byu.id.yxls.eu.cc
 - name: V2Get🛰️ 2026-07-06 00:56
   type: vless
   server: 5.252.26.85
@@ -37,6 +37,18 @@ proxies:
   reality-opts:
     public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
     short-id: 8af36420
+- name: V2Get🛰️ 2026-07-04 06:00
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: 6194f73e-67de-445a-b83c-c963e42d5592
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: pinghub.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-06 03:16
   type: vless
   server: 104.31.16.65
@@ -866,20 +878,6 @@ proxies:
   reality-opts:
     public-key: qJhdahkY0zd79SmTB30P1cy7cSvwN5ONRqL1pktr3GY
     short-id: f62ca9ccc14703a1
-- name: V2Get🛰️ 2026-07-04 00:53
-  type: vless
-  server: jush.sukario.ir
-  port: 443
-  uuid: 8a6729c4-81d4-4b05-8747-3fffc17b6a64
-  udp: true
-  network: ws
-  tls: true
-  servername: MzGvUtTz7.MaKeAcHeCk.oRg
-  client-fingerprint: firefox
-  ws-opts:
-    path: /mashdi
-    headers:
-      Host: MzGvUtTz7.MaKeAcHeCk.oRg
 - name: V2Get🛰️ 2026-07-05 16:56
   type: vless
   server: 45.198.80.101
@@ -1075,8 +1073,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-04 06:00
+  - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-06 03:16
   - 'V2Get🛰️ 2026-07-06 03:16 #2'
   - V2Get🛰️ 2026-07-06 03:15
@@ -1143,7 +1142,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-04 00:53
   - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
@@ -1163,8 +1161,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-04 06:00
+  - V2Get🛰️ 2026-06-24 14:27
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-06 03:16
   - 'V2Get🛰️ 2026-07-06 03:16 #2'
   - V2Get🛰️ 2026-07-06 03:15
@@ -1231,7 +1230,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-04 00:53
   - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
