@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-04 01:23
+  type: vless
+  server: hub.oneoknews.com
+  port: 443
+  uuid: 564397f8-4805-4433-ab5b-a24aa133bac2
+  udp: true
+  network: grpc
+  tls: true
+  servername: hub.oneoknews.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc
+    short-id: 064c2d37308aeeb6
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
 - name: V2Get🛰️ 2026-07-06 00:56
   type: vless
   server: 5.252.26.85
@@ -568,21 +583,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-04 01:23
-  type: vless
-  server: hub.oneoknews.com
-  port: 443
-  uuid: 564397f8-4805-4433-ab5b-a24aa133bac2
-  udp: true
-  network: grpc
-  tls: true
-  servername: hub.oneoknews.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc
-    short-id: 064c2d37308aeeb6
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
 - name: V2Get🛰️ 2026-06-16 01:55
   type: vless
   server: 45.130.125.229
@@ -1061,6 +1061,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-04 01:23
   - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-24 13:00
   - V2Get🛰️ 2026-07-05 06:25
@@ -1105,7 +1106,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 09:00
   - V2Get🛰️ 2026-06-17 06:37
   - V2Get🛰️ 2026-07-06 01:49
-  - V2Get🛰️ 2026-07-04 01:23
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-06-20 11:38
@@ -1150,6 +1150,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-04 01:23
   - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-24 13:00
   - V2Get🛰️ 2026-07-05 06:25
@@ -1194,7 +1195,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 09:00
   - V2Get🛰️ 2026-06-17 06:37
   - V2Get🛰️ 2026-07-06 01:49
-  - V2Get🛰️ 2026-07-04 01:23
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-06-20 11:38
