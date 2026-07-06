@@ -12,6 +12,58 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-16 11:11
+  type: vless
+  server: s2.dipvpn.ru
+  port: 443
+  uuid: 3559f1f7-7d70-46c9-82db-d2b46269300b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dipvpn.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ
+- name: V2Get🛰️ 2026-07-04 12:37
+  type: trojan
+  server: 172.67.71.247
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: Ger.App-Cloud.ir
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /MiTiVPN=DE
+    headers:
+      Host: Ger.App-Cloud.ir
+- name: V2Get🛰️ 2026-07-06 03:55
+  type: vless
+  server: sss-ab9040c5d6-sss.apps.ir-central1.arvancaas.ir
+  port: 8080
+  uuid: 95831d79-9479-421e-8ac6-72d5adf80c2d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-07-06 00:56
+  type: vless
+  server: 5.252.26.85
+  port: 443
+  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
+    short-id: 8af36420
 - name: V2Get🛰️ 2026-07-05 23:56
   type: vless
   server: ipv4-address.iranvatanam.com
@@ -28,19 +80,6 @@ proxies:
   - http/1.1
   ws-opts:
     path: /?ed=2048
-- name: V2Get🛰️ 2026-07-06 00:56
-  type: vless
-  server: 5.252.26.85
-  port: 443
-  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
-    short-id: 8af36420
 - name: V2Get🛰️ 2026-07-05 22:13
   type: vless
   server: pan1.mashkestan.com
@@ -788,20 +827,6 @@ proxies:
     path: /?ed=8080
     headers:
       Host: download-93w.pages.dev
-- name: V2Get🛰️ 2026-07-06 01:44
-  type: trojan
-  server: celestara.biz
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: Usa.App-Cloud.ir
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=Usa
-    headers:
-      Host: Usa.App-Cloud.ir
 - name: V2Get🛰️ 2026-07-06 01:41
   type: vless
   server: fi21.iofast5ping.info
@@ -962,20 +987,6 @@ proxies:
   reality-opts:
     public-key: qJhdahkY0zd79SmTB30P1cy7cSvwN5ONRqL1pktr3GY
     short-id: f62ca9ccc14703a1
-- name: V2Get🛰️ 2026-07-05 16:56
-  type: vless
-  server: 45.198.80.101
-  port: 443
-  uuid: eece4171-e025-40a3-9027-e395036ff99d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-    short-id: 28047c78b3f5ee2c
 - name: V2Get🛰️ 2026-07-05 23:18
   type: vless
   server: 45.196.182.119
@@ -1074,30 +1085,17 @@ proxies:
     path: /ws/4de8fd70-8b0e-b5eb-4b0a-e95e08087a89
     headers:
       Host: x4g-production-5d3a.up.railway.app
-- name: V2Get🛰️ 2026-06-16 18:19
-  type: vless
-  server: 199.232.9.94
-  port: 443
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-  udp: true
-  network: ws
-  tls: true
-  servername: speedtest.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  ws-opts:
-    path: /vip1
-    headers:
-      Host: hamshahriesfahan.com
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-05 23:56
+  - V2Get🛰️ 2026-06-16 11:11
+  - V2Get🛰️ 2026-07-04 12:37
+  - V2Get🛰️ 2026-07-06 03:55
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-05 23:56
   - V2Get🛰️ 2026-07-05 22:13
   - 'V2Get🛰️ 2026-07-05 22:13 #2'
   - V2Get🛰️ 2026-07-06 03:47
@@ -1157,7 +1155,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 11:42
   - V2Get🛰️ 2026-07-05 11:53
   - V2Get🛰️ 2026-07-06 01:45
-  - V2Get🛰️ 2026-07-06 01:44
   - V2Get🛰️ 2026-07-06 01:41
   - V2Get🛰️ 2026-06-19 14:27
   - V2Get🛰️ 2026-06-28 21:14
@@ -1171,7 +1168,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
   - V2Get🛰️ 2026-07-04 07:13
@@ -1179,15 +1175,17 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 00:39
   - V2Get🛰️ 2026-06-25 13:56
   - V2Get🛰️ 2026-07-05 09:00
-  - V2Get🛰️ 2026-06-16 18:19
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-05 23:56
+  - V2Get🛰️ 2026-06-16 11:11
+  - V2Get🛰️ 2026-07-04 12:37
+  - V2Get🛰️ 2026-07-06 03:55
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-05 23:56
   - V2Get🛰️ 2026-07-05 22:13
   - 'V2Get🛰️ 2026-07-05 22:13 #2'
   - V2Get🛰️ 2026-07-06 03:47
@@ -1247,7 +1245,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 11:42
   - V2Get🛰️ 2026-07-05 11:53
   - V2Get🛰️ 2026-07-06 01:45
-  - V2Get🛰️ 2026-07-06 01:44
   - V2Get🛰️ 2026-07-06 01:41
   - V2Get🛰️ 2026-06-19 14:27
   - V2Get🛰️ 2026-06-28 21:14
@@ -1261,7 +1258,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
   - 'V2Get🛰️ 2026-07-05 23:18 #2'
   - V2Get🛰️ 2026-07-04 07:13
@@ -1269,7 +1265,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 00:39
   - V2Get🛰️ 2026-06-25 13:56
   - V2Get🛰️ 2026-07-05 09:00
-  - V2Get🛰️ 2026-06-16 18:19
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
