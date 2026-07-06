@@ -12,6 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-04 19:36
+  type: vless
+  server: 104.167.24.21
+  port: 443
+  uuid: 564397f8-4805-4433-ab5b-a24aa133bac2
+  udp: true
+  network: grpc
+  tls: true
+  servername: hub.oneoknews.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc
+    short-id: 064c2d37308aeeb6
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+- name: V2Get🛰️ 2026-07-05 19:28
+  type: vless
+  server: de.ipsafe2.site
+  port: 38644
+  uuid: 41a6a386-485c-417f-971c-06167252863a
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jBppNAfJaJD58H_9oQpur12q71MsYcAKYYkgYfmwKEg
+    short-id: '33'
+- name: V2Get🛰️ 2026-07-06 18:51
+  type: vless
+  server: las.dearhossein-taktaz.ir
+  port: 47922
+  uuid: 40601c06-6fbf-4f48-bcff-2a8d57038e37
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -smckvxfg8A2QkVqkQpI3bPMcYJ_69fAxWS7u9VhND8
+    short-id: 09
 - name: V2Get🛰️ 2026-07-06 14:56
   type: vless
   server: uk.potter-head.ir
@@ -37,19 +78,6 @@ proxies:
     path: /download.php
     headers:
       Host: chopin.adaspoloandco.com
-- name: V2Get🛰️ 2026-07-05 19:28
-  type: vless
-  server: de.ipsafe2.site
-  port: 38644
-  uuid: 41a6a386-485c-417f-971c-06167252863a
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: jBppNAfJaJD58H_9oQpur12q71MsYcAKYYkgYfmwKEg
-    short-id: '33'
 - name: V2Get🛰️ 2026-07-06 19:11
   type: vless
   server: youweredancingthroughthelightningstrikes.itsnotfair.ir
@@ -93,19 +121,6 @@ proxies:
     path: /fp
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: V2Get🛰️ 2026-07-06 18:51
-  type: vless
-  server: las.dearhossein-taktaz.ir
-  port: 47922
-  uuid: 40601c06-6fbf-4f48-bcff-2a8d57038e37
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -smckvxfg8A2QkVqkQpI3bPMcYJ_69fAxWS7u9VhND8
-    short-id: 09
 - name: V2Get🛰️ 2026-07-04 15:55
   type: vless
   server: server.xv98.ir
@@ -732,21 +747,6 @@ proxies:
     short-id: 7d6203949764f921
 - name: V2Get🛰️ 2026-07-04 00:59
   type: trojan
-  server: 199.232.78.140
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=fL
-    headers:
-      Host: miticonfig.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-04 00:59 #2'
-  type: trojan
   server: 199.232.2.79
   port: 443
   password: MITIVPN
@@ -1256,13 +1256,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-04 19:36
+  - V2Get🛰️ 2026-07-05 19:28
+  - V2Get🛰️ 2026-07-06 18:51
   - V2Get🛰️ 2026-07-06 14:56
   - V2Get🛰️ 2026-07-06 19:36
-  - V2Get🛰️ 2026-07-05 19:28
   - V2Get🛰️ 2026-07-06 19:11
   - V2Get🛰️ 2026-07-04 08:11
   - V2Get🛰️ 2026-06-28 16:58
-  - V2Get🛰️ 2026-07-06 18:51
   - V2Get🛰️ 2026-07-04 15:55
   - V2Get🛰️ 2026-07-05 16:20
   - V2Get🛰️ 2026-06-17 16:01
@@ -1314,7 +1315,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-06 18:50
   - V2Get🛰️ 2026-06-17 23:19
   - V2Get🛰️ 2026-07-04 00:59
-  - 'V2Get🛰️ 2026-07-04 00:59 #2'
   - 'V2Get🛰️ 2026-07-06 18:51 #2'
   - 'V2Get🛰️ 2026-07-06 18:50 #2'
   - 'V2Get🛰️ 2026-07-06 18:50 #3'
@@ -1361,13 +1361,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-04 19:36
+  - V2Get🛰️ 2026-07-05 19:28
+  - V2Get🛰️ 2026-07-06 18:51
   - V2Get🛰️ 2026-07-06 14:56
   - V2Get🛰️ 2026-07-06 19:36
-  - V2Get🛰️ 2026-07-05 19:28
   - V2Get🛰️ 2026-07-06 19:11
   - V2Get🛰️ 2026-07-04 08:11
   - V2Get🛰️ 2026-06-28 16:58
-  - V2Get🛰️ 2026-07-06 18:51
   - V2Get🛰️ 2026-07-04 15:55
   - V2Get🛰️ 2026-07-05 16:20
   - V2Get🛰️ 2026-06-17 16:01
@@ -1419,7 +1420,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-06 18:50
   - V2Get🛰️ 2026-06-17 23:19
   - V2Get🛰️ 2026-07-04 00:59
-  - 'V2Get🛰️ 2026-07-04 00:59 #2'
   - 'V2Get🛰️ 2026-07-06 18:51 #2'
   - 'V2Get🛰️ 2026-07-06 18:50 #2'
   - 'V2Get🛰️ 2026-07-06 18:50 #3'
