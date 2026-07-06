@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-04 06:00
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: 6194f73e-67de-445a-b83c-c963e42d5592
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: pinghub.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-06 00:56
   type: vless
   server: 5.252.26.85
@@ -932,20 +944,6 @@ proxies:
   reality-opts:
     public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
     short-id: 98fa0b00d09419f7
-- name: V2Get🛰️ 2026-07-05 19:02
-  type: vless
-  server: 188.132.234.156
-  port: 443
-  uuid: a3ab68bd-e835-5129-b8c5-335a709e8b3f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api.samsungcloud.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 41qm1VGkyODbyc7LvIyXhcG4XUKmTaomF9jDAMEaW3c
-    short-id: 03e223bc474c6f1d
 - name: V2Get🛰️ 2026-07-05 16:51
   type: vless
   server: 45.198.80.192
@@ -1224,6 +1222,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-05 17:10
   - V2Get🛰️ 2026-07-06 03:16
@@ -1301,7 +1300,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 20:08
   - V2Get🛰️ 2026-06-24 21:07
   - V2Get🛰️ 2026-07-04 11:59
-  - V2Get🛰️ 2026-07-05 19:02
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
   - V2Get🛰️ 2026-07-04 00:53
@@ -1329,6 +1327,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-05 17:10
   - V2Get🛰️ 2026-07-06 03:16
@@ -1406,7 +1405,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-05 20:08
   - V2Get🛰️ 2026-06-24 21:07
   - V2Get🛰️ 2026-07-04 11:59
-  - V2Get🛰️ 2026-07-05 19:02
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
   - V2Get🛰️ 2026-07-04 00:53
