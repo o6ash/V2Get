@@ -12,6 +12,55 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-06-28 23:30
+  type: vless
+  server: 31.43.179.111
+  port: 2096
+  uuid: 359b9ad3-0009-4655-8872-d0ab566751d3
+  udp: true
+  network: ws
+  tls: true
+  servername: d03298146e8e2fe6.hozheen.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws?ed=2560
+    headers:
+      Host: newgen14.hozheen.ir
+- name: V2Get🛰️ 2026-07-05 21:24
+  type: ss
+  server: 82.38.31.164
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-07-04 01:23
+  type: vless
+  server: hub.oneoknews.com
+  port: 443
+  uuid: 564397f8-4805-4433-ab5b-a24aa133bac2
+  udp: true
+  network: grpc
+  tls: true
+  servername: hub.oneoknews.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc
+    short-id: 064c2d37308aeeb6
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+- name: V2Get🛰️ 2026-07-06 08:00
+  type: vless
+  server: las.dearhossein-taktaz.ir
+  port: 46176
+  uuid: 58d23d23-0d2b-4cf1-809b-2625ded3dba0
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D4hKOdrSTKmI0HIYFf1-Ggy0ADaB39k7AQAZmeK9qCM
+    short-id: '70'
 - name: V2Get🛰️ 2026-07-06 12:00
   type: vless
   server: wrose.wrosray.shop
@@ -52,41 +101,6 @@ proxies:
     path: /take
     headers:
       Host: line.sugerdood.qzz.io
-- name: V2Get🛰️ 2026-07-04 01:23
-  type: vless
-  server: hub.oneoknews.com
-  port: 443
-  uuid: 564397f8-4805-4433-ab5b-a24aa133bac2
-  udp: true
-  network: grpc
-  tls: true
-  servername: hub.oneoknews.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc
-    short-id: 064c2d37308aeeb6
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-- name: V2Get🛰️ 2026-07-05 21:24
-  type: ss
-  server: 82.38.31.164
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: V2Get🛰️ 2026-07-06 08:00
-  type: vless
-  server: las.dearhossein-taktaz.ir
-  port: 46176
-  uuid: 58d23d23-0d2b-4cf1-809b-2625ded3dba0
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D4hKOdrSTKmI0HIYFf1-Ggy0ADaB39k7AQAZmeK9qCM
-    short-id: '70'
 - name: V2Get🛰️ 2026-07-06 11:56
   type: vless
   server: 87.107.193.242
@@ -480,19 +494,6 @@ proxies:
     path: /
     headers:
       Host: nova-river-node-07a8.aminkhalafi34.workers.dev
-- name: V2Get🛰️ 2026-06-28 20:11
-  type: vless
-  server: fbi.gov
-  port: 2053
-  uuid: ee137caa-54c7-4392-a017-3a7c460fa773
-  udp: true
-  network: xhttp
-  tls: true
-  servername: pars.shopbertar.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'V2Get🛰️ 2026-07-04 01:23 #2'
   type: vless
   server: 104.18.35.13
@@ -1244,12 +1245,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-06-28 23:30
+  - V2Get🛰️ 2026-07-05 21:24
+  - V2Get🛰️ 2026-07-04 01:23
+  - V2Get🛰️ 2026-07-06 08:00
   - V2Get🛰️ 2026-07-06 12:00
   - V2Get🛰️ 2026-07-06 11:49
   - V2Get🛰️ 2026-07-06 09:31
-  - V2Get🛰️ 2026-07-04 01:23
-  - V2Get🛰️ 2026-07-05 21:24
-  - V2Get🛰️ 2026-07-06 08:00
   - V2Get🛰️ 2026-07-06 11:56
   - 'V2Get🛰️ 2026-07-06 11:56 #2'
   - V2Get🛰️ 2026-06-28 22:06
@@ -1280,7 +1282,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 21:07
   - V2Get🛰️ 2026-07-05 21:21
   - 'V2Get🛰️ 2026-07-06 11:35 #6'
-  - V2Get🛰️ 2026-06-28 20:11
   - 'V2Get🛰️ 2026-07-04 01:23 #2'
   - 'V2Get🛰️ 2026-07-06 11:34 #2'
   - 'V2Get🛰️ 2026-07-06 11:34 #3'
@@ -1348,12 +1349,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-06-28 23:30
+  - V2Get🛰️ 2026-07-05 21:24
+  - V2Get🛰️ 2026-07-04 01:23
+  - V2Get🛰️ 2026-07-06 08:00
   - V2Get🛰️ 2026-07-06 12:00
   - V2Get🛰️ 2026-07-06 11:49
   - V2Get🛰️ 2026-07-06 09:31
-  - V2Get🛰️ 2026-07-04 01:23
-  - V2Get🛰️ 2026-07-05 21:24
-  - V2Get🛰️ 2026-07-06 08:00
   - V2Get🛰️ 2026-07-06 11:56
   - 'V2Get🛰️ 2026-07-06 11:56 #2'
   - V2Get🛰️ 2026-06-28 22:06
@@ -1384,7 +1386,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-24 21:07
   - V2Get🛰️ 2026-07-05 21:21
   - 'V2Get🛰️ 2026-07-06 11:35 #6'
-  - V2Get🛰️ 2026-06-28 20:11
   - 'V2Get🛰️ 2026-07-04 01:23 #2'
   - 'V2Get🛰️ 2026-07-06 11:34 #2'
   - 'V2Get🛰️ 2026-07-06 11:34 #3'
