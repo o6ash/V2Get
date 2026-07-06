@@ -12,14 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-06 04:30
-  type: ss
-  server: 38.54.9.181
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+- name: V2Get🛰️ 2026-07-06 00:56
+  type: vless
+  server: 5.252.26.85
+  port: 443
+  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
   udp: true
-- name: 'V2Get🛰️ 2026-07-06 04:30 #2'
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
+    short-id: 8af36420
+- name: V2Get🛰️ 2026-07-06 04:30
   type: vless
   server: ruded1.cloudstreamself.com
   port: 443
@@ -32,6 +38,13 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: MiUJrbaMI3sO_opw69tGnxTZC7Vk-J7V47AnXAwUdSM
+- name: 'V2Get🛰️ 2026-07-06 04:30 #2'
+  type: ss
+  server: 38.54.9.181
+  port: 3306
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: V2Get🛰️ 2026-06-20 11:38
   type: vless
   server: lv.faygo.bot
@@ -139,19 +152,6 @@ proxies:
     short-id: 064c2d37308aeeb6
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: V2Get🛰️ 2026-07-06 00:56
-  type: vless
-  server: 5.252.26.85
-  port: 443
-  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
-    short-id: 8af36420
 - name: V2Get🛰️ 2026-06-16 04:01
   type: vless
   server: 141.193.213.30
@@ -1232,6 +1232,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-06 04:30
   - 'V2Get🛰️ 2026-07-06 04:30 #2'
   - V2Get🛰️ 2026-06-20 11:38
@@ -1242,7 +1243,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-07-04 01:23
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-16 04:01
   - V2Get🛰️ 2026-07-05 10:09
   - V2Get🛰️ 2026-07-01 17:13
@@ -1337,6 +1337,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-06 04:30
   - 'V2Get🛰️ 2026-07-06 04:30 #2'
   - V2Get🛰️ 2026-06-20 11:38
@@ -1347,7 +1348,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-07-04 01:23
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-16 04:01
   - V2Get🛰️ 2026-07-05 10:09
   - V2Get🛰️ 2026-07-01 17:13
