@@ -12,18 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-04 06:00
-  type: vless
-  server: speedtest.net
-  port: 80
-  uuid: 6194f73e-67de-445a-b83c-c963e42d5592
+- name: V2Get🛰️ 2026-06-24 14:27
+  type: trojan
+  server: 104.16.72.70
+  port: 443
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
   udp: true
+  sni: space.byu.id.yxls.eu.cc
   network: ws
-  skip-cert-verify: true
   ws-opts:
-    path: /
+    path: /br-orcl
     headers:
-      Host: pinghub.global.ssl.fastly.net
+      Host: space.byu.id.yxls.eu.cc
+- name: V2Get🛰️ 2026-07-05 22:43
+  type: vless
+  server: 85.192.63.38
+  port: 443
+  uuid: 2d223452-afb4-4bcf-a604-ac7a5c67c826
+  udp: true
+  network: xhttp
+  tls: true
+  servername: o.aolcdn.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Rb0425FK9dw-iJ9dqDnklCEOKFBguv4OI_uidzP3hE4
+    short-id: f9af798aa0
 - name: V2Get🛰️ 2026-07-06 00:56
   type: vless
   server: 5.252.26.85
@@ -37,6 +50,18 @@ proxies:
   reality-opts:
     public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
     short-id: 8af36420
+- name: V2Get🛰️ 2026-07-04 06:00
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: 6194f73e-67de-445a-b83c-c963e42d5592
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: pinghub.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-05 17:10
   type: vless
   server: cdn4.portalcode.ir
@@ -614,14 +639,6 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
-- name: V2Get🛰️ 2026-07-06 00:04
-  type: vless
-  server: forallpanel.srtongston.ir
-  port: 8880
-  uuid: ab49ea5f-f7a3-4248-a237-27758f4bae09
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-07-06 01:40
   type: trojan
   server: 193.233.136.157
@@ -972,20 +989,6 @@ proxies:
   reality-opts:
     public-key: qJhdahkY0zd79SmTB30P1cy7cSvwN5ONRqL1pktr3GY
     short-id: f62ca9ccc14703a1
-- name: V2Get🛰️ 2026-07-04 00:53
-  type: vless
-  server: jush.sukario.ir
-  port: 443
-  uuid: 8a6729c4-81d4-4b05-8747-3fffc17b6a64
-  udp: true
-  network: ws
-  tls: true
-  servername: MzGvUtTz7.MaKeAcHeCk.oRg
-  client-fingerprint: firefox
-  ws-opts:
-    path: /mashdi
-    headers:
-      Host: MzGvUtTz7.MaKeAcHeCk.oRg
 - name: V2Get🛰️ 2026-07-05 19:11
   type: ss
   server: 82.38.31.35
@@ -1222,8 +1225,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-04 06:00
+  - V2Get🛰️ 2026-06-24 14:27
+  - V2Get🛰️ 2026-07-05 22:43
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-05 17:10
   - V2Get🛰️ 2026-07-06 03:16
   - 'V2Get🛰️ 2026-07-06 03:16 #2'
@@ -1271,7 +1276,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 03:13
   - V2Get🛰️ 2026-07-06 02:16
   - 'V2Get🛰️ 2026-07-06 01:57 #2'
-  - V2Get🛰️ 2026-07-06 00:04
   - V2Get🛰️ 2026-07-06 01:40
   - V2Get🛰️ 2026-06-26 22:36
   - V2Get🛰️ 2026-06-23 00:48
@@ -1302,7 +1306,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-04 00:53
   - V2Get🛰️ 2026-07-05 19:11
   - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
@@ -1327,8 +1330,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-04 06:00
+  - V2Get🛰️ 2026-06-24 14:27
+  - V2Get🛰️ 2026-07-05 22:43
   - V2Get🛰️ 2026-07-06 00:56
+  - V2Get🛰️ 2026-07-04 06:00
   - V2Get🛰️ 2026-07-05 17:10
   - V2Get🛰️ 2026-07-06 03:16
   - 'V2Get🛰️ 2026-07-06 03:16 #2'
@@ -1376,7 +1381,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 03:13
   - V2Get🛰️ 2026-07-06 02:16
   - 'V2Get🛰️ 2026-07-06 01:57 #2'
-  - V2Get🛰️ 2026-07-06 00:04
   - V2Get🛰️ 2026-07-06 01:40
   - V2Get🛰️ 2026-06-26 22:36
   - V2Get🛰️ 2026-06-23 00:48
@@ -1407,7 +1411,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-04 11:59
   - V2Get🛰️ 2026-07-05 16:51
   - V2Get🛰️ 2026-07-06 01:31
-  - V2Get🛰️ 2026-07-04 00:53
   - V2Get🛰️ 2026-07-05 19:11
   - V2Get🛰️ 2026-07-05 16:56
   - V2Get🛰️ 2026-07-05 23:18
