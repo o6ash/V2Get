@@ -12,6 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-05 23:56
+  type: vless
+  server: ipv4-address.iranvatanam.com
+  port: 8443
+  uuid: 7112f75d-68e4-4103-bdf8-4453a286eba9
+  udp: true
+  network: ws
+  tls: true
+  servername: email-page4.iranvatanam.com
+  client-fingerprint: firefox
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+- name: V2Get🛰️ 2026-07-06 00:56
+  type: vless
+  server: 5.252.26.85
+  port: 443
+  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
+    short-id: 8af36420
 - name: V2Get🛰️ 2026-07-05 22:13
   type: vless
   server: pan1.mashkestan.com
@@ -162,19 +191,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: V2Get🛰️ 2026-07-06 00:56
-  type: vless
-  server: 5.252.26.85
-  port: 443
-  uuid: c662cb42-b584-4b82-88f8-e2a64384bf20
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sWR_Ckh6hk-HvacqbtfT8oHIqDJ7_NY4_JeHY_N4OHc
-    short-id: 8af36420
 - name: V2Get🛰️ 2026-06-16 01:55
   type: vless
   server: 45.130.125.229
@@ -417,14 +433,6 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: V2Get🛰️ 2026-07-04 14:15
-  type: vless
-  server: 104.16.72.101
-  port: 8443
-  uuid: 3176b184-8987-4e27-9e26-0dc5a1469636
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-07-04 20:38
   type: vless
   server: 104.17.148.22
@@ -1088,6 +1096,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-05 23:56
+  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-05 22:13
   - 'V2Get🛰️ 2026-07-05 22:13 #2'
   - V2Get🛰️ 2026-07-06 03:47
@@ -1100,7 +1110,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 22:36
   - V2Get🛰️ 2026-07-05 21:17
   - V2Get🛰️ 2026-06-16 03:18
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-06-24 14:27
@@ -1119,7 +1128,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-06 01:57
   - V2Get🛰️ 2026-06-25 01:50
   - V2Get🛰️ 2026-06-17 00:27
-  - V2Get🛰️ 2026-07-04 14:15
   - V2Get🛰️ 2026-07-04 20:38
   - V2Get🛰️ 2026-07-04 05:48
   - V2Get🛰️ 2026-07-05 16:40
@@ -1178,6 +1186,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-05 23:56
+  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-07-05 22:13
   - 'V2Get🛰️ 2026-07-05 22:13 #2'
   - V2Get🛰️ 2026-07-06 03:47
@@ -1190,7 +1200,6 @@ proxy-groups:
   - V2Get🛰️ 2026-06-26 22:36
   - V2Get🛰️ 2026-07-05 21:17
   - V2Get🛰️ 2026-06-16 03:18
-  - V2Get🛰️ 2026-07-06 00:56
   - V2Get🛰️ 2026-06-16 01:55
   - V2Get🛰️ 2026-07-04 17:25
   - V2Get🛰️ 2026-06-24 14:27
@@ -1209,7 +1218,6 @@ proxy-groups:
   - V2Get🛰️ 2026-07-06 01:57
   - V2Get🛰️ 2026-06-25 01:50
   - V2Get🛰️ 2026-06-17 00:27
-  - V2Get🛰️ 2026-07-04 14:15
   - V2Get🛰️ 2026-07-04 20:38
   - V2Get🛰️ 2026-07-04 05:48
   - V2Get🛰️ 2026-07-05 16:40
