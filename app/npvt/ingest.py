@@ -6,7 +6,7 @@ GitHub publishing — without importing or altering the collector's run loop. Th
 only coupling is the collector's module-level ``_run_lock``: we acquire it so an
 npvt injection and a scheduled collection run never mutate the active pool
 concurrently. The lock is held only for the (short, bounded) DB/TCP/pool
-critical section — never during the network-bound bot relay.
+critical section — never during the download or the unlock.
 """
 from __future__ import annotations
 

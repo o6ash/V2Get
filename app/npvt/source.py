@@ -4,7 +4,7 @@ Reads the *same* enabled channels the core collector uses, but looks at message
 *documents* (the collector only reads text). Each ``.npvt`` attachment newer
 than the per-channel cursor is yielded once; cursors advance so messages are
 never rescanned. Downloading is deferred to the worker so size limits and
-content-hash dedup are enforced just before relay.
+content-hash dedup are enforced just before unlocking.
 """
 from __future__ import annotations
 

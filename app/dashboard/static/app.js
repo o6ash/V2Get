@@ -486,63 +486,37 @@ async function outputPanel() {
   return box;
 }
 
-// ── npvt (.npvt → bot relay → V2Ray links) ──────────────────────────────────---
+// ── npvt (.npvt → local unlock → V2Ray links) ───────────────────────────────---
 const NPVT_TOGGLES = [
   ["collection_enabled", "NPVT collection", "Detect & download .npvt files from channels"],
-  ["relay_enabled", "Bot relay", "Forward files to the bot and click its button"],
-  ["link_collection_enabled", "Link collection", "Inject the bot's V2Ray links into the pipeline"],
+  ["link_collection_enabled", "Link collection", "Inject the unlocked V2Ray links into the pipeline"],
 ];
 const NPVT_STATUS_BADGE = { done: "ok", failed: "err", skipped: "dim", pending: "dim", processing: "warn" };
 const NPVT_FIELD_LABELS = {
-  bot_username: "Bot username", button_text_patterns: "Button text patterns (one per line / comma-sep)",
-  button_fallback_index: "Button fallback index (0-based)", scan_interval_seconds: "Scan interval (s)",
+  scan_interval_seconds: "Scan interval (s)",
   scan_message_limit: "Scan message limit", max_file_bytes: "Max file size (bytes)",
-  relay_concurrency: "Relay concurrency (restart)", relay_min_interval_seconds: "Min interval between sends (s)",
-  relay_timeout_seconds: "Relay timeout (s)", button_response_timeout_seconds: "Button wait timeout (s)",
-  collect_window_seconds: "Link collect window (s)", collect_quiet_seconds: "Quiet period to stop (s)",
+  unlock_concurrency: "Unlock concurrency (restart)",
   max_retries: "Max retries", retry_backoff_seconds: "Retry backoff (s)",
-  relay_jitter_seconds: "Send jitter (s)",
-  captcha_detection_enabled: "CAPTCHA detection",
-  captcha_text_patterns: "CAPTCHA text patterns (one per line / comma-sep)",
-  captcha_cooldown_seconds: "CAPTCHA back-off base (s)",
-  captcha_cooldown_max_seconds: "CAPTCHA back-off cap (s)",
-  captcha_max_consecutive: "Consecutive CAPTCHAs before auto-disable",
-  captcha_auto_disable_relay: "Auto-disable relay after repeated CAPTCHAs",
   publish_after_ingest: "Regenerate outputs / push after ingest",
 };
 
 pages.npvt = async (root) => {
   const filesBox = el("div", {});
   const statsBox = el("div", { class: "grid section" });
-  const breakerBox = el("div", {});
 
   const refreshState = async () => {
     const st = await api.get("/npvt/state");
     const s = st.stats || {};
-    const b = st.breaker || {};
-    breakerBox.innerHTML = "";
-    if (b.paused) {
-      breakerBox.append(el("div", { class: "card section", style: "border-color:var(--warn)" },
-        el("h2", {}, "⚠ Relay paused — CAPTCHA back-off"),
-        el("div", { class: "muted" }, "Reason: " + (b.reason || "captcha")),
-        el("div", { class: "muted" }, "Resuming in ~" + fmtDur(b.remaining_seconds) + " · consecutive trips: " + (b.consecutive_trips || 0)),
-        el("div", { class: "muted" }, "The bot sent a CAPTCHA; we do not solve it. Relay resumes automatically after the cooldown.")));
-    } else if (!st.toggles.relay_enabled && (b.trips_total || 0) > 0) {
-      breakerBox.append(el("div", { class: "card section", style: "border-color:var(--err)" },
-        el("h2", {}, "⛔ Bot relay auto-disabled after repeated CAPTCHAs"),
-        el("div", { class: "muted" }, "Total CAPTCHAs seen: " + (s.captchas_seen || 0) + ". Let the bot cool down, then re-enable “Bot relay” above.")));
-    }
     statsBox.innerHTML = "";
     statsBox.append(
       card(st.queue_size, "Queue"),
       card(st.files_total, "Files seen"),
-      card(s.files_done || 0, "Processed"),
+      card(s.files_done || 0, "Unlocked"),
       card(s.files_failed || 0, "Failed"),
       card(s.files_skipped || 0, "Skipped (dupe)"),
-      card(s.files_filtered || 0, "Filtered (pre-relay)"),
-      card(s.links_collected || 0, "Links collected"),
+      card(s.files_filtered || 0, "Filtered (pre-unlock)"),
+      card(s.links_collected || 0, "Links extracted"),
       card(s.links_injected || 0, "Links injected"),
-      card(s.captchas_seen || 0, "CAPTCHAs"),
     );
   };
 
@@ -619,7 +593,7 @@ pages.npvt = async (root) => {
 
   root.append(
     el("h1", {}, "NPVT pipeline"),
-    el("p", { class: "muted" }, "Isolated: .npvt file → @" + (values.bot_username || "bot") + " → auto button → V2Ray links → existing pipeline. Failures here never affect the core collector."),
+    el("p", { class: "muted" }, "Isolated: .npvt file → local unlock (whitebox AES-CTR, in-process) → V2Ray links → existing pipeline. No external bot. Failures here never affect the core collector."),
     el("div", { class: "card section" }, el("h2", {}, "Pipeline controls"), toggleRow,
       el("div", { class: "row", style: "margin-top:10px" },
         el("button", { class: "btn", onclick: async () => { try { await api.post("/npvt/scan"); toast("Scan triggered"); setTimeout(() => { refreshState(); refreshFiles(); }, 600); } catch (e) { toast(e.message, true); } } }, "🔍 Scan now"),
@@ -629,7 +603,6 @@ pages.npvt = async (root) => {
           try { const r = await api.post("/npvt/queue/clear"); toast(`Queue cleared — ${r.deleted} file(s) removed`); refreshState(); refreshFiles(); }
           catch (e) { toast(e.message, true); }
         } }, "🗑 Clear queue"))),
-    breakerBox,
     statsBox,
     el("div", { class: "card section" }, el("h2", {}, "Settings"), grid, el("div", { style: "margin-top:12px" }, save)),
     el("div", { class: "card section" }, el("h2", {}, "Recent files"), filesBox),

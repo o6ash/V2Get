@@ -34,8 +34,8 @@ class NpvtService:
             await npvt_settings.load()
             await worker.start()
             self._started = True
-            log.info("npvt service ready (collection=%s relay=%s links=%s)",
-                     npvt_settings.collection_enabled, npvt_settings.relay_enabled,
+            log.info("npvt service ready (collection=%s links=%s)",
+                     npvt_settings.collection_enabled,
                      npvt_settings.link_collection_enabled)
         except Exception as exc:  # noqa: BLE001 - must never block app startup
             log.exception("npvt service failed to start (feature disabled): %s", exc)
@@ -53,12 +53,12 @@ class NpvtService:
         return npvt_settings.all()
 
     async def update_settings(self, values: dict[str, Any]) -> dict[str, Any]:
-        before = npvt_settings.relay_concurrency
+        before = npvt_settings.unlock_concurrency
         result = await npvt_settings.update(values)
         # Wake discovery so toggles take effect promptly.
         worker.trigger_scan()
-        if npvt_settings.relay_concurrency != before:
-            log.info("npvt: relay_concurrency changed — applies on next restart")
+        if npvt_settings.unlock_concurrency != before:
+            log.info("npvt: unlock_concurrency changed — applies on next restart")
         return result
 
     # ── state / actions ──────────────────────────────────────────────────────
@@ -74,15 +74,14 @@ class NpvtService:
             "started": self._started,
             "toggles": {
                 "collection_enabled": npvt_settings.collection_enabled,
-                "relay_enabled": npvt_settings.relay_enabled,
                 "link_collection_enabled": npvt_settings.link_collection_enabled,
             },
-            "bot_username": npvt_settings.bot_username,
+            # Unlocking runs in-process; no external service to report on.
+            "unlock_mode": "local",
             "queue_size": worker.queue_size,
             "files_total": total,
             "by_status": by_status,
             "stats": dict(worker.stats),
-            "breaker": worker.breaker_state(),
         }
 
     async def recent_files(self, limit: int = 100) -> list[dict[str, Any]]:

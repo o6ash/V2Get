@@ -1,9 +1,9 @@
 """Isolated .npvt processing pipeline.
 
 A fully self-contained module that detects ``.npvt`` document attachments in the
-monitored Telegram channels, relays each file to an external Telegram bot
-(``@DickiriptorBot`` by default), drives the bot's inline keyboard to extract
-the V2Ray links it returns, and injects those links into the *existing* v2get
+monitored Telegram channels, unlocks each file **locally** (see
+:mod:`app.npvt.unlocker` — whitebox AES-CTR, no external service), exports the
+V2Ray links it contains, and injects those links into the *existing* v2get
 pipeline — reusing the parser, fingerprint, blacklist, cooldown, pool and
 subscription machinery without modifying any of it.
 
