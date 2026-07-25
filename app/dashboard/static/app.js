@@ -438,6 +438,10 @@ pages.settings = async (root) => {
     grid.append(el("label", {}, label),
       el("input", { id: "set-" + key, type, value: s[key] ?? "", placeholder: key === "github_token" ? (s.github_token_set ? s.github_token : "not set") : "" }));
   }
+  const sources = el("div", { class: "settings-grid" },
+    el("label", {}, "Collect links from channel text"),
+    checkbox("set-collect_text_links", s.collect_text_links));
+
   const outputs = el("div", { class: "settings-grid" },
     el("label", {}, "Output: Clash"), checkbox("set-output_clash", s.output_clash),
     el("label", {}, "Output: Stash"), checkbox("set-output_stash", s.output_stash),
@@ -446,6 +450,8 @@ pages.settings = async (root) => {
   root.append(
     el("h1", {}, "Settings"),
     el("div", { class: "card section" }, el("h2", {}, "Collector & GitHub"), grid),
+    el("div", { class: "card section" }, el("h2", {}, "Link sources"), sources,
+      el("p", { class: "muted", style: "margin-top:10px" }, "Off = links are never taken from channel messages; the subscription is built only from unlocked .npvt files. The active pool is still TCP-checked, rotated and published every run.")),
     el("div", { class: "card section" }, el("h2", {}, "Output formats"), outputs,
       el("p", { class: "muted", style: "margin-top:10px" }, "active.txt and subscription_base64.txt are always generated.")),
     el("button", { class: "btn btn-primary", onclick: async () => {
@@ -455,6 +461,7 @@ pages.settings = async (root) => {
         if (key === "github_token" && (v.includes("*") || v === "")) continue;
         values[key] = type === "number" ? Number(v) : v;
       }
+      values.collect_text_links = $("#set-collect_text_links").checked;
       values.output_clash = $("#set-output_clash").checked;
       values.output_stash = $("#set-output_stash").checked;
       values.output_singbox = $("#set-output_singbox").checked;

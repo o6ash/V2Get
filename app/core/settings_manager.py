@@ -15,6 +15,12 @@ from app.database import SessionLocal
 from app.models import Setting
 
 DEFAULTS: dict[str, Any] = {
+    # When False the collector stops harvesting proxy links from channel
+    # *message text*. Everything else in a run still happens: the active pool
+    # is re-validated over TCP, rotated, written out and published. The
+    # isolated .npvt pipeline (app.npvt) is a separate path and is NOT
+    # affected — turn this off to build subscriptions purely from .npvt files.
+    "collect_text_links": True,
     "scan_interval_minutes": 15,
     "tcp_timeout_seconds": 3.0,
     "max_pool_size": 50,
@@ -82,6 +88,10 @@ class SettingsManager:
         return self.all()
 
     # typed convenience accessors -------------------------------------------------
+    @property
+    def collect_text_links(self) -> bool:
+        return bool(self.get("collect_text_links"))
+
     @property
     def scan_interval_minutes(self) -> int:
         return int(self.get("scan_interval_minutes"))

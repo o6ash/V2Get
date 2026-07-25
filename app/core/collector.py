@@ -78,7 +78,20 @@ async def _execute(session: AsyncSession, run: RunLog) -> dict:
     fresh: list[Config] = []
     messages_read = 0
 
-    for channel in channels:
+    # ── Text-link harvesting (optional) ─────────────────────────────────────────
+    # With ``collect_text_links`` off the run skips message scanning entirely:
+    # no Telegram history is read and no link is taken from channel text. The
+    # rest of the run below (TCP re-validation of the active pool, rotation,
+    # outputs, GitHub publish, stats) still executes, so a subscription built
+    # solely from the .npvt pipeline stays fresh and published.
+    collect_text = settings.collect_text_links
+    if not collect_text:
+        log.info(
+            "Text-link collection disabled — skipping channel message scan "
+            "(.npvt pipeline unaffected)"
+        )
+
+    for channel in (channels if collect_text else ()):
         try:
             messages = await collector_client.fetch_new(
                 channel.username, channel.last_message_id,
@@ -147,7 +160,7 @@ async def _execute(session: AsyncSession, run: RunLog) -> dict:
                     channel.configs_accepted += 1
                     fresh.append(row)
 
-    run.channels_scanned = len(channels)
+    run.channels_scanned = len(channels) if collect_text else 0
     run.messages_read = messages_read
 
     # ── TCP validation: fresh candidates + the current active pool ──────────────
