@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>v2get · {{ pages[page] }}</title>
+  <link rel="stylesheet" href="/static/styles.css?v={{ asset_v }}" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🛰️</text></svg>" />
+</head>
+<body>
+  <div class="layout">
+    <div id="nav-backdrop" class="nav-backdrop"></div>
+    <aside class="sidebar">
+      <div class="brand">🛰️ <span>v2get</span></div>
+      <nav id="nav">
+        {% for key, label in pages.items() %}
+        <a href="/{{ key }}" data-page="{{ key }}" class="{{ 'active' if key == page else '' }}">{{ label }}</a>
+        {% endfor %}
+      </nav>
+      <div class="sidebar-footer">v{{ version }}</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="nav-toggle" class="btn nav-toggle" aria-label="Toggle menu">☰</button>
+        <div class="status-chips">
+          <span class="chip" id="chip-status">Status: …</span>
+          <span class="chip" id="chip-last">Last: …</span>
+          <span class="chip" id="chip-next">Next: …</span>
+        </div>
+        <div class="topbar-actions">
+          <button id="run-now" class="btn btn-primary">▶ Run now</button>
+          <button id="theme-toggle" class="btn" title="Toggle theme">🌓</button>
+        </div>
+      </header>
+
+      <section id="content" class="content" data-page="{{ page }}">
+        <div class="loading">Loading…</div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/static/app.js?v={{ asset_v }}"></script>
+</body>
+</html>

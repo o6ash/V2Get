@@ -1,0 +1,71 @@
+[project]
+name = "v2get"
+version = "1.0.0"
+description = "Telegram proxy subscription collector, validator and publishing platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["v2ray", "xray", "telegram", "subscription", "proxy", "vmess", "vless", "clash"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: FastAPI",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: Proxy Servers",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/OWNER/v2get"
+Issues = "https://github.com/OWNER/v2get/issues"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+# ─── Ruff (lint + format) ────────────────────────────────────────────────────
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort — import ordering
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    # Broad `except Exception` is deliberate and pervasive here: every external
+    # boundary (Telethon, GitHub, TCP, the relayed bot) must degrade gracefully
+    # rather than kill a background worker. Each site is annotated and logged.
+    "BLE001",
+    "E501",   # long lines are checked by the formatter, not the linter
+    "B008",   # FastAPI's Depends()/Query() in defaults is the documented idiom
+    "SIM105", # contextlib.suppress is not always clearer than try/except/pass
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests intentionally reach into private helpers to test them directly.
+"tests/*" = ["SLF001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+# ─── pytest ──────────────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = ["ignore::DeprecationWarning"]

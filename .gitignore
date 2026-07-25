@@ -1,0 +1,43 @@
+# ─── Secrets — never commit ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+
+# Local tool state that has historically captured credentials in saved commands.
+.claude/
+
+# ─── Runtime state (lives on the mounted volume) ─────────────────────────────
+data/
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.log.*
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# ─── Tooling caches ──────────────────────────────────────────────────────────
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ─── Editors / OS ────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

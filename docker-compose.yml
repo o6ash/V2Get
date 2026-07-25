@@ -1,0 +1,23 @@
+services:
+  collector:
+    build: .
+    image: v2get:latest
+    container_name: v2get
+    restart: unless-stopped
+    ports:
+      # IPv4-only publish on purpose: this host's IPv6 routing is broken
+      # (networkd NDisc times out), so a dual-stack "8080:8080" bind makes
+      # browsers try IPv6 first and hang before falling back to IPv4.
+      - "0.0.0.0:8080:8080"
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8080/api/health').status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
