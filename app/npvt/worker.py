@@ -126,6 +126,14 @@ class NpvtWorker:
         candidates = await source.discover()
         if not candidates:
             return
+        # Ids are collected here and only enqueued AFTER the commit below.
+        # Enqueuing a flushed-but-uncommitted id is a race: an unlock worker
+        # reads the row in its own session, cannot see the open transaction,
+        # concludes the file "no longer exists" and drops it permanently — and
+        # because the row does land in the table a moment later, the next
+        # discovery pass treats it as already-known and never re-enqueues it.
+        # The file would be stranded in `pending` forever.
+        new_ids: list[int] = []
         async with SessionLocal() as session:
             for c in candidates:
                 exists = (await session.execute(
@@ -142,9 +150,12 @@ class NpvtWorker:
                 )
                 session.add(row)
                 await session.flush()
-                self._queue.put_nowait(row.id)
+                new_ids.append(row.id)
                 self.stats["files_seen"] += 1
             await session.commit()
+
+        for file_id in new_ids:
+            self._queue.put_nowait(file_id)
 
     # ── unlock workers ─────────────────────────────────────────────────────---
     async def _unlock_worker(self, idx: int) -> None:
