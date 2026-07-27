@@ -12,21 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-07-27 19:45
+  type: vless
+  server: 162.159.38.119
   port: 443
-  password: MITIVPN
+  uuid: 337953c7-5723-4cb6-9d2b-90e5139f3b69
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: telegram.mxgrid.xyz
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
+    path: /----MXGRiD----
     headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: telegram.mxgrid.xyz
 - name: V2Get🛰️ 2026-07-27 04:04
   type: vless
   server: 104.18.7.178
@@ -1391,7 +1389,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-07-27 19:45
   - V2Get🛰️ 2026-07-27 04:04
   - 'V2Get🛰️ 2026-07-27 04:04 #2'
   - 'V2Get🛰️ 2026-07-27 04:04 #3'
@@ -1495,7 +1493,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-07-27 19:45
   - V2Get🛰️ 2026-07-27 04:04
   - 'V2Get🛰️ 2026-07-27 04:04 #2'
   - 'V2Get🛰️ 2026-07-27 04:04 #3'
