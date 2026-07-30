@@ -12,22 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-07-30 20:04
+  type: vless
+  server: 178.83.157.130
+  port: 2551
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
   udp: true
-  sni: MiTiVPN----o.aPp-cLoud.IR
-  alpn:
-  - http/1.1
+  network: tcp
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
-    headers:
-      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
+- name: 'V2Get🛰️ 2026-07-30 20:04 #2'
+  type: vmess
+  server: 195.133.193.18
+  port: 27726
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  alterId: 0
+  cipher: chacha20-poly1305
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-07-30 20:03
+  type: trojan
+  server: 179.237.75.190
+  port: 13790
+  password: QNzF7mH7BG
+  udp: true
+  sni: rd.autos.yahoo.com:40069
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-07-30 20:03 #2'
   type: vless
   server: 212.192.3.94
   port: 21245
@@ -40,14 +50,6 @@ proxies:
   reality-opts:
     public-key: Oq7Jn2xSCPwBSiHuG6PLmnfNykQxpBub1pvJu_YVm24
     short-id: 6b
-- name: 'V2Get🛰️ 2026-07-30 20:03 #2'
-  type: trojan
-  server: 179.237.75.190
-  port: 13790
-  password: QNzF7mH7BG
-  udp: true
-  sni: rd.autos.yahoo.com:40069
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-07-30 20:03 #3'
   type: trojan
   server: 6r6e6e6ryrfyfyydur6r6f6r6r6r6d6d6e6s6d6s6d7d7d7e6s.poki-pakipon.ir
@@ -123,21 +125,6 @@ proxies:
   reality-opts:
     public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
     short-id: e915
-- name: V2Get🛰️ 2026-07-27 21:45
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: 7ib-i--MiTiVPN---MiTiVPN-7.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/usa
-    headers:
-      Host: puuy-mitivpn--MiTiVPN---MiTiVPN-av.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-07-28 13:39
   type: vless
   server: 104.18.152.246
@@ -970,7 +957,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-07-30 20:04
+  - 'V2Get🛰️ 2026-07-30 20:04 #2'
   - V2Get🛰️ 2026-07-30 20:03
   - 'V2Get🛰️ 2026-07-30 20:03 #2'
   - 'V2Get🛰️ 2026-07-30 20:03 #3'
@@ -979,7 +967,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-30 13:42 #2'
   - V2Get🛰️ 2026-07-30 18:33
   - V2Get🛰️ 2026-07-30 18:38
-  - V2Get🛰️ 2026-07-27 21:45
   - V2Get🛰️ 2026-07-28 13:39
   - V2Get🛰️ 2026-07-30 08:50
   - 'V2Get🛰️ 2026-07-30 08:50 #2'
@@ -1050,7 +1037,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-07-30 20:04
+  - 'V2Get🛰️ 2026-07-30 20:04 #2'
   - V2Get🛰️ 2026-07-30 20:03
   - 'V2Get🛰️ 2026-07-30 20:03 #2'
   - 'V2Get🛰️ 2026-07-30 20:03 #3'
@@ -1059,7 +1047,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-30 13:42 #2'
   - V2Get🛰️ 2026-07-30 18:33
   - V2Get🛰️ 2026-07-30 18:38
-  - V2Get🛰️ 2026-07-27 21:45
   - V2Get🛰️ 2026-07-28 13:39
   - V2Get🛰️ 2026-07-30 08:50
   - 'V2Get🛰️ 2026-07-30 08:50 #2'
