@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 02:18
+  type: vless
+  server: 104.17.108.1
+  port: 443
+  uuid: 6e256a9a-957b-496a-841c-b7e9fe8deb33
+  udp: true
+  network: xhttp
+  tls: true
+  servername: aa.farxmode.ir
+  client-fingerprint: random
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-07-31 13:58
   type: vless
   server: dtac.exp.dog
@@ -221,21 +234,6 @@ proxies:
     short-id: 4469c0
 - name: V2Get🛰️ 2026-07-31 00:05
   type: trojan
-  server: 104.26.12.41
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: sws-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: ssssw-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: 'V2Get🛰️ 2026-07-31 00:05 #2'
-  type: trojan
   server: 172.64.146.59
   port: 443
   password: MiTiVPN
@@ -249,7 +247,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/HK---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: H-k-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: 'V2Get🛰️ 2026-07-31 00:05 #3'
+- name: 'V2Get🛰️ 2026-07-31 00:05 #2'
   type: trojan
   server: 104.20.39.109
   port: 443
@@ -264,7 +262,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: sg1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: 'V2Get🛰️ 2026-07-31 00:05 #4'
+- name: 'V2Get🛰️ 2026-07-31 00:05 #3'
   type: trojan
   server: 104.18.16.56
   port: 443
@@ -279,7 +277,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: Jpn1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: 'V2Get🛰️ 2026-07-31 00:05 #5'
+- name: 'V2Get🛰️ 2026-07-31 00:05 #4'
   type: trojan
   server: 104.21.40.208
   port: 443
@@ -1244,6 +1242,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 02:18
   - V2Get🛰️ 2026-07-31 13:58
   - 'V2Get🛰️ 2026-07-31 13:58 #2'
   - 'V2Get🛰️ 2026-07-31 13:58 #3'
@@ -1264,7 +1263,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-31 00:05 #2'
   - 'V2Get🛰️ 2026-07-31 00:05 #3'
   - 'V2Get🛰️ 2026-07-31 00:05 #4'
-  - 'V2Get🛰️ 2026-07-31 00:05 #5'
   - V2Get🛰️ 2026-08-01 11:34
   - 'V2Get🛰️ 2026-08-01 11:34 #2'
   - 'V2Get🛰️ 2026-08-01 11:34 #3'
@@ -1345,6 +1343,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 02:18
   - V2Get🛰️ 2026-07-31 13:58
   - 'V2Get🛰️ 2026-07-31 13:58 #2'
   - 'V2Get🛰️ 2026-07-31 13:58 #3'
@@ -1365,7 +1364,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-07-31 00:05 #2'
   - 'V2Get🛰️ 2026-07-31 00:05 #3'
   - 'V2Get🛰️ 2026-07-31 00:05 #4'
-  - 'V2Get🛰️ 2026-07-31 00:05 #5'
   - V2Get🛰️ 2026-08-01 11:34
   - 'V2Get🛰️ 2026-08-01 11:34 #2'
   - 'V2Get🛰️ 2026-08-01 11:34 #3'
