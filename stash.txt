@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-03 02:33
+  type: vless
+  server: ip.unoix.io
+  port: 443
+  uuid: b4b2d9ee-ace4-4fb6-94ec-7a760d0d53a7
+  udp: true
+  network: ws
+  tls: true
+  servername: pub.unoix.io
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: pub.unoix.io
 - name: V2Get🛰️ 2026-08-02 19:27
   type: vless
   server: pi.paydar.site
@@ -50,21 +64,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
-    headers:
-      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
 - name: 'V2Get🛰️ 2026-08-02 22:02 #2'
   type: trojan
   server: 104.17.148.22
@@ -1035,10 +1034,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-03 02:33
   - V2Get🛰️ 2026-08-02 19:27
   - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-08-02 22:02 #2'
   - 'V2Get🛰️ 2026-08-02 22:02 #3'
   - 'V2Get🛰️ 2026-08-02 22:02 #4'
@@ -1131,10 +1130,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-03 02:33
   - V2Get🛰️ 2026-08-02 19:27
   - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-08-02 22:02 #2'
   - 'V2Get🛰️ 2026-08-02 22:02 #3'
   - 'V2Get🛰️ 2026-08-02 22:02 #4'
