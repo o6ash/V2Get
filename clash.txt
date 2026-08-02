@@ -12,14 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
+- name: V2Get🛰️ 2026-08-02 19:27
   type: vless
-  server: gr1.fifapes.monster
-  port: 8882
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  server: 162.159.38.119
+  port: 443
+  uuid: d372d9b1-9afe-4c84-ab80-0ce83d923876
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: telegram.mxgrid.xyz
+  ws-opts:
+    path: /----MXGRiD----
+    headers:
+      Host: telegram.mxgrid.xyz
 - name: V2Get🛰️ 2026-07-29 11:50
   type: vless
   server: 78.159.250.214
@@ -33,7 +38,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
-- name: V2Get🛰️ 2026-08-02 19:27
+- name: 'V2Get🛰️ 2026-08-02 19:27 #2'
   type: vless
   server: 62.238.63.51
   port: 1234
@@ -41,7 +46,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-02 19:27 #2'
+- name: 'V2Get🛰️ 2026-08-02 19:27 #3'
   type: ss
   server: 154.90.32.5
   port: 5601
@@ -1147,10 +1152,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-07-29 11:50
   - V2Get🛰️ 2026-08-02 19:27
+  - V2Get🛰️ 2026-07-29 11:50
   - 'V2Get🛰️ 2026-08-02 19:27 #2'
+  - 'V2Get🛰️ 2026-08-02 19:27 #3'
   - V2Get🛰️ 2026-08-01 11:34
   - 'V2Get🛰️ 2026-08-01 11:34 #2'
   - V2Get🛰️ 2026-08-01 13:35
@@ -1249,10 +1254,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-07-29 11:50
   - V2Get🛰️ 2026-08-02 19:27
+  - V2Get🛰️ 2026-07-29 11:50
   - 'V2Get🛰️ 2026-08-02 19:27 #2'
+  - 'V2Get🛰️ 2026-08-02 19:27 #3'
   - V2Get🛰️ 2026-08-01 11:34
   - 'V2Get🛰️ 2026-08-01 11:34 #2'
   - V2Get🛰️ 2026-08-01 13:35
