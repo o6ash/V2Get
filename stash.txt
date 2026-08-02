@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 21:22
+  type: trojan
+  server: 104.17.190.3
+  port: 443
+  password: fa9c22e6-b36b-44b4-8484-e0712e05c502
+  udp: true
+  sni: nova-swift-vault-2cfb.tmpamron61.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip=104.26.13.0?u=ch
+    headers:
+      Host: nova-swift-vault-2cfb.tmpamron61.workers.dev
 - name: V2Get🛰️ 2026-07-28 11:48
   type: vless
   server: millionaire.levikogjgfdd.ir
@@ -918,14 +930,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-02 11:15 #5'
   type: vless
-  server: 159.69.193.221
-  port: 1234
-  uuid: a481265c-a4d8-4d1a-9ae1-48eb3f7fccb4
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-02 11:15 #6'
-  type: vless
   server: 46.225.220.111
   port: 1234
   uuid: 5de3f60c-7cc2-4f66-9177-706a2693dc19
@@ -952,6 +956,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 21:22
   - V2Get🛰️ 2026-07-28 11:48
   - V2Get🛰️ 2026-08-02 20:17
   - 'V2Get🛰️ 2026-08-02 20:17 #2'
@@ -1040,7 +1045,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-02 11:15 #3'
   - 'V2Get🛰️ 2026-08-02 11:15 #4'
   - 'V2Get🛰️ 2026-08-02 11:15 #5'
-  - 'V2Get🛰️ 2026-08-02 11:15 #6'
   - V2Get🛰️ 2026-08-02 02:18
 - name: ♻️ Auto Select
   type: url-test
@@ -1048,6 +1052,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 21:22
   - V2Get🛰️ 2026-07-28 11:48
   - V2Get🛰️ 2026-08-02 20:17
   - 'V2Get🛰️ 2026-08-02 20:17 #2'
@@ -1136,7 +1141,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-02 11:15 #3'
   - 'V2Get🛰️ 2026-08-02 11:15 #4'
   - 'V2Get🛰️ 2026-08-02 11:15 #5'
-  - 'V2Get🛰️ 2026-08-02 11:15 #6'
   - V2Get🛰️ 2026-08-02 02:18
 rules:
 - GEOIP,private,DIRECT,no-resolve
