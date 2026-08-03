@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usa=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-04 01:43
   type: vless
   server: 7.bmi.ir.varzesh3.com.de
@@ -1056,26 +1071,13 @@ proxies:
   reality-opts:
     public-key: CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc
     short-id: a8de8bc1e9f5ef
-- name: 'V2Get🛰️ 2026-08-02 19:27 #2'
-  type: vless
-  server: 104.16.4.189
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  udp: true
-  network: ws
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-08-04 01:43
   - 'V2Get🛰️ 2026-08-04 01:43 #2'
   - 'V2Get🛰️ 2026-08-04 01:43 #3'
@@ -1165,13 +1167,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-02 20:17 #20'
   - 'V2Get🛰️ 2026-08-02 20:17 #21'
   - V2Get🛰️ 2026-08-02 19:27
-  - 'V2Get🛰️ 2026-08-02 19:27 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-08-04 01:43
   - 'V2Get🛰️ 2026-08-04 01:43 #2'
   - 'V2Get🛰️ 2026-08-04 01:43 #3'
@@ -1261,7 +1263,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-02 20:17 #20'
   - 'V2Get🛰️ 2026-08-02 20:17 #21'
   - V2Get🛰️ 2026-08-02 19:27
-  - 'V2Get🛰️ 2026-08-02 19:27 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
