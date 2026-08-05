@@ -146,8 +146,12 @@ class OvpnWorker:
 
         async with SessionLocal() as session:
             dup = (await session.execute(
-                select(OvpnFile.id).where(OvpnFile.file_hash == profile.content_hash)
-            )).scalar_one_or_none()
+                # A hash can legitimately match several rows (the same profile
+                # reposted many times), so ask for existence, not uniqueness.
+                select(OvpnFile.id)
+                .where(OvpnFile.file_hash == profile.content_hash)
+                .limit(1)
+            )).scalars().first()
         if dup:
             row.status = SKIPPED
             row.error = "duplicate content"
@@ -221,41 +225,55 @@ class OvpnWorker:
         if not selected:
             return
 
-        index_text = publisher.build_index([r.stored_name for r in selected])
-        index_hash = hashlib.sha256(index_text.encode("utf-8")).hexdigest()
-        stored_hash = await ovpn_settings.get_state(_INDEX_HASH_KEY)
-
-        files: dict[str, str] = {}
+        # ── phase 1: upload blobs that are not on the remote yet ──────────────
+        # Each cycle is capped by max_files_per_push, so the index must never be
+        # written in the same breath as the files it references — otherwise a
+        # subscriber fetching index.txt gets 404s for everything not yet pushed.
         pending = [r for r in selected if not r.published][:ovpn_settings.max_files_per_push]
+        files: dict[str, str] = {}
         for r in pending:
             text = parser.read_local(r.stored_name)
             if text:
                 files[r.stored_name] = text
-        if index_hash != stored_hash:
-            files[ovpn_settings.index_file] = index_text
-        if not files:
-            return
-
-        result = await publisher.publish(files)
-        if result.get("status") != "success":
+        if files:
+            result = await publisher.publish(files)
             if result.get("status") == "failed":
                 log.warning("ovpn: publish failed: %s", result.get("reason"))
+            pushed = set(result.get("files") or [])
+            done_ids = {r.id for r in pending if r.stored_name in pushed}
+            if done_ids:
+                async with SessionLocal() as session:
+                    marked = (await session.execute(
+                        select(OvpnFile).where(OvpnFile.id.in_(done_ids))
+                    )).scalars().all()
+                    for r in marked:
+                        r.published = True
+                    await session.commit()
+                # Keep the in-memory view in sync so the index below can include
+                # the rows that just went live, without a second query.
+                for r in selected:
+                    if r.id in done_ids:
+                        r.published = True
+                self.stats["published"] += len(done_ids)
+                self.stats["last_publish"] = utcnow().isoformat()
+
+        # ── phase 2: index — only entries whose blob is live on the remote ────
+        live = [r for r in selected if r.published]
+        if not live:
+            return
+        index_text = publisher.build_index([r.stored_name for r in live])
+        index_hash = hashlib.sha256(index_text.encode("utf-8")).hexdigest()
+        if index_hash == await ovpn_settings.get_state(_INDEX_HASH_KEY):
             return
 
-        pushed = set(result.get("files") or [])
-        done_ids = [r.id for r in pending if r.stored_name in pushed]
-        if done_ids:
-            async with SessionLocal() as session:
-                marked = (await session.execute(
-                    select(OvpnFile).where(OvpnFile.id.in_(done_ids))
-                )).scalars().all()
-                for r in marked:
-                    r.published = True
-                await session.commit()
-            self.stats["published"] += len(done_ids)
-        if ovpn_settings.index_file in pushed:
-            await ovpn_settings.set_state(_INDEX_HASH_KEY, index_hash)
+        result = await publisher.publish({ovpn_settings.index_file: index_text})
+        if result.get("status") != "success":
+            if result.get("status") == "failed":
+                log.warning("ovpn: index push failed: %s", result.get("reason"))
+            return
+        await ovpn_settings.set_state(_INDEX_HASH_KEY, index_hash)
         self.stats["last_publish"] = utcnow().isoformat()
+        log.info("ovpn: index published with %d entr(ies)", len(live))
 
 
 worker = OvpnWorker()

@@ -80,10 +80,11 @@ async def publish(files: dict[str, str]) -> dict:
     if not files:
         return {"status": "skipped", "reason": "nothing to publish"}
 
+    # No batch-level "unchanged" short-circuit here: the caller decides what to
+    # push (blobs are pushed once, the index only when its own hash changes) and
+    # _put_file already skips the commit when the remote blob is byte-identical.
+    # A second guard at this level could silently swallow a legitimate re-push.
     content_hash = _hash(files)
-    previous = await ovpn_settings.get_state(_HASH_KEY)
-    if content_hash == previous:
-        return {"status": "skipped", "reason": "no changes detected"}
 
     headers = {
         "Authorization": f"Bearer {token}",
