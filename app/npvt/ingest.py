@@ -135,7 +135,10 @@ async def inject(raw_links: list[str], source: str, file_id: int | None = None) 
             # ── Pool rotation (reuse the exact core logic) ─────────────────────
             candidates = [r for r in fresh if r.alive and not r.active]
             added, removed = await pool_manager.add_to_pool(session, candidates)
-            summary["added"], summary["removed"] = added, removed
+            # Top the pool back up to the ceiling from the newest archived
+            # configs (TCP-checked before promotion).
+            backfilled, _checked = await pool_manager.backfill(session)
+            summary["added"], summary["removed"] = added + backfilled, removed
 
             await session.flush()
 

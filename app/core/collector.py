@@ -194,6 +194,10 @@ async def _execute(session: AsyncSession, run: RunLog) -> dict:
     added, evicted = await pool_manager.add_to_pool(session, candidates)
     removed += evicted
 
+    # Top the pool back up to the ceiling from the newest archived configs.
+    backfilled, _checked = await pool_manager.backfill(session)
+    added += backfilled
+
     await session.flush()
     run.added = added
     run.removed = removed
