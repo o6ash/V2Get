@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-04 00:27
+  type: vless
+  server: fr4.revnix.ir
+  port: 80
+  uuid: 173627db-2d85-4950-9b5e-7dbb737f0fec
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /vnet102MsV2ray-MsV2ray-MsV2ray-MsV2ray-MsV2ray-MsV2ray-MsV2ray-MsV2ray?ed=2048
+    headers:
+      Host: fr4.revnix.ir
 - name: V2Get🛰️ 2026-07-27 21:55
   type: vless
   server: sca30.mysilipdir.com
@@ -444,21 +456,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-05 04:43 #4'
-  type: vless
-  server: 31.207.7.48
-  port: 2096
-  uuid: 2181d0c8-448a-4f75-b848-1718029baef9
-  udp: true
-  network: grpc
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: -Dg4mGAAM5Lwe9ri7Bx5WlYdPBsyYJy-Pai2Z0FGlyc
-    short-id: afee962d
-  grpc-opts:
-    grpc-service-name: grpc2
 - name: V2Get🛰️ 2026-08-05 04:42
   type: vless
   server: 162.159.38.119
@@ -1139,6 +1136,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-04 00:27
   - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-07-28 14:44
@@ -1177,7 +1175,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-05 04:43
   - 'V2Get🛰️ 2026-08-05 04:43 #2'
   - 'V2Get🛰️ 2026-08-05 04:43 #3'
-  - 'V2Get🛰️ 2026-08-05 04:43 #4'
   - V2Get🛰️ 2026-08-05 04:42
   - 'V2Get🛰️ 2026-08-05 02:17 #3'
   - 'V2Get🛰️ 2026-08-05 02:17 #4'
@@ -1243,6 +1240,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-04 00:27
   - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-07-28 14:44
@@ -1281,7 +1279,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-05 04:43
   - 'V2Get🛰️ 2026-08-05 04:43 #2'
   - 'V2Get🛰️ 2026-08-05 04:43 #3'
-  - 'V2Get🛰️ 2026-08-05 04:43 #4'
   - V2Get🛰️ 2026-08-05 04:42
   - 'V2Get🛰️ 2026-08-05 02:17 #3'
   - 'V2Get🛰️ 2026-08-05 02:17 #4'
