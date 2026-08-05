@@ -29,6 +29,7 @@ from app.ovpn.models import DONE, FAILED, SKIPPED, OvpnFile, utcnow
 
 log = get_logger()
 _INDEX_HASH_KEY = "index_hash"
+_LINKS_HASH_KEY = "links_hash"
 
 
 class OvpnWorker:
@@ -234,13 +235,17 @@ class OvpnWorker:
         for r in pending:
             text = parser.read_local(r.stored_name)
             if text:
-                files[r.stored_name] = text
+                # Published as .txt so the raw link renders instead of downloading.
+                files[publisher.published_name(r.stored_name)] = text
         if files:
             result = await publisher.publish(files)
             if result.get("status") == "failed":
                 log.warning("ovpn: publish failed: %s", result.get("reason"))
             pushed = set(result.get("files") or [])
-            done_ids = {r.id for r in pending if r.stored_name in pushed}
+            done_ids = {
+                r.id for r in pending
+                if publisher.published_name(r.stored_name) in pushed
+            }
             if done_ids:
                 async with SessionLocal() as session:
                     marked = (await session.execute(
@@ -257,23 +262,47 @@ class OvpnWorker:
                 self.stats["published"] += len(done_ids)
                 self.stats["last_publish"] = utcnow().isoformat()
 
-        # ── phase 2: index — only entries whose blob is live on the remote ────
+        # ── phase 2: the subscription itself — profile *contents*, inlined ────
+        # Read from local storage, so this never depends on what is already on
+        # the remote: the bundle is self-contained and usable the moment it is
+        # published, with no per-file links to resolve.
+        entries: list[tuple[str, str]] = []
+        for r in selected:
+            text = parser.read_local(r.stored_name)
+            if text:
+                entries.append((r.stored_name, text))
+        if entries:
+            index_text, included = publisher.build_index(
+                entries, ovpn_settings.max_index_bytes
+            )
+            index_hash = hashlib.sha256(index_text.encode("utf-8")).hexdigest()
+            if index_hash != await ovpn_settings.get_state(_INDEX_HASH_KEY):
+                result = await publisher.publish({ovpn_settings.index_file: index_text})
+                if result.get("status") == "success":
+                    await ovpn_settings.set_state(_INDEX_HASH_KEY, index_hash)
+                    self.stats["last_publish"] = utcnow().isoformat()
+                    log.info(
+                        "ovpn: subscription published — %d profile(s), %d bytes",
+                        len(included), len(index_text.encode("utf-8")),
+                    )
+                elif result.get("status") == "failed":
+                    log.warning("ovpn: subscription push failed: %s", result.get("reason"))
+
+        # ── phase 3: companion link list — only blobs live on the remote ──────
         live = [r for r in selected if r.published]
         if not live:
             return
-        index_text = publisher.build_index([r.stored_name for r in live])
-        index_hash = hashlib.sha256(index_text.encode("utf-8")).hexdigest()
-        if index_hash == await ovpn_settings.get_state(_INDEX_HASH_KEY):
+        links_text = publisher.build_links([r.stored_name for r in live])
+        links_hash = hashlib.sha256(links_text.encode("utf-8")).hexdigest()
+        if links_hash == await ovpn_settings.get_state(_LINKS_HASH_KEY):
             return
-
-        result = await publisher.publish({ovpn_settings.index_file: index_text})
+        result = await publisher.publish({ovpn_settings.links_file: links_text})
         if result.get("status") != "success":
             if result.get("status") == "failed":
-                log.warning("ovpn: index push failed: %s", result.get("reason"))
+                log.warning("ovpn: links push failed: %s", result.get("reason"))
             return
-        await ovpn_settings.set_state(_INDEX_HASH_KEY, index_hash)
-        self.stats["last_publish"] = utcnow().isoformat()
-        log.info("ovpn: index published with %d entr(ies)", len(live))
+        await ovpn_settings.set_state(_LINKS_HASH_KEY, links_hash)
+        log.info("ovpn: links published with %d entr(ies)", len(live))
 
 
 worker = OvpnWorker()

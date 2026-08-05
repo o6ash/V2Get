@@ -33,9 +33,17 @@ DEFAULTS: dict[str, Any] = {
     # payload under its own path is what makes the new subscription URL
     # independent of active.txt.
     "github_subdir": "ovpn",
+    # index_file is the subscription itself: the *contents* of every healthy
+    # profile concatenated. links_file is the companion list of raw URLs, for
+    # OpenVPN clients that import a profile by URL.
     "index_file": "index.txt",
+    "links_file": "links.txt",
     "max_files_per_push": 20,        # cap commits per cycle
     "max_index_entries": 500,
+    # Safety cap on the inlined bundle. Pushing is size-safe (blob shas are
+    # computed locally, never fetched), so this only guards against a runaway
+    # subscription file that clients would choke on.
+    "max_index_bytes": 5_000_000,
 }
 
 # Internal state keys (never surfaced in the settings API).
@@ -140,12 +148,20 @@ class OvpnSettingsManager:
         return (str(self.get("index_file")) or "index.txt").strip("/") or "index.txt"
 
     @property
+    def links_file(self) -> str:
+        return (str(self.get("links_file")) or "links.txt").strip("/") or "links.txt"
+
+    @property
     def max_files_per_push(self) -> int:
         return max(1, int(self.get("max_files_per_push")))
 
     @property
     def max_index_entries(self) -> int:
         return max(1, int(self.get("max_index_entries")))
+
+    @property
+    def max_index_bytes(self) -> int:
+        return max(10_000, int(self.get("max_index_bytes")))
 
 
 def _encode(value: Any) -> str:
