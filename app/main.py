@@ -76,11 +76,17 @@ async def lifespan(app: FastAPI):
     # long-lived write transaction (SQLite serialises writers).
     from app.npvt import service as npvt_service
     await npvt_service.start()
+    # Isolated .ovpn pipeline — same containment contract as npvt: private
+    # tables/settings/worker, both toggles off by default, failures swallowed.
+    from app.ovpn import service as ovpn_service
+    await ovpn_service.start()
     scheduler.start()
     log.info("Startup complete — dashboard on http://localhost:8080")
     try:
         yield
     finally:
+        from app.ovpn import service as ovpn_service
+        await ovpn_service.stop()
         from app.npvt import service as npvt_service
         await npvt_service.stop()
         await scheduler.stop()
@@ -130,6 +136,10 @@ app.include_router(api_router, dependencies=[Depends(_check_auth)])
 from app.npvt import router as npvt_router  # noqa: E402
 
 app.include_router(npvt_router, prefix="/api", dependencies=[Depends(_check_auth)])
+# Isolated .ovpn module router (own prefix /api/ovpn); shares the auth guard.
+from app.ovpn import router as ovpn_router  # noqa: E402
+
+app.include_router(ovpn_router, prefix="/api", dependencies=[Depends(_check_auth)])
 app.mount("/static", _NoCacheStatic(directory=str(STATIC_DIR)), name="static")
 
 PAGES = {
