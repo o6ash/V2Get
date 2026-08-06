@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-06 02:33
+  type: vless
+  server: 168.119.156.100
+  port: 1234
+  uuid: 83b69fd2-ae76-4a35-8f0e-65b90babcc6f
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-06 14:55
   type: vmess
   server: g.telewebion.ir.varzesh3.com.de
@@ -21,22 +29,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-01 11:34
-  type: vless
-  server: 205.196.81.159
-  port: 443
-  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
-  udp: true
-  network: ws
-  tls: true
-  servername: gbs-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: gbbs-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
 - name: V2Get🛰️ 2026-08-04 01:44
   type: ss
   server: 109.104.154.163
@@ -1095,8 +1087,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 14:55
-  - V2Get🛰️ 2026-08-01 11:34
   - V2Get🛰️ 2026-08-04 01:44
   - 'V2Get🛰️ 2026-08-06 14:55 #2'
   - 'V2Get🛰️ 2026-08-06 14:55 #3'
@@ -1199,8 +1191,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 14:55
-  - V2Get🛰️ 2026-08-01 11:34
   - V2Get🛰️ 2026-08-04 01:44
   - 'V2Get🛰️ 2026-08-06 14:55 #2'
   - 'V2Get🛰️ 2026-08-06 14:55 #3'
