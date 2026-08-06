@@ -14,27 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-06 18:36
   type: vless
+  server: wwww.rarmexa.ir
+  port: 8443
+  uuid: 41164ad3-ea61-c679-1452-f8b2b77b5d1f
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-06 18:36 #2'
+  type: vless
   server: ww.fervian.ir
   port: 8443
   uuid: 41164ad3-ea61-c679-1452-f8b2b77b5d1f
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 140.248.185.253
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-s2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -1082,7 +1075,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-06 18:36
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-06 18:36 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-06 18:35
@@ -1185,7 +1178,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-06 18:36
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-06 18:36 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-06 18:35
