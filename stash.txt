@@ -14,26 +14,21 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-07 20:10
   type: vless
-  server: 31.15.18.92
-  port: 42538
+  server: cf2.coixconqwe1.ir
+  port: 443
   uuid: 34d2250f-548c-4154-9eb9-b5d97d2828f3
   udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:10 #2'
-  type: vless
-  server: 45.13.119.221
-  port: 20513
-  uuid: 34d2250f-548c-4154-9eb9-b5d97d2828f3
-  udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: updates.cdn-apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
-    short-id: 9f3921483225ccf8
-- name: 'V2Get🛰️ 2026-08-07 20:10 #3'
+  servername: france.havray2025.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: france.havray2025.ir
+- name: 'V2Get🛰️ 2026-08-07 20:10 #2'
   type: vless
   server: cf-mtn.coixconqwe1.ir
   port: 443
@@ -49,22 +44,27 @@ proxies:
     path: /?ed=2560
     headers:
       Host: ef.gm121.havray2025.ir
-- name: 'V2Get🛰️ 2026-08-07 20:10 #4'
+- name: 'V2Get🛰️ 2026-08-07 20:10 #3'
   type: vless
-  server: cf2.coixconqwe1.ir
-  port: 443
+  server: 45.13.119.221
+  port: 20513
   uuid: 34d2250f-548c-4154-9eb9-b5d97d2828f3
   udp: true
-  network: ws
+  network: tcp
   tls: true
-  servername: france.havray2025.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: france.havray2025.ir
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
+    short-id: 9f3921483225ccf8
+- name: 'V2Get🛰️ 2026-08-07 20:10 #4'
+  type: vless
+  server: 31.15.18.92
+  port: 42538
+  uuid: 34d2250f-548c-4154-9eb9-b5d97d2828f3
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 20:10 #5'
   type: vless
   server: tom.myona.top
