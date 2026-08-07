@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 12:35
+  type: vless
+  server: 176.96.138.122
+  port: 443
+  uuid: 518a99df-54f6-4f42-819d-b60abd880edf
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kind-vortex.cdn.cachefleet.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg
 - name: V2Get🛰️ 2026-08-07 13:05
   type: vless
   server: 144.31.226.177
@@ -25,21 +38,6 @@ proxies:
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: bbc68cec8bb8d2e3
-- name: V2Get🛰️ 2026-07-30 08:50
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: Nl-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/N-l
-    headers:
-      Host: Ams-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-07-30 15:52
   type: trojan
   server: 172.66.40.99
@@ -777,8 +775,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 12:35
   - V2Get🛰️ 2026-08-07 13:05
-  - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-07-30 15:52
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 08:28
@@ -845,8 +843,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 12:35
   - V2Get🛰️ 2026-08-07 13:05
-  - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-07-30 15:52
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 08:28
