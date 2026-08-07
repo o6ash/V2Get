@@ -12,16 +12,74 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 14:44
+- name: V2Get🛰️ 2026-07-27 21:56
   type: vless
-  server: mypanel.unixzone.us
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  server: 72.56.81.165
+  port: 40443
+  uuid: 4bf5a71c-d726-4585-b095-7396675706d5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU
+    short-id: c84f
+- name: V2Get🛰️ 2026-07-30 11:03
+  type: vless
+  server: 185.155.97.58
+  port: 45176
+  uuid: dc7940e0-6bff-45e3-853d-4007561803c3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.googletagmanager.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: A1Qf_rMG4KDfLzfCK-M5R9qW_0uThfeSosQnv6LBL1M
+    short-id: 8433cb66b6c3ab6d
+- name: V2Get🛰️ 2026-08-04 01:43
+  type: vless
+  server: 159.195.44.159
+  port: 443
+  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 5.oncloudnineservicestreang.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM
+    short-id: 273940fba6ad8250
+- name: V2Get🛰️ 2026-08-06 09:19
+  type: vless
+  server: 172.66.44.97
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: josni.hoyes.cloudns.ch
   ws-opts:
-    path: /
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: V2Get🛰️ 2026-08-07 15:21
+  type: vless
+  server: 173.245.58.75
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  udp: true
+  network: ws
+  tls: true
+  servername: terazhediii.info
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
 - name: V2Get🛰️ 2026-08-07 10:19
   type: vless
   server: 72.56.246.91
@@ -85,21 +143,6 @@ proxies:
     path: /sg-melbi?ed=443
     headers:
       Host: support.zoom.us.yxls.eu.cc.
-- name: V2Get🛰️ 2026-08-05 02:17
-  type: trojan
-  server: 199.232.78.150
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4s-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-07 02:42
   type: trojan
   server: 151.101.56.172
@@ -115,21 +158,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4b-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 151.101.56.8
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-07 09:34
   type: vless
   server: i2.cloud--vpn.site
@@ -144,34 +172,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  udp: true
-  network: ws
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vless
-  server: 159.195.22.155
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 2.oncloudnineservicestreang.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc
-    short-id: d8d3dc6c3ca45dd4
-- name: 'V2Get🛰️ 2026-08-05 02:17 #2'
+- name: V2Get🛰️ 2026-08-05 02:17
   type: trojan
   server: 199.232.78.21
   port: 443
@@ -1079,19 +1080,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 14:44
+  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-07-30 11:03
+  - V2Get🛰️ 2026-08-04 01:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-07 15:21
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 15:11
   - 'V2Get🛰️ 2026-08-07 15:11 #2'
   - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-07 02:42
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-07 09:34
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-05 02:17 #2'
+  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-05 13:54
   - V2Get🛰️ 2026-08-07 13:40
   - V2Get🛰️ 2026-08-07 15:06
@@ -1170,19 +1171,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 14:44
+  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-07-30 11:03
+  - V2Get🛰️ 2026-08-04 01:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-07 15:21
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 15:11
   - 'V2Get🛰️ 2026-08-07 15:11 #2'
   - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-07 02:42
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-07 09:34
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-05 02:17 #2'
+  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-05 13:54
   - V2Get🛰️ 2026-08-07 13:40
   - V2Get🛰️ 2026-08-07 15:06
