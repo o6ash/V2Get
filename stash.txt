@@ -12,20 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-31 13:58
+- name: V2Get🛰️ 2026-08-05 08:28
   type: vless
-  server: 172.64.146.86
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-05 11:19
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-07 14:51
+  type: vless
+  server: task-run-35cd0e-edg.platform-3edcf1.workers.dev
   port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  uuid: b3ade201-eb78-4166-ae94-25b3c8cef935
   udp: true
   network: ws
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  client-fingerprint: chrome
+  servername: taSK-RuN-35cD0E-eDG.PLatforM-3EDCF1.Workers.DEv
   ws-opts:
-    path: /sg-melbi
+    path: /?proxyip=103.29.32.66&ed=2560
     headers:
-      Host: support.zoom.us.yxls.eu.cc
+      Host: tASk-rUN-35cD0e-eDg.pLATForm-3EdCf1.WorkERS.Dev
 - name: V2Get🛰️ 2026-08-07 16:21
   type: vless
   server: 82.40.62.171
@@ -71,18 +87,6 @@ proxies:
       Host: des-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
 - name: V2Get🛰️ 2026-08-07 08:39
   type: vless
-  server: 78.159.245.32
-  port: 28474
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: secure.furrycdn.net
-  alpn:
-  - channel@networld_vpn-channel@networld_vpn-channel@networld_vpn-channel@networld_vpn-channel@networld_vpn-channel@networld_vpn-channel@networld_vpn-channel@networld_vpn
-- name: 'V2Get🛰️ 2026-08-07 08:39 #2'
-  type: vless
   server: 176.98.178.136
   port: 443
   uuid: a95b3155-bc03-4789-b367-944b83be8f86
@@ -94,7 +98,7 @@ proxies:
   reality-opts:
     public-key: M0OIVB0y6CXMfNZ16OfHfWrHktWU9yZ0rgQ3a9-_gUY
     short-id: 4952fc975688bce3
-- name: 'V2Get🛰️ 2026-08-07 08:39 #3'
+- name: 'V2Get🛰️ 2026-08-07 08:39 #2'
   type: vless
   server: 46.243.232.12
   port: 2027
@@ -107,7 +111,7 @@ proxies:
   reality-opts:
     public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
     short-id: 8d3293f0066e129a
-- name: 'V2Get🛰️ 2026-08-07 08:39 #4'
+- name: 'V2Get🛰️ 2026-08-07 08:39 #3'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -119,7 +123,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: 'V2Get🛰️ 2026-08-07 08:39 #5'
+- name: 'V2Get🛰️ 2026-08-07 08:39 #4'
   type: vless
   server: 109.73.193.169
   port: 4100
@@ -825,7 +829,7 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc
   tls: true
-- name: V2Get🛰️ 2026-08-07 14:51
+- name: 'V2Get🛰️ 2026-08-07 14:51 #2'
   type: vless
   server: auth-api-b2cfc2-edg.deploy-agent-1cbbb4.workers.dev
   port: 443
@@ -838,7 +842,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: aUtH-ApI-b2cFc2-EDg.DEPLOY-aGEnt-1CbBB4.wOrkeRs.DEv
-- name: 'V2Get🛰️ 2026-08-07 14:51 #2'
+- name: 'V2Get🛰️ 2026-08-07 14:51 #3'
   type: vless
   server: node-link-f813c3-edg.monitor-hub-303e16.workers.dev
   port: 443
@@ -942,19 +946,6 @@ proxies:
     path: /
     headers:
       Host: SvnTeamChannel.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-07 14:51 #3'
-  type: vless
-  server: task-run-35cd0e-edg.platform-3edcf1.workers.dev
-  port: 443
-  uuid: b3ade201-eb78-4166-ae94-25b3c8cef935
-  udp: true
-  network: ws
-  tls: true
-  servername: taSK-RuN-35cD0E-eDG.PLatforM-3EDCF1.Workers.DEv
-  ws-opts:
-    path: /?proxyip=103.29.32.66&ed=2560
-    headers:
-      Host: tASk-rUN-35cD0e-eDg.pLATForm-3EdCf1.WorkERS.Dev
 - name: 'V2Get🛰️ 2026-08-07 13:55 #3'
   type: vless
   server: www.qarqexo.ir
@@ -1009,7 +1000,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-31 13:58
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-07 14:51
   - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-07 13:40 #2'
@@ -1017,7 +1010,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - 'V2Get🛰️ 2026-08-07 08:39 #3'
   - 'V2Get🛰️ 2026-08-07 08:39 #4'
-  - 'V2Get🛰️ 2026-08-07 08:39 #5'
   - V2Get🛰️ 2026-08-07 10:19
   - 'V2Get🛰️ 2026-08-07 10:19 #2'
   - V2Get🛰️ 2026-08-07 12:20
@@ -1075,8 +1067,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 13:55 #2'
   - V2Get🛰️ 2026-08-07 14:36
   - V2Get🛰️ 2026-08-07 14:40
-  - V2Get🛰️ 2026-08-07 14:51
   - 'V2Get🛰️ 2026-08-07 14:51 #2'
+  - 'V2Get🛰️ 2026-08-07 14:51 #3'
   - 'V2Get🛰️ 2026-08-07 15:36 #3'
   - V2Get🛰️ 2026-08-07 15:21
   - 'V2Get🛰️ 2026-08-07 15:21 #2'
@@ -1084,7 +1076,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 15:06 #3'
   - 'V2Get🛰️ 2026-08-07 15:06 #4'
   - 'V2Get🛰️ 2026-08-07 15:06 #5'
-  - 'V2Get🛰️ 2026-08-07 14:51 #3'
   - 'V2Get🛰️ 2026-08-07 13:55 #3'
   - 'V2Get🛰️ 2026-08-07 14:36 #2'
   - 'V2Get🛰️ 2026-08-07 14:36 #3'
@@ -1095,7 +1086,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-31 13:58
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-07 14:51
   - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-07 13:40 #2'
@@ -1103,7 +1096,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - 'V2Get🛰️ 2026-08-07 08:39 #3'
   - 'V2Get🛰️ 2026-08-07 08:39 #4'
-  - 'V2Get🛰️ 2026-08-07 08:39 #5'
   - V2Get🛰️ 2026-08-07 10:19
   - 'V2Get🛰️ 2026-08-07 10:19 #2'
   - V2Get🛰️ 2026-08-07 12:20
@@ -1161,8 +1153,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 13:55 #2'
   - V2Get🛰️ 2026-08-07 14:36
   - V2Get🛰️ 2026-08-07 14:40
-  - V2Get🛰️ 2026-08-07 14:51
   - 'V2Get🛰️ 2026-08-07 14:51 #2'
+  - 'V2Get🛰️ 2026-08-07 14:51 #3'
   - 'V2Get🛰️ 2026-08-07 15:36 #3'
   - V2Get🛰️ 2026-08-07 15:21
   - 'V2Get🛰️ 2026-08-07 15:21 #2'
@@ -1170,7 +1162,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 15:06 #3'
   - 'V2Get🛰️ 2026-08-07 15:06 #4'
   - 'V2Get🛰️ 2026-08-07 15:06 #5'
-  - 'V2Get🛰️ 2026-08-07 14:51 #3'
   - 'V2Get🛰️ 2026-08-07 13:55 #3'
   - 'V2Get🛰️ 2026-08-07 14:36 #2'
   - 'V2Get🛰️ 2026-08-07 14:36 #3'
