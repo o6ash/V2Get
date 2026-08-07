@@ -12,18 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-06 14:49
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 172.66.44.97
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  servername: po.fastbrokencompony.com
+  ws-opts:
+    path: /
+    headers:
+      Host: po.fastbrokencompony.com
 - name: V2Get🛰️ 2026-07-31 13:58
   type: vless
   server: 172.64.146.86
@@ -1064,7 +1065,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-06 14:49
   - V2Get🛰️ 2026-07-31 13:58
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 08:39
@@ -1167,7 +1168,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-06 14:49
   - V2Get🛰️ 2026-07-31 13:58
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 08:39
