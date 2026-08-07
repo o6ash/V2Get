@@ -12,18 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-07 14:40
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 95.85.224.3
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
   udp: true
-  network: xhttp
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+- name: V2Get🛰️ 2026-08-06 11:44
+  type: vless
+  server: 95.85.228.161
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
+  tls: true
 - name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 64.49.38.6
@@ -47,17 +57,6 @@ proxies:
   tls: true
   servername: fi1.hys.braidx.tech
   client-fingerprint: firefox
-- name: V2Get🛰️ 2026-08-06 11:44
-  type: vless
-  server: 95.85.228.161
-  port: 8443
-  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: grpc
-  tls: true
 - name: V2Get🛰️ 2026-08-07 10:19
   type: vless
   server: 194.87.30.161
@@ -1191,10 +1190,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-07 14:40
+  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 14:36
   - 'V2Get🛰️ 2026-08-07 14:36 #2'
@@ -1296,10 +1295,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-07 14:40
+  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 14:36
   - 'V2Get🛰️ 2026-08-07 14:36 #2'
