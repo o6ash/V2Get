@@ -12,6 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-06 11:44
+  type: vless
+  server: 95.85.228.161
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
+  tls: true
+- name: V2Get🛰️ 2026-08-07 17:21
+  type: vless
+  server: 185.136.12.179
+  port: 443
+  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
+  udp: true
+  network: xhttp
+  tls: true
+  servername: deu683.lackerdeu.org
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-07 13:55
   type: vless
   server: ww.fervian.ir
@@ -44,13 +67,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
 - name: 'V2Get🛰️ 2026-08-07 17:37 #2'
   type: vless
   server: 188.114.97.6
@@ -319,18 +335,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-07 17:21
-  type: vless
-  server: 185.136.12.179
-  port: 443
-  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
-  udp: true
-  network: xhttp
-  tls: true
-  servername: deu683.lackerdeu.org
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-07 17:06
   type: vless
   server: 162.254.86.123
@@ -1091,11 +1095,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-06 11:44
+  - V2Get🛰️ 2026-08-07 17:21
   - V2Get🛰️ 2026-08-07 13:55
   - 'V2Get🛰️ 2026-08-07 13:55 #2'
   - 'V2Get🛰️ 2026-08-07 13:55 #3'
   - V2Get🛰️ 2026-08-07 17:37
-  - V2Get🛰️ 2026-08-06 09:19
   - 'V2Get🛰️ 2026-08-07 17:37 #2'
   - 'V2Get🛰️ 2026-08-07 17:37 #3'
   - 'V2Get🛰️ 2026-08-07 17:37 #4'
@@ -1122,7 +1127,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 17:36 #15'
   - 'V2Get🛰️ 2026-08-07 17:36 #16'
   - V2Get🛰️ 2026-08-07 17:22
-  - V2Get🛰️ 2026-08-07 17:21
   - V2Get🛰️ 2026-08-07 17:06
   - 'V2Get🛰️ 2026-08-07 17:06 #2'
   - 'V2Get🛰️ 2026-08-07 17:06 #3'
@@ -1194,11 +1198,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-06 11:44
+  - V2Get🛰️ 2026-08-07 17:21
   - V2Get🛰️ 2026-08-07 13:55
   - 'V2Get🛰️ 2026-08-07 13:55 #2'
   - 'V2Get🛰️ 2026-08-07 13:55 #3'
   - V2Get🛰️ 2026-08-07 17:37
-  - V2Get🛰️ 2026-08-06 09:19
   - 'V2Get🛰️ 2026-08-07 17:37 #2'
   - 'V2Get🛰️ 2026-08-07 17:37 #3'
   - 'V2Get🛰️ 2026-08-07 17:37 #4'
@@ -1225,7 +1230,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 17:36 #15'
   - 'V2Get🛰️ 2026-08-07 17:36 #16'
   - V2Get🛰️ 2026-08-07 17:22
-  - V2Get🛰️ 2026-08-07 17:21
   - V2Get🛰️ 2026-08-07 17:06
   - 'V2Get🛰️ 2026-08-07 17:06 #2'
   - 'V2Get🛰️ 2026-08-07 17:06 #3'
