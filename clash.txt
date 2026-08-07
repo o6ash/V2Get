@@ -12,7 +12,24 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 10:34
+  type: vless
+  server: 144.31.157.202
+  port: 110
+  uuid: b1d206b2-83b8-4756-aa3d-838242451c8d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 23:09
+  type: vmess
+  server: 172.66.44.97
+  port: 8080
+  uuid: 04dd9cac-fb93-4bd1-84f8-bcf7def016ed
+  alterId: 0
+  cipher: aes-128-gcm
+  udp: true
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-08-07 23:09 #2'
   type: vless
   server: xn--zn-gpa36i.paydar.site
   port: 443
@@ -20,7 +37,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 23:09 #2'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #3'
   type: vless
   server: 5.252.26.220
   port: 4433
@@ -28,7 +45,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 23:09 #3'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #4'
   type: vless
   server: 15.188.231.197
   port: 22222
@@ -50,7 +67,7 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: 'V2Get🛰️ 2026-08-07 23:09 #4'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #5'
   type: vless
   server: 31.15.18.92
   port: 42538
@@ -58,7 +75,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 23:09 #5'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #6'
   type: vless
   server: 45.13.119.221
   port: 20513
@@ -71,7 +88,7 @@ proxies:
   reality-opts:
     public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
     short-id: 9f3921483225ccf8
-- name: 'V2Get🛰️ 2026-08-07 23:09 #6'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #7'
   type: vless
   server: 45.65.112.228
   port: 20513
@@ -84,17 +101,9 @@ proxies:
   reality-opts:
     public-key: CTfSuRE6fUPYVBJGsmOYnP3UketmmTJSQP45OcoGI2k
     short-id: 9f3921483225ccf8
-- name: 'V2Get🛰️ 2026-08-07 23:09 #7'
-  type: vless
-  server: cd3.postshup.ir
-  port: 2086
-  uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #8'
   type: vless
-  server: sadra.mobleamiri10.ir
+  server: cd3.postshup.ir
   port: 2086
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
@@ -102,7 +111,7 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #9'
   type: vless
-  server: cf2.coixconqwe1.ir
+  server: sadra.mobleamiri10.ir
   port: 2086
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
@@ -110,15 +119,15 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #10'
   type: vless
-  server: forallpanel.srtongston.ir
-  port: 8880
+  server: cf2.coixconqwe1.ir
+  port: 2086
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
-  network: httpupgrade
+  network: xhttp
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #11'
   type: vless
-  server: cd3.postshup.ir
+  server: forallpanel.srtongston.ir
   port: 8880
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
@@ -126,7 +135,7 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #12'
   type: vless
-  server: 45.80.111.1
+  server: cd3.postshup.ir
   port: 8880
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
@@ -134,7 +143,7 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #13'
   type: vless
-  server: sourceforge.net
+  server: 45.80.111.1
   port: 8880
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
@@ -142,13 +151,21 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #14'
   type: vless
-  server: cf-mci.coixconqwe1.ir
+  server: sourceforge.net
   port: 8880
   uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
   udp: true
   network: httpupgrade
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-07 23:09 #15'
+  type: vless
+  server: cf-mci.coixconqwe1.ir
+  port: 8880
+  uuid: cd7f7291-aadb-4be8-9829-1923e7aa2440
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-07 23:09 #16'
   type: vless
   server: 151.101.56.6
   port: 443
@@ -158,7 +175,7 @@ proxies:
   tls: true
   servername: ssl.fastly.com
   client-fingerprint: chrome
-- name: 'V2Get🛰️ 2026-08-07 23:09 #16'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #17'
   type: vless
   server: cf-mtn.coixconqwe1.ir
   port: 443
@@ -174,7 +191,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: ef.gm121.havray2025.ir
-- name: 'V2Get🛰️ 2026-08-07 23:09 #17'
+- name: 'V2Get🛰️ 2026-08-07 23:09 #18'
   type: vless
   server: cf2.coixconqwe1.ir
   port: 443
@@ -972,29 +989,13 @@ proxies:
   - http/1.1
 - name: 'V2Get🛰️ 2026-08-07 20:09 #2'
   type: vless
-  server: 164.90.228.28
-  port: 49237
-  uuid: b8684c70-5f07-4aa3-8b16-d6bb168e669e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #3'
-  type: vless
-  server: 159.65.26.76
-  port: 24322
-  uuid: 7dfe989b-176e-48df-83ac-c77018b43f61
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #4'
-  type: vless
   server: 165.227.140.237
   port: 47063
   uuid: d550a7cb-3a70-4b1a-8321-79347439f2a3
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #5'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #3'
   type: vless
   server: 68.183.37.201
   port: 50425
@@ -1002,7 +1003,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #6'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #4'
   type: vless
   server: 142.93.170.6
   port: 24568
@@ -1010,7 +1011,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #7'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #5'
   type: vless
   server: 46.101.148.173
   port: 24322
@@ -1018,7 +1019,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #8'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #6'
   type: vless
   server: 161.35.164.145
   port: 17517
@@ -1032,11 +1033,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 23:09
   - 'V2Get🛰️ 2026-08-07 23:09 #2'
   - 'V2Get🛰️ 2026-08-07 23:09 #3'
-  - V2Get🛰️ 2026-08-07 22:10
   - 'V2Get🛰️ 2026-08-07 23:09 #4'
+  - V2Get🛰️ 2026-08-07 22:10
   - 'V2Get🛰️ 2026-08-07 23:09 #5'
   - 'V2Get🛰️ 2026-08-07 23:09 #6'
   - 'V2Get🛰️ 2026-08-07 23:09 #7'
@@ -1050,6 +1052,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 23:09 #15'
   - 'V2Get🛰️ 2026-08-07 23:09 #16'
   - 'V2Get🛰️ 2026-08-07 23:09 #17'
+  - 'V2Get🛰️ 2026-08-07 23:09 #18'
   - 'V2Get🛰️ 2026-08-07 22:10 #2'
   - 'V2Get🛰️ 2026-08-07 22:10 #3'
   - 'V2Get🛰️ 2026-08-07 22:10 #4'
@@ -1126,19 +1129,18 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 20:09 #4'
   - 'V2Get🛰️ 2026-08-07 20:09 #5'
   - 'V2Get🛰️ 2026-08-07 20:09 #6'
-  - 'V2Get🛰️ 2026-08-07 20:09 #7'
-  - 'V2Get🛰️ 2026-08-07 20:09 #8'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 23:09
   - 'V2Get🛰️ 2026-08-07 23:09 #2'
   - 'V2Get🛰️ 2026-08-07 23:09 #3'
-  - V2Get🛰️ 2026-08-07 22:10
   - 'V2Get🛰️ 2026-08-07 23:09 #4'
+  - V2Get🛰️ 2026-08-07 22:10
   - 'V2Get🛰️ 2026-08-07 23:09 #5'
   - 'V2Get🛰️ 2026-08-07 23:09 #6'
   - 'V2Get🛰️ 2026-08-07 23:09 #7'
@@ -1152,6 +1154,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 23:09 #15'
   - 'V2Get🛰️ 2026-08-07 23:09 #16'
   - 'V2Get🛰️ 2026-08-07 23:09 #17'
+  - 'V2Get🛰️ 2026-08-07 23:09 #18'
   - 'V2Get🛰️ 2026-08-07 22:10 #2'
   - 'V2Get🛰️ 2026-08-07 22:10 #3'
   - 'V2Get🛰️ 2026-08-07 22:10 #4'
@@ -1228,8 +1231,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 20:09 #4'
   - 'V2Get🛰️ 2026-08-07 20:09 #5'
   - 'V2Get🛰️ 2026-08-07 20:09 #6'
-  - 'V2Get🛰️ 2026-08-07 20:09 #7'
-  - 'V2Get🛰️ 2026-08-07 20:09 #8'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
