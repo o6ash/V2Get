@@ -12,24 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 18:05
-  type: vless
-  server: 104.18.1.1
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  udp: true
-  network: ws
-  tls: true
-  servername: music1000.melobitmusic1.ir
-  client-fingerprint: ios
-  alpn:
-  - h3
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: music1000.melobitmusic1.ir
 - name: V2Get🛰️ 2026-08-07 08:40
+  type: vless
+  server: 77.67.91.211
+  port: 550
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-07 08:40 #2'
   type: vless
   server: 185.60.59.12
   port: 2525
@@ -40,7 +31,7 @@ proxies:
   servername: panpro.1tools.ir
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-07 08:40 #2'
+- name: 'V2Get🛰️ 2026-08-07 08:40 #3'
   type: vless
   server: pronet.h9.al
   port: 2053
@@ -54,7 +45,7 @@ proxies:
     path: /
     headers:
       Host: pptrg.mianifa.com
-- name: 'V2Get🛰️ 2026-08-07 08:40 #3'
+- name: 'V2Get🛰️ 2026-08-07 08:40 #4'
   type: vless
   server: 46.29.34.13
   port: 2525
@@ -1003,10 +994,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 18:05
   - V2Get🛰️ 2026-08-07 08:40
   - 'V2Get🛰️ 2026-08-07 08:40 #2'
   - 'V2Get🛰️ 2026-08-07 08:40 #3'
+  - 'V2Get🛰️ 2026-08-07 08:40 #4'
   - V2Get🛰️ 2026-08-07 08:39
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - 'V2Get🛰️ 2026-08-07 08:39 #3'
@@ -1095,10 +1086,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 18:05
   - V2Get🛰️ 2026-08-07 08:40
   - 'V2Get🛰️ 2026-08-07 08:40 #2'
   - 'V2Get🛰️ 2026-08-07 08:40 #3'
+  - 'V2Get🛰️ 2026-08-07 08:40 #4'
   - V2Get🛰️ 2026-08-07 08:39
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - 'V2Get🛰️ 2026-08-07 08:39 #3'
