@@ -12,21 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 02:44
+- name: V2Get🛰️ 2026-08-08 00:10
   type: vless
-  server: 88.216.220.87
-  port: 443
-  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+  server: speedtest.net
+  port: 80
+  uuid: 4efe093e-a21e-42f3-8e8d-eb49fe5d844f
   udp: true
-  network: grpc
-  tls: true
-  servername: api.noneok.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
-    short-id: 1ea59febb8d4fc8e
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: SvnTeamChannel.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-07 15:06
   type: vless
   server: 192.142.12.175
@@ -55,7 +52,7 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: V2Get🛰️ 2026-08-08 00:10
+- name: 'V2Get🛰️ 2026-08-08 00:10 #2'
   type: vless
   server: 82.40.62.39
   port: 23231
@@ -1022,10 +1019,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 02:44
+  - V2Get🛰️ 2026-08-08 00:10
   - V2Get🛰️ 2026-08-07 15:06
   - V2Get🛰️ 2026-08-07 22:10
-  - V2Get🛰️ 2026-08-08 00:10
+  - 'V2Get🛰️ 2026-08-08 00:10 #2'
   - V2Get🛰️ 2026-08-07 17:37
   - V2Get🛰️ 2026-08-07 23:09
   - V2Get🛰️ 2026-08-07 23:10
@@ -1122,10 +1119,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 02:44
+  - V2Get🛰️ 2026-08-08 00:10
   - V2Get🛰️ 2026-08-07 15:06
   - V2Get🛰️ 2026-08-07 22:10
-  - V2Get🛰️ 2026-08-08 00:10
+  - 'V2Get🛰️ 2026-08-08 00:10 #2'
   - V2Get🛰️ 2026-08-07 17:37
   - V2Get🛰️ 2026-08-07 23:09
   - V2Get🛰️ 2026-08-07 23:10
