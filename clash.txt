@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 23:10
+  type: vless
+  server: 104.168.90.119
+  port: 443
+  uuid: 4fad9600-a7ec-47bd-b791-372c4b4fb792
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: XrBarE7hmasc6Bz89-tRcaBtjsY5IZWaJoUTu5swrQo
+    short-id: aad01fc116a8425c
+- name: 'V2Get🛰️ 2026-08-07 23:10 #2'
+  type: vless
+  server: 87.76.154.21
+  port: 17262
+  uuid: 8d1bef3f-e128-428f-b6a1-d11b2010eed4
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-07 23:10 #3'
+  type: vless
+  server: 87.76.154.18
+  port: 16506
+  uuid: 411279b4-233f-4abe-950c-956b6ffc921b
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 22:09
   type: trojan
   server: 3-2--1-2-3-4-4-4--42_2_2_2_2_2_1_1_2.poki-pakipon.ir
@@ -27,14 +57,6 @@ proxies:
   password: uEsYJa9RCA
   udp: true
   sni: www.icloud.com
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-07 10:34
-  type: vless
-  server: 144.31.157.202
-  port: 110
-  uuid: b1d206b2-83b8-4756-aa3d-838242451c8d
-  udp: true
-  network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 23:09
   type: vmess
@@ -989,29 +1011,13 @@ proxies:
   - http/1.1
 - name: 'V2Get🛰️ 2026-08-07 20:09 #2'
   type: vless
-  server: 165.227.140.237
-  port: 47063
-  uuid: d550a7cb-3a70-4b1a-8321-79347439f2a3
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #3'
-  type: vless
-  server: 68.183.37.201
-  port: 50425
-  uuid: 9d03883e-67e5-408b-80f1-0be12f976979
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #4'
-  type: vless
   server: 142.93.170.6
   port: 24568
   uuid: d7c4acc4-a577-44f5-a47b-5850996db408
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #5'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #3'
   type: vless
   server: 46.101.148.173
   port: 24322
@@ -1019,7 +1025,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-07 20:09 #6'
+- name: 'V2Get🛰️ 2026-08-07 20:09 #4'
   type: vless
   server: 161.35.164.145
   port: 17517
@@ -1033,9 +1039,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 23:10
+  - 'V2Get🛰️ 2026-08-07 23:10 #2'
+  - 'V2Get🛰️ 2026-08-07 23:10 #3'
   - V2Get🛰️ 2026-08-07 22:09
   - 'V2Get🛰️ 2026-08-07 22:09 #2'
-  - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 23:09
   - 'V2Get🛰️ 2026-08-07 23:09 #2'
   - 'V2Get🛰️ 2026-08-07 23:09 #3'
@@ -1127,17 +1135,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 20:09 #2'
   - 'V2Get🛰️ 2026-08-07 20:09 #3'
   - 'V2Get🛰️ 2026-08-07 20:09 #4'
-  - 'V2Get🛰️ 2026-08-07 20:09 #5'
-  - 'V2Get🛰️ 2026-08-07 20:09 #6'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 23:10
+  - 'V2Get🛰️ 2026-08-07 23:10 #2'
+  - 'V2Get🛰️ 2026-08-07 23:10 #3'
   - V2Get🛰️ 2026-08-07 22:09
   - 'V2Get🛰️ 2026-08-07 22:09 #2'
-  - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 23:09
   - 'V2Get🛰️ 2026-08-07 23:09 #2'
   - 'V2Get🛰️ 2026-08-07 23:09 #3'
@@ -1229,8 +1237,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-07 20:09 #2'
   - 'V2Get🛰️ 2026-08-07 20:09 #3'
   - 'V2Get🛰️ 2026-08-07 20:09 #4'
-  - 'V2Get🛰️ 2026-08-07 20:09 #5'
-  - 'V2Get🛰️ 2026-08-07 20:09 #6'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
