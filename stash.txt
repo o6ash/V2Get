@@ -12,6 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-05 08:28
+  type: vless
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-05 11:19
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-08-07 10:34
   type: vless
   server: 144.31.157.202
@@ -20,33 +37,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  udp: true
-  network: ws
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vless
-  server: 159.195.22.155
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 2.oncloudnineservicestreang.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc
-    short-id: d8d3dc6c3ca45dd4
 - name: V2Get🛰️ 2026-08-07 02:44
   type: vless
   server: time.is
@@ -965,9 +955,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-07 10:34
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 02:44
   - 'V2Get🛰️ 2026-08-07 10:34 #2'
   - V2Get🛰️ 2026-08-07 10:19
@@ -1063,9 +1053,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-07 10:34
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 02:44
   - 'V2Get🛰️ 2026-08-07 10:34 #2'
   - V2Get🛰️ 2026-08-07 10:19
