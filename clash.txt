@@ -12,21 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-30 08:50
-  type: trojan
-  server: 188.114.96.3
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
   port: 443
-  password: MiTiVPN
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  sni: Nl-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/N-l
-    headers:
-      Host: Ams-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
+  - h2
 - name: V2Get🛰️ 2026-08-07 16:07
   type: trojan
   server: 3-2--1-2-3-4-4-4--42_2_2_2_2_2_1_1_2.poki-pakipon.ir
@@ -1174,7 +1171,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-30 08:50
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-07 16:07
   - 'V2Get🛰️ 2026-08-07 16:07 #2'
   - 'V2Get🛰️ 2026-08-07 16:07 #3'
@@ -1276,7 +1273,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-30 08:50
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-07 16:07
   - 'V2Get🛰️ 2026-08-07 16:07 #2'
   - 'V2Get🛰️ 2026-08-07 16:07 #3'
