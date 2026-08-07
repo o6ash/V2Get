@@ -12,6 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 10:19
+  type: vless
+  server: 194.87.30.161
+  port: 22647
+  uuid: ffa289e7-a058-493a-b234-3db1f26378d7
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-07 13:10
+  type: vless
+  server: 144.31.2.48
+  port: 443
+  uuid: 64d997dd-fa2d-450b-b736-beada89ed9aa
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.convert-flow.net
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+- name: 'V2Get🛰️ 2026-08-07 13:10 #2'
+  type: vless
+  server: 65.109.208.236
+  port: 26795
+  uuid: c896406b-ccc4-4c37-8b8c-15964f32a9a2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 02:44
   type: vless
   server: 88.216.220.87
@@ -27,43 +59,6 @@ proxies:
     short-id: 1ea59febb8d4fc8e
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: V2Get🛰️ 2026-07-31 13:53
-  type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: mypanel.unixzone.us
-- name: V2Get🛰️ 2026-08-04 01:43
-  type: vless
-  server: 159.195.44.159
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 5.oncloudnineservicestreang.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM
-    short-id: 273940fba6ad8250
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vless
-  server: 185.39.204.155
-  port: 8443
-  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: grpc
-  tls: true
 - name: V2Get🛰️ 2026-08-05 13:55
   type: vless
   server: nl4.levikogjgfdd.ir
@@ -1140,10 +1135,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 10:19
+  - V2Get🛰️ 2026-08-07 13:10
+  - 'V2Get🛰️ 2026-08-07 13:10 #2'
   - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:43
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-05 13:55
   - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 09:19
@@ -1237,10 +1232,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 10:19
+  - V2Get🛰️ 2026-08-07 13:10
+  - 'V2Get🛰️ 2026-08-07 13:10 #2'
   - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:43
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-05 13:55
   - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 09:19
