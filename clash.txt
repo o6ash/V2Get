@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 20:10
+  type: vless
+  server: 204.168.196.173
+  port: 6985
+  uuid: 832e0199-9614-4d74-a7ba-1dca5453dab5
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-08 21:11
+  type: vless
+  server: i4.cloud--vpn.site
+  port: 443
+  uuid: 92f25a19-c763-4173-cac1-81596eeb17d6
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-07 08:40
   type: trojan
   server: 188.114.97.7
@@ -504,28 +526,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-08 20:10
-  type: vless
-  server: 204.168.196.173
-  port: 6985
-  uuid: 832e0199-9614-4d74-a7ba-1dca5453dab5
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-08 21:11
-  type: vless
-  server: i4.cloud--vpn.site
-  port: 443
-  uuid: 92f25a19-c763-4173-cac1-81596eeb17d6
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: 'V2Get🛰️ 2026-08-08 22:11 #24'
   type: trojan
   server: hkdcrtc-e.catcat321.com
@@ -1198,6 +1198,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 20:10
+  - V2Get🛰️ 2026-08-08 21:11
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 21:09
@@ -1238,8 +1240,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-08 20:11 #2'
   - V2Get🛰️ 2026-08-08 22:10
   - 'V2Get🛰️ 2026-08-08 22:11 #23'
-  - V2Get🛰️ 2026-08-08 20:10
-  - V2Get🛰️ 2026-08-08 21:11
   - 'V2Get🛰️ 2026-08-08 22:11 #24'
   - 'V2Get🛰️ 2026-08-08 22:11 #25'
   - 'V2Get🛰️ 2026-08-08 22:11 #26'
@@ -1304,6 +1304,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 20:10
+  - V2Get🛰️ 2026-08-08 21:11
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-07 10:34
   - V2Get🛰️ 2026-08-07 21:09
@@ -1344,8 +1346,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-08 20:11 #2'
   - V2Get🛰️ 2026-08-08 22:10
   - 'V2Get🛰️ 2026-08-08 22:11 #23'
-  - V2Get🛰️ 2026-08-08 20:10
-  - V2Get🛰️ 2026-08-08 21:11
   - 'V2Get🛰️ 2026-08-08 22:11 #24'
   - 'V2Get🛰️ 2026-08-08 22:11 #25'
   - 'V2Get🛰️ 2026-08-08 22:11 #26'
