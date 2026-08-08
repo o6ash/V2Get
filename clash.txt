@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 17:06
+  type: vless
+  server: 60.249.101.14
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-08 05:09
   type: vless
   server: 8.39.214.223
@@ -383,20 +391,6 @@ proxies:
     path: /
     headers:
       Host: fr.roomode.ir
-- name: V2Get🛰️ 2026-08-07 21:09
-  type: vless
-  server: i3.cloud--vpn.site
-  port: 443
-  uuid: f04c31f7-cfab-4824-d167-4137d836ea82
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: V2Get🛰️ 2026-08-08 01:10
   type: vmess
   server: 65.109.208.236
@@ -1122,6 +1116,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 17:06
   - V2Get🛰️ 2026-08-08 05:09
   - 'V2Get🛰️ 2026-08-08 05:09 #2'
   - 'V2Get🛰️ 2026-08-08 05:09 #3'
@@ -1153,7 +1148,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-08 02:09 #15'
   - 'V2Get🛰️ 2026-08-08 02:09 #16'
   - 'V2Get🛰️ 2026-08-08 02:09 #17'
-  - V2Get🛰️ 2026-08-07 21:09
   - V2Get🛰️ 2026-08-08 01:10
   - 'V2Get🛰️ 2026-08-08 01:10 #2'
   - 'V2Get🛰️ 2026-08-08 01:10 #3'
@@ -1225,6 +1219,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 17:06
   - V2Get🛰️ 2026-08-08 05:09
   - 'V2Get🛰️ 2026-08-08 05:09 #2'
   - 'V2Get🛰️ 2026-08-08 05:09 #3'
@@ -1256,7 +1251,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-08 02:09 #15'
   - 'V2Get🛰️ 2026-08-08 02:09 #16'
   - 'V2Get🛰️ 2026-08-08 02:09 #17'
-  - V2Get🛰️ 2026-08-07 21:09
   - V2Get🛰️ 2026-08-08 01:10
   - 'V2Get🛰️ 2026-08-08 01:10 #2'
   - 'V2Get🛰️ 2026-08-08 01:10 #3'
