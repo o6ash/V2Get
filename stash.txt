@@ -12,7 +12,51 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 12:10
+  type: vless
+  server: 31.57.228.37
+  port: 50303
+  uuid: b4469373-b425-4902-80d4-a00e00ada7de
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 'V2Get🛰️ 2026-08-08 12:10 #2'
+  type: vless
+  server: 178.104.67.108
+  port: 50303
+  uuid: b4469373-b425-4902-80d4-a00e00ada7de
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 'V2Get🛰️ 2026-08-08 12:10 #3'
+  type: vless
+  server: 65.108.156.124
+  port: 50303
+  uuid: b4469373-b425-4902-80d4-a00e00ada7de
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 - name: V2Get🛰️ 2026-08-08 16:10
+  type: vless
+  server: 159.89.108.78
+  port: 41556
+  uuid: 7e1501d5-36e5-4753-8740-3e38a75b1052
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-08 16:10 #2'
   type: vless
   server: 104.18.93.175
   port: 8443
@@ -26,43 +70,6 @@ proxies:
     path: /
     headers:
       Host: nova-luna-node-d1c5.nova-55a206.workers.dev
-- name: V2Get🛰️ 2026-07-31 13:58
-  type: vless
-  server: images.netraidly.ru
-  port: 40443
-  uuid: 69a74770-7152-4a27-bef0-2615ca16e1b1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: D0AQp0cWaQR55Q-zPwp6__AxN9CoT9neZj0UzlNcLCk
-    short-id: bd72
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-04 01:44 #2'
-  type: vless
-  server: 159.195.22.155
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 2.oncloudnineservicestreang.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Mg3ZxHNUFbX96q1HpS3WReeM7rnhEsXXtlEzxALeTDc
-    short-id: d8d3dc6c3ca45dd4
 - name: V2Get🛰️ 2026-08-05 11:19
   type: vmess
   server: 82.198.246.37
@@ -130,14 +137,6 @@ proxies:
     short-id: 1ea59febb8d4fc8e
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: 'V2Get🛰️ 2026-08-08 16:10 #2'
-  type: vless
-  server: 159.89.108.78
-  port: 41556
-  uuid: 7e1501d5-36e5-4753-8740-3e38a75b1052
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-08 15:10
   type: vless
   server: 164.92.172.246
@@ -825,16 +824,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 12:10
+  - 'V2Get🛰️ 2026-08-08 12:10 #2'
+  - 'V2Get🛰️ 2026-08-08 12:10 #3'
   - V2Get🛰️ 2026-08-08 16:10
-  - V2Get🛰️ 2026-07-31 13:58
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
+  - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-05 13:54
   - V2Get🛰️ 2026-08-05 13:59
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 14:11
   - 'V2Get🛰️ 2026-08-08 16:10 #3'
@@ -903,16 +902,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 12:10
+  - 'V2Get🛰️ 2026-08-08 12:10 #2'
+  - 'V2Get🛰️ 2026-08-08 12:10 #3'
   - V2Get🛰️ 2026-08-08 16:10
-  - V2Get🛰️ 2026-07-31 13:58
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
+  - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-05 13:54
   - V2Get🛰️ 2026-08-05 13:59
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 14:11
   - 'V2Get🛰️ 2026-08-08 16:10 #3'
