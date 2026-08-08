@@ -12,18 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-08 12:10
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 63.184.103.244
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 22:10
   type: vless
   server: 157.90.165.181
@@ -1171,7 +1167,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-08 12:10
   - V2Get🛰️ 2026-08-07 22:10
   - V2Get🛰️ 2026-08-08 01:09
   - 'V2Get🛰️ 2026-08-08 01:09 #2'
@@ -1276,7 +1272,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-08 12:10
   - V2Get🛰️ 2026-08-07 22:10
   - V2Get🛰️ 2026-08-08 01:09
   - 'V2Get🛰️ 2026-08-08 01:09 #2'
