@@ -12,21 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
+- name: V2Get🛰️ 2026-08-08 17:11
+  type: vless
+  server: 31.43.191.39
   port: 443
-  password: MiTiVPN
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
   udp: true
-  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
-    headers:
-      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: luminous-vortex.cdn.cachefleet.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M
 - name: V2Get🛰️ 2026-07-28 11:43
   type: vless
   server: static.lotussec.com
@@ -1032,7 +1030,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-08 17:11
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-08-05 08:28
@@ -1132,7 +1130,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-08 17:11
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-08-05 08:28
