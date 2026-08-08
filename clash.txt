@@ -12,7 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-29 14:50
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: V2Get🛰️ 2026-08-08 17:10
+  type: vless
+  server: 104.17.108.1
+  port: 443
+  uuid: 8376b8b2-e3dd-4d81-bce6-436eb3ba1022
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ab.xonira.ir
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-08 17:10 #2'
   type: vless
   server: app-e5ab2a-87f809.nsjnssks7-7cad.workers.dev
   port: 443
@@ -26,7 +52,7 @@ proxies:
     path: /
     headers:
       Host: app-e5ab2a-87f809.nsjnssks7-7cad.workers.dev
-- name: 'V2Get🛰️ 2026-08-08 17:10 #2'
+- name: 'V2Get🛰️ 2026-08-08 17:10 #3'
   type: vless
   server: app-4c0630-c4fa0b.ndnnsz0-5d3b.workers.dev
   port: 443
@@ -40,7 +66,7 @@ proxies:
     path: /
     headers:
       Host: app-4c0630-c4fa0b.ndnnsz0-5d3b.workers.dev
-- name: 'V2Get🛰️ 2026-08-08 17:10 #3'
+- name: 'V2Get🛰️ 2026-08-08 17:10 #4'
   type: vless
   server: 150.241.101.231
   port: 443
@@ -52,7 +78,7 @@ proxies:
   servername: fi1-cosmostechnology.ru
   reality-opts:
     public-key: N0QyBaacGqSpRv_Ib4jsSx5A1kfE8IE1w0HcDB5w1BE
-- name: 'V2Get🛰️ 2026-08-08 17:10 #4'
+- name: 'V2Get🛰️ 2026-08-08 17:10 #5'
   type: vless
   server: 144.31.213.172
   port: 443
@@ -135,28 +161,6 @@ proxies:
     path: /
     headers:
       Host: nova-luna-node-d1c5.nova-55a206.workers.dev
-- name: V2Get🛰️ 2026-08-07 02:44
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 'V2Get🛰️ 2026-08-07 02:44 #2'
-  type: vless
-  server: 88.216.220.87
-  port: 443
-  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-  udp: true
-  network: grpc
-  tls: true
-  servername: api.noneok.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
-    short-id: 1ea59febb8d4fc8e
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
 - name: V2Get🛰️ 2026-08-08 15:10
   type: vless
   server: 164.92.172.246
@@ -1024,18 +1028,18 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-08 17:10
   - 'V2Get🛰️ 2026-08-08 17:10 #2'
   - 'V2Get🛰️ 2026-08-08 17:10 #3'
   - 'V2Get🛰️ 2026-08-08 17:10 #4'
+  - 'V2Get🛰️ 2026-08-08 17:10 #5'
   - V2Get🛰️ 2026-08-08 16:10
   - V2Get🛰️ 2026-08-08 12:10
   - 'V2Get🛰️ 2026-08-08 12:10 #2'
   - 'V2Get🛰️ 2026-08-08 12:10 #3'
   - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - 'V2Get🛰️ 2026-08-08 16:10 #3'
-  - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-07 02:44 #2'
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 14:11
   - 'V2Get🛰️ 2026-08-08 16:10 #4'
@@ -1124,18 +1128,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-08 17:10
   - 'V2Get🛰️ 2026-08-08 17:10 #2'
   - 'V2Get🛰️ 2026-08-08 17:10 #3'
   - 'V2Get🛰️ 2026-08-08 17:10 #4'
+  - 'V2Get🛰️ 2026-08-08 17:10 #5'
   - V2Get🛰️ 2026-08-08 16:10
   - V2Get🛰️ 2026-08-08 12:10
   - 'V2Get🛰️ 2026-08-08 12:10 #2'
   - 'V2Get🛰️ 2026-08-08 12:10 #3'
   - 'V2Get🛰️ 2026-08-08 16:10 #2'
   - 'V2Get🛰️ 2026-08-08 16:10 #3'
-  - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-07 02:44 #2'
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 14:11
   - 'V2Get🛰️ 2026-08-08 16:10 #4'
