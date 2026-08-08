@@ -12,32 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-31 13:53
+- name: V2Get🛰️ 2026-08-06 09:19
   type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  server: 170.168.97.5
+  port: 8443
+  uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
   udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: mypanel.unixzone.us
-- name: V2Get🛰️ 2026-08-04 01:43
-  type: vless
-  server: 130.107.73.148
-  port: 41373
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: google.com
+  servername: download.nvidia.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  grpc-opts:
+    grpc-service-name: TunService
+- name: V2Get🛰️ 2026-08-06 11:44
+  type: vless
+  server: 95.85.228.161
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
+  tls: true
 - name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 169.40.42.184
@@ -991,8 +990,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 08:28
   - 'V2Get🛰️ 2026-08-05 08:28 #2'
@@ -1083,8 +1082,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-06 11:44
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 08:28
   - 'V2Get🛰️ 2026-08-05 08:28 #2'
