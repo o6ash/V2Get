@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 06:09
+  type: vless
+  server: 165.245.216.102
+  port: 18509
+  uuid: c65d6f2f-b082-4e3d-8f4a-c3742487779d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-08 12:10
   type: vless
   server: 164.90.185.67
@@ -29,20 +37,6 @@ proxies:
   network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-03 13:35 #2'
   type: vless
   server: 159.195.45.129
   port: 443
@@ -968,10 +962,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 06:09
   - V2Get🛰️ 2026-08-08 12:10
   - V2Get🛰️ 2026-08-08 10:10
   - V2Get🛰️ 2026-08-03 13:35
-  - 'V2Get🛰️ 2026-08-03 13:35 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 11:20
@@ -1053,10 +1047,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 06:09
   - V2Get🛰️ 2026-08-08 12:10
   - V2Get🛰️ 2026-08-08 10:10
   - V2Get🛰️ 2026-08-03 13:35
-  - 'V2Get🛰️ 2026-08-03 13:35 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 11:20
