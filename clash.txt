@@ -12,19 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 09:19
+- name: V2Get🛰️ 2026-08-08 17:11
   type: vless
-  server: germanag.online
+  server: x4g-production-4b53.up.railway.app
   port: 443
-  uuid: dd8b69d3-5ef6-418c-a94c-2f4f37d88a7f
+  uuid: 95e1c058-36c7-dd19-7944-0a5f31e6d9cf
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: germanag.online
+  servername: x4g-production-4b53.up.railway.app
   client-fingerprint: chrome
-  reality-opts:
-    public-key: dGF9csm2FGTtmgL5ZOxfU_wOMVilKOVq60lwD7F-MVw
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/95e1c058-36c7-dd19-7944-0a5f31e6d9cf
+    headers:
+      Host: x4g-production-4b53.up.railway.app
 - name: V2Get🛰️ 2026-08-07 16:21
   type: vless
   server: 91.221.116.82
@@ -1046,7 +1049,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-08 17:11
   - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-09 01:10
@@ -1149,7 +1152,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-08 17:11
   - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-09 01:10
