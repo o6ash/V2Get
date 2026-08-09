@@ -14,6 +14,22 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-09 09:11
   type: vless
+  server: x4g-production-60a3.up.railway.app
+  port: 443
+  uuid: 36b490e3-116f-93f1-5465-be82390f72f3
+  udp: true
+  network: ws
+  tls: true
+  servername: x4g-production-60a3.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/36b490e3-116f-93f1-5465-be82390f72f3
+    headers:
+      Host: x4g-production-60a3.up.railway.app
+- name: 'V2Get🛰️ 2026-08-09 09:11 #2'
+  type: vless
   server: line-vpn-production-53b6.up.railway.app
   port: 443
   uuid: 3ee980ea-fb54-dbb7-6b2c-25ba721bea80
@@ -42,21 +58,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-07-30 08:50
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: Nl-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/N-l
-    headers:
-      Host: Ams-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-08-06 17:00
   type: vless
   server: cf.levikogjgfdd.ir
@@ -1217,8 +1218,8 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-09 09:11
+  - 'V2Get🛰️ 2026-08-09 09:11 #2'
   - V2Get🛰️ 2026-08-08 21:11
-  - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-08-06 17:00
   - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-07 13:40 #2'
@@ -1319,8 +1320,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-09 09:11
+  - 'V2Get🛰️ 2026-08-09 09:11 #2'
   - V2Get🛰️ 2026-08-08 21:11
-  - V2Get🛰️ 2026-07-30 08:50
   - V2Get🛰️ 2026-08-06 17:00
   - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-07 13:40 #2'
