@@ -12,15 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-09 20:11
-  type: vless
-  server: wwww.rarmexa.ir
-  port: 8443
-  uuid: 3c56d077-9d35-0c09-c51a-ee6bd72f0872
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-10 00:12
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 0f350a5d-e801-4eca-a1b9-abe9798ad48a
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-10 00:12 #2'
   type: vmess
   server: esc.georkup.ir
   port: 2087
@@ -998,8 +1003,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-09 20:11
   - V2Get🛰️ 2026-08-10 00:12
+  - 'V2Get🛰️ 2026-08-10 00:12 #2'
   - V2Get🛰️ 2026-08-10 00:11
   - 'V2Get🛰️ 2026-08-10 00:11 #2'
   - 'V2Get🛰️ 2026-08-10 00:11 #3'
@@ -1086,8 +1091,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-09 20:11
   - V2Get🛰️ 2026-08-10 00:12
+  - 'V2Get🛰️ 2026-08-10 00:12 #2'
   - V2Get🛰️ 2026-08-10 00:11
   - 'V2Get🛰️ 2026-08-10 00:11 #2'
   - 'V2Get🛰️ 2026-08-10 00:11 #3'
