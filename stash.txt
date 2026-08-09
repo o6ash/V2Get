@@ -12,15 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-09 20:11
+  type: vless
+  server: 141.227.170.192
+  port: 8443
+  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sellflow.org
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 - name: V2Get🛰️ 2026-08-05 11:19
   type: vmess
   server: 82.198.246.37
@@ -990,7 +993,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-09 20:11
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-09 20:12
@@ -1080,7 +1083,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-09 20:11
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-09 20:12
