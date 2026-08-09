@@ -14,6 +14,14 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-09 14:11
   type: vless
+  server: 18.197.75.14
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-09 14:11 #2'
+  type: vless
   server: 37.48.89.17
   port: 49001
   uuid: 41784775-8846-4579-9d9d-9ad6ea802e2e
@@ -25,19 +33,6 @@ proxies:
   reality-opts:
     public-key: _LbLyj6OynSREglFpkhdrxVmh_bf9p60uTEWfQbtUWo
     short-id: 1a6b1f9d0e
-- name: V2Get🛰️ 2026-08-07 21:09
-  type: vless
-  server: 45.143.201.8
-  port: 443
-  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: hasty-dolphin.cdn.cachefleet.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M
 - name: V2Get🛰️ 2026-08-09 03:10
   type: vless
   server: ukulukdoeid.saymaynamelawman.com
@@ -1159,7 +1154,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-09 14:11
-  - V2Get🛰️ 2026-08-07 21:09
+  - 'V2Get🛰️ 2026-08-09 14:11 #2'
   - V2Get🛰️ 2026-08-09 03:10
   - V2Get🛰️ 2026-08-09 11:10
   - V2Get🛰️ 2026-08-09 14:10
@@ -1260,7 +1255,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-09 14:11
-  - V2Get🛰️ 2026-08-07 21:09
+  - 'V2Get🛰️ 2026-08-09 14:11 #2'
   - V2Get🛰️ 2026-08-09 03:10
   - V2Get🛰️ 2026-08-09 11:10
   - V2Get🛰️ 2026-08-09 14:10
