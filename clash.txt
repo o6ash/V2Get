@@ -12,27 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: V2Get🛰️ 2026-08-09 16:11
+  type: vmess
+  server: wgs.whosops.xyz
+  port: 45867
+  uuid: 2706a60b-41e8-45a4-a76e-5bc51f00552d
+  alterId: 0
+  cipher: auto
   udp: true
-- name: V2Get🛰️ 2026-08-06 09:19
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-09 16:11 #2'
   type: vless
-  server: 170.168.97.5
-  port: 8443
-  uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
+  server: wgs.whosops.xyz
+  port: 15387
+  uuid: 2706a60b-41e8-45a4-a76e-5bc51f00552d
   udp: true
-  network: grpc
-  tls: true
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  grpc-opts:
-    grpc-service-name: TunService
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 14:36
   type: vless
   server: 201.51.1.11
@@ -1211,8 +1207,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 16:11
+  - 'V2Get🛰️ 2026-08-09 16:11 #2'
   - V2Get🛰️ 2026-08-07 14:36
   - V2Get🛰️ 2026-08-07 18:37
   - V2Get🛰️ 2026-08-09 15:11
@@ -1314,8 +1310,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 16:11
+  - 'V2Get🛰️ 2026-08-09 16:11 #2'
   - V2Get🛰️ 2026-08-07 14:36
   - V2Get🛰️ 2026-08-07 18:37
   - V2Get🛰️ 2026-08-09 15:11
