@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-09 18:12
+  type: vless
+  server: 104.16.6.70
+  port: 8443
+  uuid: 7bf89fbd-2068-4ea7-acf5-82804d7079b7
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdd3.solidesign.uk
+  client-fingerprint: chrome
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-10 00:12
   type: vless
   server: 199.232.78.159
@@ -1055,7 +1067,7 @@ proxies:
     path: /
 - name: 'V2Get🛰️ 2026-08-09 21:12 #9'
   type: vless
-  server: 5telegram.com.zapas.iran.janebicall.ir
+  server: 4telegram.com.zapas.iran.janebicall.ir
   port: 2087
   uuid: 170cef43-a666-43ef-8079-62bfc06bbffd
   udp: true
@@ -1072,7 +1084,7 @@ proxies:
       Host: sexy.blaackgame.ir
 - name: 'V2Get🛰️ 2026-08-09 21:12 #10'
   type: vless
-  server: 4telegram.com.zapas.iran.janebicall.ir
+  server: 3telegram.com.zapas.iran.janebicall.ir
   port: 2087
   uuid: 170cef43-a666-43ef-8079-62bfc06bbffd
   udp: true
@@ -1089,23 +1101,6 @@ proxies:
       Host: sexy.blaackgame.ir
 - name: 'V2Get🛰️ 2026-08-09 21:12 #11'
   type: vless
-  server: 3telegram.com.zapas.iran.janebicall.ir
-  port: 2087
-  uuid: 170cef43-a666-43ef-8079-62bfc06bbffd
-  udp: true
-  network: ws
-  tls: true
-  servername: sexy.blaackgame.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /xnxx
-    headers:
-      Host: sexy.blaackgame.ir
-- name: 'V2Get🛰️ 2026-08-09 21:12 #12'
-  type: vless
   server: 2telegram.com.zapas.iran.janebicall.ir
   port: 2087
   uuid: 170cef43-a666-43ef-8079-62bfc06bbffd
@@ -1121,7 +1116,7 @@ proxies:
     path: /xnxx
     headers:
       Host: sexy.blaackgame.ir
-- name: 'V2Get🛰️ 2026-08-09 21:12 #13'
+- name: 'V2Get🛰️ 2026-08-09 21:12 #12'
   type: vless
   server: 1telegram.com.zapas.iran.janebicall.ir
   port: 2087
@@ -1144,6 +1139,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-09 18:12
   - V2Get🛰️ 2026-08-10 00:12
   - 'V2Get🛰️ 2026-08-10 00:12 #2'
   - V2Get🛰️ 2026-08-10 00:11
@@ -1242,13 +1238,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 21:12 #10'
   - 'V2Get🛰️ 2026-08-09 21:12 #11'
   - 'V2Get🛰️ 2026-08-09 21:12 #12'
-  - 'V2Get🛰️ 2026-08-09 21:12 #13'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-09 18:12
   - V2Get🛰️ 2026-08-10 00:12
   - 'V2Get🛰️ 2026-08-10 00:12 #2'
   - V2Get🛰️ 2026-08-10 00:11
@@ -1347,7 +1343,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 21:12 #10'
   - 'V2Get🛰️ 2026-08-09 21:12 #11'
   - 'V2Get🛰️ 2026-08-09 21:12 #12'
-  - 'V2Get🛰️ 2026-08-09 21:12 #13'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
