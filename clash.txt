@@ -12,18 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:10
-  type: trojan
-  server: 172.67.149.60
+- name: V2Get🛰️ 2026-08-07 16:21
+  type: vless
+  server: 188.72.103.3
   port: 443
-  password: humanity
+  uuid: 166ef05e-8ab5-43b7-8910-d1bb0a4326a5
   udp: true
-  sni: www.ignitelimit.com
   network: ws
+  tls: true
+  servername: cdn.tracker.yandex.net
   ws-opts:
-    path: /assignment
+    path: /api/v1/rooms/63368e3dbb/sync
     headers:
-      Host: www.ignitelimit.com
+      Host: sync.watchwave.link
 - name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 104.16.72.41
@@ -1232,7 +1233,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:10
+  - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 13:55
   - V2Get🛰️ 2026-08-05 13:59
@@ -1336,7 +1337,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:10
+  - V2Get🛰️ 2026-08-07 16:21
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 13:55
   - V2Get🛰️ 2026-08-05 13:59
