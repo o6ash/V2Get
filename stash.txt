@@ -12,6 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-10 18:12
+  type: vless
+  server: 89.23.116.82
+  port: 1293
+  uuid: d2a8066a-1e0e-4098-8941-4acb50e9417a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-10 18:12 #2'
+  type: vless
+  server: 185.238.191.171
+  port: 443
+  uuid: 02e2d68f-9982-4467-ad47-00cbeeae30e6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de-cdn.ru
+  reality-opts:
+    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
+    short-id: f7d0420b8ab26060
+- name: 'V2Get🛰️ 2026-08-10 18:12 #3'
+  type: vless
+  server: 185.238.191.169
+  port: 443
+  uuid: 02e2d68f-9982-4467-ad47-00cbeeae30e6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de-cdn.ru
+  reality-opts:
+    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
+    short-id: f7d0420b8ab26060
 - name: V2Get🛰️ 2026-08-10 18:11
   type: vless
   server: mbt-7z5b-wzr.deepl-cdn.com
@@ -884,44 +918,15 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-10 13:12
-  type: vless
-  server: ru1.levikogjgfdd.ir
-  port: 443
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sellflow.org
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: 'V2Get🛰️ 2026-08-10 13:12 #2'
-  type: vless
-  server: br1.levikogjgfdd.ir
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-10 13:12 #3'
-  type: trojan
-  server: fr1.levikogjgfdd.ir
-  port: 443
-  password: ND91608427
-  udp: true
-  sni: classic-gator.rooster465.autos
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-10 18:12
+  - 'V2Get🛰️ 2026-08-10 18:12 #2'
+  - 'V2Get🛰️ 2026-08-10 18:12 #3'
   - V2Get🛰️ 2026-08-10 18:11
   - 'V2Get🛰️ 2026-08-10 18:11 #2'
   - 'V2Get🛰️ 2026-08-10 18:11 #3'
@@ -994,15 +999,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 14:11 #4'
   - 'V2Get🛰️ 2026-08-10 14:11 #5'
   - 'V2Get🛰️ 2026-08-10 14:11 #6'
-  - V2Get🛰️ 2026-08-10 13:12
-  - 'V2Get🛰️ 2026-08-10 13:12 #2'
-  - 'V2Get🛰️ 2026-08-10 13:12 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-10 18:12
+  - 'V2Get🛰️ 2026-08-10 18:12 #2'
+  - 'V2Get🛰️ 2026-08-10 18:12 #3'
   - V2Get🛰️ 2026-08-10 18:11
   - 'V2Get🛰️ 2026-08-10 18:11 #2'
   - 'V2Get🛰️ 2026-08-10 18:11 #3'
@@ -1075,9 +1080,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 14:11 #4'
   - 'V2Get🛰️ 2026-08-10 14:11 #5'
   - 'V2Get🛰️ 2026-08-10 14:11 #6'
-  - V2Get🛰️ 2026-08-10 13:12
-  - 'V2Get🛰️ 2026-08-10 13:12 #2'
-  - 'V2Get🛰️ 2026-08-10 13:12 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
