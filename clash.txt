@@ -12,6 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-05 08:28
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-09 00:11
+  type: vless
+  server: 91.107.148.158
+  port: 8080
+  uuid: 6bfcc22f-c80f-481b-b82b-bf28ed3e9f82
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-09 01:11
+  type: ss
+  server: 158.173.20.208
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: V2Get🛰️ 2026-08-10 16:11
   type: vless
   server: 164.37.109.187
@@ -1115,51 +1151,9 @@ proxies:
       Host: x4g-production-9d87.up.railway.app
 - name: 'V2Get🛰️ 2026-08-10 14:11 #3'
   type: vless
-  server: 168.222.251.122
-  port: 711
-  uuid: 02e2d68f-9982-4467-ad47-00cbeeae30e6
-  udp: true
-  network: grpc
-  tls: true
-  servername: who.int
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ADsaY9WkhwRaspXqF1JUt4Wg_Aw15h8h679K7Kt9GUU
-  grpc-opts:
-    grpc-service-name: ''
-- name: 'V2Get🛰️ 2026-08-10 14:11 #4'
-  type: vless
   server: 157.137.235.27
   port: 62145
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-10 14:11 #5'
-  type: vless
-  server: 104.16.6.70
-  port: 8443
-  uuid: 375a88eb-4e06-452f-bb0b-9094c0ff4856
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdd4.solidesign.uk
-  client-fingerprint: chrome
-  alpn:
-  - h2
-- name: 'V2Get🛰️ 2026-08-10 14:11 #6'
-  type: vless
-  server: 212.24.107.219
-  port: 37801
-  uuid: 375a88eb-4e06-452f-bb0b-9094c0ff4856
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-10 14:11 #7'
-  type: vless
-  server: 91.107.179.123
-  port: 37801
-  uuid: 375a88eb-4e06-452f-bb0b-9094c0ff4856
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1169,6 +1163,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-09 00:11
+  - V2Get🛰️ 2026-08-09 01:11
   - V2Get🛰️ 2026-08-10 16:11
   - V2Get🛰️ 2026-08-10 18:12
   - 'V2Get🛰️ 2026-08-10 18:12 #2'
@@ -1264,16 +1262,16 @@ proxy-groups:
   - V2Get🛰️ 2026-08-10 14:11
   - 'V2Get🛰️ 2026-08-10 14:11 #2'
   - 'V2Get🛰️ 2026-08-10 14:11 #3'
-  - 'V2Get🛰️ 2026-08-10 14:11 #4'
-  - 'V2Get🛰️ 2026-08-10 14:11 #5'
-  - 'V2Get🛰️ 2026-08-10 14:11 #6'
-  - 'V2Get🛰️ 2026-08-10 14:11 #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-09 00:11
+  - V2Get🛰️ 2026-08-09 01:11
   - V2Get🛰️ 2026-08-10 16:11
   - V2Get🛰️ 2026-08-10 18:12
   - 'V2Get🛰️ 2026-08-10 18:12 #2'
@@ -1369,10 +1367,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-10 14:11
   - 'V2Get🛰️ 2026-08-10 14:11 #2'
   - 'V2Get🛰️ 2026-08-10 14:11 #3'
-  - 'V2Get🛰️ 2026-08-10 14:11 #4'
-  - 'V2Get🛰️ 2026-08-10 14:11 #5'
-  - 'V2Get🛰️ 2026-08-10 14:11 #6'
-  - 'V2Get🛰️ 2026-08-10 14:11 #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
