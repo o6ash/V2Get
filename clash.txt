@@ -12,20 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 09:19
+- name: V2Get🛰️ 2026-08-10 13:12
   type: vless
-  server: 170.168.97.5
-  port: 8443
-  uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
+  server: 178.208.66.185
+  port: 443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
   udp: true
-  network: grpc
+  network: ws
   tls: true
-  servername: download.nvidia.com
+  servername: web-socket.tgdaosheng.ggff.net
   client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  grpc-opts:
-    grpc-service-name: TunService
+  ws-opts:
+    path: /proxyip=bpb.yousef.isegaro.com
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
 - name: V2Get🛰️ 2026-08-09 16:11
   type: vless
   server: 193.233.255.23
@@ -1115,7 +1115,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-10 13:12
   - V2Get🛰️ 2026-08-09 16:11
   - 'V2Get🛰️ 2026-08-09 16:11 #2'
   - V2Get🛰️ 2026-08-10 00:11
@@ -1216,7 +1216,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-10 13:12
   - V2Get🛰️ 2026-08-09 16:11
   - 'V2Get🛰️ 2026-08-09 16:11 #2'
   - V2Get🛰️ 2026-08-10 00:11
