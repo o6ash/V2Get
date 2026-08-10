@@ -12,16 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-10 12:11
+  type: vless
+  server: yamabiko.proxy.rlwy.net
+  port: 58324
+  uuid: 3d6252b4-f752-4daa-b29b-6df0c9dfe0f7
   udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-04 01:44 #2'
+  network: xhttp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Gwov9EVjGkaXAAg12ipVBMcRFaTPnvqDtxbxtV6mcV4
+    short-id: f94b62
+- name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 159.195.22.155
   port: 443
@@ -213,7 +217,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-10 12:11
+- name: 'V2Get🛰️ 2026-08-10 12:11 #2'
   type: vless
   server: s1.zynetraq.ir
   port: 2087
@@ -1165,8 +1169,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-10 12:11
   - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
@@ -1183,7 +1187,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 16:11 #5'
   - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-09 18:11
-  - V2Get🛰️ 2026-08-10 12:11
+  - 'V2Get🛰️ 2026-08-10 12:11 #2'
   - V2Get🛰️ 2026-08-10 11:12
   - 'V2Get🛰️ 2026-08-10 11:12 #2'
   - V2Get🛰️ 2026-08-10 03:11
@@ -1270,8 +1274,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-10 12:11
   - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
@@ -1288,7 +1292,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 16:11 #5'
   - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-09 18:11
-  - V2Get🛰️ 2026-08-10 12:11
+  - 'V2Get🛰️ 2026-08-10 12:11 #2'
   - V2Get🛰️ 2026-08-10 11:12
   - 'V2Get🛰️ 2026-08-10 11:12 #2'
   - V2Get🛰️ 2026-08-10 03:11
