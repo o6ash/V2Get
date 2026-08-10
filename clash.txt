@@ -12,28 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+- name: V2Get🛰️ 2026-08-06 09:19
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-09 00:11
+  type: vless
+  server: 91.107.148.158
+  port: 8080
+  uuid: 6bfcc22f-c80f-481b-b82b-bf28ed3e9f82
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-08-04 01:44 #2'
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-10 10:12
+  type: vless
+  server: galm.lorqina.ir
+  port: 49530
+  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-10 01:12
+  type: vless
+  server: okb.lorqina.ir
+  port: 40813
+  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 159.195.22.155
   port: 443
@@ -56,7 +66,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-06 09:19
+- name: 'V2Get🛰️ 2026-08-06 09:19 #2'
   type: vless
   server: 170.168.97.5
   port: 8443
@@ -190,22 +200,6 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-08-10 10:12
-  type: vless
-  server: galm.lorqina.ir
-  port: 49530
-  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-10 01:12
-  type: vless
-  server: okb.lorqina.ir
-  port: 40813
-  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-10 10:12 #2'
   type: vless
   server: 46.100.133.5
@@ -1191,11 +1185,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 00:11
+  - V2Get🛰️ 2026-08-10 10:12
+  - V2Get🛰️ 2026-08-10 01:12
+  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-05 08:28
+  - 'V2Get🛰️ 2026-08-06 09:19 #2'
   - V2Get🛰️ 2026-08-07 02:44
   - 'V2Get🛰️ 2026-08-07 02:44 #2'
   - V2Get🛰️ 2026-08-08 01:09
@@ -1207,8 +1203,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 16:11 #3'
   - 'V2Get🛰️ 2026-08-09 16:11 #4'
   - 'V2Get🛰️ 2026-08-09 16:11 #5'
-  - V2Get🛰️ 2026-08-10 10:12
-  - V2Get🛰️ 2026-08-10 01:12
   - 'V2Get🛰️ 2026-08-10 10:12 #2'
   - 'V2Get🛰️ 2026-08-10 10:12 #3'
   - V2Get🛰️ 2026-08-10 10:11
@@ -1297,11 +1291,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 00:11
+  - V2Get🛰️ 2026-08-10 10:12
+  - V2Get🛰️ 2026-08-10 01:12
+  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-05 08:28
+  - 'V2Get🛰️ 2026-08-06 09:19 #2'
   - V2Get🛰️ 2026-08-07 02:44
   - 'V2Get🛰️ 2026-08-07 02:44 #2'
   - V2Get🛰️ 2026-08-08 01:09
@@ -1313,8 +1309,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-09 16:11 #3'
   - 'V2Get🛰️ 2026-08-09 16:11 #4'
   - 'V2Get🛰️ 2026-08-09 16:11 #5'
-  - V2Get🛰️ 2026-08-10 10:12
-  - V2Get🛰️ 2026-08-10 01:12
   - 'V2Get🛰️ 2026-08-10 10:12 #2'
   - 'V2Get🛰️ 2026-08-10 10:12 #3'
   - V2Get🛰️ 2026-08-10 10:11
