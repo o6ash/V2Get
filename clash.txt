@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 00:12
+  type: vless
+  server: s1.cloud--vpn.site
+  port: 443
+  uuid: 2e812a76-5132-4ffe-9a07-09e091f26215
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-11 23:13
   type: vless
   server: 95.217.243.9
@@ -1139,24 +1153,13 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-10 20:11
-  type: vless
-  server: 144.31.13.141
-  port: 443
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ne4.rexten.cc
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 00:12
   - V2Get🛰️ 2026-08-11 23:13
   - 'V2Get🛰️ 2026-08-11 23:13 #2'
   - 'V2Get🛰️ 2026-08-11 23:13 #3'
@@ -1251,13 +1254,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 22:11 #5'
   - 'V2Get🛰️ 2026-08-10 22:11 #6'
   - 'V2Get🛰️ 2026-08-10 22:11 #7'
-  - V2Get🛰️ 2026-08-10 20:11
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 00:12
   - V2Get🛰️ 2026-08-11 23:13
   - 'V2Get🛰️ 2026-08-11 23:13 #2'
   - 'V2Get🛰️ 2026-08-11 23:13 #3'
@@ -1352,7 +1355,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 22:11 #5'
   - 'V2Get🛰️ 2026-08-10 22:11 #6'
   - 'V2Get🛰️ 2026-08-10 22:11 #7'
-  - V2Get🛰️ 2026-08-10 20:11
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
