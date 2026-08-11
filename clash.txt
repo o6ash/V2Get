@@ -12,19 +12,112 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  password: MiTiVPN
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
+  sni: ssl.fastly.com
   alpn:
-  - h2
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 00:53
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 151.101.56.8
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-03 10:54 #2'
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-05 02:17
+  type: trojan
+  server: 199.232.78.150
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4s-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-12 00:12
+  type: trojan
+  server: 151.101.56.9
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: default.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-12 00:12 #2'
+  type: trojan
+  server: 151.101.56.0
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: default.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-12 00:12 #3'
   type: vless
   server: dish.dearhossein-taktaz.ir
   port: 2083
@@ -38,7 +131,7 @@ proxies:
   - h2
   - http/1.1
   - h3
-- name: 'V2Get🛰️ 2026-08-12 00:12 #2'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #4'
   type: vless
   server: dish.dearhossein-taktaz.ir
   port: 39973
@@ -51,7 +144,7 @@ proxies:
   reality-opts:
     public-key: xQAiaNnlAyDzK7JLZP9CDII228SeVhBmCyomKJ3t4UE
     short-id: '41'
-- name: 'V2Get🛰️ 2026-08-12 00:12 #3'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #5'
   type: vless
   server: dish.dearhossein-taktaz.ir
   port: 48571
@@ -59,7 +152,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-12 00:12 #4'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #6'
   type: vless
   server: dish.dearhossein-taktaz.ir
   port: 46484
@@ -72,7 +165,7 @@ proxies:
   reality-opts:
     public-key: 3x-QUxHa5fmuqGNSoJJXXEn4nIBuzuQYf6HrlkPWdV4
     short-id: d698af6d813a0627
-- name: 'V2Get🛰️ 2026-08-12 00:12 #5'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #7'
   type: vless
   server: tubds.plytob.ir
   port: 9032
@@ -80,7 +173,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-12 00:12 #6'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #8'
   type: vless
   server: uaee.apppas.ir
   port: 2024
@@ -94,7 +187,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: 'V2Get🛰️ 2026-08-12 00:12 #7'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #9'
   type: vless
   server: azf.supros.ir
   port: 2026
@@ -107,7 +200,7 @@ proxies:
   reality-opts:
     public-key: 484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8
     short-id: ca930e5d4a603c6a
-- name: 'V2Get🛰️ 2026-08-12 00:12 #8'
+- name: 'V2Get🛰️ 2026-08-12 00:12 #10'
   type: vless
   server: 104.17.121.110
   port: 8880
@@ -182,36 +275,6 @@ proxies:
   reality-opts:
     public-key: XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg
     short-id: 29fd3dc0210c
-- name: 'V2Get🛰️ 2026-08-12 00:12 #9'
-  type: trojan
-  server: 151.101.56.9
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: default.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-12 00:12 #10'
-  type: trojan
-  server: 151.101.56.0
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: default.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-12 00:12 #11'
   type: vless
   server: s1.cloud--vpn.site
@@ -1073,7 +1136,7 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-11 01:12
   type: vless
-  server: 199.232.78.131
+  server: 199.232.78.49
   port: 443
   uuid: ebec0c8c-9353-42e3-9f71-5be863897f41
   udp: true
@@ -1086,7 +1149,7 @@ proxies:
       Host: SvnTeamChannel.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-11 01:12 #2'
   type: vless
-  server: 199.232.78.49
+  server: 199.232.78.102
   port: 443
   uuid: ebec0c8c-9353-42e3-9f71-5be863897f41
   udp: true
@@ -1099,19 +1162,6 @@ proxies:
       Host: SvnTeamChannel.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-11 01:12 #3'
   type: vless
-  server: 199.232.78.102
-  port: 443
-  uuid: ebec0c8c-9353-42e3-9f71-5be863897f41
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: SvnTeamChannel.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-11 01:12 #4'
-  type: vless
   server: 199.232.78.36
   port: 443
   uuid: ebec0c8c-9353-42e3-9f71-5be863897f41
@@ -1123,51 +1173,17 @@ proxies:
     path: /
     headers:
       Host: SvnTeamChannel.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-11 00:12
-  type: vless
-  server: 57.130.46.48
-  port: 9145
-  uuid: de9f46e2-5785-4978-b1d0-c6b308a66b35
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0
-    short-id: 5e06032a9c448538
-- name: 'V2Get🛰️ 2026-08-11 00:12 #2'
-  type: vless
-  server: 158.94.216.232
-  port: 8088
-  uuid: de9f46e2-5785-4978-b1d0-c6b308a66b35
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: hYLvEGoxIMNpQkqxVJt298bBGE1Tz8dhtXGsPsLznj0
-    short-id: 2acf8977eb67ea0c
-- name: 'V2Get🛰️ 2026-08-11 00:12 #3'
-  type: vless
-  server: 72.56.52.30
-  port: 443
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lv.rexten.cc
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-08-03 10:54
+  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-12 00:12
   - 'V2Get🛰️ 2026-08-12 00:12 #2'
   - 'V2Get🛰️ 2026-08-12 00:12 #3'
@@ -1176,13 +1192,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-12 00:12 #6'
   - 'V2Get🛰️ 2026-08-12 00:12 #7'
   - 'V2Get🛰️ 2026-08-12 00:12 #8'
+  - 'V2Get🛰️ 2026-08-12 00:12 #9'
+  - 'V2Get🛰️ 2026-08-12 00:12 #10'
   - V2Get🛰️ 2026-08-11 10:12
   - V2Get🛰️ 2026-08-11 23:12
   - 'V2Get🛰️ 2026-08-11 23:12 #2'
   - V2Get🛰️ 2026-08-11 17:12
   - 'V2Get🛰️ 2026-08-11 23:12 #3'
-  - 'V2Get🛰️ 2026-08-12 00:12 #9'
-  - 'V2Get🛰️ 2026-08-12 00:12 #10'
   - 'V2Get🛰️ 2026-08-12 00:12 #11'
   - V2Get🛰️ 2026-08-11 23:13
   - 'V2Get🛰️ 2026-08-11 23:13 #2'
@@ -1258,17 +1274,17 @@ proxy-groups:
   - V2Get🛰️ 2026-08-11 01:12
   - 'V2Get🛰️ 2026-08-11 01:12 #2'
   - 'V2Get🛰️ 2026-08-11 01:12 #3'
-  - 'V2Get🛰️ 2026-08-11 01:12 #4'
-  - V2Get🛰️ 2026-08-11 00:12
-  - 'V2Get🛰️ 2026-08-11 00:12 #2'
-  - 'V2Get🛰️ 2026-08-11 00:12 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-08-03 10:54
+  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-12 00:12
   - 'V2Get🛰️ 2026-08-12 00:12 #2'
   - 'V2Get🛰️ 2026-08-12 00:12 #3'
@@ -1277,13 +1293,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-12 00:12 #6'
   - 'V2Get🛰️ 2026-08-12 00:12 #7'
   - 'V2Get🛰️ 2026-08-12 00:12 #8'
+  - 'V2Get🛰️ 2026-08-12 00:12 #9'
+  - 'V2Get🛰️ 2026-08-12 00:12 #10'
   - V2Get🛰️ 2026-08-11 10:12
   - V2Get🛰️ 2026-08-11 23:12
   - 'V2Get🛰️ 2026-08-11 23:12 #2'
   - V2Get🛰️ 2026-08-11 17:12
   - 'V2Get🛰️ 2026-08-11 23:12 #3'
-  - 'V2Get🛰️ 2026-08-12 00:12 #9'
-  - 'V2Get🛰️ 2026-08-12 00:12 #10'
   - 'V2Get🛰️ 2026-08-12 00:12 #11'
   - V2Get🛰️ 2026-08-11 23:13
   - 'V2Get🛰️ 2026-08-11 23:13 #2'
@@ -1359,10 +1375,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-11 01:12
   - 'V2Get🛰️ 2026-08-11 01:12 #2'
   - 'V2Get🛰️ 2026-08-11 01:12 #3'
-  - 'V2Get🛰️ 2026-08-11 01:12 #4'
-  - V2Get🛰️ 2026-08-11 00:12
-  - 'V2Get🛰️ 2026-08-11 00:12 #2'
-  - 'V2Get🛰️ 2026-08-11 00:12 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
