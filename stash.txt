@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-11 22:12
+  type: vless
+  server: 104.17.178.145
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  network: ws
+  tls: true
+  servername: ios.tmpylieeebler17.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /https://82.196.220.217:443
+    headers:
+      Host: ios.tmpylieeebler17.workers.dev
 - name: V2Get🛰️ 2026-08-11 20:13
   type: vless
   server: h.telewebion.ir.varzesh3.com.de
@@ -1021,26 +1035,13 @@ proxies:
     path: /?ed=2560
     headers:
       Host: Australia.havray2025.ir
-- name: V2Get🛰️ 2026-08-10 19:13
-  type: vless
-  server: tehran021.qwertyui.shop
-  port: 53203
-  uuid: 71e06e1f-801a-42ec-b77c-0560f4501ae4
-  udp: true
-  network: tcp
-  tls: true
-  servername: tehran021.qwertyui.shop
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-11 22:12
   - V2Get🛰️ 2026-08-11 20:13
   - V2Get🛰️ 2026-08-11 19:12
   - V2Get🛰️ 2026-08-11 18:12
@@ -1125,13 +1126,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 20:11 #5'
   - 'V2Get🛰️ 2026-08-10 20:11 #6'
   - 'V2Get🛰️ 2026-08-10 20:11 #7'
-  - V2Get🛰️ 2026-08-10 19:13
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-11 22:12
   - V2Get🛰️ 2026-08-11 20:13
   - V2Get🛰️ 2026-08-11 19:12
   - V2Get🛰️ 2026-08-11 18:12
@@ -1216,7 +1217,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-10 20:11 #5'
   - 'V2Get🛰️ 2026-08-10 20:11 #6'
   - 'V2Get🛰️ 2026-08-10 20:11 #7'
-  - V2Get🛰️ 2026-08-10 19:13
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
