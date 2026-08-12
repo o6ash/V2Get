@@ -12,21 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
+- name: V2Get🛰️ 2026-08-07 09:49
+  type: vless
+  server: 104.18.37.228
   port: 443
-  password: MITIVPN
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
   udp: true
-  sni: MiTiVPN----o.aPp-cLoud.IR
+  network: ws
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: V2Get🛰️ 2026-08-07 02:42
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.iNK
   alpn:
   - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
+      Host: nlls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.InK
 - name: V2Get🛰️ 2026-07-28 11:43
   type: vless
   server: static.lotussec.com
@@ -54,21 +67,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: V2Get🛰️ 2026-08-07 02:42
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.iNK
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: nlls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.InK
 - name: V2Get🛰️ 2026-08-12 07:17
   type: vless
   server: 143.14.59.72
@@ -1133,10 +1131,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-07 09:49
+  - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-31 00:05
-  - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-08-12 07:17
   - V2Get🛰️ 2026-08-12 06:17
   - V2Get🛰️ 2026-08-12 00:12
@@ -1233,10 +1231,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-07 09:49
+  - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-31 00:05
-  - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-08-12 07:17
   - V2Get🛰️ 2026-08-12 06:17
   - V2Get🛰️ 2026-08-12 00:12
