@@ -12,13 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
+- name: V2Get🛰️ 2026-08-12 12:17
+  type: vless
+  server: snapp.com.kolman.com.de
+  port: 443
+  uuid: ce41a584-96e5-4dfd-b872-4f2cdacec8ae
   udp: true
+  network: ws
+  tls: true
+  servername: cd6-2.doctorpython.ir
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /eQ7EK5s88mh1QkQrKDwYqh6Dbhd
+    headers:
+      Host: cd6-2.doctorpython.ir
 - name: V2Get🛰️ 2026-07-29 14:50
   type: vless
   server: 104.18.37.228
@@ -1084,7 +1093,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-12 12:17
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 14:10
@@ -1186,7 +1195,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-12 12:17
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 14:10
