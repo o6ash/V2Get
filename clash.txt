@@ -12,52 +12,87 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-31 00:05
-  type: trojan
-  server: 104.19.229.21
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
   port: 443
-  password: MITIVPN
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  sni: Ddee2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+  - h2
+- name: V2Get🛰️ 2026-08-06 09:19
+  type: vless
+  server: 172.66.44.97
   port: 443
-  password: MiTiVPN
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: josni.hoyes.cloudns.ch
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /sg-melbi
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-07 02:42
-  type: trojan
-  server: 45.80.111.7
+      Host: josni.hoyes.cloudns.ch
+- name: V2Get🛰️ 2026-08-07 08:39
+  type: vless
+  server: 104.26.14.85
   port: 443
-  password: MiTiVPN
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
-  sni: Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.iNK
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NL---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /GOrbEh
     headers:
-      Host: nlls-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.InK
+      Host: rubifen.adaspoloandco.com
+- name: V2Get🛰️ 2026-08-08 01:10
+  type: ss
+  server: 141.98.101.182
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: V2Get🛰️ 2026-08-12 00:12
+  type: trojan
+  server: 151.101.56.0
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: default.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-12 02:12
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+- name: V2Get🛰️ 2026-08-12 13:17
+  type: vless
+  server: 208.103.161.32
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  udp: true
+  network: ws
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: 'V2Get🛰️ 2026-08-12 00:12 #2'
   type: trojan
   server: 151.101.56.9
   port: 443
@@ -92,48 +127,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-07 10:19
-  type: vless
-  server: 77.110.113.103
-  port: 443
-  uuid: b17fa109-615f-4fcc-abee-8ac8358664e1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: vk.com
-  reality-opts:
-    public-key: YbSMmjuRFkilXmQH_RZ9uDFwA17yDulRSTBHRVilzXs
-    short-id: a3dbdfb829
-- name: V2Get🛰️ 2026-08-07 12:20
-  type: vless
-  server: 201.51.0.38
-  port: 4100
-  uuid: e7299042-7d8f-440f-8368-2516b0e69341
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /v1
-- name: V2Get🛰️ 2026-08-08 10:10
-  type: vless
-  server: 87.242.85.201
-  port: 35412
-  uuid: bfa91d79-049c-41e1-be94-029397377150
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-08 13:10
-  type: vless
-  server: 5.129.194.34
-  port: 4100
-  uuid: af325624-e28d-44fd-a8a7-058a439d128f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /v1
-- name: 'V2Get🛰️ 2026-08-08 13:10 #2'
   type: vless
   server: 168.222.140.155
   port: 4100
@@ -143,7 +137,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /v1
-- name: 'V2Get🛰️ 2026-08-08 13:10 #3'
+- name: 'V2Get🛰️ 2026-08-08 13:10 #2'
   type: vless
   server: 168.222.140.204
   port: 4100
@@ -1145,18 +1139,18 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-31 00:05
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-07 02:42
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-08 01:10
   - V2Get🛰️ 2026-08-12 00:12
+  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-12 13:17
+  - 'V2Get🛰️ 2026-08-12 00:12 #2'
   - V2Get🛰️ 2026-08-12 13:18
   - V2Get🛰️ 2026-08-12 16:18
-  - V2Get🛰️ 2026-08-07 10:19
-  - V2Get🛰️ 2026-08-07 12:20
-  - V2Get🛰️ 2026-08-08 10:10
   - V2Get🛰️ 2026-08-08 13:10
   - 'V2Get🛰️ 2026-08-08 13:10 #2'
-  - 'V2Get🛰️ 2026-08-08 13:10 #3'
   - V2Get🛰️ 2026-08-08 18:11
   - 'V2Get🛰️ 2026-08-08 18:11 #2'
   - 'V2Get🛰️ 2026-08-08 18:11 #3'
@@ -1248,18 +1242,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-31 00:05
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-07 02:42
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-08 01:10
   - V2Get🛰️ 2026-08-12 00:12
+  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-12 13:17
+  - 'V2Get🛰️ 2026-08-12 00:12 #2'
   - V2Get🛰️ 2026-08-12 13:18
   - V2Get🛰️ 2026-08-12 16:18
-  - V2Get🛰️ 2026-08-07 10:19
-  - V2Get🛰️ 2026-08-07 12:20
-  - V2Get🛰️ 2026-08-08 10:10
   - V2Get🛰️ 2026-08-08 13:10
   - 'V2Get🛰️ 2026-08-08 13:10 #2'
-  - 'V2Get🛰️ 2026-08-08 13:10 #3'
   - V2Get🛰️ 2026-08-08 18:11
   - 'V2Get🛰️ 2026-08-08 18:11 #2'
   - 'V2Get🛰️ 2026-08-08 18:11 #3'
