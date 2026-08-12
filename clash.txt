@@ -14,6 +14,14 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-12 10:17
   type: vless
+  server: 46.224.155.99
+  port: 2087
+  uuid: d958c308-7047-4a81-a1bc-948f03e7e407
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-12 10:17 #2'
+  type: vless
   server: line-vpn-production-5cbc.up.railway.app
   port: 443
   uuid: b0340cdd-abd4-02a3-4e3a-fb8d2b21c027
@@ -28,21 +36,6 @@ proxies:
     path: /ws/b0340cdd-abd4-02a3-4e3a-fb8d2b21c027
     headers:
       Host: line-vpn-production-5cbc.up.railway.app
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 45.130.125.207
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: S-wd-fu-ao.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sws-ss
-    headers:
-      Host: s-w--bi--o.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-07-31 00:05
   type: trojan
   server: 104.19.229.21
@@ -1161,7 +1154,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-12 10:17
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-12 10:17 #2'
   - V2Get🛰️ 2026-07-31 00:05
   - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-08-11 10:12
@@ -1261,7 +1254,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-12 10:17
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-12 10:17 #2'
   - V2Get🛰️ 2026-07-31 00:05
   - V2Get🛰️ 2026-08-07 02:42
   - V2Get🛰️ 2026-08-11 10:12
