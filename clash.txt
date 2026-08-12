@@ -12,13 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-08 12:11
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-12 12:17
   type: trojan
   server: ru.federal-usa.com
@@ -1145,7 +1150,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-08 12:11
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-12 12:17
   - V2Get🛰️ 2026-08-12 12:18
   - V2Get🛰️ 2026-08-12 14:18
@@ -1247,7 +1252,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-08 12:11
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-12 12:17
   - V2Get🛰️ 2026-08-12 12:18
   - V2Get🛰️ 2026-08-12 14:18
