@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 22:18
+  type: vless
+  server: 176.65.151.64
+  port: 443
+  uuid: 4411e63c-9d5f-403f-b8b4-89ea29fbde2a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: home.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vrCKcD_CfJ3HnoBh8WVGXXPxhCyjXjSVnFDfi14w53s
+    short-id: 71c764
 - name: V2Get🛰️ 2026-08-13 01:18
   type: vless
   server: 199.232.78.159
@@ -25,21 +39,6 @@ proxies:
     path: /
     headers:
       Host: SvnTeamChannel.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-07-31 00:05
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: Ddee2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -1207,8 +1206,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 22:18
   - V2Get🛰️ 2026-08-13 01:18
-  - V2Get🛰️ 2026-07-31 00:05
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-08-03 10:54
@@ -1313,8 +1312,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 22:18
   - V2Get🛰️ 2026-08-13 01:18
-  - V2Get🛰️ 2026-07-31 00:05
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-08-03 10:54
