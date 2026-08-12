@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 14:18
+  type: vless
+  server: line-vpn-production-bd62.up.railway.app
+  port: 443
+  uuid: e6065c00-8b25-53e7-cbda-b721e7a670e9
+  udp: true
+  network: ws
+  tls: true
+  servername: line-vpn-production-bd62.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/e6065c00-8b25-53e7-cbda-b721e7a670e9
+    headers:
+      Host: line-vpn-production-bd62.up.railway.app
 - name: V2Get🛰️ 2026-08-12 14:17
   type: vless
   server: app-e781c0-a2dbeb-production.up.railway.app
@@ -51,16 +67,6 @@ proxies:
     headers:
       Host: baguette.adaspoloandco.com
 - name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 45.146.131.97
-  port: 4100
-  uuid: 5502312d-b5cf-4652-8c59-4d670dd047be
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /v1
-- name: 'V2Get🛰️ 2026-08-07 08:39 #2'
   type: vless
   server: 109.73.196.160
   port: 2200
@@ -1062,11 +1068,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 14:18
   - V2Get🛰️ 2026-08-12 14:17
   - V2Get🛰️ 2026-08-07 18:37
   - 'V2Get🛰️ 2026-08-12 14:17 #2'
   - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 17:06
   - V2Get🛰️ 2026-08-08 18:11
@@ -1151,11 +1157,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 14:18
   - V2Get🛰️ 2026-08-12 14:17
   - V2Get🛰️ 2026-08-07 18:37
   - 'V2Get🛰️ 2026-08-12 14:17 #2'
   - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 17:06
   - V2Get🛰️ 2026-08-08 18:11
