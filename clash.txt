@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-13 00:17
+  type: vless
+  server: s3.cloud--vpn.site
+  port: 443
+  uuid: beaa03e1-b66f-4a38-88a7-705afff3f8aa
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-12 13:18
   type: trojan
   server: 46.224.155.99
@@ -31,20 +45,6 @@ proxies:
   password: rCpYz0HZmH
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-06 02:33
-  type: vless
-  server: 35.180.187.82
-  port: 12228
-  uuid: 795d5f5b-318c-49a6-844f-ee2ab63bbe94
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: hvyaRhFtrj3cGv1Ya5uXpE256i2PoUi2fOgU0KlvKmI
-    short-id: 59625eb3275249ca
 - name: V2Get🛰️ 2026-08-06 09:19
   type: vless
   server: 172.66.44.97
@@ -1239,9 +1239,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-13 00:17
   - V2Get🛰️ 2026-08-12 13:18
   - V2Get🛰️ 2026-08-12 22:20
-  - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-07 17:36
@@ -1344,9 +1344,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-13 00:17
   - V2Get🛰️ 2026-08-12 13:18
   - V2Get🛰️ 2026-08-12 22:20
-  - V2Get🛰️ 2026-08-06 02:33
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-07 17:36
