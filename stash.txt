@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 15:17
+  type: vless
+  server: 31.56.205.47
+  port: 57705
+  uuid: 7b9a0c53-d488-4f2f-9035-816f2fe01fcd
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-12 13:18
   type: trojan
   server: 46.224.155.99
@@ -24,19 +32,6 @@ proxies:
     path: /
     headers:
       Host: play-fe.googleapis.com
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  udp: true
-  network: ws
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
 - name: V2Get🛰️ 2026-08-08 22:10
   type: vless
   server: 51.158.206.29
@@ -1078,8 +1073,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 15:17
   - V2Get🛰️ 2026-08-12 13:18
-  - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 22:10
   - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-12 12:18
@@ -1165,8 +1160,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 15:17
   - V2Get🛰️ 2026-08-12 13:18
-  - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 22:10
   - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-12 12:18
