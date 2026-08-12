@@ -12,14 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-12 02:12
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: V2Get🛰️ 2026-08-07 14:40
+  type: vless
+  server: 95.85.224.3
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
   udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
+  tls: true
+- name: V2Get🛰️ 2026-08-08 00:11
+  type: vless
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: V2Get🛰️ 2026-08-12 23:18
+  type: vless
+  server: 104.16.92.229
+  port: 8443
+  uuid: d98e06d3-7f42-41e8-8dad-e9f35517a992
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.psntbt.com.
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: italy-1.psntbt.com.
+- name: 'V2Get🛰️ 2026-08-12 23:18 #2'
   type: ss
   server: e4.cover20.ir
   port: 16156
@@ -33,33 +64,6 @@ proxies:
   password: rCpYz0HZmH
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-12 13:18
-  type: trojan
-  server: 46.224.155.99
-  port: 80
-  password: '@Cooonfig'
-  udp: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-fe.googleapis.com
-- name: V2Get🛰️ 2026-08-07 13:40
-  type: trojan
-  server: 104.21.5.155
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: de1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: des-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
 - name: 'V2Get🛰️ 2026-08-12 22:20 #2'
   type: vless
   server: tun.dezhawo.ir
@@ -1229,11 +1233,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-07 14:40
+  - V2Get🛰️ 2026-08-08 00:11
   - V2Get🛰️ 2026-08-12 23:18
+  - 'V2Get🛰️ 2026-08-12 23:18 #2'
   - V2Get🛰️ 2026-08-12 22:20
-  - V2Get🛰️ 2026-08-12 13:18
-  - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-12 22:20 #2'
   - 'V2Get🛰️ 2026-08-12 22:20 #3'
   - 'V2Get🛰️ 2026-08-12 22:20 #4'
@@ -1335,11 +1339,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-07 14:40
+  - V2Get🛰️ 2026-08-08 00:11
   - V2Get🛰️ 2026-08-12 23:18
+  - 'V2Get🛰️ 2026-08-12 23:18 #2'
   - V2Get🛰️ 2026-08-12 22:20
-  - V2Get🛰️ 2026-08-12 13:18
-  - V2Get🛰️ 2026-08-07 13:40
   - 'V2Get🛰️ 2026-08-12 22:20 #2'
   - 'V2Get🛰️ 2026-08-12 22:20 #3'
   - 'V2Get🛰️ 2026-08-12 22:20 #4'
