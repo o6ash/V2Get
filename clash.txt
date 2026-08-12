@@ -13,13 +13,24 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-12 12:17
+  type: trojan
+  server: ru.federal-usa.com
+  port: 8443
+  password: 08QNE5JBq7kTV6b9Dd6e_w-y4WhjMLS9
+  udp: true
+  sni: ru.federal-usa.com
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-12 12:17 #2'
   type: ss
   server: 125.230.101.34
   port: 65401
   cipher: 2022-blake3-aes-128-gcm
   password: MWI1MWNjMGYzNmM4MjhiMw==:NmJhMGIxYTYtNzdkNy00ZA==
   udp: true
-- name: 'V2Get🛰️ 2026-08-12 12:17 #2'
+- name: 'V2Get🛰️ 2026-08-12 12:17 #3'
   type: vless
   server: snapp.com.kolman.com.de
   port: 443
@@ -35,19 +46,6 @@ proxies:
     path: /eQ7EK5s88mh1QkQrKDwYqh6Dbhd
     headers:
       Host: cd6-2.doctorpython.ir
-- name: V2Get🛰️ 2026-08-08 18:10
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-08-10 17:11
   type: vless
   server: 31.220.86.213
@@ -1072,7 +1070,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-12 12:17
   - 'V2Get🛰️ 2026-08-12 12:17 #2'
-  - V2Get🛰️ 2026-08-08 18:10
+  - 'V2Get🛰️ 2026-08-12 12:17 #3'
   - V2Get🛰️ 2026-08-10 17:11
   - V2Get🛰️ 2026-08-11 11:12
   - V2Get🛰️ 2026-08-11 23:12
@@ -1172,7 +1170,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-12 12:17
   - 'V2Get🛰️ 2026-08-12 12:17 #2'
-  - V2Get🛰️ 2026-08-08 18:10
+  - 'V2Get🛰️ 2026-08-12 12:17 #3'
   - V2Get🛰️ 2026-08-10 17:11
   - V2Get🛰️ 2026-08-11 11:12
   - V2Get🛰️ 2026-08-11 23:12
