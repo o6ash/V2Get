@@ -13,22 +13,15 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-13 10:19
-  type: vless
-  server: hikvision-plus.com
-  port: 2083
-  uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
+  type: ss
+  server: 46.34.50.182
+  port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: yocnqwWPVXULynHU7W9zUw==
   udp: true
-  network: ws
-  tls: true
-  servername: uwu.blueknight.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: uwu.blueknight.site
 - name: 'V2Get🛰️ 2026-08-13 10:19 #2'
   type: vless
-  server: undef.network
+  server: hikvision-plus.com
   port: 2083
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -42,7 +35,7 @@ proxies:
       Host: uwu.blueknight.site
 - name: 'V2Get🛰️ 2026-08-13 10:19 #3'
   type: vless
-  server: freesocks.work
+  server: undef.network
   port: 2083
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -56,7 +49,7 @@ proxies:
       Host: uwu.blueknight.site
 - name: 'V2Get🛰️ 2026-08-13 10:19 #4'
   type: vless
-  server: cctvhikvision.center
+  server: freesocks.work
   port: 2083
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -70,6 +63,20 @@ proxies:
       Host: uwu.blueknight.site
 - name: 'V2Get🛰️ 2026-08-13 10:19 #5'
   type: vless
+  server: cctvhikvision.center
+  port: 2083
+  uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
+  udp: true
+  network: ws
+  tls: true
+  servername: uwu.blueknight.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: uwu.blueknight.site
+- name: 'V2Get🛰️ 2026-08-13 10:19 #6'
+  type: vless
   server: pew.dianawmoon.dpdns.org
   port: 443
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
@@ -80,7 +87,7 @@ proxies:
   client-fingerprint: random
   alpn:
   - http/1.1
-- name: 'V2Get🛰️ 2026-08-13 10:19 #6'
+- name: 'V2Get🛰️ 2026-08-13 10:19 #7'
   type: vless
   server: v.dianawmoon.dpdns.org
   port: 8443
@@ -93,7 +100,7 @@ proxies:
   reality-opts:
     public-key: hVzLxVkm1rEjj2mYfOcHAva8S6MQACbfQKxY9aIJIh0
     short-id: a240
-- name: 'V2Get🛰️ 2026-08-13 10:19 #7'
+- name: 'V2Get🛰️ 2026-08-13 10:19 #8'
   type: trojan
   server: uwu.blueknightnet.qzz.io
   port: 2087
@@ -106,21 +113,9 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.dianaw.cc.cd
-- name: 'V2Get🛰️ 2026-08-13 10:19 #8'
-  type: vless
-  server: hikvision-plus.com
-  port: 2052
-  uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #9'
   type: vless
-  server: undef.network
+  server: hikvision-plus.com
   port: 2052
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -132,7 +127,7 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #10'
   type: vless
-  server: freesocks.work
+  server: undef.network
   port: 2052
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -144,7 +139,7 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #11'
   type: vless
-  server: cctvhikvision.center
+  server: freesocks.work
   port: 2052
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -156,21 +151,19 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #12'
   type: vless
-  server: hikvision-plus.com
-  port: 2053
+  server: cctvhikvision.center
+  port: 2052
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
   network: ws
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #13'
   type: vless
-  server: undef.network
+  server: hikvision-plus.com
   port: 2053
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -184,7 +177,7 @@ proxies:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #14'
   type: vless
-  server: freesocks.work
+  server: undef.network
   port: 2053
   uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
   udp: true
@@ -197,6 +190,20 @@ proxies:
     headers:
       Host: uwu.blueknightnet.qzz.io
 - name: 'V2Get🛰️ 2026-08-13 10:19 #15'
+  type: vless
+  server: freesocks.work
+  port: 2053
+  uuid: 9dbbffc7-eaad-4291-8a5c-fb141ad92802
+  udp: true
+  network: ws
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 'V2Get🛰️ 2026-08-13 10:19 #16'
   type: vless
   server: cctvhikvision.center
   port: 2053
@@ -282,18 +289,6 @@ proxies:
   password: '@Cooonfig@Cooonfig'
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-12 19:19
-  type: vless
-  server: 104.16.72.41
-  port: 8880
-  uuid: 74705348-bb9c-47c6-9e91-057c6407bb20
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: small-glitter-aa35.76-21d.workers.dev
 - name: V2Get🛰️ 2026-08-13 09:19
   type: vless
   server: 104.21.66.198
@@ -1072,6 +1067,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-13 10:19 #13'
   - 'V2Get🛰️ 2026-08-13 10:19 #14'
   - 'V2Get🛰️ 2026-08-13 10:19 #15'
+  - 'V2Get🛰️ 2026-08-13 10:19 #16'
   - V2Get🛰️ 2026-08-12 21:18
   - V2Get🛰️ 2026-08-12 22:18
   - V2Get🛰️ 2026-08-13 10:18
@@ -1079,7 +1075,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-13 10:18 #2'
   - 'V2Get🛰️ 2026-08-13 10:18 #3'
   - 'V2Get🛰️ 2026-08-13 10:18 #4'
-  - V2Get🛰️ 2026-08-12 19:19
   - V2Get🛰️ 2026-08-13 09:19
   - 'V2Get🛰️ 2026-08-13 09:19 #2'
   - 'V2Get🛰️ 2026-08-13 09:19 #3'
@@ -1176,6 +1171,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-13 10:19 #13'
   - 'V2Get🛰️ 2026-08-13 10:19 #14'
   - 'V2Get🛰️ 2026-08-13 10:19 #15'
+  - 'V2Get🛰️ 2026-08-13 10:19 #16'
   - V2Get🛰️ 2026-08-12 21:18
   - V2Get🛰️ 2026-08-12 22:18
   - V2Get🛰️ 2026-08-13 10:18
@@ -1183,7 +1179,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-13 10:18 #2'
   - 'V2Get🛰️ 2026-08-13 10:18 #3'
   - 'V2Get🛰️ 2026-08-13 10:18 #4'
-  - V2Get🛰️ 2026-08-12 19:19
   - V2Get🛰️ 2026-08-13 09:19
   - 'V2Get🛰️ 2026-08-13 09:19 #2'
   - 'V2Get🛰️ 2026-08-13 09:19 #3'
