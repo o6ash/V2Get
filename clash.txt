@@ -12,26 +12,24 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: ss
-  server: 103.106.231.82
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: V2Get🛰️ 2026-08-08 11:10
+- name: V2Get🛰️ 2026-08-12 11:17
   type: vless
-  server: 87.58.205.88
+  server: 31.76.76.26
   port: 443
-  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  uuid: 2f956d32-8a67-4bc9-8995-e1621ad20ddc
   udp: true
-  network: xhttp
-  tls: true
-  servername: google.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0
-    short-id: 72cd47c079c0a3df
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-13 09:19
+  type: vless
+  server: 4.185.112.1
+  port: 2064
+  uuid: 5c5f21f2-8527-4d45-95d0-0c72871d22e7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-09 12:10
   type: vless
   server: 51.158.206.93
@@ -1187,8 +1185,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-08 11:10
+  - V2Get🛰️ 2026-08-12 11:17
+  - V2Get🛰️ 2026-08-13 09:19
   - V2Get🛰️ 2026-08-09 12:10
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 12:18
@@ -1293,8 +1291,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-08 11:10
+  - V2Get🛰️ 2026-08-12 11:17
+  - V2Get🛰️ 2026-08-13 09:19
   - V2Get🛰️ 2026-08-09 12:10
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 12:18
