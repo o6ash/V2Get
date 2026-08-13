@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-13 09:18
+  type: vless
+  server: 171.97.18.114
+  port: 8443
+  uuid: d6c81f6d-24a8-46d9-a3bf-c38d51fc5fe5
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sDH4MlZFHXJB5VR_mfuFNBrQHtptpNK-qj3sot7b1zU
+    short-id: 16887c51
 - name: V2Get🛰️ 2026-08-13 12:19
   type: trojan
   server: 46.62.136.148
@@ -19,18 +32,6 @@ proxies:
   password: '@ZhilaVPN'
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-05 11:19
   type: vless
   server: 159.195.27.99
@@ -1183,8 +1184,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-13 09:18
   - V2Get🛰️ 2026-08-13 12:19
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-08 04:09
   - V2Get🛰️ 2026-08-08 22:11
@@ -1287,8 +1288,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-13 09:18
   - V2Get🛰️ 2026-08-13 12:19
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-08 04:09
   - V2Get🛰️ 2026-08-08 22:11
