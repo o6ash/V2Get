@@ -12,6 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 11:17
+  type: vless
+  server: 188.212.96.126
+  port: 7443
+  uuid: 75ddbcc7-ba82-4c74-a333-908dd65fe100
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-12 11:17 #2'
+  type: vless
+  server: 188.212.96.126
+  port: 3443
+  uuid: 75ddbcc7-ba82-4c74-a333-908dd65fe100
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-12 11:17 #3'
+  type: vless
+  server: 188.212.96.126
+  port: 2443
+  uuid: 75ddbcc7-ba82-4c74-a333-908dd65fe100
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-12 11:17 #4'
+  type: vless
+  server: 188.212.96.126
+  port: 2053
+  uuid: 75ddbcc7-ba82-4c74-a333-908dd65fe100
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-13 21:20
   type: vless
   server: 3.124.250.68
@@ -69,59 +101,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-07 02:44
-  type: vless
-  server: 88.216.220.87
-  port: 443
-  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-  udp: true
-  network: grpc
-  tls: true
-  servername: api.noneok.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
-    short-id: 1ea59febb8d4fc8e
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-- name: 'V2Get🛰️ 2026-08-07 02:44 #2'
-  type: vless
-  server: meshbuzz.bond
-  port: 443
-  uuid: 8a6729c4-81d4-4b05-8747-3fffc17b6a64
-  udp: true
-  network: ws
-  tls: true
-  servername: OhPwIlJo8.RoBoRoCkS.Ir
-  client-fingerprint: firefox
-  ws-opts:
-    path: /mashdi
-    headers:
-      Host: OhPwIlJo8.RoBoRoCkS.Ir
-- name: V2Get🛰️ 2026-08-07 11:20
-  type: vless
-  server: 104.16.75.44
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  udp: true
-  network: ws
-  tls: true
-  servername: de-new-1.ariyuz.org
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-08-07 11:50
-  type: vless
-  server: helsink.vypnet.su
-  port: 443
-  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: helsink.vypnet.su
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
 - name: V2Get🛰️ 2026-08-07 13:05
   type: vless
   server: 72.56.92.177
@@ -983,16 +962,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 11:17
+  - 'V2Get🛰️ 2026-08-12 11:17 #2'
+  - 'V2Get🛰️ 2026-08-12 11:17 #3'
+  - 'V2Get🛰️ 2026-08-12 11:17 #4'
   - V2Get🛰️ 2026-08-13 21:20
   - V2Get🛰️ 2026-08-13 11:18
   - V2Get🛰️ 2026-08-13 21:19
   - 'V2Get🛰️ 2026-08-13 21:19 #2'
   - V2Get🛰️ 2026-08-13 19:20
   - V2Get🛰️ 2026-08-13 18:18
-  - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-07 02:44 #2'
-  - V2Get🛰️ 2026-08-07 11:20
-  - V2Get🛰️ 2026-08-07 11:50
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 22:11
@@ -1067,16 +1046,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 11:17
+  - 'V2Get🛰️ 2026-08-12 11:17 #2'
+  - 'V2Get🛰️ 2026-08-12 11:17 #3'
+  - 'V2Get🛰️ 2026-08-12 11:17 #4'
   - V2Get🛰️ 2026-08-13 21:20
   - V2Get🛰️ 2026-08-13 11:18
   - V2Get🛰️ 2026-08-13 21:19
   - 'V2Get🛰️ 2026-08-13 21:19 #2'
   - V2Get🛰️ 2026-08-13 19:20
   - V2Get🛰️ 2026-08-13 18:18
-  - V2Get🛰️ 2026-08-07 02:44
-  - 'V2Get🛰️ 2026-08-07 02:44 #2'
-  - V2Get🛰️ 2026-08-07 11:20
-  - V2Get🛰️ 2026-08-07 11:50
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-08 15:10
   - V2Get🛰️ 2026-08-08 22:11
