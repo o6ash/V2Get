@@ -12,28 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-08 22:11
+- name: V2Get🛰️ 2026-08-13 23:19
   type: vless
-  server: 169.197.113.179
-  port: 20190
-  uuid: ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b
+  server: 185.126.236.181
+  port: 8880
+  uuid: 8f127368-8f47-4989-ec81-60c32953856f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: www.icloud.com
+- name: 'V2Get🛰️ 2026-08-13 23:19 #2'
+  type: trojan
+  server: 185.126.236.181
+  port: 443
+  password: 7m0vA1PgSB
+  udp: true
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-13 23:19 #3'
+  type: vless
+  server: 185.126.236.181
+  port: 80
+  uuid: eab81857-a729-4c61-c8e9-bd3b46608161
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-12 13:17
-  type: vless
-  server: 202.37.33.80
-  port: 443
-  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
-  udp: true
-  network: ws
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /id-tksi?ed=2048
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: V2Get🛰️ 2026-08-13 23:19
+- name: 'V2Get🛰️ 2026-08-13 23:19 #4'
   type: vmess
   server: ar.paydar.site
   port: 80
@@ -42,20 +48,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-12 22:18
-  type: vless
-  server: 104.16.72.162
-  port: 8443
-  uuid: d98e06d3-7f42-41e8-8dad-e9f35517a992
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.zensah3g.info.
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-004.zensah3g.info.
 - name: V2Get🛰️ 2026-08-13 21:19
   type: vless
   server: 31.56.222.59
@@ -1102,10 +1094,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-13 23:19
-  - V2Get🛰️ 2026-08-12 22:18
+  - 'V2Get🛰️ 2026-08-13 23:19 #2'
+  - 'V2Get🛰️ 2026-08-13 23:19 #3'
+  - 'V2Get🛰️ 2026-08-13 23:19 #4'
   - V2Get🛰️ 2026-08-13 21:19
   - V2Get🛰️ 2026-08-13 22:20
   - 'V2Get🛰️ 2026-08-13 22:20 #2'
@@ -1206,10 +1198,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-13 23:19
-  - V2Get🛰️ 2026-08-12 22:18
+  - 'V2Get🛰️ 2026-08-13 23:19 #2'
+  - 'V2Get🛰️ 2026-08-13 23:19 #3'
+  - 'V2Get🛰️ 2026-08-13 23:19 #4'
   - V2Get🛰️ 2026-08-13 21:19
   - V2Get🛰️ 2026-08-13 22:20
   - 'V2Get🛰️ 2026-08-13 22:20 #2'
