@@ -12,22 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
+- name: V2Get🛰️ 2026-08-14 00:19
+  type: vless
+  server: 84.32.102.235
   port: 443
-  password: MiTiVPN
+  uuid: 463a26c2-eba8-0065-89c4-ee5c1373ccbe
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dnlch.mostserv.xyz
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Q6sZPc96fGUJvHsOjwpAc57V16CajEfhkHHhuv-_Bg4
+    short-id: 0f3adaccbda5e56b
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -87,7 +86,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-14 00:19
+- name: 'V2Get🛰️ 2026-08-14 00:19 #2'
   type: trojan
   server: 151.101.193.242
   port: 443
@@ -1146,12 +1145,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-14 00:19
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
-  - V2Get🛰️ 2026-08-14 00:19
+  - 'V2Get🛰️ 2026-08-14 00:19 #2'
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-08 01:10
   - 'V2Get🛰️ 2026-08-08 01:10 #2'
@@ -1252,12 +1251,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-14 00:19
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
-  - V2Get🛰️ 2026-08-14 00:19
+  - 'V2Get🛰️ 2026-08-14 00:19 #2'
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-08 01:10
   - 'V2Get🛰️ 2026-08-08 01:10 #2'
