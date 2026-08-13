@@ -12,28 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 14:50
+- name: V2Get🛰️ 2026-08-12 19:18
   type: vless
-  server: 104.18.37.228
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 185.143.233.238
+  port: 2086
+  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
   udp: true
   network: ws
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
+  skip-cert-verify: true
   ws-opts:
-    path: /fp
+    path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-08-05 11:19
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
+      Host: parsi.parsi.sbs
 - name: V2Get🛰️ 2026-08-06 09:19
   type: vless
   server: 172.66.44.97
@@ -47,31 +37,6 @@ proxies:
     path: /sg-melbi
     headers:
       Host: josni.hoyes.cloudns.ch
-- name: V2Get🛰️ 2026-08-07 02:44
-  type: vless
-  server: 45.145.56.163
-  port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de2.spectrum.vu
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
-    short-id: 44d44d1c625a13aa
-- name: V2Get🛰️ 2026-08-07 14:40
-  type: vless
-  server: 95.85.224.3
-  port: 8443
-  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: grpc
-  tls: true
 - name: V2Get🛰️ 2026-08-08 01:09
   type: vless
   server: 51.158.206.8
@@ -86,6 +51,33 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
+- name: V2Get🛰️ 2026-07-29 14:50
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: V2Get🛰️ 2026-08-07 02:44
+  type: vless
+  server: 45.145.56.163
+  port: 443
+  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de2.spectrum.vu
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
+    short-id: 44d44d1c625a13aa
 - name: V2Get🛰️ 2026-08-08 19:10
   type: vless
   server: 137.184.218.169
@@ -99,18 +91,6 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: V2Get🛰️ 2026-08-12 19:18
-  type: vless
-  server: 185.143.233.238
-  port: 2086
-  uuid: 1ee1f28d-4975-4d7c-95c7-76172c20eed5
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: parsi.parsi.sbs
 - name: V2Get🛰️ 2026-08-13 16:19
   type: trojan
   server: t11.qifei.app
@@ -118,6 +98,26 @@ proxies:
   password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
   udp: true
   sni: t11.qifei.app
+- name: V2Get🛰️ 2026-08-05 11:19
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-07 14:40
+  type: vless
+  server: 95.85.224.3
+  port: 8443
+  uuid: 7e8f7489-e65f-4be6-93ed-867a74ec6759
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: grpc
+  tls: true
 - name: V2Get🛰️ 2026-08-13 16:18
   type: vless
   server: 93.114.98.179
@@ -1196,15 +1196,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 14:50
-  - V2Get🛰️ 2026-08-05 11:19
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-08-07 14:40
-  - V2Get🛰️ 2026-08-08 01:09
-  - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-12 19:18
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-08 01:09
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-07 02:44
+  - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-13 16:19
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-07 14:40
   - V2Get🛰️ 2026-08-13 16:18
   - 'V2Get🛰️ 2026-08-13 16:18 #2'
   - V2Get🛰️ 2026-08-13 09:19
@@ -1302,15 +1302,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 14:50
-  - V2Get🛰️ 2026-08-05 11:19
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 02:44
-  - V2Get🛰️ 2026-08-07 14:40
-  - V2Get🛰️ 2026-08-08 01:09
-  - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-12 19:18
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-08 01:09
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-07 02:44
+  - V2Get🛰️ 2026-08-08 19:10
   - V2Get🛰️ 2026-08-13 16:19
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-07 14:40
   - V2Get🛰️ 2026-08-13 16:18
   - 'V2Get🛰️ 2026-08-13 16:18 #2'
   - V2Get🛰️ 2026-08-13 09:19
