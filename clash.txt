@@ -12,18 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-13 22:20
   type: vless
-  server: static.lotussec.com
+  server: lile-vpn-production.up.railway.app
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: 2ac40df7-c0f0-8cd4-1a67-9a87d1c4709b
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
+  servername: lile-vpn-production.up.railway.app
+  client-fingerprint: chrome
   alpn:
-  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws/2ac40df7-c0f0-8cd4-1a67-9a87d1c4709b
+    headers:
+      Host: lile-vpn-production.up.railway.app
 - name: V2Get🛰️ 2026-08-13 22:19
   type: trojan
   server: 169.40.32.135
@@ -1103,7 +1107,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-13 22:20
   - V2Get🛰️ 2026-08-13 22:19
   - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-05 08:28
@@ -1206,7 +1210,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-13 22:20
   - V2Get🛰️ 2026-08-13 22:19
   - V2Get🛰️ 2026-08-05 02:17
   - V2Get🛰️ 2026-08-05 08:28
