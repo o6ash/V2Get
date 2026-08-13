@@ -12,85 +12,104 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
+- name: V2Get🛰️ 2026-08-05 02:17
+  type: trojan
+  server: 199.232.78.150
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4s-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-06 09:19
+  type: vless
+  server: 104.26.14.85
+  port: 8443
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  udp: true
+  network: ws
+  tls: true
+  servername: chopin.adaspoloandco.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /download.php
+    headers:
+      Host: chopin.adaspoloandco.com
+- name: V2Get🛰️ 2026-08-09 13:11
+  type: vless
+  server: 78.17.208.22
+  port: 443
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fr05.skorostnet.space
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+- name: V2Get🛰️ 2026-08-12 13:17
+  type: vless
+  server: 208.103.161.32
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  udp: true
+  network: ws
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: V2Get🛰️ 2026-08-12 21:18
+  type: vless
+  server: it.feywebsite.ir
+  port: 8008
+  uuid: b91abe1a-80ca-417b-998b-2b542661c16f
   udp: true
   network: xhttp
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-03 00:53
-  type: trojan
-  server: 199.232.78.160
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8
+    short-id: 5f9a
+- name: V2Get🛰️ 2026-08-13 17:18
+  type: vless
+  server: vbzm.cn
   port: 443
-  password: MITIVPN
+  uuid: 6de97a5c-acc0-473a-895e-0e9b3b120c74
   udp: true
-  sni: ssl.fastly.com
+  network: ws
+  tls: true
+  servername: on1sni.irandoc.info
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /17001/msn
     headers:
-      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 151.101.56.8
-  port: 443
-  password: MiTiVPN
+      Host: on1.irandoc.info
+- name: 'V2Get🛰️ 2026-08-13 17:18 #2'
+  type: vless
+  server: webcam.dearhossein-taktaz.ir
+  port: 20434
+  uuid: 502ab974-22ed-4621-a1d6-d15b78f677c2
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-12 00:12
-  type: trojan
-  server: 151.101.56.9
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: default.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-12 00:12 #2'
-  type: trojan
-  server: 151.101.56.0
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: default.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-13 11:18
-  type: trojan
-  server: 46.62.136.148
-  port: 20254
-  password: '@CooonfigCooonfigCooonfig'
-  udp: true
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: pre-prod.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4E3Q4Ft9TUClYgNvurpU7xvrsiG6HxXtnlJ1ggUaDmw
+    short-id: 37979481ec376f8c
 - name: V2Get🛰️ 2026-08-13 14:19
   type: vless
   server: 212.192.3.60
@@ -176,20 +195,6 @@ proxies:
     path: /ws/0d3f7c50-591f-eac4-5092-eb37d97772ca
     headers:
       Host: rvg-production-2164.up.railway.app
-- name: V2Get🛰️ 2026-08-12 20:18
-  type: vless
-  server: s2.cloud--vpn.site
-  port: 443
-  uuid: 15bc8ba0-3f81-43dd-95f8-e1eda04f0e6c
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: V2Get🛰️ 2026-08-13 16:19
   type: vless
   server: 217.60.238.46
@@ -1233,19 +1238,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-03 00:53
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-12 00:12
-  - 'V2Get🛰️ 2026-08-12 00:12 #2'
-  - V2Get🛰️ 2026-08-13 11:18
+  - V2Get🛰️ 2026-08-05 02:17
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-08-12 13:17
+  - V2Get🛰️ 2026-08-12 21:18
+  - V2Get🛰️ 2026-08-13 17:18
+  - 'V2Get🛰️ 2026-08-13 17:18 #2'
   - V2Get🛰️ 2026-08-13 14:19
   - V2Get🛰️ 2026-08-13 13:19
   - V2Get🛰️ 2026-08-13 16:20
   - 'V2Get🛰️ 2026-08-13 16:20 #2'
   - 'V2Get🛰️ 2026-08-13 16:20 #3'
   - 'V2Get🛰️ 2026-08-13 16:20 #4'
-  - V2Get🛰️ 2026-08-12 20:18
   - V2Get🛰️ 2026-08-13 16:19
   - V2Get🛰️ 2026-08-13 16:18
   - 'V2Get🛰️ 2026-08-13 16:18 #2'
@@ -1338,19 +1343,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-03 00:53
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-12 00:12
-  - 'V2Get🛰️ 2026-08-12 00:12 #2'
-  - V2Get🛰️ 2026-08-13 11:18
+  - V2Get🛰️ 2026-08-05 02:17
+  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-08-12 13:17
+  - V2Get🛰️ 2026-08-12 21:18
+  - V2Get🛰️ 2026-08-13 17:18
+  - 'V2Get🛰️ 2026-08-13 17:18 #2'
   - V2Get🛰️ 2026-08-13 14:19
   - V2Get🛰️ 2026-08-13 13:19
   - V2Get🛰️ 2026-08-13 16:20
   - 'V2Get🛰️ 2026-08-13 16:20 #2'
   - 'V2Get🛰️ 2026-08-13 16:20 #3'
   - 'V2Get🛰️ 2026-08-13 16:20 #4'
-  - V2Get🛰️ 2026-08-12 20:18
   - V2Get🛰️ 2026-08-13 16:19
   - V2Get🛰️ 2026-08-13 16:18
   - 'V2Get🛰️ 2026-08-13 16:18 #2'
