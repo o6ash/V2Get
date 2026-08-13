@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-13 23:20
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 5bde3752-ff43-43eb-8f24-bd9c13bb1f4a
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT
 - name: V2Get🛰️ 2026-08-12 13:17
   type: vless
   server: 202.37.33.80
@@ -76,16 +89,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 194.26.229.218
-  port: 2200
-  uuid: af325624-e28d-44fd-a8a7-058a439d128f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /v1
 - name: V2Get🛰️ 2026-08-07 10:19
   type: vless
   server: 77.110.113.103
@@ -1140,6 +1143,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-13 23:20
   - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-13 09:18
   - 'V2Get🛰️ 2026-08-13 09:18 #2'
@@ -1148,7 +1152,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-13 12:19
   - V2Get🛰️ 2026-08-13 21:19
   - V2Get🛰️ 2026-08-13 23:19
-  - V2Get🛰️ 2026-08-07 08:39
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 12:20
   - V2Get🛰️ 2026-08-07 20:10
@@ -1246,6 +1249,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-13 23:20
   - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-13 09:18
   - 'V2Get🛰️ 2026-08-13 09:18 #2'
@@ -1254,7 +1258,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-13 12:19
   - V2Get🛰️ 2026-08-13 21:19
   - V2Get🛰️ 2026-08-13 23:19
-  - V2Get🛰️ 2026-08-07 08:39
   - V2Get🛰️ 2026-08-07 10:19
   - V2Get🛰️ 2026-08-07 12:20
   - V2Get🛰️ 2026-08-07 20:10
