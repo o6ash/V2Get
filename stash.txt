@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-17 23:09
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 8f20ce8e-917f-4946-e03f-31a7bbf8a965
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-17 23:08
   type: vless
   server: ita.montago-shop.ir
@@ -1034,28 +1048,13 @@ proxies:
     path: /
     headers:
       Host: world.ashahan.ir
-- name: 'V2Get🛰️ 2026-08-17 21:11 #11'
-  type: vless
-  server: 69.46.46.10
-  port: 443
-  uuid: 67f6c482-4169-f526-8bc1-5a7a991b7e81
-  udp: true
-  network: ws
-  tls: true
-  servername: rvg-production-038e.up.railway.app
-  client-fingerprint: ios
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ws/67f6c482-4169-f526-8bc1-5a7a991b7e81
-    headers:
-      Host: rvg-production-038e.up.railway.app
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-17 23:08
   - 'V2Get🛰️ 2026-08-17 23:08 #2'
   - 'V2Get🛰️ 2026-08-17 23:08 #3'
@@ -1139,13 +1138,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-17 21:11 #8'
   - 'V2Get🛰️ 2026-08-17 21:11 #9'
   - 'V2Get🛰️ 2026-08-17 21:11 #10'
-  - 'V2Get🛰️ 2026-08-17 21:11 #11'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-17 23:08
   - 'V2Get🛰️ 2026-08-17 23:08 #2'
   - 'V2Get🛰️ 2026-08-17 23:08 #3'
@@ -1229,7 +1228,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-17 21:11 #8'
   - 'V2Get🛰️ 2026-08-17 21:11 #9'
   - 'V2Get🛰️ 2026-08-17 21:11 #10'
-  - 'V2Get🛰️ 2026-08-17 21:11 #11'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
