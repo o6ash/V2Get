@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-18 01:07
+  type: vless
+  server: rvg-production-f033.up.railway.app
+  port: 443
+  uuid: ba56e2cf-3b50-b7f5-73b8-c6d4a560c606
+  udp: true
+  network: xhttp
+  tls: true
+  servername: rvg-production-f033.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-08-17 07:38
   type: vless
   server: 199.232.78.159
@@ -95,21 +108,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.237.245
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-18 01:06
   type: trojan
   server: 151.101.56.7
@@ -1204,6 +1202,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-18 01:07
   - V2Get🛰️ 2026-08-17 07:38
   - V2Get🛰️ 2026-08-17 21:06
   - V2Get🛰️ 2026-08-17 21:07
@@ -1211,7 +1210,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-18 00:07
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-17 21:11
   - 'V2Get🛰️ 2026-08-17 23:09 #2'
@@ -1308,6 +1306,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-18 01:07
   - V2Get🛰️ 2026-08-17 07:38
   - V2Get🛰️ 2026-08-17 21:06
   - V2Get🛰️ 2026-08-17 21:07
@@ -1315,7 +1314,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-18 00:07
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-17 21:11
   - 'V2Get🛰️ 2026-08-17 23:09 #2'
