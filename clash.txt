@@ -12,6 +12,51 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-12 12:18
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+  udp: true
+- name: V2Get🛰️ 2026-08-17 07:39
+  type: vless
+  server: 85.155.226.87
+  port: 443
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: getsavesafe.net
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+- name: V2Get🛰️ 2026-08-18 02:08
+  type: trojan
+  server: 212.183.88.136
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'V2Get🛰️ 2026-08-18 02:08 #2'
+  type: vless
+  server: 5.175.249.149
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-17 21:11
   type: vless
   server: pl154.slovovpn.com
@@ -33,39 +78,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-17 21:06
-  type: vless
-  server: 104.21.75.227
-  port: 2052
-  uuid: 0010c5ae-1196-4e4e-9c40-08848e05b45b
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-17 21:07
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
-- name: V2Get🛰️ 2026-08-10 15:11
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: 'V2Get🛰️ 2026-08-17 21:11 #2'
   type: vless
   server: 179.254.126.218
@@ -306,19 +318,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-17 21:07 #2'
-  type: vless
-  server: finite-node.rtxconfigz.com
-  port: 443
-  uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
-  udp: true
-  network: ws
-  tls: true
-  servername: finite-node.rtxconfigz.com
-  ws-opts:
-    path: /
-    headers:
-      Host: telegram.us
 - name: V2Get🛰️ 2026-08-17 21:08
   type: vless
   server: gb1.murhost.network
@@ -1206,11 +1205,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-12 12:18
+  - V2Get🛰️ 2026-08-17 07:39
+  - V2Get🛰️ 2026-08-18 02:08
+  - 'V2Get🛰️ 2026-08-18 02:08 #2'
   - V2Get🛰️ 2026-08-17 21:11
   - V2Get🛰️ 2026-08-17 21:10
-  - V2Get🛰️ 2026-08-17 21:06
-  - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-10 15:11
   - 'V2Get🛰️ 2026-08-17 21:11 #2'
   - V2Get🛰️ 2026-08-18 02:07
   - 'V2Get🛰️ 2026-08-18 02:07 #2'
@@ -1231,7 +1231,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 01:08
   - 'V2Get🛰️ 2026-08-18 01:08 #2'
   - 'V2Get🛰️ 2026-08-18 01:08 #3'
-  - 'V2Get🛰️ 2026-08-17 21:07 #2'
   - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-17 22:07
   - V2Get🛰️ 2026-08-18 01:07
@@ -1310,11 +1309,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-12 12:18
+  - V2Get🛰️ 2026-08-17 07:39
+  - V2Get🛰️ 2026-08-18 02:08
+  - 'V2Get🛰️ 2026-08-18 02:08 #2'
   - V2Get🛰️ 2026-08-17 21:11
   - V2Get🛰️ 2026-08-17 21:10
-  - V2Get🛰️ 2026-08-17 21:06
-  - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-10 15:11
   - 'V2Get🛰️ 2026-08-17 21:11 #2'
   - V2Get🛰️ 2026-08-18 02:07
   - 'V2Get🛰️ 2026-08-18 02:07 #2'
@@ -1335,7 +1335,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 01:08
   - 'V2Get🛰️ 2026-08-18 01:08 #2'
   - 'V2Get🛰️ 2026-08-18 01:08 #3'
-  - 'V2Get🛰️ 2026-08-17 21:07 #2'
   - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-17 22:07
   - V2Get🛰️ 2026-08-18 01:07
