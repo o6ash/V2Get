@@ -12,18 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 15:11
+- name: V2Get🛰️ 2026-08-17 21:11
   type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  server: pl154.slovovpn.com
+  port: 26417
+  uuid: 187b1ee2-9b91-4dae-a59a-7af87621167f
   udp: true
-  network: xhttp
+  network: tcp
   tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  servername: github.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: UIW5K60pwiph20ht5dLF22CmD68KphGRiYTBK0wBXXw
+    short-id: 73b1
+- name: V2Get🛰️ 2026-08-17 21:10
+  type: vless
+  server: 65.109.181.6
+  port: 80
+  uuid: 7f3c6d59-e19f-47e4-8004-5facb77b1211
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-17 21:06
   type: vless
   server: 104.21.75.227
@@ -45,32 +54,23 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
-- name: V2Get🛰️ 2026-08-17 21:11
+- name: V2Get🛰️ 2026-08-10 15:11
   type: vless
-  server: pl154.slovovpn.com
-  port: 26417
-  uuid: 187b1ee2-9b91-4dae-a59a-7af87621167f
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: github.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: UIW5K60pwiph20ht5dLF22CmD68KphGRiYTBK0wBXXw
-    short-id: 73b1
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: 'V2Get🛰️ 2026-08-17 21:11 #2'
   type: vless
   server: 179.254.126.218
   port: 9800
   uuid: f4685d27-73e3-4588-9622-add50b84046a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-17 21:10
-  type: vless
-  server: 65.109.181.6
-  port: 80
-  uuid: 7f3c6d59-e19f-47e4-8004-5facb77b1211
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1206,12 +1206,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 21:06
   - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-10 15:11
   - 'V2Get🛰️ 2026-08-17 21:11 #2'
-  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-18 02:07
   - 'V2Get🛰️ 2026-08-18 02:07 #2'
   - 'V2Get🛰️ 2026-08-18 02:07 #3'
@@ -1310,12 +1310,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 21:06
   - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-10 15:11
   - 'V2Get🛰️ 2026-08-17 21:11 #2'
-  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-18 02:07
   - 'V2Get🛰️ 2026-08-18 02:07 #2'
   - 'V2Get🛰️ 2026-08-18 02:07 #3'
