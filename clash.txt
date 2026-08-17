@@ -13,6 +13,24 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-17 21:09
+  type: vmess
+  server: plus.aparatratinfo.ir
+  port: 9443
+  uuid: 499e36f4-e75a-4210-853f-8c849790d257
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-17 21:09 #2'
+  type: vmess
+  server: ar.paydar.site
+  port: 9443
+  uuid: 76bf190a-0a04-4a56-8d57-d49f3231ff3d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-17 21:09 #3'
   type: vless
   server: 89.251.8.180
   port: 43080
@@ -25,26 +43,6 @@ proxies:
   reality-opts:
     public-key: _XtSAi2l8vY_YH5ZnFahRL3eenmStUUFAjsCYg15p0Y
     short-id: 02f1
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 104.26.14.85
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
 - name: V2Get🛰️ 2026-08-07 13:05
   type: vless
   server: 144.31.213.150
@@ -1075,8 +1073,8 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-17 21:09
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 08:39
+  - 'V2Get🛰️ 2026-08-17 21:09 #2'
+  - 'V2Get🛰️ 2026-08-17 21:09 #3'
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-07 15:21
   - V2Get🛰️ 2026-08-07 17:36
@@ -1178,8 +1176,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-17 21:09
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 08:39
+  - 'V2Get🛰️ 2026-08-17 21:09 #2'
+  - 'V2Get🛰️ 2026-08-17 21:09 #3'
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-07 15:21
   - V2Get🛰️ 2026-08-07 17:36
