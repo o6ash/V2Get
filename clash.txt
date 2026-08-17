@@ -12,24 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-05 11:19
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-12 13:17
+  type: vless
+  server: 202.37.33.80
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
   udp: true
-  network: tcp
+  network: ws
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /id-tksi?ed=2048
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
 - name: V2Get🛰️ 2026-08-08 18:10
   type: vless
   server: 169.40.42.179
@@ -1240,8 +1247,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-09 11:11
@@ -1346,8 +1353,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-12 13:17
   - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-09 11:11
