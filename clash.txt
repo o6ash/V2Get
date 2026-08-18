@@ -12,6 +12,122 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-18 19:07
+  type: vless
+  server: sw2.cryptoofarm.com
+  port: 7443
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sw2.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: G_S0P7C8yMmd9miNj8RW8Cka8KS5cR-YtzK9ujzWjlk
+    short-id: 67f243c1d0d5
+- name: 'V2Get🛰️ 2026-08-18 19:07 #2'
+  type: vless
+  server: nl.cryptoofarm.com
+  port: 8443
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KnTz_Vm-xJnmWu9bREZPqaE2z1JBa3vY5mFAq8ywQXs
+    short-id: 20f2019b8755f6f3
+- name: 'V2Get🛰️ 2026-08-18 19:07 #3'
+  type: vless
+  server: su.cryptoofarm.com
+  port: 2053
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: grpc
+  tls: true
+  servername: su.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: mxrrQlclXuv0Z7LX_NklhYaidSx_9QwP0sa2zeMsrmo
+    short-id: 43fac3bd1d8546a1
+  grpc-opts:
+    grpc-service-name: su.cryptoofarm.com
+- name: 'V2Get🛰️ 2026-08-18 19:07 #4'
+  type: vless
+  server: ee.serviceoda.ru
+  port: 443
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ya.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: F1RQOkjsJd0zgk8LfCa-4FOzc84ssQIhFjzMr90juTk
+    short-id: b478456fec48c004
+- name: 'V2Get🛰️ 2026-08-18 19:07 #5'
+  type: vless
+  server: fn.cryptoofarm.com
+  port: 8443
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fn.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8fLUVQ1G1gOrvHlJoLV2AQSkNJQ3YVldLbHnqm7MjmQ
+    short-id: 19efe4867c0bed
+- name: 'V2Get🛰️ 2026-08-18 19:07 #6'
+  type: vless
+  server: in.cryptoofarm.com
+  port: 2053
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: grpc
+  tls: true
+  servername: in.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: yPp3YDqW6LG7ZsCrFq9BL8qydeO5_4JYKYAfHH-Hb30
+    short-id: a439131211db1b
+  grpc-opts:
+    grpc-service-name: in.cryptoofarm.com
+- name: 'V2Get🛰️ 2026-08-18 19:07 #7'
+  type: vless
+  server: ni.cryptoofarm.com
+  port: 2053
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: grpc
+  tls: true
+  servername: ni.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0DYv-zQp_9zz2MoLjwLSqOyhWRU7DcC8c_pvq6sLjkg
+    short-id: 8b97509663
+  grpc-opts:
+    grpc-service-name: ni.cryptoofarm.com
+- name: 'V2Get🛰️ 2026-08-18 19:07 #8'
+  type: vless
+  server: fn.cryptoofarm.com
+  port: 2053
+  uuid: b98e3ee9-a67f-465a-a8f9-1e59e3cda6a8
+  udp: true
+  network: grpc
+  tls: true
+  servername: fn.cryptoofarm.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qEemc5mnxCg4kPBK-AiuzKzPYBqbxA62d7-ln7yZVkw
+    short-id: b599bdfa99d1b7
+  grpc-opts:
+    grpc-service-name: fn.cryptoofarm.com
 - name: V2Get🛰️ 2026-08-18 18:07
   type: vless
   server: www.homaxcorp.com.homaxcorp.com
@@ -36,51 +152,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-03 10:54 #2'
-  type: trojan
-  server: 199.232.237.245
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-18 01:06
   type: trojan
   server: 151.101.56.7
@@ -109,20 +180,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pane2.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-17 21:10
-  type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: MtYgYyZFim
-  udp: true
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-17 21:10 #2'
-  type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: oonK7fkxrh
-  udp: true
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-17 21:11
   type: ss
   server: 20.166.49.191
@@ -130,39 +187,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: n4lfLGpalfuK0Uxh
   udp: true
-- name: V2Get🛰️ 2026-08-17 21:08
-  type: vless
-  server: gb1.murhost.network
-  port: 443
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gb1.murhost.network
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
-    short-id: 84f9881951050a30
-- name: 'V2Get🛰️ 2026-08-17 21:08 #2'
-  type: vmess
-  server: node-uk.connectsuite.org
-  port: 2053
-  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-  tls: true
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-17 21:08 #3'
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
-- name: 'V2Get🛰️ 2026-08-17 21:10 #3'
+- name: V2Get🛰️ 2026-08-17 21:10
   type: vless
   server: 164.37.104.234
   port: 443
@@ -1249,21 +1274,21 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-18 19:07
+  - 'V2Get🛰️ 2026-08-18 19:07 #2'
+  - 'V2Get🛰️ 2026-08-18 19:07 #3'
+  - 'V2Get🛰️ 2026-08-18 19:07 #4'
+  - 'V2Get🛰️ 2026-08-18 19:07 #5'
+  - 'V2Get🛰️ 2026-08-18 19:07 #6'
+  - 'V2Get🛰️ 2026-08-18 19:07 #7'
+  - 'V2Get🛰️ 2026-08-18 19:07 #8'
   - V2Get🛰️ 2026-08-18 18:07
   - 'V2Get🛰️ 2026-08-18 18:07 #2'
   - 'V2Get🛰️ 2026-08-18 18:07 #3'
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-18 12:07
-  - V2Get🛰️ 2026-08-17 21:10
-  - 'V2Get🛰️ 2026-08-17 21:10 #2'
   - V2Get🛰️ 2026-08-17 21:11
-  - V2Get🛰️ 2026-08-17 21:08
-  - 'V2Get🛰️ 2026-08-17 21:08 #2'
-  - 'V2Get🛰️ 2026-08-17 21:08 #3'
-  - 'V2Get🛰️ 2026-08-17 21:10 #3'
+  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 22:08
   - V2Get🛰️ 2026-08-18 10:07
   - 'V2Get🛰️ 2026-08-18 10:07 #2'
@@ -1349,21 +1374,21 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-18 19:07
+  - 'V2Get🛰️ 2026-08-18 19:07 #2'
+  - 'V2Get🛰️ 2026-08-18 19:07 #3'
+  - 'V2Get🛰️ 2026-08-18 19:07 #4'
+  - 'V2Get🛰️ 2026-08-18 19:07 #5'
+  - 'V2Get🛰️ 2026-08-18 19:07 #6'
+  - 'V2Get🛰️ 2026-08-18 19:07 #7'
+  - 'V2Get🛰️ 2026-08-18 19:07 #8'
   - V2Get🛰️ 2026-08-18 18:07
   - 'V2Get🛰️ 2026-08-18 18:07 #2'
   - 'V2Get🛰️ 2026-08-18 18:07 #3'
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-18 12:07
-  - V2Get🛰️ 2026-08-17 21:10
-  - 'V2Get🛰️ 2026-08-17 21:10 #2'
   - V2Get🛰️ 2026-08-17 21:11
-  - V2Get🛰️ 2026-08-17 21:08
-  - 'V2Get🛰️ 2026-08-17 21:08 #2'
-  - 'V2Get🛰️ 2026-08-17 21:08 #3'
-  - 'V2Get🛰️ 2026-08-17 21:10 #3'
+  - V2Get🛰️ 2026-08-17 21:10
   - V2Get🛰️ 2026-08-17 22:08
   - V2Get🛰️ 2026-08-18 10:07
   - 'V2Get🛰️ 2026-08-18 10:07 #2'
