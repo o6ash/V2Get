@@ -12,22 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-08-17 07:38
+  type: vless
+  server: 199.232.78.159
   port: 443
-  password: MITIVPN
+  uuid: b79e53bc-3256-448d-ad8b-4cb0a3192678
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+      Host: pane3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-18 12:07
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 1a3829ce-f01a-4899-8537-1b4d188408ef
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane2.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -42,7 +53,7 @@ proxies:
     path: /usa=mitivpn
     headers:
       Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #3'
+- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -150,19 +161,6 @@ proxies:
     path: /
     headers:
       Host: SvnTeamChannel.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-18 12:07
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 1a3829ce-f01a-4899-8537-1b4d188408ef
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-18 19:07
   type: vmess
   server: 156.245.232.239
@@ -1154,9 +1152,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-17 07:38
+  - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
@@ -1164,7 +1163,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 20:07
   - 'V2Get🛰️ 2026-08-18 20:07 #2'
   - 'V2Get🛰️ 2026-08-18 20:07 #3'
-  - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-08-18 19:07
   - 'V2Get🛰️ 2026-08-18 19:07 #2'
   - 'V2Get🛰️ 2026-08-18 19:07 #3'
@@ -1243,9 +1241,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-17 07:38
+  - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
@@ -1253,7 +1252,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 20:07
   - 'V2Get🛰️ 2026-08-18 20:07 #2'
   - 'V2Get🛰️ 2026-08-18 20:07 #3'
-  - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-08-18 19:07
   - 'V2Get🛰️ 2026-08-18 19:07 #2'
   - 'V2Get🛰️ 2026-08-18 19:07 #3'
