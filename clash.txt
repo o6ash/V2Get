@@ -12,18 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-18 23:08
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: connecto1.kolman.com.de
+  port: 8080
+  uuid: 7d74ead5-f1a9-45e5-b12a-a31a6a3a56f1
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-18 21:07
   type: vless
   server: kabotar.sorvexa.ir
@@ -1267,7 +1263,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-18 23:08
   - V2Get🛰️ 2026-08-18 21:07
   - V2Get🛰️ 2026-08-18 20:07
   - 'V2Get🛰️ 2026-08-18 20:07 #2'
@@ -1367,7 +1363,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-18 23:08
   - V2Get🛰️ 2026-08-18 21:07
   - V2Get🛰️ 2026-08-18 20:07
   - 'V2Get🛰️ 2026-08-18 20:07 #2'
