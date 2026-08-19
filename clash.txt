@@ -12,6 +12,51 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usa=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  type: trojan
+  server: 140.248.185.253
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-s2.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-19 12:10
   type: vless
   server: sourceforge.net
@@ -62,39 +107,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-12 17:19
-  type: vless
-  server: 78.159.247.253
-  port: 2027
-  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
-- name: V2Get🛰️ 2026-08-13 10:19
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: V2Get🛰️ 2026-08-13 23:19
-  type: vless
-  server: 37.18.14.121
-  port: 2027
-  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
 - name: V2Get🛰️ 2026-08-17 07:39
   type: vless
   server: 78.159.245.75
@@ -1101,14 +1113,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-07-26 03:07 #2'
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-19 12:10
   - V2Get🛰️ 2026-08-19 16:12
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 16:11
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
-  - V2Get🛰️ 2026-08-12 17:19
-  - V2Get🛰️ 2026-08-13 10:19
-  - V2Get🛰️ 2026-08-13 23:19
   - V2Get🛰️ 2026-08-17 07:39
   - 'V2Get🛰️ 2026-08-17 07:39 #2'
   - V2Get🛰️ 2026-08-17 22:07
@@ -1206,14 +1218,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-07-26 03:07 #2'
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-19 12:10
   - V2Get🛰️ 2026-08-19 16:12
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 16:11
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
-  - V2Get🛰️ 2026-08-12 17:19
-  - V2Get🛰️ 2026-08-13 10:19
-  - V2Get🛰️ 2026-08-13 23:19
   - V2Get🛰️ 2026-08-17 07:39
   - 'V2Get🛰️ 2026-08-17 07:39 #2'
   - V2Get🛰️ 2026-08-17 22:07
