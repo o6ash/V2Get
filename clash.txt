@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-19 13:10
+  type: vless
+  server: adfasd-production.up.railway.app
+  port: 443
+  uuid: eae6c08e-7109-4dbc-ae29-5ea72e14dcda
+  udp: true
+  network: ws
+  tls: true
+  servername: adfasd-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  ws-opts:
+    path: /ws/vless/eae6c08e-7109-4dbc-ae29-5ea72e14dcda?ed=2048
+    headers:
+      Host: adfasd-production.up.railway.app
 - name: V2Get🛰️ 2026-08-19 12:10
   type: vless
   server: best3.daltoon-server.ir
@@ -28,18 +44,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -1131,9 +1135,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 12:10
   - 'V2Get🛰️ 2026-08-19 12:10 #2'
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 22:18
@@ -1236,9 +1240,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 12:10
   - 'V2Get🛰️ 2026-08-19 12:10 #2'
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 22:18
