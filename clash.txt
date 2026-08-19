@@ -12,87 +12,100 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: V2Get🛰️ 2026-08-08 22:11
-  type: vless
-  server: 169.40.42.15
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 167.82.101.251
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  password: MiTiVPN
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-10 15:11
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
+  sni: global.fastly.com
   alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-12 17:19
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usa=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-03 10:54 #2'
+  type: trojan
+  server: 199.232.237.245
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-10 00:11
   type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-12 21:18
+- name: V2Get🛰️ 2026-08-17 07:38
   type: vless
-  server: it.feywebsite.ir
-  port: 8008
-  uuid: b91abe1a-80ca-417b-998b-2b542661c16f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8
-    short-id: 5f9a
-- name: V2Get🛰️ 2026-08-18 10:07
-  type: vless
-  server: gr2.levikogjgfdd.ir
+  server: 199.232.78.159
   port: 443
-  uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
+  uuid: b79e53bc-3256-448d-ad8b-4cb0a3192678
   udp: true
   network: ws
   tls: true
-  servername: finite-node.rtxconfigz.com
-  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
     path: /
     headers:
-      Host: telegram.us
-- name: V2Get🛰️ 2026-08-19 00:08
-  type: vless
-  server: 57.131.42.58
-  port: 8008
-  uuid: b91abe1a-80ca-417b-998b-2b542661c16f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8
-    short-id: 5f9a
+      Host: lsjaoijji.global.ssl.fastly.neT
 - name: V2Get🛰️ 2026-08-19 11:10
   type: vless
   server: de-11.th3store.ir
@@ -1076,13 +1089,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-12 17:19
-  - V2Get🛰️ 2026-08-12 21:18
-  - V2Get🛰️ 2026-08-18 10:07
-  - V2Get🛰️ 2026-08-19 00:08
+  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-17 07:38
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-19 11:10
   - V2Get🛰️ 2026-08-19 14:09
   - V2Get🛰️ 2026-08-19 15:09
@@ -1181,13 +1194,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-12 17:19
-  - V2Get🛰️ 2026-08-12 21:18
-  - V2Get🛰️ 2026-08-18 10:07
-  - V2Get🛰️ 2026-08-19 00:08
+  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-17 07:38
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-19 11:10
   - V2Get🛰️ 2026-08-19 14:09
   - V2Get🛰️ 2026-08-19 15:09
