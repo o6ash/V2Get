@@ -12,6 +12,57 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-27 21:55
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: V2Get🛰️ 2026-08-05 11:19
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-19 00:08
+  type: vless
+  server: 104.17.107.172
+  port: 443
+  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  udp: true
+  network: ws
+  tls: true
+  servername: workspace.evan00.dpdns.org
+  ws-opts:
+    path: /fp
+    headers:
+      Host: workspace.evan00.dpdns.org
+- name: 'V2Get🛰️ 2026-08-19 00:08 #2'
+  type: vless
+  server: 104.17.89.157
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  udp: true
+  network: ws
+  tls: true
+  servername: terazhediii.info
+  client-fingerprint: chrome
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
+- name: 'V2Get🛰️ 2026-08-19 00:08 #3'
+  type: vless
+  server: 107.161.174.233
+  port: 48704
+  uuid: 5238487e-97b4-4b9c-afb4-2b7ea6cc236f
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 22:12
   type: vless
   server: 87.120.84.32
@@ -62,54 +113,6 @@ proxies:
     public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
     short-id: b91a73752053b039
 - name: V2Get🛰️ 2026-08-19 12:09
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 'V2Get🛰️ 2026-08-19 12:09 #2'
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 'V2Get🛰️ 2026-08-19 12:09 #3'
-  type: vless
-  server: 220.130.75.248
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-19 12:09 #4'
-  type: vless
-  server: 156.226.168.221
-  port: 35193
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-- name: 'V2Get🛰️ 2026-08-19 12:09 #5'
-  type: vless
-  server: 47.239.6.251
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tesla.com
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-- name: 'V2Get🛰️ 2026-08-19 12:09 #6'
   type: vless
   server: 137.220.221.179
   port: 443
@@ -1119,16 +1122,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-19 00:08
+  - 'V2Get🛰️ 2026-08-19 00:08 #2'
+  - 'V2Get🛰️ 2026-08-19 00:08 #3'
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - 'V2Get🛰️ 2026-08-19 22:12 #3'
   - 'V2Get🛰️ 2026-08-19 22:12 #4'
   - V2Get🛰️ 2026-08-19 12:09
-  - 'V2Get🛰️ 2026-08-19 12:09 #2'
-  - 'V2Get🛰️ 2026-08-19 12:09 #3'
-  - 'V2Get🛰️ 2026-08-19 12:09 #4'
-  - 'V2Get🛰️ 2026-08-19 12:09 #5'
-  - 'V2Get🛰️ 2026-08-19 12:09 #6'
   - V2Get🛰️ 2026-08-19 13:09
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 15:11
@@ -1225,16 +1228,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-08-19 00:08
+  - 'V2Get🛰️ 2026-08-19 00:08 #2'
+  - 'V2Get🛰️ 2026-08-19 00:08 #3'
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - 'V2Get🛰️ 2026-08-19 22:12 #3'
   - 'V2Get🛰️ 2026-08-19 22:12 #4'
   - V2Get🛰️ 2026-08-19 12:09
-  - 'V2Get🛰️ 2026-08-19 12:09 #2'
-  - 'V2Get🛰️ 2026-08-19 12:09 #3'
-  - 'V2Get🛰️ 2026-08-19 12:09 #4'
-  - 'V2Get🛰️ 2026-08-19 12:09 #5'
-  - 'V2Get🛰️ 2026-08-19 12:09 #6'
   - V2Get🛰️ 2026-08-19 13:09
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 15:11
