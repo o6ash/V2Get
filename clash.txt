@@ -12,21 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-08-19 12:10
+  type: vless
+  server: sourceforge.net
+  port: 80
+  uuid: 5d07b438-63c1-43fa-aa45-b6810de6d030
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
+  network: httpupgrade
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-19 16:12
+  type: vless
+  server: 104.21.12.222
+  port: 80
+  uuid: 5d07b438-63c1-43fa-aa45-b6810de6d030
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 12:09
   type: vless
   server: 176.120.17.6
@@ -61,19 +62,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-10 09:11
-  type: vless
-  server: 178.154.208.44
-  port: 443
-  uuid: 1a8aa3c0-7741-49dd-adbc-dcc629f6b938
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: smartcaptcha.yandexcloud.net
-  reality-opts:
-    public-key: oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg
-    short-id: 03a70b17f8036009
 - name: V2Get🛰️ 2026-08-12 17:19
   type: vless
   server: 78.159.247.253
@@ -1113,11 +1101,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-19 12:10
+  - V2Get🛰️ 2026-08-19 16:12
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 16:11
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
-  - V2Get🛰️ 2026-08-10 09:11
   - V2Get🛰️ 2026-08-12 17:19
   - V2Get🛰️ 2026-08-13 10:19
   - V2Get🛰️ 2026-08-13 23:19
@@ -1218,11 +1206,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-19 12:10
+  - V2Get🛰️ 2026-08-19 16:12
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 16:11
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
-  - V2Get🛰️ 2026-08-10 09:11
   - V2Get🛰️ 2026-08-12 17:19
   - V2Get🛰️ 2026-08-13 10:19
   - V2Get🛰️ 2026-08-13 23:19
