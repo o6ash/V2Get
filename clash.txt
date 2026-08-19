@@ -12,35 +12,7 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-20 00:10
-  type: vless
-  server: turk.parsclad.ir
-  port: 40924
-  uuid: fa892391-924c-4e82-a417-5b8be75c4161
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn.launch3d.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ibDgx0xiVjgSGqZLiNrSY61LaAEp6m8bhjKKn1iwUkc
-    short-id: 23ff07
 - name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -55,6 +27,34 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn-s2.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-20 00:10
+  type: vless
+  server: turk.parsclad.ir
+  port: 40924
+  uuid: fa892391-924c-4e82-a417-5b8be75c4161
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn.launch3d.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ibDgx0xiVjgSGqZLiNrSY61LaAEp6m8bhjKKn1iwUkc
+    short-id: 23ff07
+- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usa=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -1133,8 +1133,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-20 00:10
   - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-20 00:10
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
@@ -1239,8 +1239,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-20 00:10
   - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-20 00:10
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
