@@ -12,7 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-19 11:10
+  type: vless
+  server: 65.109.188.123
+  port: 50198
+  uuid: a82f9eeb-45a5-4c9f-9d3c-7be9eb7fc247
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 16:09
+  type: vless
+  server: 176.65.151.86
+  port: 37430
+  uuid: bc6eaa3d-ae90-4bcc-b4b9-6fbe14a831b5
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 2PoRqgcBLnDMICOg1UvlGRjuNTv4qhakrI2uyqRTaEI
+- name: 'V2Get🛰️ 2026-08-19 16:09 #2'
   type: vmess
   server: ar.shotorfree.shop
   port: 56863
@@ -21,7 +41,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-08-19 16:09 #2'
+- name: 'V2Get🛰️ 2026-08-19 16:09 #3'
   type: vless
   server: 5.75.193.204
   port: 50420
@@ -29,7 +49,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-19 16:09 #3'
+- name: 'V2Get🛰️ 2026-08-19 16:09 #4'
   type: vless
   server: pa1.miragenet.shop
   port: 50373
@@ -65,32 +85,6 @@ proxies:
     headers:
       Host: venous.iranpuls.ir
 - name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 188.114.97.4
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: chopin.adaspoloandco.com
-- name: 'V2Get🛰️ 2026-08-07 08:39 #2'
-  type: vless
-  server: 104.26.14.85
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 'V2Get🛰️ 2026-08-07 08:39 #3'
   type: vless
   server: 104.21.71.238
   port: 443
@@ -286,7 +280,7 @@ proxies:
     path: /download.php
     headers:
       Host: sertraline.adaspoloandco.com
-- name: V2Get🛰️ 2026-08-19 11:10
+- name: 'V2Get🛰️ 2026-08-19 11:10 #2'
   type: vless
   server: fiverr.com
   port: 443
@@ -303,7 +297,7 @@ proxies:
     path: /
     headers:
       Host: arvan2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-19 11:10 #2'
+- name: 'V2Get🛰️ 2026-08-19 11:10 #3'
   type: vless
   server: surfiran.com
   port: 443
@@ -1026,14 +1020,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 11:10
   - V2Get🛰️ 2026-08-19 16:09
   - 'V2Get🛰️ 2026-08-19 16:09 #2'
   - 'V2Get🛰️ 2026-08-19 16:09 #3'
+  - 'V2Get🛰️ 2026-08-19 16:09 #4'
   - V2Get🛰️ 2026-08-19 14:10
   - V2Get🛰️ 2026-08-19 15:10
   - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
-  - 'V2Get🛰️ 2026-08-07 08:39 #3'
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-08 22:10
   - V2Get🛰️ 2026-08-12 14:17
@@ -1048,8 +1042,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-19 10:08
   - 'V2Get🛰️ 2026-08-19 10:08 #2'
-  - V2Get🛰️ 2026-08-19 11:10
   - 'V2Get🛰️ 2026-08-19 11:10 #2'
+  - 'V2Get🛰️ 2026-08-19 11:10 #3'
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 15:11
   - 'V2Get🛰️ 2026-08-19 15:11 #2'
@@ -1110,14 +1104,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 11:10
   - V2Get🛰️ 2026-08-19 16:09
   - 'V2Get🛰️ 2026-08-19 16:09 #2'
   - 'V2Get🛰️ 2026-08-19 16:09 #3'
+  - 'V2Get🛰️ 2026-08-19 16:09 #4'
   - V2Get🛰️ 2026-08-19 14:10
   - V2Get🛰️ 2026-08-19 15:10
   - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
-  - 'V2Get🛰️ 2026-08-07 08:39 #3'
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-08 22:10
   - V2Get🛰️ 2026-08-12 14:17
@@ -1132,8 +1126,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-19 10:08
   - 'V2Get🛰️ 2026-08-19 10:08 #2'
-  - V2Get🛰️ 2026-08-19 11:10
   - 'V2Get🛰️ 2026-08-19 11:10 #2'
+  - 'V2Get🛰️ 2026-08-19 11:10 #3'
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 15:11
   - 'V2Get🛰️ 2026-08-19 15:11 #2'
