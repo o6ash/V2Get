@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-19 22:11
+  type: vless
+  server: rvg-production-a8ad.up.railway.app
+  port: 443
+  uuid: cfa68865-5010-b107-a538-85d6d97516b8
+  udp: true
+  network: ws
+  tls: true
+  servername: rvg-production-a8ad.up.railway.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws/cfa68865-5010-b107-a538-85d6d97516b8
+    headers:
+      Host: rvg-production-a8ad.up.railway.app
 - name: V2Get🛰️ 2026-08-19 20:09
   type: vmess
   server: 46.8.237.242
@@ -1079,18 +1093,6 @@ proxies:
     short-id: b8b05b82312175b5
 - name: V2Get🛰️ 2026-08-19 17:09
   type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: a62a4c64-2270-4d41-828b-2591906c48ba
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-disk-a026.253-54b.workers.dev
-- name: 'V2Get🛰️ 2026-08-19 17:09 #2'
-  type: vless
   server: 169.40.42.182
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
@@ -1103,7 +1105,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-19 17:09 #3'
+- name: 'V2Get🛰️ 2026-08-19 17:09 #2'
   type: vless
   server: lucky-field-0220.191-de2.workers.dev
   port: 8880
@@ -1113,7 +1115,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 'V2Get🛰️ 2026-08-19 17:09 #4'
+- name: 'V2Get🛰️ 2026-08-19 17:09 #3'
   type: vless
   server: log.bpminecraft.com
   port: 8880
@@ -1131,6 +1133,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 22:11
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1227,13 +1230,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-19 17:09
   - 'V2Get🛰️ 2026-08-19 17:09 #2'
   - 'V2Get🛰️ 2026-08-19 17:09 #3'
-  - 'V2Get🛰️ 2026-08-19 17:09 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 22:11
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1330,7 +1333,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-19 17:09
   - 'V2Get🛰️ 2026-08-19 17:09 #2'
   - 'V2Get🛰️ 2026-08-19 17:09 #3'
-  - 'V2Get🛰️ 2026-08-19 17:09 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
