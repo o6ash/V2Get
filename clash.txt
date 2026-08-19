@@ -12,57 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: trojan
-  server: 165.215.250.14
+- name: V2Get🛰️ 2026-08-17 21:11
+  type: ss
+  server: 20.166.49.191
   port: 443
-  password: humanity
+  cipher: chacha20-ietf-poly1305
+  password: n4lfLGpalfuK0Uxh
   udp: true
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-08-06 09:19
+- name: V2Get🛰️ 2026-08-19 13:10
   type: vless
-  server: 172.66.44.97
+  server: rusl2-e.ya-proxy.com
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: 8b706aff-ca60-4632-9658-aeb5c0f48561
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: V2Get🛰️ 2026-08-12 22:18
-  type: vless
-  server: nl.feywebsite.ir
-  port: 8008
-  uuid: b91abe1a-80ca-417b-998b-2b542661c16f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: uUJJTIzw37fc46Ywh-LJIcobqF2Dim7JPCFm1VuMfFg
-    short-id: c0c3011371b97459
-- name: V2Get🛰️ 2026-08-13 05:18
-  type: vless
-  server: 185.136.12.190
-  port: 443
-  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
-  udp: true
-  network: xhttp
-  tls: true
-  servername: deu683.lackerdeu.org
+  servername: eda.x5.ru
   client-fingerprint: firefox
-  alpn:
-  - h2
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
+- name: V2Get🛰️ 2026-08-19 20:11
+  type: vmess
+  server: 46.224.171.220
+  port: 28111
+  uuid: c8157082-1ed4-4504-9245-57425320c465
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-19 20:11 #2'
+  type: vmess
+  server: 91.107.255.181
+  port: 28110
+  uuid: 753fa7bf-b0be-4c2e-adbe-7e49977f1e3d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-08-17 21:07
   type: vless
   server: 199.232.78.159
@@ -76,7 +64,7 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
-- name: V2Get🛰️ 2026-08-19 20:11
+- name: 'V2Get🛰️ 2026-08-19 20:11 #3'
   type: ss
   server: 185.154.195.39
   port: 34144
@@ -1141,12 +1129,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-12 22:18
-  - V2Get🛰️ 2026-08-13 05:18
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 20:11
+  - 'V2Get🛰️ 2026-08-19 20:11 #2'
+  - V2Get🛰️ 2026-08-17 21:07
+  - 'V2Get🛰️ 2026-08-19 20:11 #3'
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 00:08
   - V2Get🛰️ 2026-08-19 10:08
@@ -1245,12 +1233,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-12 22:18
-  - V2Get🛰️ 2026-08-13 05:18
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 20:11
+  - 'V2Get🛰️ 2026-08-19 20:11 #2'
+  - V2Get🛰️ 2026-08-17 21:07
+  - 'V2Get🛰️ 2026-08-19 20:11 #3'
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 00:08
   - V2Get🛰️ 2026-08-19 10:08
