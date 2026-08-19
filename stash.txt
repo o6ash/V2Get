@@ -12,16 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-19 15:10
+  type: vless
+  server: venous.iranpuls.ir
+  port: 443
+  uuid: 07898d3a-f6b7-44cf-b49d-9a532f28af1a
+  udp: true
+  network: ws
+  tls: true
+  servername: venous.iranpuls.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: venous.iranpuls.ir
+- name: V2Get🛰️ 2026-08-19 14:10
+  type: vless
+  server: 185.70.199.217
+  port: 33651
+  uuid: 31d1f5ce-e5b5-4fdc-af07-4b343a0622b9
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-19 15:10
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-19 15:10 #2'
   type: vless
   server: 194.67.200.16
   port: 443
@@ -161,7 +174,7 @@ proxies:
   reality-opts:
     public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
     short-id: 17faf32cb516c9cb
-- name: V2Get🛰️ 2026-08-19 14:10
+- name: 'V2Get🛰️ 2026-08-19 14:10 #2'
   type: vless
   server: 146.75.119.82
   port: 80
@@ -173,14 +186,6 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: 'V2Get🛰️ 2026-08-19 14:10 #2'
-  type: vless
-  server: 185.70.199.217
-  port: 33651
-  uuid: 31d1f5ce-e5b5-4fdc-af07-4b343a0622b9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-19 14:10 #3'
   type: vless
   server: sw2.cryptoofarm.com
@@ -918,8 +923,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-19 15:10
+  - V2Get🛰️ 2026-08-19 14:10
+  - 'V2Get🛰️ 2026-08-19 15:10 #2'
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-08-19 12:09
   - 'V2Get🛰️ 2026-08-19 12:09 #2'
@@ -931,7 +937,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 15:09 #5'
   - 'V2Get🛰️ 2026-08-19 15:09 #6'
   - 'V2Get🛰️ 2026-08-19 15:09 #7'
-  - V2Get🛰️ 2026-08-19 14:10
   - 'V2Get🛰️ 2026-08-19 14:10 #2'
   - 'V2Get🛰️ 2026-08-19 14:10 #3'
   - 'V2Get🛰️ 2026-08-19 14:10 #4'
@@ -998,8 +1003,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-19 15:10
+  - V2Get🛰️ 2026-08-19 14:10
+  - 'V2Get🛰️ 2026-08-19 15:10 #2'
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-08-19 12:09
   - 'V2Get🛰️ 2026-08-19 12:09 #2'
@@ -1011,7 +1017,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 15:09 #5'
   - 'V2Get🛰️ 2026-08-19 15:09 #6'
   - 'V2Get🛰️ 2026-08-19 15:09 #7'
-  - V2Get🛰️ 2026-08-19 14:10
   - 'V2Get🛰️ 2026-08-19 14:10 #2'
   - 'V2Get🛰️ 2026-08-19 14:10 #3'
   - 'V2Get🛰️ 2026-08-19 14:10 #4'
