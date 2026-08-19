@@ -13,6 +13,22 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-19 22:11
+  type: vless
+  server: cdn.devmixa.ir
+  port: 80
+  uuid: d79e5263-aae8-4de4-a235-3edf9e3aa330
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-19 22:11 #2'
+  type: vless
+  server: 52.59.78.15
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-19 22:11 #3'
   type: vmess
   server: 46.8.237.242
   port: 8880
@@ -21,7 +37,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-08-19 22:11 #2'
+- name: 'V2Get🛰️ 2026-08-19 22:11 #4'
   type: vless
   server: rvg-production-a8ad.up.railway.app
   port: 443
@@ -1100,28 +1116,6 @@ proxies:
   reality-opts:
     public-key: 6FiHGy-TBN7PJpsG2A0kuwFjAzFCCPzXhfrcAuRBfQo
     short-id: b8b05b82312175b5
-- name: V2Get🛰️ 2026-08-19 17:09
-  type: vless
-  server: lucky-field-0220.191-de2.workers.dev
-  port: 8880
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 'V2Get🛰️ 2026-08-19 17:09 #2'
-  type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 6b89f475-913c-4381-a102-f5e06a129685
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: proud-dawn-56f1.125-85b.workers.dev
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -1130,6 +1124,8 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-19 22:11
   - 'V2Get🛰️ 2026-08-19 22:11 #2'
+  - 'V2Get🛰️ 2026-08-19 22:11 #3'
+  - 'V2Get🛰️ 2026-08-19 22:11 #4'
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1223,8 +1219,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 17:10 #15'
   - 'V2Get🛰️ 2026-08-19 17:10 #16'
   - 'V2Get🛰️ 2026-08-19 17:10 #17'
-  - V2Get🛰️ 2026-08-19 17:09
-  - 'V2Get🛰️ 2026-08-19 17:09 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1233,6 +1227,8 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-19 22:11
   - 'V2Get🛰️ 2026-08-19 22:11 #2'
+  - 'V2Get🛰️ 2026-08-19 22:11 #3'
+  - 'V2Get🛰️ 2026-08-19 22:11 #4'
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1326,8 +1322,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 17:10 #15'
   - 'V2Get🛰️ 2026-08-19 17:10 #16'
   - 'V2Get🛰️ 2026-08-19 17:10 #17'
-  - V2Get🛰️ 2026-08-19 17:09
-  - 'V2Get🛰️ 2026-08-19 17:09 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
