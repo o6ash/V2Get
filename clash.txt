@@ -12,20 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-19 13:11
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+- name: V2Get🛰️ 2026-08-19 20:09
+  type: vmess
+  server: 46.8.237.242
+  port: 80
+  uuid: 7d85828a-906b-43c4-8dc9-0785cd4801af
+  alterId: 0
+  cipher: auto
   udp: true
-  network: ws
-  tls: true
-  servername: 129.121.95.159
-  client-fingerprint: chrome
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
+  network: tcp
 - name: V2Get🛰️ 2026-08-19 19:11
   type: vless
   server: starmizban.ir
@@ -1118,7 +1113,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-19 13:11
+  - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 19:11
   - 'V2Get🛰️ 2026-08-19 19:11 #2'
   - V2Get🛰️ 2026-08-19 19:10
@@ -1220,7 +1215,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-19 13:11
+  - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 19:11
   - 'V2Get🛰️ 2026-08-19 19:11 #2'
   - V2Get🛰️ 2026-08-19 19:10
