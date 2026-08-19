@@ -14,24 +14,15 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-19 11:10
   type: vless
-  server: fiverr.com
-  port: 443
-  uuid: 37759a91-6fba-4816-8e7e-baae8f812313
+  server: 65.109.188.123
+  port: 50198
+  uuid: a82f9eeb-45a5-4c9f-9d3c-7be9eb7fc247
   udp: true
-  network: ws
-  tls: true
-  servername: arvan2.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: arvan2.dearhossein-taktaz.ir
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-19 11:10 #2'
   type: vless
-  server: surfiran.com
+  server: fiverr.com
   port: 443
   uuid: 37759a91-6fba-4816-8e7e-baae8f812313
   udp: true
@@ -48,7 +39,7 @@ proxies:
       Host: arvan2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-19 11:10 #3'
   type: vless
-  server: mahdroo.ir
+  server: surfiran.com
   port: 443
   uuid: 37759a91-6fba-4816-8e7e-baae8f812313
   udp: true
@@ -64,6 +55,23 @@ proxies:
     headers:
       Host: arvan2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-19 11:10 #4'
+  type: vless
+  server: mahdroo.ir
+  port: 443
+  uuid: 37759a91-6fba-4816-8e7e-baae8f812313
+  udp: true
+  network: ws
+  tls: true
+  servername: arvan2.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: arvan2.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-19 11:10 #5'
   type: vless
   server: parstoday.ir
   port: 443
@@ -93,18 +101,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-13 20:19
-  type: vless
-  server: ov-italy1.09vpn.com
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Italy1.09vpn.com
 - name: V2Get🛰️ 2026-08-17 21:08
   type: vless
   server: gb1.murhost.network
@@ -1088,8 +1084,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 11:10 #2'
   - 'V2Get🛰️ 2026-08-19 11:10 #3'
   - 'V2Get🛰️ 2026-08-19 11:10 #4'
+  - 'V2Get🛰️ 2026-08-19 11:10 #5'
   - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-13 20:19
   - V2Get🛰️ 2026-08-17 21:08
   - 'V2Get🛰️ 2026-08-17 21:08 #2'
   - V2Get🛰️ 2026-08-17 23:09
@@ -1175,8 +1171,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 11:10 #2'
   - 'V2Get🛰️ 2026-08-19 11:10 #3'
   - 'V2Get🛰️ 2026-08-19 11:10 #4'
+  - 'V2Get🛰️ 2026-08-19 11:10 #5'
   - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-13 20:19
   - V2Get🛰️ 2026-08-17 21:08
   - 'V2Get🛰️ 2026-08-17 21:08 #2'
   - V2Get🛰️ 2026-08-17 23:09
