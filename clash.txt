@@ -13,6 +13,15 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-19 22:11
+  type: vmess
+  server: 46.8.237.242
+  port: 8880
+  uuid: 3ed00ef6-54da-487d-9978-b61c77400410
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-19 22:11 #2'
   type: vless
   server: rvg-production-a8ad.up.railway.app
   port: 443
@@ -1093,20 +1102,6 @@ proxies:
     short-id: b8b05b82312175b5
 - name: V2Get🛰️ 2026-08-19 17:09
   type: vless
-  server: 169.40.42.182
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-19 17:09 #2'
-  type: vless
   server: lucky-field-0220.191-de2.workers.dev
   port: 8880
   uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
@@ -1115,7 +1110,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 'V2Get🛰️ 2026-08-19 17:09 #3'
+- name: 'V2Get🛰️ 2026-08-19 17:09 #2'
   type: vless
   server: log.bpminecraft.com
   port: 8880
@@ -1134,6 +1129,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-19 22:11
+  - 'V2Get🛰️ 2026-08-19 22:11 #2'
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1229,7 +1225,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 17:10 #17'
   - V2Get🛰️ 2026-08-19 17:09
   - 'V2Get🛰️ 2026-08-19 17:09 #2'
-  - 'V2Get🛰️ 2026-08-19 17:09 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1237,6 +1232,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-19 22:11
+  - 'V2Get🛰️ 2026-08-19 22:11 #2'
   - V2Get🛰️ 2026-08-19 20:09
   - V2Get🛰️ 2026-08-19 22:10
   - 'V2Get🛰️ 2026-08-19 22:10 #2'
@@ -1332,7 +1328,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 17:10 #17'
   - V2Get🛰️ 2026-08-19 17:09
   - 'V2Get🛰️ 2026-08-19 17:09 #2'
-  - 'V2Get🛰️ 2026-08-19 17:09 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
