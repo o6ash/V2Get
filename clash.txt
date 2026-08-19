@@ -12,59 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: vless
-  server: 172.66.44.97
+- name: V2Get🛰️ 2026-08-17 21:11
+  type: ss
+  server: 20.166.49.191
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  cipher: chacha20-ietf-poly1305
+  password: n4lfLGpalfuK0Uxh
   udp: true
-  network: ws
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: V2Get🛰️ 2026-08-07 09:49
+- name: V2Get🛰️ 2026-08-17 23:09
   type: vless
-  server: 104.18.37.228
+  server: 31.76.70.32
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  udp: true
-  network: ws
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: V2Get🛰️ 2026-08-13 14:19
-  type: vless
-  server: 31.76.80.69
-  port: 2083
-  uuid: 8975546a-375c-4966-8064-19fc0f66f30a
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk
-    short-id: 29b21343ab4d
-- name: V2Get🛰️ 2026-08-17 21:07
-  type: vless
-  server: 193.233.126.82
-  port: 9443
-  uuid: 37a098ab-8fec-4352-8ee8-294ae5bca68f
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.amd.com
+  servername: baltic.cendora.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: 4a46213c935e2ee4
+- name: V2Get🛰️ 2026-08-18 19:07
+  type: vless
+  server: 83.143.112.146
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nordic.cendora.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc
-    short-id: 0240e83f65a25e
+    public-key: YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU
+    short-id: 2186a755ed67b034
+- name: V2Get🛰️ 2026-08-19 10:08
+  type: trojan
+  server: 193.124.46.65
+  port: 443
+  password: 8bS8vVC5CQ2GsckhMh8IT1jv
+  udp: true
+  sni: 193.124.46.65
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 12:11
   type: vless
   server: ita.montago-shop.ir
@@ -1089,10 +1079,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 09:49
-  - V2Get🛰️ 2026-08-13 14:19
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-18 19:07
+  - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 12:11
   - 'V2Get🛰️ 2026-08-19 12:11 #2'
   - 'V2Get🛰️ 2026-08-19 12:11 #3'
@@ -1195,10 +1185,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-07 09:49
-  - V2Get🛰️ 2026-08-13 14:19
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-18 19:07
+  - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 12:11
   - 'V2Get🛰️ 2026-08-19 12:11 #2'
   - 'V2Get🛰️ 2026-08-19 12:11 #3'
