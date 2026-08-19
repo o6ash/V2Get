@@ -12,16 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-19 13:11
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  udp: true
+  network: ws
+  tls: true
+  servername: 129.121.95.159
+  client-fingerprint: chrome
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+- name: V2Get🛰️ 2026-08-19 19:11
+  type: vless
+  server: starmizban.ir
+  port: 1015
+  uuid: 1c79cc2a-90d0-4ffd-a427-7226a8b2b0a6
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-19 19:11
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-19 19:11 #2'
   type: vmess
   server: 46.8.237.242
   port: 42034
@@ -439,18 +452,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-19 16:09
-  type: vless
-  server: 176.65.151.86
-  port: 37430
-  uuid: bc6eaa3d-ae90-4bcc-b4b9-6fbe14a831b5
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 2PoRqgcBLnDMICOg1UvlGRjuNTv4qhakrI2uyqRTaEI
 - name: 'V2Get🛰️ 2026-08-19 17:10 #2'
   type: vmess
   server: 46.8.237.242
@@ -1117,8 +1118,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 19:11
+  - 'V2Get🛰️ 2026-08-19 19:11 #2'
   - V2Get🛰️ 2026-08-19 19:10
   - 'V2Get🛰️ 2026-08-19 19:10 #2'
   - 'V2Get🛰️ 2026-08-19 19:10 #3'
@@ -1155,7 +1157,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
   - 'V2Get🛰️ 2026-08-19 18:09 #10'
   - V2Get🛰️ 2026-08-19 17:10
-  - V2Get🛰️ 2026-08-19 16:09
   - 'V2Get🛰️ 2026-08-19 17:10 #2'
   - 'V2Get🛰️ 2026-08-19 17:10 #3'
   - 'V2Get🛰️ 2026-08-19 17:10 #4'
@@ -1219,8 +1220,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 19:11
+  - 'V2Get🛰️ 2026-08-19 19:11 #2'
   - V2Get🛰️ 2026-08-19 19:10
   - 'V2Get🛰️ 2026-08-19 19:10 #2'
   - 'V2Get🛰️ 2026-08-19 19:10 #3'
@@ -1257,7 +1259,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-19 16:11 #2'
   - 'V2Get🛰️ 2026-08-19 18:09 #10'
   - V2Get🛰️ 2026-08-19 17:10
-  - V2Get🛰️ 2026-08-19 16:09
   - 'V2Get🛰️ 2026-08-19 17:10 #2'
   - 'V2Get🛰️ 2026-08-19 17:10 #3'
   - 'V2Get🛰️ 2026-08-19 17:10 #4'
