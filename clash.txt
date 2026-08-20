@@ -12,13 +12,68 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-19 14:10
+- name: V2Get🛰️ 2026-08-20 11:14
   type: vless
-  server: 167.82.76.69
-  port: 80
-  uuid: 7792c309-4dde-49d9-9f71-bf29611caa52
+  server: venous.iranpuls.ir
+  port: 443
+  uuid: cf6c394b-58be-4cfe-b2ab-b5b0c1ebf8e7
   udp: true
-  network: xhttp
+  network: ws
+  tls: true
+  servername: venous.iranpuls.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: venous.iranpuls.ir
+- name: V2Get🛰️ 2026-08-20 09:10
+  type: vless
+  server: tr.awexco.shop
+  port: 2082
+  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-20 09:10 #2'
+  type: vless
+  server: pro1.awexio.ir
+  port: 2086
+  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
+  udp: true
+  network: tcp
+  tls: true
+  servername: support-shield.nvidia.nl
+  client-fingerprint: edge
+  reality-opts:
+    public-key: FdedLVqgh4rCCzYydDap0cmzOuhnw2hdwpj0C4G1sjU
+    short-id: b91fc778714c36a6
+- name: 'V2Get🛰️ 2026-08-20 09:10 #3'
+  type: vless
+  server: peo.awexaio.shop
+  port: 2086
+  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
+  udp: true
+  network: tcp
+  tls: true
+  servername: support-shield.nvidia.nl
+  client-fingerprint: qq
+  reality-opts:
+    public-key: FdedLVqgh4rCCzYydDap0cmzOuhnw2hdwpj0C4G1sjU
+    short-id: b91fc778714c36a6
+- name: 'V2Get🛰️ 2026-08-20 09:10 #4'
+  type: trojan
+  server: peo2.awexio.ir
+  port: 2020
+  password: Ja1hkoCbpKj4nCR7wM8pZwQ26rlNDcYB
+  udp: true
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-20 09:10 #5'
+  type: vless
+  server: 104.253.134.220
+  port: 1080
+  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
+  udp: true
+  network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 15:11
   type: vless
@@ -591,14 +646,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-20 09:10
-  type: vless
-  server: tr.awexco.shop
-  port: 2082
-  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-20 09:11 #4'
   type: vless
   server: rvg-production-259b.up.railway.app
@@ -817,47 +864,6 @@ proxies:
   reality-opts:
     public-key: -fPFPc0hk6tYLTYyE-jQmlJ3BaQZuyxGFKoVZfW66G4
     short-id: e57ecdd65cfcdfb0
-- name: 'V2Get🛰️ 2026-08-20 09:10 #2'
-  type: vless
-  server: 104.253.134.220
-  port: 1080
-  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-20 09:10 #3'
-  type: trojan
-  server: peo2.awexio.ir
-  port: 2020
-  password: Ja1hkoCbpKj4nCR7wM8pZwQ26rlNDcYB
-  udp: true
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-20 09:10 #4'
-  type: vless
-  server: peo.awexaio.shop
-  port: 2086
-  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
-  udp: true
-  network: tcp
-  tls: true
-  servername: support-shield.nvidia.nl
-  client-fingerprint: qq
-  reality-opts:
-    public-key: FdedLVqgh4rCCzYydDap0cmzOuhnw2hdwpj0C4G1sjU
-    short-id: b91fc778714c36a6
-- name: 'V2Get🛰️ 2026-08-20 09:10 #5'
-  type: vless
-  server: pro1.awexio.ir
-  port: 2086
-  uuid: be311ac0-1d81-460d-af5a-c4c2180dd48f
-  udp: true
-  network: tcp
-  tls: true
-  servername: support-shield.nvidia.nl
-  client-fingerprint: edge
-  reality-opts:
-    public-key: FdedLVqgh4rCCzYydDap0cmzOuhnw2hdwpj0C4G1sjU
-    short-id: b91fc778714c36a6
 - name: V2Get🛰️ 2026-08-20 04:10
   type: vless
   server: 135.106.193.180
@@ -1178,7 +1184,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-19 14:10
+  - V2Get🛰️ 2026-08-20 11:14
+  - V2Get🛰️ 2026-08-20 09:10
+  - 'V2Get🛰️ 2026-08-20 09:10 #2'
+  - 'V2Get🛰️ 2026-08-20 09:10 #3'
+  - 'V2Get🛰️ 2026-08-20 09:10 #4'
+  - 'V2Get🛰️ 2026-08-20 09:10 #5'
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-08-20 11:13
   - V2Get🛰️ 2026-08-20 11:10
@@ -1225,7 +1236,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 09:11 #3'
   - 'V2Get🛰️ 2026-08-20 10:11 #4'
   - 'V2Get🛰️ 2026-08-20 10:11 #5'
-  - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:11 #4'
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-20 10:10 #2'
@@ -1244,10 +1254,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 01:10 #3'
   - 'V2Get🛰️ 2026-08-20 09:11 #9'
   - 'V2Get🛰️ 2026-08-20 09:11 #10'
-  - 'V2Get🛰️ 2026-08-20 09:10 #2'
-  - 'V2Get🛰️ 2026-08-20 09:10 #3'
-  - 'V2Get🛰️ 2026-08-20 09:10 #4'
-  - 'V2Get🛰️ 2026-08-20 09:10 #5'
   - V2Get🛰️ 2026-08-20 04:10
   - V2Get🛰️ 2026-08-20 02:10
   - 'V2Get🛰️ 2026-08-20 02:10 #2'
@@ -1282,7 +1288,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-19 14:10
+  - V2Get🛰️ 2026-08-20 11:14
+  - V2Get🛰️ 2026-08-20 09:10
+  - 'V2Get🛰️ 2026-08-20 09:10 #2'
+  - 'V2Get🛰️ 2026-08-20 09:10 #3'
+  - 'V2Get🛰️ 2026-08-20 09:10 #4'
+  - 'V2Get🛰️ 2026-08-20 09:10 #5'
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-08-20 11:13
   - V2Get🛰️ 2026-08-20 11:10
@@ -1329,7 +1340,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 09:11 #3'
   - 'V2Get🛰️ 2026-08-20 10:11 #4'
   - 'V2Get🛰️ 2026-08-20 10:11 #5'
-  - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:11 #4'
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-20 10:10 #2'
@@ -1348,10 +1358,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 01:10 #3'
   - 'V2Get🛰️ 2026-08-20 09:11 #9'
   - 'V2Get🛰️ 2026-08-20 09:11 #10'
-  - 'V2Get🛰️ 2026-08-20 09:10 #2'
-  - 'V2Get🛰️ 2026-08-20 09:10 #3'
-  - 'V2Get🛰️ 2026-08-20 09:10 #4'
-  - 'V2Get🛰️ 2026-08-20 09:10 #5'
   - V2Get🛰️ 2026-08-20 04:10
   - V2Get🛰️ 2026-08-20 02:10
   - 'V2Get🛰️ 2026-08-20 02:10 #2'
