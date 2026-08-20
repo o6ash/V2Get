@@ -12,22 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
+- name: V2Get🛰️ 2026-08-19 21:10
+  type: vless
+  server: 43.224.150.71
   port: 443
-  password: MiTiVPN
+  uuid: 0a31984d-b06f-4e79-b255-0dc64ee5d419
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: jkGStCLgX1e3kQ31H1_ycSuYm_zSNQ4qVafasU7bkwU
+    short-id: 4c0be5bf40e9f5ce
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -1234,8 +1233,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 21:10
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-03 02:33
@@ -1339,8 +1338,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 21:10
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-03 02:33
