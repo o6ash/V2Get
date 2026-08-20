@@ -12,21 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 00:11
+- name: V2Get🛰️ 2026-08-20 18:12
   type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+  server: 31.184.244.203
+  port: 4433
+  uuid: b5680d6e-377f-49bf-a247-1307172394d4
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-17 22:07
-  type: ss
-  server: 45.8.158.176
-  port: 10801
-  cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
+- name: 'V2Get🛰️ 2026-08-20 18:12 #2'
+  type: vless
+  server: 31.184.244.203
+  port: 443
+  uuid: b5680d6e-377f-49bf-a247-1307172394d4
   udp: true
+  network: tcp
+  tls: true
+  servername: 2df4k3vmc5b0.dop999.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-08-17 23:09
   type: vless
   server: 89.144.30.154
@@ -1281,8 +1287,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-17 22:07
+  - V2Get🛰️ 2026-08-20 18:12
+  - 'V2Get🛰️ 2026-08-20 18:12 #2'
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-18 01:09
   - V2Get🛰️ 2026-08-18 02:08
@@ -1386,8 +1392,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-17 22:07
+  - V2Get🛰️ 2026-08-20 18:12
+  - 'V2Get🛰️ 2026-08-20 18:12 #2'
   - V2Get🛰️ 2026-08-17 23:09
   - V2Get🛰️ 2026-08-18 01:09
   - V2Get🛰️ 2026-08-18 02:08
