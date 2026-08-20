@@ -12,75 +12,68 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: ss
-  server: 31.76.30.79
-  port: 10808
-  cipher: chacha20-ietf-poly1305
-  password: TmXSpcRBbhvHDg66bo2w89bToxQsbMoa
-  udp: true
-- name: V2Get🛰️ 2026-08-07 08:39
+- name: V2Get🛰️ 2026-08-17 23:09
   type: vless
-  server: 104.26.14.85
+  server: 89.144.30.154
   port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  network: ws
+  network: xhttp
   tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: V2Get🛰️ 2026-08-07 09:49
+  servername: static.lotussec.com
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-19 20:10
   type: vless
-  server: 104.18.37.228
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  server: 72.35.246.31
+  port: 1244
+  uuid: 2d96d4d6-a276-4ab5-9f20-8dc5cbf6e902
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: V2Get🛰️ 2026-08-19 10:08
-  type: vless
-  server: 188.114.99.0
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
+  servername: axisvpn.ru
   client-fingerprint: chrome
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-08-19 11:10
+  reality-opts:
+    public-key: gHG_cbbi-OJKY2tBQTqz1QryfmmRZEQ7BQgymimukkQ
+    short-id: 6ba85179e30d4fc2
+- name: V2Get🛰️ 2026-08-20 23:14
   type: vless
-  server: de-11.th3store.ir
-  port: 8080
-  uuid: c164613c-ab89-4b34-a1d7-d526fadcd5b6
+  server: sourceforge.net
+  port: 80
+  uuid: ec9e4d1a-46e1-4405-a559-7fda3501cf7b
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-19 15:11
+- name: 'V2Get🛰️ 2026-08-20 23:14 #2'
   type: vless
-  server: 172.67.74.10
+  server: 69.46.46.49
   port: 443
-  uuid: d171491a-9995-46ce-8719-f64463ca3a45
+  uuid: 589fd36b-5e51-4db4-83a5-e1493af8f2d7
   udp: true
-  network: ws
+  network: xhttp
   tls: true
-  servername: sertraline.adaspoloandco.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: sertraline.adaspoloandco.com
+  servername: 3x-ui-production-b654.up.railway.app
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-20 23:14 #3'
+  type: vless
+  server: 5.160.132.5
+  port: 47686
+  uuid: b7a70451-ea5e-43c4-af92-11075a950dca
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-20 23:14 #4'
+  type: vless
+  server: cdn.devmixa.ir
+  port: 80
+  uuid: ec9e4d1a-46e1-4405-a559-7fda3501cf7b
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-20 12:12
   type: vless
   server: gb1.wba-pn.ru
@@ -128,7 +121,7 @@ proxies:
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
-- name: V2Get🛰️ 2026-08-20 23:14
+- name: 'V2Get🛰️ 2026-08-20 23:14 #5'
   type: vless
   server: 69.46.46.123
   port: 443
@@ -1180,17 +1173,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-07 08:39
-  - V2Get🛰️ 2026-08-07 09:49
-  - V2Get🛰️ 2026-08-19 10:08
-  - V2Get🛰️ 2026-08-19 11:10
-  - V2Get🛰️ 2026-08-19 15:11
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-19 20:10
+  - V2Get🛰️ 2026-08-20 23:14
+  - 'V2Get🛰️ 2026-08-20 23:14 #2'
+  - 'V2Get🛰️ 2026-08-20 23:14 #3'
+  - 'V2Get🛰️ 2026-08-20 23:14 #4'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 14:13
   - 'V2Get🛰️ 2026-08-20 14:13 #2'
   - 'V2Get🛰️ 2026-08-20 14:13 #3'
-  - V2Get🛰️ 2026-08-20 23:14
+  - 'V2Get🛰️ 2026-08-20 23:14 #5'
   - V2Get🛰️ 2026-08-20 22:14
   - V2Get🛰️ 2026-08-20 23:13
   - 'V2Get🛰️ 2026-08-20 23:13 #2'
@@ -1284,17 +1277,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-07 08:39
-  - V2Get🛰️ 2026-08-07 09:49
-  - V2Get🛰️ 2026-08-19 10:08
-  - V2Get🛰️ 2026-08-19 11:10
-  - V2Get🛰️ 2026-08-19 15:11
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-19 20:10
+  - V2Get🛰️ 2026-08-20 23:14
+  - 'V2Get🛰️ 2026-08-20 23:14 #2'
+  - 'V2Get🛰️ 2026-08-20 23:14 #3'
+  - 'V2Get🛰️ 2026-08-20 23:14 #4'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 14:13
   - 'V2Get🛰️ 2026-08-20 14:13 #2'
   - 'V2Get🛰️ 2026-08-20 14:13 #3'
-  - V2Get🛰️ 2026-08-20 23:14
+  - 'V2Get🛰️ 2026-08-20 23:14 #5'
   - V2Get🛰️ 2026-08-20 22:14
   - V2Get🛰️ 2026-08-20 23:13
   - 'V2Get🛰️ 2026-08-20 23:13 #2'
