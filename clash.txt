@@ -14,13 +14,26 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-20 18:12
   type: vless
+  server: wwwirancom-production.up.railway.app
+  port: 443
+  uuid: e7499a82-047b-c0f6-4277-fad96c794873
+  udp: true
+  network: xhttp
+  tls: true
+  servername: wwwirancom-production.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-20 18:12 #2'
+  type: vless
   server: 31.184.244.203
   port: 4433
   uuid: b5680d6e-377f-49bf-a247-1307172394d4
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-20 18:12 #2'
+- name: 'V2Get🛰️ 2026-08-20 18:12 #3'
   type: vless
   server: 31.184.244.203
   port: 443
@@ -33,13 +46,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-19 15:11
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 - name: V2Get🛰️ 2026-08-20 11:10
   type: trojan
   server: 156.243.83.240
@@ -989,7 +995,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-20 18:12
   - 'V2Get🛰️ 2026-08-20 18:12 #2'
-  - V2Get🛰️ 2026-08-19 15:11
+  - 'V2Get🛰️ 2026-08-20 18:12 #3'
   - V2Get🛰️ 2026-08-20 11:10
   - V2Get🛰️ 2026-08-20 17:12
   - 'V2Get🛰️ 2026-08-20 17:12 #2'
@@ -1092,7 +1098,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-20 18:12
   - 'V2Get🛰️ 2026-08-20 18:12 #2'
-  - V2Get🛰️ 2026-08-19 15:11
+  - 'V2Get🛰️ 2026-08-20 18:12 #3'
   - V2Get🛰️ 2026-08-20 11:10
   - V2Get🛰️ 2026-08-20 17:12
   - 'V2Get🛰️ 2026-08-20 17:12 #2'
