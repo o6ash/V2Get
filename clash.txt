@@ -12,17 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
-  server: 185.18.250.252
+  server: 167.82.101.251
   port: 443
-  password: humanity
+  password: MiTiVPN
   udp: true
-  sni: www.multiplydose.com
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /usa=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-07 02:44
   type: vless
   server: 88.216.220.87
@@ -1034,7 +1038,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-07 08:39
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
@@ -1139,7 +1143,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-07 08:39
   - 'V2Get🛰️ 2026-08-07 08:39 #2'
