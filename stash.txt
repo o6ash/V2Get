@@ -12,21 +12,23 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
+- name: V2Get🛰️ 2026-08-20 14:12
+  type: vless
+  server: www.speedtest.net
   port: 443
-  password: MiTiVPN
+  uuid: 903daa6f-534c-4f4a-bbc8-024993f5cb01
   udp: true
-  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ptr.cyberbear.io
+  client-fingerprint: random
+  alpn:
+  - h3
+  - http/1.1
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
+    path: /CMlsadnCISdss
     headers:
-      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
+      Host: ptr.cyberbear.io
 - name: V2Get🛰️ 2026-08-20 13:12
   type: vless
   server: 146.75.119.82
@@ -983,7 +985,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-20 14:12
   - V2Get🛰️ 2026-08-20 13:12
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
@@ -1066,7 +1068,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-20 14:12
   - V2Get🛰️ 2026-08-20 13:12
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
