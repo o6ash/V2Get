@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-20 13:11
+  type: vless
+  server: 38.76.140.17
+  port: 443
+  uuid: 654df5c6-73ac-3b11-8269-6b21fb8d9dad
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.hsu.edu.hk
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xxhXR0JdzZ3Tdmn8JFB0tttRHAB83djm_SuaWSeSAQU
+    short-id: a4a0e53a10417935
 - name: V2Get🛰️ 2026-08-19 21:10
   type: vless
   server: 43.224.150.71
@@ -26,21 +40,6 @@ proxies:
   reality-opts:
     public-key: jkGStCLgX1e3kQ31H1_ycSuYm_zSNQ4qVafasU7bkwU
     short-id: 4c0be5bf40e9f5ce
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 140.248.185.253
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: mitivpn-s2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-29 14:50
   type: vless
   server: 104.18.37.228
@@ -1109,8 +1108,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 13:11
   - V2Get🛰️ 2026-08-19 21:10
-  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-03 02:33
   - V2Get🛰️ 2026-08-03 10:54
@@ -1201,8 +1200,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 13:11
   - V2Get🛰️ 2026-08-19 21:10
-  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-03 02:33
   - V2Get🛰️ 2026-08-03 10:54
