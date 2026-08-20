@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-20 09:11
+  type: vless
+  server: rvg-production-259b.up.railway.app
+  port: 443
+  uuid: d430963f-8820-e90b-fdca-36de89291d5b
+  udp: true
+  network: ws
+  tls: true
+  servername: rvg-production-259b.up.railway.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws/d430963f-8820-e90b-fdca-36de89291d5b
+    headers:
+      Host: rvg-production-259b.up.railway.app
 - name: V2Get🛰️ 2026-08-20 01:10
   type: vless
   server: g1.pars2khaazaar.ir
@@ -25,14 +39,6 @@ proxies:
   reality-opts:
     public-key: Tdk8aoUJ0MnoIQaAwqZVKuDxC5Q-5s9iMrnjwvusIHg
     short-id: 19f4730f746d
-- name: V2Get🛰️ 2026-08-10 00:11
-  type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-17 21:07
   type: vless
   server: 199.232.78.159
@@ -1064,8 +1070,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 09:11
   - V2Get🛰️ 2026-08-20 01:10
-  - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:10 #2'
@@ -1168,8 +1174,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 09:11
   - V2Get🛰️ 2026-08-20 01:10
-  - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:10 #2'
