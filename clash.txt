@@ -12,28 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-20 14:11
-  type: vmess
-  server: connecto2.kolman.com.de
-  port: 8080
-  uuid: b6096704-9cf0-49a5-9274-20091a7b9c56
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: httpupgrade
-- name: 'V2Get🛰️ 2026-08-20 14:11 #2'
-  type: vless
-  server: x4g-production-bacf0.up.railway.app
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 188.114.97.6
   port: 443
-  uuid: b723663f-8ab6-5e3e-d47f-79e39603e509
+  password: MiTiVPN
   udp: true
-  network: xhttp
-  tls: true
-  servername: x4g-production-bacf0.up.railway.app
-  client-fingerprint: safari
+  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
   alpn:
-  - h2
   - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
+    headers:
+      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
+- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: MiTiVPN----o.aPp-cLoud.IR
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
+    headers:
+      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-08-20 11:10
   type: trojan
   server: 45.205.0.6
@@ -94,6 +102,28 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: 838373-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+- name: V2Get🛰️ 2026-08-20 14:11
+  type: vmess
+  server: connecto2.kolman.com.de
+  port: 8080
+  uuid: b6096704-9cf0-49a5-9274-20091a7b9c56
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-08-20 14:11 #2'
+  type: vless
+  server: x4g-production-bacf0.up.railway.app
+  port: 443
+  uuid: b723663f-8ab6-5e3e-d47f-79e39603e509
+  udp: true
+  network: xhttp
+  tls: true
+  servername: x4g-production-bacf0.up.railway.app
+  client-fingerprint: safari
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-08-20 13:13
   type: vless
   server: a2.arshia-nova.ir
@@ -332,19 +362,6 @@ proxies:
   client-fingerprint: qq
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-08-20 02:10
-  type: vless
-  server: 5.75.207.94
-  port: 7190
-  uuid: 8ce90db0-2b57-41eb-83f2-f65f68c6409b
-  udp: true
-  network: tcp
-  tls: true
-  servername: pypi.org
-  client-fingerprint: qq
-  reality-opts:
-    public-key: mPyGyFIPaIJskk9IhHv9rkv7amf77CYUV0KVeqDsPU8
-    short-id: 7398e0c72f7d5c0e
 - name: V2Get🛰️ 2026-08-20 09:10
   type: vless
   server: peo.awexaio.shop
@@ -1167,26 +1184,20 @@ proxies:
   reality-opts:
     public-key: -fPFPc0hk6tYLTYyE-jQmlJ3BaQZuyxGFKoVZfW66G4
     short-id: e57ecdd65cfcdfb0
-- name: V2Get🛰️ 2026-08-20 04:10
-  type: vless
-  server: 135.106.193.180
-  port: 54
-  uuid: 9972a440-39a6-4672-8883-5dd188863acf
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-20 14:11
-  - 'V2Get🛰️ 2026-08-20 14:11 #2'
+  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
   - 'V2Get🛰️ 2026-08-20 11:10 #4'
+  - V2Get🛰️ 2026-08-20 14:11
+  - 'V2Get🛰️ 2026-08-20 14:11 #2'
   - V2Get🛰️ 2026-08-20 13:13
   - 'V2Get🛰️ 2026-08-20 13:13 #2'
   - 'V2Get🛰️ 2026-08-20 13:13 #3'
@@ -1208,7 +1219,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 12:11
   - 'V2Get🛰️ 2026-08-20 13:11 #7'
   - V2Get🛰️ 2026-08-20 12:12
-  - V2Get🛰️ 2026-08-20 02:10
   - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:10 #2'
   - 'V2Get🛰️ 2026-08-20 09:10 #3'
@@ -1278,19 +1288,20 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 09:11 #8'
   - 'V2Get🛰️ 2026-08-20 09:11 #9'
   - 'V2Get🛰️ 2026-08-20 09:11 #10'
-  - V2Get🛰️ 2026-08-20 04:10
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-20 14:11
-  - 'V2Get🛰️ 2026-08-20 14:11 #2'
+  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
   - 'V2Get🛰️ 2026-08-20 11:10 #4'
+  - V2Get🛰️ 2026-08-20 14:11
+  - 'V2Get🛰️ 2026-08-20 14:11 #2'
   - V2Get🛰️ 2026-08-20 13:13
   - 'V2Get🛰️ 2026-08-20 13:13 #2'
   - 'V2Get🛰️ 2026-08-20 13:13 #3'
@@ -1312,7 +1323,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 12:11
   - 'V2Get🛰️ 2026-08-20 13:11 #7'
   - V2Get🛰️ 2026-08-20 12:12
-  - V2Get🛰️ 2026-08-20 02:10
   - V2Get🛰️ 2026-08-20 09:10
   - 'V2Get🛰️ 2026-08-20 09:10 #2'
   - 'V2Get🛰️ 2026-08-20 09:10 #3'
@@ -1382,7 +1392,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-20 09:11 #8'
   - 'V2Get🛰️ 2026-08-20 09:11 #9'
   - 'V2Get🛰️ 2026-08-20 09:11 #10'
-  - V2Get🛰️ 2026-08-20 04:10
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
