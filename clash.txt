@@ -13,6 +13,15 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-20 14:11
+  type: vmess
+  server: connecto2.kolman.com.de
+  port: 8080
+  uuid: b6096704-9cf0-49a5-9274-20091a7b9c56
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-08-20 14:11 #2'
   type: vless
   server: x4g-production-bacf0.up.railway.app
   port: 443
@@ -25,21 +34,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: MiTiVPN----o.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
-    headers:
-      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
 - name: V2Get🛰️ 2026-08-20 11:10
   type: trojan
   server: 45.205.0.6
@@ -1188,7 +1182,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-20 14:11
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-20 14:11 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
@@ -1292,7 +1286,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-20 14:11
-  - V2Get🛰️ 2026-07-26 03:07
+  - 'V2Get🛰️ 2026-08-20 14:11 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
