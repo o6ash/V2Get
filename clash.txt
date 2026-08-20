@@ -12,22 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
+- name: V2Get🛰️ 2026-08-20 09:11
+  type: vless
+  server: 193.34.213.38
   port: 443
-  password: MiTiVPN
+  uuid: 7eb234e9-d47e-4dfe-bff3-a0d41a0c4e1d
   udp: true
-  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
-    headers:
-      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.prostocalc.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: c_9pNYSprG0wT-8Dz68poWfpFCktGVKIrX_EVG3J4wk
+    short-id: f49814084db8f3a6
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1125,8 +1124,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 09:11
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
@@ -1231,8 +1230,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 09:11
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-20 11:10
   - 'V2Get🛰️ 2026-08-20 11:10 #2'
   - 'V2Get🛰️ 2026-08-20 11:10 #3'
