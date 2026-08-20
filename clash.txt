@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-20 20:13
+  type: vless
+  server: x4gg-production-96a2.up.railway.app
+  port: 443
+  uuid: 2b4113b9-c89f-c41e-19e9-4eb793ed4c2d
+  udp: true
+  network: xhttp
+  tls: true
+  servername: x4gg-production-96a2.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-08-20 19:12
   type: vless
   server: x4gd-production.up.railway.app
@@ -1273,19 +1286,6 @@ proxies:
       Host: alorasht-production.up.railway.app
 - name: V2Get🛰️ 2026-08-20 19:11
   type: vless
-  server: ir5.horvexa.ir
-  port: 2076
-  uuid: 40f627db-f390-4ac2-9a6d-32e35da5d5af
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SWfTzqzoHGGssMRVeboaX6orbmhcivHo52qWlTl2XXQ
-    short-id: 93c9930284ee9402
-- name: 'V2Get🛰️ 2026-08-20 19:11 #2'
-  type: vless
   server: ir4.horvexa.ir
   port: 2079
   uuid: 40f627db-f390-4ac2-9a6d-32e35da5d5af
@@ -1294,7 +1294,7 @@ proxies:
   tls: true
   servername: world.ashahan.ir
   client-fingerprint: qq
-- name: 'V2Get🛰️ 2026-08-20 19:11 #3'
+- name: 'V2Get🛰️ 2026-08-20 19:11 #2'
   type: vless
   server: irr.horvexa.ir
   port: 2036
@@ -1307,7 +1307,7 @@ proxies:
     path: /
     headers:
       Host: world.ashahan.ir
-- name: 'V2Get🛰️ 2026-08-20 19:11 #4'
+- name: 'V2Get🛰️ 2026-08-20 19:11 #3'
   type: vless
   server: ir3.horvexa.ir
   port: 2077
@@ -1323,6 +1323,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 20:13
   - V2Get🛰️ 2026-08-20 19:12
   - V2Get🛰️ 2026-08-20 20:12
   - 'V2Get🛰️ 2026-08-20 20:12 #2'
@@ -1422,13 +1423,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 19:11
   - 'V2Get🛰️ 2026-08-20 19:11 #2'
   - 'V2Get🛰️ 2026-08-20 19:11 #3'
-  - 'V2Get🛰️ 2026-08-20 19:11 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 20:13
   - V2Get🛰️ 2026-08-20 19:12
   - V2Get🛰️ 2026-08-20 20:12
   - 'V2Get🛰️ 2026-08-20 20:12 #2'
@@ -1528,7 +1529,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 19:11
   - 'V2Get🛰️ 2026-08-20 19:11 #2'
   - 'V2Get🛰️ 2026-08-20 19:11 #3'
-  - 'V2Get🛰️ 2026-08-20 19:11 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
