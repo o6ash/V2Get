@@ -12,7 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-19 12:09
+  type: vless
+  server: 220.130.75.248
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-20 10:10
+  type: ss
+  server: 195.231.87.172
+  port: 104
+  cipher: chacha20-ietf-poly1305
+  password: Oeow8YeqaFY0skV29GF0GVTb2vGrB5Ao
+  udp: true
+- name: 'V2Get🛰️ 2026-08-20 10:10 #2'
+  type: vless
+  server: 68.221.114.80
+  port: 2042
+  uuid: de2760d7-12ef-4aea-ad09-ff66180f4e38
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-20 10:10 #3'
+  type: vless
+  server: 178.253.55.139
+  port: 443
+  uuid: 8dc5d03d-58bd-4150-929e-de228f3c1497
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-20 10:10 #4'
   type: vmess
   server: 176.65.151.200
   port: 43377
@@ -23,53 +54,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 188.114.97.4
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: chopin.adaspoloandco.com
-- name: 'V2Get🛰️ 2026-08-07 08:39 #2'
-  type: vless
-  server: 104.27.66.214
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: chopin.adaspoloandco.com
-- name: 'V2Get🛰️ 2026-08-07 08:39 #3'
-  type: vless
-  server: 104.26.14.85
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: V2Get🛰️ 2026-08-10 00:11
-  type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-10 15:11
   type: vless
   server: dey.lnmarketplace.net
@@ -1148,11 +1132,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-20 10:10
-  - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
-  - 'V2Get🛰️ 2026-08-07 08:39 #3'
-  - V2Get🛰️ 2026-08-10 00:11
+  - 'V2Get🛰️ 2026-08-20 10:10 #2'
+  - 'V2Get🛰️ 2026-08-20 10:10 #3'
+  - 'V2Get🛰️ 2026-08-20 10:10 #4'
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 14:17
   - V2Get🛰️ 2026-08-12 17:17
@@ -1253,11 +1237,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-20 10:10
-  - V2Get🛰️ 2026-08-07 08:39
-  - 'V2Get🛰️ 2026-08-07 08:39 #2'
-  - 'V2Get🛰️ 2026-08-07 08:39 #3'
-  - V2Get🛰️ 2026-08-10 00:11
+  - 'V2Get🛰️ 2026-08-20 10:10 #2'
+  - 'V2Get🛰️ 2026-08-20 10:10 #3'
+  - 'V2Get🛰️ 2026-08-20 10:10 #4'
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-12 14:17
   - V2Get🛰️ 2026-08-12 17:17
