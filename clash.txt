@@ -14,37 +14,7 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: MiTiVPN----o.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
-    headers:
-      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+  server: 140.248.185.253
   port: 443
   password: MiTiVPN
   udp: true
@@ -54,24 +24,41 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /ed=mitivpn
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-03 10:54 #2'
-  type: trojan
-  server: 199.232.237.245
+      Host: mitivpn-s2.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
   port: 443
-  password: MiTiVPN
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  sni: ssl.fastly.com
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+  - h2
+- name: V2Get🛰️ 2026-08-08 01:10
+  type: ss
+  server: 103.120.178.193
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz
+  udp: true
+- name: V2Get🛰️ 2026-08-08 11:10
+  type: vless
+  server: 87.58.205.88
+  port: 443
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0
+    short-id: 72cd47c079c0a3df
 - name: V2Get🛰️ 2026-08-06 09:19
   type: vless
   server: 172.66.44.97
@@ -1311,9 +1298,9 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-08 01:10
+  - V2Get🛰️ 2026-08-08 11:10
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-17 23:08
@@ -1416,9 +1403,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-08 01:10
+  - V2Get🛰️ 2026-08-08 11:10
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-17 23:08
