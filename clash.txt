@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-21 00:12
+  type: vless
+  server: 212.24.107.219
+  port: 37801
+  uuid: 9156a3fe-f2d1-4f95-9308-ebc0d273a6c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-21 00:12 #2'
+  type: vless
+  server: 46.225.249.198
+  port: 37801
+  uuid: 9156a3fe-f2d1-4f95-9308-ebc0d273a6c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-08 01:10
   type: ss
   server: 103.120.178.193
@@ -404,15 +420,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-21 00:12
-  type: vless
-  server: 212.24.107.219
-  port: 37801
-  uuid: 9156a3fe-f2d1-4f95-9308-ebc0d273a6c7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-21 00:12 #2'
+- name: 'V2Get🛰️ 2026-08-21 00:12 #3'
   type: vless
   server: 104.16.6.70
   port: 8443
@@ -424,14 +432,6 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-08-21 00:12 #3'
-  type: vless
-  server: 46.225.249.198
-  port: 37801
-  uuid: 9156a3fe-f2d1-4f95-9308-ebc0d273a6c7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-21 00:12 #4'
   type: vless
   server: 95.216.177.46
@@ -1126,6 +1126,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-21 00:12
+  - 'V2Get🛰️ 2026-08-21 00:12 #2'
   - V2Get🛰️ 2026-08-08 01:10
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-19 22:12
@@ -1160,8 +1162,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 01:13 #15'
   - V2Get🛰️ 2026-08-20 22:13
   - 'V2Get🛰️ 2026-08-20 22:13 #2'
-  - V2Get🛰️ 2026-08-21 00:12
-  - 'V2Get🛰️ 2026-08-21 00:12 #2'
   - 'V2Get🛰️ 2026-08-21 00:12 #3'
   - 'V2Get🛰️ 2026-08-21 00:12 #4'
   - 'V2Get🛰️ 2026-08-21 00:12 #5'
@@ -1230,6 +1230,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-21 00:12
+  - 'V2Get🛰️ 2026-08-21 00:12 #2'
   - V2Get🛰️ 2026-08-08 01:10
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-19 22:12
@@ -1264,8 +1266,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 01:13 #15'
   - V2Get🛰️ 2026-08-20 22:13
   - 'V2Get🛰️ 2026-08-20 22:13 #2'
-  - V2Get🛰️ 2026-08-21 00:12
-  - 'V2Get🛰️ 2026-08-21 00:12 #2'
   - 'V2Get🛰️ 2026-08-21 00:12 #3'
   - 'V2Get🛰️ 2026-08-21 00:12 #4'
   - 'V2Get🛰️ 2026-08-21 00:12 #5'
