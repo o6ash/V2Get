@@ -14,20 +14,17 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-21 12:55
   type: vless
-  server: 162.19.13.248
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  server: 91.108.249.222
+  port: 443
+  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
   udp: true
   network: ws
-  tls: true
-  servername: forfreeuse.rtqa.ru
+  skip-cert-verify: true
   ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.rtqa.ru
+    path: /api-pl
 - name: 'V2Get🛰️ 2026-08-21 12:55 #2'
   type: vless
-  server: 143.110.163.137
+  server: 162.19.13.248
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
@@ -40,7 +37,7 @@ proxies:
       Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #3'
   type: vless
-  server: 140.82.57.190
+  server: 143.110.163.137
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
@@ -53,7 +50,7 @@ proxies:
       Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #4'
   type: vless
-  server: 188.166.70.25
+  server: 140.82.57.190
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
@@ -66,7 +63,7 @@ proxies:
       Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #5'
   type: vless
-  server: 188.241.241.3
+  server: 188.166.70.25
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
@@ -79,7 +76,7 @@ proxies:
       Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #6'
   type: vless
-  server: 46.101.163.124
+  server: 188.241.241.3
   port: 2053
   uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
@@ -92,14 +89,17 @@ proxies:
       Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #7'
   type: vless
-  server: 91.108.249.222
-  port: 443
-  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
+  server: 46.101.163.124
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: forfreeuse.rtqa.ru
   ws-opts:
-    path: /api-pl
+    path: /
+    headers:
+      Host: forfreeuse.rtqa.ru
 - name: 'V2Get🛰️ 2026-08-21 12:55 #8'
   type: vless
   server: 85.17.116.115
