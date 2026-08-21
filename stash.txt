@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-21 13:55
   type: vless
+  server: lin-production.up.railway.app
+  port: 443
+  uuid: 91474b70-88c0-84ac-c195-ec79fdf142bd
+  udp: true
+  network: ws
+  tls: true
+  servername: lin-production.up.railway.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws/91474b70-88c0-84ac-c195-ec79fdf142bd
+    headers:
+      Host: lin-production.up.railway.app
+- name: 'V2Get🛰️ 2026-08-21 13:55 #2'
+  type: vless
   server: 185.178.208.176
   port: 443
   uuid: 653aea5e-2157-4a1f-89bf-8b46fb677921
@@ -160,15 +174,6 @@ proxies:
     headers:
       Host: web-production-a4639.up.railway.app
 - name: V2Get🛰️ 2026-08-19 22:12
-  type: vless
-  server: 87.120.84.32
-  port: 33843
-  uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
-  udp: true
-  network: tcp
-  tls: true
-  servername: deproxy2.lckdwn.ru
-- name: 'V2Get🛰️ 2026-08-19 22:12 #2'
   type: vless
   server: 45.150.66.31
   port: 443
@@ -1230,6 +1235,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-21 13:55
+  - 'V2Get🛰️ 2026-08-21 13:55 #2'
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
@@ -1241,7 +1247,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 12:55 #8'
   - 'V2Get🛰️ 2026-08-21 12:55 #9'
   - V2Get🛰️ 2026-08-19 22:12
-  - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 16:14
@@ -1326,6 +1331,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-21 13:55
+  - 'V2Get🛰️ 2026-08-21 13:55 #2'
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
@@ -1337,7 +1343,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 12:55 #8'
   - 'V2Get🛰️ 2026-08-21 12:55 #9'
   - V2Get🛰️ 2026-08-19 22:12
-  - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 16:14
