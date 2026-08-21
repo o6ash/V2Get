@@ -12,21 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-08-21 13:55
+  type: vless
+  server: 185.178.208.176
   port: 443
-  password: mitivpn
+  uuid: 653aea5e-2157-4a1f-89bf-8b46fb677921
   udp: true
-  sni: cloudflare.com
+  network: ws
+  tls: true
+  servername: stream.telemetryapi.uk
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /api/v2/client/session/connect
     headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: stream.telemetryapi.uk
 - name: V2Get🛰️ 2026-08-21 12:55
   type: vless
   server: 162.19.13.248
@@ -1318,7 +1319,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-21 13:55
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
@@ -1423,7 +1424,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-21 13:55
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
