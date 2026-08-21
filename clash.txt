@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-18 01:06
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: cloudflare.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-21 12:55
   type: vless
   server: 162.19.13.248
@@ -150,19 +165,6 @@ proxies:
     path: /ws/vless/e2c9f452-059c-439a-be23-799ac95b7e64?ed=2048
     headers:
       Host: web-production-a4639.up.railway.app
-- name: V2Get🛰️ 2026-08-08 18:10
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-08-19 22:12
   type: vless
   server: 87.120.84.32
@@ -1316,6 +1318,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
@@ -1327,7 +1330,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-21 11:54
   - 'V2Get🛰️ 2026-08-21 12:55 #9'
   - 'V2Get🛰️ 2026-08-21 12:55 #10'
-  - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
@@ -1421,6 +1423,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 12:55
   - 'V2Get🛰️ 2026-08-21 12:55 #2'
   - 'V2Get🛰️ 2026-08-21 12:55 #3'
@@ -1432,7 +1435,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-21 11:54
   - 'V2Get🛰️ 2026-08-21 12:55 #9'
   - 'V2Get🛰️ 2026-08-21 12:55 #10'
-  - V2Get🛰️ 2026-08-08 18:10
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
