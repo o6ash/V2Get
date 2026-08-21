@@ -12,22 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
+- name: V2Get🛰️ 2026-08-06 09:19
+  type: vless
+  server: 172.66.44.97
   port: 443
-  password: MiTiVPN
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: josni.hoyes.cloudns.ch
   ws-opts:
-    path: /usa=mitivpn
+    path: /sg-melbi
     headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+      Host: josni.hoyes.cloudns.ch
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -1130,8 +1128,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
@@ -1221,8 +1219,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
