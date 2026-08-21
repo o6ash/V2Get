@@ -12,32 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
+- name: V2Get🛰️ 2026-08-03 02:33
   type: vless
-  server: netraidly.ru
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+  server: 83.168.71.216
+  port: 443
+  uuid: a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: deepl.com
-  client-fingerprint: qq
+  servername: ads.x5.ru
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
-    short-id: 01d1bf2d4755d40c
-- name: 'V2Get🛰️ 2026-07-27 21:55 #2'
+    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+    short-id: 2f49bccf11150ef2
+- name: V2Get🛰️ 2026-08-20 14:12
   type: vless
-  server: 188.114.97.6
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  server: www.speedtest.net
+  port: 443
+  uuid: 903daa6f-534c-4f4a-bbc8-024993f5cb01
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: ptr.cyberbear.io
+  client-fingerprint: random
+  alpn:
+  - h3
+  - http/1.1
   ws-opts:
-    path: /http
+    path: /CMlsadnCISdss
     headers:
-      Host: de.vpnbase.net
+      Host: ptr.cyberbear.io
 - name: V2Get🛰️ 2026-07-29 14:50
   type: vless
   server: 104.18.37.228
@@ -975,8 +979,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
+  - V2Get🛰️ 2026-08-03 02:33
+  - V2Get🛰️ 2026-08-20 14:12
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-06 09:19
   - 'V2Get🛰️ 2026-08-06 09:19 #2'
@@ -1078,8 +1082,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
+  - V2Get🛰️ 2026-08-03 02:33
+  - V2Get🛰️ 2026-08-20 14:12
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-06 09:19
   - 'V2Get🛰️ 2026-08-06 09:19 #2'
