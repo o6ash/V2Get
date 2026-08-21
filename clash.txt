@@ -12,22 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
+- name: V2Get🛰️ 2026-08-21 08:54
+  type: vless
+  server: de2.pink-service.ru
   port: 443
-  password: MiTiVPN
+  uuid: b328c027-8a23-45e1-8490-154d53148eb2
   udp: true
-  sni: u-j-o-MiTiVPN---MiTiVPNj.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=Nl
-    headers:
-      Host: j-mitivpn--MiTiVPN---MiTiVPN-o.aPp-cLoud.IR
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de.pink-service.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
+    short-id: 86b80f1e713a33ad
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1127,8 +1126,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-21 08:54
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-08-10 13:11
   - V2Get🛰️ 2026-08-20 12:12
@@ -1231,8 +1230,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-21 08:54
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-08-10 13:11
   - V2Get🛰️ 2026-08-20 12:12
