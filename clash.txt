@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-19 23:10
+  type: vless
+  server: s1.test.anti-zapret.com
+  port: 8443
+  uuid: f82332b2-dc8c-eac4-ac12-f276e37e278a
+  udp: true
+  network: tcp
+  tls: true
+  servername: s1.test.anti-zapret.com
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
 - name: V2Get🛰️ 2026-08-19 10:08
   type: vless
   server: 85.155.226.140
@@ -224,20 +236,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-08-17 23:09 #2'
-  type: vless
-  server: 150.241.102.202
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: america.cendora.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: v1hVg2Uc7Wsc_bhlLfKkML_HUGogQA9O9n9uZFwzQSM
-    short-id: 065cf4f1c7d83e79
 - name: V2Get🛰️ 2026-08-18 10:07
   type: vless
   server: 169.40.42.35
@@ -1069,6 +1067,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-19 23:10
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-20 02:10
@@ -1086,7 +1085,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 18:56
   - 'V2Get🛰️ 2026-08-21 18:56 #2'
-  - 'V2Get🛰️ 2026-08-17 23:09 #2'
   - V2Get🛰️ 2026-08-18 10:07
   - 'V2Get🛰️ 2026-08-21 18:56 #3'
   - 'V2Get🛰️ 2026-08-21 18:56 #4'
@@ -1174,6 +1172,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-19 23:10
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-20 02:10
@@ -1191,7 +1190,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 18:56
   - 'V2Get🛰️ 2026-08-21 18:56 #2'
-  - 'V2Get🛰️ 2026-08-17 23:09 #2'
   - V2Get🛰️ 2026-08-18 10:07
   - 'V2Get🛰️ 2026-08-21 18:56 #3'
   - 'V2Get🛰️ 2026-08-21 18:56 #4'
