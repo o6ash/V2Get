@@ -12,33 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-29 14:50
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: V2Get🛰️ 2026-08-12 16:18
+  type: vless
+  server: 172.64.150.28
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: V2Get🛰️ 2026-08-21 02:13
+  type: vless
+  server: bolguarmarz.horlutr.ir
+  port: 2087
+  uuid: 289c4c75-9ea6-4c23-bda2-17d32c533db4
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-05 11:19
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-05 11:19 #2'
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-09 13:10
   type: vless
   server: 169.40.42.52
@@ -838,9 +846,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-05 11:19
-  - 'V2Get🛰️ 2026-08-05 11:19 #2'
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-12 16:18
+  - V2Get🛰️ 2026-08-21 02:13
   - V2Get🛰️ 2026-08-09 13:10
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
@@ -918,9 +926,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-05 11:19
-  - 'V2Get🛰️ 2026-08-05 11:19 #2'
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-12 16:18
+  - V2Get🛰️ 2026-08-21 02:13
   - V2Get🛰️ 2026-08-09 13:10
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
