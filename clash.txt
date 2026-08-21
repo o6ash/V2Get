@@ -12,18 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-20 19:13
   type: vless
-  server: static.lotussec.com
+  server: 162.128.44.164
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: 8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A
+    short-id: fe1a104caf309f5a
 - name: V2Get🛰️ 2026-08-19 13:11
   type: vless
   server: 129.121.95.159
@@ -1051,7 +1053,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-08-21 16:56
@@ -1154,7 +1156,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-08-21 16:56
