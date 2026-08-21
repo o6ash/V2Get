@@ -12,6 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-21 12:55
+  type: vless
+  server: 91.108.249.222
+  port: 443
+  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /api-pl
 - name: V2Get🛰️ 2026-08-21 22:58
   type: vless
   server: 142.91.102.42
@@ -130,20 +140,6 @@ proxies:
     path: /we
     headers:
       Host: www.apple.com
-- name: V2Get🛰️ 2026-08-20 10:11
-  type: vless
-  server: v942892.hosted-by-vdsina.com
-  port: 443
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: v942892.hosted-by-vdsina.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: TzOfUDe1Pf7GnxEJuK1I6XD8nNe4ZsmRPCxL8aFwCXs
-    short-id: 1e623c6d7f4d01eb
 - name: V2Get🛰️ 2026-08-20 21:13
   type: vless
   server: 23.81.34.120
@@ -1176,6 +1172,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-21 12:55
   - V2Get🛰️ 2026-08-21 22:58
   - V2Get🛰️ 2026-08-21 19:58
   - V2Get🛰️ 2026-08-21 22:56
@@ -1186,7 +1183,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 22:57 #3'
   - 'V2Get🛰️ 2026-08-21 22:57 #4'
   - 'V2Get🛰️ 2026-08-21 22:57 #5'
-  - V2Get🛰️ 2026-08-20 10:11
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 01:13
   - V2Get🛰️ 2026-08-21 11:54
@@ -1279,6 +1275,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-21 12:55
   - V2Get🛰️ 2026-08-21 22:58
   - V2Get🛰️ 2026-08-21 19:58
   - V2Get🛰️ 2026-08-21 22:56
@@ -1289,7 +1286,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 22:57 #3'
   - 'V2Get🛰️ 2026-08-21 22:57 #4'
   - 'V2Get🛰️ 2026-08-21 22:57 #5'
-  - V2Get🛰️ 2026-08-20 10:11
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 01:13
   - V2Get🛰️ 2026-08-21 11:54
