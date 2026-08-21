@@ -14,6 +14,14 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-21 21:56
   type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 0e11d4e2-fb01-4440-b793-725dc7b82185
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-21 21:56 #2'
+  type: vless
   server: iran-production-62d4.up.railway.app
   port: 443
   uuid: 10651cbe-b132-41d3-3653-ccf511d09b20
@@ -1158,16 +1166,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 'V2Get🛰️ 2026-08-21 17:56 #4'
-  type: vless
-  server: ir4.horvexa.ir
-  port: 2079
-  uuid: cfe5c608-a13f-4596-a27e-d429578d08c6
-  udp: true
-  network: xhttp
-  tls: true
-  servername: world.ashahan.ir
-  client-fingerprint: qq
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -1175,6 +1173,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-21 21:56
+  - 'V2Get🛰️ 2026-08-21 21:56 #2'
   - V2Get🛰️ 2026-08-21 21:55
   - V2Get🛰️ 2026-08-21 19:58
   - V2Get🛰️ 2026-08-21 20:55
@@ -1273,7 +1272,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-21 17:56
   - 'V2Get🛰️ 2026-08-21 17:56 #2'
   - 'V2Get🛰️ 2026-08-21 17:56 #3'
-  - 'V2Get🛰️ 2026-08-21 17:56 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1281,6 +1279,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-21 21:56
+  - 'V2Get🛰️ 2026-08-21 21:56 #2'
   - V2Get🛰️ 2026-08-21 21:55
   - V2Get🛰️ 2026-08-21 19:58
   - V2Get🛰️ 2026-08-21 20:55
@@ -1379,7 +1378,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-21 17:56
   - 'V2Get🛰️ 2026-08-21 17:56 #2'
   - 'V2Get🛰️ 2026-08-21 17:56 #3'
-  - 'V2Get🛰️ 2026-08-21 17:56 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
