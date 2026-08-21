@@ -12,21 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: vless
-  server: netraidly.ru
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 140.248.185.253
+  port: 443
+  password: MiTiVPN
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
-    short-id: 01d1bf2d4755d40c
-- name: 'V2Get🛰️ 2026-07-27 21:55 #2'
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: mitivpn-s2.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-07-27 21:55
   type: trojan
   server: 165.215.250.14
   port: 443
@@ -996,8 +997,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-10 13:12
@@ -1079,8 +1080,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-10 13:12
