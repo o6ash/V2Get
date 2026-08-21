@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-21 10:56
+  type: vless
+  server: 104.16.232.235
+  port: 443
+  uuid: ebe5d708-5d32-095d-6601-ca7100000007
+  udp: true
+  network: ws
+  tls: true
+  servername: therealcs.rezaobito.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sync
+    headers:
+      Host: therealcs.rezaobito.workers.dev
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.237.245
@@ -87,21 +101,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #3'
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
-    headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-19 20:10
   type: vless
   server: 103.109.234.113
@@ -1317,12 +1316,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-21 10:56
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-19 22:12
   - V2Get🛰️ 2026-08-20 16:14
@@ -1423,12 +1422,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-21 10:56
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-19 20:10
   - V2Get🛰️ 2026-08-19 22:12
   - V2Get🛰️ 2026-08-20 16:14
