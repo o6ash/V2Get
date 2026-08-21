@@ -12,22 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-08-18 00:07
+  type: vless
+  server: 31.133.0.133
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: forfreeuse.rtqa.ru
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
+    path: /
     headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+      Host: forfreeuse.rtqa.ru
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -875,8 +873,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-18 00:07
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-12 17:19
@@ -957,8 +955,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-18 00:07
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-12 17:19
