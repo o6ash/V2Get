@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-21 10:56
   type: vless
+  server: tr.pink-service.ru
+  port: 443
+  uuid: 35c92faf-ac12-4ded-ab2e-7cf3ed671bc8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tr.pink-service.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
+    short-id: 86b80f1e713a33ad
+- name: 'V2Get🛰️ 2026-08-21 10:56 #2'
+  type: vless
   server: 104.16.232.235
   port: 443
   uuid: ebe5d708-5d32-095d-6601-ca7100000007
@@ -56,21 +70,6 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: mitivpn-s2.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-03 10:54 #2'
   type: trojan
   server: 199.232.78.160
@@ -1234,9 +1233,9 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-21 10:56
+  - 'V2Get🛰️ 2026-08-21 10:56 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-19 22:12
@@ -1330,9 +1329,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-21 10:56
+  - 'V2Get🛰️ 2026-08-21 10:56 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-19 22:12
