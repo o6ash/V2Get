@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-21 18:55
   type: vless
+  server: dub.nexovara.dpdns.org
+  port: 443
+  uuid: fc197bed-2095-48c6-b664-c1e8ceec5b8a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.music.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: R4-QvV2JO5hZEIWQ84z7KXbt2Ia7QVif-b1LHs1ZMBI
+    short-id: 88676438dc8db3cb
+- name: 'V2Get🛰️ 2026-08-21 18:55 #2'
+  type: vless
   server: 188.114.99.0
   port: 8443
   uuid: 56dd1b7a-2dd4-4dae-8867-bdbd01a3bd65
@@ -58,21 +72,6 @@ proxies:
     headers:
       Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-03 10:54 #2'
   type: trojan
   server: 199.232.237.245
   port: 443
@@ -789,10 +788,10 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-21 18:55
+  - 'V2Get🛰️ 2026-08-21 18:55 #2'
   - V2Get🛰️ 2026-08-21 06:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-20 22:14
   - V2Get🛰️ 2026-08-21 17:57
   - 'V2Get🛰️ 2026-08-21 17:57 #2'
@@ -868,10 +867,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-21 18:55
+  - 'V2Get🛰️ 2026-08-21 18:55 #2'
   - V2Get🛰️ 2026-08-21 06:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-03 10:54
-  - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-20 22:14
   - V2Get🛰️ 2026-08-21 17:57
   - 'V2Get🛰️ 2026-08-21 17:57 #2'
