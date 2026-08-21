@@ -12,13 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
+- name: V2Get🛰️ 2026-08-18 01:06
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: mitivpn
   udp: true
+  sni: cloudflare.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-29 14:50
   type: vless
   server: 104.18.37.228
@@ -982,7 +990,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-10 13:11
   - V2Get🛰️ 2026-08-19 10:08
@@ -1087,7 +1095,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-10 13:11
   - V2Get🛰️ 2026-08-19 10:08
