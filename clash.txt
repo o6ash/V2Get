@@ -12,13 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
+- name: V2Get🛰️ 2026-08-19 14:09
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
   udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: a1b2c3d4
 - name: V2Get🛰️ 2026-07-29 14:50
   type: ss
   server: 198.98.53.130
@@ -1381,7 +1388,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-19 14:09
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 11:19
@@ -1487,7 +1494,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-08-19 14:09
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-05 11:19
