@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-22 08:57
+  type: vless
+  server: web-production-41122.up.railway.app
+  port: 443
+  uuid: f6d604c9-1d66-4400-8a4b-3021804085b4
+  udp: true
+  network: ws
+  tls: true
+  servername: web-production-41122.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: web-production-41122.up.railway.app
 - name: V2Get🛰️ 2026-08-22 01:56
   type: vless
   server: 199.232.78.159
@@ -27,21 +43,6 @@ proxies:
       Host: pan1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
-    headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
-  type: trojan
   server: 167.82.101.251
   port: 443
   password: MiTiVPN
@@ -55,7 +56,7 @@ proxies:
     path: /usa=mitivpn
     headers:
       Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #3'
+- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -154,7 +155,7 @@ proxies:
   reality-opts:
     public-key: rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A
     short-id: fe1a104caf309f5a
-- name: V2Get🛰️ 2026-08-22 08:57
+- name: 'V2Get🛰️ 2026-08-22 08:57 #2'
   type: vless
   server: store9.vevluma.ir
   port: 1234
@@ -168,7 +169,7 @@ proxies:
   reality-opts:
     public-key: 4sT8gYkbYI1RUPlO-SFVpJENKfGgMWoYQpflbcfspkI
     short-id: 4844fb0c077b20b7
-- name: 'V2Get🛰️ 2026-08-22 08:57 #2'
+- name: 'V2Get🛰️ 2026-08-22 08:57 #3'
   type: vless
   server: store14.vevluma.ir
   port: 1234
@@ -182,7 +183,7 @@ proxies:
   reality-opts:
     public-key: 4sT8gYkbYI1RUPlO-SFVpJENKfGgMWoYQpflbcfspkI
     short-id: 4844fb0c077b20b7
-- name: 'V2Get🛰️ 2026-08-22 08:57 #3'
+- name: 'V2Get🛰️ 2026-08-22 08:57 #4'
   type: vless
   server: store17.vevluma.ir
   port: 1234
@@ -196,7 +197,7 @@ proxies:
   reality-opts:
     public-key: 4sT8gYkbYI1RUPlO-SFVpJENKfGgMWoYQpflbcfspkI
     short-id: 4844fb0c077b20b7
-- name: 'V2Get🛰️ 2026-08-22 08:57 #4'
+- name: 'V2Get🛰️ 2026-08-22 08:57 #5'
   type: vless
   server: store18.vevluma.ir
   port: 1234
@@ -923,20 +924,20 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-22 08:57
   - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-08-21 06:54
   - V2Get🛰️ 2026-08-21 19:57
-  - V2Get🛰️ 2026-08-22 08:57
   - 'V2Get🛰️ 2026-08-22 08:57 #2'
   - 'V2Get🛰️ 2026-08-22 08:57 #3'
   - 'V2Get🛰️ 2026-08-22 08:57 #4'
+  - 'V2Get🛰️ 2026-08-22 08:57 #5'
   - 'V2Get🛰️ 2026-08-22 01:56 #2'
   - V2Get🛰️ 2026-08-21 22:56
   - 'V2Get🛰️ 2026-08-21 22:56 #2'
@@ -1001,20 +1002,20 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-22 08:57
   - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-07-26 03:07 #2'
-  - 'V2Get🛰️ 2026-07-26 03:07 #3'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-18 12:07
   - V2Get🛰️ 2026-08-21 06:54
   - V2Get🛰️ 2026-08-21 19:57
-  - V2Get🛰️ 2026-08-22 08:57
   - 'V2Get🛰️ 2026-08-22 08:57 #2'
   - 'V2Get🛰️ 2026-08-22 08:57 #3'
   - 'V2Get🛰️ 2026-08-22 08:57 #4'
+  - 'V2Get🛰️ 2026-08-22 08:57 #5'
   - 'V2Get🛰️ 2026-08-22 01:56 #2'
   - V2Get🛰️ 2026-08-21 22:56
   - 'V2Get🛰️ 2026-08-21 22:56 #2'
