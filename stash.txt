@@ -13,23 +13,6 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-22 07:56
-  type: vmess
-  server: www.homaxcorp.com.homaxcorp.com
-  port: 8441
-  uuid: 09878380-e5fe-4389-b807-ac618d5071bf
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-22 07:56 #2'
-  type: vless
-  server: www.homaxcorp.com.homaxcorp.com
-  port: 8440
-  uuid: 09878380-e5fe-4389-b807-ac618d5071bf
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-22 07:56 #3'
   type: vless
   server: www.homaxcorp.com.homaxcorp.com
   port: 8446
@@ -41,6 +24,23 @@ proxies:
     path: /
     headers:
       Host: apps.mzstatic.com
+- name: 'V2Get🛰️ 2026-08-22 07:56 #2'
+  type: vless
+  server: www.homaxcorp.com.homaxcorp.com
+  port: 8440
+  uuid: 09878380-e5fe-4389-b807-ac618d5071bf
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-22 07:56 #3'
+  type: vmess
+  server: www.homaxcorp.com.homaxcorp.com
+  port: 8441
+  uuid: 09878380-e5fe-4389-b807-ac618d5071bf
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-08-21 23:56
   type: vless
   server: 164.90.171.176
