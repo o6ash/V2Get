@@ -12,7 +12,64 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-21 17:55
+  type: vless
+  server: 194.5.206.161
+  port: 8080
+  uuid: 6f301169-b167-49c1-86c4-1e3702d820fd
+  udp: true
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-21 17:55 #2'
+  type: vmess
+  server: 194.5.206.161
+  port: 443
+  uuid: 6f301169-b167-49c1-86c4-1e3702d820fd
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-22 01:56
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: ce99a4f9-02a4-4476-d31d-8152b0d999ea
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-22 12:59
+  type: vless
+  server: 77.92.151.75
+  port: 37430
+  uuid: 42280468-5293-4730-9996-8c98863c1b91
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: R0di4fw-vPck1eggIp72a-gawFXzrmDZzEqrh4omN1Q
+- name: 'V2Get🛰️ 2026-08-22 12:59 #2'
+  type: vless
+  server: 116.203.193.15
+  port: 16679
+  uuid: 7a04ab9c-493a-43fc-b382-a5adb3b6e2cb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-22 12:59 #3'
   type: vless
   server: 83.150.217.197
   port: 443
@@ -41,55 +98,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 89.208.113.16
-  port: 443
-  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-05 11:19
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-05 11:19 #2'
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-08-06 09:19
   type: vless
   server: 172.66.44.97
@@ -333,7 +341,7 @@ proxies:
   reality-opts:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: f63805c3ecc7a483
-- name: 'V2Get🛰️ 2026-08-22 12:59 #2'
+- name: 'V2Get🛰️ 2026-08-22 12:59 #4'
   type: vless
   server: 91.232.114.148
   port: 443
@@ -852,13 +860,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-21 17:55
+  - 'V2Get🛰️ 2026-08-21 17:55 #2'
+  - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-08-22 12:59
+  - 'V2Get🛰️ 2026-08-22 12:59 #2'
+  - 'V2Get🛰️ 2026-08-22 12:59 #3'
   - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-05 11:19
-  - 'V2Get🛰️ 2026-08-05 11:19 #2'
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-09 13:10
   - V2Get🛰️ 2026-08-12 13:17
@@ -878,7 +886,7 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 16:14
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-21 08:54
-  - 'V2Get🛰️ 2026-08-22 12:59 #2'
+  - 'V2Get🛰️ 2026-08-22 12:59 #4'
   - V2Get🛰️ 2026-08-22 12:58
   - 'V2Get🛰️ 2026-08-22 12:58 #2'
   - 'V2Get🛰️ 2026-08-22 12:58 #3'
@@ -922,13 +930,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-21 17:55
+  - 'V2Get🛰️ 2026-08-21 17:55 #2'
+  - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-08-22 12:59
+  - 'V2Get🛰️ 2026-08-22 12:59 #2'
+  - 'V2Get🛰️ 2026-08-22 12:59 #3'
   - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-05 11:19
-  - 'V2Get🛰️ 2026-08-05 11:19 #2'
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-09 13:10
   - V2Get🛰️ 2026-08-12 13:17
@@ -948,7 +956,7 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 16:14
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-21 08:54
-  - 'V2Get🛰️ 2026-08-22 12:59 #2'
+  - 'V2Get🛰️ 2026-08-22 12:59 #4'
   - V2Get🛰️ 2026-08-22 12:58
   - 'V2Get🛰️ 2026-08-22 12:58 #2'
   - 'V2Get🛰️ 2026-08-22 12:58 #3'
