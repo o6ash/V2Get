@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 22:11
+  type: vless
+  server: 169.197.113.179
+  port: 20190
+  uuid: ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-22 11:58
   type: vless
   server: sjjxjs-production.up.railway.app
@@ -172,20 +180,6 @@ proxies:
   ws-opts:
     path: /
 - name: 'V2Get🛰️ 2026-08-21 12:57 #3'
-  type: vless
-  server: savesafe.co
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: savesafe.co
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
-    short-id: f63805c3ecc7a483
-- name: 'V2Get🛰️ 2026-08-21 12:57 #4'
   type: trojan
   server: 185.36.141.81
   port: 443
@@ -196,7 +190,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 'V2Get🛰️ 2026-08-21 12:57 #5'
+- name: 'V2Get🛰️ 2026-08-21 12:57 #4'
   type: vless
   server: 195.184.247.225
   port: 443
@@ -1257,6 +1251,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-22 11:58
   - 'V2Get🛰️ 2026-08-22 11:58 #2'
   - V2Get🛰️ 2026-08-22 11:57
@@ -1272,7 +1267,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 12:57 #2'
   - 'V2Get🛰️ 2026-08-21 12:57 #3'
   - 'V2Get🛰️ 2026-08-21 12:57 #4'
-  - 'V2Get🛰️ 2026-08-21 12:57 #5'
   - V2Get🛰️ 2026-08-22 09:57
   - 'V2Get🛰️ 2026-08-22 09:57 #2'
   - 'V2Get🛰️ 2026-08-22 09:57 #3'
@@ -1344,6 +1338,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-08-22 11:58
   - 'V2Get🛰️ 2026-08-22 11:58 #2'
   - V2Get🛰️ 2026-08-22 11:57
@@ -1359,7 +1354,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-21 12:57 #2'
   - 'V2Get🛰️ 2026-08-21 12:57 #3'
   - 'V2Get🛰️ 2026-08-21 12:57 #4'
-  - 'V2Get🛰️ 2026-08-21 12:57 #5'
   - V2Get🛰️ 2026-08-22 09:57
   - 'V2Get🛰️ 2026-08-22 09:57 #2'
   - 'V2Get🛰️ 2026-08-22 09:57 #3'
