@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-20 19:13
+  type: vless
+  server: 162.128.87.50
+  port: 443
+  uuid: be154d71-04ca-4389-8a89-d14219b25cd7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kwZBG2HBA1WN4eZW1GK0D9OVC4TPEs5J-ZeeBA2bVBw
+    short-id: 08f1620e7ad50ca8
+- name: 'V2Get🛰️ 2026-08-20 19:13 #2'
+  type: vless
+  server: 162.128.71.118
+  port: 443
+  uuid: 690ad3be-991b-4a2c-b351-42dd06789d03
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.bing.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3ZKNZEktRaPxt-XoWmx68EGsFwglnICVkvIl96973iA
+    short-id: 4014ce9b0d82ad9d
 - name: V2Get🛰️ 2026-08-22 08:56
   type: vless
   server: 188.114.97.6
@@ -62,20 +90,6 @@ proxies:
   reality-opts:
     public-key: rY0p9bslbo1BOCOy-KL3V7sVPyp-eJv0IR6NxysFtW8
     short-id: 70a439e9aa8458cd
-- name: V2Get🛰️ 2026-08-18 23:09
-  type: vless
-  server: 178.162.253.64
-  port: 443
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.servers.gracevpnbuy.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
-    short-id: b91a73752053b039
 - name: V2Get🛰️ 2026-08-20 10:10
   type: vless
   server: 212.64.193.42
@@ -186,13 +200,6 @@ proxies:
   reality-opts:
     public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
     short-id: a1b2c3d4
-- name: V2Get🛰️ 2026-08-19 12:09
-  type: ss
-  server: 142.4.216.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
 - name: V2Get🛰️ 2026-08-19 13:10
   type: vless
   server: 81.95.4.189
@@ -254,7 +261,7 @@ proxies:
   reality-opts:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: f63805c3ecc7a483
-- name: V2Get🛰️ 2026-08-20 19:13
+- name: 'V2Get🛰️ 2026-08-20 19:13 #3'
   type: vless
   server: lizca2.footballfantasyforum.com
   port: 443
@@ -266,7 +273,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-08-20 19:13 #2'
+- name: 'V2Get🛰️ 2026-08-20 19:13 #4'
   type: vless
   server: 172.96.121.6
   port: 443
@@ -1436,11 +1443,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 19:13
+  - 'V2Get🛰️ 2026-08-20 19:13 #2'
   - V2Get🛰️ 2026-08-22 08:56
   - V2Get🛰️ 2026-08-22 10:56
   - 'V2Get🛰️ 2026-08-22 10:56 #2'
   - 'V2Get🛰️ 2026-08-22 10:56 #3'
-  - V2Get🛰️ 2026-08-18 23:09
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-22 10:56 #4'
   - V2Get🛰️ 2026-08-21 12:57
@@ -1450,14 +1458,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-08-19 14:09
-  - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 16:14
-  - V2Get🛰️ 2026-08-20 19:13
-  - 'V2Get🛰️ 2026-08-20 19:13 #2'
+  - 'V2Get🛰️ 2026-08-20 19:13 #3'
+  - 'V2Get🛰️ 2026-08-20 19:13 #4'
   - V2Get🛰️ 2026-08-20 21:13
   - 'V2Get🛰️ 2026-08-21 12:57 #3'
   - 'V2Get🛰️ 2026-08-21 12:57 #4'
@@ -1542,11 +1549,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 19:13
+  - 'V2Get🛰️ 2026-08-20 19:13 #2'
   - V2Get🛰️ 2026-08-22 08:56
   - V2Get🛰️ 2026-08-22 10:56
   - 'V2Get🛰️ 2026-08-22 10:56 #2'
   - 'V2Get🛰️ 2026-08-22 10:56 #3'
-  - V2Get🛰️ 2026-08-18 23:09
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-22 10:56 #4'
   - V2Get🛰️ 2026-08-21 12:57
@@ -1556,14 +1564,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-22 01:56
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-08-19 14:09
-  - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-19 22:12
   - 'V2Get🛰️ 2026-08-19 22:12 #2'
   - V2Get🛰️ 2026-08-20 12:12
   - V2Get🛰️ 2026-08-20 16:14
-  - V2Get🛰️ 2026-08-20 19:13
-  - 'V2Get🛰️ 2026-08-20 19:13 #2'
+  - 'V2Get🛰️ 2026-08-20 19:13 #3'
+  - 'V2Get🛰️ 2026-08-20 19:13 #4'
   - V2Get🛰️ 2026-08-20 21:13
   - 'V2Get🛰️ 2026-08-21 12:57 #3'
   - 'V2Get🛰️ 2026-08-21 12:57 #4'
