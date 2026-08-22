@@ -12,19 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 09:49
+- name: V2Get🛰️ 2026-08-20 19:13
   type: vless
-  server: 104.18.37.228
+  server: 162.128.87.50
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: be154d71-04ca-4389-8a89-d14219b25cd7
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
+  servername: www.bing.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kwZBG2HBA1WN4eZW1GK0D9OVC4TPEs5J-ZeeBA2bVBw
+    short-id: 08f1620e7ad50ca8
 - name: V2Get🛰️ 2026-08-07 13:05
   type: vless
   server: 72.56.92.177
@@ -1293,7 +1294,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 09:49
+  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-20 10:10 #2'
@@ -1383,7 +1384,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 09:49
+  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-08-07 13:05
   - V2Get🛰️ 2026-08-20 10:10
   - 'V2Get🛰️ 2026-08-20 10:10 #2'
