@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-23 00:57
+  type: vless
+  server: 188.114.98.44
+  port: 8080
+  uuid: 48c53993-d4ed-4eef-9881-e338419b31dc
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-22 23:57
   type: vless
   server: 104.19.229.21
@@ -507,13 +515,6 @@ proxies:
   alpn:
   - h2
 - name: 'V2Get🛰️ 2026-08-22 12:57 #2'
-  type: ss
-  server: 95.40.120.162
-  port: 8316
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-  udp: true
-- name: 'V2Get🛰️ 2026-08-22 12:57 #3'
   type: vless
   server: 157.137.213.151
   port: 62145
@@ -521,7 +522,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-22 12:57 #4'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #3'
   type: vless
   server: 163.128.99.73
   port: 443
@@ -535,7 +536,7 @@ proxies:
   reality-opts:
     public-key: ZMYQqRPgpITMElFSEMesSocBj7jvhhw3JGGzWEfyrBk
     short-id: 693f679d3294f967
-- name: 'V2Get🛰️ 2026-08-22 12:57 #5'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #4'
   type: vless
   server: 89.22.234.164
   port: 2053
@@ -549,7 +550,7 @@ proxies:
     path: /
     headers:
       Host: forfreeuse.rtqa.ru
-- name: 'V2Get🛰️ 2026-08-22 12:57 #6'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #5'
   type: ss
   server: 130.61.38.10
   port: 59924
@@ -1094,7 +1095,7 @@ proxies:
     path: /
     headers:
       Host: loft-cayhana.tolkun-tv.ru
-- name: 'V2Get🛰️ 2026-08-22 12:57 #7'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #6'
   type: vless
   server: 199.232.78.160
   port: 443
@@ -1106,7 +1107,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-08-22 12:57 #8'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #7'
   type: vless
   server: 85.209.157.25
   port: 443
@@ -1119,14 +1120,14 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: bO6oE5j-3-ONc3nqNsicX1hs6UhmrNLS5g_aMIRDUEc
-- name: 'V2Get🛰️ 2026-08-22 12:57 #9'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #8'
   type: ss
   server: 159.112.176.79
   port: 59319
   cipher: 2022-blake3-chacha20-poly1305
   password: jrXlW4ED58zxt3POWXl5yKPCXvTwHJ220ma1AllTTg8=
   udp: true
-- name: 'V2Get🛰️ 2026-08-22 12:57 #10'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #9'
   type: vless
   server: 63.184.211.42
   port: 22223
@@ -1134,7 +1135,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-22 12:57 #11'
+- name: 'V2Get🛰️ 2026-08-22 12:57 #10'
   type: vless
   server: ir5.horvexa.ir
   port: 2076
@@ -1153,6 +1154,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-23 00:57
   - V2Get🛰️ 2026-08-22 23:57
   - 'V2Get🛰️ 2026-08-22 23:57 #2'
   - 'V2Get🛰️ 2026-08-22 23:57 #3'
@@ -1196,7 +1198,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 12:57 #3'
   - 'V2Get🛰️ 2026-08-22 12:57 #4'
   - 'V2Get🛰️ 2026-08-22 12:57 #5'
-  - 'V2Get🛰️ 2026-08-22 12:57 #6'
   - V2Get🛰️ 2026-08-22 18:57
   - 'V2Get🛰️ 2026-08-22 18:57 #2'
   - 'V2Get🛰️ 2026-08-22 18:57 #3'
@@ -1245,17 +1246,18 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 12:58 #9'
   - 'V2Get🛰️ 2026-08-22 12:58 #10'
   - 'V2Get🛰️ 2026-08-22 12:58 #11'
+  - 'V2Get🛰️ 2026-08-22 12:57 #6'
   - 'V2Get🛰️ 2026-08-22 12:57 #7'
   - 'V2Get🛰️ 2026-08-22 12:57 #8'
   - 'V2Get🛰️ 2026-08-22 12:57 #9'
   - 'V2Get🛰️ 2026-08-22 12:57 #10'
-  - 'V2Get🛰️ 2026-08-22 12:57 #11'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-23 00:57
   - V2Get🛰️ 2026-08-22 23:57
   - 'V2Get🛰️ 2026-08-22 23:57 #2'
   - 'V2Get🛰️ 2026-08-22 23:57 #3'
@@ -1299,7 +1301,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 12:57 #3'
   - 'V2Get🛰️ 2026-08-22 12:57 #4'
   - 'V2Get🛰️ 2026-08-22 12:57 #5'
-  - 'V2Get🛰️ 2026-08-22 12:57 #6'
   - V2Get🛰️ 2026-08-22 18:57
   - 'V2Get🛰️ 2026-08-22 18:57 #2'
   - 'V2Get🛰️ 2026-08-22 18:57 #3'
@@ -1348,11 +1349,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 12:58 #9'
   - 'V2Get🛰️ 2026-08-22 12:58 #10'
   - 'V2Get🛰️ 2026-08-22 12:58 #11'
+  - 'V2Get🛰️ 2026-08-22 12:57 #6'
   - 'V2Get🛰️ 2026-08-22 12:57 #7'
   - 'V2Get🛰️ 2026-08-22 12:57 #8'
   - 'V2Get🛰️ 2026-08-22 12:57 #9'
   - 'V2Get🛰️ 2026-08-22 12:57 #10'
-  - 'V2Get🛰️ 2026-08-22 12:57 #11'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
