@@ -12,6 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-23 13:58
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane2.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-23 13:58 #2'
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-23 12:59
   type: vless
   server: 146.75.119.82
@@ -1153,26 +1179,14 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-22 18:57 #11'
-  type: ss
-  server: 104.105.202.31
-  port: 1111
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-  udp: true
-- name: 'V2Get🛰️ 2026-08-22 18:57 #12'
-  type: ss
-  server: 104.105.202.31
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-  udp: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 12:59
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - 'V2Get🛰️ 2026-08-23 12:59 #3'
@@ -1269,14 +1283,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 18:57 #8'
   - 'V2Get🛰️ 2026-08-22 18:57 #9'
   - 'V2Get🛰️ 2026-08-22 18:57 #10'
-  - 'V2Get🛰️ 2026-08-22 18:57 #11'
-  - 'V2Get🛰️ 2026-08-22 18:57 #12'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 12:59
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - 'V2Get🛰️ 2026-08-23 12:59 #3'
@@ -1373,8 +1387,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-22 18:57 #8'
   - 'V2Get🛰️ 2026-08-22 18:57 #9'
   - 'V2Get🛰️ 2026-08-22 18:57 #10'
-  - 'V2Get🛰️ 2026-08-22 18:57 #11'
-  - 'V2Get🛰️ 2026-08-22 18:57 #12'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
