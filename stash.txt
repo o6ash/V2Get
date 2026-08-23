@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-23 15:59
+  type: vless
+  server: 195.63.135.96
+  port: 8443
+  uuid: 604d4a69-9f65-477c-8103-1c44bffd7092
+  udp: true
+  network: grpc
+  tls: true
+  servername: steamcommunity.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YAGFX8W6o2l3UWIAMEP93ULo0NSQ2iFM8DopfcFDBUk
+  grpc-opts:
+    grpc-service-name: ''
 - name: V2Get🛰️ 2026-08-23 12:59
   type: vless
   server: 212.24.107.219
@@ -33,21 +47,6 @@ proxies:
     headers:
       Host: rb24.ir
 - name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -1109,10 +1108,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-23 15:59
   - V2Get🛰️ 2026-08-23 12:59
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-20 11:10
@@ -1201,10 +1200,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-23 15:59
   - V2Get🛰️ 2026-08-23 12:59
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-20 11:10
