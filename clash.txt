@@ -12,21 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
+- name: V2Get🛰️ 2026-08-23 23:59
   type: vless
-  server: netraidly.ru
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+  server: 146.75.119.82
+  port: 80
+  uuid: f4d99b00-bf12-481c-8e24-e9022c1fb7d6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
-    short-id: 01d1bf2d4755d40c
-- name: 'V2Get🛰️ 2026-07-27 21:55 #2'
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+    headers:
+      Host: rb24.ir
+- name: V2Get🛰️ 2026-08-23 11:58
+  type: vmess
+  server: connecto1.kolman.com.de
+  port: 8080
+  uuid: e2fc90d0-745b-4303-b690-0ce2b496e1a6
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+- name: V2Get🛰️ 2026-07-27 21:55
   type: ss
   server: 108.181.58.239
   port: 8388
@@ -1000,15 +1007,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-23 11:58
-  type: vmess
-  server: connecto1.kolman.com.de
-  port: 8080
-  uuid: e2fc90d0-745b-4303-b690-0ce2b496e1a6
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: httpupgrade
 - name: 'V2Get🛰️ 2026-08-23 12:59 #2'
   type: vless
   server: 146.75.119.82
@@ -1195,8 +1193,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-23 23:59
+  - V2Get🛰️ 2026-08-23 11:58
   - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 17:00
   - V2Get🛰️ 2026-08-08 18:11
@@ -1276,7 +1275,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 15:59
   - V2Get🛰️ 2026-08-23 12:59
-  - V2Get🛰️ 2026-08-23 11:58
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - V2Get🛰️ 2026-08-23 13:59
   - 'V2Get🛰️ 2026-08-23 12:59 #3'
@@ -1299,8 +1297,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-23 23:59
+  - V2Get🛰️ 2026-08-23 11:58
   - V2Get🛰️ 2026-07-27 21:55
-  - 'V2Get🛰️ 2026-07-27 21:55 #2'
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-06 17:00
   - V2Get🛰️ 2026-08-08 18:11
@@ -1380,7 +1379,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 15:59
   - V2Get🛰️ 2026-08-23 12:59
-  - V2Get🛰️ 2026-08-23 11:58
   - 'V2Get🛰️ 2026-08-23 12:59 #2'
   - V2Get🛰️ 2026-08-23 13:59
   - 'V2Get🛰️ 2026-08-23 12:59 #3'
