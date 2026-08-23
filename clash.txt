@@ -12,31 +12,84 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-17 22:07
   type: vless
-  server: static.lotussec.com
+  server: 31.76.119.117
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: 7d2bac5e-6ff9-45c9-844e-6bfc5a384a42
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: static.lotussec.com
+  servername: de.orpheous.ru
   client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-06 09:19
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+- name: V2Get🛰️ 2026-08-19 11:10
   type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  server: de-11.th3store.ir
+  port: 8080
+  uuid: c164613c-ab89-4b34-a1d7-d526fadcd5b6
   udp: true
-  network: ws
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-20 16:14
+  type: vless
+  server: 195.184.247.226
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
+  servername: savesafe.co
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
+- name: V2Get🛰️ 2026-08-23 10:58
+  type: vless
+  server: it1.murhost.network
+  port: 443
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: it1.murhost.network
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: H9-mAKSPlIPGVDI2uBSZqxxOkLGTsfciqL5rAKIwUlg
+    short-id: ad416bcb922d986b
+- name: V2Get🛰️ 2026-08-24 00:00
+  type: vless
+  server: nl3.murhost.network
+  port: 443
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl3.murhost.network
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI
+    short-id: f41bc0b00ca1a978
+- name: V2Get🛰️ 2026-08-23 22:00
+  type: ss
+  server: 193.29.139.159
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 'V2Get🛰️ 2026-08-23 22:00 #2'
+  type: ss
+  server: 193.29.139.249
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: V2Get🛰️ 2026-08-23 23:59
   type: vless
   server: k2.cloud--vpn.site
@@ -53,51 +106,6 @@ proxies:
       Host: c12.com
 - name: V2Get🛰️ 2026-08-20 11:10
   type: trojan
-  server: 156.243.83.240
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: 8373638-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 838373-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: 'V2Get🛰️ 2026-08-20 11:10 #2'
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-g@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 383838-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: 'V2Get🛰️ 2026-08-20 11:10 #3'
-  type: trojan
-  server: 213.182.199.137
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: 66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 2-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: 'V2Get🛰️ 2026-08-20 11:10 #4'
-  type: trojan
   server: 45.205.0.6
   port: 443
   password: mitivpn
@@ -111,7 +119,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: 3-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: V2Get🛰️ 2026-08-23 22:00
+- name: 'V2Get🛰️ 2026-08-23 22:00 #3'
   type: vless
   server: 69.46.46.123
   port: 443
@@ -235,14 +243,7 @@ proxies:
     path: /
     headers:
       Host: 7wwwspeedtestnet.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-23 22:00 #2'
-  type: ss
-  server: 193.29.139.249
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 'V2Get🛰️ 2026-08-23 22:00 #3'
+- name: 'V2Get🛰️ 2026-08-23 22:00 #4'
   type: vless
   server: shop.jarorobo.ir
   port: 8443
@@ -255,7 +256,7 @@ proxies:
   reality-opts:
     public-key: 9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4
     short-id: 651585174f4da130
-- name: 'V2Get🛰️ 2026-08-23 22:00 #4'
+- name: 'V2Get🛰️ 2026-08-23 22:00 #5'
   type: vless
   server: iran.arshia-nova.ir
   port: 8443
@@ -268,13 +269,6 @@ proxies:
   reality-opts:
     public-key: 9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4
     short-id: 651585174f4da130
-- name: 'V2Get🛰️ 2026-08-23 22:00 #5'
-  type: ss
-  server: 193.29.139.159
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 - name: 'V2Get🛰️ 2026-08-23 22:00 #6'
   type: vless
   server: neth2.nihaovpn.ru
@@ -1211,14 +1205,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-17 22:07
+  - V2Get🛰️ 2026-08-19 11:10
+  - V2Get🛰️ 2026-08-20 16:14
+  - V2Get🛰️ 2026-08-23 10:58
+  - V2Get🛰️ 2026-08-24 00:00
+  - V2Get🛰️ 2026-08-23 22:00
+  - 'V2Get🛰️ 2026-08-23 22:00 #2'
   - V2Get🛰️ 2026-08-23 23:59
   - V2Get🛰️ 2026-08-20 11:10
-  - 'V2Get🛰️ 2026-08-20 11:10 #2'
-  - 'V2Get🛰️ 2026-08-20 11:10 #3'
-  - 'V2Get🛰️ 2026-08-20 11:10 #4'
-  - V2Get🛰️ 2026-08-23 22:00
+  - 'V2Get🛰️ 2026-08-23 22:00 #3'
   - V2Get🛰️ 2026-08-23 13:58
   - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 14:59
@@ -1228,8 +1224,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 02:13
   - V2Get🛰️ 2026-08-23 22:59
-  - 'V2Get🛰️ 2026-08-23 22:00 #2'
-  - 'V2Get🛰️ 2026-08-23 22:00 #3'
   - 'V2Get🛰️ 2026-08-23 22:00 #4'
   - 'V2Get🛰️ 2026-08-23 22:00 #5'
   - 'V2Get🛰️ 2026-08-23 22:00 #6'
@@ -1315,14 +1309,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-06 09:19
+  - V2Get🛰️ 2026-08-17 22:07
+  - V2Get🛰️ 2026-08-19 11:10
+  - V2Get🛰️ 2026-08-20 16:14
+  - V2Get🛰️ 2026-08-23 10:58
+  - V2Get🛰️ 2026-08-24 00:00
+  - V2Get🛰️ 2026-08-23 22:00
+  - 'V2Get🛰️ 2026-08-23 22:00 #2'
   - V2Get🛰️ 2026-08-23 23:59
   - V2Get🛰️ 2026-08-20 11:10
-  - 'V2Get🛰️ 2026-08-20 11:10 #2'
-  - 'V2Get🛰️ 2026-08-20 11:10 #3'
-  - 'V2Get🛰️ 2026-08-20 11:10 #4'
-  - V2Get🛰️ 2026-08-23 22:00
+  - 'V2Get🛰️ 2026-08-23 22:00 #3'
   - V2Get🛰️ 2026-08-23 13:58
   - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 14:59
@@ -1332,8 +1328,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 02:13
   - V2Get🛰️ 2026-08-23 22:59
-  - 'V2Get🛰️ 2026-08-23 22:00 #2'
-  - 'V2Get🛰️ 2026-08-23 22:00 #3'
   - 'V2Get🛰️ 2026-08-23 22:00 #4'
   - 'V2Get🛰️ 2026-08-23 22:00 #5'
   - 'V2Get🛰️ 2026-08-23 22:00 #6'
