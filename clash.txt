@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-23 11:58
   type: vless
+  server: 107.181.155.71
+  port: 443
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: wok5.api3-max.ru
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-23 11:58 #2'
+  type: vless
   server: wok8.api3-max.ru
   port: 443
   uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
@@ -26,15 +40,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-08-19 10:08
   type: vless
   server: 85.155.226.140
@@ -1133,7 +1138,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-23 11:58
-  - V2Get🛰️ 2026-08-05 08:28
+  - 'V2Get🛰️ 2026-08-23 11:58 #2'
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-23 11:00
   - 'V2Get🛰️ 2026-08-23 11:00 #2'
@@ -1237,7 +1242,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-23 11:58
-  - V2Get🛰️ 2026-08-05 08:28
+  - 'V2Get🛰️ 2026-08-23 11:58 #2'
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-23 11:00
   - 'V2Get🛰️ 2026-08-23 11:00 #2'
