@@ -13,6 +13,15 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-23 11:58
+  type: vmess
+  server: connecto1.kolman.com.de
+  port: 8080
+  uuid: e2fc90d0-745b-4303-b690-0ce2b496e1a6
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-08-23 11:58 #2'
   type: vless
   server: 107.181.155.71
   port: 443
@@ -26,7 +35,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-08-23 11:58 #2'
+- name: 'V2Get🛰️ 2026-08-23 11:58 #3'
   type: vless
   server: wok8.api3-max.ru
   port: 443
@@ -40,20 +49,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-08-19 10:08
-  type: vless
-  server: 85.155.226.140
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: getsavesafe.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
 - name: V2Get🛰️ 2026-08-23 11:00
   type: vless
   server: 159.194.196.46
@@ -1139,7 +1134,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-23 11:58
   - 'V2Get🛰️ 2026-08-23 11:58 #2'
-  - V2Get🛰️ 2026-08-19 10:08
+  - 'V2Get🛰️ 2026-08-23 11:58 #3'
   - V2Get🛰️ 2026-08-23 11:00
   - 'V2Get🛰️ 2026-08-23 11:00 #2'
   - 'V2Get🛰️ 2026-08-23 11:00 #3'
@@ -1243,7 +1238,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-23 11:58
   - 'V2Get🛰️ 2026-08-23 11:58 #2'
-  - V2Get🛰️ 2026-08-19 10:08
+  - 'V2Get🛰️ 2026-08-23 11:58 #3'
   - V2Get🛰️ 2026-08-23 11:00
   - 'V2Get🛰️ 2026-08-23 11:00 #2'
   - 'V2Get🛰️ 2026-08-23 11:00 #3'
