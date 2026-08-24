@@ -12,18 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+- name: V2Get🛰️ 2026-08-24 12:00
+  type: vmess
+  server: connecto1.kolman.com.de
+  port: 8080
+  uuid: 3f7a8a3c-d5b1-4184-bb47-c4ebd1bfdcc1
+  alterId: 0
+  cipher: auto
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  network: httpupgrade
 - name: V2Get🛰️ 2026-08-05 08:28
   type: vmess
   server: 66.163.117.58
@@ -1207,7 +1204,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-24 12:00
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 17:56
@@ -1311,7 +1308,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-24 12:00
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-21 17:56
