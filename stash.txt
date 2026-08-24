@@ -12,30 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-23 13:58
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane2.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-23 13:58 #2'
+  type: vless
   server: 151.101.56.7
   port: 443
-  password: mitivpn
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
   udp: true
-  sni: cloudflare.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-23 01:57
   type: vless
   server: meli_netbot.team-pluss.com
@@ -1021,8 +1023,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 01:57
   - V2Get🛰️ 2026-08-23 10:58
   - V2Get🛰️ 2026-08-24 11:00
@@ -1106,8 +1108,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-23 01:57
   - V2Get🛰️ 2026-08-23 10:58
   - V2Get🛰️ 2026-08-24 11:00
