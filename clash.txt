@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-05 08:28
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-06 09:14
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: V2Get🛰️ 2026-08-25 23:05
+  type: ss
+  server: 94.72.127.55
+  port: 80
+  cipher: aes-256-gcm
+  password: kRKZE3ZhECwawy1N
+  udp: true
+- name: 'V2Get🛰️ 2026-08-25 23:05 #2'
+  type: ss
+  server: 36.224.174.236
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
 - name: V2Get🛰️ 2026-08-25 16:02
   type: vless
   server: 45.195.111.108
@@ -50,66 +80,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-06 18:05
-  type: vless
-  server: 104.18.1.1
-  port: 2053
-  uuid: da4747a6-be0d-4c1b-90f4-d82ec3012be2
-  udp: true
-  network: ws
-  tls: true
-  servername: music1000.melobitmusic1.ir
-  client-fingerprint: ios
-  alpn:
-  - h3
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: music1000.melobitmusic1.ir
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: cloudflare.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-22 23:57
-  type: vless
-  server: 41.216.182.105
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  udp: true
-  network: ws
-  tls: true
-  servername: vod.ensf.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/irc
-    headers:
-      Host: vod.ensf.top
-- name: V2Get🛰️ 2026-08-24 11:00
-  type: vless
-  server: 46.8.41.42
-  port: 443
-  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: uk1.panel11.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: L5qLDM9pWlBV6gU9yCT4_yc7jz982FiLi2CZWLo3Ki0
-    short-id: dcbf3f13ce2dbe37
 - name: V2Get🛰️ 2026-08-25 00:01
   type: ss
   server: 194.233.94.119
@@ -1148,14 +1118,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-06 09:14
+  - V2Get🛰️ 2026-08-25 23:05
+  - 'V2Get🛰️ 2026-08-25 23:05 #2'
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-25 15:03
   - V2Get🛰️ 2026-08-25 23:03
-  - V2Get🛰️ 2026-08-06 18:05
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-22 23:57
-  - V2Get🛰️ 2026-08-24 11:00
   - V2Get🛰️ 2026-08-25 00:01
   - 'V2Get🛰️ 2026-08-25 16:02 #2'
   - 'V2Get🛰️ 2026-08-25 16:02 #3'
@@ -1252,14 +1222,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-06 09:14
+  - V2Get🛰️ 2026-08-25 23:05
+  - 'V2Get🛰️ 2026-08-25 23:05 #2'
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-25 15:03
   - V2Get🛰️ 2026-08-25 23:03
-  - V2Get🛰️ 2026-08-06 18:05
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-22 23:57
-  - V2Get🛰️ 2026-08-24 11:00
   - V2Get🛰️ 2026-08-25 00:01
   - 'V2Get🛰️ 2026-08-25 16:02 #2'
   - 'V2Get🛰️ 2026-08-25 16:02 #3'
