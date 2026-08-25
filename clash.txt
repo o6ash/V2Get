@@ -12,26 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
+- name: V2Get🛰️ 2026-08-17 23:09
   type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
+  server: 89.144.30.154
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-07 08:39
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: ya.ru
+  servername: static.lotussec.com
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-25 16:02
+  type: vless
+  server: 45.195.111.108
+  port: 443
+  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: firefox
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
 - name: V2Get🛰️ 2026-08-07 22:10
   type: vless
   server: 157.90.165.181
@@ -1004,8 +1009,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-07 22:10
   - V2Get🛰️ 2026-08-17 07:39
   - V2Get🛰️ 2026-08-17 21:08
@@ -1110,8 +1115,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-17 23:09
+  - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-07 22:10
   - V2Get🛰️ 2026-08-17 07:39
   - V2Get🛰️ 2026-08-17 21:08
