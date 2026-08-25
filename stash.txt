@@ -12,21 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-08-25 15:03
+  type: vmess
+  server: 7.bmi.ir.varzesh3.com.de
+  port: 8080
+  uuid: 52230779-9708-4da7-a7af-ed9b7342ff54
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
+  network: tcp
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -42,6 +36,14 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-25 23:03
+  type: vless
+  server: 5.75.193.127
+  port: 80
+  uuid: 648abb82-c62d-4946-91f3-634a21c706ca
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-03 10:54 #2'
   type: trojan
   server: 199.232.237.245
@@ -179,7 +181,7 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-08-25 23:03
+- name: 'V2Get🛰️ 2026-08-25 23:03 #2'
   type: vless
   server: linevpnco-production-e46f.up.railway.app
   port: 443
@@ -195,19 +197,11 @@ proxies:
     path: /vl-ws
     headers:
       Host: linevpnco-production-e46f.up.railway.app
-- name: 'V2Get🛰️ 2026-08-25 23:03 #2'
+- name: 'V2Get🛰️ 2026-08-25 23:03 #3'
   type: vless
   server: 193.233.220.84
   port: 898
   uuid: c951f9bf-1be8-4e74-a9d6-c4dad7093a2b
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 23:03 #3'
-  type: vless
-  server: 5.75.193.127
-  port: 80
-  uuid: 648abb82-c62d-4946-91f3-634a21c706ca
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1036,8 +1030,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-25 15:03
   - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-06 18:05
   - V2Get🛰️ 2026-08-18 01:06
@@ -1048,7 +1043,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-25 22:03
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-08-25 23:04
-  - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-25 23:03 #2'
   - 'V2Get🛰️ 2026-08-25 23:03 #3'
   - V2Get🛰️ 2026-08-25 22:05
@@ -1126,8 +1120,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-25 15:03
   - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-03 10:54 #2'
   - V2Get🛰️ 2026-08-06 18:05
   - V2Get🛰️ 2026-08-18 01:06
@@ -1138,7 +1133,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-25 22:03
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-08-25 23:04
-  - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-25 23:03 #2'
   - 'V2Get🛰️ 2026-08-25 23:03 #3'
   - V2Get🛰️ 2026-08-25 22:05
