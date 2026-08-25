@@ -12,21 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-08-25 07:01
+  type: vless
+  server: 217.149.30.225
+  port: 8443
+  uuid: a237ca49-48d5-466f-aee5-c44f728a99ab
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
-    headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.rumedia-cdn.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: Z3dT5WeVvmrbBtZycHfI3kO6kyoLH3tAqpT_ReaMaxI
+    short-id: 4f676caa93313eab
 - name: V2Get🛰️ 2026-08-25 03:01
   type: vless
   server: c-1.mrcloudi.ir
@@ -1158,7 +1157,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-25 07:01
   - V2Get🛰️ 2026-08-25 03:01
   - 'V2Get🛰️ 2026-08-25 03:01 #2'
   - 'V2Get🛰️ 2026-08-25 03:01 #3'
@@ -1261,7 +1260,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
+  - V2Get🛰️ 2026-08-25 07:01
   - V2Get🛰️ 2026-08-25 03:01
   - 'V2Get🛰️ 2026-08-25 03:01 #2'
   - 'V2Get🛰️ 2026-08-25 03:01 #3'
