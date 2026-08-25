@@ -14,13 +14,33 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-25 20:03
   type: vless
+  server: ap.brbpanel.ir
+  port: 27277
+  uuid: 3249cda3-b405-436c-b085-313e5809d7a0
+  udp: true
+  network: httpupgrade
+  tls: true
+  servername: ap.BrbPanel.Ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-25 20:03 #2'
+  type: vless
+  server: curl.se
+  port: 80
+  uuid: 3249cda3-b405-436c-b085-313e5809d7a0
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:03 #3'
+  type: vless
   server: posh.safilow.ir
   port: 443
   uuid: 1999ed45-8be4-46ad-9ddc-a9e652dce70d
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:03 #2'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #4'
   type: vless
   server: adok.safilow.ir
   port: 8080
@@ -28,7 +48,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:03 #3'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #5'
   type: vless
   server: 104.21.88.247
   port: 8080
@@ -36,7 +56,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:03 #4'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #6'
   type: vless
   server: 104.18.37.228
   port: 2083
@@ -53,7 +73,7 @@ proxies:
     path: /er=2048
     headers:
       Host: tado.sap-lotmarx.ir
-- name: 'V2Get🛰️ 2026-08-25 20:03 #5'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #7'
   type: vless
   server: 202.37.33.80
   port: 2083
@@ -70,7 +90,7 @@ proxies:
     path: /er=2048
     headers:
       Host: tado.sap-lotmarx.ir
-- name: 'V2Get🛰️ 2026-08-25 20:03 #6'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #8'
   type: vless
   server: cito.sap-lotmarx.ir
   port: 2096
@@ -107,7 +127,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 2OPuSlR6h3ZHql3h
   udp: true
-- name: 'V2Get🛰️ 2026-08-25 20:03 #7'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #9'
   type: vless
   server: rs1.univesalsrv.com
   port: 443
@@ -122,27 +142,13 @@ proxies:
     short-id: ed0cd5cc2e26e6e7
   grpc-opts:
     grpc-service-name: node.v2.ObjectService
-- name: 'V2Get🛰️ 2026-08-25 20:03 #8'
+- name: 'V2Get🛰️ 2026-08-25 20:03 #10'
   type: ss
   server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
   password: itzvpn@321
   udp: true
-- name: V2Get🛰️ 2026-08-22 23:57
-  type: vless
-  server: 41.216.182.105
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  udp: true
-  network: ws
-  tls: true
-  servername: vod.ensf.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/irc
-    headers:
-      Host: vod.ensf.top
 - name: V2Get🛰️ 2026-08-25 00:01
   type: ss
   server: 194.233.94.119
@@ -183,18 +189,6 @@ proxies:
   reality-opts:
     public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
     short-id: 58fbcddfaae3ade9
-- name: V2Get🛰️ 2026-08-24 11:00
-  type: vless
-  server: ned.waldron.ir
-  port: 46142
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk
-    short-id: 39feeba3085c
 - name: V2Get🛰️ 2026-08-25 13:02
   type: vless
   server: 46.20.105.32
@@ -1105,17 +1099,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 20:03 #4'
   - 'V2Get🛰️ 2026-08-25 20:03 #5'
   - 'V2Get🛰️ 2026-08-25 20:03 #6'
+  - 'V2Get🛰️ 2026-08-25 20:03 #7'
+  - 'V2Get🛰️ 2026-08-25 20:03 #8'
   - V2Get🛰️ 2026-08-25 19:03
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 17:04
-  - 'V2Get🛰️ 2026-08-25 20:03 #7'
-  - 'V2Get🛰️ 2026-08-25 20:03 #8'
-  - V2Get🛰️ 2026-08-22 23:57
+  - 'V2Get🛰️ 2026-08-25 20:03 #9'
+  - 'V2Get🛰️ 2026-08-25 20:03 #10'
   - V2Get🛰️ 2026-08-25 00:01
   - 'V2Get🛰️ 2026-08-25 16:02 #2'
   - 'V2Get🛰️ 2026-08-25 16:02 #3'
   - V2Get🛰️ 2026-08-25 17:05
-  - V2Get🛰️ 2026-08-24 11:00
   - V2Get🛰️ 2026-08-25 13:02
   - 'V2Get🛰️ 2026-08-25 13:02 #2'
   - V2Get🛰️ 2026-08-25 16:03
@@ -1211,17 +1205,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 20:03 #4'
   - 'V2Get🛰️ 2026-08-25 20:03 #5'
   - 'V2Get🛰️ 2026-08-25 20:03 #6'
+  - 'V2Get🛰️ 2026-08-25 20:03 #7'
+  - 'V2Get🛰️ 2026-08-25 20:03 #8'
   - V2Get🛰️ 2026-08-25 19:03
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 17:04
-  - 'V2Get🛰️ 2026-08-25 20:03 #7'
-  - 'V2Get🛰️ 2026-08-25 20:03 #8'
-  - V2Get🛰️ 2026-08-22 23:57
+  - 'V2Get🛰️ 2026-08-25 20:03 #9'
+  - 'V2Get🛰️ 2026-08-25 20:03 #10'
   - V2Get🛰️ 2026-08-25 00:01
   - 'V2Get🛰️ 2026-08-25 16:02 #2'
   - 'V2Get🛰️ 2026-08-25 16:02 #3'
   - V2Get🛰️ 2026-08-25 17:05
-  - V2Get🛰️ 2026-08-24 11:00
   - V2Get🛰️ 2026-08-25 13:02
   - 'V2Get🛰️ 2026-08-25 13:02 #2'
   - V2Get🛰️ 2026-08-25 16:03
