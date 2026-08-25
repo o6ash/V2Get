@@ -14,13 +14,29 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-25 23:03
   type: vless
+  server: linevpnco-production-e46f.up.railway.app
+  port: 443
+  uuid: 7513d771-8ed6-4c7c-a1d9-112503b18d21
+  udp: true
+  network: ws
+  tls: true
+  servername: linevpnco-production-e46f.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: linevpnco-production-e46f.up.railway.app
+- name: 'V2Get🛰️ 2026-08-25 23:03 #2'
+  type: vless
   server: 193.233.220.84
   port: 898
   uuid: c951f9bf-1be8-4e74-a9d6-c4dad7093a2b
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 23:03 #2'
+- name: 'V2Get🛰️ 2026-08-25 23:03 #3'
   type: vless
   server: 5.75.193.127
   port: 80
@@ -116,18 +132,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: V2Get🛰️ 2026-08-18 01:08
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  network: tcp
-  tls: true
-  servername: 186.190.211.188
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
 - name: V2Get🛰️ 2026-08-19 10:08
   type: vless
   server: 188.114.99.0
@@ -1162,6 +1166,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-25 23:03 #2'
+  - 'V2Get🛰️ 2026-08-25 23:03 #3'
   - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-25 22:05
@@ -1170,7 +1175,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 22:05 #2'
   - V2Get🛰️ 2026-08-25 18:05
   - 'V2Get🛰️ 2026-08-25 22:05 #3'
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-20 11:10
@@ -1267,6 +1271,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-25 23:03
   - 'V2Get🛰️ 2026-08-25 23:03 #2'
+  - 'V2Get🛰️ 2026-08-25 23:03 #3'
   - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-25 22:05
@@ -1275,7 +1280,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 22:05 #2'
   - V2Get🛰️ 2026-08-25 18:05
   - 'V2Get🛰️ 2026-08-25 22:05 #3'
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 10:08
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-20 11:10
