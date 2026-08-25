@@ -12,243 +12,221 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 23:09
+- name: V2Get🛰️ 2026-08-25 20:05
   type: vless
-  server: 89.144.30.154
+  server: adok.safilow.ir
+  port: 8080
+  uuid: 12f5ebcf-1e17-42b8-b200-8bdcc6fca8d5
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #2'
+  type: vless
+  server: 104.21.88.247
+  port: 8080
+  uuid: 12f5ebcf-1e17-42b8-b200-8bdcc6fca8d5
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #3'
+  type: vless
+  server: 104.18.37.228
+  port: 2083
+  uuid: 12f5ebcf-1e17-42b8-b200-8bdcc6fca8d5
+  udp: true
+  network: ws
+  tls: true
+  servername: tado.sap-lotmarx.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /er=2048
+    headers:
+      Host: tado.sap-lotmarx.ir
+- name: 'V2Get🛰️ 2026-08-25 20:05 #4'
+  type: vless
+  server: 202.37.33.80
+  port: 2083
+  uuid: 12f5ebcf-1e17-42b8-b200-8bdcc6fca8d5
+  udp: true
+  network: ws
+  tls: true
+  servername: tado.sap-lotmarx.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /er=2048
+    headers:
+      Host: tado.sap-lotmarx.ir
+- name: 'V2Get🛰️ 2026-08-25 20:05 #5'
+  type: vless
+  server: cito.sap-lotmarx.ir
+  port: 2096
+  uuid: 12f5ebcf-1e17-42b8-b200-8bdcc6fca8d5
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #6'
+  type: vless
+  server: ita.mobileemdad.top
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: e8f4426268c05621
+- name: 'V2Get🛰️ 2026-08-25 20:05 #7'
+  type: vless
+  server: nl-play.mobileemdad.top
+  port: 42542
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #8'
+  type: vless
+  server: pk-google.mobileemdad.top
+  port: 443
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: delivery.mp.microsoft.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: cbe2503ffd040d
+- name: 'V2Get🛰️ 2026-08-25 20:05 #9'
+  type: vless
+  server: fr6.mobileemdad.top
+  port: 42542
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #10'
+  type: vless
+  server: ukm.moon-night.ir
+  port: 443
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: cbe2503ffd040d
+- name: 'V2Get🛰️ 2026-08-25 20:05 #11'
+  type: vless
+  server: tri.mobileemdad.top
+  port: 42538
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #12'
+  type: vless
+  server: in-play.mobileemdad.top
+  port: 42542
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-25 20:05 #13'
+  type: vless
+  server: usi.mobileemdad.top
+  port: 443
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: 070a23aed243
+- name: 'V2Get🛰️ 2026-08-25 20:05 #14'
+  type: vless
+  server: usq.mobileemdad.top
+  port: 443
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: 377d
+- name: 'V2Get🛰️ 2026-08-25 20:05 #15'
+  type: vless
+  server: ugb.mobileemdad.top
+  port: 443
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: 377d
+- name: 'V2Get🛰️ 2026-08-25 20:05 #16'
+  type: vless
+  server: crm.mobileemdad.top
+  port: 3131
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
   udp: true
   network: xhttp
   tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-25 16:02
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: _TLSfMNLBxrgGXOP5fiTcnSxPtjIUTrDwq4VgWTlZDM
+    short-id: 722b
+- name: 'V2Get🛰️ 2026-08-25 20:05 #17'
   type: vless
-  server: 45.195.111.108
+  server: pt-play.mobileemdad.top
   port: 443
-  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
-- name: V2Get🛰️ 2026-08-07 22:10
-  type: vless
-  server: 157.90.165.181
-  port: 11762
-  uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: swdist.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
-- name: V2Get🛰️ 2026-08-17 07:39
-  type: vless
-  server: 78.159.245.75
-  port: 9002
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  grpc-opts:
-    grpc-service-name: grpc-reality
-- name: V2Get🛰️ 2026-08-17 21:08
-  type: vless
-  server: 152.53.114.186
-  port: 443
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: as.tunnelx.space
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA
-    short-id: 4e9b0c2d1a3f5768
-- name: V2Get🛰️ 2026-08-19 12:09
-  type: vless
-  server: 47.239.6.251
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tesla.com
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-- name: V2Get🛰️ 2026-08-19 14:09
-  type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: telegraf.lv
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-    short-id: a1b2c3d4
-- name: V2Get🛰️ 2026-08-19 15:11
-  type: vless
-  server: 103.126.50.203
-  port: 443
-  uuid: 76f6b7fe-5de8-4637-87a0-6ddd33d67b3e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ro.getvlessvpn.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xp7g5asMyVx4aI7vEwfZZPrpd57izUvnNzAOpBs4mh0
-    short-id: b9f8f9772217538f
-- name: V2Get🛰️ 2026-08-19 22:12
-  type: vless
-  server: 185.141.227.153
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-maps.yandex.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  grpc-opts:
-    grpc-service-name: ''
-- name: V2Get🛰️ 2026-08-21 09:54
-  type: vless
-  server: 78.159.245.75
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-maps.yandex.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  grpc-opts:
-    grpc-service-name: ''
-- name: V2Get🛰️ 2026-08-21 23:57
-  type: vless
-  server: 95.163.232.49
-  port: 443
-  uuid: 301d201a-cea0-4626-b593-c75d0699e89c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk
-    short-id: a9c4f17e3b62d8
-- name: V2Get🛰️ 2026-08-22 18:57
-  type: ss
-  server: 104.105.202.31
-  port: 1111
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-  udp: true
-- name: 'V2Get🛰️ 2026-08-22 18:57 #2'
-  type: ss
-  server: 104.105.202.31
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Y8TaKQMncgi8nl_dNnLjQRUAmT4hZga7
-  udp: true
-- name: V2Get🛰️ 2026-08-22 21:57
-  type: vless
-  server: 23.172.40.60
-  port: 443
-  uuid: 4a680c6d-10b6-44ec-afbd-e2621760e347
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: learn.microsoft.com
-  reality-opts:
-    public-key: C7nhExS9e3_WQIDfYrGaG6ycw2jlrfSh3b-nf8eikSI
-    short-id: a1b2
-- name: V2Get🛰️ 2026-08-24 11:00
-  type: vless
-  server: ned.waldron.ir
-  port: 46142
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
   udp: true
   network: tcp
   tls: true
-  servername: www.yahoo.com
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk
-    short-id: 39feeba3085c
-- name: V2Get🛰️ 2026-08-25 13:02
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: f88610dd
+- name: 'V2Get🛰️ 2026-08-25 20:05 #18'
   type: vless
-  server: 46.20.105.31
-  port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  server: fna.mobileemdad.top
+  port: 42542
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ai.jobinvest.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-08-25 16:03
-  type: vless
-  server: 185.32.6.81
-  port: 443
-  uuid: 953e3703-4ddc-49a7-a087-c96049d22340
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: lCCvbwGOEkx6IuK3eFd4RtmBi6UInWoMyt0QtfsOjwk
-    short-id: 99fe1ec015fde70c
-- name: 'V2Get🛰️ 2026-08-25 16:03 #2'
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  network: ws
   skip-cert-verify: true
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 'V2Get🛰️ 2026-08-25 16:03 #3'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #19'
   type: vless
-  server: 185.24.151.36
+  server: pgc.mobileemdad.top
   port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  uuid: 7a65ad8c-4d6d-4083-9161-b2899c21e1f1
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: us.jobinvest.ru
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: edge
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: 377d
 - name: V2Get🛰️ 2026-08-25 18:05
   type: vless
   server: 45.140.36.118
@@ -367,7 +345,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: S6-j6OX9ljvw1bcc6N2Y3A
   udp: true
-- name: V2Get🛰️ 2026-08-25 20:05
+- name: 'V2Get🛰️ 2026-08-25 20:05 #20'
   type: vless
   server: 193.106.173.146
   port: 140
@@ -375,7 +353,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #2'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #21'
   type: vless
   server: 193.106.173.146
   port: 21
@@ -383,7 +361,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #3'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #22'
   type: vless
   server: 193.106.173.146
   port: 145
@@ -391,14 +369,14 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #4'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #23'
   type: ss
   server: 147.15.26.72
   port: 59319
   cipher: 2022-blake3-chacha20-poly1305
   password: V6XJgKditpse2Xlx8KAUr0YFCe0PGT823tpwCxoZWtE=
   udp: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #5'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #24'
   type: vless
   server: 154.19.187.249
   port: 20725
@@ -411,14 +389,14 @@ proxies:
   reality-opts:
     public-key: hceZHd9X9FSbWGXGgm3OWN-4Au26rrsriTcyHw5M3VU
     short-id: 0102ac4e
-- name: 'V2Get🛰️ 2026-08-25 20:05 #6'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #25'
   type: ss
   server: 193.233.220.84
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: jDmZzPLqeR0QRVbZselR0FrWZm-VljCQ
   udp: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #7'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #26'
   type: vless
   server: 159.200.230.146
   port: 52
@@ -426,21 +404,21 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #8'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #27'
   type: ss
   server: 83.217.202.68
   port: 831
   cipher: chacha20-ietf-poly1305
   password: CqDcVgvv6ltGEbnvSdF6xg
   udp: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #9'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #28'
   type: ss
   server: 178.72.184.193
   port: 102
   cipher: chacha20-ietf-poly1305
   password: YtfFqe5sn6hIHfhdjSRwBd3jLK2Xh1jx
   udp: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #10'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #29'
   type: vless
   server: 83.217.202.68
   port: 1293
@@ -451,7 +429,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: 'V2Get🛰️ 2026-08-25 20:05 #11'
+- name: 'V2Get🛰️ 2026-08-25 20:05 #30'
   type: vless
   server: 83.217.202.68
   port: 667
@@ -1009,25 +987,25 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-07 22:10
-  - V2Get🛰️ 2026-08-17 07:39
-  - V2Get🛰️ 2026-08-17 21:08
-  - V2Get🛰️ 2026-08-19 12:09
-  - V2Get🛰️ 2026-08-19 14:09
-  - V2Get🛰️ 2026-08-19 15:11
-  - V2Get🛰️ 2026-08-19 22:12
-  - V2Get🛰️ 2026-08-21 09:54
-  - V2Get🛰️ 2026-08-21 23:57
-  - V2Get🛰️ 2026-08-22 18:57
-  - 'V2Get🛰️ 2026-08-22 18:57 #2'
-  - V2Get🛰️ 2026-08-22 21:57
-  - V2Get🛰️ 2026-08-24 11:00
-  - V2Get🛰️ 2026-08-25 13:02
-  - V2Get🛰️ 2026-08-25 16:03
-  - 'V2Get🛰️ 2026-08-25 16:03 #2'
-  - 'V2Get🛰️ 2026-08-25 16:03 #3'
+  - V2Get🛰️ 2026-08-25 20:05
+  - 'V2Get🛰️ 2026-08-25 20:05 #2'
+  - 'V2Get🛰️ 2026-08-25 20:05 #3'
+  - 'V2Get🛰️ 2026-08-25 20:05 #4'
+  - 'V2Get🛰️ 2026-08-25 20:05 #5'
+  - 'V2Get🛰️ 2026-08-25 20:05 #6'
+  - 'V2Get🛰️ 2026-08-25 20:05 #7'
+  - 'V2Get🛰️ 2026-08-25 20:05 #8'
+  - 'V2Get🛰️ 2026-08-25 20:05 #9'
+  - 'V2Get🛰️ 2026-08-25 20:05 #10'
+  - 'V2Get🛰️ 2026-08-25 20:05 #11'
+  - 'V2Get🛰️ 2026-08-25 20:05 #12'
+  - 'V2Get🛰️ 2026-08-25 20:05 #13'
+  - 'V2Get🛰️ 2026-08-25 20:05 #14'
+  - 'V2Get🛰️ 2026-08-25 20:05 #15'
+  - 'V2Get🛰️ 2026-08-25 20:05 #16'
+  - 'V2Get🛰️ 2026-08-25 20:05 #17'
+  - 'V2Get🛰️ 2026-08-25 20:05 #18'
+  - 'V2Get🛰️ 2026-08-25 20:05 #19'
   - V2Get🛰️ 2026-08-25 18:05
   - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - 'V2Get🛰️ 2026-08-25 18:05 #3'
@@ -1042,17 +1020,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 18:05 #12'
   - 'V2Get🛰️ 2026-08-25 18:05 #13'
   - 'V2Get🛰️ 2026-08-25 18:05 #14'
-  - V2Get🛰️ 2026-08-25 20:05
-  - 'V2Get🛰️ 2026-08-25 20:05 #2'
-  - 'V2Get🛰️ 2026-08-25 20:05 #3'
-  - 'V2Get🛰️ 2026-08-25 20:05 #4'
-  - 'V2Get🛰️ 2026-08-25 20:05 #5'
-  - 'V2Get🛰️ 2026-08-25 20:05 #6'
-  - 'V2Get🛰️ 2026-08-25 20:05 #7'
-  - 'V2Get🛰️ 2026-08-25 20:05 #8'
-  - 'V2Get🛰️ 2026-08-25 20:05 #9'
-  - 'V2Get🛰️ 2026-08-25 20:05 #10'
-  - 'V2Get🛰️ 2026-08-25 20:05 #11'
+  - 'V2Get🛰️ 2026-08-25 20:05 #20'
+  - 'V2Get🛰️ 2026-08-25 20:05 #21'
+  - 'V2Get🛰️ 2026-08-25 20:05 #22'
+  - 'V2Get🛰️ 2026-08-25 20:05 #23'
+  - 'V2Get🛰️ 2026-08-25 20:05 #24'
+  - 'V2Get🛰️ 2026-08-25 20:05 #25'
+  - 'V2Get🛰️ 2026-08-25 20:05 #26'
+  - 'V2Get🛰️ 2026-08-25 20:05 #27'
+  - 'V2Get🛰️ 2026-08-25 20:05 #28'
+  - 'V2Get🛰️ 2026-08-25 20:05 #29'
+  - 'V2Get🛰️ 2026-08-25 20:05 #30'
   - 'V2Get🛰️ 2026-08-25 18:05 #15'
   - 'V2Get🛰️ 2026-08-25 18:05 #16'
   - 'V2Get🛰️ 2026-08-25 18:05 #17'
@@ -1115,25 +1093,25 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-07 22:10
-  - V2Get🛰️ 2026-08-17 07:39
-  - V2Get🛰️ 2026-08-17 21:08
-  - V2Get🛰️ 2026-08-19 12:09
-  - V2Get🛰️ 2026-08-19 14:09
-  - V2Get🛰️ 2026-08-19 15:11
-  - V2Get🛰️ 2026-08-19 22:12
-  - V2Get🛰️ 2026-08-21 09:54
-  - V2Get🛰️ 2026-08-21 23:57
-  - V2Get🛰️ 2026-08-22 18:57
-  - 'V2Get🛰️ 2026-08-22 18:57 #2'
-  - V2Get🛰️ 2026-08-22 21:57
-  - V2Get🛰️ 2026-08-24 11:00
-  - V2Get🛰️ 2026-08-25 13:02
-  - V2Get🛰️ 2026-08-25 16:03
-  - 'V2Get🛰️ 2026-08-25 16:03 #2'
-  - 'V2Get🛰️ 2026-08-25 16:03 #3'
+  - V2Get🛰️ 2026-08-25 20:05
+  - 'V2Get🛰️ 2026-08-25 20:05 #2'
+  - 'V2Get🛰️ 2026-08-25 20:05 #3'
+  - 'V2Get🛰️ 2026-08-25 20:05 #4'
+  - 'V2Get🛰️ 2026-08-25 20:05 #5'
+  - 'V2Get🛰️ 2026-08-25 20:05 #6'
+  - 'V2Get🛰️ 2026-08-25 20:05 #7'
+  - 'V2Get🛰️ 2026-08-25 20:05 #8'
+  - 'V2Get🛰️ 2026-08-25 20:05 #9'
+  - 'V2Get🛰️ 2026-08-25 20:05 #10'
+  - 'V2Get🛰️ 2026-08-25 20:05 #11'
+  - 'V2Get🛰️ 2026-08-25 20:05 #12'
+  - 'V2Get🛰️ 2026-08-25 20:05 #13'
+  - 'V2Get🛰️ 2026-08-25 20:05 #14'
+  - 'V2Get🛰️ 2026-08-25 20:05 #15'
+  - 'V2Get🛰️ 2026-08-25 20:05 #16'
+  - 'V2Get🛰️ 2026-08-25 20:05 #17'
+  - 'V2Get🛰️ 2026-08-25 20:05 #18'
+  - 'V2Get🛰️ 2026-08-25 20:05 #19'
   - V2Get🛰️ 2026-08-25 18:05
   - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - 'V2Get🛰️ 2026-08-25 18:05 #3'
@@ -1148,17 +1126,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 18:05 #12'
   - 'V2Get🛰️ 2026-08-25 18:05 #13'
   - 'V2Get🛰️ 2026-08-25 18:05 #14'
-  - V2Get🛰️ 2026-08-25 20:05
-  - 'V2Get🛰️ 2026-08-25 20:05 #2'
-  - 'V2Get🛰️ 2026-08-25 20:05 #3'
-  - 'V2Get🛰️ 2026-08-25 20:05 #4'
-  - 'V2Get🛰️ 2026-08-25 20:05 #5'
-  - 'V2Get🛰️ 2026-08-25 20:05 #6'
-  - 'V2Get🛰️ 2026-08-25 20:05 #7'
-  - 'V2Get🛰️ 2026-08-25 20:05 #8'
-  - 'V2Get🛰️ 2026-08-25 20:05 #9'
-  - 'V2Get🛰️ 2026-08-25 20:05 #10'
-  - 'V2Get🛰️ 2026-08-25 20:05 #11'
+  - 'V2Get🛰️ 2026-08-25 20:05 #20'
+  - 'V2Get🛰️ 2026-08-25 20:05 #21'
+  - 'V2Get🛰️ 2026-08-25 20:05 #22'
+  - 'V2Get🛰️ 2026-08-25 20:05 #23'
+  - 'V2Get🛰️ 2026-08-25 20:05 #24'
+  - 'V2Get🛰️ 2026-08-25 20:05 #25'
+  - 'V2Get🛰️ 2026-08-25 20:05 #26'
+  - 'V2Get🛰️ 2026-08-25 20:05 #27'
+  - 'V2Get🛰️ 2026-08-25 20:05 #28'
+  - 'V2Get🛰️ 2026-08-25 20:05 #29'
+  - 'V2Get🛰️ 2026-08-25 20:05 #30'
   - 'V2Get🛰️ 2026-08-25 18:05 #15'
   - 'V2Get🛰️ 2026-08-25 18:05 #16'
   - 'V2Get🛰️ 2026-08-25 18:05 #17'
