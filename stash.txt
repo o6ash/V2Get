@@ -12,36 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-08-23 13:58
+  type: vless
+  server: 199.232.78.159
   port: 443
-  password: MiTiVPN
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
+      Host: pane2.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-08-23 13:58 #2'
+  type: vless
   server: 151.101.56.7
   port: 443
-  password: mitivpn
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
   udp: true
-  sni: cloudflare.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-24 22:01
   type: vless
   server: 194.93.61.66
@@ -804,8 +800,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-25 13:02
   - 'V2Get🛰️ 2026-08-25 13:02 #2'
@@ -873,8 +869,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-23 13:58
+  - 'V2Get🛰️ 2026-08-23 13:58 #2'
   - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-25 13:02
   - 'V2Get🛰️ 2026-08-25 13:02 #2'
