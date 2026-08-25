@@ -12,22 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-08-25 15:03
+  type: vmess
+  server: 7.bmi.ir.varzesh3.com.de
+  port: 8080
+  uuid: 52230779-9708-4da7-a7af-ed9b7342ff54
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
-    headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
+  network: tcp
+- name: V2Get🛰️ 2026-08-25 10:01
+  type: vless
+  server: swa.mythos-wargame.fun
+  port: 443
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  udp: true
+  network: grpc
+  tls: true
+  servername: swa.mythos-wargame.fun
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: edge.sync.v1
+- name: V2Get🛰️ 2026-07-26 03:07
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -485,7 +491,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-08-25 10:01
+- name: 'V2Get🛰️ 2026-08-25 10:01 #2'
   type: vless
   server: 45.198.96.210
   port: 443
@@ -512,7 +518,7 @@ proxies:
   reality-opts:
     public-key: qxTe4rYbyXphUF5L2zyEXzXfwJxky34-bEuX7zYcTDA
     short-id: 206432f9
-- name: 'V2Get🛰️ 2026-08-25 10:01 #2'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #3'
   type: vless
   server: 158.101.206.101
   port: 62145
@@ -520,7 +526,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-25 10:01 #3'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #4'
   type: vless
   server: 144.31.40.74
   port: 443
@@ -534,7 +540,7 @@ proxies:
   reality-opts:
     public-key: HpzevplMIGzSxJPBn6qQ65PoHzFyo6D5gUwv5D118Dk
     short-id: 91bc2d10a37e5368
-- name: 'V2Get🛰️ 2026-08-25 10:01 #4'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #5'
   type: vless
   server: 176.123.164.9
   port: 9872
@@ -549,7 +555,7 @@ proxies:
     short-id: aabb
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-25 10:01 #5'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #6'
   type: vless
   server: 31.76.111.113
   port: 7777
@@ -563,7 +569,7 @@ proxies:
   reality-opts:
     public-key: 4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0
     short-id: a8b9c0d1e2f34567
-- name: 'V2Get🛰️ 2026-08-25 10:01 #6'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #7'
   type: vless
   server: 144.31.207.4
   port: 443
@@ -577,7 +583,7 @@ proxies:
   reality-opts:
     public-key: Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM
     short-id: 0138875bd7d8725a
-- name: 'V2Get🛰️ 2026-08-25 10:01 #7'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #8'
   type: vless
   server: node-nd01.rkitman.ru
   port: 443
@@ -591,7 +597,7 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-- name: 'V2Get🛰️ 2026-08-25 10:01 #8'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #9'
   type: vless
   server: node-fra02.rkitman.ru
   port: 443
@@ -605,7 +611,7 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: 88d9dc52ef39c8bd
-- name: 'V2Get🛰️ 2026-08-25 10:01 #9'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #10'
   type: vless
   server: eeb.mythos-wargame.fun
   port: 443
@@ -617,7 +623,7 @@ proxies:
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: edge.sync.v1
-- name: 'V2Get🛰️ 2026-08-25 10:01 #10'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #11'
   type: vless
   server: eeb.webinarly.fun
   port: 443
@@ -629,7 +635,7 @@ proxies:
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: edge.sync.v1
-- name: 'V2Get🛰️ 2026-08-25 10:01 #11'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #12'
   type: vless
   server: 66.90.90.20
   port: 8443
@@ -642,7 +648,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-08-25 10:01 #12'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #13'
   type: vless
   server: 177.3.212.189
   port: 443
@@ -656,7 +662,7 @@ proxies:
   reality-opts:
     public-key: I81tkGsfVOK0JNnjsHRluXcXI-DyV_4mLQ4e8QJuSxU
     short-id: d7d38e70e3362842
-- name: 'V2Get🛰️ 2026-08-25 10:01 #13'
+- name: 'V2Get🛰️ 2026-08-25 10:01 #14'
   type: vless
   server: dea.mythos-wargame.fun
   port: 443
@@ -665,18 +671,6 @@ proxies:
   network: grpc
   tls: true
   servername: dea.mythos-wargame.fun
-  client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: edge.sync.v1
-- name: 'V2Get🛰️ 2026-08-25 10:01 #14'
-  type: vless
-  server: swa.mythos-wargame.fun
-  port: 443
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-  udp: true
-  network: grpc
-  tls: true
-  servername: swa.mythos-wargame.fun
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: edge.sync.v1
@@ -1007,8 +1001,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-25 15:03
+  - V2Get🛰️ 2026-08-25 10:01
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-25 15:02
@@ -1039,9 +1034,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 13:02 #7'
   - 'V2Get🛰️ 2026-08-25 13:02 #8'
   - 'V2Get🛰️ 2026-08-25 13:02 #9'
-  - V2Get🛰️ 2026-08-25 10:01
-  - V2Get🛰️ 2026-08-24 20:01
   - 'V2Get🛰️ 2026-08-25 10:01 #2'
+  - V2Get🛰️ 2026-08-24 20:01
   - 'V2Get🛰️ 2026-08-25 10:01 #3'
   - 'V2Get🛰️ 2026-08-25 10:01 #4'
   - 'V2Get🛰️ 2026-08-25 10:01 #5'
@@ -1085,8 +1079,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-25 15:03
+  - V2Get🛰️ 2026-08-25 10:01
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-25 15:02
@@ -1117,9 +1112,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-25 13:02 #7'
   - 'V2Get🛰️ 2026-08-25 13:02 #8'
   - 'V2Get🛰️ 2026-08-25 13:02 #9'
-  - V2Get🛰️ 2026-08-25 10:01
-  - V2Get🛰️ 2026-08-24 20:01
   - 'V2Get🛰️ 2026-08-25 10:01 #2'
+  - V2Get🛰️ 2026-08-24 20:01
   - 'V2Get🛰️ 2026-08-25 10:01 #3'
   - 'V2Get🛰️ 2026-08-25 10:01 #4'
   - 'V2Get🛰️ 2026-08-25 10:01 #5'
