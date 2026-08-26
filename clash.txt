@@ -12,14 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 11:50
+- name: V2Get🛰️ 2026-08-25 13:02
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 84.38.187.134
+  port: 443
+  uuid: 53ffd172-de4c-002f-aa77-1a6830a36cf8
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: git.xpkg.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc
+    short-id: 2c9431dc7a306018
 - name: V2Get🛰️ 2026-08-12 12:18
   type: ss
   server: 51.255.13.232
@@ -1239,7 +1244,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 11:50
+  - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-12 12:18
   - 'V2Get🛰️ 2026-08-12 12:18 #2'
   - V2Get🛰️ 2026-08-17 21:08
@@ -1344,7 +1349,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 11:50
+  - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-12 12:18
   - 'V2Get🛰️ 2026-08-12 12:18 #2'
   - V2Get🛰️ 2026-08-17 21:08
