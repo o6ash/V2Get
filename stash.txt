@@ -12,17 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 21:08
-  type: vmess
-  server: node-uk.connectsuite.org
-  port: 2053
-  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  skip-cert-verify: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT
 - name: V2Get🛰️ 2026-08-26 10:05
   type: vless
   server: 188.114.97.6
@@ -714,7 +716,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-26 10:05
   - 'V2Get🛰️ 2026-08-26 10:05 #2'
   - 'V2Get🛰️ 2026-08-26 10:05 #3'
@@ -791,7 +793,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-26 10:05
   - 'V2Get🛰️ 2026-08-26 10:05 #2'
   - 'V2Get🛰️ 2026-08-26 10:05 #3'
