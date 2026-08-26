@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-26 20:07
   type: vless
   server: 65.109.215.206
@@ -1159,25 +1172,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 16:06 #7'
-  type: vless
-  server: lan.milkabebar.ir
-  port: 10694
-  uuid: 04917f55-9c07-475f-a894-10d6505c362b
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-26 20:07
   - V2Get🛰️ 2026-08-26 20:05
   - 'V2Get🛰️ 2026-08-26 20:07 #2'
@@ -1275,13 +1276,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 17:04
   - V2Get🛰️ 2026-08-26 16:07
   - 'V2Get🛰️ 2026-08-26 16:07 #2'
-  - 'V2Get🛰️ 2026-08-26 16:06 #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-26 20:07
   - V2Get🛰️ 2026-08-26 20:05
   - 'V2Get🛰️ 2026-08-26 20:07 #2'
@@ -1379,7 +1380,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 17:04
   - V2Get🛰️ 2026-08-26 16:07
   - 'V2Get🛰️ 2026-08-26 16:07 #2'
-  - 'V2Get🛰️ 2026-08-26 16:06 #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
