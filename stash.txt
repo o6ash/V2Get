@@ -12,14 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 00:11
+- name: V2Get🛰️ 2026-08-27 00:07
   type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+  server: 167.104.223.167
+  port: 443
+  uuid: c6cff605-90cf-4953-bf97-0a44e43f229d
   udp: true
   network: tcp
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gb3.murhost.network
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
+    short-id: fc36b4a584871aa5
 - name: V2Get🛰️ 2026-08-26 02:03
   type: vless
   server: 51.81.203.63
@@ -1153,7 +1159,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-26 02:03
   - V2Get🛰️ 2026-08-27 00:06
   - 'V2Get🛰️ 2026-08-27 00:06 #2'
@@ -1250,7 +1256,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-26 02:03
   - V2Get🛰️ 2026-08-27 00:06
   - 'V2Get🛰️ 2026-08-27 00:06 #2'
