@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 21:06
+  type: vless
+  server: 78.129.150.110
+  port: 443
+  uuid: 671193bf-3203-487a-82bf-9a160ee30254
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: strapi.io
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
 - name: V2Get🛰️ 2026-08-26 21:05
   type: vless
   server: de.dragonio.ir
@@ -1072,14 +1086,6 @@ proxies:
     short-id: 846229eb47b3a5c9
   grpc-opts:
     grpc-service-name: api.v2.SyncService/StreamUpdates
-- name: V2Get🛰️ 2026-08-26 16:06
-  type: vless
-  server: 213.156.152.110
-  port: 443
-  uuid: 79c08658-753d-41f7-90af-dd03b0e68f75
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-26 16:07
   type: vless
   server: 146.75.119.82
@@ -1106,6 +1112,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 21:06
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 21:05 #3'
@@ -1194,7 +1201,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 17:05 #9'
   - 'V2Get🛰️ 2026-08-26 17:05 #10'
   - 'V2Get🛰️ 2026-08-26 17:05 #11'
-  - V2Get🛰️ 2026-08-26 16:06
   - V2Get🛰️ 2026-08-26 16:07
   - 'V2Get🛰️ 2026-08-26 16:07 #2'
 - name: ♻️ Auto Select
@@ -1203,6 +1209,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 21:06
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 21:05 #3'
@@ -1291,7 +1298,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 17:05 #9'
   - 'V2Get🛰️ 2026-08-26 17:05 #10'
   - 'V2Get🛰️ 2026-08-26 17:05 #11'
-  - V2Get🛰️ 2026-08-26 16:06
   - V2Get🛰️ 2026-08-26 16:07
   - 'V2Get🛰️ 2026-08-26 16:07 #2'
 rules:
