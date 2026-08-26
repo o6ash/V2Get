@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-17 21:08
+  type: vmess
+  server: node-uk.connectsuite.org
+  port: 2053
+  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-26 10:05
   type: vless
   server: 188.114.97.6
@@ -90,19 +101,6 @@ proxies:
     headers:
       Host: weathered-sunset-be54.407-d9d.workers.dev
 - name: V2Get🛰️ 2026-08-25 18:05
-  type: vless
-  server: 78.129.150.216
-  port: 443
-  uuid: 60a52f57-536a-4327-9a4c-c64db318dab3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: strapi.io
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-08-25 18:05 #2'
   type: vless
   server: 47.238.210.5
   port: 13779
@@ -716,6 +714,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-26 10:05
   - 'V2Get🛰️ 2026-08-26 10:05 #2'
   - 'V2Get🛰️ 2026-08-26 10:05 #3'
@@ -723,7 +722,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 10:05 #5'
   - 'V2Get🛰️ 2026-08-26 10:05 #6'
   - V2Get🛰️ 2026-08-25 18:05
-  - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - V2Get🛰️ 2026-08-25 19:03
   - 'V2Get🛰️ 2026-08-25 19:03 #2'
   - 'V2Get🛰️ 2026-08-25 19:03 #3'
@@ -793,6 +791,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-26 10:05
   - 'V2Get🛰️ 2026-08-26 10:05 #2'
   - 'V2Get🛰️ 2026-08-26 10:05 #3'
@@ -800,7 +799,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 10:05 #5'
   - 'V2Get🛰️ 2026-08-26 10:05 #6'
   - V2Get🛰️ 2026-08-25 18:05
-  - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - V2Get🛰️ 2026-08-25 19:03
   - 'V2Get🛰️ 2026-08-25 19:03 #2'
   - 'V2Get🛰️ 2026-08-25 19:03 #3'
