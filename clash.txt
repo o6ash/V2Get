@@ -12,36 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-25 17:05
-  type: vless
-  server: 5.255.126.104
-  port: 46142
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk
-    short-id: 39feeba3085c
 - name: V2Get🛰️ 2026-08-26 00:03
   type: vless
   server: xn--germany3-9s94gka.alphavpscloud.ir
   port: 48704
   uuid: e14d9286-b0e7-41d8-bca6-11be2d494745
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-26 19:05
+  type: vless
+  server: 138.201.159.12
+  port: 28353
+  uuid: ca09651d-fb31-437c-b356-84df10c1e97d
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -69,6 +52,19 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - h2
+- name: V2Get🛰️ 2026-08-25 17:05
+  type: vless
+  server: 5.255.126.104
+  port: 46142
+  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk
+    short-id: 39feeba3085c
 - name: V2Get🛰️ 2026-08-26 21:06
   type: vless
   server: 85.159.92.161
@@ -83,14 +79,18 @@ proxies:
   reality-opts:
     public-key: QdGXMBWibJZdfDmDk3YcCMxNPd0yd_CkHAOt2yDYJCE
     short-id: 97ac193c0962477c
-- name: V2Get🛰️ 2026-08-26 19:05
+- name: V2Get🛰️ 2026-07-28 11:43
   type: vless
-  server: 138.201.159.12
-  port: 28353
-  uuid: ca09651d-fb31-437c-b356-84df10c1e97d
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: 'V2Get🛰️ 2026-08-26 21:06 #2'
   type: vless
   server: 78.129.150.110
@@ -1189,13 +1189,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 00:03
+  - V2Get🛰️ 2026-08-26 19:05
   - V2Get🛰️ 2026-08-26 16:06
   - 'V2Get🛰️ 2026-08-26 16:06 #2'
+  - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 21:06
-  - V2Get🛰️ 2026-08-26 19:05
+  - V2Get🛰️ 2026-07-28 11:43
   - 'V2Get🛰️ 2026-08-26 21:06 #2'
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
@@ -1293,13 +1293,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 00:03
+  - V2Get🛰️ 2026-08-26 19:05
   - V2Get🛰️ 2026-08-26 16:06
   - 'V2Get🛰️ 2026-08-26 16:06 #2'
+  - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 21:06
-  - V2Get🛰️ 2026-08-26 19:05
+  - V2Get🛰️ 2026-07-28 11:43
   - 'V2Get🛰️ 2026-08-26 21:06 #2'
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
