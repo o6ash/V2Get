@@ -12,20 +12,63 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-25 16:02
+- name: V2Get🛰️ 2026-08-26 12:08
   type: vless
-  server: 45.195.111.108
-  port: 443
-  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
+  server: filimo.sanqelo.ir
+  port: 2053
+  uuid: 250b9f88-e443-4933-801e-2bfcb927bed6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: storage.yandex.net
-  client-fingerprint: firefox
+  servername: filimo.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
+    public-key: ehsGsDhM6grktj3MLssBImff872Rb7OuW6e6U3Nz_XE
+    short-id: ab91ea5e8ff13082
+  grpc-opts:
+    grpc-service-name: filimo.sanqelo.ir
+- name: 'V2Get🛰️ 2026-08-26 12:08 #2'
+  type: vless
+  server: filimo.sanqelo.ir
+  port: 2087
+  uuid: 250b9f88-e443-4933-801e-2bfcb927bed6
+  udp: true
+  network: grpc
+  tls: true
+  servername: filimo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZF9vXYsdPzNwzjf5S1baONG9GuRi6MeHTsB1IqZxHhg
+    short-id: bcfef7
+  grpc-opts:
+    grpc-service-name: filimo.sanqelo.ir
+- name: 'V2Get🛰️ 2026-08-26 12:08 #3'
+  type: vless
+  server: tgju.org
+  port: 8443
+  uuid: 250b9f88-e443-4933-801e-2bfcb927bed6
+  udp: true
+  network: ws
+  tls: true
+  servername: tgju.sanqelo.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /api/price/silver
+- name: 'V2Get🛰️ 2026-08-26 12:08 #4'
+  type: vless
+  server: tgju.org
+  port: 443
+  uuid: 250b9f88-e443-4933-801e-2bfcb927bed6
+  udp: true
+  network: ws
+  tls: true
+  servername: tgju.sanqelo.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/price/gold
 - name: V2Get🛰️ 2026-08-26 11:06
   type: vless
   server: 13.140.29.45
@@ -40,7 +83,7 @@ proxies:
     path: /pg/10086-dfc816f117c49173
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: V2Get🛰️ 2026-08-26 12:08
+- name: 'V2Get🛰️ 2026-08-26 12:08 #5'
   type: vless
   server: 195.133.84.198
   port: 8443
@@ -48,7 +91,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 12:08 #2'
+- name: 'V2Get🛰️ 2026-08-26 12:08 #6'
   type: vless
   server: 152.53.200.124
   port: 443
@@ -62,44 +105,7 @@ proxies:
     path: /
     headers:
       Host: forfreeuse.rtqa.ru
-- name: V2Get🛰️ 2026-08-25 16:03
-  type: vless
-  server: 185.24.151.33
-  port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jobinvest.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: 'V2Get🛰️ 2026-08-25 16:03 #2'
-  type: vless
-  server: 185.24.151.36
-  port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: us.jobinvest.ru
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 - name: V2Get🛰️ 2026-08-25 18:05
-  type: vless
-  server: 78.129.150.216
-  port: 443
-  uuid: 60a52f57-536a-4327-9a4c-c64db318dab3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: strapi.io
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-08-25 18:05 #2'
   type: vless
   server: 47.238.210.5
   port: 13779
@@ -896,14 +902,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-26 11:06
   - V2Get🛰️ 2026-08-26 12:08
   - 'V2Get🛰️ 2026-08-26 12:08 #2'
-  - V2Get🛰️ 2026-08-25 16:03
-  - 'V2Get🛰️ 2026-08-25 16:03 #2'
+  - 'V2Get🛰️ 2026-08-26 12:08 #3'
+  - 'V2Get🛰️ 2026-08-26 12:08 #4'
+  - V2Get🛰️ 2026-08-26 11:06
+  - 'V2Get🛰️ 2026-08-26 12:08 #5'
+  - 'V2Get🛰️ 2026-08-26 12:08 #6'
   - V2Get🛰️ 2026-08-25 18:05
-  - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - V2Get🛰️ 2026-08-25 19:03
   - 'V2Get🛰️ 2026-08-25 19:03 #2'
   - 'V2Get🛰️ 2026-08-25 19:03 #3'
@@ -977,14 +983,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-26 11:06
   - V2Get🛰️ 2026-08-26 12:08
   - 'V2Get🛰️ 2026-08-26 12:08 #2'
-  - V2Get🛰️ 2026-08-25 16:03
-  - 'V2Get🛰️ 2026-08-25 16:03 #2'
+  - 'V2Get🛰️ 2026-08-26 12:08 #3'
+  - 'V2Get🛰️ 2026-08-26 12:08 #4'
+  - V2Get🛰️ 2026-08-26 11:06
+  - 'V2Get🛰️ 2026-08-26 12:08 #5'
+  - 'V2Get🛰️ 2026-08-26 12:08 #6'
   - V2Get🛰️ 2026-08-25 18:05
-  - 'V2Get🛰️ 2026-08-25 18:05 #2'
   - V2Get🛰️ 2026-08-25 19:03
   - 'V2Get🛰️ 2026-08-25 19:03 #2'
   - 'V2Get🛰️ 2026-08-25 19:03 #3'
