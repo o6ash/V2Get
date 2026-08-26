@@ -12,21 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-08 01:10
-  type: ss
-  server: 103.120.178.193
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz
-  udp: true
-- name: V2Get🛰️ 2026-08-10 00:11
+- name: V2Get🛰️ 2026-08-25 17:04
   type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+  server: 135.106.142.209
+  port: 443
+  uuid: 53ffd172-de4c-0032-aa77-1a6830a36cf8
+  udp: true
+  network: xhttp
+  tls: true
+  servername: alfastat.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: fz_xpZfQks3oa9c_d1OSokmTgmJuGbvFMkyK0Qt8w3I
+    short-id: 0066a7326f06d426
+- name: V2Get🛰️ 2026-08-27 00:07
+  type: vless
+  server: 167.104.223.167
+  port: 443
+  uuid: c6cff605-90cf-4953-bf97-0a44e43f229d
   udp: true
   network: tcp
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gb3.murhost.network
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
+    short-id: fc36b4a584871aa5
 - name: V2Get🛰️ 2026-08-12 12:18
   type: ss
   server: 15.235.75.71
@@ -1213,8 +1225,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-08 01:10
-  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-12 12:18
   - V2Get🛰️ 2026-08-26 02:03
   - V2Get🛰️ 2026-08-27 00:06
@@ -1318,8 +1330,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-08 01:10
-  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-12 12:18
   - V2Get🛰️ 2026-08-26 02:03
   - V2Get🛰️ 2026-08-27 00:06
