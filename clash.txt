@@ -12,18 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-26 12:07
   type: vless
-  server: static.lotussec.com
+  server: 151.101.56.7
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-26 16:06
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 75a24f38-6942-41fe-a42b-ff1dd873c40f
   udp: true
   network: xhttp
   tls: true
-  servername: static.lotussec.com
+  servername: global.fastly.com
   client-fingerprint: firefox
   alpn:
   - h2
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-27 00:06
   type: vless
   server: un.nexavps.com.tr
@@ -309,7 +335,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-26 21:05
+- name: 'V2Get🛰️ 2026-08-26 21:05 #2'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -368,19 +394,6 @@ proxies:
     path: /ws/ef55e3c5-ff9f-dee0-77a7-6936e82f461b
     headers:
       Host: eshgh-production.up.railway.app
-- name: 'V2Get🛰️ 2026-08-26 21:05 #2'
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-26 19:05 #2'
   type: vless
   server: 138.201.159.12
@@ -1105,14 +1118,6 @@ proxies:
 - name: V2Get🛰️ 2026-08-26 18:06
   type: vless
   server: fank.milkabebar.ir
-  port: 38479
-  uuid: 01bd8910-f74a-490e-8dc3-f7731072237e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 18:06 #2'
-  type: vless
-  server: fank.milkabebar.ir
   port: 10694
   uuid: 01bd8910-f74a-490e-8dc3-f7731072237e
   udp: true
@@ -1123,7 +1128,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-26 18:06 #3'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #2'
   type: vless
   server: fans.milkabebar.ir
   port: 10694
@@ -1136,7 +1141,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-26 18:06 #4'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #3'
   type: vless
   server: lan.milkabebar.ir
   port: 38479
@@ -1144,7 +1149,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 18:06 #5'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #4'
   type: vless
   server: lan.milkabebar.ir
   port: 10694
@@ -1157,7 +1162,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-26 18:06 #6'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #5'
   type: vless
   server: grs2.milkabebar.ir
   port: 38479
@@ -1165,7 +1170,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 18:06 #7'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #6'
   type: vless
   server: grs1.milkabebar.ir
   port: 38479
@@ -1173,7 +1178,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-26 18:06 #8'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #7'
   type: vless
   server: grs2.milkabebar.ir
   port: 10694
@@ -1186,7 +1191,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-26 18:06 #9'
+- name: 'V2Get🛰️ 2026-08-26 18:06 #8'
   type: vless
   server: grs1.milkabebar.ir
   port: 10694
@@ -1205,7 +1210,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-26 16:06
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 00:06
   - 'V2Get🛰️ 2026-08-27 00:06 #2'
   - 'V2Get🛰️ 2026-08-27 00:06 #3'
@@ -1232,11 +1239,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 23:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #3'
   - 'V2Get🛰️ 2026-08-26 23:05 #4'
-  - V2Get🛰️ 2026-08-26 21:05
+  - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #5'
   - 'V2Get🛰️ 2026-08-26 22:05 #2'
   - 'V2Get🛰️ 2026-08-26 22:05 #3'
-  - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 19:05 #2'
   - V2Get🛰️ 2026-08-26 22:07
   - 'V2Get🛰️ 2026-08-26 22:07 #2'
@@ -1303,14 +1309,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 18:06 #6'
   - 'V2Get🛰️ 2026-08-26 18:06 #7'
   - 'V2Get🛰️ 2026-08-26 18:06 #8'
-  - 'V2Get🛰️ 2026-08-26 18:06 #9'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-26 16:06
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 00:06
   - 'V2Get🛰️ 2026-08-27 00:06 #2'
   - 'V2Get🛰️ 2026-08-27 00:06 #3'
@@ -1337,11 +1344,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 23:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #3'
   - 'V2Get🛰️ 2026-08-26 23:05 #4'
-  - V2Get🛰️ 2026-08-26 21:05
+  - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #5'
   - 'V2Get🛰️ 2026-08-26 22:05 #2'
   - 'V2Get🛰️ 2026-08-26 22:05 #3'
-  - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - 'V2Get🛰️ 2026-08-26 19:05 #2'
   - V2Get🛰️ 2026-08-26 22:07
   - 'V2Get🛰️ 2026-08-26 22:07 #2'
@@ -1408,7 +1414,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 18:06 #6'
   - 'V2Get🛰️ 2026-08-26 18:06 #7'
   - 'V2Get🛰️ 2026-08-26 18:06 #8'
-  - 'V2Get🛰️ 2026-08-26 18:06 #9'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
