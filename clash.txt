@@ -12,18 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-26 12:06
   type: vless
-  server: static.lotussec.com
+  server: stanngv2-production-be4a.up.railway.app
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: a8a7b880-40cc-4ebc-bc82-2a99163221f1
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
+  servername: stanngv2-production-be4a.up.railway.app
+  client-fingerprint: ios
   alpn:
-  - h2
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: stanngv2-production-be4a.up.railway.app
 - name: V2Get🛰️ 2026-08-18 01:08
   type: vless
   server: 186.190.211.188
@@ -1190,7 +1194,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:06
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-25 23:03
@@ -1294,7 +1298,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:06
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 13:11
   - V2Get🛰️ 2026-08-25 23:03
