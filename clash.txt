@@ -12,19 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-27 00:05
+  type: vless
+  server: vo.vip3333.ir
+  port: 2083
+  uuid: 4fd51353-f35d-41fe-a166-bfc34a81a5f4
+  udp: true
+  network: ws
+  tls: true
+  servername: panel.vip3333.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/articals/sports/news/views
+    headers:
+      Host: panel.vip3333.ir
+- name: 'V2Get🛰️ 2026-08-27 00:05 #2'
+  type: vless
+  server: kv.vip3333.ir
+  port: 2083
+  uuid: 4fd51353-f35d-41fe-a166-bfc34a81a5f4
+  udp: true
+  network: ws
+  tls: true
+  servername: panel.vip3333.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/---@smartconfigs---/articals/sports/news/views
+    headers:
+      Host: panel.vip3333.ir
+- name: 'V2Get🛰️ 2026-08-27 00:05 #3'
   type: vless
   server: cdn.devmixa.ir
   port: 80
@@ -32,7 +54,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 00:05 #2'
+- name: 'V2Get🛰️ 2026-08-27 00:05 #4'
   type: vless
   server: cdn-cloudflare104.korvexe.ir
   port: 80
@@ -40,7 +62,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 00:05 #3'
+- name: 'V2Get🛰️ 2026-08-27 00:05 #5'
   type: vless
   server: ipwit.havray2025.ir
   port: 80
@@ -48,7 +70,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 00:05 #4'
+- name: 'V2Get🛰️ 2026-08-27 00:05 #6'
   type: vless
   server: lan.milkabebar.ir
   port: 38479
@@ -1149,30 +1171,18 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-08-26 18:05 #2'
-  type: vless
-  server: 132.243.204.84
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  ws-opts:
-    path: /pg/10086-dfc816f117c491730| 法国 fr | bru | 132.243.204.84:443
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-27 00:05
   - 'V2Get🛰️ 2026-08-27 00:05 #2'
   - 'V2Get🛰️ 2026-08-27 00:05 #3'
   - 'V2Get🛰️ 2026-08-27 00:05 #4'
+  - 'V2Get🛰️ 2026-08-27 00:05 #5'
+  - 'V2Get🛰️ 2026-08-27 00:05 #6'
   - V2Get🛰️ 2026-08-26 23:07
   - 'V2Get🛰️ 2026-08-26 23:07 #2'
   - V2Get🛰️ 2026-08-26 23:06
@@ -1265,18 +1275,18 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 18:06 #11'
   - 'V2Get🛰️ 2026-08-26 18:06 #12'
   - V2Get🛰️ 2026-08-26 18:05
-  - 'V2Get🛰️ 2026-08-26 18:05 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-27 00:05
   - 'V2Get🛰️ 2026-08-27 00:05 #2'
   - 'V2Get🛰️ 2026-08-27 00:05 #3'
   - 'V2Get🛰️ 2026-08-27 00:05 #4'
+  - 'V2Get🛰️ 2026-08-27 00:05 #5'
+  - 'V2Get🛰️ 2026-08-27 00:05 #6'
   - V2Get🛰️ 2026-08-26 23:07
   - 'V2Get🛰️ 2026-08-26 23:07 #2'
   - V2Get🛰️ 2026-08-26 23:06
@@ -1369,7 +1379,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 18:06 #11'
   - 'V2Get🛰️ 2026-08-26 18:06 #12'
   - V2Get🛰️ 2026-08-26 18:05
-  - 'V2Get🛰️ 2026-08-26 18:05 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
