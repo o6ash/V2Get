@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-07 08:39
+  type: vless
+  server: 45.90.32.132
+  port: 2200
+  uuid: aef0e934-09d7-4b8f-b3bc-de78d2eec928
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
 - name: V2Get🛰️ 2026-08-27 02:06
   type: vless
   server: b2n.ir
@@ -26,18 +38,6 @@ proxies:
   - h2
   - http/1.1
   - h3
-- name: V2Get🛰️ 2026-08-18 01:08
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  network: tcp
-  tls: true
-  servername: 186.190.211.188
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
 - name: V2Get🛰️ 2026-08-25 17:05
   type: vless
   server: 77.110.108.231
@@ -1223,8 +1223,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-07 08:39
   - V2Get🛰️ 2026-08-27 02:06
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 05:03
   - V2Get🛰️ 2026-08-26 09:05
@@ -1329,8 +1329,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-07 08:39
   - V2Get🛰️ 2026-08-27 02:06
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-25 17:05
   - V2Get🛰️ 2026-08-26 05:03
   - V2Get🛰️ 2026-08-26 09:05
