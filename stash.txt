@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 17:07
+  type: vless
+  server: 89.35.14.30
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  udp: true
+  network: grpc
+  tls: true
+  servername: md1.univesalsrv.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
+    short-id: 221ba6174224ca5b
+  grpc-opts:
+    grpc-service-name: hub.v1.RelayService
 - name: V2Get🛰️ 2026-08-26 21:05
   type: vless
   server: 199.232.78.159
@@ -1068,7 +1083,7 @@ proxies:
   reality-opts:
     public-key: EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0
     short-id: f0eb800bd980b00b
-- name: V2Get🛰️ 2026-08-26 17:07
+- name: 'V2Get🛰️ 2026-08-26 17:07 #2'
   type: vless
   server: 203.202.232.149
   port: 8443
@@ -1082,27 +1097,13 @@ proxies:
     path: /
     headers:
       Host: pphx.gda8j081.workers.dev
-- name: 'V2Get🛰️ 2026-08-26 17:07 #2'
-  type: vless
-  server: 89.35.14.30
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-    short-id: 221ba6174224ca5b
-  grpc-opts:
-    grpc-service-name: hub.v1.RelayService
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - V2Get🛰️ 2026-08-26 22:06
@@ -1189,7 +1190,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 18:04
   - 'V2Get🛰️ 2026-08-26 18:04 #2'
   - 'V2Get🛰️ 2026-08-26 18:04 #3'
-  - V2Get🛰️ 2026-08-26 17:07
   - 'V2Get🛰️ 2026-08-26 17:07 #2'
 - name: ♻️ Auto Select
   type: url-test
@@ -1197,6 +1197,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-26 21:05
   - 'V2Get🛰️ 2026-08-26 21:05 #2'
   - V2Get🛰️ 2026-08-26 22:06
@@ -1283,7 +1284,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 18:04
   - 'V2Get🛰️ 2026-08-26 18:04 #2'
   - 'V2Get🛰️ 2026-08-26 18:04 #3'
-  - V2Get🛰️ 2026-08-26 17:07
   - 'V2Get🛰️ 2026-08-26 17:07 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
