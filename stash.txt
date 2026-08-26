@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 22:05
+  type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: 4ea9c6dd-4d73-49f2-82ce-b80b1b5dd646
+  udp: true
+  network: ws
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
 - name: V2Get🛰️ 2026-08-19 12:09
   type: vless
   server: 137.220.221.179
@@ -29,14 +45,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-07-27 21:56
-  type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-26 17:06
   type: vless
   server: 104.25.233.30
@@ -1122,9 +1130,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 22:05
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-08-26 17:06
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-17 23:07
@@ -1220,9 +1228,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 22:05
   - V2Get🛰️ 2026-08-19 12:09
   - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-08-26 17:06
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-17 23:07
