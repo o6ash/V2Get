@@ -12,86 +12,97 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-08-08 01:10
+  type: ss
+  server: 103.120.178.193
+  port: 31348
+  cipher: chacha20-ietf-poly1305
+  password: EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usa=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: V2Get🛰️ 2026-07-27 21:56
+- name: V2Get🛰️ 2026-08-10 00:11
   type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
+  server: 144.31.157.104
+  port: 20017
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-25 16:05
   type: vless
-  server: static.lotussec.com
+  server: 194.93.61.95
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-07-28 17:00
-  type: vless
-  server: 194.76.154.31
-  port: 40443
-  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
-  udp: true
-  network: tcp
-  tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
-    short-id: a8ae
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
+  servername: cdnjs.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-04 01:44 #2'
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+- name: V2Get🛰️ 2026-08-26 05:03
+  type: ss
+  server: 20.87.2.40
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: yQ3varyJ3ZhSYTA4
+  udp: true
+- name: V2Get🛰️ 2026-08-26 12:05
+  type: vless
+  server: 194.93.61.96
+  port: 443
+  uuid: d11613a1-2e1f-4209-a275-aabd986b7ad1
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+- name: 'V2Get🛰️ 2026-08-26 12:05 #2'
+  type: vless
+  server: 194.93.61.104
+  port: 443
+  uuid: 62611b77-c747-4e39-9cc2-643805a56ccd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
+- name: V2Get🛰️ 2026-08-26 12:06
+  type: vless
+  server: 144.124.238.23
+  port: 443
+  uuid: 6329dff8-ae1a-414e-b996-1ec477aacff8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rezerv8.yunus.guru
+  reality-opts:
+    public-key: hiYMSgK38yc1VX8BHlXLutTQVXRg680notMzZ84nAjI
+    short-id: 8ab7a5e3a54b4dc3
+- name: V2Get🛰️ 2026-08-24 22:01
+  type: vless
+  server: 194.93.61.66
+  port: 443
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: cbb0a5c1dc905505
 - name: V2Get🛰️ 2026-08-05 08:28
   type: vmess
   server: 66.163.117.58
@@ -147,20 +158,6 @@ proxies:
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-- name: V2Get🛰️ 2026-08-24 22:01
-  type: vless
-  server: 194.93.61.66
-  port: 443
-  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdnjs.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
-    short-id: cbb0a5c1dc905505
 - name: V2Get🛰️ 2026-08-25 16:02
   type: vless
   server: 45.195.111.108
@@ -1279,19 +1276,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-28 17:00
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
+  - V2Get🛰️ 2026-08-08 01:10
+  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-25 16:05
+  - V2Get🛰️ 2026-08-26 05:03
+  - V2Get🛰️ 2026-08-26 12:05
+  - 'V2Get🛰️ 2026-08-26 12:05 #2'
+  - V2Get🛰️ 2026-08-26 12:06
+  - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-23 22:00
-  - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-08-26 02:03
@@ -1385,19 +1382,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-27 21:55
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-28 17:00
-  - V2Get🛰️ 2026-08-04 01:44
-  - 'V2Get🛰️ 2026-08-04 01:44 #2'
+  - V2Get🛰️ 2026-08-08 01:10
+  - V2Get🛰️ 2026-08-10 00:11
+  - V2Get🛰️ 2026-08-25 16:05
+  - V2Get🛰️ 2026-08-26 05:03
+  - V2Get🛰️ 2026-08-26 12:05
+  - 'V2Get🛰️ 2026-08-26 12:05 #2'
+  - V2Get🛰️ 2026-08-26 12:06
+  - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-05 08:28
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-19 13:10
   - V2Get🛰️ 2026-08-23 22:00
-  - V2Get🛰️ 2026-08-24 22:01
   - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-08-26 02:03
