@@ -12,54 +12,73 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 00:11
-  type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+- name: V2Get🛰️ 2026-08-05 08:28
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-18 01:08
+- name: V2Get🛰️ 2026-08-26 08:04
   type: vless
-  server: 186.190.211.188
+  server: jabse-production.up.railway.app
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 43a15f34-d0b4-41c8-859d-b0cf7330dabf
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: 186.190.211.188
+  servername: jabse-production.up.railway.app
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: V2Get🛰️ 2026-08-25 16:02
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: jabse-production.up.railway.app
+- name: V2Get🛰️ 2026-08-26 23:06
   type: vless
-  server: 45.195.111.108
+  server: 162.35.231.141
   port: 443
-  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: storage.yandex.net
+  servername: savesafe.co
   client-fingerprint: firefox
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
-- name: V2Get🛰️ 2026-08-25 23:04
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
+- name: 'V2Get🛰️ 2026-08-26 23:06 #2'
   type: vless
-  server: 151.101.56.6
+  server: 162.35.231.140
   port: 443
-  uuid: 70d94f75-064c-4e34-d2cf-0b6ef4d49ef7
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: ssl.fastly.com
+  servername: savesafe.co
   client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
+  reality-opts:
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
+- name: 'V2Get🛰️ 2026-08-26 23:06 #3'
+  type: vless
+  server: 162.35.231.142
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: savesafe.co
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
 - name: V2Get🛰️ 2026-08-26 17:06
   type: vless
   server: 5.75.193.127
@@ -76,26 +95,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-26 12:07
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-26 20:05
   type: trojan
   server: 65.109.215.206
   port: 80
   password: '@Cooonfig'
   udp: true
-- name: V2Get🛰️ 2026-08-26 23:06
+- name: 'V2Get🛰️ 2026-08-26 23:06 #4'
   type: vless
   server: fans.milkabebar.ir
   port: 10694
@@ -1113,15 +1119,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-25 23:04
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-26 08:04
+  - V2Get🛰️ 2026-08-26 23:06
+  - 'V2Get🛰️ 2026-08-26 23:06 #2'
+  - 'V2Get🛰️ 2026-08-26 23:06 #3'
   - V2Get🛰️ 2026-08-26 17:06
   - V2Get🛰️ 2026-08-26 20:07
-  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-26 20:05
-  - V2Get🛰️ 2026-08-26 23:06
+  - 'V2Get🛰️ 2026-08-26 23:06 #4'
   - V2Get🛰️ 2026-08-26 23:05
   - 'V2Get🛰️ 2026-08-26 23:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #3'
@@ -1210,15 +1216,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-25 16:02
-  - V2Get🛰️ 2026-08-25 23:04
+  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-26 08:04
+  - V2Get🛰️ 2026-08-26 23:06
+  - 'V2Get🛰️ 2026-08-26 23:06 #2'
+  - 'V2Get🛰️ 2026-08-26 23:06 #3'
   - V2Get🛰️ 2026-08-26 17:06
   - V2Get🛰️ 2026-08-26 20:07
-  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-26 20:05
-  - V2Get🛰️ 2026-08-26 23:06
+  - 'V2Get🛰️ 2026-08-26 23:06 #4'
   - V2Get🛰️ 2026-08-26 23:05
   - 'V2Get🛰️ 2026-08-26 23:05 #2'
   - 'V2Get🛰️ 2026-08-26 23:05 #3'
