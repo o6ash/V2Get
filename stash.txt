@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-25 16:02
+  type: vless
+  server: 45.195.111.108
+  port: 443
+  uuid: 219762a7-b918-4e2b-8a3d-d309ef98bb61
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
 - name: V2Get🛰️ 2026-08-25 22:03
   type: vless
   server: k2.cloud--vpn.site
@@ -35,21 +49,6 @@ proxies:
   network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: MiTiVPN----o.aPp-cLoud.IR
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN-DE'
-    headers:
-      Host: m---MiTiVPN---MiTiVPN.aPp-cLoud.IR
-- name: 'V2Get🛰️ 2026-07-26 03:07 #2'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1012,10 +1011,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 22:03
   - V2Get🛰️ 2026-08-26 09:05
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-26 09:05 #2'
   - V2Get🛰️ 2026-08-26 09:04
   - 'V2Get🛰️ 2026-08-26 09:04 #2'
@@ -1101,10 +1100,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-25 16:02
   - V2Get🛰️ 2026-08-25 22:03
   - V2Get🛰️ 2026-08-26 09:05
   - V2Get🛰️ 2026-07-26 03:07
-  - 'V2Get🛰️ 2026-07-26 03:07 #2'
   - 'V2Get🛰️ 2026-08-26 09:05 #2'
   - V2Get🛰️ 2026-08-26 09:04
   - 'V2Get🛰️ 2026-08-26 09:04 #2'
