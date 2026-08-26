@@ -12,35 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
-  type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-23 13:58
-  type: vless
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-08-25 17:04
+  type: ss
+  server: 20.234.20.89
   port: 443
-  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
+  cipher: chacha20-ietf-poly1305
+  password: 2OPuSlR6h3ZHql3h
   udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pane2.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-25 13:02
+- name: V2Get🛰️ 2026-08-26 05:03
+  type: ss
+  server: 20.87.2.40
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: yQ3varyJ3ZhSYTA4
+  udp: true
+- name: 'V2Get🛰️ 2026-08-26 05:03 #2'
   type: vless
-  server: 104.21.54.6
-  port: 2052
-  uuid: d8e153e7-e534-4dbe-8b4f-558e902e5436
+  server: ser-dashboard-6a8c523b-1534-83eb-afd0-19a157913d5f.iramkemaxyu.ir
+  port: 443
+  uuid: 0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5
   udp: true
-  network: httpupgrade
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: us.demonware.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk
+    short-id: e9518e9cb0754976
 - name: V2Get🛰️ 2026-08-25 20:05
   type: vless
   server: sw.volnalink.uk
@@ -1107,9 +1105,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-23 13:58
-  - V2Get🛰️ 2026-08-25 13:02
+  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-26 05:03
+  - 'V2Get🛰️ 2026-08-26 05:03 #2'
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-08-26 02:04
   - 'V2Get🛰️ 2026-08-26 02:04 #2'
@@ -1209,9 +1207,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-23 13:58
-  - V2Get🛰️ 2026-08-25 13:02
+  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-26 05:03
+  - 'V2Get🛰️ 2026-08-26 05:03 #2'
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-08-26 02:04
   - 'V2Get🛰️ 2026-08-26 02:04 #2'
