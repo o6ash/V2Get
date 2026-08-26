@@ -12,6 +12,59 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 11:05
+  type: vless
+  server: 107.181.155.227
+  port: 34156
+  uuid: 35dc1a9b-c02c-4670-a3f9-1f8106567f14
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BsCp88E9PdpEDjC5bxLMP2tiJYK6afCPQT_CoxCVgAI
+    short-id: d6cdfdd9a21f8d23
+- name: 'V2Get🛰️ 2026-08-26 11:05 #2'
+  type: vless
+  server: 86.54.28.75
+  port: 443
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+- name: 'V2Get🛰️ 2026-08-26 11:05 #3'
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: e4927998-38dd-4bf4-a37d-4cc67a06ee2d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: cold-shadow-66a0.278.workers.dev
+- name: 'V2Get🛰️ 2026-08-26 11:05 #4'
+  type: vless
+  server: 157.173.7.55
+  port: 443
+  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node-fra01.rkitman.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
 - name: V2Get🛰️ 2026-08-26 11:04
   type: vless
   server: gp2.steptofsvo.com
@@ -890,62 +943,16 @@ proxies:
     path: /ws/5461acdc-7352-4182-91d2-ff30c94ebe60
     headers:
       Host: norl-production.up.railway.app
-- name: V2Get🛰️ 2026-08-26 08:04
-  type: vless
-  server: jabse-production.up.railway.app
-  port: 443
-  uuid: 43a15f34-d0b4-41c8-859d-b0cf7330dabf
-  udp: true
-  network: ws
-  tls: true
-  servername: jabse-production.up.railway.app
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vl-ws
-    headers:
-      Host: jabse-production.up.railway.app
-- name: V2Get🛰️ 2026-08-26 05:04
-  type: vless
-  server: inetchnl-production-0060.up.railway.app
-  port: 443
-  uuid: f25a8d2f-764c-a9bf-bc6d-8d65a358b07d
-  udp: true
-  network: ws
-  tls: true
-  servername: inetchnl-production-0060.up.railway.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws/f25a8d2f-764c-a9bf-bc6d-8d65a358b07d
-    headers:
-      Host: inetchnl-production-0060.up.railway.app
-- name: V2Get🛰️ 2026-08-26 05:03
-  type: ss
-  server: 20.87.2.40
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: yQ3varyJ3ZhSYTA4
-  udp: true
-- name: 'V2Get🛰️ 2026-08-26 05:03 #2'
-  type: vless
-  server: ser-dashboard-6a8c523b-1534-83eb-afd0-19a157913d5f.iramkemaxyu.ir
-  port: 443
-  uuid: 0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5
-  udp: true
-  network: xhttp
-  tls: true
-  servername: us.demonware.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk
-    short-id: e9518e9cb0754976
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 11:05
+  - 'V2Get🛰️ 2026-08-26 11:05 #2'
+  - 'V2Get🛰️ 2026-08-26 11:05 #3'
+  - 'V2Get🛰️ 2026-08-26 11:05 #4'
   - V2Get🛰️ 2026-08-26 11:04
   - 'V2Get🛰️ 2026-08-26 11:04 #2'
   - 'V2Get🛰️ 2026-08-26 11:04 #3'
@@ -1041,16 +1048,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 09:04 #2'
   - 'V2Get🛰️ 2026-08-26 09:04 #3'
   - 'V2Get🛰️ 2026-08-26 09:04 #4'
-  - V2Get🛰️ 2026-08-26 08:04
-  - V2Get🛰️ 2026-08-26 05:04
-  - V2Get🛰️ 2026-08-26 05:03
-  - 'V2Get🛰️ 2026-08-26 05:03 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 11:05
+  - 'V2Get🛰️ 2026-08-26 11:05 #2'
+  - 'V2Get🛰️ 2026-08-26 11:05 #3'
+  - 'V2Get🛰️ 2026-08-26 11:05 #4'
   - V2Get🛰️ 2026-08-26 11:04
   - 'V2Get🛰️ 2026-08-26 11:04 #2'
   - 'V2Get🛰️ 2026-08-26 11:04 #3'
@@ -1146,10 +1153,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-26 09:04 #2'
   - 'V2Get🛰️ 2026-08-26 09:04 #3'
   - 'V2Get🛰️ 2026-08-26 09:04 #4'
-  - V2Get🛰️ 2026-08-26 08:04
-  - V2Get🛰️ 2026-08-26 05:04
-  - V2Get🛰️ 2026-08-26 05:03
-  - 'V2Get🛰️ 2026-08-26 05:03 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
