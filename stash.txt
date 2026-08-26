@@ -12,19 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 15:05
+  type: vless
+  server: 172.67.152.183
+  port: 443
+  uuid: 27a5b4f8-effc-448a-90c7-b9f34c680706
+  udp: true
+  network: ws
+  tls: true
+  servername: auto-27a5b4.av-27a5b4f8.workers.dev
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: auto-27a5b4.av-27a5b4f8.workers.dev
 - name: V2Get🛰️ 2026-08-26 13:05
   type: vless
   server: 150.251.138.142
   port: 8443
   uuid: 263bae3e-f51c-4946-9c1f-2585347a3dd1
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-10 00:11
-  type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1135,8 +1143,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 15:05
   - V2Get🛰️ 2026-08-26 13:05
-  - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-25 23:03
   - V2Get🛰️ 2026-08-25 23:04
   - V2Get🛰️ 2026-08-26 15:04
@@ -1239,8 +1247,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 15:05
   - V2Get🛰️ 2026-08-26 13:05
-  - V2Get🛰️ 2026-08-10 00:11
   - V2Get🛰️ 2026-08-25 23:03
   - V2Get🛰️ 2026-08-25 23:04
   - V2Get🛰️ 2026-08-26 15:04
