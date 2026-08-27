@@ -12,19 +12,13 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 12:07
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+- name: V2Get🛰️ 2026-08-28 00:09
+  type: trojan
+  server: 188.114.97.6
+  port: 8080
+  password: yrX2AkCCSd
   udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-28 00:08
   type: vless
   server: panel.homelanderwins.com
@@ -1099,7 +1093,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-28 00:09
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
@@ -1199,7 +1193,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-28 00:09
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
