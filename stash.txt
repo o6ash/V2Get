@@ -12,18 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 02:43
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-08-28 00:08
+  type: vless
+  server: 62.238.125.246
+  port: 7443
+  uuid: cfa2a256-ff08-4aaf-af9f-cd3472fd5192
   udp: true
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-07 08:40
   type: trojan
   server: 188.114.97.7
@@ -1223,7 +1219,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-08-28 00:08
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
@@ -1325,7 +1321,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-08-28 00:08
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
