@@ -12,18 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:09
-  type: trojan
-  server: 188.114.98.0
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
   port: 443
-  password: humanity
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
   udp: true
-  sni: www.creationlong.org
   network: ws
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.creationlong.org
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-27 20:07
+  type: vless
+  server: 45.76.87.168
+  port: 29672
+  uuid: cd922ef2-6d9f-4f9d-acd5-9921da8be3b8
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-27 20:07 #2'
+  type: vless
+  server: www.tgd.soft9.ir
+  port: 443
+  uuid: 326f7cc5-274c-4d15-81b7-750175a94c6f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM
+    short-id: 5002b5329814b487
 - name: V2Get🛰️ 2026-07-27 21:56
   type: vless
   server: 72.56.81.165
@@ -720,28 +743,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-08-27 20:07
-  type: vless
-  server: www.tgd.soft9.ir
-  port: 443
-  uuid: 326f7cc5-274c-4d15-81b7-750175a94c6f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM
-    short-id: 5002b5329814b487
-- name: 'V2Get🛰️ 2026-08-27 20:07 #2'
-  type: vless
-  server: 45.76.87.168
-  port: 29672
-  uuid: cd922ef2-6d9f-4f9d-acd5-9921da8be3b8
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-27 20:07 #3'
   type: vless
   server: 104.19.45.132
@@ -1226,7 +1227,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 20:07
+  - 'V2Get🛰️ 2026-08-27 20:07 #2'
   - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-07-28 17:00
   - V2Get🛰️ 2026-08-05 08:28
@@ -1284,8 +1287,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 20:08 #10'
   - 'V2Get🛰️ 2026-08-27 20:08 #11'
   - 'V2Get🛰️ 2026-08-27 20:08 #12'
-  - V2Get🛰️ 2026-08-27 20:07
-  - 'V2Get🛰️ 2026-08-27 20:07 #2'
   - 'V2Get🛰️ 2026-08-27 20:07 #3'
   - 'V2Get🛰️ 2026-08-27 20:07 #4'
   - 'V2Get🛰️ 2026-08-27 20:07 #5'
@@ -1324,7 +1325,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 20:07
+  - 'V2Get🛰️ 2026-08-27 20:07 #2'
   - V2Get🛰️ 2026-07-27 21:56
   - V2Get🛰️ 2026-07-28 17:00
   - V2Get🛰️ 2026-08-05 08:28
@@ -1382,8 +1385,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 20:08 #10'
   - 'V2Get🛰️ 2026-08-27 20:08 #11'
   - 'V2Get🛰️ 2026-08-27 20:08 #12'
-  - V2Get🛰️ 2026-08-27 20:07
-  - 'V2Get🛰️ 2026-08-27 20:07 #2'
   - 'V2Get🛰️ 2026-08-27 20:07 #3'
   - 'V2Get🛰️ 2026-08-27 20:07 #4'
   - 'V2Get🛰️ 2026-08-27 20:07 #5'
