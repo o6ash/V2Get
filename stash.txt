@@ -12,14 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 03:05
+- name: V2Get🛰️ 2026-08-27 13:06
   type: vless
-  server: 5.75.193.253
-  port: 42538
-  uuid: 6185150a-40bb-448b-b237-b37e3c10938c
+  server: gb3.murhost.network
+  port: 443
+  uuid: c6cff605-90cf-4953-bf97-0a44e43f229d
   udp: true
   network: tcp
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gb3.murhost.network
+  reality-opts:
+    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
+    short-id: fc36b4a584871aa5
+- name: 'V2Get🛰️ 2026-08-27 13:06 #2'
+  type: vless
+  server: 138.124.108.177
+  port: 8443
+  uuid: 3a12da23-4d90-5b15-e972-bb848f9c42db
+  udp: true
+  network: ws
+  tls: true
+  servername: happy-letters.ru
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vless
+- name: 'V2Get🛰️ 2026-08-27 13:06 #3'
+  type: vless
+  server: node15.fastdatastream.com
+  port: 443
+  uuid: c19313e8-7dca-41ce-978d-ca5a0c32b8ba
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cisco.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: hVE3c59d8Fua3kD6lhp3bLvIgrTeqW7ZWsbYW4Mje2A
+    short-id: a9
 - name: V2Get🛰️ 2026-08-27 12:08
   type: vless
   server: 138.124.123.127
@@ -33,6 +65,51 @@ proxies:
   reality-opts:
     public-key: HPGO1-MaeKy358TWkMkFB4Rk-56-CYbO3i_pdncltmw
     short-id: f9ca6a2e5799b683
+- name: 'V2Get🛰️ 2026-08-27 12:08 #2'
+  type: vless
+  server: 2-4a0a-a644-8de99f1a5bbe.print88.ir
+  port: 44334
+  uuid: e6fd67c7-f803-4c19-a747-7f3deca4747b
+  udp: true
+  network: ws
+  tls: true
+  servername: w.wizardxray.net
+  ws-opts:
+    path: /?ed=2048
+- name: V2Get🛰️ 2026-08-27 12:07
+  type: vless
+  server: parstoday.ir
+  port: 443
+  uuid: 3398b8c0-6025-42d5-9afe-99652482a527
+  udp: true
+  network: ws
+  tls: true
+  servername: cloudhet.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: cloudhet.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-27 12:07 #2'
+  type: vless
+  server: surfiran.com
+  port: 443
+  uuid: 3398b8c0-6025-42d5-9afe-99652482a527
+  udp: true
+  network: ws
+  tls: true
+  servername: cloudhet.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: cloudhet.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-08-27 11:06
   type: vless
   server: 69.46.46.10
@@ -91,7 +168,7 @@ proxies:
   reality-opts:
     public-key: 9fkUTJ_4wwN46asYf4xca-aTed4og16QrpoVW2nTIyQ
     short-id: a60eef1d
-- name: 'V2Get🛰️ 2026-08-27 12:08 #2'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #3'
   type: vless
   server: 1a4e5-5250-4da6-835f-859c61.iranisystembaz.ir
   port: 8723
@@ -104,7 +181,7 @@ proxies:
   reality-opts:
     public-key: bXR3qMDQl6zAfB_UF-ohWW_UTIAonANequVEJEm_5D0
     short-id: 1ec62a1ca7665807
-- name: 'V2Get🛰️ 2026-08-27 12:08 #3'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #4'
   type: vless
   server: 6432132-5ea2-af36-c14f-dd27ab2c.vidboxco.ir
   port: 48343
@@ -119,7 +196,7 @@ proxies:
     short-id: 79609a319ab92665
   grpc-opts:
     grpc-service-name: yourServiceName
-- name: 'V2Get🛰️ 2026-08-27 12:08 #4'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #5'
   type: vless
   server: e03ff-fc7e-4a06-9709-8b5d0ff8c.soundmusic77.ir
   port: 500
@@ -134,7 +211,7 @@ proxies:
     short-id: 79609a319ab92665
   grpc-opts:
     grpc-service-name: yourServiceName
-- name: 'V2Get🛰️ 2026-08-27 12:08 #5'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #6'
   type: vless
   server: static.226.186.109.65.clients.your-server.de
   port: 1800
@@ -142,7 +219,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #6'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #7'
   type: vless
   server: 65.109.179.177
   port: 1700
@@ -150,7 +227,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #7'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #8'
   type: vless
   server: static.218.188.109.65.clients.your-server.de
   port: 1400
@@ -158,7 +235,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #8'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #9'
   type: vless
   server: static.241.182.109.65.clients.your-server.de
   port: 1600
@@ -166,7 +243,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #9'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #10'
   type: vless
   server: 65.109.182.220
   port: 1500
@@ -174,17 +251,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #10'
-  type: vless
-  server: 2-4a0a-a644-8de99f1a5bbe.print88.ir
-  port: 44334
-  uuid: e6fd67c7-f803-4c19-a747-7f3deca4747b
-  udp: true
-  network: ws
-  tls: true
-  servername: w.wizardxray.net
-  ws-opts:
-    path: /?ed=2048
 - name: 'V2Get🛰️ 2026-08-27 12:08 #11'
   type: vless
   server: 178.104.129.39
@@ -226,7 +292,7 @@ proxies:
   password: zg5hk4nek79gn6sm
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 12:07
+- name: 'V2Get🛰️ 2026-08-27 12:07 #3'
   type: vless
   server: javadiis-production.up.railway.app
   port: 443
@@ -254,7 +320,7 @@ proxies:
     path: /
     headers:
       Host: azsv1.drpingservice.com
-- name: 'V2Get🛰️ 2026-08-27 12:07 #2'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #4'
   type: vless
   server: 104.19.45.132
   port: 2083
@@ -271,7 +337,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #3'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #5'
   type: vless
   server: 162.159.242.79
   port: 2083
@@ -288,7 +354,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #4'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #6'
   type: vless
   server: 104.19.161.122
   port: 2083
@@ -305,7 +371,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #5'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #7'
   type: vless
   server: 104.25.227.73
   port: 2083
@@ -322,7 +388,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #6'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #8'
   type: vless
   server: 104.19.45.133
   port: 2083
@@ -339,7 +405,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #7'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #9'
   type: vless
   server: 104.18.215.105
   port: 2083
@@ -356,7 +422,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #8'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #10'
   type: vless
   server: 104.16.125.83
   port: 2083
@@ -373,7 +439,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #9'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #11'
   type: vless
   server: 104.16.215.76
   port: 2083
@@ -390,7 +456,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #10'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #12'
   type: vless
   server: 104.18.214.7
   port: 443
@@ -407,7 +473,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #11'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #13'
   type: vless
   server: 104.19.231.252
   port: 443
@@ -424,7 +490,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #12'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #14'
   type: vless
   server: 104.24.239.94
   port: 443
@@ -441,7 +507,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #13'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #15'
   type: vless
   server: 172.67.88.234
   port: 443
@@ -458,7 +524,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #14'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #16'
   type: vless
   server: 162.159.242.80
   port: 443
@@ -475,7 +541,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #15'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #17'
   type: vless
   server: 104.24.19.105
   port: 443
@@ -492,7 +558,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #16'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #18'
   type: vless
   server: 104.16.11.217
   port: 443
@@ -509,7 +575,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #17'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #19'
   type: vless
   server: fiverr.com
   port: 443
@@ -526,43 +592,9 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #18'
-  type: vless
-  server: surfiran.com
-  port: 443
-  uuid: 3398b8c0-6025-42d5-9afe-99652482a527
-  udp: true
-  network: ws
-  tls: true
-  servername: cloudhet.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #19'
-  type: vless
-  server: mahdroo.ir
-  port: 443
-  uuid: 3398b8c0-6025-42d5-9afe-99652482a527
-  udp: true
-  network: ws
-  tls: true
-  servername: cloudhet.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: cloudhet.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-27 12:07 #20'
   type: vless
-  server: parstoday.ir
+  server: mahdroo.ir
   port: 443
   uuid: 3398b8c0-6025-42d5-9afe-99652482a527
   udp: true
@@ -937,34 +969,6 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-27 05:06
   type: vless
-  server: germ.freeinternat.com
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: germ.freeinternat.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: 'V2Get🛰️ 2026-08-27 05:06 #2'
-  type: vless
-  server: 178.17.52.168
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: germ.freeinternat.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: 'V2Get🛰️ 2026-08-27 05:06 #3'
-  type: vless
   server: 80.76.44.141
   port: 443
   uuid: 419f25c1-bc35-412e-93fb-258efee859b5
@@ -977,7 +981,7 @@ proxies:
   reality-opts:
     public-key: XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI
     short-id: f41bc0b00ca1a978
-- name: 'V2Get🛰️ 2026-08-27 05:06 #4'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #2'
   type: vless
   server: rf5.freeinternat.com
   port: 443
@@ -991,7 +995,7 @@ proxies:
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
-- name: 'V2Get🛰️ 2026-08-27 05:06 #5'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #3'
   type: vless
   server: 195.123.225.224
   port: 8443
@@ -1004,7 +1008,7 @@ proxies:
     path: /pg/10086-dfc816f117c491730|+保加利亚+bg+|+sof+|+195.123.225.224:8443
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: 'V2Get🛰️ 2026-08-27 05:06 #6'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #4'
   type: vless
   server: 91.215.153.143
   port: 443
@@ -1017,7 +1021,7 @@ proxies:
     path: /pg/10086-dfc816f117c491730|+🇧🇬+保加利亚+17+|+91.215.153.143:443
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: 'V2Get🛰️ 2026-08-27 05:06 #7'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #5'
   type: vless
   server: 193.124.58.89
   port: 443
@@ -1030,7 +1034,7 @@ proxies:
     path: /pg/10086-dfc816f117c491730|+🇨🇿+捷克+04+|+193.124.58.89:443
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: 'V2Get🛰️ 2026-08-27 05:06 #8'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #6'
   type: vless
   server: nl3.freeinternat.com
   port: 443
@@ -1044,7 +1048,7 @@ proxies:
   reality-opts:
     public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
     short-id: 6aa2d2e950441a9a
-- name: 'V2Get🛰️ 2026-08-27 05:06 #9'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #7'
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -1056,7 +1060,7 @@ proxies:
   reality-opts:
     public-key: 5Me9XEMwr9siyrnV5zPHYfxB3QLqw-OzNAOuzkFu1kw
     short-id: 7af95330630a7327
-- name: 'V2Get🛰️ 2026-08-27 05:06 #10'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #8'
   type: vless
   server: 95.154.237.50
   port: 443
@@ -1070,7 +1074,7 @@ proxies:
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-08-27 05:06 #11'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #9'
   type: vless
   server: 193.108.112.245
   port: 443
@@ -1084,7 +1088,7 @@ proxies:
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
-- name: 'V2Get🛰️ 2026-08-27 05:06 #12'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #10'
   type: vless
   server: us01hk.lockdwn.com
   port: 443
@@ -1094,7 +1098,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-27 05:06 #13'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #11'
   type: vless
   server: 40.160.69.112
   port: 8080
@@ -1104,7 +1108,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-27 05:06 #14'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #12'
   type: vless
   server: 149.33.19.143
   port: 443
@@ -1118,7 +1122,7 @@ proxies:
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-08-27 05:06 #15'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #13'
   type: vless
   server: 40.160.68.118
   port: 8080
@@ -1128,7 +1132,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-27 05:06 #16'
+- name: 'V2Get🛰️ 2026-08-27 05:06 #14'
   type: vless
   server: 149.33.19.143
   port: 443
@@ -1148,13 +1152,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 03:05
+  - V2Get🛰️ 2026-08-27 13:06
+  - 'V2Get🛰️ 2026-08-27 13:06 #2'
+  - 'V2Get🛰️ 2026-08-27 13:06 #3'
   - V2Get🛰️ 2026-08-27 12:08
+  - 'V2Get🛰️ 2026-08-27 12:08 #2'
+  - V2Get🛰️ 2026-08-27 12:07
+  - 'V2Get🛰️ 2026-08-27 12:07 #2'
   - V2Get🛰️ 2026-08-27 11:06
   - 'V2Get🛰️ 2026-08-27 11:06 #2'
   - 'V2Get🛰️ 2026-08-27 11:06 #3'
   - 'V2Get🛰️ 2026-08-27 11:06 #4'
-  - 'V2Get🛰️ 2026-08-27 12:08 #2'
   - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - 'V2Get🛰️ 2026-08-27 12:08 #4'
   - 'V2Get🛰️ 2026-08-27 12:08 #5'
@@ -1167,10 +1175,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:08 #12'
   - 'V2Get🛰️ 2026-08-27 12:08 #13'
   - 'V2Get🛰️ 2026-08-27 11:06 #5'
-  - V2Get🛰️ 2026-08-27 12:07
-  - V2Get🛰️ 2026-08-27 11:07
-  - 'V2Get🛰️ 2026-08-27 12:07 #2'
   - 'V2Get🛰️ 2026-08-27 12:07 #3'
+  - V2Get🛰️ 2026-08-27 11:07
   - 'V2Get🛰️ 2026-08-27 12:07 #4'
   - 'V2Get🛰️ 2026-08-27 12:07 #5'
   - 'V2Get🛰️ 2026-08-27 12:07 #6'
@@ -1233,21 +1239,23 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 05:06 #12'
   - 'V2Get🛰️ 2026-08-27 05:06 #13'
   - 'V2Get🛰️ 2026-08-27 05:06 #14'
-  - 'V2Get🛰️ 2026-08-27 05:06 #15'
-  - 'V2Get🛰️ 2026-08-27 05:06 #16'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 03:05
+  - V2Get🛰️ 2026-08-27 13:06
+  - 'V2Get🛰️ 2026-08-27 13:06 #2'
+  - 'V2Get🛰️ 2026-08-27 13:06 #3'
   - V2Get🛰️ 2026-08-27 12:08
+  - 'V2Get🛰️ 2026-08-27 12:08 #2'
+  - V2Get🛰️ 2026-08-27 12:07
+  - 'V2Get🛰️ 2026-08-27 12:07 #2'
   - V2Get🛰️ 2026-08-27 11:06
   - 'V2Get🛰️ 2026-08-27 11:06 #2'
   - 'V2Get🛰️ 2026-08-27 11:06 #3'
   - 'V2Get🛰️ 2026-08-27 11:06 #4'
-  - 'V2Get🛰️ 2026-08-27 12:08 #2'
   - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - 'V2Get🛰️ 2026-08-27 12:08 #4'
   - 'V2Get🛰️ 2026-08-27 12:08 #5'
@@ -1260,10 +1268,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:08 #12'
   - 'V2Get🛰️ 2026-08-27 12:08 #13'
   - 'V2Get🛰️ 2026-08-27 11:06 #5'
-  - V2Get🛰️ 2026-08-27 12:07
-  - V2Get🛰️ 2026-08-27 11:07
-  - 'V2Get🛰️ 2026-08-27 12:07 #2'
   - 'V2Get🛰️ 2026-08-27 12:07 #3'
+  - V2Get🛰️ 2026-08-27 11:07
   - 'V2Get🛰️ 2026-08-27 12:07 #4'
   - 'V2Get🛰️ 2026-08-27 12:07 #5'
   - 'V2Get🛰️ 2026-08-27 12:07 #6'
@@ -1326,8 +1332,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 05:06 #12'
   - 'V2Get🛰️ 2026-08-27 05:06 #13'
   - 'V2Get🛰️ 2026-08-27 05:06 #14'
-  - 'V2Get🛰️ 2026-08-27 05:06 #15'
-  - 'V2Get🛰️ 2026-08-27 05:06 #16'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
