@@ -12,6 +12,12 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 01:05
+  type: trojan
+  server: 188.114.97.6
+  port: 8080
+  password: T4xc3GqCdx
+  udp: true
 - name: V2Get🛰️ 2026-08-27 09:06
   type: vless
   server: 95.182.83.239
@@ -1063,26 +1069,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 02:06 #2'
-  type: vless
-  server: b2n.ir
-  port: 443
-  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
-  udp: true
-  network: xhttp
-  tls: true
-  servername: chopin.kaftarkakolbesarwifi.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 01:05
   - V2Get🛰️ 2026-08-27 09:06
   - 'V2Get🛰️ 2026-08-27 09:06 #2'
   - V2Get🛰️ 2026-08-27 08:06
@@ -1181,13 +1174,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 02:07 #65'
   - 'V2Get🛰️ 2026-08-27 02:07 #66'
   - V2Get🛰️ 2026-08-27 02:06
-  - 'V2Get🛰️ 2026-08-27 02:06 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 01:05
   - V2Get🛰️ 2026-08-27 09:06
   - 'V2Get🛰️ 2026-08-27 09:06 #2'
   - V2Get🛰️ 2026-08-27 08:06
@@ -1286,7 +1279,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 02:07 #65'
   - 'V2Get🛰️ 2026-08-27 02:07 #66'
   - V2Get🛰️ 2026-08-27 02:06
-  - 'V2Get🛰️ 2026-08-27 02:06 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
