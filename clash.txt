@@ -12,31 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-27 02:07
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 5.253.28.189
+  port: 13443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-26 12:07
+  servername: auto.cendora.ru
+  reality-opts:
+    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+    short-id: a7f3c91b2e6d84c0
+- name: V2Get🛰️ 2026-08-28 01:08
+  type: ss
+  server: 176.53.17.241
+  port: 1943
+  cipher: 2022-blake3-aes-256-gcm
+  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=
+  udp: true
+- name: 'V2Get🛰️ 2026-08-28 01:08 #2'
   type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  server: 18.133.19.17
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-28 01:08 #3'
+  type: ss
+  server: 20.87.211.222
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: xOZDQzEHBrOtkCM7
+  udp: true
+- name: 'V2Get🛰️ 2026-08-28 01:08 #4'
+  type: vless
+  server: 91.107.145.117
+  port: 40893
+  uuid: 109de54b-25f8-40cd-acfa-a05df873942e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-27 16:07
   type: vless
   server: deepl.com
@@ -138,41 +156,6 @@ proxies:
   reality-opts:
     public-key: fFmp4fFO2wuoJKvc2_e5MF5C92H6Ei4c_AfV7toZO1c
     short-id: a62ae57fa46a0d6d
-- name: V2Get🛰️ 2026-08-21 18:56
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: V2Get🛰️ 2026-08-25 20:03
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: V2Get🛰️ 2026-08-25 22:04
-  type: vless
-  server: 51.158.206.19
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
 - name: V2Get🛰️ 2026-08-27 05:06
   type: vless
   server: 40.160.68.118
@@ -1129,8 +1112,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-27 02:07
+  - V2Get🛰️ 2026-08-28 01:08
+  - 'V2Get🛰️ 2026-08-28 01:08 #2'
+  - 'V2Get🛰️ 2026-08-28 01:08 #3'
+  - 'V2Get🛰️ 2026-08-28 01:08 #4'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
   - V2Get🛰️ 2026-08-26 17:07
@@ -1138,9 +1124,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 16:07 #4'
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-25 20:03
-  - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-08-27 05:06
   - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-27 15:08 #2'
@@ -1231,8 +1214,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-27 02:07
+  - V2Get🛰️ 2026-08-28 01:08
+  - 'V2Get🛰️ 2026-08-28 01:08 #2'
+  - 'V2Get🛰️ 2026-08-28 01:08 #3'
+  - 'V2Get🛰️ 2026-08-28 01:08 #4'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
   - V2Get🛰️ 2026-08-26 17:07
@@ -1240,9 +1226,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 16:07 #4'
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-25 20:03
-  - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-08-27 05:06
   - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-27 15:08 #2'
