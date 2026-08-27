@@ -14,23 +14,24 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-27 14:08
   type: vless
+  server: 45.86.245.225
+  port: 10444
+  uuid: 4005ddae-29bb-431e-a212-7737316d08ea
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: vpnpolar.online
+- name: 'V2Get🛰️ 2026-08-27 14:08 #2'
+  type: vless
   server: 35.177.145.91
   port: 22223
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 10:06
-  type: vless
-  server: 212.87.199.76
-  port: 2053
-  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: v-grpc
-  tls: true
 - name: V2Get🛰️ 2026-08-27 12:08
   type: vless
   server: 178.104.129.39
@@ -1142,7 +1143,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-27 14:08
-  - V2Get🛰️ 2026-08-27 10:06
+  - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
@@ -1248,7 +1249,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-27 14:08
-  - V2Get🛰️ 2026-08-27 10:06
+  - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
