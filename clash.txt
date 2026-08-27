@@ -12,19 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-27 09:06
+  type: vless
+  server: 95.182.83.239
+  port: 42117
+  uuid: c2f2676a-6af6-44f7-9050-dbf7b4482258
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-27 09:06 #2'
   type: vless
   server: fans.milkabebar.ir
   port: 10694
@@ -1087,8 +1083,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-27 09:06
+  - 'V2Get🛰️ 2026-08-27 09:06 #2'
   - V2Get🛰️ 2026-08-27 08:06
   - V2Get🛰️ 2026-08-27 07:06
   - 'V2Get🛰️ 2026-08-27 07:06 #2'
@@ -1192,8 +1188,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-27 09:06
+  - 'V2Get🛰️ 2026-08-27 09:06 #2'
   - V2Get🛰️ 2026-08-27 08:06
   - V2Get🛰️ 2026-08-27 07:06
   - 'V2Get🛰️ 2026-08-27 07:06 #2'
