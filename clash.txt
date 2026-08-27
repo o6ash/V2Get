@@ -13,13 +13,29 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-27 14:08
+  type: vless
+  server: tsa-production-9222.up.railway.app
+  port: 443
+  uuid: f36fe26e-79a4-4125-b28e-9a9ddb62c377
+  udp: true
+  network: ws
+  tls: true
+  servername: tsa-production-9222.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: tsa-production-9222.up.railway.app
+- name: 'V2Get🛰️ 2026-08-27 14:08 #2'
   type: ss
   server: 217.23.13.210
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: Lo1q87FqgIGUJ7k1NFoF1w
   udp: true
-- name: 'V2Get🛰️ 2026-08-27 14:08 #2'
+- name: 'V2Get🛰️ 2026-08-27 14:08 #3'
   type: vless
   server: 45.86.245.225
   port: 10444
@@ -31,7 +47,7 @@ proxies:
     path: /beeline
     headers:
       Host: vpnpolar.online
-- name: 'V2Get🛰️ 2026-08-27 14:08 #3'
+- name: 'V2Get🛰️ 2026-08-27 14:08 #4'
   type: vless
   server: 35.177.145.91
   port: 22223
@@ -1077,23 +1093,6 @@ proxies:
       Host: javadiis-production.up.railway.app
 - name: 'V2Get🛰️ 2026-08-27 12:07 #5'
   type: vless
-  server: 104.16.11.217
-  port: 443
-  uuid: 3398b8c0-6025-42d5-9afe-99652482a527
-  udp: true
-  network: ws
-  tls: true
-  servername: cloudhet.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #6'
-  type: vless
   server: fiverr.com
   port: 443
   uuid: 3398b8c0-6025-42d5-9afe-99652482a527
@@ -1109,7 +1108,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 12:07 #7'
+- name: 'V2Get🛰️ 2026-08-27 12:07 #6'
   type: vless
   server: mahdroo.ir
   port: 443
@@ -1135,6 +1134,7 @@ proxy-groups:
   - V2Get🛰️ 2026-08-27 14:08
   - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - 'V2Get🛰️ 2026-08-27 14:08 #3'
+  - 'V2Get🛰️ 2026-08-27 14:08 #4'
   - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
@@ -1231,7 +1231,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:07 #4'
   - 'V2Get🛰️ 2026-08-27 12:07 #5'
   - 'V2Get🛰️ 2026-08-27 12:07 #6'
-  - 'V2Get🛰️ 2026-08-27 12:07 #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1241,6 +1240,7 @@ proxy-groups:
   - V2Get🛰️ 2026-08-27 14:08
   - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - 'V2Get🛰️ 2026-08-27 14:08 #3'
+  - 'V2Get🛰️ 2026-08-27 14:08 #4'
   - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
@@ -1337,7 +1337,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:07 #4'
   - 'V2Get🛰️ 2026-08-27 12:07 #5'
   - 'V2Get🛰️ 2026-08-27 12:07 #6'
-  - 'V2Get🛰️ 2026-08-27 12:07 #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
