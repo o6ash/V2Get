@@ -12,61 +12,97 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
-  type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
+- name: V2Get🛰️ 2026-08-12 02:12
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-  network: tcp
+- name: V2Get🛰️ 2026-08-26 17:07
+  type: vless
+  server: 104.21.54.6
+  port: 2052
+  uuid: 3cd062dd-90c0-4761-b468-83eb29314148
+  udp: true
+  network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-27 16:07
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-07-31 13:53
-  type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  server: 104.19.45.132
+  port: 2083
+  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: froshali.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
   ws-opts:
     path: /
     headers:
-      Host: mypanel.unixzone.us
-- name: V2Get🛰️ 2026-08-04 01:44
+      Host: froshali.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-27 16:07 #2'
   type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 104.19.161.122
+  port: 2083
+  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  servername: froshali.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: froshali.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-27 16:07 #3'
+  type: vless
+  server: 172.67.88.234
+  port: 443
+  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
+  udp: true
+  network: ws
+  tls: true
+  servername: froshali.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: froshali.dearhossein-taktaz.ir
+- name: V2Get🛰️ 2026-08-28 00:08
+  type: vless
+  server: panel.homelanderwins.com
+  port: 443
+  uuid: f81362b3-ba06-467e-8d3e-821bdf4ffd8d
+  udp: true
+  network: ws
+  tls: true
+  servername: panel.homelanderwins.com
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-08-28 00:08 #2'
+  type: vless
+  server: 82.202.177.148
+  port: 5269
+  uuid: 2e483b48-ad25-4c80-8806-73000fd5b031
   udp: true
   network: tcp
+  tls: true
+  servername: max.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: fFmp4fFO2wuoJKvc2_e5MF5C92H6Ei4c_AfV7toZO1c
+    short-id: a62ae57fa46a0d6d
 - name: V2Get🛰️ 2026-08-17 23:07
   type: vless
   server: 169.40.42.74
@@ -231,31 +267,6 @@ proxies:
   password: yrX2AkCCSd
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-28 00:08
-  type: vless
-  server: panel.homelanderwins.com
-  port: 443
-  uuid: f81362b3-ba06-467e-8d3e-821bdf4ffd8d
-  udp: true
-  network: ws
-  tls: true
-  servername: panel.homelanderwins.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-08-28 00:08 #2'
-  type: vless
-  server: 82.202.177.148
-  port: 5269
-  uuid: 2e483b48-ad25-4c80-8806-73000fd5b031
-  udp: true
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: fFmp4fFO2wuoJKvc2_e5MF5C92H6Ei4c_AfV7toZO1c
-    short-id: a62ae57fa46a0d6d
 - name: 'V2Get🛰️ 2026-08-28 00:08 #3'
   type: vless
   server: ru77.overseashost.ru
@@ -1108,11 +1119,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-26 17:07
+  - V2Get🛰️ 2026-08-27 16:07
+  - 'V2Get🛰️ 2026-08-27 16:07 #2'
+  - 'V2Get🛰️ 2026-08-27 16:07 #3'
+  - V2Get🛰️ 2026-08-28 00:08
+  - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-21 18:56
@@ -1127,8 +1140,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 00:09 #2'
   - V2Get🛰️ 2026-08-27 20:09
   - 'V2Get🛰️ 2026-08-28 00:09 #3'
-  - V2Get🛰️ 2026-08-28 00:08
-  - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
   - 'V2Get🛰️ 2026-08-28 00:08 #4'
   - 'V2Get🛰️ 2026-08-28 00:08 #5'
@@ -1210,11 +1221,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-08-12 02:12
+  - V2Get🛰️ 2026-08-26 17:07
+  - V2Get🛰️ 2026-08-27 16:07
+  - 'V2Get🛰️ 2026-08-27 16:07 #2'
+  - 'V2Get🛰️ 2026-08-27 16:07 #3'
+  - V2Get🛰️ 2026-08-28 00:08
+  - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-21 18:56
@@ -1229,8 +1242,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 00:09 #2'
   - V2Get🛰️ 2026-08-27 20:09
   - 'V2Get🛰️ 2026-08-28 00:09 #3'
-  - V2Get🛰️ 2026-08-28 00:08
-  - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
   - 'V2Get🛰️ 2026-08-28 00:08 #4'
   - 'V2Get🛰️ 2026-08-28 00:08 #5'
