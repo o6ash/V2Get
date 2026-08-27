@@ -12,39 +12,141 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 00:11
+- name: V2Get🛰️ 2026-08-27 15:07
   type: vless
-  server: 144.31.157.104
-  port: 20017
-  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-18 01:08
-  type: vless
-  server: 186.190.211.188
+  server: 87.247.142.160
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: 186.190.211.188
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: V2Get🛰️ 2026-08-26 21:05
+  servername: www.tradingview.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: uf8EHyBFoLFDGoAeOoha_wGtOmL_6yuYHU29Jo5x0ng
+    short-id: 34e82ecb
+- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
-  server: 199.232.78.159
+  server: 109.169.37.43
   port: 443
-  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
+  uuid: 4cc8bc89-a086-4138-a023-ccf918449d56
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: foodnetwork.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+- name: V2Get🛰️ 2026-08-27 20:09
+  type: vless
+  server: 140.238.208.210
+  port: 443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
   udp: true
   network: ws
   tls: true
-  servername: ssl.fastly.com
+  servername: vod.ensf.top
+  client-fingerprint: firefox
   ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    path: /api/v1/irc
     headers:
-      Host: pane3.global.ssl.fastly.net
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-27 20:09 #2'
+  type: vless
+  server: 194.0.194.38
+  port: 443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  udp: true
+  network: ws
+  tls: true
+  servername: vod.ensf.top
+  client-fingerprint: firefox
+  ws-opts:
+    path: /api/v1/irc
+    headers:
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-27 20:09 #3'
+  type: vless
+  server: 57.128.182.21
+  port: 443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  udp: true
+  network: ws
+  tls: true
+  servername: vod.ensf.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/irc
+    headers:
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-27 20:09 #4'
+  type: vless
+  server: 212.23.221.62
+  port: 443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  udp: true
+  network: ws
+  tls: true
+  servername: vod.ensf.top
+  client-fingerprint: firefox
+  ws-opts:
+    path: /api/v1/irc
+    headers:
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-27 20:09 #5'
+  type: vless
+  server: 88.198.82.153
+  port: 443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  udp: true
+  network: ws
+  tls: true
+  servername: vod.ensf.top
+  client-fingerprint: firefox
+  ws-opts:
+    path: /api/v1/irc
+    headers:
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-27 20:09 #6'
+  type: vless
+  server: 150.241.121.61
+  port: 443
+  uuid: 98b0ccb7-325d-4dd4-b1c0-92671e94f5be
+  udp: true
+  network: grpc
+  tls: true
+  servername: 1pgt5wjq9slq.bosfiles.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 'V2Get🛰️ 2026-08-27 20:09 #7'
+  type: vless
+  server: tg1.wba-pn.ru
+  port: 443
+  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
+  udp: true
+  network: ws
+  tls: true
+  servername: tg1.wba-pn.ru
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-08-27 20:09 #8'
+  type: vless
+  server: 64.188.59.203
+  port: 443
+  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
+  udp: true
+  network: ws
+  tls: true
+  servername: tg1.wba-pn.ru
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-08-27 20:08
   type: vless
   server: 170.64.221.169
@@ -1142,125 +1244,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-27 16:07 #2'
   type: vless
-  server: 104.16.11.217
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #3'
-  type: vless
-  server: mahdroo.ir
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #4'
-  type: vless
-  server: deepl.com
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #5'
-  type: vless
-  server: speedtest.net
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #6'
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #7'
-  type: vless
-  server: cloudflare.com
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #8'
-  type: vless
-  server: chess.com
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #9'
-  type: vless
   server: canva.com
   port: 443
   uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
@@ -1282,9 +1265,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 15:07
+  - 'V2Get🛰️ 2026-08-27 15:07 #2'
+  - V2Get🛰️ 2026-08-27 20:09
+  - 'V2Get🛰️ 2026-08-27 20:09 #2'
+  - 'V2Get🛰️ 2026-08-27 20:09 #3'
+  - 'V2Get🛰️ 2026-08-27 20:09 #4'
+  - 'V2Get🛰️ 2026-08-27 20:09 #5'
+  - 'V2Get🛰️ 2026-08-27 20:09 #6'
+  - 'V2Get🛰️ 2026-08-27 20:09 #7'
+  - 'V2Get🛰️ 2026-08-27 20:09 #8'
   - V2Get🛰️ 2026-08-27 20:08
   - 'V2Get🛰️ 2026-08-27 20:08 #2'
   - 'V2Get🛰️ 2026-08-27 20:08 #3'
@@ -1374,22 +1364,22 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 17:07 #9'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
-  - 'V2Get🛰️ 2026-08-27 16:07 #3'
-  - 'V2Get🛰️ 2026-08-27 16:07 #4'
-  - 'V2Get🛰️ 2026-08-27 16:07 #5'
-  - 'V2Get🛰️ 2026-08-27 16:07 #6'
-  - 'V2Get🛰️ 2026-08-27 16:07 #7'
-  - 'V2Get🛰️ 2026-08-27 16:07 #8'
-  - 'V2Get🛰️ 2026-08-27 16:07 #9'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 00:11
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 15:07
+  - 'V2Get🛰️ 2026-08-27 15:07 #2'
+  - V2Get🛰️ 2026-08-27 20:09
+  - 'V2Get🛰️ 2026-08-27 20:09 #2'
+  - 'V2Get🛰️ 2026-08-27 20:09 #3'
+  - 'V2Get🛰️ 2026-08-27 20:09 #4'
+  - 'V2Get🛰️ 2026-08-27 20:09 #5'
+  - 'V2Get🛰️ 2026-08-27 20:09 #6'
+  - 'V2Get🛰️ 2026-08-27 20:09 #7'
+  - 'V2Get🛰️ 2026-08-27 20:09 #8'
   - V2Get🛰️ 2026-08-27 20:08
   - 'V2Get🛰️ 2026-08-27 20:08 #2'
   - 'V2Get🛰️ 2026-08-27 20:08 #3'
@@ -1479,13 +1469,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 17:07 #9'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
-  - 'V2Get🛰️ 2026-08-27 16:07 #3'
-  - 'V2Get🛰️ 2026-08-27 16:07 #4'
-  - 'V2Get🛰️ 2026-08-27 16:07 #5'
-  - 'V2Get🛰️ 2026-08-27 16:07 #6'
-  - 'V2Get🛰️ 2026-08-27 16:07 #7'
-  - 'V2Get🛰️ 2026-08-27 16:07 #8'
-  - 'V2Get🛰️ 2026-08-27 16:07 #9'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
