@@ -12,6 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-27 09:06
+  type: vless
+  server: fans.milkabebar.ir
+  port: 10694
+  uuid: 57820cb2-0a70-4755-af92-7e41198085cd
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
+    short-id: a0fbc54d937aaccb
 - name: V2Get🛰️ 2026-08-27 08:06
   type: trojan
   server: 169.40.32.135
@@ -19,34 +44,6 @@ proxies:
   password: Rp7BSGjbCE
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-25 10:01
-  type: vless
-  server: node-fra02.rkitman.ru
-  port: 443
-  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: node-fra02.rkitman.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-- name: V2Get🛰️ 2026-08-26 11:05
-  type: vless
-  server: 157.173.7.55
-  port: 443
-  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: node-fra01.rkitman.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
 - name: V2Get🛰️ 2026-08-27 07:06
   type: vless
   server: node-fra01.rkitman.ru
@@ -1090,9 +1087,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-27 09:06
   - V2Get🛰️ 2026-08-27 08:06
-  - V2Get🛰️ 2026-08-25 10:01
-  - V2Get🛰️ 2026-08-26 11:05
   - V2Get🛰️ 2026-08-27 07:06
   - 'V2Get🛰️ 2026-08-27 07:06 #2'
   - 'V2Get🛰️ 2026-08-27 07:06 #3'
@@ -1195,9 +1192,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-27 09:06
   - V2Get🛰️ 2026-08-27 08:06
-  - V2Get🛰️ 2026-08-25 10:01
-  - V2Get🛰️ 2026-08-26 11:05
   - V2Get🛰️ 2026-08-27 07:06
   - 'V2Get🛰️ 2026-08-27 07:06 #2'
   - 'V2Get🛰️ 2026-08-27 07:06 #3'
