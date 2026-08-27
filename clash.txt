@@ -12,56 +12,75 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
+- name: V2Get🛰️ 2026-08-27 11:06
   type: vless
-  server: 162.19.228.119
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
-- name: V2Get🛰️ 2026-08-10 15:11
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-11 12:12
-  type: vless
-  server: 40.160.69.53
-  port: 8080
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /?ed
-- name: V2Get🛰️ 2026-08-22 09:57
-  type: ss
-  server: 51.222.155.32
-  port: 5003
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: V2Get🛰️ 2026-08-26 18:05
-  type: vmess
-  server: 95.182.83.239
-  port: 443
-  uuid: b6b9972d-a53b-4b77-b592-4038d7553655
-  alterId: 0
-  cipher: auto
+  server: toork-vps.4rc15.uk
+  port: 38750
+  uuid: 3563a7b9-f23c-4181-8e92-1075d3c5c1f1
   udp: true
   network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9fkUTJ_4wwN46asYf4xca-aTed4og16QrpoVW2nTIyQ
+    short-id: a60eef1d
+- name: 'V2Get🛰️ 2026-08-27 11:06 #2'
+  type: vless
+  server: 162.35.231.75
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: savesafe.co
+  reality-opts:
+    public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
+    short-id: f63805c3ecc7a483
+- name: 'V2Get🛰️ 2026-08-27 11:06 #3'
+  type: vless
+  server: 69.46.46.39
+  port: 443
+  uuid: bc56e496-244c-f8c9-a02f-a5f6254fc459
+  udp: true
+  network: ws
+  tls: true
+  servername: arctic-grove-073b-production.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/bc56e496-244c-f8c9-a02f-a5f6254fc459
+    headers:
+      Host: arctic-grove-073b-production.up.railway.app
+- name: 'V2Get🛰️ 2026-08-27 11:06 #4'
+  type: vless
+  server: 69.46.46.10
+  port: 443
+  uuid: fa1f8242-5c83-785b-057f-3b914585396d
+  udp: true
+  network: ws
+  tls: true
+  servername: golden-summit-7cef-production.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/fa1f8242-5c83-785b-057f-3b914585396d
+    headers:
+      Host: golden-summit-7cef-production.up.railway.app
+- name: V2Get🛰️ 2026-08-27 10:06
+  type: vless
+  server: 212.87.199.76
+  port: 2053
+  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: v-grpc
+  tls: true
 - name: V2Get🛰️ 2026-08-26 21:05
   type: vless
   server: 193.23.194.167
@@ -72,6 +91,15 @@ proxies:
   tls: true
   servername: neth.lckdwn.ru
   client-fingerprint: firefox
+- name: V2Get🛰️ 2026-08-26 18:05
+  type: vmess
+  server: 95.182.83.239
+  port: 443
+  uuid: b6b9972d-a53b-4b77-b592-4038d7553655
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-08-26 22:06
   type: ss
   server: 193.29.139.234
@@ -156,7 +184,7 @@ proxies:
   password: Rp7BSGjbCE
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 10:06
+- name: 'V2Get🛰️ 2026-08-27 10:06 #2'
   type: vless
   server: 40.160.68.122
   port: 8080
@@ -166,7 +194,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /?ed
-- name: 'V2Get🛰️ 2026-08-27 10:06 #2'
+- name: 'V2Get🛰️ 2026-08-27 10:06 #3'
   type: vless
   server: 31.128.37.67
   port: 16560
@@ -174,17 +202,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 10:06 #3'
-  type: vless
-  server: 212.87.199.76
-  port: 2053
-  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: v-grpc
-  tls: true
 - name: 'V2Get🛰️ 2026-08-27 10:06 #4'
   type: vless
   server: tr.web.doctor-alan-cloud.ir
@@ -1073,12 +1090,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-11 12:12
-  - V2Get🛰️ 2026-08-22 09:57
-  - V2Get🛰️ 2026-08-26 18:05
+  - V2Get🛰️ 2026-08-27 11:06
+  - 'V2Get🛰️ 2026-08-27 11:06 #2'
+  - 'V2Get🛰️ 2026-08-27 11:06 #3'
+  - 'V2Get🛰️ 2026-08-27 11:06 #4'
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-26 18:05
   - V2Get🛰️ 2026-08-26 22:06
   - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-27 02:07
@@ -1088,7 +1106,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 02:07 #4'
   - 'V2Get🛰️ 2026-08-27 02:07 #5'
   - V2Get🛰️ 2026-08-27 08:06
-  - V2Get🛰️ 2026-08-27 10:06
   - 'V2Get🛰️ 2026-08-27 10:06 #2'
   - 'V2Get🛰️ 2026-08-27 10:06 #3'
   - 'V2Get🛰️ 2026-08-27 10:06 #4'
@@ -1178,12 +1195,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-11 12:12
-  - V2Get🛰️ 2026-08-22 09:57
-  - V2Get🛰️ 2026-08-26 18:05
+  - V2Get🛰️ 2026-08-27 11:06
+  - 'V2Get🛰️ 2026-08-27 11:06 #2'
+  - 'V2Get🛰️ 2026-08-27 11:06 #3'
+  - 'V2Get🛰️ 2026-08-27 11:06 #4'
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-26 18:05
   - V2Get🛰️ 2026-08-26 22:06
   - V2Get🛰️ 2026-08-27 00:07
   - V2Get🛰️ 2026-08-27 02:07
@@ -1193,7 +1211,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 02:07 #4'
   - 'V2Get🛰️ 2026-08-27 02:07 #5'
   - V2Get🛰️ 2026-08-27 08:06
-  - V2Get🛰️ 2026-08-27 10:06
   - 'V2Get🛰️ 2026-08-27 10:06 #2'
   - 'V2Get🛰️ 2026-08-27 10:06 #3'
   - 'V2Get🛰️ 2026-08-27 10:06 #4'
