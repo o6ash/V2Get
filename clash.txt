@@ -12,13 +12,65 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-12 02:12
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-26 12:07
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-27 16:07
+  type: vless
+  server: deepl.com
+  port: 443
+  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
+  udp: true
+  network: ws
+  tls: true
+  servername: froshali.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: froshali.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-27 16:07 #2'
+  type: vless
+  server: 172.67.88.234
+  port: 443
+  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
+  udp: true
+  network: ws
+  tls: true
+  servername: froshali.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: froshali.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-08-26 17:07
   type: vless
   server: 104.21.54.6
@@ -27,7 +79,7 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 16:07
+- name: 'V2Get🛰️ 2026-08-27 16:07 #3'
   type: vless
   server: 104.19.45.132
   port: 2083
@@ -44,27 +96,10 @@ proxies:
     path: /
     headers:
       Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #2'
+- name: 'V2Get🛰️ 2026-08-27 16:07 #4'
   type: vless
   server: 104.19.161.122
   port: 2083
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #3'
-  type: vless
-  server: 172.67.88.234
-  port: 443
   uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
   udp: true
   network: ws
@@ -103,31 +138,6 @@ proxies:
   reality-opts:
     public-key: fFmp4fFO2wuoJKvc2_e5MF5C92H6Ei4c_AfV7toZO1c
     short-id: a62ae57fa46a0d6d
-- name: V2Get🛰️ 2026-08-17 23:07
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-18 01:08
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  network: tcp
-  tls: true
-  servername: 186.190.211.188
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
 - name: V2Get🛰️ 2026-08-21 18:56
   type: vless
   server: 15.204.97.219
@@ -1119,15 +1129,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-12 02:12
-  - V2Get🛰️ 2026-08-26 17:07
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
+  - V2Get🛰️ 2026-08-26 17:07
   - 'V2Get🛰️ 2026-08-27 16:07 #3'
+  - 'V2Get🛰️ 2026-08-27 16:07 #4'
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
-  - V2Get🛰️ 2026-08-17 23:07
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-25 22:04
@@ -1221,15 +1231,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-12 02:12
-  - V2Get🛰️ 2026-08-26 17:07
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
+  - V2Get🛰️ 2026-08-26 17:07
   - 'V2Get🛰️ 2026-08-27 16:07 #3'
+  - 'V2Get🛰️ 2026-08-27 16:07 #4'
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
-  - V2Get🛰️ 2026-08-17 23:07
-  - V2Get🛰️ 2026-08-18 01:08
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-25 22:04
