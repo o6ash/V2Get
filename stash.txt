@@ -12,77 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 10:06
+  type: vless
+  server: 212.87.199.76
+  port: 2053
+  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: v-grpc
+  tls: true
 - name: V2Get🛰️ 2026-08-27 15:07
   type: vless
-  server: 176.65.140.210
-  port: 58761
-  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
-  type: vmess
-  server: 176.65.140.210
-  port: 28267
-  uuid: 3a98c196-7408-4c49-bbbf-da50188b14e0
-  alterId: 0
-  cipher: auto
+  server: 199.232.78.159
+  port: 443
+  uuid: 7ff2b521-63a8-486d-b9be-0b238b02d33f
   udp: true
   network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bobo.badrangteb.ir
-- name: 'V2Get🛰️ 2026-08-27 15:07 #3'
-  type: vless
-  server: 176.65.140.210
-  port: 55889
-  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: bobo.badrangteb.ir
-- name: 'V2Get🛰️ 2026-08-27 15:07 #4'
-  type: vmess
-  server: 176.65.140.210
-  port: 23981
-  uuid: 3a98c196-7408-4c49-bbbf-da50188b14e0
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bobo.badrangteb.ir
-- name: 'V2Get🛰️ 2026-08-27 15:07 #5'
-  type: vless
-  server: 176.65.140.210
-  port: 46498
-  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: bobo.badrangteb.ir
-- name: 'V2Get🛰️ 2026-08-27 15:07 #6'
-  type: vless
-  server: lowtr.adsmode.ir
-  port: 2986
-  uuid: ae7d22d6-55a2-40e3-8945-283d987888e9
-  udp: true
-  network: tcp
   tls: true
-  servername: www.teleweboin.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: NNixBs7mLxjHeEKOgRFPXItnm9D28uzyDPmcp0x9QTU
-    short-id: 92f1447d1d034d7d
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT
 - name: V2Get🛰️ 2026-08-27 14:08
   type: vless
   server: tsa-production-9222.up.railway.app
@@ -99,6 +52,77 @@ proxies:
     path: /vl-ws
     headers:
       Host: tsa-production-9222.up.railway.app
+- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
+  type: vless
+  server: 176.65.140.210
+  port: 58761
+  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-27 15:07 #3'
+  type: vmess
+  server: 176.65.140.210
+  port: 28267
+  uuid: 3a98c196-7408-4c49-bbbf-da50188b14e0
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bobo.badrangteb.ir
+- name: 'V2Get🛰️ 2026-08-27 15:07 #4'
+  type: vless
+  server: 176.65.140.210
+  port: 55889
+  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: bobo.badrangteb.ir
+- name: 'V2Get🛰️ 2026-08-27 15:07 #5'
+  type: vmess
+  server: 176.65.140.210
+  port: 23981
+  uuid: 3a98c196-7408-4c49-bbbf-da50188b14e0
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bobo.badrangteb.ir
+- name: 'V2Get🛰️ 2026-08-27 15:07 #6'
+  type: vless
+  server: 176.65.140.210
+  port: 46498
+  uuid: 0cfc32a8-38e2-43ab-b604-62db6301164c
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: bobo.badrangteb.ir
+- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
+  type: vless
+  server: lowtr.adsmode.ir
+  port: 2986
+  uuid: ae7d22d6-55a2-40e3-8945-283d987888e9
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.teleweboin.ir
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NNixBs7mLxjHeEKOgRFPXItnm9D28uzyDPmcp0x9QTU
+    short-id: 92f1447d1d034d7d
 - name: 'V2Get🛰️ 2026-08-27 14:08 #2'
   type: vless
   server: 45.86.245.225
@@ -116,14 +140,6 @@ proxies:
   server: 35.177.145.91
   port: 22223
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 12:08
-  type: vless
-  server: 178.104.129.39
-  port: 14726
-  uuid: aebf0af6-7890-45ec-adf9-e6f502f2303e
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -880,7 +896,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-27 12:08 #2'
+- name: V2Get🛰️ 2026-08-27 12:08
   type: vless
   server: 138.124.123.127
   port: 2086
@@ -893,7 +909,7 @@ proxies:
   reality-opts:
     public-key: HPGO1-MaeKy358TWkMkFB4Rk-56-CYbO3i_pdncltmw
     short-id: f9ca6a2e5799b683
-- name: 'V2Get🛰️ 2026-08-27 12:08 #3'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #2'
   type: vless
   server: 2-4a0a-a644-8de99f1a5bbe.print88.ir
   port: 44334
@@ -944,7 +960,7 @@ proxies:
   reality-opts:
     public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
     short-id: fc36b4a584871aa5
-- name: 'V2Get🛰️ 2026-08-27 12:08 #4'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #3'
   type: vless
   server: 1a4e5-5250-4da6-835f-859c61.iranisystembaz.ir
   port: 8723
@@ -957,7 +973,7 @@ proxies:
   reality-opts:
     public-key: bXR3qMDQl6zAfB_UF-ohWW_UTIAonANequVEJEm_5D0
     short-id: 1ec62a1ca7665807
-- name: 'V2Get🛰️ 2026-08-27 12:08 #5'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #4'
   type: vless
   server: 6432132-5ea2-af36-c14f-dd27ab2c.vidboxco.ir
   port: 48343
@@ -972,7 +988,7 @@ proxies:
     short-id: 79609a319ab92665
   grpc-opts:
     grpc-service-name: yourServiceName
-- name: 'V2Get🛰️ 2026-08-27 12:08 #6'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #5'
   type: vless
   server: e03ff-fc7e-4a06-9709-8b5d0ff8c.soundmusic77.ir
   port: 500
@@ -987,7 +1003,7 @@ proxies:
     short-id: 79609a319ab92665
   grpc-opts:
     grpc-service-name: yourServiceName
-- name: 'V2Get🛰️ 2026-08-27 12:08 #7'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #6'
   type: vless
   server: static.226.186.109.65.clients.your-server.de
   port: 1800
@@ -995,7 +1011,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #8'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #7'
   type: vless
   server: 65.109.179.177
   port: 1700
@@ -1003,7 +1019,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #9'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #8'
   type: vless
   server: static.218.188.109.65.clients.your-server.de
   port: 1400
@@ -1011,7 +1027,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #10'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #9'
   type: vless
   server: static.241.182.109.65.clients.your-server.de
   port: 1600
@@ -1019,7 +1035,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #11'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #10'
   type: vless
   server: 65.109.182.220
   port: 1500
@@ -1027,21 +1043,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 12:08 #12'
-  type: vless
-  server: 91.99.81.222
-  port: 443
-  uuid: 8d7b0b42-a6b0-4918-b539-6bfe6e862f3e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: dYsy51W78tzZf26ql7Fh0Db65VlRSjGp6EH9nsAIRgo
-    short-id: 43e72f85c3
-- name: 'V2Get🛰️ 2026-08-27 12:08 #13'
+- name: 'V2Get🛰️ 2026-08-27 12:08 #11'
   type: vless
   server: 146.75.119.82
   port: 80
@@ -1059,16 +1061,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-27 14:08
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - 'V2Get🛰️ 2026-08-27 15:07 #5'
   - 'V2Get🛰️ 2026-08-27 15:07 #6'
-  - V2Get🛰️ 2026-08-27 14:08
+  - 'V2Get🛰️ 2026-08-27 15:07 #7'
   - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - 'V2Get🛰️ 2026-08-27 14:08 #3'
-  - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
   - 'V2Get🛰️ 2026-08-27 14:07 #3'
@@ -1138,11 +1141,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 13:08 #2'
   - 'V2Get🛰️ 2026-08-27 13:08 #3'
   - V2Get🛰️ 2026-08-27 13:07
+  - V2Get🛰️ 2026-08-27 12:08
   - 'V2Get🛰️ 2026-08-27 12:08 #2'
-  - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - V2Get🛰️ 2026-08-27 13:06
   - 'V2Get🛰️ 2026-08-27 13:06 #2'
   - 'V2Get🛰️ 2026-08-27 13:06 #3'
+  - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - 'V2Get🛰️ 2026-08-27 12:08 #4'
   - 'V2Get🛰️ 2026-08-27 12:08 #5'
   - 'V2Get🛰️ 2026-08-27 12:08 #6'
@@ -1151,24 +1155,23 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:08 #9'
   - 'V2Get🛰️ 2026-08-27 12:08 #10'
   - 'V2Get🛰️ 2026-08-27 12:08 #11'
-  - 'V2Get🛰️ 2026-08-27 12:08 #12'
-  - 'V2Get🛰️ 2026-08-27 12:08 #13'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-27 14:08
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - 'V2Get🛰️ 2026-08-27 15:07 #5'
   - 'V2Get🛰️ 2026-08-27 15:07 #6'
-  - V2Get🛰️ 2026-08-27 14:08
+  - 'V2Get🛰️ 2026-08-27 15:07 #7'
   - 'V2Get🛰️ 2026-08-27 14:08 #2'
   - 'V2Get🛰️ 2026-08-27 14:08 #3'
-  - V2Get🛰️ 2026-08-27 12:08
   - V2Get🛰️ 2026-08-27 14:07
   - 'V2Get🛰️ 2026-08-27 14:07 #2'
   - 'V2Get🛰️ 2026-08-27 14:07 #3'
@@ -1238,11 +1241,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 13:08 #2'
   - 'V2Get🛰️ 2026-08-27 13:08 #3'
   - V2Get🛰️ 2026-08-27 13:07
+  - V2Get🛰️ 2026-08-27 12:08
   - 'V2Get🛰️ 2026-08-27 12:08 #2'
-  - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - V2Get🛰️ 2026-08-27 13:06
   - 'V2Get🛰️ 2026-08-27 13:06 #2'
   - 'V2Get🛰️ 2026-08-27 13:06 #3'
+  - 'V2Get🛰️ 2026-08-27 12:08 #3'
   - 'V2Get🛰️ 2026-08-27 12:08 #4'
   - 'V2Get🛰️ 2026-08-27 12:08 #5'
   - 'V2Get🛰️ 2026-08-27 12:08 #6'
@@ -1251,8 +1255,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 12:08 #9'
   - 'V2Get🛰️ 2026-08-27 12:08 #10'
   - 'V2Get🛰️ 2026-08-27 12:08 #11'
-  - 'V2Get🛰️ 2026-08-27 12:08 #12'
-  - 'V2Get🛰️ 2026-08-27 12:08 #13'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
