@@ -12,15 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 03:05
+- name: V2Get🛰️ 2026-08-27 14:06
   type: vless
-  server: 178.83.226.142
-  port: 42538
-  uuid: 6185150a-40bb-448b-b237-b37e3c10938c
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: db5dc039-a37e-4c23-b7a9-bdf6c729f7f3
   udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 03:05 #2'
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: V2Get🛰️ 2026-08-27 03:05
   type: vless
   server: 5.75.193.253
   port: 42538
@@ -28,7 +34,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-27 03:05 #3'
+- name: 'V2Get🛰️ 2026-08-27 03:05 #2'
   type: vless
   server: 38.128.251.24
   port: 42538
@@ -1232,9 +1238,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 14:06
   - V2Get🛰️ 2026-08-27 03:05
   - 'V2Get🛰️ 2026-08-27 03:05 #2'
-  - 'V2Get🛰️ 2026-08-27 03:05 #3'
   - V2Get🛰️ 2026-08-27 12:06
   - 'V2Get🛰️ 2026-08-27 12:06 #2'
   - V2Get🛰️ 2026-08-27 13:08
@@ -1336,9 +1342,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 14:06
   - V2Get🛰️ 2026-08-27 03:05
   - 'V2Get🛰️ 2026-08-27 03:05 #2'
-  - 'V2Get🛰️ 2026-08-27 03:05 #3'
   - V2Get🛰️ 2026-08-27 12:06
   - 'V2Get🛰️ 2026-08-27 12:06 #2'
   - V2Get🛰️ 2026-08-27 13:08
