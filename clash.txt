@@ -12,6 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 16:06
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e9c84a20-cc71-4838-b3fc-e6d71bafdb7f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: max.azazilvpn.sbs.
+- name: V2Get🛰️ 2026-08-27 15:07
+  type: vless
+  server: test.cloudvk.cc
+  port: 443
+  uuid: 54a33907-c356-40fa-b6f3-844b3e6a8b7c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: test.cloudvk.cc
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8
 - name: V2Get🛰️ 2026-08-27 15:08
   type: vless
   server: 147.182.156.111
@@ -34,19 +59,6 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-08-25 13:02
-  type: vless
-  server: 93.189.63.146
-  port: 443
-  uuid: 53ffd172-de4c-002f-aa77-1a6830a36cf8
-  udp: true
-  network: xhttp
-  tls: true
-  servername: mm.melbicom.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: YHPoUNxsml4z6pYt-7djOb1lqnBjxCk4-2mk84pveyc
-    short-id: 3b5b38669a1a51c0
 - name: V2Get🛰️ 2026-08-27 10:06
   type: vless
   server: 31.128.37.67
@@ -126,7 +138,7 @@ proxies:
     path: /ws/02782ae7-8499-07d9-4656-a03851eb4641
     headers:
       Host: silent-atlas-b963-production.up.railway.app
-- name: V2Get🛰️ 2026-08-27 15:07
+- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
   server: 151.101.56.6
   port: 443
@@ -140,19 +152,6 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
-  type: vless
-  server: test.cloudvk.cc
-  port: 443
-  uuid: 54a33907-c356-40fa-b6f3-844b3e6a8b7c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: test.cloudvk.cc
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8
 - name: 'V2Get🛰️ 2026-08-27 15:07 #3'
   type: vless
   server: 95.85.241.208
@@ -1378,9 +1377,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 16:06
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-27 15:08 #2'
-  - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-27 10:06
   - 'V2Get🛰️ 2026-08-27 10:06 #2'
   - 'V2Get🛰️ 2026-08-27 15:08 #3'
@@ -1388,7 +1388,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 15:08 #5'
   - 'V2Get🛰️ 2026-08-27 15:08 #6'
   - 'V2Get🛰️ 2026-08-27 15:08 #7'
-  - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
@@ -1484,9 +1483,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 16:06
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-27 15:08 #2'
-  - V2Get🛰️ 2026-08-25 13:02
   - V2Get🛰️ 2026-08-27 10:06
   - 'V2Get🛰️ 2026-08-27 10:06 #2'
   - 'V2Get🛰️ 2026-08-27 15:08 #3'
@@ -1494,7 +1494,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 15:08 #5'
   - 'V2Get🛰️ 2026-08-27 15:08 #6'
   - 'V2Get🛰️ 2026-08-27 15:08 #7'
-  - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
