@@ -12,9 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 21:05
+- name: V2Get🛰️ 2026-08-10 15:11
   type: vless
-  server: 199.232.78.159
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-26 12:07
+  type: vless
+  server: 151.101.56.7
   port: 443
   uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
   udp: true
@@ -1014,7 +1026,7 @@ proxies:
       Host: Swedenman.global.ssl.fastly.net.
 - name: 'V2Get🛰️ 2026-08-27 20:07 #3'
   type: vless
-  server: 172.67.88.234
+  server: 104.24.19.105
   port: 443
   uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
   udp: true
@@ -1031,7 +1043,7 @@ proxies:
       Host: cloudhet2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-27 20:07 #4'
   type: vless
-  server: 104.24.19.105
+  server: 104.16.11.217
   port: 443
   uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
   udp: true
@@ -1048,7 +1060,7 @@ proxies:
       Host: cloudhet2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-27 20:07 #5'
   type: vless
-  server: 104.16.11.217
+  server: fiverr.com
   port: 443
   uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
   udp: true
@@ -1065,7 +1077,7 @@ proxies:
       Host: cloudhet2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-27 20:07 #6'
   type: vless
-  server: fiverr.com
+  server: surfiran.com
   port: 443
   uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
   udp: true
@@ -1082,23 +1094,6 @@ proxies:
       Host: cloudhet2.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-27 20:07 #7'
   type: vless
-  server: surfiran.com
-  port: 443
-  uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
-  udp: true
-  network: ws
-  tls: true
-  servername: cloudhet2.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: cloudhet2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 20:07 #8'
-  type: vless
   server: mahdroo.ir
   port: 443
   uuid: 594339ea-5131-4ab4-827b-ffbbcaa590f9
@@ -1114,7 +1109,7 @@ proxies:
     path: /
     headers:
       Host: cloudhet2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 20:07 #9'
+- name: 'V2Get🛰️ 2026-08-27 20:07 #8'
   type: vless
   server: parstoday.ir
   port: 443
@@ -1137,7 +1132,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
@@ -1233,14 +1229,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 20:07 #6'
   - 'V2Get🛰️ 2026-08-27 20:07 #7'
   - 'V2Get🛰️ 2026-08-27 20:07 #8'
-  - 'V2Get🛰️ 2026-08-27 20:07 #9'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 00:08 #2'
   - 'V2Get🛰️ 2026-08-28 00:08 #3'
@@ -1336,7 +1332,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 20:07 #6'
   - 'V2Get🛰️ 2026-08-27 20:07 #7'
   - 'V2Get🛰️ 2026-08-27 20:07 #8'
-  - 'V2Get🛰️ 2026-08-27 20:07 #9'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
