@@ -12,16 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-11 12:12
+- name: V2Get🛰️ 2026-08-26 21:05
   type: vless
-  server: 40.160.69.53
-  port: 8080
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  server: 199.232.78.159
+  port: 443
+  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: /?ed
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-27 02:07
   type: vless
   server: 193.238.154.18
@@ -1018,7 +1021,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-11 12:12
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-27 12:07
   - 'V2Get🛰️ 2026-08-27 12:07 #2'
@@ -1113,7 +1116,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-11 12:12
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-27 12:07
   - 'V2Get🛰️ 2026-08-27 12:07 #2'
