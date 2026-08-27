@@ -12,20 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-11 00:12
+- name: V2Get🛰️ 2026-08-27 17:07
   type: vless
-  server: r1.cloud--vpn.site
-  port: 443
-  uuid: 1f9e413d-18fb-46e7-c6eb-2bc69b341937
+  server: fant2.milkabebar.ir
+  port: 38479
+  uuid: ce5c75fe-3901-4e8f-82ac-3667db5168ed
   udp: true
-  network: ws
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-27 17:07 #2'
+  type: vless
+  server: fant2.milkabebar.ir
+  port: 10694
+  uuid: ce5c75fe-3901-4e8f-82ac-3667db5168ed
+  udp: true
+  network: tcp
   tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
+    short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-27 17:07 #3'
+  type: vless
+  server: fant1.milkabebar.ir
+  port: 10694
+  uuid: ce5c75fe-3901-4e8f-82ac-3667db5168ed
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
+    short-id: a0fbc54d937aaccb
 - name: V2Get🛰️ 2026-08-27 16:07
   type: vless
   server: grt1.milkabebar.ir
@@ -575,36 +595,6 @@ proxies:
     short-id: e40da98e
 - name: 'V2Get🛰️ 2026-08-27 15:07 #5'
   type: vless
-  server: md2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-    short-id: d36a38659ce106cb
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #6'
-  type: vless
-  server: 89.35.14.31
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-    short-id: d36a38659ce106cb
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
-  type: vless
   server: 87.58.205.55
   port: 27965
   uuid: b57f66c0-3a33-4445-b360-026c00a5922c
@@ -617,7 +607,7 @@ proxies:
   reality-opts:
     public-key: b2_we-U9dxdV_L_-RCNhpTbWtS89pggEPSbNQVbQhkw
     short-id: f8f83f45
-- name: 'V2Get🛰️ 2026-08-27 15:07 #8'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #6'
   type: vless
   server: 45.9.156.20
   port: 443
@@ -632,7 +622,7 @@ proxies:
     short-id: 954891aec4fe0be9
   grpc-opts:
     grpc-service-name: gw.v1.StreamService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #9'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
   type: vless
   server: 45.9.156.24
   port: 443
@@ -647,7 +637,7 @@ proxies:
     short-id: 501ab3325b77e1ca
   grpc-opts:
     grpc-service-name: api.v2.PushService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #10'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #8'
   type: vless
   server: 162.35.231.31
   port: 443
@@ -661,7 +651,7 @@ proxies:
   reality-opts:
     public-key: XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI
     short-id: f41bc0b00ca1a978
-- name: 'V2Get🛰️ 2026-08-27 15:07 #11'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #9'
   type: vless
   server: 81.163.23.131
   port: 443
@@ -674,7 +664,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #12'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #10'
   type: vless
   server: 45.144.30.113
   port: 443
@@ -688,7 +678,7 @@ proxies:
   reality-opts:
     public-key: zT1pXWygvJtVBuoanuZFDKNCvYyz5M-f8YSu68DG0wk
     short-id: 095f70dc
-- name: 'V2Get🛰️ 2026-08-27 15:07 #13'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #11'
   type: vless
   server: 2.59.41.142
   port: 443
@@ -701,7 +691,7 @@ proxies:
   reality-opts:
     public-key: kwTtn_WqODmTrFS0JIMXCVVjs16vRzC-fI6yqVaWvWg
     short-id: b5fc1f9c
-- name: 'V2Get🛰️ 2026-08-27 15:07 #14'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #12'
   type: vless
   server: 87.247.142.160
   port: 443
@@ -714,7 +704,7 @@ proxies:
   reality-opts:
     public-key: uf8EHyBFoLFDGoAeOoha_wGtOmL_6yuYHU29Jo5x0ng
     short-id: 34e82ecb
-- name: 'V2Get🛰️ 2026-08-27 15:07 #15'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #13'
   type: vless
   server: wl-1.myfreedom.rest
   port: 443
@@ -728,7 +718,7 @@ proxies:
   reality-opts:
     public-key: sdnD0vxmj8kHBOoVM8TE9IyBCGwnKNB8hZVaHp_Zfjk
     short-id: c427
-- name: 'V2Get🛰️ 2026-08-27 15:07 #16'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #14'
   type: vless
   server: 144.31.40.74
   port: 443
@@ -742,7 +732,7 @@ proxies:
   reality-opts:
     public-key: HpzevplMIGzSxJPBn6qQ65PoHzFyo6D5gUwv5D118Dk
     short-id: 91bc2d10a37e5368
-- name: 'V2Get🛰️ 2026-08-27 15:07 #17'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #15'
   type: vless
   server: 185.22.234.100
   port: 443
@@ -755,7 +745,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #18'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #16'
   type: vless
   server: bg4.univesalsrv.com
   port: 443
@@ -770,7 +760,7 @@ proxies:
     short-id: 51f45d4fd58cc319
   grpc-opts:
     grpc-service-name: cloud.v1.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #19'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #17'
   type: vless
   server: 150.230.218.59
   port: 443
@@ -784,7 +774,7 @@ proxies:
   reality-opts:
     public-key: 5qkRIcB3SAxOr6m76YHUHNFdhsaK7HXWPipELhPD8j4
     short-id: 64299c2e
-- name: 'V2Get🛰️ 2026-08-27 15:07 #20'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #18'
   type: vless
   server: 194.55.239.164
   port: 443
@@ -798,7 +788,7 @@ proxies:
   reality-opts:
     public-key: sdnD0vxmj8kHBOoVM8TE9IyBCGwnKNB8hZVaHp_Zfjk
     short-id: c427
-- name: 'V2Get🛰️ 2026-08-27 15:07 #21'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #19'
   type: vless
   server: 144.31.40.96
   port: 8443
@@ -813,7 +803,7 @@ proxies:
     short-id: 37bd480ac3fdbc36
   grpc-opts:
     grpc-service-name: a2e3c24ab3
-- name: 'V2Get🛰️ 2026-08-27 15:07 #22'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #20'
   type: vless
   server: 31.76.91.185
   port: 443
@@ -827,7 +817,7 @@ proxies:
   reality-opts:
     public-key: a7QPumBr-7EpnnPJ8TRr38MapK3xNGt59kfdPwud4xA
     short-id: 48ced39e
-- name: 'V2Get🛰️ 2026-08-27 15:07 #23'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #21'
   type: vless
   server: bg1.univesalsrv.com
   port: 443
@@ -842,7 +832,7 @@ proxies:
     short-id: 954891aec4fe0be9
   grpc-opts:
     grpc-service-name: gw.v1.StreamService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #24'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #22'
   type: vless
   server: bg2.univesalsrv.com
   port: 443
@@ -857,7 +847,7 @@ proxies:
     short-id: 501ab3325b77e1ca
   grpc-opts:
     grpc-service-name: api.v2.PushService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #25'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #23'
   type: vless
   server: 45.9.156.28
   port: 443
@@ -872,7 +862,7 @@ proxies:
     short-id: 51f45d4fd58cc319
   grpc-opts:
     grpc-service-name: cloud.v1.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #26'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #24'
   type: vless
   server: 45.144.30.101
   port: 443
@@ -886,7 +876,7 @@ proxies:
   reality-opts:
     public-key: 2wVBh3_96eEW1Dqu4kDw-oQBEkZoV1sZ9pwjFQDdhwU
     short-id: f277187b
-- name: 'V2Get🛰️ 2026-08-27 15:07 #27'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #25'
   type: vless
   server: 31.76.119.128
   port: 443
@@ -901,7 +891,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #28'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #26'
   type: vless
   server: 45.9.156.42
   port: 443
@@ -916,7 +906,7 @@ proxies:
     short-id: 1a3102bb8e51399e
   grpc-opts:
     grpc-service-name: gw.v2.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #29'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #27'
   type: vless
   server: entry-msk.mopsvpn.xyz
   port: 30420
@@ -929,7 +919,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: 0DeQkB5VFrFlDUHQubW1cgimk2MsIVZ-7prfaYa1XRs
-- name: 'V2Get🛰️ 2026-08-27 15:07 #30'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #28'
   type: vless
   server: bg3.univesalsrv.com
   port: 443
@@ -944,7 +934,7 @@ proxies:
     short-id: 1be1bd931c98c84a
   grpc-opts:
     grpc-service-name: home.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #31'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #29'
   type: vless
   server: 185.91.54.240
   port: 443
@@ -957,7 +947,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #32'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #30'
   type: vless
   server: wl2.alertyagency.com
   port: 443
@@ -971,7 +961,7 @@ proxies:
   reality-opts:
     public-key: th3X1X-WZfVfW-mctM2XQJiKQDO5iDZFKv9p3BDD7wM
     short-id: 8441cdf7
-- name: 'V2Get🛰️ 2026-08-27 15:07 #33'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #31'
   type: vless
   server: 176.65.144.125
   port: 443
@@ -986,7 +976,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #34'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #32'
   type: vless
   server: 159.195.242.180
   port: 8443
@@ -1001,7 +991,7 @@ proxies:
     short-id: c8c75aaf699259b4
   grpc-opts:
     grpc-service-name: b21a4d915b94
-- name: 'V2Get🛰️ 2026-08-27 15:07 #35'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #33'
   type: vless
   server: 31.76.64.248
   port: 443
@@ -1015,7 +1005,7 @@ proxies:
   reality-opts:
     public-key: 9OV_GN4lgwY_4llPfYCGev-PPXLMj-hfYnveKF4tjws
     short-id: f8
-- name: 'V2Get🛰️ 2026-08-27 15:07 #36'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #34'
   type: vless
   server: bg5.univesalsrv.com
   port: 443
@@ -1030,7 +1020,7 @@ proxies:
     short-id: 1a3102bb8e51399e
   grpc-opts:
     grpc-service-name: gw.v2.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #37'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #35'
   type: vless
   server: 81.163.23.158
   port: 443
@@ -1043,7 +1033,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #38'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #36'
   type: vless
   server: 45.149.147.252
   port: 443
@@ -1058,7 +1048,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #39'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #37'
   type: vless
   server: 93.152.224.159
   port: 443
@@ -1071,7 +1061,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #40'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #38'
   type: vless
   server: 45.144.30.92
   port: 443
@@ -1085,7 +1075,7 @@ proxies:
   reality-opts:
     public-key: 0l-_lPQW-ktNbUcXjrSyCx61ZGzA8OdWNwHHDT7l0S4
     short-id: 28aa254f
-- name: 'V2Get🛰️ 2026-08-27 15:07 #41'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #39'
   type: vless
   server: 45.9.156.27
   port: 443
@@ -1100,7 +1090,7 @@ proxies:
     short-id: 1be1bd931c98c84a
   grpc-opts:
     grpc-service-name: home.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #42'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #40'
   type: vless
   server: 31.76.85.162
   port: 443
@@ -1114,7 +1104,7 @@ proxies:
   reality-opts:
     public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
     short-id: c8c75aaf699259b4
-- name: 'V2Get🛰️ 2026-08-27 15:07 #43'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #41'
   type: vless
   server: amter.klzvezdi.ru
   port: 7443
@@ -1127,7 +1117,7 @@ proxies:
   reality-opts:
     public-key: QQyikonHb9wUazcu_wwSb8hOetZ7yUTN5kz09TAnTTw
     short-id: f9f07762bb667beb
-- name: 'V2Get🛰️ 2026-08-27 15:07 #44'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #42'
   type: vless
   server: 31.76.119.143
   port: 443
@@ -1142,7 +1132,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #45'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #43'
   type: vless
   server: 45.145.56.103
   port: 443
@@ -1157,7 +1147,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #46'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #44'
   type: vless
   server: 89.34.90.30
   port: 443
@@ -1170,7 +1160,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #47'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #45'
   type: vless
   server: 95.85.246.79
   port: 443
@@ -1185,7 +1175,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #48'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #46'
   type: vless
   server: 91.92.33.95
   port: 443
@@ -1200,7 +1190,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #49'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #47'
   type: vless
   server: 185.126.67.165
   port: 443
@@ -1215,7 +1205,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #50'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #48'
   type: vless
   server: poland.cloudvk.cc
   port: 443
@@ -1228,7 +1218,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8
-- name: 'V2Get🛰️ 2026-08-27 15:07 #51'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #49'
   type: vless
   server: 87.249.36.40
   port: 443
@@ -1241,7 +1231,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #52'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #50'
   type: vless
   server: 89.34.90.25
   port: 443
@@ -1256,7 +1246,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #53'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #51'
   type: vless
   server: 72.56.14.50
   port: 25575
@@ -1268,7 +1258,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: 0DeQkB5VFrFlDUHQubW1cgimk2MsIVZ-7prfaYa1XRs
-- name: 'V2Get🛰️ 2026-08-27 15:07 #54'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #52'
   type: vless
   server: 45.149.147.231
   port: 443
@@ -1283,7 +1273,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #55'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #53'
   type: vless
   server: 91.185.83.119
   port: 443
@@ -1296,7 +1286,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #56'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #54'
   type: vless
   server: 31.76.38.1
   port: 443
@@ -1311,7 +1301,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #57'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #55'
   type: vless
   server: 91.92.43.108
   port: 443
@@ -1326,7 +1316,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #58'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #56'
   type: vless
   server: 109.169.37.43
   port: 443
@@ -1340,7 +1330,7 @@ proxies:
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-08-27 15:07 #59'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #57'
   type: vless
   server: 94.156.117.148
   port: 7443
@@ -1353,7 +1343,7 @@ proxies:
   reality-opts:
     public-key: QQyikonHb9wUazcu_wwSb8hOetZ7yUTN5kz09TAnTTw
     short-id: f9f07762bb667beb
-- name: 'V2Get🛰️ 2026-08-27 15:07 #60'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #58'
   type: vless
   server: 31.76.119.81
   port: 443
@@ -1368,7 +1358,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #61'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #59'
   type: vless
   server: 93.152.224.13
   port: 443
@@ -1383,7 +1373,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #62'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #60'
   type: vless
   server: 201.34.131.90
   port: 443
@@ -1396,7 +1386,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #63'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #61'
   type: vless
   server: 185.22.234.209
   port: 443
@@ -1409,7 +1399,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
-- name: 'V2Get🛰️ 2026-08-27 15:07 #64'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #62'
   type: vless
   server: 94.26.83.7
   port: 443
@@ -1424,7 +1414,7 @@ proxies:
     short-id: 2a236a7fcbe0ce61
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-08-27 15:07 #65'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #63'
   type: vless
   server: 82.202.157.193
   port: 443
@@ -1438,7 +1428,7 @@ proxies:
   reality-opts:
     public-key: A51UvCAHsWrGkjaZQoE0PfHt-owiBxSMRIc8XfxdYkg
     short-id: fbc7b5b2
-- name: 'V2Get🛰️ 2026-08-27 15:07 #66'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #64'
   type: vless
   server: 150.40.126.24
   port: 443
@@ -1453,7 +1443,7 @@ proxies:
     short-id: 4872856d5489c37d
   grpc-opts:
     grpc-service-name: gw.v1.ObjectService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #67'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #65'
   type: vless
   server: 77.239.126.210
   port: 443
@@ -1473,7 +1463,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-11 00:12
+  - V2Get🛰️ 2026-08-27 17:07
+  - 'V2Get🛰️ 2026-08-27 17:07 #2'
+  - 'V2Get🛰️ 2026-08-27 17:07 #3'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
   - 'V2Get🛰️ 2026-08-27 16:07 #3'
@@ -1571,15 +1563,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 15:07 #63'
   - 'V2Get🛰️ 2026-08-27 15:07 #64'
   - 'V2Get🛰️ 2026-08-27 15:07 #65'
-  - 'V2Get🛰️ 2026-08-27 15:07 #66'
-  - 'V2Get🛰️ 2026-08-27 15:07 #67'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-11 00:12
+  - V2Get🛰️ 2026-08-27 17:07
+  - 'V2Get🛰️ 2026-08-27 17:07 #2'
+  - 'V2Get🛰️ 2026-08-27 17:07 #3'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
   - 'V2Get🛰️ 2026-08-27 16:07 #3'
@@ -1677,8 +1669,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 15:07 #63'
   - 'V2Get🛰️ 2026-08-27 15:07 #64'
   - 'V2Get🛰️ 2026-08-27 15:07 #65'
-  - 'V2Get🛰️ 2026-08-27 15:07 #66'
-  - 'V2Get🛰️ 2026-08-27 15:07 #67'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
