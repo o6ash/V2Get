@@ -12,18 +12,13 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+- name: V2Get🛰️ 2026-08-27 08:06
+  type: trojan
+  server: 169.40.32.135
+  port: 53
+  password: Rp7BSGjbCE
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-25 10:01
   type: vless
   server: node-fra02.rkitman.ru
@@ -1095,7 +1090,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-27 08:06
   - V2Get🛰️ 2026-08-25 10:01
   - V2Get🛰️ 2026-08-26 11:05
   - V2Get🛰️ 2026-08-27 07:06
@@ -1200,7 +1195,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-27 08:06
   - V2Get🛰️ 2026-08-25 10:01
   - V2Get🛰️ 2026-08-26 11:05
   - V2Get🛰️ 2026-08-27 07:06
