@@ -12,28 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: ss
-  server: r3mrcg001287h3p.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: V2Get🛰️ 2026-08-12 12:18
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-  udp: true
-- name: V2Get🛰️ 2026-08-24 22:01
+- name: V2Get🛰️ 2026-08-10 15:11
   type: vless
-  server: bot.rayopoder.top
-  port: 50972
-  uuid: 01640ed0-9b23-493d-ac18-3947750e25c2
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-26 12:07
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-27 20:08
   type: vless
   server: 209.38.250.74
@@ -1205,9 +1221,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-12 12:18
-  - V2Get🛰️ 2026-08-24 22:01
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 20:08
   - 'V2Get🛰️ 2026-08-27 20:08 #2'
   - 'V2Get🛰️ 2026-08-27 20:08 #3'
@@ -1308,9 +1324,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-12 12:18
-  - V2Get🛰️ 2026-08-24 22:01
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 20:08
   - 'V2Get🛰️ 2026-08-27 20:08 #2'
   - 'V2Get🛰️ 2026-08-27 20:08 #3'
