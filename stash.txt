@@ -12,19 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-25 17:04
+- name: V2Get🛰️ 2026-08-27 18:08
   type: vless
-  server: 193.160.32.36
-  port: 2053
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
+  server: javadtsa-production.up.railway.app
+  port: 443
+  uuid: 5b8a74ee-5f28-4fff-bcf4-14748cc4eedc
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: play.google.com
+  servername: javadtsa-production.up.railway.app
   client-fingerprint: chrome
-  reality-opts:
-    public-key: Sh2F8IDDBaFvXPI59IwN-25UR1G0fjXNmuVqwNbTpUk
-    short-id: c87bfa39a28a95b9
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: javadtsa-production.up.railway.app
 - name: V2Get🛰️ 2026-08-26 12:07
   type: vless
   server: 151.101.56.7
@@ -1376,7 +1379,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-27 18:08
   - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 14:06
@@ -1477,7 +1480,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-25 17:04
+  - V2Get🛰️ 2026-08-27 18:08
   - V2Get🛰️ 2026-08-26 12:07
   - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-27 14:06
