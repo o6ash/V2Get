@@ -12,6 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-28 12:08
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: fd500516-3aa1-72d7-ac71-08000112b424
+  udp: true
+  network: ws
+  tls: true
+  servername: a.v2boxerfree4.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /v2
+    headers:
+      Host: a.v2boxerfree4.workers.dev
+- name: 'V2Get🛰️ 2026-08-28 12:08 #2'
+  type: trojan
+  server: time.is
+  port: 443
+  password: feed94ed-e704-2deb-32a3-e0416f406f03
+  udp: true
+  sni: a.v2boxerfree5.workers.dev
+  network: ws
+  ws-opts:
+    path: /v2
+    headers:
+      Host: a.v2boxerfree5.workers.dev
 - name: V2Get🛰️ 2026-08-28 11:10
   type: vless
   server: 130.185.121.30
@@ -992,7 +1018,7 @@ proxies:
     short-id: a0fbc54d937aaccb
 - name: V2Get🛰️ 2026-08-27 22:10
   type: vless
-  server: 199.232.78.195
+  server: 199.232.78.175
   port: 443
   uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
   udp: true
@@ -1005,19 +1031,6 @@ proxies:
       Host: 7wwwspeedtestnet.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-08-27 22:10 #2'
   type: vless
-  server: 199.232.78.175
-  port: 443
-  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-27 22:10 #3'
-  type: vless
   server: 199.232.78.142
   port: 443
   uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
@@ -1029,19 +1042,14 @@ proxies:
     path: /
     headers:
       Host: 7wwwspeedtestnet.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-27 22:10 #4'
-  type: ss
-  server: 129.146.25.102
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: umzIzGA4fUXcxBZ53+XOb/Ij44KmVMewyIWdAoZsV8U=
-  udp: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-28 12:08
+  - 'V2Get🛰️ 2026-08-28 12:08 #2'
   - V2Get🛰️ 2026-08-28 11:10
   - V2Get🛰️ 2026-08-28 11:09
   - 'V2Get🛰️ 2026-08-28 11:09 #2'
@@ -1138,14 +1146,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 00:08 #30'
   - V2Get🛰️ 2026-08-27 22:10
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
-  - 'V2Get🛰️ 2026-08-27 22:10 #3'
-  - 'V2Get🛰️ 2026-08-27 22:10 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-28 12:08
+  - 'V2Get🛰️ 2026-08-28 12:08 #2'
   - V2Get🛰️ 2026-08-28 11:10
   - V2Get🛰️ 2026-08-28 11:09
   - 'V2Get🛰️ 2026-08-28 11:09 #2'
@@ -1242,8 +1250,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 00:08 #30'
   - V2Get🛰️ 2026-08-27 22:10
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
-  - 'V2Get🛰️ 2026-08-27 22:10 #3'
-  - 'V2Get🛰️ 2026-08-27 22:10 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
