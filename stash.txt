@@ -12,16 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 21:05
+- name: V2Get🛰️ 2026-08-28 11:09
   type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
+  server: 91.228.227.112
+  port: 110
+  uuid: e7babf3b-1275-4bee-9315-6c3b54c78440
   udp: true
   network: tcp
-  tls: true
-  servername: neth.lckdwn.ru
-  client-fingerprint: firefox
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-27 20:09
   type: vless
   server: 64.188.59.203
@@ -34,7 +32,7 @@ proxies:
   client-fingerprint: firefox
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-08-28 11:09
+- name: 'V2Get🛰️ 2026-08-28 11:09 #2'
   type: vless
   server: 91.228.227.112
   port: 443
@@ -922,9 +920,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 21:05
-  - V2Get🛰️ 2026-08-27 20:09
   - V2Get🛰️ 2026-08-28 11:09
+  - V2Get🛰️ 2026-08-27 20:09
+  - 'V2Get🛰️ 2026-08-28 11:09 #2'
   - V2Get🛰️ 2026-08-28 11:08
   - 'V2Get🛰️ 2026-08-28 11:08 #2'
   - 'V2Get🛰️ 2026-08-28 11:08 #3'
@@ -1012,9 +1010,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 21:05
-  - V2Get🛰️ 2026-08-27 20:09
   - V2Get🛰️ 2026-08-28 11:09
+  - V2Get🛰️ 2026-08-27 20:09
+  - 'V2Get🛰️ 2026-08-28 11:09 #2'
   - V2Get🛰️ 2026-08-28 11:08
   - 'V2Get🛰️ 2026-08-28 11:08 #2'
   - 'V2Get🛰️ 2026-08-28 11:08 #3'
