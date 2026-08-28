@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-28 09:08
+  type: vless
+  server: 147.182.156.111
+  port: 1161
+  uuid: d8489785-bf37-b68c-fb19-58d5cbeca36d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-28 09:08 #2'
+  type: vless
+  server: 147.182.156.111
+  port: 8039
+  uuid: d8489785-bf37-b68c-fb19-58d5cbeca36d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-08-28 07:08
   type: vless
   server: 104.244.73.115
@@ -53,20 +75,6 @@ proxies:
     path: /stream/PANEL_ZEUS/ea30cf3150db
     headers:
       Host: sszpjleuufys.72zdtweiuqjs.workers.dev
-- name: V2Get🛰️ 2026-08-27 13:08
-  type: vless
-  server: 185.243.218.182
-  port: 322
-  uuid: 20000024-8788-9182-f000-a35f2e23a020
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wyrebyte.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: T7JiblULt3JN3iWxcGPD9E912LAneFSPA3J05PD9MjA
-    short-id: 2757df499273bcb2
 - name: V2Get🛰️ 2026-08-28 06:08
   type: vless
   server: 54.254.145.25
@@ -200,23 +208,6 @@ proxies:
       Host: h8zdhue9un2s.mhmdmargyr0.workers.dev
 - name: V2Get🛰️ 2026-08-27 16:07
   type: vless
-  server: 104.19.231.252
-  port: 443
-  uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
-  udp: true
-  network: ws
-  tls: true
-  servername: froshali.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #2'
-  type: vless
   server: 104.16.11.217
   port: 443
   uuid: 2551555b-8f44-42e3-a3d7-ddb9a1670fa6
@@ -232,7 +223,7 @@ proxies:
     path: /
     headers:
       Host: froshali.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-27 16:07 #3'
+- name: 'V2Get🛰️ 2026-08-27 16:07 #2'
   type: vless
   server: chess.com
   port: 443
@@ -1057,10 +1048,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-28 09:08
+  - 'V2Get🛰️ 2026-08-28 09:08 #2'
   - V2Get🛰️ 2026-08-28 07:08
   - 'V2Get🛰️ 2026-08-28 07:08 #2'
   - 'V2Get🛰️ 2026-08-28 07:08 #3'
-  - V2Get🛰️ 2026-08-27 13:08
   - V2Get🛰️ 2026-08-28 06:08
   - 'V2Get🛰️ 2026-08-28 06:08 #2'
   - 'V2Get🛰️ 2026-08-28 06:08 #3'
@@ -1076,7 +1068,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 04:08 #3'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
-  - 'V2Get🛰️ 2026-08-27 16:07 #3'
   - V2Get🛰️ 2026-08-27 18:08
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 02:08 #2'
@@ -1160,10 +1151,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-28 09:08
+  - 'V2Get🛰️ 2026-08-28 09:08 #2'
   - V2Get🛰️ 2026-08-28 07:08
   - 'V2Get🛰️ 2026-08-28 07:08 #2'
   - 'V2Get🛰️ 2026-08-28 07:08 #3'
-  - V2Get🛰️ 2026-08-27 13:08
   - V2Get🛰️ 2026-08-28 06:08
   - 'V2Get🛰️ 2026-08-28 06:08 #2'
   - 'V2Get🛰️ 2026-08-28 06:08 #3'
@@ -1179,7 +1171,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 04:08 #3'
   - V2Get🛰️ 2026-08-27 16:07
   - 'V2Get🛰️ 2026-08-27 16:07 #2'
-  - 'V2Get🛰️ 2026-08-27 16:07 #3'
   - V2Get🛰️ 2026-08-27 18:08
   - V2Get🛰️ 2026-08-28 00:08
   - 'V2Get🛰️ 2026-08-28 02:08 #2'
