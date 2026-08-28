@@ -12,20 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 15:07
+- name: V2Get🛰️ 2026-08-26 21:05
   type: vless
-  server: 31.76.85.162
-  port: 443
-  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  server: 193.23.194.167
+  port: 8443
+  uuid: 32349ee8-8551-45fa-a265-8704cec72936
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: nl2mp.tsumshop.org
+  servername: neth.lckdwn.ru
   client-fingerprint: firefox
-  reality-opts:
-    public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
-    short-id: c8c75aaf699259b4
+- name: V2Get🛰️ 2026-08-27 20:09
+  type: vless
+  server: 64.188.59.203
+  port: 443
+  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
+  udp: true
+  network: ws
+  tls: true
+  servername: tg1.wba-pn.ru
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-28 11:09
+  type: vless
+  server: 91.228.227.112
+  port: 443
+  uuid: 840015f3-9eda-4ae1-a738-219b9f10f3c9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-28 11:08
   type: vless
   server: 91.228.227.112
@@ -887,13 +903,6 @@ proxies:
     path: /
     headers:
       Host: 7wwwspeedtestnet.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-27 22:07
-  type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: 6G8Q3JWT6R
-  udp: true
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-27 22:08
   type: vless
   server: 199.232.78.159
@@ -907,21 +916,15 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
-- name: 'V2Get🛰️ 2026-08-27 22:08 #2'
-  type: vless
-  server: 13.134.132.121
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 20:09
+  - V2Get🛰️ 2026-08-28 11:09
   - V2Get🛰️ 2026-08-28 11:08
   - 'V2Get🛰️ 2026-08-28 11:08 #2'
   - 'V2Get🛰️ 2026-08-28 11:08 #3'
@@ -1002,16 +1005,16 @@ proxy-groups:
   - V2Get🛰️ 2026-08-27 22:10
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
   - 'V2Get🛰️ 2026-08-27 22:10 #3'
-  - V2Get🛰️ 2026-08-27 22:07
   - V2Get🛰️ 2026-08-27 22:08
-  - 'V2Get🛰️ 2026-08-27 22:08 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-27 20:09
+  - V2Get🛰️ 2026-08-28 11:09
   - V2Get🛰️ 2026-08-28 11:08
   - 'V2Get🛰️ 2026-08-28 11:08 #2'
   - 'V2Get🛰️ 2026-08-28 11:08 #3'
@@ -1092,9 +1095,7 @@ proxy-groups:
   - V2Get🛰️ 2026-08-27 22:10
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
   - 'V2Get🛰️ 2026-08-27 22:10 #3'
-  - V2Get🛰️ 2026-08-27 22:07
   - V2Get🛰️ 2026-08-27 22:08
-  - 'V2Get🛰️ 2026-08-27 22:08 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
