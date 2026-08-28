@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-28 11:10
+  type: vless
+  server: 130.185.121.30
+  port: 443
+  uuid: 8845753e-ed81-452e-bfac-1ed95e849c93
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: 130.185.121.30
 - name: V2Get🛰️ 2026-08-28 11:09
   type: vmess
   server: 95.182.83.239
@@ -1024,25 +1036,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: umzIzGA4fUXcxBZ53+XOb/Ij44KmVMewyIWdAoZsV8U=
   udp: true
-- name: V2Get🛰️ 2026-08-27 22:08
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: b76fa59f-6fc9-4116-ab17-160277d23cfc
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-28 11:10
   - V2Get🛰️ 2026-08-28 11:09
   - 'V2Get🛰️ 2026-08-28 11:09 #2'
   - 'V2Get🛰️ 2026-08-28 11:09 #3'
@@ -1140,13 +1140,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
   - 'V2Get🛰️ 2026-08-27 22:10 #3'
   - 'V2Get🛰️ 2026-08-27 22:10 #4'
-  - V2Get🛰️ 2026-08-27 22:08
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-28 11:10
   - V2Get🛰️ 2026-08-28 11:09
   - 'V2Get🛰️ 2026-08-28 11:09 #2'
   - 'V2Get🛰️ 2026-08-28 11:09 #3'
@@ -1244,7 +1244,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-27 22:10 #2'
   - 'V2Get🛰️ 2026-08-27 22:10 #3'
   - 'V2Get🛰️ 2026-08-27 22:10 #4'
-  - V2Get🛰️ 2026-08-27 22:08
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
