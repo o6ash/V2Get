@@ -12,35 +12,7 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-28 15:10
-  type: vless
-  server: 185.254.205.79
-  port: 19842
-  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.tesla.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
-    short-id: 25ebc9e0a912
 - name: V2Get🛰️ 2026-08-28 16:10
-  type: vless
-  server: 13.212.143.2
-  port: 18516
-  uuid: 5e4c4ee0-9a52-421e-8427-7ad6ff027312
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.sony.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0nAOIGPKjVAgGpN_FrdSQ1qg_J-nuIhS9-UZYLMfy2g
-    short-id: 6ce3397cbd5ada
-- name: 'V2Get🛰️ 2026-08-28 16:10 #2'
   type: vless
   server: 47.130.167.253
   port: 35921
@@ -54,56 +26,20 @@ proxies:
   reality-opts:
     public-key: G18SaAQR1NQqmi4ITcYYITGom67q6S3JD8hQTifAPwY
     short-id: 29400ecf83e074
-- name: V2Get🛰️ 2026-08-28 18:10
+- name: 'V2Get🛰️ 2026-08-28 16:10 #2'
   type: vless
-  server: cp-gre.mikikoo.com
-  port: 8880
-  uuid: 15150c26-7e7f-42a7-8e7a-d0b9ab359214
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-28 18:10 #2'
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d0ee468a-084b-411d-b2be-b886a61065d1
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: c12.com
-- name: 'V2Get🛰️ 2026-08-28 18:10 #3'
-  type: vless
-  server: 172.237.44.80
-  port: 19567
-  uuid: 0faaa1ee-f3d2-49ec-92af-3228329f3000
+  server: 13.212.143.2
+  port: 18516
+  uuid: 5e4c4ee0-9a52-421e-8427-7ad6ff027312
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.nvidia.com
+  servername: www.sony.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI
-    short-id: 87714fc3c52a
-- name: 'V2Get🛰️ 2026-08-28 18:10 #4'
-  type: vless
-  server: 194.55.164.154
-  port: 8443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  udp: true
-  network: ws
-  tls: true
-  servername: vod.ensf.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/irc
-    headers:
-      Host: vod.ensf.top
+    public-key: 0nAOIGPKjVAgGpN_FrdSQ1qg_J-nuIhS9-UZYLMfy2g
+    short-id: 6ce3397cbd5ada
 - name: V2Get🛰️ 2026-08-28 16:11
   type: vless
   server: 13.212.45.128
@@ -118,6 +54,70 @@ proxies:
   reality-opts:
     public-key: AG7GDrwsSNOf3mXfGVRSKBwszQFJ_QDxqQPHlyN-HAw
     short-id: 5b89483cf98148
+- name: V2Get🛰️ 2026-08-28 18:10
+  type: vless
+  server: 194.55.164.154
+  port: 8443
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  udp: true
+  network: ws
+  tls: true
+  servername: vod.ensf.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/irc
+    headers:
+      Host: vod.ensf.top
+- name: 'V2Get🛰️ 2026-08-28 18:10 #2'
+  type: vless
+  server: 172.237.44.80
+  port: 19567
+  uuid: 0faaa1ee-f3d2-49ec-92af-3228329f3000
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI
+    short-id: 87714fc3c52a
+- name: V2Get🛰️ 2026-08-28 15:10
+  type: vless
+  server: 185.254.205.79
+  port: 19842
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+- name: 'V2Get🛰️ 2026-08-28 18:10 #3'
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d0ee468a-084b-411d-b2be-b886a61065d1
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
+    headers:
+      Host: c12.com
+- name: 'V2Get🛰️ 2026-08-28 18:10 #4'
+  type: vless
+  server: cp-gre.mikikoo.com
+  port: 8880
+  uuid: 15150c26-7e7f-42a7-8e7a-d0b9ab359214
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-28 16:10 #3'
   type: vless
   server: 185.178.208.137
@@ -1288,14 +1288,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-28 15:10
   - V2Get🛰️ 2026-08-28 16:10
   - 'V2Get🛰️ 2026-08-28 16:10 #2'
+  - V2Get🛰️ 2026-08-28 16:11
   - V2Get🛰️ 2026-08-28 18:10
   - 'V2Get🛰️ 2026-08-28 18:10 #2'
+  - V2Get🛰️ 2026-08-28 15:10
   - 'V2Get🛰️ 2026-08-28 18:10 #3'
   - 'V2Get🛰️ 2026-08-28 18:10 #4'
-  - V2Get🛰️ 2026-08-28 16:11
   - 'V2Get🛰️ 2026-08-28 16:10 #3'
   - 'V2Get🛰️ 2026-08-28 16:10 #4'
   - 'V2Get🛰️ 2026-08-28 16:10 #5'
@@ -1389,14 +1389,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-28 15:10
   - V2Get🛰️ 2026-08-28 16:10
   - 'V2Get🛰️ 2026-08-28 16:10 #2'
+  - V2Get🛰️ 2026-08-28 16:11
   - V2Get🛰️ 2026-08-28 18:10
   - 'V2Get🛰️ 2026-08-28 18:10 #2'
+  - V2Get🛰️ 2026-08-28 15:10
   - 'V2Get🛰️ 2026-08-28 18:10 #3'
   - 'V2Get🛰️ 2026-08-28 18:10 #4'
-  - V2Get🛰️ 2026-08-28 16:11
   - 'V2Get🛰️ 2026-08-28 16:10 #3'
   - 'V2Get🛰️ 2026-08-28 16:10 #4'
   - 'V2Get🛰️ 2026-08-28 16:10 #5'
