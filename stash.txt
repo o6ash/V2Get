@@ -12,17 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-22 00:56
-  type: vless
-  server: 185.140.12.160
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
 - name: V2Get🛰️ 2026-08-28 15:09
+  type: trojan
+  server: 192.71.82.2
+  port: 8880
+  password: bGVc965yd5
+  udp: true
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-28 15:09 #2'
   type: vless
   server: thomas.proxy.rlwy.net
   port: 47491
@@ -33,7 +30,7 @@ proxies:
   grpc-opts:
     grpc-service-name: ''
   tls: true
-- name: 'V2Get🛰️ 2026-08-28 15:09 #2'
+- name: 'V2Get🛰️ 2026-08-28 15:09 #3'
   type: vless
   server: 91.99.81.222
   port: 443
@@ -47,7 +44,7 @@ proxies:
   reality-opts:
     public-key: dYsy51W78tzZf26ql7Fh0Db65VlRSjGp6EH9nsAIRgo
     short-id: 9cf2
-- name: 'V2Get🛰️ 2026-08-28 15:09 #3'
+- name: 'V2Get🛰️ 2026-08-28 15:09 #4'
   type: vless
   server: sv3.helpower.ir
   port: 2036
@@ -909,10 +906,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-22 00:56
   - V2Get🛰️ 2026-08-28 15:09
   - 'V2Get🛰️ 2026-08-28 15:09 #2'
   - 'V2Get🛰️ 2026-08-28 15:09 #3'
+  - 'V2Get🛰️ 2026-08-28 15:09 #4'
   - V2Get🛰️ 2026-08-28 14:09
   - V2Get🛰️ 2026-08-28 14:10
   - 'V2Get🛰️ 2026-08-28 14:10 #2'
@@ -996,10 +993,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-22 00:56
   - V2Get🛰️ 2026-08-28 15:09
   - 'V2Get🛰️ 2026-08-28 15:09 #2'
   - 'V2Get🛰️ 2026-08-28 15:09 #3'
+  - 'V2Get🛰️ 2026-08-28 15:09 #4'
   - V2Get🛰️ 2026-08-28 14:09
   - V2Get🛰️ 2026-08-28 14:10
   - 'V2Get🛰️ 2026-08-28 14:10 #2'
