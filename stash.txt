@@ -12,19 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 13:05
+- name: V2Get🛰️ 2026-08-27 15:07
   type: vless
-  server: 45.136.126.70
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  server: 150.40.126.24
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: www.google.com
+  servername: rs5.univesalsrv.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: 6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M
-    short-id: 67933d8be5b42f78
+    public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
+    short-id: 4872856d5489c37d
+  grpc-opts:
+    grpc-service-name: gw.v1.ObjectService
 - name: V2Get🛰️ 2026-08-28 19:10
   type: vless
   server: 69.46.46.100
@@ -1188,7 +1190,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-28 19:10
   - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 21:10
@@ -1286,7 +1288,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-28 19:10
   - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 21:10
