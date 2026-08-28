@@ -12,16 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-22 00:56
+- name: V2Get🛰️ 2026-08-28 19:09
   type: vless
-  server: 185.140.12.160
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  server: 78.129.150.210
+  port: 443
+  uuid: 84ad92c7-e040-498a-aade-3ecb592867a2
   udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: strapi.io
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
 - name: V2Get🛰️ 2026-08-28 12:08
   type: ss
   server: 135.106.194.88
@@ -1279,7 +1283,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-22 00:56
+  - V2Get🛰️ 2026-08-28 19:09
   - V2Get🛰️ 2026-08-28 12:08
   - V2Get🛰️ 2026-08-28 15:10
   - 'V2Get🛰️ 2026-08-28 15:10 #2'
@@ -1385,7 +1389,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-22 00:56
+  - V2Get🛰️ 2026-08-28 19:09
   - V2Get🛰️ 2026-08-28 12:08
   - V2Get🛰️ 2026-08-28 15:10
   - 'V2Get🛰️ 2026-08-28 15:10 #2'
