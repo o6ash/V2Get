@@ -12,6 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 13:05
+  type: vless
+  server: 45.136.126.70
+  port: 8443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.google.com
+  reality-opts:
+    public-key: 6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M
+    short-id: 67933d8be5b42f78
+- name: V2Get🛰️ 2026-08-28 19:10
+  type: vless
+  server: 69.46.46.100
+  port: 443
+  uuid: 3b4fb8d7-e166-93b1-55e5-076250c77a19
+  udp: true
+  network: ws
+  tls: true
+  servername: hidden-glacier-c2dd-production.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/3b4fb8d7-e166-93b1-55e5-076250c77a19
+    headers:
+      Host: hidden-glacier-c2dd-production.up.railway.app
+- name: 'V2Get🛰️ 2026-08-28 19:10 #2'
+  type: vless
+  server: 18.170.94.231
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-28 21:10
   type: vless
   server: snapp.ir
@@ -379,20 +416,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-28 16:10
-  type: vless
-  server: 47.129.152.58
-  port: 39960
-  uuid: 6019d1ee-5fcf-4ce4-b5cb-e47fd3c29b2a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: epKJ_k5Dc4ywEPSIIXhk27GBrJlcAJWO5kLJaOyaLTQ
-    short-id: f98458f4235fd5e3
 - name: V2Get🛰️ 2026-08-28 16:11
   type: vless
   server: 52.76.84.249
@@ -534,30 +557,6 @@ proxies:
   reality-opts:
     public-key: Ct9tvt4V8JSZ7uCbKWKuXNMG5Q7U_FMDWPHgi4YHAXw
     short-id: 2e23c31063fcff
-- name: V2Get🛰️ 2026-08-28 19:10
-  type: vless
-  server: 18.170.94.231
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-28 19:10 #2'
-  type: vless
-  server: 69.46.46.100
-  port: 443
-  uuid: 3b4fb8d7-e166-93b1-55e5-076250c77a19
-  udp: true
-  network: ws
-  tls: true
-  servername: hidden-glacier-c2dd-production.up.railway.app
-  client-fingerprint: ios
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ws/3b4fb8d7-e166-93b1-55e5-076250c77a19
-    headers:
-      Host: hidden-glacier-c2dd-production.up.railway.app
 - name: 'V2Get🛰️ 2026-08-28 19:10 #3'
   type: vless
   server: x4gpanel-production-6f0c.up.railway.app
@@ -1248,6 +1247,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-28 19:10
+  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 21:10
   - 'V2Get🛰️ 2026-08-28 21:10 #2'
   - 'V2Get🛰️ 2026-08-28 21:10 #3'
@@ -1277,7 +1279,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 19:11 #3'
   - 'V2Get🛰️ 2026-08-28 20:10 #3'
   - V2Get🛰️ 2026-08-28 17:12
-  - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 16:11
   - 'V2Get🛰️ 2026-08-28 20:09 #2'
   - 'V2Get🛰️ 2026-08-28 20:09 #3'
@@ -1288,8 +1289,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 17:09 #4'
   - 'V2Get🛰️ 2026-08-28 17:09 #5'
   - 'V2Get🛰️ 2026-08-28 16:11 #3'
-  - V2Get🛰️ 2026-08-28 19:10
-  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - 'V2Get🛰️ 2026-08-28 19:10 #3'
   - 'V2Get🛰️ 2026-08-28 19:10 #4'
   - V2Get🛰️ 2026-08-28 19:09
@@ -1353,6 +1352,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-28 19:10
+  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 21:10
   - 'V2Get🛰️ 2026-08-28 21:10 #2'
   - 'V2Get🛰️ 2026-08-28 21:10 #3'
@@ -1382,7 +1384,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 19:11 #3'
   - 'V2Get🛰️ 2026-08-28 20:10 #3'
   - V2Get🛰️ 2026-08-28 17:12
-  - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 16:11
   - 'V2Get🛰️ 2026-08-28 20:09 #2'
   - 'V2Get🛰️ 2026-08-28 20:09 #3'
@@ -1393,8 +1394,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 17:09 #4'
   - 'V2Get🛰️ 2026-08-28 17:09 #5'
   - 'V2Get🛰️ 2026-08-28 16:11 #3'
-  - V2Get🛰️ 2026-08-28 19:10
-  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - 'V2Get🛰️ 2026-08-28 19:10 #3'
   - 'V2Get🛰️ 2026-08-28 19:10 #4'
   - V2Get🛰️ 2026-08-28 19:09
