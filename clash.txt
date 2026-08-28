@@ -12,30 +12,24 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 23:09
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-26 13:05
-  type: vless
-  server: 45.136.126.70
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+- name: V2Get🛰️ 2026-08-27 03:06
+  type: vmess
+  server: 94.156.179.138
+  port: 110
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+  alterId: 0
+  cipher: auto
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  reality-opts:
-    public-key: 6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M
-    short-id: 67933d8be5b42f78
+- name: V2Get🛰️ 2026-08-28 14:09
+  type: vmess
+  server: 169.40.32.48
+  port: 5062
+  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
 - name: V2Get🛰️ 2026-08-28 14:08
   type: trojan
   server: 169.40.32.135
@@ -1056,8 +1050,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-27 03:06
+  - V2Get🛰️ 2026-08-28 14:09
   - V2Get🛰️ 2026-08-28 14:08
   - V2Get🛰️ 2026-08-28 12:08
   - 'V2Get🛰️ 2026-08-28 12:08 #2'
@@ -1162,8 +1156,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-27 03:06
+  - V2Get🛰️ 2026-08-28 14:09
   - V2Get🛰️ 2026-08-28 14:08
   - V2Get🛰️ 2026-08-28 12:08
   - 'V2Get🛰️ 2026-08-28 12:08 #2'
