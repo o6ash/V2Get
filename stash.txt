@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-28 13:10
+  type: vless
+  server: tsaj-production-9b39.up.railway.app
+  port: 443
+  uuid: 9d48abaf-f694-40b1-a71a-9e4740b8af7f
+  udp: true
+  network: ws
+  tls: true
+  servername: tsaj-production-9b39.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: tsaj-production-9b39.up.railway.app
 - name: V2Get🛰️ 2026-08-28 13:09
   type: trojan
   server: 104.21.51.132
@@ -889,20 +905,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-28 00:09
-  type: vless
-  server: 31.56.206.28
-  port: 2053
-  uuid: 8825a3df-984c-49db-bbca-e92a0207fefc
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-28 13:10
   - V2Get🛰️ 2026-08-28 13:09
   - 'V2Get🛰️ 2026-08-28 13:09 #2'
   - 'V2Get🛰️ 2026-08-28 13:09 #3'
@@ -985,13 +994,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 01:08 #13'
   - 'V2Get🛰️ 2026-08-28 01:08 #14'
   - 'V2Get🛰️ 2026-08-28 01:08 #15'
-  - V2Get🛰️ 2026-08-28 00:09
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-28 13:10
   - V2Get🛰️ 2026-08-28 13:09
   - 'V2Get🛰️ 2026-08-28 13:09 #2'
   - 'V2Get🛰️ 2026-08-28 13:09 #3'
@@ -1074,7 +1083,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-28 01:08 #13'
   - 'V2Get🛰️ 2026-08-28 01:08 #14'
   - 'V2Get🛰️ 2026-08-28 01:08 #15'
-  - V2Get🛰️ 2026-08-28 00:09
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
