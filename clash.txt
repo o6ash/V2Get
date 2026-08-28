@@ -12,14 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-25 19:03
+- name: V2Get🛰️ 2026-08-29 03:10
   type: vless
-  server: 153.56.134.149
-  port: 37217
-  uuid: cd74983f-12f5-4836-aae5-17fbc136f888
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  ws-opts:
+    path: /GOrbEh
 - name: V2Get🛰️ 2026-08-28 16:10
   type: vless
   server: 52.194.245.53
@@ -1243,7 +1246,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-25 19:03
+  - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 17:12
   - V2Get🛰️ 2026-08-28 16:11
@@ -1347,7 +1350,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-25 19:03
+  - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 17:12
   - V2Get🛰️ 2026-08-28 16:11
