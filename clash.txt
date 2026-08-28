@@ -14,6 +14,19 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-28 19:10
   type: vless
+  server: x4gpanel-production-6f0c.up.railway.app
+  port: 443
+  uuid: c745363c-83a4-536f-a100-86f379de8c9a
+  udp: true
+  network: xhttp
+  tls: true
+  servername: x4gpanel-production-6f0c.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-28 19:10 #2'
+  type: vless
   server: cysecy1.global.ssl.fastly.net
   port: 80
   uuid: 65e294c6-9733-40cd-ade4-9bcf4017a1bd
@@ -22,19 +35,6 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-08-25 17:04
-  type: vless
-  server: 193.160.32.36
-  port: 2053
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Sh2F8IDDBaFvXPI59IwN-25UR1G0fjXNmuVqwNbTpUk
-    short-id: c87bfa39a28a95b9
 - name: V2Get🛰️ 2026-08-28 19:09
   type: vless
   server: 2.27.204.103
@@ -1286,7 +1286,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-28 19:10
-  - V2Get🛰️ 2026-08-25 17:04
+  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 19:09
   - 'V2Get🛰️ 2026-08-28 19:09 #2'
   - V2Get🛰️ 2026-08-28 16:10
@@ -1392,7 +1392,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-28 19:10
-  - V2Get🛰️ 2026-08-25 17:04
+  - 'V2Get🛰️ 2026-08-28 19:10 #2'
   - V2Get🛰️ 2026-08-28 19:09
   - 'V2Get🛰️ 2026-08-28 19:09 #2'
   - V2Get🛰️ 2026-08-28 16:10
