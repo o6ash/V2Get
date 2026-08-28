@@ -12,24 +12,31 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
+- name: V2Get🛰️ 2026-08-18 19:07
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-23 22:00
   type: vless
-  server: 43.163.241.110
-  port: 24477
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
+  server: 194.110.207.48
+  port: 443
+  uuid: d551dc1e-a0d3-4d52-a8bb-756cb9dac0b2
   udp: true
   network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-26 21:05
-  type: vless
-  server: 193.23.194.167
-  port: 8443
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-  udp: true
-  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: neth.lckdwn.ru
-  client-fingerprint: firefox
+  servername: kibi-institut.de
+  client-fingerprint: qq
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
 - name: V2Get🛰️ 2026-08-28 12:10
   type: vless
   server: 91.228.227.112
@@ -888,8 +895,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-18 19:07
+  - V2Get🛰️ 2026-08-23 22:00
   - V2Get🛰️ 2026-08-28 12:10
   - V2Get🛰️ 2026-08-28 12:09
   - 'V2Get🛰️ 2026-08-28 12:09 #2'
@@ -976,8 +983,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
-  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-18 19:07
+  - V2Get🛰️ 2026-08-23 22:00
   - V2Get🛰️ 2026-08-28 12:10
   - V2Get🛰️ 2026-08-28 12:09
   - 'V2Get🛰️ 2026-08-28 12:09 #2'
