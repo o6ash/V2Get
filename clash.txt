@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 10:06
+  type: vless
+  server: 31.128.37.67
+  port: 16560
+  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-28 23:12
   type: vless
   server: 91.99.129.166
@@ -20,15 +28,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-05 11:19
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-08-07 02:44
   type: vless
   server: 5.253.42.164
@@ -1224,8 +1223,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-28 23:12
-  - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-12 12:18
@@ -1328,8 +1327,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-28 23:12
-  - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-07 02:44
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-12 12:18
