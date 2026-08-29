@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 15:12
+  type: vless
+  server: tsa-production-1d01.up.railway.app
+  port: 443
+  uuid: fcdca787-c747-46fb-9e76-c522411cfb2c
+  udp: true
+  network: ws
+  tls: true
+  servername: tsa-production-1d01.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: tsa-production-1d01.up.railway.app
 - name: V2Get🛰️ 2026-08-29 15:11
   type: trojan
   server: 65.109.216.227
@@ -35,14 +51,6 @@ proxies:
     public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
     short-id: 86b80f1e713a33ad
 - name: V2Get🛰️ 2026-08-29 10:11
-  type: vless
-  server: 5.75.204.144
-  port: 56539
-  uuid: 18400e29-5f88-4ee6-8667-b0232e2b0274
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
   type: vless
   server: 204.10.194.82
   port: 56539
@@ -961,10 +969,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-29 15:12
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
   - 'V2Get🛰️ 2026-08-29 15:11 #5'
@@ -1040,10 +1048,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-29 15:12
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
   - 'V2Get🛰️ 2026-08-29 15:11 #5'
