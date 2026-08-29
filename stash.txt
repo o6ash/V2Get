@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-28 16:09
+  type: vless
+  server: am8.levikogjgfdd.ir
+  port: 443
+  uuid: 238bc88c-6f47-4622-9d6f-cab2ed76f098
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: frenchji.global.ssl.fastly.net.
+- name: V2Get🛰️ 2026-08-29 10:11
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d0ee468a-084b-411d-b2be-b886a61065d1
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-29 21:13
   type: vless
   server: www.speedtest.net
@@ -967,8 +1007,8 @@ proxies:
     public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
 - name: V2Get🛰️ 2026-08-29 18:14
   type: vless
-  server: 5.160.144.164
-  port: 5004
+  server: 5.160.144.167
+  port: 5002
   uuid: e18615f4-5942-4465-8ff0-76724ba2b232
   udp: true
   network: tcp
@@ -980,7 +1020,7 @@ proxies:
 - name: 'V2Get🛰️ 2026-08-29 18:14 #2'
   type: vless
   server: 5.57.38.183
-  port: 5003
+  port: 5002
   uuid: e18615f4-5942-4465-8ff0-76724ba2b232
   udp: true
   network: tcp
@@ -990,42 +1030,6 @@ proxies:
   - h2
   - ' http/1.1'
 - name: 'V2Get🛰️ 2026-08-29 18:14 #3'
-  type: vless
-  server: 185.215.231.57
-  port: 5003
-  uuid: e18615f4-5942-4465-8ff0-76724ba2b232
-  udp: true
-  network: tcp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - ' http/1.1'
-- name: 'V2Get🛰️ 2026-08-29 18:14 #4'
-  type: vless
-  server: 5.160.144.167
-  port: 5002
-  uuid: e18615f4-5942-4465-8ff0-76724ba2b232
-  udp: true
-  network: tcp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - ' http/1.1'
-- name: 'V2Get🛰️ 2026-08-29 18:14 #5'
-  type: vless
-  server: 5.57.38.183
-  port: 5002
-  uuid: e18615f4-5942-4465-8ff0-76724ba2b232
-  udp: true
-  network: tcp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - ' http/1.1'
-- name: 'V2Get🛰️ 2026-08-29 18:14 #6'
   type: vless
   server: 5.160.144.166
   port: 5002
@@ -1044,6 +1048,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-28 16:09
+  - V2Get🛰️ 2026-08-29 10:11
   - V2Get🛰️ 2026-08-29 21:13
   - 'V2Get🛰️ 2026-08-29 21:13 #2'
   - 'V2Get🛰️ 2026-08-29 21:13 #3'
@@ -1134,15 +1141,15 @@ proxy-groups:
   - V2Get🛰️ 2026-08-29 18:14
   - 'V2Get🛰️ 2026-08-29 18:14 #2'
   - 'V2Get🛰️ 2026-08-29 18:14 #3'
-  - 'V2Get🛰️ 2026-08-29 18:14 #4'
-  - 'V2Get🛰️ 2026-08-29 18:14 #5'
-  - 'V2Get🛰️ 2026-08-29 18:14 #6'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 21:05
+  - V2Get🛰️ 2026-08-28 16:09
+  - V2Get🛰️ 2026-08-29 10:11
   - V2Get🛰️ 2026-08-29 21:13
   - 'V2Get🛰️ 2026-08-29 21:13 #2'
   - 'V2Get🛰️ 2026-08-29 21:13 #3'
@@ -1233,9 +1240,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-29 18:14
   - 'V2Get🛰️ 2026-08-29 18:14 #2'
   - 'V2Get🛰️ 2026-08-29 18:14 #3'
-  - 'V2Get🛰️ 2026-08-29 18:14 #4'
-  - 'V2Get🛰️ 2026-08-29 18:14 #5'
-  - 'V2Get🛰️ 2026-08-29 18:14 #6'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
