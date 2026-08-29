@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 01:10
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  udp: true
+  network: grpc
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
+  grpc-opts:
+    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-08-29 11:11
   type: vless
   server: fr2.janusgate.org
@@ -1214,29 +1229,13 @@ proxies:
   reality-opts:
     public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
     short-id: ff776ff77be48b88
-- name: V2Get🛰️ 2026-08-29 03:11
-  type: vless
-  server: de-emergency-service.pavilof.ir
-  port: 443
-  uuid: a855c069-0173-4365-9a93-49e0fb3d3de1
-  udp: true
-  network: ws
-  tls: true
-  servername: de-emergency-service.pavilof.ir
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: de-emergency-service.pavilof.ir
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 12:11
   - V2Get🛰️ 2026-08-29 13:13
@@ -1336,13 +1335,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 09:10 #2'
   - V2Get🛰️ 2026-08-29 05:10
   - 'V2Get🛰️ 2026-08-29 05:10 #2'
-  - V2Get🛰️ 2026-08-29 03:11
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 12:11
   - V2Get🛰️ 2026-08-29 13:13
@@ -1442,7 +1441,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 09:10 #2'
   - V2Get🛰️ 2026-08-29 05:10
   - 'V2Get🛰️ 2026-08-29 05:10 #2'
-  - V2Get🛰️ 2026-08-29 03:11
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
