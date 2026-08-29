@@ -12,29 +12,39 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 10:06
-  type: vless
-  server: 31.128.37.67
-  port: 16560
-  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 31.76.85.162
+- name: V2Get🛰️ 2026-08-28 22:11
+  type: vmess
+  server: 130.185.122.177
   port: 443
-  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  uuid: f232d454-b014-4e00-a7ae-430341909db4
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 130.185.122.177
+- name: V2Get🛰️ 2026-08-29 13:12
+  type: vless
+  server: 130.185.122.177
+  port: 442
+  uuid: f232d454-b014-4e00-a7ae-430341909db4
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: nl2mp.tsumshop.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
-    short-id: c8c75aaf699259b4
-- name: V2Get🛰️ 2026-08-29 13:12
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-08-29 13:12 #2'
+  type: ss
+  server: 130.185.122.177
+  port: 25612
+  cipher: 2022-blake3-aes-256-gcm
+  password: kINOUEf3Bs0Huj3M2+GSsu1P2XtinbkJsVVCh8hgoUU=:5h/qZThiE7du1mvxVwSeRs0FgQsTVyijiO65kVfVd/o=
+  udp: true
+- name: 'V2Get🛰️ 2026-08-29 13:12 #3'
   type: vless
   server: ip1.berzema.ir
   port: 6806
@@ -46,7 +56,7 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-- name: 'V2Get🛰️ 2026-08-29 13:12 #2'
+- name: 'V2Get🛰️ 2026-08-29 13:12 #4'
   type: vless
   server: fr.sanzivo.ir
   port: 6800
@@ -58,7 +68,7 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
-- name: 'V2Get🛰️ 2026-08-29 13:12 #3'
+- name: 'V2Get🛰️ 2026-08-29 13:12 #5'
   type: vless
   server: gg1.qorvantis.ir
   port: 8443
@@ -72,7 +82,7 @@ proxies:
   reality-opts:
     public-key: j3DcVttvQ0uaBPOrLPFmIYNiAHIEJsXIIj2_9ClEr3c
     short-id: 2211fcb527a30c2d
-- name: 'V2Get🛰️ 2026-08-29 13:12 #4'
+- name: 'V2Get🛰️ 2026-08-29 13:12 #6'
   type: vless
   server: gr5.qorvantis.ir
   port: 1007
@@ -80,7 +90,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 13:12 #5'
+- name: 'V2Get🛰️ 2026-08-29 13:12 #7'
   type: ss
   server: t0nel-az.zentharix.ir
   port: 17605
@@ -1250,32 +1260,20 @@ proxies:
     path: /
     headers:
       Host: de-emergency-service.pavilof.ir
-- name: 'V2Get🛰️ 2026-08-29 03:11 #9'
-  type: vless
-  server: trpsg1.horlutr.ir
-  port: 443
-  uuid: bd3d4554-da1d-4444-ac98-1c03188fee1c
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 66dpWU20E9ZIADNDbvbtAnfLnYKxZ1cgrEWiqXq4HD8
-    short-id: 3e236023b1e6aa2a
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 10:06
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-28 22:11
   - V2Get🛰️ 2026-08-29 13:12
   - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - 'V2Get🛰️ 2026-08-29 13:12 #3'
   - 'V2Get🛰️ 2026-08-29 13:12 #4'
   - 'V2Get🛰️ 2026-08-29 13:12 #5'
+  - 'V2Get🛰️ 2026-08-29 13:12 #6'
+  - 'V2Get🛰️ 2026-08-29 13:12 #7'
   - V2Get🛰️ 2026-08-29 13:11
   - 'V2Get🛰️ 2026-08-29 13:11 #2'
   - V2Get🛰️ 2026-08-29 11:11
@@ -1368,20 +1366,20 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #6'
   - 'V2Get🛰️ 2026-08-29 03:11 #7'
   - 'V2Get🛰️ 2026-08-29 03:11 #8'
-  - 'V2Get🛰️ 2026-08-29 03:11 #9'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 10:06
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-28 22:11
   - V2Get🛰️ 2026-08-29 13:12
   - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - 'V2Get🛰️ 2026-08-29 13:12 #3'
   - 'V2Get🛰️ 2026-08-29 13:12 #4'
   - 'V2Get🛰️ 2026-08-29 13:12 #5'
+  - 'V2Get🛰️ 2026-08-29 13:12 #6'
+  - 'V2Get🛰️ 2026-08-29 13:12 #7'
   - V2Get🛰️ 2026-08-29 13:11
   - 'V2Get🛰️ 2026-08-29 13:11 #2'
   - V2Get🛰️ 2026-08-29 11:11
@@ -1474,7 +1472,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #6'
   - 'V2Get🛰️ 2026-08-29 03:11 #7'
   - 'V2Get🛰️ 2026-08-29 03:11 #8'
-  - 'V2Get🛰️ 2026-08-29 03:11 #9'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
