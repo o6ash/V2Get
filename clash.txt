@@ -12,6 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 10:06
+  type: vless
+  server: 31.128.37.67
+  port: 16560
+  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-27 15:07
+  type: vless
+  server: 31.76.85.162
+  port: 443
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl2mp.tsumshop.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
+    short-id: c8c75aaf699259b4
+- name: V2Get🛰️ 2026-08-29 13:12
+  type: vless
+  server: ip1.berzema.ir
+  port: 6806
+  uuid: 0b0f1f7b-d005-4765-939f-9a2f6a2f3d85
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
 - name: V2Get🛰️ 2026-08-29 14:13
   type: vless
   server: 144.31.242.69
@@ -34,7 +68,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-29 13:12
+- name: 'V2Get🛰️ 2026-08-29 13:12 #2'
   type: vless
   server: 31.76.62.223
   port: 443
@@ -64,18 +98,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 13:12 #2'
-  type: vless
-  server: ip1.berzema.ir
-  port: 6806
-  uuid: 0b0f1f7b-d005-4765-939f-9a2f6a2f3d85
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
 - name: V2Get🛰️ 2026-08-29 14:11
   type: vless
   server: usa-emergency-service.relqino.ir
@@ -1182,14 +1204,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
-  type: vless
-  server: 153.75.87.192
-  port: 110
-  uuid: 11992f2b-181b-403a-9521-813fcd7927a8
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 11:11 #5'
   type: vless
   server: 199.232.78.159
@@ -1249,25 +1263,20 @@ proxies:
     path: /vl-ws
     headers:
       Host: stanngv2-production-31f9.up.railway.app
-- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
-  type: ss
-  server: 129.151.82.158
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MLVcvtR/UBSlUEC3IwyukwjvKvvRvw9x6Op6LVBX0GA=
-  udp: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 14:13
   - 'V2Get🛰️ 2026-08-29 14:13 #2'
-  - V2Get🛰️ 2026-08-29 13:12
+  - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - V2Get🛰️ 2026-08-29 14:12
   - 'V2Get🛰️ 2026-08-29 14:12 #2'
-  - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - V2Get🛰️ 2026-08-29 14:11
   - 'V2Get🛰️ 2026-08-29 14:11 #2'
   - 'V2Get🛰️ 2026-08-29 14:11 #3'
@@ -1355,25 +1364,25 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 11:12 #21'
   - 'V2Get🛰️ 2026-08-29 11:12 #22'
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - 'V2Get🛰️ 2026-08-29 11:11 #7'
   - 'V2Get🛰️ 2026-08-29 11:11 #8'
   - 'V2Get🛰️ 2026-08-29 11:11 #9'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 14:13
   - 'V2Get🛰️ 2026-08-29 14:13 #2'
-  - V2Get🛰️ 2026-08-29 13:12
+  - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - V2Get🛰️ 2026-08-29 14:12
   - 'V2Get🛰️ 2026-08-29 14:12 #2'
-  - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - V2Get🛰️ 2026-08-29 14:11
   - 'V2Get🛰️ 2026-08-29 14:11 #2'
   - 'V2Get🛰️ 2026-08-29 14:11 #3'
@@ -1461,13 +1470,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 11:12 #21'
   - 'V2Get🛰️ 2026-08-29 11:12 #22'
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - 'V2Get🛰️ 2026-08-29 11:11 #7'
   - 'V2Get🛰️ 2026-08-29 11:11 #8'
   - 'V2Get🛰️ 2026-08-29 11:11 #9'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
