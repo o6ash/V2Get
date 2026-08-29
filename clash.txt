@@ -12,56 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 11:50
+- name: V2Get🛰️ 2026-08-26 13:05
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 45.136.126.70
+  port: 8443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
   network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-26 20:06
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.google.com
+  reality-opts:
+    public-key: 6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M
+    short-id: 67933d8be5b42f78
+- name: V2Get🛰️ 2026-08-29 01:10
   type: vless
-  server: 31.76.91.72
-  port: 2087
-  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
   udp: true
   network: grpc
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  servername: mold.speedload.online
+  client-fingerprint: firefox
   reality-opts:
-    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
-    short-id: c226283c4de5b1ad
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
   grpc-opts:
     grpc-service-name: grpc
 - name: V2Get🛰️ 2026-08-29 10:11
   type: vless
-  server: 204.10.194.82
+  server: 5.75.204.144
   port: 56539
-  uuid: 5cca99cd-f02d-4379-b5c3-27df6dd16a01
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
-  type: vless
-  server: 38.128.251.24
-  port: 56539
-  uuid: cb183c14-e094-40d5-8519-72933fc74cc9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
+  uuid: 18400e29-5f88-4ee6-8667-b0232e2b0274
   udp: true
   network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.100
+  server: 213.130.137.200
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -74,7 +63,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
-  server: 213.130.137.30
+  server: 213.130.137.190
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -87,7 +76,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
-  server: panel.freesavesafe.com
+  server: 213.130.137.160
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -98,6 +87,46 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #4'
+  type: vless
+  server: 213.130.137.40
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
+  type: vless
+  server: 213.130.137.80
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-30 00:13
+  type: vless
+  server: 172.235.43.210
+  port: 53957
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
 - name: V2Get🛰️ 2026-08-29 23:12
   type: vless
   server: 72.56.40.152
@@ -790,14 +819,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-08-29 20:12 #4'
   type: vless
   server: lonm.milkabebar.ir
-  port: 38479
-  uuid: b503cf10-779d-4faa-b97c-72d457a94967
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #5'
-  type: vless
-  server: lonm.milkabebar.ir
   port: 10694
   uuid: b503cf10-779d-4faa-b97c-72d457a94967
   udp: true
@@ -808,9 +829,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #6'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #5'
   type: vless
   server: grg1.milkabebar.ir
+  port: 38479
+  uuid: b503cf10-779d-4faa-b97c-72d457a94967
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 20:12 #6'
+  type: vless
+  server: grs1.milkabebar.ir
   port: 38479
   uuid: b503cf10-779d-4faa-b97c-72d457a94967
   udp: true
@@ -819,14 +848,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-08-29 20:12 #7'
   type: vless
   server: grs1.milkabebar.ir
-  port: 38479
-  uuid: b503cf10-779d-4faa-b97c-72d457a94967
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #8'
-  type: vless
-  server: grs1.milkabebar.ir
   port: 10694
   uuid: b503cf10-779d-4faa-b97c-72d457a94967
   udp: true
@@ -837,7 +858,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #9'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #8'
   type: vless
   server: it2.milkabebar.ir
   port: 38479
@@ -845,9 +866,17 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #10'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #9'
   type: vless
   server: am1.milkabebar.ir
+  port: 38479
+  uuid: fed793ec-13d4-4976-ba89-49512354308a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 20:12 #10'
+  type: vless
+  server: spt2.milkabebar.ir
   port: 38479
   uuid: fed793ec-13d4-4976-ba89-49512354308a
   udp: true
@@ -856,14 +885,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-08-29 20:12 #11'
   type: vless
   server: spt2.milkabebar.ir
-  port: 38479
-  uuid: fed793ec-13d4-4976-ba89-49512354308a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #12'
-  type: vless
-  server: spt2.milkabebar.ir
   port: 10694
   uuid: fed793ec-13d4-4976-ba89-49512354308a
   udp: true
@@ -874,17 +895,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #12'
+  type: vless
+  server: fan3.milkabebar.ir
+  port: 38479
+  uuid: fed793ec-13d4-4976-ba89-49512354308a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #13'
   type: vless
   server: fan3.milkabebar.ir
-  port: 38479
-  uuid: fed793ec-13d4-4976-ba89-49512354308a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #14'
-  type: vless
-  server: fan3.milkabebar.ir
   port: 10694
   uuid: fed793ec-13d4-4976-ba89-49512354308a
   udp: true
@@ -895,17 +916,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #14'
+  type: vless
+  server: lonm.milkabebar.ir
+  port: 38479
+  uuid: fed793ec-13d4-4976-ba89-49512354308a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #15'
   type: vless
   server: lonm.milkabebar.ir
-  port: 38479
-  uuid: fed793ec-13d4-4976-ba89-49512354308a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #16'
-  type: vless
-  server: lonm.milkabebar.ir
   port: 10694
   uuid: fed793ec-13d4-4976-ba89-49512354308a
   udp: true
@@ -916,17 +937,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #16'
+  type: vless
+  server: grg1.milkabebar.ir
+  port: 38479
+  uuid: fed793ec-13d4-4976-ba89-49512354308a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #17'
   type: vless
   server: grg1.milkabebar.ir
-  port: 38479
-  uuid: fed793ec-13d4-4976-ba89-49512354308a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #18'
-  type: vless
-  server: grg1.milkabebar.ir
   port: 10694
   uuid: fed793ec-13d4-4976-ba89-49512354308a
   udp: true
@@ -937,7 +958,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #19'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #18'
   type: vless
   server: am1.milkabebar.ir
   port: 38479
@@ -945,7 +966,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #20'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #19'
   type: vless
   server: usa2.milkabebar.ir
   port: 10694
@@ -958,17 +979,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #20'
+  type: vless
+  server: spt2.milkabebar.ir
+  port: 38479
+  uuid: c5195119-4bdc-4889-862d-56232bc579de
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #21'
   type: vless
   server: spt2.milkabebar.ir
-  port: 38479
-  uuid: c5195119-4bdc-4889-862d-56232bc579de
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #22'
-  type: vless
-  server: spt2.milkabebar.ir
   port: 10694
   uuid: c5195119-4bdc-4889-862d-56232bc579de
   udp: true
@@ -979,17 +1000,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #22'
+  type: vless
+  server: fan3.milkabebar.ir
+  port: 38479
+  uuid: c5195119-4bdc-4889-862d-56232bc579de
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #23'
   type: vless
   server: fan3.milkabebar.ir
-  port: 38479
-  uuid: c5195119-4bdc-4889-862d-56232bc579de
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #24'
-  type: vless
-  server: fan3.milkabebar.ir
   port: 10694
   uuid: c5195119-4bdc-4889-862d-56232bc579de
   udp: true
@@ -1000,17 +1021,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #24'
+  type: vless
+  server: lonm.milkabebar.ir
+  port: 38479
+  uuid: c5195119-4bdc-4889-862d-56232bc579de
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #25'
   type: vless
   server: lonm.milkabebar.ir
-  port: 38479
-  uuid: c5195119-4bdc-4889-862d-56232bc579de
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #26'
-  type: vless
-  server: lonm.milkabebar.ir
   port: 10694
   uuid: c5195119-4bdc-4889-862d-56232bc579de
   udp: true
@@ -1021,7 +1042,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #27'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #26'
   type: vless
   server: grg1.milkabebar.ir
   port: 38479
@@ -1029,7 +1050,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #28'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #27'
   type: vless
   server: grg1.milkabebar.ir
   port: 10694
@@ -1042,7 +1063,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #29'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #28'
   type: vless
   server: am1.milkabebar.ir
   port: 38479
@@ -1050,7 +1071,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #30'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #29'
   type: vless
   server: usa2.milkabebar.ir
   port: 10694
@@ -1063,7 +1084,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #31'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #30'
   type: vless
   server: spt2.milkabebar.ir
   port: 38479
@@ -1071,7 +1092,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #32'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #31'
   type: vless
   server: spt2.milkabebar.ir
   port: 10694
@@ -1084,17 +1105,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #32'
+  type: vless
+  server: fan3.milkabebar.ir
+  port: 38479
+  uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #33'
   type: vless
   server: fan3.milkabebar.ir
-  port: 38479
-  uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #34'
-  type: vless
-  server: fan3.milkabebar.ir
   port: 10694
   uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
   udp: true
@@ -1105,17 +1126,17 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
+- name: 'V2Get🛰️ 2026-08-29 20:12 #34'
+  type: vless
+  server: lonm.milkabebar.ir
+  port: 38479
+  uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 20:12 #35'
   type: vless
   server: lonm.milkabebar.ir
-  port: 38479
-  uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #36'
-  type: vless
-  server: lonm.milkabebar.ir
   port: 10694
   uuid: 1cdf3076-d0df-4061-ae44-31ad8c522705
   udp: true
@@ -1126,7 +1147,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 20:12 #37'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #36'
   type: vless
   server: grs1.milkabebar.ir
   port: 38479
@@ -1134,7 +1155,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 20:12 #38'
+- name: 'V2Get🛰️ 2026-08-29 20:12 #37'
   type: vless
   server: grg1.milkabebar.ir
   port: 10694
@@ -1153,14 +1174,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 11:50
-  - V2Get🛰️ 2026-08-26 20:06
+  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - 'V2Get🛰️ 2026-08-29 15:11 #5'
+  - V2Get🛰️ 2026-08-30 00:13
   - V2Get🛰️ 2026-08-29 23:12
   - V2Get🛰️ 2026-08-30 00:12
   - 'V2Get🛰️ 2026-08-30 00:12 #2'
@@ -1249,21 +1271,21 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 20:12 #35'
   - 'V2Get🛰️ 2026-08-29 20:12 #36'
   - 'V2Get🛰️ 2026-08-29 20:12 #37'
-  - 'V2Get🛰️ 2026-08-29 20:12 #38'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 11:50
-  - V2Get🛰️ 2026-08-26 20:06
+  - V2Get🛰️ 2026-08-26 13:05
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - 'V2Get🛰️ 2026-08-29 15:11 #5'
+  - V2Get🛰️ 2026-08-30 00:13
   - V2Get🛰️ 2026-08-29 23:12
   - V2Get🛰️ 2026-08-30 00:12
   - 'V2Get🛰️ 2026-08-30 00:12 #2'
@@ -1352,7 +1374,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 20:12 #35'
   - 'V2Get🛰️ 2026-08-29 20:12 #36'
   - 'V2Get🛰️ 2026-08-29 20:12 #37'
-  - 'V2Get🛰️ 2026-08-29 20:12 #38'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
