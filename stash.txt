@@ -12,6 +12,52 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 13:12
+  type: vless
+  server: ip1.berzema.ir
+  port: 6806
+  uuid: 0b0f1f7b-d005-4765-939f-9a2f6a2f3d85
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+- name: 'V2Get🛰️ 2026-08-29 13:12 #2'
+  type: vless
+  server: fr.sanzivo.ir
+  port: 6800
+  uuid: 0b0f1f7b-d005-4765-939f-9a2f6a2f3d85
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+- name: 'V2Get🛰️ 2026-08-29 13:12 #3'
+  type: vless
+  server: gg1.qorvantis.ir
+  port: 8443
+  uuid: b282d415-9227-460f-8d7c-6e7024b22a83
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: j3DcVttvQ0uaBPOrLPFmIYNiAHIEJsXIIj2_9ClEr3c
+    short-id: 2211fcb527a30c2d
+- name: 'V2Get🛰️ 2026-08-29 13:12 #4'
+  type: vless
+  server: gr5.qorvantis.ir
+  port: 1007
+  uuid: b282d415-9227-460f-8d7c-6e7024b22a83
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 13:11
   type: vless
   server: 104.25.166.251
@@ -1168,52 +1214,16 @@ proxies:
   reality-opts:
     public-key: 66dpWU20E9ZIADNDbvbtAnfLnYKxZ1cgrEWiqXq4HD8
     short-id: 3e236023b1e6aa2a
-- name: 'V2Get🛰️ 2026-08-29 03:11 #10'
-  type: vless
-  server: itpsg.horlutr.ir
-  port: 443
-  uuid: bd3d4554-da1d-4444-ac98-1c03188fee1c
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 66dpWU20E9ZIADNDbvbtAnfLnYKxZ1cgrEWiqXq4HD8
-    short-id: 3e236023b1e6aa2a
-- name: V2Get🛰️ 2026-08-29 03:10
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-- name: V2Get🛰️ 2026-08-29 01:10
-  type: vless
-  server: 142.93.171.28
-  port: 8880
-  uuid: 603819a3-dd65-408a-abab-15d8dc49887f
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 01:10 #2'
-  type: vless
-  server: 142.93.107.234
-  port: 443
-  uuid: 603819a3-dd65-408a-abab-15d8dc49887f
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-29 13:12
+  - 'V2Get🛰️ 2026-08-29 13:12 #2'
+  - 'V2Get🛰️ 2026-08-29 13:12 #3'
+  - 'V2Get🛰️ 2026-08-29 13:12 #4'
   - V2Get🛰️ 2026-08-29 13:11
   - 'V2Get🛰️ 2026-08-29 13:11 #2'
   - V2Get🛰️ 2026-08-29 11:11
@@ -1305,16 +1315,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #7'
   - 'V2Get🛰️ 2026-08-29 03:11 #8'
   - 'V2Get🛰️ 2026-08-29 03:11 #9'
-  - 'V2Get🛰️ 2026-08-29 03:11 #10'
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-29 01:10
-  - 'V2Get🛰️ 2026-08-29 01:10 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-29 13:12
+  - 'V2Get🛰️ 2026-08-29 13:12 #2'
+  - 'V2Get🛰️ 2026-08-29 13:12 #3'
+  - 'V2Get🛰️ 2026-08-29 13:12 #4'
   - V2Get🛰️ 2026-08-29 13:11
   - 'V2Get🛰️ 2026-08-29 13:11 #2'
   - V2Get🛰️ 2026-08-29 11:11
@@ -1406,10 +1416,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #7'
   - 'V2Get🛰️ 2026-08-29 03:11 #8'
   - 'V2Get🛰️ 2026-08-29 03:11 #9'
-  - 'V2Get🛰️ 2026-08-29 03:11 #10'
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-29 01:10
-  - 'V2Get🛰️ 2026-08-29 01:10 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
