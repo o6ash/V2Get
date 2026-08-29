@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-26 21:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-29 15:13
   type: vless
   server: tsa-production-6a05.up.railway.app
@@ -28,14 +41,6 @@ proxies:
     path: /vl-ws
     headers:
       Host: tsa-production-6a05.up.railway.app
-- name: V2Get🛰️ 2026-08-29 11:11
-  type: vless
-  server: lonm.milkabebar.ir
-  port: 38479
-  uuid: ac6e6f37-723f-46b7-8bcf-150cd6903b4c
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 11:12
   type: vless
   server: grt1.milkabebar.ir
@@ -922,8 +927,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-29 15:13
-  - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 11:12
   - 'V2Get🛰️ 2026-08-29 11:12 #2'
   - 'V2Get🛰️ 2026-08-29 11:12 #3'
@@ -1000,8 +1005,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-26 21:05
   - V2Get🛰️ 2026-08-29 15:13
-  - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 11:12
   - 'V2Get🛰️ 2026-08-29 11:12 #2'
   - 'V2Get🛰️ 2026-08-29 11:12 #3'
