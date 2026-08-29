@@ -12,18 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-08-29 00:10
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 104.21.54.6
+  port: 2052
+  uuid: fbfd81d5-5218-4365-89c2-823ae7db7bae
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-29 13:11
+  type: trojan
+  server: 169.40.32.135
+  port: 53
+  password: AgL6obAVRC
+  udp: true
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-29 12:12
+  type: vless
+  server: 45.151.74.209
+  port: 8443
+  uuid: c7ae1368-b6ca-4d11-beef-bb76f68d1b80
   udp: true
   network: xhttp
   tls: true
-  servername: static.lotussec.com
+  servername: dl.google.com
   client-fingerprint: firefox
-  alpn:
-  - h2
+  reality-opts:
+    public-key: VrBVCP2ZeR-D41K9BmaAiMyzWHUAj2N2uHLGVpJv3z0
+    short-id: c72a5c4a1022f3c9
 - name: V2Get🛰️ 2026-08-29 01:10
   type: vless
   server: 144.31.1.201
@@ -39,58 +55,14 @@ proxies:
     short-id: 6b2f4e6ac9b1d2f0
   grpc-opts:
     grpc-service-name: grpc
-- name: V2Get🛰️ 2026-08-29 10:11
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 5cca99cd-f02d-4379-b5c3-27df6dd16a01
+- name: V2Get🛰️ 2026-08-29 12:11
+  type: trojan
+  server: 65.109.216.227
+  port: 18399
+  password: '@Cooonfig@Cooonfig'
   udp: true
-  network: tcp
+  sni: play.google.com
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
-  type: vless
-  server: 38.128.251.24
-  port: 56539
-  uuid: cb183c14-e094-40d5-8519-72933fc74cc9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
-  type: vless
-  server: 5.75.204.144
-  port: 56539
-  uuid: 18400e29-5f88-4ee6-8667-b0232e2b0274
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #4'
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-28 22:11
-  type: ss
-  server: 4.231.221.11
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: yI1ivWgzRqPnR6FE
-  udp: true
-- name: V2Get🛰️ 2026-08-29 12:12
-  type: vless
-  server: 45.151.74.209
-  port: 8443
-  uuid: c7ae1368-b6ca-4d11-beef-bb76f68d1b80
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: VrBVCP2ZeR-D41K9BmaAiMyzWHUAj2N2uHLGVpJv3z0
-    short-id: c72a5c4a1022f3c9
 - name: 'V2Get🛰️ 2026-08-29 12:12 #2'
   type: vless
   server: usa.selqora.ir
@@ -160,7 +132,39 @@ proxies:
   reality-opts:
     public-key: XhfHr5VYPbNs6BrrsYc7Wd6-D2nJAO8QrixRuJarFkU
     short-id: c7158ef32c1d2a7e
-- name: V2Get🛰️ 2026-08-29 12:11
+- name: V2Get🛰️ 2026-08-29 10:11
+  type: vless
+  server: 204.10.194.82
+  port: 56539
+  uuid: 5cca99cd-f02d-4379-b5c3-27df6dd16a01
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
+  type: vless
+  server: 38.128.251.24
+  port: 56539
+  uuid: cb183c14-e094-40d5-8519-72933fc74cc9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
+  type: vless
+  server: 5.75.204.144
+  port: 56539
+  uuid: 18400e29-5f88-4ee6-8667-b0232e2b0274
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 10:11 #4'
+  type: vless
+  server: 204.10.194.82
+  port: 56539
+  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 12:11 #2'
   type: vless
   server: hayabusa.proxy.rlwy.net
   port: 46167
@@ -170,7 +174,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-08-29 12:11 #2'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #3'
   type: vless
   server: 153.75.87.192
   port: 110
@@ -178,7 +182,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 12:11 #3'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #4'
   type: vless
   server: emirates-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -191,7 +195,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #4'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #5'
   type: vless
   server: unitedstates-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -204,7 +208,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #5'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #6'
   type: vless
   server: albania-sgood.wopd.butnorwa.butter.whooisthebest.ir
   port: 10000
@@ -217,7 +221,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #6'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #7'
   type: vless
   server: ukraine-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -230,7 +234,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #7'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #8'
   type: vless
   server: turkey-sgood.wopd.butnorwa.butter.whooisthebest.ir
   port: 10000
@@ -243,7 +247,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #8'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #9'
   type: vless
   server: finland-sgood.wopd.butnorwa.butter.silicore.ir
   port: 9000
@@ -256,7 +260,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #9'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #10'
   type: vless
   server: poland-sgood.wopd.butnorwa.butter.silicore.ir
   port: 9000
@@ -269,7 +273,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #10'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #11'
   type: vless
   server: netherland2-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -282,7 +286,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #11'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #12'
   type: vless
   server: netherland-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -295,7 +299,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #12'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #13'
   type: vless
   server: unitedkingdom-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -308,7 +312,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #13'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #14'
   type: vless
   server: france-sgood.wopd.butnorwa.butter.silicore.ir
   port: 10000
@@ -321,7 +325,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #14'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #15'
   type: vless
   server: germany2-sgood.wopd.butnorwa.butter.whooisthebest.ir
   port: 10000
@@ -334,7 +338,7 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #15'
+- name: 'V2Get🛰️ 2026-08-29 12:11 #16'
   type: vless
   server: germany-sgood.wopd.butnorwa.butter.whooisthebest.ir
   port: 10000
@@ -347,14 +351,6 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: 'V2Get🛰️ 2026-08-29 12:11 #16'
-  type: trojan
-  server: 65.109.216.227
-  port: 18399
-  password: '@Cooonfig@Cooonfig'
-  udp: true
-  sni: play.google.com
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 11:11
   type: vless
   server: v2.lock1.app
@@ -1233,21 +1229,21 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-29 01:10
-  - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
-  - 'V2Get🛰️ 2026-08-29 10:11 #4'
-  - V2Get🛰️ 2026-08-28 22:11
+  - V2Get🛰️ 2026-08-29 00:10
+  - V2Get🛰️ 2026-08-29 13:11
   - V2Get🛰️ 2026-08-29 12:12
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-29 12:11
   - 'V2Get🛰️ 2026-08-29 12:12 #2'
   - 'V2Get🛰️ 2026-08-29 12:12 #3'
   - 'V2Get🛰️ 2026-08-29 12:12 #4'
   - 'V2Get🛰️ 2026-08-29 12:12 #5'
   - 'V2Get🛰️ 2026-08-29 12:12 #6'
   - 'V2Get🛰️ 2026-08-29 12:12 #7'
-  - V2Get🛰️ 2026-08-29 12:11
+  - V2Get🛰️ 2026-08-29 10:11
+  - 'V2Get🛰️ 2026-08-29 10:11 #2'
+  - 'V2Get🛰️ 2026-08-29 10:11 #3'
+  - 'V2Get🛰️ 2026-08-29 10:11 #4'
   - 'V2Get🛰️ 2026-08-29 12:11 #2'
   - 'V2Get🛰️ 2026-08-29 12:11 #3'
   - 'V2Get🛰️ 2026-08-29 12:11 #4'
@@ -1338,21 +1334,21 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-29 01:10
-  - V2Get🛰️ 2026-08-29 10:11
-  - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
-  - 'V2Get🛰️ 2026-08-29 10:11 #4'
-  - V2Get🛰️ 2026-08-28 22:11
+  - V2Get🛰️ 2026-08-29 00:10
+  - V2Get🛰️ 2026-08-29 13:11
   - V2Get🛰️ 2026-08-29 12:12
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-29 12:11
   - 'V2Get🛰️ 2026-08-29 12:12 #2'
   - 'V2Get🛰️ 2026-08-29 12:12 #3'
   - 'V2Get🛰️ 2026-08-29 12:12 #4'
   - 'V2Get🛰️ 2026-08-29 12:12 #5'
   - 'V2Get🛰️ 2026-08-29 12:12 #6'
   - 'V2Get🛰️ 2026-08-29 12:12 #7'
-  - V2Get🛰️ 2026-08-29 12:11
+  - V2Get🛰️ 2026-08-29 10:11
+  - 'V2Get🛰️ 2026-08-29 10:11 #2'
+  - 'V2Get🛰️ 2026-08-29 10:11 #3'
+  - 'V2Get🛰️ 2026-08-29 10:11 #4'
   - 'V2Get🛰️ 2026-08-29 12:11 #2'
   - 'V2Get🛰️ 2026-08-29 12:11 #3'
   - 'V2Get🛰️ 2026-08-29 12:11 #4'
