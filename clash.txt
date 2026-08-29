@@ -12,24 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 01:10
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+- name: V2Get🛰️ 2026-08-19 23:10
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-  network: grpc
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: 6b2f4e6ac9b1d2f0
-  grpc-opts:
-    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.90
+  server: 213.130.137.150
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -42,7 +34,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
-  server: 213.130.137.180
+  server: 213.130.137.60
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -53,6 +45,25 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-29 21:13
+  type: vless
+  server: 3.11.188.198
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-29 21:12
+  type: vless
+  server: 62.238.50.19
+  port: 44328
+  uuid: 0971f6ed-9881-45f4-9cf9-eedd2526aab6
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
 - name: V2Get🛰️ 2026-08-29 19:12
   type: ss
   server: Istanbul.morteza1388m1122.ir
@@ -85,19 +96,6 @@ proxies:
     grpc-service-name: edge.v2.FeedService
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
-  server: 213.130.137.110
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #4'
-  type: vless
   server: 213.130.137.20
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
@@ -109,7 +107,7 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
-- name: V2Get🛰️ 2026-08-29 21:12
+- name: 'V2Get🛰️ 2026-08-29 21:12 #2'
   type: vless
   server: 45.133.210.83
   port: 443
@@ -123,17 +121,6 @@ proxies:
   reality-opts:
     public-key: cttKOS1BlF-u-mvX63PWNPJK6W_RXfx1wo8yjBEt1hI
     short-id: a2eb8d694a5480ff
-- name: 'V2Get🛰️ 2026-08-29 21:12 #2'
-  type: vless
-  server: 62.238.50.19
-  port: 44328
-  uuid: 0971f6ed-9881-45f4-9cf9-eedd2526aab6
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: 'V2Get🛰️ 2026-08-29 21:12 #3'
   type: vless
   server: 150.129.10.119
@@ -1097,15 +1084,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-19 23:10
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 21:13
+  - V2Get🛰️ 2026-08-29 21:12
   - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 18:13
   - V2Get🛰️ 2026-08-29 20:12
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
-  - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 21:12 #2'
   - 'V2Get🛰️ 2026-08-29 21:12 #3'
   - V2Get🛰️ 2026-08-29 20:13
@@ -1202,15 +1189,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-19 23:10
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 21:13
+  - V2Get🛰️ 2026-08-29 21:12
   - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 18:13
   - V2Get🛰️ 2026-08-29 20:12
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
-  - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 21:12 #2'
   - 'V2Get🛰️ 2026-08-29 21:12 #3'
   - V2Get🛰️ 2026-08-29 20:13
