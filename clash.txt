@@ -12,23 +12,72 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-28 23:10
+- name: V2Get🛰️ 2026-08-27 10:06
   type: vless
-  server: 82.40.62.229
-  port: 443
-  uuid: 5bfc6650-8b56-0012-b0e9-b98fc6367c0d
+  server: 212.87.199.76
+  port: 2053
+  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: v-grpc
   tls: true
-  servername: auto.api-yandex.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo
-    short-id: 0f4dacffd272e65f
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.160
+  server: 213.130.137.90
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
+  type: vless
+  server: 213.130.137.180
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #3'
+  type: vless
+  server: 213.130.137.200
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #4'
+  type: vless
+  server: 213.130.137.10
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
+  type: vless
+  server: 213.130.137.70
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -183,58 +232,6 @@ proxies:
   reality-opts:
     public-key: lzAsZbFKsDtyUqGG4ShxyK5fbUuQrsoEMohG1Xg3KRM
     short-id: 4994a3ebb255ebc9
-- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
-  type: vless
-  server: 213.130.137.140
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #3'
-  type: vless
-  server: 213.130.137.40
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #4'
-  type: vless
-  server: 213.130.137.60
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
-  type: vless
-  server: 213.130.137.30
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #6'
   type: vless
   server: panel.freesavesafe.com
@@ -1164,8 +1161,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-28 23:10
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
@@ -1177,10 +1178,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 23:13 #6'
   - 'V2Get🛰️ 2026-08-29 23:13 #7'
   - V2Get🛰️ 2026-08-29 23:12
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
-  - 'V2Get🛰️ 2026-08-29 15:11 #3'
-  - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - 'V2Get🛰️ 2026-08-29 15:11 #6'
   - V2Get🛰️ 2026-08-29 18:14
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
@@ -1267,8 +1264,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-28 23:10
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
@@ -1280,10 +1281,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 23:13 #6'
   - 'V2Get🛰️ 2026-08-29 23:13 #7'
   - V2Get🛰️ 2026-08-29 23:12
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
-  - 'V2Get🛰️ 2026-08-29 15:11 #3'
-  - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - 'V2Get🛰️ 2026-08-29 15:11 #6'
   - V2Get🛰️ 2026-08-29 18:14
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
