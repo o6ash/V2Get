@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-29 14:13
   type: vless
+  server: 144.31.242.69
+  port: 443
+  uuid: 34305560-ccd1-4466-bbff-09e606f4bc90
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dk1.hat.onl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
+    short-id: 76132b3b39704c44
+- name: 'V2Get🛰️ 2026-08-29 14:13 #2'
+  type: vless
   server: 82.40.62.120
   port: 7071
   uuid: 618e85ea-737b-568e-95b4-a1bd0aaf343d
@@ -580,14 +594,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-29 10:11
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-29 12:11 #2'
   type: vless
   server: hayabusa.proxy.rlwy.net
@@ -1168,7 +1174,7 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
+- name: V2Get🛰️ 2026-08-29 10:11
   type: vless
   server: 91.228.227.112
   port: 8080
@@ -1176,7 +1182,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
+- name: 'V2Get🛰️ 2026-08-29 10:11 #2'
   type: vless
   server: 153.75.87.192
   port: 110
@@ -1243,7 +1249,7 @@ proxies:
     path: /vl-ws
     headers:
       Host: stanngv2-production-31f9.up.railway.app
-- name: 'V2Get🛰️ 2026-08-29 10:11 #4'
+- name: 'V2Get🛰️ 2026-08-29 10:11 #3'
   type: ss
   server: 129.151.82.158
   port: 61312
@@ -1257,6 +1263,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-29 14:13
+  - 'V2Get🛰️ 2026-08-29 14:13 #2'
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 14:12
   - 'V2Get🛰️ 2026-08-29 14:12 #2'
@@ -1302,7 +1309,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 13:11 #8'
   - 'V2Get🛰️ 2026-08-29 13:11 #9'
   - 'V2Get🛰️ 2026-08-29 12:12 #7'
-  - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 12:11 #2'
   - 'V2Get🛰️ 2026-08-29 12:11 #3'
   - 'V2Get🛰️ 2026-08-29 12:11 #4'
@@ -1348,14 +1354,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 11:12 #20'
   - 'V2Get🛰️ 2026-08-29 11:12 #21'
   - 'V2Get🛰️ 2026-08-29 11:12 #22'
+  - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - 'V2Get🛰️ 2026-08-29 11:11 #7'
   - 'V2Get🛰️ 2026-08-29 11:11 #8'
   - 'V2Get🛰️ 2026-08-29 11:11 #9'
-  - 'V2Get🛰️ 2026-08-29 10:11 #4'
+  - 'V2Get🛰️ 2026-08-29 10:11 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1363,6 +1369,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-29 14:13
+  - 'V2Get🛰️ 2026-08-29 14:13 #2'
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 14:12
   - 'V2Get🛰️ 2026-08-29 14:12 #2'
@@ -1408,7 +1415,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 13:11 #8'
   - 'V2Get🛰️ 2026-08-29 13:11 #9'
   - 'V2Get🛰️ 2026-08-29 12:12 #7'
-  - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 12:11 #2'
   - 'V2Get🛰️ 2026-08-29 12:11 #3'
   - 'V2Get🛰️ 2026-08-29 12:11 #4'
@@ -1454,14 +1460,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 11:12 #20'
   - 'V2Get🛰️ 2026-08-29 11:12 #21'
   - 'V2Get🛰️ 2026-08-29 11:12 #22'
+  - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
-  - 'V2Get🛰️ 2026-08-29 10:11 #3'
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - 'V2Get🛰️ 2026-08-29 11:11 #7'
   - 'V2Get🛰️ 2026-08-29 11:11 #8'
   - 'V2Get🛰️ 2026-08-29 11:11 #9'
-  - 'V2Get🛰️ 2026-08-29 10:11 #4'
+  - 'V2Get🛰️ 2026-08-29 10:11 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
