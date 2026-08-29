@@ -12,26 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 13:05
+- name: V2Get🛰️ 2026-08-27 10:06
   type: vless
-  server: 45.136.126.70
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  server: 31.128.37.67
+  port: 16560
+  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-27 15:07
+  type: vless
+  server: 31.76.85.162
+  port: 443
+  uuid: d900a139-8b5f-4758-8a32-389c6f36fc86
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.google.com
+  servername: nl2mp.tsumshop.org
+  client-fingerprint: firefox
   reality-opts:
-    public-key: 6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M
-    short-id: 67933d8be5b42f78
-- name: V2Get🛰️ 2026-08-28 22:11
-  type: ss
-  server: 4.231.221.11
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: yI1ivWgzRqPnR6FE
-  udp: true
+    public-key: tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ
+    short-id: c8c75aaf699259b4
 - name: V2Get🛰️ 2026-08-29 13:12
   type: vless
   server: ip1.berzema.ir
@@ -1267,8 +1269,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 13:05
-  - V2Get🛰️ 2026-08-28 22:11
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-29 13:12
   - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - 'V2Get🛰️ 2026-08-29 13:12 #3'
@@ -1373,8 +1375,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 13:05
-  - V2Get🛰️ 2026-08-28 22:11
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-08-29 13:12
   - 'V2Get🛰️ 2026-08-29 13:12 #2'
   - 'V2Get🛰️ 2026-08-29 13:12 #3'
