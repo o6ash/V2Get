@@ -12,34 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 15:11
+- name: V2Get🛰️ 2026-08-29 23:13
   type: vless
-  server: 72.56.115.125
-  port: 443
-  uuid: 4e25f371-acc5-4eb6-afb3-b763ee75537d
+  server: api.number3.ir
+  port: 2053
+  uuid: 0b54c886-b1a0-4e70-8d2c-171a6e8601bb
   udp: true
   network: ws
   tls: true
-  servername: rotterdam.korgivps.ru
-  client-fingerprint: firefox
+  servername: number3.ir
+  client-fingerprint: chrome
   alpn:
   - http/1.1
+  - h3
   ws-opts:
-    path: /api/user
-- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
+    path: /
+    headers:
+      Host: number3.ir
+- name: 'V2Get🛰️ 2026-08-29 23:13 #2'
   type: vless
-  server: 80.96.109.223
-  port: 5000
-  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  server: api.number3.ir
+  port: 443
+  uuid: 0b54c886-b1a0-4e70-8d2c-171a6e8601bb
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: special.aeternavpn.space
-  client-fingerprint: qq
+  servername: g.co
+  client-fingerprint: chrome
   reality-opts:
-    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
-    short-id: a1b2c3d4
+    public-key: G01pi8NtMqqXZHOvGsbv280yeN2BMWwdN4j7dUQOnS4
+    short-id: '24'
+  grpc-opts:
+    grpc-service-name: ''
 - name: V2Get🛰️ 2026-08-29 23:12
   type: vless
   server: 49.50.76.194
@@ -963,8 +967,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 15:11
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 23:13
+  - 'V2Get🛰️ 2026-08-29 23:13 #2'
   - V2Get🛰️ 2026-08-29 23:12
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
   - V2Get🛰️ 2026-08-29 22:13
@@ -1050,8 +1054,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 15:11
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 23:13
+  - 'V2Get🛰️ 2026-08-29 23:13 #2'
   - V2Get🛰️ 2026-08-29 23:12
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
   - V2Get🛰️ 2026-08-29 22:13
