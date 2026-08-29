@@ -12,20 +12,9 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 10:06
-  type: vless
-  server: 212.87.199.76
-  port: 2053
-  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: v-grpc
-  tls: true
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.90
+  server: 213.130.137.100
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -38,7 +27,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
-  server: 213.130.137.180
+  server: 213.130.137.140
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -51,7 +40,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
-  server: 213.130.137.200
+  server: 213.130.137.40
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -64,6 +53,30 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #4'
   type: vless
+  server: panel.freesavesafe.com
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-29 21:12
+  type: vless
+  server: 62.238.50.19
+  port: 44328
+  uuid: 0971f6ed-9881-45f4-9cf9-eedd2526aab6
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: ''
+  tls: true
+- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
+  type: vless
   server: 213.130.137.160
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
@@ -75,7 +88,7 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
+- name: 'V2Get🛰️ 2026-08-29 15:11 #6'
   type: vless
   server: 213.130.137.70
   port: 443
@@ -88,7 +101,7 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #6'
+- name: 'V2Get🛰️ 2026-08-29 15:11 #7'
   type: vless
   server: 213.130.137.30
   port: 443
@@ -163,17 +176,6 @@ proxies:
   - h3
   ws-opts:
     path: /---@YektaCloud---@YektaCloud/---@YektaCloud---@YektaCloud/---@YektaCloud---@YektaCloud/u-ss@YektaCloud---@YektaCloud/---@YektaCloud---@YektaCloud/---@YektaCloud---@YektaCloud
-- name: V2Get🛰️ 2026-08-29 21:12
-  type: vless
-  server: 62.238.50.19
-  port: 44328
-  uuid: 0971f6ed-9881-45f4-9cf9-eedd2526aab6
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: ''
-  tls: true
 - name: 'V2Get🛰️ 2026-08-29 22:12 #4'
   type: vless
   server: 151.101.56.7
@@ -1104,19 +1106,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - 'V2Get🛰️ 2026-08-29 15:11 #6'
+  - 'V2Get🛰️ 2026-08-29 15:11 #7'
   - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 22:12
   - 'V2Get🛰️ 2026-08-29 22:12 #2'
   - 'V2Get🛰️ 2026-08-29 22:12 #3'
   - V2Get🛰️ 2026-08-29 19:13
-  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 22:12 #4'
   - V2Get🛰️ 2026-08-29 21:14
   - V2Get🛰️ 2026-08-29 21:13
@@ -1208,19 +1210,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
+  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - 'V2Get🛰️ 2026-08-29 15:11 #6'
+  - 'V2Get🛰️ 2026-08-29 15:11 #7'
   - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 22:12
   - 'V2Get🛰️ 2026-08-29 22:12 #2'
   - 'V2Get🛰️ 2026-08-29 22:12 #3'
   - V2Get🛰️ 2026-08-29 19:13
-  - V2Get🛰️ 2026-08-29 21:12
   - 'V2Get🛰️ 2026-08-29 22:12 #4'
   - V2Get🛰️ 2026-08-29 21:14
   - V2Get🛰️ 2026-08-29 21:13
