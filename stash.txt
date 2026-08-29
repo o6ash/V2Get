@@ -14,6 +14,22 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-29 05:10
   type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: f7809ccf-7aad-4d2f-9ef4-c3f383c6e411
+  udp: true
+  network: ws
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+- name: 'V2Get🛰️ 2026-08-29 05:10 #2'
+  type: vless
   server: alban.freeinternat.com
   port: 443
   uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
@@ -177,20 +193,6 @@ proxies:
     public-key: 66dpWU20E9ZIADNDbvbtAnfLnYKxZ1cgrEWiqXq4HD8
     short-id: 3e236023b1e6aa2a
 - name: V2Get🛰️ 2026-08-28 16:10
-  type: vless
-  server: 185.253.152.198
-  port: 34710
-  uuid: dd7429eb-b77b-4a8d-be86-c34cac86faf7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.nvidia.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: MXOVePed0T2SVOfYSEtecn2yApnsVC12dJ6nkujWTVU
-    short-id: 14b0eb7919eb7d
-- name: 'V2Get🛰️ 2026-08-28 16:10 #2'
   type: vless
   server: 47.128.248.109
   port: 20440
@@ -1146,6 +1148,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-29 05:10
+  - 'V2Get🛰️ 2026-08-29 05:10 #2'
   - V2Get🛰️ 2026-08-29 03:11
   - 'V2Get🛰️ 2026-08-29 03:11 #2'
   - 'V2Get🛰️ 2026-08-29 03:11 #3'
@@ -1157,7 +1160,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #9'
   - 'V2Get🛰️ 2026-08-29 03:11 #10'
   - V2Get🛰️ 2026-08-28 16:10
-  - 'V2Get🛰️ 2026-08-28 16:10 #2'
   - V2Get🛰️ 2026-08-28 16:11
   - V2Get🛰️ 2026-08-28 17:09
   - 'V2Get🛰️ 2026-08-28 16:11 #2'
@@ -1237,6 +1239,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-29 05:10
+  - 'V2Get🛰️ 2026-08-29 05:10 #2'
   - V2Get🛰️ 2026-08-29 03:11
   - 'V2Get🛰️ 2026-08-29 03:11 #2'
   - 'V2Get🛰️ 2026-08-29 03:11 #3'
@@ -1248,7 +1251,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 03:11 #9'
   - 'V2Get🛰️ 2026-08-29 03:11 #10'
   - V2Get🛰️ 2026-08-28 16:10
-  - 'V2Get🛰️ 2026-08-28 16:10 #2'
   - V2Get🛰️ 2026-08-28 16:11
   - V2Get🛰️ 2026-08-28 17:09
   - 'V2Get🛰️ 2026-08-28 16:11 #2'
