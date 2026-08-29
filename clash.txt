@@ -12,67 +12,7 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 01:06
-  type: vless
-  server: wsnl24.wba-pn.ru
-  port: 8443
-  uuid: 9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc
-  udp: true
-  network: ws
-  tls: true
-  servername: wsnl24.wba-pn.ru
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-08-27 15:08
-  type: vless
-  server: 185.147.27.164
-  port: 8443
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: user-6a8d949a.noooo.win
 - name: V2Get🛰️ 2026-08-29 11:11
-  type: trojan
-  server: waysi.waysi6688.workers.dev
-  port: 2087
-  password: eabf1999fefbb7d2
-  udp: true
-  sni: WaYSi.wAYsI6688.WOrkeRS.deV
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ
-    headers:
-      Host: waysi.waysi6688.workers.dev
-- name: 'V2Get🛰️ 2026-08-29 11:11 #2'
-  type: vless
-  server: lonm.milkabebar.ir
-  port: 38479
-  uuid: ac6e6f37-723f-46b7-8bcf-150cd6903b4c
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 11:11 #3'
-  type: vless
-  server: fant2.milkabebar.ir
-  port: 38479
-  uuid: d3770583-2c9d-41ec-8d07-eb5c037150bc
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 11:11 #4'
-  type: vless
-  server: 217.11.164.184
-  port: 56333
-  uuid: a3bc5615-3494-4442-b400-fd061b224af2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 11:11 #5'
   type: vless
   server: fr2.janusgate.org
   port: 443
@@ -86,6 +26,66 @@ proxies:
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
     short-id: 6ed1d644822b2951
+- name: 'V2Get🛰️ 2026-08-29 11:11 #2'
+  type: vless
+  server: 217.11.164.184
+  port: 56333
+  uuid: a3bc5615-3494-4442-b400-fd061b224af2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 11:11 #3'
+  type: vless
+  server: fant2.milkabebar.ir
+  port: 38479
+  uuid: d3770583-2c9d-41ec-8d07-eb5c037150bc
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-29 11:11 #4'
+  type: vless
+  server: lonm.milkabebar.ir
+  port: 38479
+  uuid: ac6e6f37-723f-46b7-8bcf-150cd6903b4c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-27 15:08
+  type: vless
+  server: 185.147.27.164
+  port: 8443
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: user-6a8d949a.noooo.win
+- name: 'V2Get🛰️ 2026-08-29 11:11 #5'
+  type: trojan
+  server: waysi.waysi6688.workers.dev
+  port: 2087
+  password: eabf1999fefbb7d2
+  udp: true
+  sni: WaYSi.wAYsI6688.WOrkeRS.deV
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ
+    headers:
+      Host: waysi.waysi6688.workers.dev
+- name: V2Get🛰️ 2026-08-27 01:06
+  type: vless
+  server: wsnl24.wba-pn.ru
+  port: 8443
+  uuid: 9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc
+  udp: true
+  network: ws
+  tls: true
+  servername: wsnl24.wba-pn.ru
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
 - name: 'V2Get🛰️ 2026-08-29 11:11 #6'
   type: vless
   server: stanngv2-production-31f9.up.railway.app
@@ -1183,13 +1183,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 01:06
-  - V2Get🛰️ 2026-08-27 15:08
   - V2Get🛰️ 2026-08-29 11:11
   - 'V2Get🛰️ 2026-08-29 11:11 #2'
   - 'V2Get🛰️ 2026-08-29 11:11 #3'
   - 'V2Get🛰️ 2026-08-29 11:11 #4'
+  - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
+  - V2Get🛰️ 2026-08-27 01:06
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
@@ -1287,13 +1287,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 01:06
-  - V2Get🛰️ 2026-08-27 15:08
   - V2Get🛰️ 2026-08-29 11:11
   - 'V2Get🛰️ 2026-08-29 11:11 #2'
   - 'V2Get🛰️ 2026-08-29 11:11 #3'
   - 'V2Get🛰️ 2026-08-29 11:11 #4'
+  - V2Get🛰️ 2026-08-27 15:08
   - 'V2Get🛰️ 2026-08-29 11:11 #5'
+  - V2Get🛰️ 2026-08-27 01:06
   - 'V2Get🛰️ 2026-08-29 11:11 #6'
   - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
