@@ -12,14 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 00:10
+- name: V2Get🛰️ 2026-08-29 15:13
   type: vless
-  server: 104.21.54.6
-  port: 2052
-  uuid: fbfd81d5-5218-4365-89c2-823ae7db7bae
+  server: tsa-production-6a05.up.railway.app
+  port: 443
+  uuid: e591590a-571f-4eb3-915d-b2803cd068ff
   udp: true
-  network: httpupgrade
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: tsa-production-6a05.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: tsa-production-6a05.up.railway.app
 - name: V2Get🛰️ 2026-08-29 11:11
   type: vless
   server: lonm.milkabebar.ir
@@ -1251,7 +1259,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 00:10
+  - V2Get🛰️ 2026-08-29 15:13
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 11:12
   - 'V2Get🛰️ 2026-08-29 11:12 #2'
@@ -1356,7 +1364,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 00:10
+  - V2Get🛰️ 2026-08-29 15:13
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 11:12
   - 'V2Get🛰️ 2026-08-29 11:12 #2'
