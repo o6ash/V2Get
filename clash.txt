@@ -12,6 +12,54 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 01:10
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  udp: true
+  network: grpc
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-08-29 15:11
+  type: vless
+  server: 213.130.137.90
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
+  type: vless
+  server: 213.130.137.180
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-29 19:12
+  type: ss
+  server: Istanbul.morteza1388m1122.ir
+  port: 54985
+  cipher: chacha20-ietf-poly1305
+  password: gKL203CsJrggtx93cDFw6WVlwXHKg7yOOqpmNFD3DFg=
+  udp: true
 - name: V2Get🛰️ 2026-08-29 18:13
   type: vless
   server: 212.87.199.122
@@ -35,40 +83,6 @@ proxies:
     short-id: 35d05b666e2c6cdf
   grpc-opts:
     grpc-service-name: edge.v2.FeedService
-- name: V2Get🛰️ 2026-08-29 10:11
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-29 15:11
-  type: vless
-  server: 213.130.137.200
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
-  type: vless
-  server: 213.130.137.70
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
   server: 213.130.137.110
@@ -931,13 +945,6 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: V2Get🛰️ 2026-08-29 19:12
-  type: ss
-  server: Istanbul.morteza1388m1122.ir
-  port: 54985
-  cipher: chacha20-ietf-poly1305
-  password: gKL203CsJrggtx93cDFw6WVlwXHKg7yOOqpmNFD3DFg=
-  udp: true
 - name: V2Get🛰️ 2026-08-29 19:13
   type: vless
   server: 176.65.151.90
@@ -1090,11 +1097,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 18:13
-  - V2Get🛰️ 2026-08-29 20:12
-  - V2Get🛰️ 2026-08-29 10:11
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 19:12
+  - V2Get🛰️ 2026-08-29 18:13
+  - V2Get🛰️ 2026-08-29 20:12
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
   - V2Get🛰️ 2026-08-29 21:12
@@ -1175,7 +1183,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 20:12 #70'
   - 'V2Get🛰️ 2026-08-29 20:12 #71'
   - 'V2Get🛰️ 2026-08-29 20:12 #72'
-  - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 19:13
   - V2Get🛰️ 2026-08-29 18:16
   - V2Get🛰️ 2026-08-29 18:15
@@ -1195,11 +1202,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 18:13
-  - V2Get🛰️ 2026-08-29 20:12
-  - V2Get🛰️ 2026-08-29 10:11
+  - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-29 19:12
+  - V2Get🛰️ 2026-08-29 18:13
+  - V2Get🛰️ 2026-08-29 20:12
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
   - V2Get🛰️ 2026-08-29 21:12
@@ -1280,7 +1288,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 20:12 #70'
   - 'V2Get🛰️ 2026-08-29 20:12 #71'
   - 'V2Get🛰️ 2026-08-29 20:12 #72'
-  - V2Get🛰️ 2026-08-29 19:12
   - V2Get🛰️ 2026-08-29 19:13
   - V2Get🛰️ 2026-08-29 18:16
   - V2Get🛰️ 2026-08-29 18:15
