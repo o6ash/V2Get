@@ -12,14 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 10:11
-  type: vless
-  server: 204.10.194.82
-  port: 56539
-  uuid: 4b841919-b6e0-4dd5-887b-56911d2d63b0
+- name: V2Get🛰️ 2026-08-20 11:10
+  type: trojan
+  server: 213.182.199.137
+  port: 443
+  password: MiTiVPN
   udp: true
-  network: tcp
+  sni: 66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  alpn:
+  - http/1.1
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: 2-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
 - name: V2Get🛰️ 2026-08-29 11:11
   type: vless
   server: fr2.janusgate.org
@@ -1313,7 +1320,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 10:11
+  - V2Get🛰️ 2026-08-20 11:10
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 18:13
@@ -1413,7 +1420,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 10:11
+  - V2Get🛰️ 2026-08-20 11:10
   - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 18:13
