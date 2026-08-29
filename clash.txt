@@ -12,14 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 10:06
+- name: V2Get🛰️ 2026-08-29 11:11
   type: vless
-  server: 31.128.37.67
-  port: 16560
-  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb
+  server: stanngv2-production-31f9.up.railway.app
+  port: 443
+  uuid: 3888b620-a6fd-4781-b06e-7c800edf4a15
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: stanngv2-production-31f9.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-ws
+    headers:
+      Host: stanngv2-production-31f9.up.railway.app
 - name: V2Get🛰️ 2026-08-29 10:11
   type: vless
   server: 153.75.87.192
@@ -1199,7 +1207,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - V2Get🛰️ 2026-08-28 22:11
@@ -1303,7 +1311,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-29 11:11
   - V2Get🛰️ 2026-08-29 10:11
   - 'V2Get🛰️ 2026-08-29 10:11 #2'
   - V2Get🛰️ 2026-08-28 22:11
