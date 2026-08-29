@@ -12,20 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-28 23:10
+- name: V2Get🛰️ 2026-08-27 10:06
   type: vless
-  server: 82.40.62.229
-  port: 443
-  uuid: 5bfc6650-8b56-0012-b0e9-b98fc6367c0d
+  server: 212.87.199.76
+  port: 2053
+  uuid: e2c6905e-46ec-434b-8400-0bc5bf0363e6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: v-grpc
   tls: true
-  servername: auto.api-yandex.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo
-    short-id: 0f4dacffd272e65f
 - name: V2Get🛰️ 2026-08-29 19:14
   type: vless
   server: 150.40.126.21
@@ -1027,7 +1024,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-28 23:10
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
@@ -1119,7 +1116,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-28 23:10
+  - V2Get🛰️ 2026-08-27 10:06
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
