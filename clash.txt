@@ -12,24 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 01:10
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  network: grpc
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: 6b2f4e6ac9b1d2f0
-  grpc-opts:
-    grpc-service-name: grpc
+  network: tcp
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.90
+  server: 213.130.137.40
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -42,7 +36,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
-  server: 213.130.137.50
+  server: 213.130.137.30
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -53,9 +47,23 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-30 10:13
+  type: vless
+  server: 95.85.232.112
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: duchland1.vodniki.monster
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
-  server: 213.130.137.190
+  server: 213.130.137.170
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -69,19 +77,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-08-29 15:11 #4'
   type: vless
   server: 213.130.137.160
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #5'
-  type: vless
-  server: 213.130.137.170
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -550,12 +545,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-30 10:13
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - V2Get🛰️ 2026-08-29 18:14
   - V2Get🛰️ 2026-08-30 15:14
   - 'V2Get🛰️ 2026-08-30 15:14 #2'
@@ -600,12 +595,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-30 10:13
   - 'V2Get🛰️ 2026-08-29 15:11 #3'
   - 'V2Get🛰️ 2026-08-29 15:11 #4'
-  - 'V2Get🛰️ 2026-08-29 15:11 #5'
   - V2Get🛰️ 2026-08-29 18:14
   - V2Get🛰️ 2026-08-30 15:14
   - 'V2Get🛰️ 2026-08-30 15:14 #2'
