@@ -14,13 +14,27 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-30 09:13
   type: vless
+  server: 132.243.235.53
+  port: 2096
+  uuid: 60e2a548-96aa-4850-a279-1edab743c39b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dhlparcel.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg
+    short-id: 3dad96f8693ea653
+- name: 'V2Get🛰️ 2026-08-30 09:13 #2'
+  type: vless
   server: 147.182.156.111
   port: 1161
   uuid: a19ed4e0-a6eb-24a4-f9fe-745369e6e2e7
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 09:13 #2'
+- name: 'V2Get🛰️ 2026-08-30 09:13 #3'
   type: vless
   server: 147.182.156.111
   port: 8039
@@ -34,21 +48,6 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-08-29 01:10
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
-  udp: true
-  network: grpc
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: 6b2f4e6ac9b1d2f0
-  grpc-opts:
-    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-08-29 13:12
   type: vless
   server: 31.76.62.223
@@ -1197,7 +1196,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-30 09:13
   - 'V2Get🛰️ 2026-08-30 09:13 #2'
-  - V2Get🛰️ 2026-08-29 01:10
+  - 'V2Get🛰️ 2026-08-30 09:13 #3'
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
@@ -1301,7 +1300,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-30 09:13
   - 'V2Get🛰️ 2026-08-30 09:13 #2'
-  - V2Get🛰️ 2026-08-29 01:10
+  - 'V2Get🛰️ 2026-08-30 09:13 #3'
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 15:11
   - 'V2Get🛰️ 2026-08-29 15:11 #2'
