@@ -15,26 +15,20 @@ proxies:
 - name: V2Get🛰️ 2026-08-30 17:14
   type: vless
   server: 104.252.30.239
+  port: 15201
+  uuid: af6fa0d2-8690-4060-887b-90d49aa47cb1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-30 17:14 #2'
+  type: vless
+  server: 104.252.30.239
   port: 443
   uuid: 383b6efd-4bac-47e4-9615-fc44dcb1e062
   udp: true
   network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 15:11
-  type: vless
-  server: usa.korgivps.ru
-  port: 443
-  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
-  udp: true
-  network: ws
-  tls: true
-  servername: usa.korgivps.ru
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /api/user
-- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
   server: 80.96.109.223
   port: 5000
@@ -672,8 +666,8 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-30 17:14
+  - 'V2Get🛰️ 2026-08-30 17:14 #2'
   - V2Get🛰️ 2026-08-29 15:11
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - V2Get🛰️ 2026-08-29 23:12
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
   - V2Get🛰️ 2026-08-30 13:14
@@ -732,8 +726,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-30 17:14
+  - 'V2Get🛰️ 2026-08-30 17:14 #2'
   - V2Get🛰️ 2026-08-29 15:11
-  - 'V2Get🛰️ 2026-08-29 15:11 #2'
   - V2Get🛰️ 2026-08-29 23:12
   - 'V2Get🛰️ 2026-08-29 23:12 #2'
   - V2Get🛰️ 2026-08-30 13:14
