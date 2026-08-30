@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 22:10
+  type: vless
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: V2Get🛰️ 2026-08-30 23:16
+  type: vless
+  server: g--e--r--m.cd2-ger1.ir
+  port: 2087
+  uuid: c4d438f8-d8e2-4fc4-ad2d-df94cb2a08b2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-30 22:15
   type: vless
   server: 404.e404ng.fun
@@ -985,38 +1007,14 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: V2Get🛰️ 2026-08-30 18:16
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: c357cc31-94f2-4925-80d9-053d62280eea
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-08-30 18:16 #2'
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: c357cc31-94f2-4925-80d9-053d62280eea
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: 7wwwspeedtestnet.global.ssl.fastly.net
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 22:10
+  - V2Get🛰️ 2026-08-30 23:16
   - V2Get🛰️ 2026-08-30 22:15
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
   - V2Get🛰️ 2026-08-30 23:15
@@ -1100,14 +1098,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 19:14 #2'
   - 'V2Get🛰️ 2026-08-30 19:14 #3'
   - 'V2Get🛰️ 2026-08-30 19:14 #4'
-  - V2Get🛰️ 2026-08-30 18:16
-  - 'V2Get🛰️ 2026-08-30 18:16 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 22:10
+  - V2Get🛰️ 2026-08-30 23:16
   - V2Get🛰️ 2026-08-30 22:15
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
   - V2Get🛰️ 2026-08-30 23:15
@@ -1191,8 +1189,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 19:14 #2'
   - 'V2Get🛰️ 2026-08-30 19:14 #3'
   - 'V2Get🛰️ 2026-08-30 19:14 #4'
-  - V2Get🛰️ 2026-08-30 18:16
-  - 'V2Get🛰️ 2026-08-30 18:16 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
