@@ -12,31 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-10 15:11
+- name: V2Get🛰️ 2026-08-30 09:13
   type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  server: 147.182.156.111
+  port: 1161
+  uuid: a19ed4e0-a6eb-24a4-f9fe-745369e6e2e7
   udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-27 02:07
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-30 09:13 #2'
   type: vless
-  server: lat2.freeinternat.com
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  server: 147.182.156.111
+  port: 8039
+  uuid: a19ed4e0-a6eb-24a4-f9fe-745369e6e2e7
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: lat2.freeinternat.com
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-08-29 01:10
   type: vless
   server: 144.31.1.201
@@ -1198,8 +1195,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-27 02:07
+  - V2Get🛰️ 2026-08-30 09:13
+  - 'V2Get🛰️ 2026-08-30 09:13 #2'
   - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 15:11
@@ -1302,8 +1299,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-27 02:07
+  - V2Get🛰️ 2026-08-30 09:13
+  - 'V2Get🛰️ 2026-08-30 09:13 #2'
   - V2Get🛰️ 2026-08-29 01:10
   - V2Get🛰️ 2026-08-29 13:12
   - V2Get🛰️ 2026-08-29 15:11
