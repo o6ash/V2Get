@@ -12,15 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 21:07
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-30 13:15
+  type: vless
+  server: 195.123.226.114
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
   server: 213.130.137.40
@@ -1131,7 +1136,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-30 13:15
   - V2Get🛰️ 2026-08-29 15:11
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 13:14
@@ -1236,7 +1241,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-30 13:15
   - V2Get🛰️ 2026-08-29 15:11
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 13:14
