@@ -14,6 +14,19 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-30 18:15
   type: vless
+  server: amzzzlu.amirrsub.ir
+  port: 443
+  uuid: d9f5d8f5-eeac-48c6-b7a4-abf7c977d4b4
+  udp: true
+  network: ws
+  tls: true
+  servername: amzzzlu.amirrsub.ir
+  ws-opts:
+    path: /nova-geo-psiphon-de
+    headers:
+      Host: amzzzlu.amirrsub.ir
+- name: 'V2Get🛰️ 2026-08-30 18:15 #2'
+  type: vless
   server: 5.75.193.116
   port: 6554
   uuid: a61abe08-05d6-f72d-58ab-b92576abd790
@@ -1170,20 +1183,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-30 14:15 #3'
   type: vless
-  server: 173.255.242.235
-  port: 23776
-  uuid: 5086262e-8381-483d-bc2e-d6867439928e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rDDl9UktPqt5eBQtF_0npmVNjatgwmUc5QLcaI9LVjE
-    short-id: 5fa3f40a7cf1b9
-- name: 'V2Get🛰️ 2026-08-30 14:15 #4'
-  type: vless
   server: 173.230.155.55
   port: 50900
   uuid: 2c082e78-bd9d-4960-b9f3-cde0040cb4f3
@@ -1196,7 +1195,7 @@ proxies:
   reality-opts:
     public-key: vdE4t2bYhYun6fZ9Weu_f6MXtsmq8iJ7XQBUj62scR0
     short-id: 12fa394e28d52011
-- name: 'V2Get🛰️ 2026-08-30 14:15 #5'
+- name: 'V2Get🛰️ 2026-08-30 14:15 #4'
   type: vless
   server: 45.33.107.60
   port: 10974
@@ -1217,6 +1216,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-30 18:15
+  - 'V2Get🛰️ 2026-08-30 18:15 #2'
   - V2Get🛰️ 2026-08-30 18:14
   - 'V2Get🛰️ 2026-08-30 18:14 #2'
   - 'V2Get🛰️ 2026-08-30 18:14 #3'
@@ -1314,7 +1314,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
   - 'V2Get🛰️ 2026-08-30 14:15 #3'
   - 'V2Get🛰️ 2026-08-30 14:15 #4'
-  - 'V2Get🛰️ 2026-08-30 14:15 #5'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1322,6 +1321,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-30 18:15
+  - 'V2Get🛰️ 2026-08-30 18:15 #2'
   - V2Get🛰️ 2026-08-30 18:14
   - 'V2Get🛰️ 2026-08-30 18:14 #2'
   - 'V2Get🛰️ 2026-08-30 18:14 #3'
@@ -1419,7 +1419,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
   - 'V2Get🛰️ 2026-08-30 14:15 #3'
   - 'V2Get🛰️ 2026-08-30 14:15 #4'
-  - 'V2Get🛰️ 2026-08-30 14:15 #5'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
