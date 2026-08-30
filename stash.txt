@@ -12,6 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-29 18:13
+  type: vless
+  server: 212.87.199.122
+  port: 58416
+  uuid: 5626ce32-dad0-468b-952c-e53d609100f1
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-30 10:13
+  type: vless
+  server: 95.85.232.112
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: duchland1.vodniki.monster
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
 - name: V2Get🛰️ 2026-08-30 14:14
   type: vless
   server: sulgx-panel-production-2b90.up.railway.app
@@ -375,18 +406,6 @@ proxies:
     short-id: ab5b
 - name: V2Get🛰️ 2026-08-30 12:15
   type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 999c9769-28db-425a-84d8-ccd7a3321406
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: jolly-glitter-123c.196-2b3.workers.dev
-- name: 'V2Get🛰️ 2026-08-30 12:15 #2'
-  type: vless
   server: 188.114.97.6
   port: 8080
   uuid: deee4a60-e8c3-456f-846f-aa2c2b7fae24
@@ -397,7 +416,7 @@ proxies:
     path: /pyip=proxyip.sg.cmliussss.net
     headers:
       Host: broad-bush-c2c8.37-9a0.workers.dev
-- name: 'V2Get🛰️ 2026-08-30 12:15 #3'
+- name: 'V2Get🛰️ 2026-08-30 12:15 #2'
   type: vless
   server: skk.moe
   port: 8880
@@ -409,7 +428,7 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: lucky-cell-d20c.78-107.workers.dev
-- name: 'V2Get🛰️ 2026-08-30 12:15 #4'
+- name: 'V2Get🛰️ 2026-08-30 12:15 #3'
   type: vless
   server: 104.21.88.129
   port: 8880
@@ -421,40 +440,15 @@ proxies:
     path: /pyip
     headers:
       Host: shy-wind-a26f.182-104.workers.dev
-- name: 'V2Get🛰️ 2026-08-30 12:15 #5'
-  type: vless
-  server: mn6.levikogjgfdd.ir
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
-  udp: true
-  network: grpc
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: 6b2f4e6ac9b1d2f0
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 'V2Get🛰️ 2026-08-30 12:15 #6'
-  type: vless
-  server: mn9.levikogjgfdd.ir
-  port: 8443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  reality-opts:
-    public-key: ikgjW7sTpGgWMRVewLHLpovWxHa_FFdczKrq8kMiSFQ
-    short-id: f1c868899d48ba08
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-29 18:13
+  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 14:14
   - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - 'V2Get🛰️ 2026-08-30 14:14 #3'
@@ -491,15 +485,15 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 12:15
   - 'V2Get🛰️ 2026-08-30 12:15 #2'
   - 'V2Get🛰️ 2026-08-30 12:15 #3'
-  - 'V2Get🛰️ 2026-08-30 12:15 #4'
-  - 'V2Get🛰️ 2026-08-30 12:15 #5'
-  - 'V2Get🛰️ 2026-08-30 12:15 #6'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-29 18:13
+  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 14:14
   - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - 'V2Get🛰️ 2026-08-30 14:14 #3'
@@ -536,9 +530,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 12:15
   - 'V2Get🛰️ 2026-08-30 12:15 #2'
   - 'V2Get🛰️ 2026-08-30 12:15 #3'
-  - 'V2Get🛰️ 2026-08-30 12:15 #4'
-  - 'V2Get🛰️ 2026-08-30 12:15 #5'
-  - 'V2Get🛰️ 2026-08-30 12:15 #6'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
