@@ -12,15 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 03:13
-  type: vless
-  server: 5.75.196.117
-  port: 56539
-  uuid: 0b8864b7-f9de-47f5-9646-56c82ef940ea
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-30 22:15
+  type: vless
+  server: t2.lock1.app
+  port: 2087
+  uuid: a1f9084d-7bd0-4ba6-a749-62413af145b8
+  udp: true
+  network: ws
+  tls: true
+  servername: t2.lock1.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t2.lock1.app
+- name: 'V2Get🛰️ 2026-08-30 22:15 #2'
   type: vless
   server: 94.156.232.254
   port: 443
@@ -36,7 +42,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf6.rumedia-cdn.com
-- name: 'V2Get🛰️ 2026-08-30 22:15 #2'
+- name: 'V2Get🛰️ 2026-08-30 22:15 #3'
   type: vless
   server: freevpn35-266.up.railway.app
   port: 443
@@ -82,7 +88,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 22:15 #3'
+- name: 'V2Get🛰️ 2026-08-30 22:15 #4'
   type: vless
   server: 404.e404ng.fun
   port: 443
@@ -90,7 +96,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 22:15 #4'
+- name: 'V2Get🛰️ 2026-08-30 22:15 #5'
   type: vless
   server: 404.e404ng.fun
   port: 8443
@@ -1074,14 +1080,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 03:13
   - V2Get🛰️ 2026-08-30 22:15
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
+  - 'V2Get🛰️ 2026-08-30 22:15 #3'
   - V2Get🛰️ 2026-08-30 19:14
   - V2Get🛰️ 2026-08-30 20:14
   - 'V2Get🛰️ 2026-08-30 20:14 #2'
-  - 'V2Get🛰️ 2026-08-30 22:15 #3'
   - 'V2Get🛰️ 2026-08-30 22:15 #4'
+  - 'V2Get🛰️ 2026-08-30 22:15 #5'
   - 'V2Get🛰️ 2026-08-30 20:14 #3'
   - V2Get🛰️ 2026-08-30 21:14
   - V2Get🛰️ 2026-08-30 21:15
@@ -1169,14 +1175,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 03:13
   - V2Get🛰️ 2026-08-30 22:15
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
+  - 'V2Get🛰️ 2026-08-30 22:15 #3'
   - V2Get🛰️ 2026-08-30 19:14
   - V2Get🛰️ 2026-08-30 20:14
   - 'V2Get🛰️ 2026-08-30 20:14 #2'
-  - 'V2Get🛰️ 2026-08-30 22:15 #3'
   - 'V2Get🛰️ 2026-08-30 22:15 #4'
+  - 'V2Get🛰️ 2026-08-30 22:15 #5'
   - 'V2Get🛰️ 2026-08-30 20:14 #3'
   - V2Get🛰️ 2026-08-30 21:14
   - V2Get🛰️ 2026-08-30 21:15
