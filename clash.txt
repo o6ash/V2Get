@@ -12,79 +12,73 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 23:12
+- name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 72.56.40.152
+  server: 213.130.137.90
   port: 443
-  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
-  network: ws
+  network: xhttp
   tls: true
-  servername: usa.korgivps.ru
+  servername: panel.freesavesafe.com
   client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /api/user
-- name: V2Get🛰️ 2026-08-30 16:14
-  type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: eBqHdcv8BF
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
+  type: vless
+  server: 213.130.137.50
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: 'V2Get🛰️ 2026-08-29 15:11 #3'
+  type: vless
+  server: 213.130.137.170
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-29 18:14
+  type: vless
+  server: 213.130.137.120
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-30 15:14
+  type: vless
+  server: 84.32.189.22
+  port: 443
+  uuid: f73681a4-1654-446f-a7eb-bda3bfd9e521
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app23.jarvestip.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U
+    short-id: 2aef5875
 - name: V2Get🛰️ 2026-08-30 18:14
-  type: vless
-  server: 104.17.157.106
-  port: 443
-  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
-  udp: true
-  network: ws
-  tls: true
-  servername: forsh2.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: forsh2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-30 18:14 #2'
-  type: vless
-  server: 104.19.85.90
-  port: 443
-  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
-  udp: true
-  network: ws
-  tls: true
-  servername: forsh2.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: forsh2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-30 18:14 #3'
-  type: vless
-  server: 104.17.129.57
-  port: 443
-  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
-  udp: true
-  network: ws
-  tls: true
-  servername: forsh2.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: forsh2.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-08-30 18:14 #4'
   type: vless
   server: 104.18.151.69
   port: 2083
@@ -1144,12 +1138,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 23:12
-  - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - V2Get🛰️ 2026-08-29 18:14
+  - V2Get🛰️ 2026-08-30 15:14
   - V2Get🛰️ 2026-08-30 18:14
-  - 'V2Get🛰️ 2026-08-30 18:14 #2'
-  - 'V2Get🛰️ 2026-08-30 18:14 #3'
-  - 'V2Get🛰️ 2026-08-30 18:14 #4'
   - V2Get🛰️ 2026-08-30 23:14
   - V2Get🛰️ 2026-08-30 21:15
   - 'V2Get🛰️ 2026-08-30 21:15 #2'
@@ -1249,12 +1243,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 23:12
-  - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - 'V2Get🛰️ 2026-08-29 15:11 #3'
+  - V2Get🛰️ 2026-08-29 18:14
+  - V2Get🛰️ 2026-08-30 15:14
   - V2Get🛰️ 2026-08-30 18:14
-  - 'V2Get🛰️ 2026-08-30 18:14 #2'
-  - 'V2Get🛰️ 2026-08-30 18:14 #3'
-  - 'V2Get🛰️ 2026-08-30 18:14 #4'
   - V2Get🛰️ 2026-08-30 23:14
   - V2Get🛰️ 2026-08-30 21:15
   - 'V2Get🛰️ 2026-08-30 21:15 #2'
