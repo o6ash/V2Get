@@ -1,3 +1,561 @@
+# ===== BEGIN V2Get🔒 2026-08-30 18:22 =====
+# ==============================================================================
+# Copyright (c) 2023 Proton AG (Switzerland)
+#
+#
+# The MIT License (MIT)
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR # OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+# ==============================================================================
+# The server you are connecting to is using a circuit in order to separate entry IP from exit IP
+# The same entry IP allows to connect to multiple exit IPs in the same data center.
+# If you want to explicitly select the exit IP corresponding to server DE#9 you need to
+# append a special suffix to your OpenVPN username.
+# Please use "8Dy3TZgmKJEffeWK+b:8" in order to enforce exiting through DE#9.
+# If you are a paying user you can also enable the ProtonVPN ad blocker (NetShield) or Moderate NAT:
+# Use: "8Dy3TZgmKJEffeWK+b:8+f1" to enable anti-malware filtering
+# Use: "8Dy3TZgmKJEffeWK+b:8+f2" to additionally enable ad-blocking filtering
+# Use: "8Dy3TZgmKJEffeWK+b:8+nr" to enable Moderate NAT
+# Note that you can combine the "+nr" suffix with other suffixes.
+client
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:22"
+dev tun
+proto tcp
+remote 74.118.126.24 443
+remote-random
+resolv-retry infinite
+nobind
+cipher AES-256-GCM
+setenv CLIENT_CERT 0
+tun-mtu 1500
+mssfix 0
+persist-key
+persist-tun
+reneg-sec 0
+remote-cert-tls server
+auth-user-pass
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIFnTCCA4WgAwIBAgIUCI574SM3Lyh47GyNl0WAOYrqb5QwDQYJKoZIhvcNAQEL
+BQAwXjELMAkGA1UEBhMCQ0gxHzAdBgNVBAoMFlByb3RvbiBUZWNobm9sb2dpZXMg
+QUcxEjAQBgNVBAsMCVByb3RvblZQTjEaMBgGA1UEAwwRUHJvdG9uVlBOIFJvb3Qg
+Q0EwHhcNMTkxMDE3MDgwNjQxWhcNMzkxMDEyMDgwNjQxWjBeMQswCQYDVQQGEwJD
+SDEfMB0GA1UECgwWUHJvdG9uIFRlY2hub2xvZ2llcyBBRzESMBAGA1UECwwJUHJv
+dG9uVlBOMRowGAYDVQQDDBFQcm90b25WUE4gUm9vdCBDQTCCAiIwDQYJKoZIhvcN
+AQEBBQADggIPADCCAgoCggIBAMkUT7zMUS5C+NjQ7YoGpVFlfbN9HFgG4JiKfHB8
+QxnPPRgyTi0zVOAj1ImsRilauY8Ddm5dQtd8qcApoz6oCx5cFiiSQG2uyhS/59Zl
+5wqIkw1o+CgwZgeWkq04lcrxhhfPgJZRFjrYVezy/Z2Ssd18s3/FFNQ+2iV1KC2K
+z8eSPr50u+l9vEKsKiNGkJTdlWjoDKZM2C15i/h8Smi+PdJlx7WMTtYoVC1Fzq0r
+aCPDQl18kspu11b6d8ECPWghKcDIIKuA0r0nGqF1GvH1AmbC/xUaNrKgz9AfioZL
+MP/l22tVG3KKM1ku0eYHX7NzNHgkM2JKnBBannImQQBGTAcvvUlnfF3AHx4vzx7H
+ahpBz8ebThx2uv+vzu8lCVEcKjQObGwLbAONJN2enug8hwSSZQv7tz7onDQWlYh0
+El5fnkrEQGbukNnSyOqTwfobvBllIPzBqdO38eZFA0YTlH9plYjIjPjGl931lFAA
+3G9t0x7nxAauLXN5QVp1yoF1tzXc5kN0SFAasM9VtVEOSMaGHLKhF+IMyVX8h5Iu
+IRC8u5O672r7cHS+Dtx87LjxypqNhmbf1TWyLJSoh0qYhMr+BbO7+N6zKRIZPI5b
+MXc8Be2pQwbSA4ZrDvSjFC9yDXmSuZTyVo6Bqi/KCUZeaXKof68oNxVYeGowNeQd
+g/znAgMBAAGjUzBRMB0GA1UdDgQWBBR44WtTuEKCaPPUltYEHZoyhJo+4TAfBgNV
+HSMEGDAWgBR44WtTuEKCaPPUltYEHZoyhJo+4TAPBgNVHRMBAf8EBTADAQH/MA0G
+CSqGSIb3DQEBCwUAA4ICAQBBmzCQlHxOJ6izys3TVpaze+rUkA9GejgsB2DZXIcm
+4Lj/SNzQsPlZRu4S0IZV253dbE1DoWlHanw5lnXwx8iU82X7jdm/5uZOwj2NqSqT
+bTn0WLAC6khEKKe5bPTf18UOcwN82Le3AnkwcNAaBO5/TzFQVgnVedXr2g6rmpp9
+gdedeEl9acB7xqfYfkrmijqYMm+xeG2rXaanch3HjweMDuZdT/Ub5G6oir0Kowft
+lA1ytjXRg+X+yWymTpF/zGLYfSodWWjMKhpzZtRJZ+9B0pWXUyY7SuCj5T5SMIAu
+x3NQQ46wSbHRolIlwh7zD7kBgkyLe7ByLvGFKa2Vw4PuWjqYwrRbFjb2+EKAwPu6
+VTWz/QQTU8oJewGFipw94Bi61zuaPvF1qZCHgYhVojRy6KcqncX2Hx9hjfVxspBZ
+DrVH6uofCmd99GmVu+qizybWQTrPaubfc/a2jJIbXc2bRQjYj/qmjE3hTlmO3k7V
+EP6i8CLhEl+dX75aZw9StkqjdpIApYwX6XNDqVuGzfeTXXclk4N4aDPwPFM/Yo/e
+KnvlNlKbljWdMYkfx8r37aOHpchH34cv0Jb5Im+1H07ywnshXNfUhRazOpubJRHn
+bjDuBwWS1/Vwp5AJ+QHsPXhJdl3qHc1szJZVJb3VyAWvG/bWApKfFuZX18tiI4N0
+EA==
+-----END CERTIFICATE-----
+</ca>
+<tls-crypt>
+-----BEGIN OpenVPN Static key V1-----
+6acef03f62675b4b1bbd03e53b187727
+423cea742242106cb2916a8a4c829756
+3d22c7e5cef430b1103c6f66eb1fc5b3
+75a672f158e2e2e936c3faa48b035a6d
+e17beaac23b5f03b10b868d53d03521d
+8ba115059da777a60cbfd7b2c9c57472
+78a15b8f6e68a3ef7fd583ec9f398c8b
+d4735dab40cbd1e3c62a822e97489186
+c30a0b48c7c38ea32ceb056d3fa5a710
+e10ccc7a0ddb363b08c3d2777a3395e1
+0c0b6080f56309192ab5aacd4b45f55d
+a61fc77af39bd81a19218a79762c3386
+2df55785075f37d8c71dc8a42097ee43
+344739a0dd48d03025b0450cf1fb5e8c
+aeb893d9a96d1f15519bb3c4dcb40ee3
+16672ea16c012664f8a9f11255518deb
+-----END OpenVPN Static key V1-----
+</tls-crypt>
+<auth-user-pass>
+sRMZD3NfULjp5UZe
+vnUYLqjkv1bqFlHW5iX8ON4bJSXrJK2s
+</auth-user-pass>h-user-pass>
+sRMZD3NfULjp5UZe
+vnUYLqjkv1bqFlHW5iX8ON4bJSXrJK2s
+</auth-user-pass>
+# ===== END V2Get🔒 2026-08-30 18:22 =====
+
+# ===== BEGIN V2Get🔒 2026-08-30 18:08 =====
+client
+dev tun
+proto tcp
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:08"
+# Multi-endpoint (Load Balancing)
+
+remote 97-1-AL.cg-dialup.net 443
+
+remote-random
+remote-cert-tls server
+nobind
+persist-key
+persist-tun
+reneg-sec 0
+cipher AES-256-CBC
+auth SHA512
+verb 3
+
+<auth-user-pass>
+USmHCx6wp2
+hzgp46YuLy
+</auth-user-pass>
+
+# ================================
+#      Anti-Reset / Anti-Dr/op
+# ================================
+connect-retry-max 9999
+connect-retry 1 2
+connect-timeout 5
+inactive 0
+ping 5
+ping-restart 20
+setenv SAFE_RESTART 1
+mute-replay-warnings
+explicit-exit-notify 1
+
+
+
+# ================================
+#       Adaptive MTU (AI Mode)
+# ================================
+mssfix 0
+tun-mtu 1500
+
+sndbuf 524288
+rcvbuf 524288
+push-peer-info
+setenv MTU_ADAPTIVE 1
+
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIGWjCCBEKgAwIBAgIJAJxUG61mxDS7MA0GCSqGSIb3DQEBDQUAMHsxCzAJBgNV
+BAYTAlJPMRIwEAYDVQQHEwlCdWNoYXJlc3QxGDAWBgNVBAoTD0N5YmVyR2hvc3Qg
+Uy5BLjEbMBkGA1UEAxMSQ3liZXJHaG9zdCBSb290IENBMSEwHwYJKoZIhvcNAQkB
+FhJpbmZvQGN5YmVyZ2hvc3Qucm8wHhcNMTcwNjE5MDgxNzI1WhcNMzcwNjE0MDgx
+NzI1WjB7MQswCQYDVQQGEwJSTzESMBAGA1UEBxMJQnVjaGFyZXN0MRgwFgYDVQQK
+Ew9DeWJlckdob3N0IFMuQS4xGzAZBgNVBAMTEkN5YmVyR2hvc3QgUm9vdCBDQTEh
+MB8GCSqGSIb3DQEJARYSaW5mb0BjeWJlcmdob3N0LnJvMIICIjANBgkqhkiG9w0B
+AQEFAAOCAg8AMIICCgKCAgEA7O8+mji2FlQhJXn/G4VLrKPjGtxgQBAdjo0dZEQz
+KX08q14dLkslmOLgShStWKrOiLXGAvB1rPvvk613jtA0KjQLpgyLy9lIWohQKYjj
+5jrJYXMZMkbSHBYI9L8L7iezBEFYrjYKdDo51nq99wRFhKdbyKKjDh3e2L2SVEZL
+T1ogkK5gWzjvH+mjjtjUUicK+YjGwWOz6I+KKaG4Ve/D/cE6nCLbhHIMMnargZEu
+7sqA6BFeS4kEP/ZdCZoTSX2n43XV1q63nJt/v0KDetbZDciFVW9h9SVPG4qT44p0
+550N+Mom7zTX7S/ID5T9dplgU8sRGtIMrG0cIMD9zmpFgUnMusCrR7jJFr0sMAve
+TbgZg95LmstV6R6WKZkSFdUrE0DHl4dHoZvTFX+1LhwhHgjgDLaosX0vhG/C/7Lp
+oVWimd6RRQT3M9o4Fa1TuhfvBzQ20QHrmRV/yKvGNK0xckZ6EZ/QY7Z55ORU15Tg
+ab4ebnblYPWoEmn0mIYP3LFFeoR5OS1EX7+j4kPv+bwPGsmpHjxmZyq2Y7sJBpbO
+CJgbkn52WZdPBIRDpPdIHQ8pAJC4T0iMK9xvAwWNl/V6EYYNpR97osyEDXn+BTdA
+HlhJ5fck9KlwI9mb1Kg1bhbvbmaIAiOLenSULYf3j6rI1ygo3R2cCyybtuAq8M7z
+0OECAwEAAaOB4DCB3TAdBgNVHQ4EFgQU6tdK1g/He5qzjeAoM5eHt4in9iUwga0G
+A1UdIwSBpTCBooAU6tdK1g/He5qzjeAoM5eHt4in9iWhf6R9MHsxCzAJBgNVBAYT
+AlJPMRIwEAYDVQQHEwlCdWNoYXJlc3QxGDAWBgNVBAoTD0N5YmVyR2hvc3QgUy5B
+LjEbMBkGA1UEAxMSQ3liZXJHaG9zdCBSb290IENBMSEwHwYJKoZIhvcNAQkBFhJp
+bmZvQGN5YmVyZ2hvc3Qucm+CCQCcVButZsQ0uzAMBgNVHRMEBTADAQH/MA0GCSqG
+SIb3DQEBDQUAA4ICAQDNyQ92kj4qiNjnHk99qvnFw9qGfwB9ofaPL74zh0G5hEe3
+Wgb2o4fqUGnvUNgOu53gJksz3DcPQ8t40wfmm9I1Z8tiM9qrqvkuQ+nKcLgdooXt
+EsTybPIYDZ2cWR/5E0TKRvC7RFzKgQ4D77Vbi4TdaHiDV7ZNfU1iLCoBGcYm80hc
+UHEs5KIVLwUmcSOTmbZBySJxcSD0yUpS7nlZGwLY6VQrU+JFwDSisbXT4DXf3iSz
+p7FzW0/u/SFvWsPHrjE0hkPoZPalYvouaJEHKAhip0ZwSmitlxbBnmm8+K/3c9mL
+A5/uXrirfpuhhs8V3lyV2mczVtSiTl6gpi88gc//JY80JeHdupjO25T3XEzY9cpx
+ecmkWaUEjLMx4wVoXQuUiPonfILM6OLwi+zUS8gQErdFeGvcQXbncPa4SdJuHkF8
+lgiX2i8S8fPGdXvU37E9bdAXwP5nZriYq1s0D59Qfvz+vLXVkmyZp6ztxjKjKole
+mPMak0Y5c1Q4RjNF6tmQoFuy/ACSkWy14Tzu2dFp7UiVbGg1FOvKhfs48zC2/IUQ
+v1arqmPT/9LVq3B2DVT9UKXRUXX/f/jSSsVjkz4uUe2jUyL+XHX1nSmROTPHSAJ+
+oKf0BLnfqUxFkEUTwLnayssP2nwGgq35b7wEbTFIXdrjHGFUVQIDeERz8UThew==
+-----END CERTIFICATE-----
+
+</ca>
+
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIGojCCBIqgAwIBAgIEDPw4EDANBgkqhkiG9w0BAQsFADB7MQswCQYDVQQGEwJS
+TzESMBAGA1UEBxMJQnVjaGFyZXN0MRgwFgYDVQQKEw9DeWJlckdob3N0IFMuQS4x
+GzAZBgNVBAMTEkN5YmVyR2hvc3QgUm9vdCBDQTEhMB8GCSqGSIb3DQEJARYSaW5m
+b0BjeWJlcmdob3N0LnJvMB4XDTI2MDgyOTE2MzUwM1oXDTM2MDgyNjE2MzUwM1ow
+czELMAkGA1UEBhMCUk8xEjAQBgNVBAcMCUJ1Y2hhcmVzdDEYMBYGA1UECgwPQ3li
+ZXJHaG9zdCBTLkEuMRMwEQYDVQQDDApVU21IQ3g2d3AyMSEwHwYJKoZIhvcNAQkB
+FhJpbmZvQGN5YmVyZ2hvc3Qucm8wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
+AoICAQDaxCV+BFTifoj9wr2GiJ9rr4y9X4WnakD42a4TKFRbJ+NNC0Vc3K5xmXg+
+nDN4hylOfhW44rhT4Xq7MK0fRpN378EqEt6M8LcKRC3V6YJPKbjpittCp1en+upc
+NsFij/uIkcTAFB62wHcUoKNgw24m6A5GZY+niYJguVSR+0L3dOEy+jMAKHP7057J
+IhyJ1Ksd8hijUYoYnPSTDtQq3lzVWjMHqPFxFMNSdbWir9E1cU2u+CCP7jTo9PDL
+NietCDvgwrVSoAjVArZS+jpwV8l89cwmaL9Wv4B5kfHzDPUOywn6z/vV3flHruk2
+kvJ88dxE/mB+u8XKDCKhuIKeoMwvdLqrRTi6Hi3t7t/N5x+/GOEplM7YEF3XZhqf
+bNSjscKZHjLCIjYBxAunBQ9yRDk+cJLLv4Rg53wV5P/7++S5ShhQyTXxlbl5b59e
+FvLtda70Ldb2KMmErjc9lbj8B/mSrh80VFrivCJZpUmDeyCo53ryQ/bg0TMtbo/a
+c+3VEILYnu+7vo+d79kQ+rtt+qvJcU0W39N1/nHjr05Y+UrbpFWpUImIJ+0m6i22
+5iQIUnbwIZDpBGCEfqO+1nXbqWXcxqohHavwa8depYtZEIHLafNGLxrV1LmBfA6b
+nym2Utxa6LNKgVC5XGwcSXRX1do+qM4Hcc99WH8cbpvQM8yprwIDAQABo4IBNDCC
+ATAwCQYDVR0TBAIwADALBgNVHQ8EBAMCBaAwNAYJYIZIAYb4QgENBCcWJUN5YmVy
+R2hvc3QgR2VuZXJhdGVkIFVzZXIgQ2VydGlmaWNhdGUwEQYJYIZIAYb4QgEBBAQD
+AgeAMB0GA1UdDgQWBBSuhorSwHlKdBv+IoelxlrWlb7ZdjCBrQYDVR0jBIGlMIGi
+gBTq10rWD8d7mrON4Cgzl4e3iKf2JaF/pH0wezELMAkGA1UEBhMCUk8xEjAQBgNV
+BAcTCUJ1Y2hhcmVzdDEYMBYGA1UEChMPQ3liZXJHaG9zdCBTLkEuMRswGQYDVQQD
+ExJDeWJlckdob3N0IFJvb3QgQ0ExITAfBgkqhkiG9w0BCQEWEmluZm9AY3liZXJn
+aG9zdC5yb4IJAJxUG61mxDS7MA0GCSqGSIb3DQEBCwUAA4ICAQDgxzxRcbnRg0l1
+qHAS+EkSPsrc/bmoiaKZcrCuEZHsLg8dIGjtgJlbZ807cUVjBzWrEzwmomFpj+7O
+UJEbB1xsZPANzgmCzectG1a5DpPlUqZ5LBqUXhIe1E+PUFlTU6V6Bqyv3Q73dP4l
+1nf08/NAkSsHAIAk7I/RHPdYtuiQEfuf0Lz87t5Hi/RgaAQJ6dqKc2i6aHhGcCjs
+trKTHBO5WqM15SlIeAdSxvTaIK5exOeXavO9DWZicgGuIza5aNDBTXyVrOY+USUR
+5FdX1dzFWf9rnAc7BBC9CfzhqEx24UQAuSZk/ulqs1Y9hqyCSG0Uq6QlE5zD1uac
+AY63TWdcoBwexYscFEEuAyoPX7uVl/nDuELp1+OSJmgO8mhDQ5eBfNT6tgKOzTP0
+QlIReGM4U3YW5nr7tRcukeu/6HxLloKofsMMNwaR6DL8zEGnXqISYjV+BmijLzA4
+i5WqZk9JvcWO+Fz4F9WqqlRZWHuUq012E/Ka7UjHSpgV9sV4oyu9mEeI4SyCIyqM
+pcLydHOIwyREFFb9Sje4+U+qC3SI7pfJLsSdewDjjW72kMdQYSwrBX9eMEEZFdbN
+H65GJsbaV7Ma4uyZVwRjz5JCIazVc1PB5K5VelYJCECiR0sMLIKabuAagQOoELUb
+yH90q3R6kJhLSe5psbmnErn4QocJog==
+-----END CERTIFICATE-----
+
+</cert>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:08"
+# ===== END V2Get🔒 2026-08-30 18:08 =====
+
+# ===== BEGIN V2Get🔒 2026-08-30 18:08 (2) =====
+client
+dev tun1
+proto tcp
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:08 (2)"
+remote 5.196.64.231 443
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+<auth-user-pass>
+vpnbook
+ytw2awn
+</auth-user-pass>
+verb 3
+cipher AES-256-GCM
+auth SHA256
+data-ciphers AES-256-GCM:AES-128-GCM
+fast-io
+pull
+route-delay 2
+redirect-gateway
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDSzCCAjOgAwIBAgIUJdJ6+6lTiYZBvpl2P40Lgx3BeHowDQYJKoZIhvcNAQEL
+BQAwFjEUMBIGA1UEAwwLdnBuYm9vay5jb20wHhcNMjMwMjIwMTk0NTM1WhcNMzMw
+MjE3MTk0NTM1WjAWMRQwEgYDVQQDDAt2cG5ib29rLmNvbTCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBAMcVK+hYl6Wl57YxXIVy7Jlgglj42LaC2sUWK3ls
+aRcKQfs/ridG6+9dSP1ziCrZ1f5pOLz34gMYXChhUOc/x9rSIRGHao4gHeXmEoGs
+twjxA+kRBSv5xqeUgaTKAhdwiV5SvBE8EViWe3rlHLoUbWBQ7Kky/L4cg7u+ma1V
+31PgOPhWY3RqZJLBMu3PHCctaaHQyoPLDNDyCz7Zb2Wos+tjIb3YP5GTfkZlnJsN
+va0HdSGEyerTQL5fqW2V6IZ4t2Np2kVnJcfEWgJF0Kw1nqoPfKjxM44bR+K1EGGW
+ir1rs/RFPg8yFVxd4ZHpqoCo2lXZjc6oP1cwtIswIHb6EbsCAwEAAaOBkDCBjTAd
+BgNVHQ4EFgQULgM8Z91cLOSHl6EDF8jalx3piqQwUQYDVR0jBEowSIAULgM8Z91c
+LOSHl6EDF8jalx3piqShGqQYMBYxFDASBgNVBAMMC3ZwbmJvb2suY29tghQl0nr7
+qVOJhkG+mXY/jQuDHcF4ejAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkq
+hkiG9w0BAQsFAAOCAQEAT5hsP+dz11oREADNMlTEehXWfoI0aBws5c8noDHoVgnc
+BXuI4BREP3k6OsOXedHrAPA4dJXG2e5h33Ljqr5jYbm7TjUVf1yT/r3TDKIJMeJ4
++KFs7tmXy0ejLFORbk8v0wAYMQWM9ealEGePQVjOhJJysEhJfA4u5zdGmJDYkCr+
+3cTiig/a53JqpwjjYFVHYPSJkC/nTz6tQOw9crDlZ3j+LLWln0Cy/bdj9oqurnrc
+xUtl3+PWM9D1HoBpdGduvQJ4HXfss6OrajukKfDsbDS4njD933vzRd4E36GjOI8Q
+1VKIe7kamttHV5HCsoeSYLjdxbXBAY2E0ZhQzpZB7g==
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIDYDCCAkigAwIBAgIQP/z/mAlVNddzohzjQghcqzANBgkqhkiG9w0BAQsFADAW
+MRQwEgYDVQQDDAt2cG5ib29rLmNvbTAeFw0yMzAyMjAyMzMwNDlaFw0zMzAyMTcy
+MzMwNDlaMB0xGzAZBgNVBAMMEmNsaWVudC52cG5ib29rLmNvbTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBANPiNyyYH6yLXss6AeHLzJ6/9JfUzVAs7ttq
+8OWJRkBjKuEPW3MUVjpMgptm6+zJohM4IdSo/ES6H81sLK4AWiUUOzeOt8xAzgib
+NrLss5px0D0Pm+uXH8hGOle386JH5oyOQ6ub2O3ro0TeTF4rg43TF1oOz2AVS/gc
+sB3d6AG73otZ4C6/wabiGz4rFO8xl4S4PBKX73Eb7cdSoACc8AIrqcR+PEDHOZYt
+1qp4lM87+5ADEXelpe9vLTaoXonIuZElqA9rwFi/KQmPCHsl7eEnmSo1iOg0y3iP
+0CRHzv8FkvhhpB9Z3i3TUxq8XvnLtEQ38eD5Dw20WMYPmPShtXMCAwEAAaOBojCB
+nzAJBgNVHRMEAjAAMB0GA1UdDgQWBBQKO5Ub8pRCA8iTdRIxUIeMpNX2vzBRBgNV
+HSMESjBIgBQuAzxn3Vws5IeXoQMXyNqXHemKpKEapBgwFjEUMBIGA1UEAwwLdnBu
+Ym9vay5jb22CFCXSevupU4mGQb6Zdj+NC4MdwXh6MBMGA1UdJQQMMAoGCCsGAQUF
+BwMCMAsGA1UdDwQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAel1YOAWHWFLH3N41
+SCIdQNbkQ18UFBbtZz4bzV6VeCWHNzPtWQ6UIeADpcBp0mngS09qJCQ8PwOBMvFw
+MizhDz2Ipz817XtLJuEMQ3Io51LRxPP394mlw46e8KFOh06QI8jnC/QlBH19PI+M
+OeQ3Gx6uYK41HHmyu/Z7dUE4c4s2iiHA7UgD98dkrU0rGAv1R/d2xRXqEm4PrwDj
+MlC1TY8LrIJd6Ipt00uUfHVAzhX3NKR528azYH3bud5NV+KEiQZSyirUyoMbMQeO
+UXh+GEDX5GBPElzQmPOsLete/PMH9Ayg6Gh/sccqwgH7BxjqcVLKXg2S4jL5BUPd
+kI3/sg==
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDT4jcsmB+si17L
+OgHhy8yev/SX1M1QLO7bavDliUZAYyrhD1tzFFY6TIKbZuvsyaITOCHUqPxEuh/N
+bCyuAFolFDs3jrfMQM4Imzay7LOacdA9D5vrlx/IRjpXt/OiR+aMjkOrm9jt66NE
+3kxeK4ON0xdaDs9gFUv4HLAd3egBu96LWeAuv8Gm4hs+KxTvMZeEuDwSl+9xG+3H
+UqAAnPACK6nEfjxAxzmWLdaqeJTPO/uQAxF3paXvby02qF6JyLmRJagPa8BYvykJ
+jwh7Je3hJ5kqNYjoNMt4j9AkR87/BZL4YaQfWd4t01MavF75y7REN/Hg+Q8NtFjG
+D5j0obVzAgMBAAECggEAAV/BLdfatLq+paC9rGIu9ISYKHfn0PJJpkCeSU7HltlN
+yOHZnPhvyrb+TdWwB/wSwf8mMQPbhvKSDDn8XDCCZSUpcSXKyVdOPr4K78QbMhA0
+4oB8aV20hg72h+UYfl/q/dRaWf2LvZc+ms66Pg4YL05EI4BfFedtc7Fz7u2meIRl
+Wm0b7/QQ10wrR1I7PonZzgnU9diB1cKxptJ06AfJmCGobymjq/A1JsAr/NFnJlmu
+yq3n5tcRpfc8K+XsfnpwDQJo3kKwLGIoBmUkGEcHgQhVwOL5+P+3pTYr1bt4cAUp
+FxbExqcxW0es//g3x2Z80icUpa4/OvSTAa0XF3J4UQKBgQDv4E/3/r5lULYIksNC
+zO1yRp7awv41ZAUpDSglNtWsehnhhUsiVE/Ezmyz4E0qjsW2+EUxUZ990T4ZVK4b
+9cEhB/TDBc6PBPd498aIGiiqznWXMdsU2o6xrvkQeWdmXoVjvWTcRWlfAQ+PQBOJ
+tJ3wR7ZoHgu0P/yzIzn0eQ+BiQKBgQDiIDgRtlQBw8tZc66OzxWOuJh6M5xUF5zY
+S0SLXFWlKVkfGACaerHUlFwZKID39BBifgXO1VOQ6AzalDd2vaIU9CHo2bFpTY7S
+EkkcIt9Gpl5o1sjEyJChXBIz+s48XBMXlqFN7AdhX/H6R43g8eS/YlzqSBxkUcAa
+V3tt8n+sGwKBgD+aSXnnKNKyWOHjEDUJIzh2sy4sH71GXPvqiid756II6g3bCvX6
+RwBW/4meQrezDYebQrV2AAUbUwziYBv3yJKainKfeop/daK0iAaUcQ4BGjrRtFZO
+MSG51D5jAmCpVVMB59lj6jGPlXGVOtj7dBk+2oW22cGcacOR5o8E/nCJAoGBALVP
+KCXrj8gqea4rt1cCbEKXeIrjPwGePUCgeUFUs8dONAteb31ty5CrtHznoSEvLMQM
+UBPbsLmLlmLcXOx0eLVcWqQdiMbqTQ3bY4uP2n8HfsOJFEnUl0MKU/4hp6N2IEjV
+mlikW/aTu632Gai3y7Y45E9lqn41nlaAtpMd0YjpAoGBAL8VimbhI7FK7X1vaxXy
+tnqLuYddL+hsxXXfcIVNjLVat3L2WN0YKZtbzWD8TW8hbbtnuS8F8REg7YvYjkZJ
+t8VO6ZmI7I++borJBNmbWS4gEk85DYnaLI9iw4oF2+Dr0LKKAaUL+Pq67wmvufOn
+hTobb/WAAcA75GKmU4jn5Ln2
+-----END PRIVATE KEY-----
+</key>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:08 (2)"
+# ===== END V2Get🔒 2026-08-30 18:08 (2) =====
+
+# ===== BEGIN V2Get🔒 2026-08-30 18:07 =====
+client
+dev tun
+proto tcp
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:07"
+# Multi-endpoint (Load Balancing)
+
+remote 37.46.115.47 443
+
+remote-random
+remote-cert-tls server
+nobind
+persist-key
+persist-tun
+reneg-sec 0
+cipher AES-256-CBC
+auth SHA512
+verb 3
+
+<auth-user-pass>
+USmHCx6wp2
+hzgp46YuLy
+</auth-user-pass>
+
+# ================================
+#      Anti-Reset / Anti-Dr/op
+# ================================
+connect-retry-max 9999
+connect-retry 1 2
+connect-timeout 5
+inactive 0
+ping 5
+ping-restart 20
+setenv SAFE_RESTART 1
+mute-replay-warnings
+explicit-exit-notify 1
+
+
+
+# ================================
+#       Adaptive MTU (AI Mode)
+# ================================
+mssfix 0
+tun-mtu 1500
+
+sndbuf 524288
+rcvbuf 524288
+push-peer-info
+setenv MTU_ADAPTIVE 1
+
+<ca>
+-----BEGIN CERTIFICATE-----
+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
+-----END CERTIFICATE-----
+
+</ca>
+
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIGojCCBIqgAwIBAgIEDPw4EDANBgkqhkiG9w0BAQsFADB7MQswCQYDVQQGEwJS
+TzESMBAGA1UEBxMJQnVjaGFyZXN0MRgwFgYDVQQKEw9DeWJlckdob3N0IFMuQS4x
+GzAZBgNVBAMTEkN5YmVyR2hvc3QgUm9vdCBDQTEhMB8GCSqGSIb3DQEJARYSaW5m
+b0BjeWJlcmdob3N0LnJvMB4XDTI2MDgyOTE2MzUwM1oXDTM2MDgyNjE2MzUwM1ow
+czELMAkGA1UEBhMCUk8xEjAQBgNVBAcMCUJ1Y2hhcmVzdDEYMBYGA1UECgwPQ3li
+ZXJHaG9zdCBTLkEuMRMwEQYDVQQDDApVU21IQ3g2d3AyMSEwHwYJKoZIhvcNAQkB
+FhJpbmZvQGN5YmVyZ2hvc3Qucm8wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
+AoICAQDaxCV+BFTifoj9wr2GiJ9rr4y9X4WnakD42a4TKFRbJ+NNC0Vc3K5xmXg+
+nDN4hylOfhW44rhT4Xq7MK0fRpN378EqEt6M8LcKRC3V6YJPKbjpittCp1en+upc
+NsFij/uIkcTAFB62wHcUoKNgw24m6A5GZY+niYJguVSR+0L3dOEy+jMAKHP7057J
+IhyJ1Ksd8hijUYoYnPSTDtQq3lzVWjMHqPFxFMNSdbWir9E1cU2u+CCP7jTo9PDL
+NietCDvgwrVSoAjVArZS+jpwV8l89cwmaL9Wv4B5kfHzDPUOywn6z/vV3flHruk2
+kvJ88dxE/mB+u8XKDCKhuIKeoMwvdLqrRTi6Hi3t7t/N5x+/GOEplM7YEF3XZhqf
+bNSjscKZHjLCIjYBxAunBQ9yRDk+cJLLv4Rg53wV5P/7++S5ShhQyTXxlbl5b59e
+FvLtda70Ldb2KMmErjc9lbj8B/mSrh80VFrivCJZpUmDeyCo53ryQ/bg0TMtbo/a
+c+3VEILYnu+7vo+d79kQ+rtt+qvJcU0W39N1/nHjr05Y+UrbpFWpUImIJ+0m6i22
+5iQIUnbwIZDpBGCEfqO+1nXbqWXcxqohHavwa8depYtZEIHLafNGLxrV1LmBfA6b
+nym2Utxa6LNKgVC5XGwcSXRX1do+qM4Hcc99WH8cbpvQM8yprwIDAQABo4IBNDCC
+ATAwCQYDVR0TBAIwADALBgNVHQ8EBAMCBaAwNAYJYIZIAYb4QgENBCcWJUN5YmVy
+R2hvc3QgR2VuZXJhdGVkIFVzZXIgQ2VydGlmaWNhdGUwEQYJYIZIAYb4QgEBBAQD
+AgeAMB0GA1UdDgQWBBSuhorSwHlKdBv+IoelxlrWlb7ZdjCBrQYDVR0jBIGlMIGi
+gBTq10rWD8d7mrON4Cgzl4e3iKf2JaF/pH0wezELMAkGA1UEBhMCUk8xEjAQBgNV
+BAcTCUJ1Y2hhcmVzdDEYMBYGA1UEChMPQ3liZXJHaG9zdCBTLkEuMRswGQYDVQQD
+ExJDeWJlckdob3N0IFJvb3QgQ0ExITAfBgkqhkiG9w0BCQEWEmluZm9AY3liZXJn
+aG9zdC5yb4IJAJxUG61mxDS7MA0GCSqGSIb3DQEBCwUAA4ICAQDgxzxRcbnRg0l1
+qHAS+EkSPsrc/bmoiaKZcrCuEZHsLg8dIGjtgJlbZ807cUVjBzWrEzwmomFpj+7O
+UJEbB1xsZPANzgmCzectG1a5DpPlUqZ5LBqUXhIe1E+PUFlTU6V6Bqyv3Q73dP4l
+1nf08/NAkSsHAIAk7I/RHPdYtuiQEfuf0Lz87t5Hi/RgaAQJ6dqKc2i6aHhGcCjs
+trKTHBO5WqM15SlIeAdSxvTaIK5exOeXavO9DWZicgGuIza5aNDBTXyVrOY+USUR
+5FdX1dzFWf9rnAc7BBC9CfzhqEx24UQAuSZk/ulqs1Y9hqyCSG0Uq6QlE5zD1uac
+AY63TWdcoBwexYscFEEuAyoPX7uVl/nDuELp1+OSJmgO8mhDQ5eBfNT6tgKOzTP0
+QlIReGM4U3YW5nr7tRcukeu/6HxLloKofsMMNwaR6DL8zEGnXqISYjV+BmijLzA4
+i5WqZk9JvcWO+Fz4F9WqqlRZWHuUq012E/Ka7UjHSpgV9sV4oyu9mEeI4SyCIyqM
+pcLydHOIwyREFFb9Sje4+U+qC3SI7pfJLsSdewDjjW72kMdQYSwrBX9eMEEZFdbN
+H65GJsbaV7Ma4uyZVwRjz5JCIazVc1PB5K5VelYJCECiR0sMLIKabuAagQOoELUb
+yH90q3R6kJhLSe5psbmnErn4QocJog==
+-----END CERTIFICATE-----
+
+</cert>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setenv FRIENDLY_NAME "V2Get🔒 2026-08-30 18:07"
+# ===== END V2Get🔒 2026-08-30 18:07 =====
+
 # ===== BEGIN V2Get🔒 2026-08-30 17:07 =====
 client
 dev tun
@@ -492916,573 +493474,3 @@ HbbgA9evcC
 
 # OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (4)
 # ===== END V2Get🔒 2026-08-26 01:43 (4) =====
-
-# ===== BEGIN V2Get🔒 2026-08-26 01:43 (5) =====
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (5)
-client
-dev tun
-proto tcp
-
-# Multi-endpoint (Load Balancing)
-
-remote-random
-remote 82.102.26.221 443 tcp-client
-
-remote-random
-client-cert-not-required
-remote-cert-tls server
-nobind
-persist-key
-persist-tun
-reneg-sec 0
-cipher AES-256-CBC
-auth SHA512
-verb 3
-
-# ================================
-#      Anti-Reset / Anti-Drop
-# ================================
-connect-retry-max 9999
-connect-retry 1 2
-connect-timeout 5
-inactive 0
-ping 5
-ping-restart 20
-setenv SAFE_RESTART 1
-mute-replay-warnings
-explicit-exit-notify 1
-
-
-
-# ================================
-#       Adaptive MTU (AI Mode)
-# ================================
-mssfix 0
-tun-mtu 1500
-
-sndbuf 524288
-rcvbuf 524288
-push-peer-info
-setenv MTU_ADAPTIVE 1
-
-<ca>
------BEGIN CERTIFICATE-----
-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
------END CERTIFICATE-----
-
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-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
-qHJy+CAarzX+xIZKmfSGasNyxg/cKg==
------END CERTIFICATE-----
-
-</cert>
-
-<auth-user-pass>
-28PUkJYVCJ
-HbbgA9evcC
-</auth-user-pass>
-
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (5)
-# ===== END V2Get🔒 2026-08-26 01:43 (5) =====
-
-# ===== BEGIN V2Get🔒 2026-08-26 01:43 (6) =====
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (6)
-client
-dev tun
-proto tcp
-
-# Multi-endpoint (Load Balancing)
-
-remote-random
-remote 82.102.26.221 443 tcp-client
-
-remote-random
-client-cert-not-required
-remote-cert-tls server
-nobind
-persist-key
-persist-tun
-reneg-sec 0
-cipher AES-256-CBC
-auth SHA512
-verb 3
-
-# ================================
-#      Anti-Reset / Anti-Drop
-# ================================
-connect-retry-max 9999
-connect-retry 1 2
-connect-timeout 5
-inactive 0
-ping 5
-ping-restart 20
-setenv SAFE_RESTART 1
-mute-replay-warnings
-explicit-exit-notify 1
-
-
-
-# ================================
-#       Adaptive MTU (AI Mode)
-# ================================
-mssfix 0
-tun-mtu 1500
-
-sndbuf 524288
-rcvbuf 524288
-push-peer-info
-setenv MTU_ADAPTIVE 1
-
-<ca>
------BEGIN CERTIFICATE-----
-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
------END CERTIFICATE-----
-
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-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
-qHJy+CAarzX+xIZKmfSGasNyxg/cKg==
------END CERTIFICATE-----
-
-</cert>
-
-<auth-user-pass>
-28PUkJYVCJ
-HbbgA9evcC
-</auth-user-pass>
-
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (6)
-# ===== END V2Get🔒 2026-08-26 01:43 (6) =====
-
-# ===== BEGIN V2Get🔒 2026-08-26 01:43 (7) =====
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (7)
-client
-dev tun
-proto tcp
-
-# Multi-endpoint (Load Balancing)
-
-remote-random
-remote 37.46.115.43 443 tcp-client
-
-remote-random
-client-cert-not-required
-remote-cert-tls server
-nobind
-persist-key
-persist-tun
-reneg-sec 0
-cipher AES-256-CBC
-auth SHA512
-verb 3
-
-# ================================
-#      Anti-Reset / Anti-Drop
-# ================================
-connect-retry-max 9999
-connect-retry 1 2
-connect-timeout 5
-inactive 0
-ping 5
-ping-restart 20
-setenv SAFE_RESTART 1
-mute-replay-warnings
-explicit-exit-notify 1
-
-
-
-# ================================
-#       Adaptive MTU (AI Mode)
-# ================================
-mssfix 0
-tun-mtu 1500
-
-sndbuf 524288
-rcvbuf 524288
-push-peer-info
-setenv MTU_ADAPTIVE 1
-
-<ca>
------BEGIN CERTIFICATE-----
-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
------END CERTIFICATE-----
-
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-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
-qHJy+CAarzX+xIZKmfSGasNyxg/cKg==
------END CERTIFICATE-----
-
-</cert>
-
-<auth-user-pass>
-28PUkJYVCJ
-HbbgA9evcC
-</auth-user-pass>
-
-# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-08-26 01:43 (7)
-# ===== END V2Get🔒 2026-08-26 01:43 (7) =====
-
-# ===== BEGIN V2Get🔒 2026-08-26 00:00 =====
-client
-dev tun
-proto tcp
-setenv FRIENDLY_NAME "V2Get🔒 2026-08-26 00:00"
-# Multi-endpoint (Load Balancing)
-
-remote-random
-remote 37.46.115.45 443 tcp-client
-
-remote-random
-client-cert-not-required
-remote-cert-tls server
-nobind
-persist-key
-persist-tun
-reneg-sec 0
-cipher AES-256-CBC
-auth SHA512
-verb 3
-
-# ================================
-#      Anti-Reset / Anti-Drop
-# ================================
-connect-retry-max 9999
-connect-retry 1 2
-connect-timeout 5
-inactive 0
-ping 5
-ping-restart 20
-setenv SAFE_RESTART 1
-mute-replay-warnings
-explicit-exit-notify 1
-
-
-
-# ================================
-#       Adaptive MTU (AI Mode)
-# ================================
-mssfix 0
-tun-mtu 1500
-
-sndbuf 524288
-rcvbuf 524288
-push-peer-info
-setenv MTU_ADAPTIVE 1
-
-<ca>
------BEGIN CERTIFICATE-----
-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
------END CERTIFICATE-----
-
-</ca>
-<cert>
------BEGIN CERTIFICATE-----
-MIIGojCCBIqgAwIBAgIEC9SpoTANBgkqhkiG9w0BAQsFADB7MQswCQYDVQQGEwJS
-TzESMBAGA1UEBxMJQnVjaGFyZXN0MRgwFgYDVQQKEw9DeWJlckdob3N0IFMuQS4x
-GzAZBgNVBAMTEkN5YmVyR2hvc3QgUm9vdCBDQTEhMB8GCSqGSIb3DQEJARYSaW5m
-b0BjeWJlcmdob3N0LnJvMB4XDTI2MDUyODA3MzE1MFoXDTM2MDUyNTA3MzE1MFow
-czELMAkGA1UEBhMCUk8xEjAQBgNVBAcMCUJ1Y2hhcmVzdDEYMBYGA1UECgwPQ3li
-ZXJHaG9zdCBTLkEuMRMwEQYDVQQDDApBUXN6OTZ4cGV4MSEwHwYJKoZIhvcNAQkB
-FhJpbmZvQGN5YmVyZ2hvc3Qucm8wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
-AoICAQC5LkqVEjCv7zBlASz8oYCN2hsmJx1ud5P73YSECwOd79wgSUwLxyidjPpD
-Rs/fBH4bSJs5Dh1c56CTFc6PAxO3cvsiGGmNBJG0thMpqvLeneievtkXKLucQrii
-YACRak/dC+JUn5PRjHJbnVfv27laujhPvw1MtIhVRZjOWjjJU+5YGYDWv6wpnYb8
-5bS+q39sGRnNyGB7UlqVsCjRRoEHaCzM1TpbveGUiLgq9F4v/Ip91QeyEfptcwYg
-G2wVA2GJWFsNJlVr/uQoA3AedKo/NJpqmAsIk5dcAUMB8lcNYPd6zF/bNII6cxP9
-baEbgV0efGPWqGQlQIMnYBSTkyYLy9v1C5b3F2MruRyTpf+4IAyS3mpHEjTvE9hT
-ZiqO41/PgrJdzfV9bxKvk1lGdQEbBfdasq1EtrzgL6Mp+LUyUOyGcY0JPiaXd8MZ
-dwaWau2k4jrIp61kae0sHHUbh3jwaf2Z6Q02DWNv6qmcTOpJLHkg/zayo2sW9OFf
-GXBzO45FdMpQEoC/TDVviwu2w+v8Gic3GBIRu6uBtseCunRSUmwcNBIyQlUTFfdY
-UEEDs7CgajRDUGk0DHarfTY85lzowROhdXSHjSqAl2eGgBIO0+JC74KaxxAZwWdA
-UeYtvWDngJmiTjVTmQG2b+ds+Y3l9fkY5T8XJ5eGAE0swqfpNwIDAQABo4IBNDCC
-ATAwCQYDVR0TBAIwADALBgNVHQ8EBAMCBaAwNAYJYIZIAYb4QgENBCcWJUN5YmVy
-R2hvc3QgR2VuZXJhdGVkIFVzZXIgQ2VydGlmaWNhdGUwEQYJYIZIAYb4QgEBBAQD
-AgeAMB0GA1UdDgQWBBQPtz0eY+V4RYDNTZXulHaSa0yyGjCBrQYDVR0jBIGlMIGi
-gBTq10rWD8d7mrON4Cgzl4e3iKf2JaF/pH0wezELMAkGA1UEBhMCUk8xEjAQBgNV
-BAcTCUJ1Y2hhcmVzdDEYMBYGA1UEChMPQ3liZXJHaG9zdCBTLkEuMRswGQYDVQQD
-ExJDeWJlckdob3N0IFJvb3QgQ0ExITAfBgkqhkiG9w0BCQEWEmluZm9AY3liZXJn
-aG9zdC5yb4IJAJxUG61mxDS7MA0GCSqGSIb3DQEBCwUAA4ICAQBUvFxq1SlrwsDj
-TU9q88vnwP95TGoHwD53+NXxT1XtytB4DgCegY5tCgsNizh2OxDZyMdMjsUO8Gd8
-9lHb1qbzW/vpuReG5oEg6gwAc/TPIN6wHSwH+R0h45K5me5BjPOUEqVHW43EZ42D
-s/ZbP7VdI3x4CtcOlgmJhIOFxkkCvC+Yzd7taq/cp9eNx582Gv++977Wg7F+ZNJo
-SyH1+D5QzZ2NKfXY0QM5LtQykB/gJoEOYjwV9TTVKrmpK85WCLWrZIyQXSyLtdS9
-WNzxuseCJVarL/ZbzIAfxKE5CME5B+aMEnruBYYitBKFuz1Pzb6kr9v+DuDNdqiE
-bbBK3ezn1dw3ho/JysE0r2ArSXquR5YQBQ6rb7qKDI0xlnAMqY4Qtlb3epJTWsf5
-dnJFLxWqGUqd2usMOVrDX8yzIYIp18e33gqLLd6kwzVDkJoG/bZO4o6CUehDAL8A
-aA6/e3ZWvcHrhvnjIRrdWzGKeBYCHoVkexWYNpoOSpedGftVpRHzXOvSSCgcVp3e
-m4cDX5mjO+AHDUDs+TshzP4THTymiXXowd4iyws2VItu0J3xp173Rbbzap2p4qqI
-LSDYDRrTOaJg6/CmAWBJ2gcI4Tww8beAbWCnpQXGZTEe9NWvQrNEWmVkHz5t88is
-qHJy+CAarzX+xIZKmfSGasNyxg/cKg==
------END CERTIFICATE-----
-
-</cert>
-
-<auth-user-pass>
-evgAw3aejn
-drUaTPufRx
-</auth-user-pass>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-setenv FRIENDLY_NAME "V2Get🔒 2026-08-26 00:00"
-# ===== END V2Get🔒 2026-08-26 00:00 =====
