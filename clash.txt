@@ -12,28 +12,78 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 11:13
-  type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: O2YoW7eB8d
+- name: V2Get🛰️ 2026-08-08 12:11
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
   udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+- name: V2Get🛰️ 2026-08-17 21:11
+  type: ss
+  server: 194.87.47.204
+  port: 10901
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
+  udp: true
+- name: V2Get🛰️ 2026-08-30 13:14
+  type: vless
+  server: parr.mechanicir.ir
+  port: 38479
+  uuid: f09ca7ff-bfc2-4f72-8cf4-a3c81100cc15
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-30 13:14 #2'
+  type: vless
+  server: neth1.mechanicir.ir
+  port: 38479
+  uuid: f09ca7ff-bfc2-4f72-8cf4-a3c81100cc15
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-30 13:14 #3'
+  type: vless
+  server: spt2.milkabebar.ir
+  port: 38479
+  uuid: c100e5ba-1cf5-45ce-b491-5c2b02cdde5e
+  udp: true
+  network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-30 16:14
-  type: vless
-  server: 104.21.8.34
-  port: 2052
-  uuid: abc71b1a-2efb-4982-8cf3-c59be1759bdf
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 16:14 #2'
   type: trojan
   server: 65.109.216.227
   port: 18399
   password: '@@ZhilaVPN@'
   udp: true
   sni: play.google.com
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-30 14:14
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d499fa8c-2e14-4bd5-a3ca-73fae7f04cb5
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
+- name: 'V2Get🛰️ 2026-08-30 16:14 #2'
+  type: vless
+  server: 104.21.8.34
+  port: 2052
+  uuid: abc71b1a-2efb-4982-8cf3-c59be1759bdf
+  udp: true
+  network: httpupgrade
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-30 16:14 #3'
   type: vless
@@ -130,7 +180,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-08-30 14:14
+- name: 'V2Get🛰️ 2026-08-30 14:14 #2'
   type: vless
   server: 165.231.157.108
   port: 443
@@ -255,20 +305,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 14:14 #2'
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d499fa8c-2e14-4bd5-a3ca-73fae7f04cb5
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
 - name: 'V2Get🛰️ 2026-08-30 14:15 #3'
   type: vless
   server: 172.105.104.54
@@ -456,7 +492,7 @@ proxies:
   reality-opts:
     public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
     short-id: 00bca5982f82d083
-- name: V2Get🛰️ 2026-08-30 13:14
+- name: 'V2Get🛰️ 2026-08-30 13:14 #4'
   type: vless
   server: amzzzlu.amirrsub.ir
   port: 2525
@@ -469,49 +505,7 @@ proxies:
   reality-opts:
     public-key: 9pr_F_JbEOly9iNKb3NAM08TCofNCt6avCkbeEs6hGY
     short-id: 254b19
-- name: 'V2Get🛰️ 2026-08-30 13:14 #2'
-  type: vless
-  server: spt2.milkabebar.ir
-  port: 38479
-  uuid: 8c2d5e7e-116a-49c4-8437-937f4bfce346
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 13:14 #3'
-  type: vless
-  server: spt2.milkabebar.ir
-  port: 10694
-  uuid: 8c2d5e7e-116a-49c4-8437-937f4bfce346
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-30 13:14 #4'
-  type: vless
-  server: fan3.milkabebar.ir
-  port: 38479
-  uuid: 8c2d5e7e-116a-49c4-8437-937f4bfce346
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-30 13:14 #5'
-  type: vless
-  server: fan3.milkabebar.ir
-  port: 10694
-  uuid: 8c2d5e7e-116a-49c4-8437-937f4bfce346
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
-- name: 'V2Get🛰️ 2026-08-30 13:14 #6'
   type: vless
   server: lonm.milkabebar.ir
   port: 38479
@@ -525,8 +519,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 11:13
+  - V2Get🛰️ 2026-08-08 12:11
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-30 13:14
+  - 'V2Get🛰️ 2026-08-30 13:14 #2'
+  - 'V2Get🛰️ 2026-08-30 13:14 #3'
   - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-30 14:14
   - 'V2Get🛰️ 2026-08-30 16:14 #2'
   - 'V2Get🛰️ 2026-08-30 16:14 #3'
   - 'V2Get🛰️ 2026-08-30 16:14 #4'
@@ -536,7 +535,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 16:14 #8'
   - 'V2Get🛰️ 2026-08-30 16:14 #9'
   - 'V2Get🛰️ 2026-08-30 16:14 #10'
-  - V2Get🛰️ 2026-08-30 14:14
+  - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - V2Get🛰️ 2026-08-30 15:14
   - 'V2Get🛰️ 2026-08-30 15:14 #2'
   - 'V2Get🛰️ 2026-08-30 15:14 #3'
@@ -547,7 +546,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 14:16 #3'
   - V2Get🛰️ 2026-08-30 14:15
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
-  - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - 'V2Get🛰️ 2026-08-30 14:15 #3'
   - 'V2Get🛰️ 2026-08-30 14:15 #4'
   - 'V2Get🛰️ 2026-08-30 14:15 #5'
@@ -562,20 +560,21 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 14:13
   - 'V2Get🛰️ 2026-08-30 14:13 #2'
   - V2Get🛰️ 2026-08-30 13:15
-  - V2Get🛰️ 2026-08-30 13:14
-  - 'V2Get🛰️ 2026-08-30 13:14 #2'
-  - 'V2Get🛰️ 2026-08-30 13:14 #3'
   - 'V2Get🛰️ 2026-08-30 13:14 #4'
   - 'V2Get🛰️ 2026-08-30 13:14 #5'
-  - 'V2Get🛰️ 2026-08-30 13:14 #6'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 11:13
+  - V2Get🛰️ 2026-08-08 12:11
+  - V2Get🛰️ 2026-08-17 21:11
+  - V2Get🛰️ 2026-08-30 13:14
+  - 'V2Get🛰️ 2026-08-30 13:14 #2'
+  - 'V2Get🛰️ 2026-08-30 13:14 #3'
   - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-30 14:14
   - 'V2Get🛰️ 2026-08-30 16:14 #2'
   - 'V2Get🛰️ 2026-08-30 16:14 #3'
   - 'V2Get🛰️ 2026-08-30 16:14 #4'
@@ -585,7 +584,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 16:14 #8'
   - 'V2Get🛰️ 2026-08-30 16:14 #9'
   - 'V2Get🛰️ 2026-08-30 16:14 #10'
-  - V2Get🛰️ 2026-08-30 14:14
+  - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - V2Get🛰️ 2026-08-30 15:14
   - 'V2Get🛰️ 2026-08-30 15:14 #2'
   - 'V2Get🛰️ 2026-08-30 15:14 #3'
@@ -596,7 +595,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 14:16 #3'
   - V2Get🛰️ 2026-08-30 14:15
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
-  - 'V2Get🛰️ 2026-08-30 14:14 #2'
   - 'V2Get🛰️ 2026-08-30 14:15 #3'
   - 'V2Get🛰️ 2026-08-30 14:15 #4'
   - 'V2Get🛰️ 2026-08-30 14:15 #5'
@@ -611,12 +609,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 14:13
   - 'V2Get🛰️ 2026-08-30 14:13 #2'
   - V2Get🛰️ 2026-08-30 13:15
-  - V2Get🛰️ 2026-08-30 13:14
-  - 'V2Get🛰️ 2026-08-30 13:14 #2'
-  - 'V2Get🛰️ 2026-08-30 13:14 #3'
   - 'V2Get🛰️ 2026-08-30 13:14 #4'
   - 'V2Get🛰️ 2026-08-30 13:14 #5'
-  - 'V2Get🛰️ 2026-08-30 13:14 #6'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
