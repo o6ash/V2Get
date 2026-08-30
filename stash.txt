@@ -12,14 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 02:13
+- name: V2Get🛰️ 2026-08-30 14:16
   type: vless
-  server: 140.82.33.78
-  port: 20827
-  uuid: 78c61f86-6229-4994-8389-7d7213ce7f42
+  server: 130.185.120.62
+  port: 1819
+  uuid: bc85e463-6151-484c-b6af-f96ccf96224a
   udp: true
   network: tcp
-  skip-cert-verify: true
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-08-30 14:15
   type: vless
   server: spiderpanel-production-4ba1.up.railway.app
@@ -455,7 +459,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 02:13
+  - V2Get🛰️ 2026-08-30 14:16
   - V2Get🛰️ 2026-08-30 14:15
   - V2Get🛰️ 2026-08-30 13:14
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
@@ -500,7 +504,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 02:13
+  - V2Get🛰️ 2026-08-30 14:16
   - V2Get🛰️ 2026-08-30 14:15
   - V2Get🛰️ 2026-08-30 13:14
   - 'V2Get🛰️ 2026-08-30 14:15 #2'
