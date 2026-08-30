@@ -12,27 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 21:08
-  type: ss
-  server: 54.36.174.134
+- name: V2Get🛰️ 2026-08-29 01:10
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  udp: true
+  network: grpc
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-08-30 12:13
+  type: vless
+  server: us3.lunariai.ru
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
   udp: true
-- name: 'V2Get🛰️ 2026-08-17 21:08 #2'
-  type: ss
-  server: 144.31.168.176
-  port: 45640
-  cipher: chacha20-ietf-poly1305
-  password: eQvKkykBEbCky5p4BVghO0
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: us3.lunariai.ru
+- name: 'V2Get🛰️ 2026-08-30 12:13 #2'
+  type: vless
+  server: 38.107.236.178
+  port: 443
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
   udp: true
-- name: V2Get🛰️ 2026-08-21 17:56
-  type: ss
-  server: 15.204.247.175
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-08-25 20:04
   type: vless
   server: 91.99.50.192
@@ -1159,9 +1175,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 21:08
-  - 'V2Get🛰️ 2026-08-17 21:08 #2'
-  - V2Get🛰️ 2026-08-21 17:56
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-30 12:13
+  - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - V2Get🛰️ 2026-08-25 20:04
   - V2Get🛰️ 2026-08-28 17:10
   - V2Get🛰️ 2026-08-30 22:14
@@ -1265,9 +1281,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 21:08
-  - 'V2Get🛰️ 2026-08-17 21:08 #2'
-  - V2Get🛰️ 2026-08-21 17:56
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-30 12:13
+  - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - V2Get🛰️ 2026-08-25 20:04
   - V2Get🛰️ 2026-08-28 17:10
   - V2Get🛰️ 2026-08-30 22:14
