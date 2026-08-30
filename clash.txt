@@ -12,6 +12,66 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-30 08:13
+  type: vless
+  server: de57.tranzit-net.ru
+  port: 443
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: d.tranzit-net.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
+- name: V2Get🛰️ 2026-08-30 12:13
+  type: vless
+  server: us3.lunariai.ru
+  port: 443
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: us3.lunariai.ru
+- name: 'V2Get🛰️ 2026-08-30 12:13 #2'
+  type: vless
+  server: 38.107.236.178
+  port: 443
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-30 19:14
+  type: vless
+  server: 144.172.119.9
+  port: 110
+  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-31 01:16
+  type: vless
+  server: stream.tonblack.app
+  port: 2053
+  uuid: 66be8be7-ae9b-4944-a91b-6e4b6b058c92
+  udp: true
+  network: ws
+  tls: true
+  servername: stream.tonblack.app
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /tr1-cdn
+    headers:
+      Host: stream.tonblack.app
 - name: V2Get🛰️ 2026-08-31 01:15
   type: vless
   server: nazi.vip3333.ir
@@ -612,14 +672,6 @@ proxies:
   reality-opts:
     public-key: XhfHr5VYPbNs6BrrsYc7Wd6-D2nJAO8QrixRuJarFkU
     short-id: 4fd1b3b30e82af52
-- name: V2Get🛰️ 2026-08-30 21:14
-  type: trojan
-  server: 65.109.216.227
-  port: 47808
-  password: zFJ25p2ZlJ
-  udp: true
-  sni: play.google.com
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-30 23:16 #2'
   type: vless
   server: 65.109.216.227
@@ -1037,7 +1089,7 @@ proxies:
     path: /nova-geo-psiphon-de
     headers:
       Host: amzzzlu.amirrsub.ir
-- name: 'V2Get🛰️ 2026-08-30 21:14 #2'
+- name: V2Get🛰️ 2026-08-30 21:14
   type: vless
   server: uskonkori.velmor.xyz
   port: 443
@@ -1050,7 +1102,7 @@ proxies:
   reality-opts:
     public-key: SIzdu__6fNT8gFVMl40ce4vab9GYzGbZdY0a0GrrM3Q
     short-id: 12f81ef8ded23b55
-- name: 'V2Get🛰️ 2026-08-30 21:14 #3'
+- name: 'V2Get🛰️ 2026-08-30 21:14 #2'
   type: vless
   server: frkonkor.velmor.xyz
   port: 443
@@ -1063,7 +1115,7 @@ proxies:
   reality-opts:
     public-key: SIzdu__6fNT8gFVMl40ce4vab9GYzGbZdY0a0GrrM3Q
     short-id: 12f81ef8ded23b55
-- name: 'V2Get🛰️ 2026-08-30 21:14 #4'
+- name: 'V2Get🛰️ 2026-08-30 21:14 #3'
   type: vless
   server: nekonkor.velmor.xyz
   port: 443
@@ -1076,49 +1128,17 @@ proxies:
   reality-opts:
     public-key: SIzdu__6fNT8gFVMl40ce4vab9GYzGbZdY0a0GrrM3Q
     short-id: 12f81ef8ded23b55
-- name: V2Get🛰️ 2026-08-30 20:16
-  type: ss
-  server: BatmaNAli.Sav-savteAm.iR
-  port: 41432
-  cipher: chacha20-ietf-poly1305
-  password: ru8qWwASZvJjTaw_CTjketdEU8Dci4OR
-  udp: true
-- name: V2Get🛰️ 2026-08-30 20:15
-  type: vless
-  server: sakhrenab.sav-savteam.ir
-  port: 6969
-  uuid: ab862106-4846-46eb-86c0-cb0071fcf58f
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /MelinetNew?ed=2095
-- name: 'V2Get🛰️ 2026-08-30 20:15 #2'
-  type: ss
-  server: batmanali.sav-savteam.ir
-  port: 41432
-  cipher: chacha20-ietf-poly1305
-  password: r6wySsN0GX1IuF31ITQvV1bDfBGuC8RL
-  udp: true
-- name: 'V2Get🛰️ 2026-08-30 20:15 #3'
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 9f0c2d79-1b63-457d-bb39-1478cff75d44
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-30 12:13
+  - 'V2Get🛰️ 2026-08-30 12:13 #2'
+  - V2Get🛰️ 2026-08-30 19:14
+  - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 01:15
   - 'V2Get🛰️ 2026-08-31 01:15 #2'
   - 'V2Get🛰️ 2026-08-31 01:15 #3'
@@ -1171,7 +1191,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 21:15 #8'
   - 'V2Get🛰️ 2026-08-30 21:15 #9'
   - 'V2Get🛰️ 2026-08-30 21:15 #10'
-  - V2Get🛰️ 2026-08-30 21:14
   - 'V2Get🛰️ 2026-08-30 23:16 #2'
   - 'V2Get🛰️ 2026-08-30 23:16 #3'
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
@@ -1210,19 +1229,20 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 21:15 #27'
   - 'V2Get🛰️ 2026-08-30 21:15 #28'
   - 'V2Get🛰️ 2026-08-30 21:15 #29'
+  - V2Get🛰️ 2026-08-30 21:14
   - 'V2Get🛰️ 2026-08-30 21:14 #2'
   - 'V2Get🛰️ 2026-08-30 21:14 #3'
-  - 'V2Get🛰️ 2026-08-30 21:14 #4'
-  - V2Get🛰️ 2026-08-30 20:16
-  - V2Get🛰️ 2026-08-30 20:15
-  - 'V2Get🛰️ 2026-08-30 20:15 #2'
-  - 'V2Get🛰️ 2026-08-30 20:15 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-30 12:13
+  - 'V2Get🛰️ 2026-08-30 12:13 #2'
+  - V2Get🛰️ 2026-08-30 19:14
+  - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 01:15
   - 'V2Get🛰️ 2026-08-31 01:15 #2'
   - 'V2Get🛰️ 2026-08-31 01:15 #3'
@@ -1275,7 +1295,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 21:15 #8'
   - 'V2Get🛰️ 2026-08-30 21:15 #9'
   - 'V2Get🛰️ 2026-08-30 21:15 #10'
-  - V2Get🛰️ 2026-08-30 21:14
   - 'V2Get🛰️ 2026-08-30 23:16 #2'
   - 'V2Get🛰️ 2026-08-30 23:16 #3'
   - 'V2Get🛰️ 2026-08-30 22:15 #2'
@@ -1314,13 +1333,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 21:15 #27'
   - 'V2Get🛰️ 2026-08-30 21:15 #28'
   - 'V2Get🛰️ 2026-08-30 21:15 #29'
+  - V2Get🛰️ 2026-08-30 21:14
   - 'V2Get🛰️ 2026-08-30 21:14 #2'
   - 'V2Get🛰️ 2026-08-30 21:14 #3'
-  - 'V2Get🛰️ 2026-08-30 21:14 #4'
-  - V2Get🛰️ 2026-08-30 20:16
-  - V2Get🛰️ 2026-08-30 20:15
-  - 'V2Get🛰️ 2026-08-30 20:15 #2'
-  - 'V2Get🛰️ 2026-08-30 20:15 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
