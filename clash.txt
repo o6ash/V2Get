@@ -12,18 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
+- name: V2Get🛰️ 2026-08-30 12:13
   type: vless
-  server: 162.19.228.119
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  server: nid1th.jarvesitw.ru
+  port: 443
+  uuid: 84491c04-b011-4fdc-b97d-770975586f3a
   udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1KFW6dRUTJyKwtB33w2A8Y0Fbcaexa_bE_pEqGTkuR0
+    short-id: af0fb079
 - name: V2Get🛰️ 2026-08-27 11:07
   type: vless
   server: 185.226.140.140
@@ -1161,7 +1163,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-08-27 11:07
   - V2Get🛰️ 2026-08-29 15:11
   - V2Get🛰️ 2026-08-30 00:12
@@ -1267,7 +1269,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-08-27 11:07
   - V2Get🛰️ 2026-08-29 15:11
   - V2Get🛰️ 2026-08-30 00:12
