@@ -12,6 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-29 15:11
+  type: vless
+  server: 213.130.137.40
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-30 10:13
+  type: vless
+  server: 95.85.232.112
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: duchland1.vodniki.monster
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
 - name: V2Get🛰️ 2026-08-30 12:14
   type: vless
   server: de-emergency-service.pavilof.ir
@@ -249,20 +285,6 @@ proxies:
   reality-opts:
     public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
     short-id: 1bcc9177f3124b25
-- name: V2Get🛰️ 2026-08-30 10:13
-  type: vless
-  server: 95.85.232.112
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: duchland1.vodniki.monster
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
-    short-id: 0c13e8822e7f58aa
 - name: V2Get🛰️ 2026-08-30 11:13
   type: trojan
   server: 65.109.216.227
@@ -1040,18 +1062,6 @@ proxies:
   reality-opts:
     public-key: XhfHr5VYPbNs6BrrsYc7Wd6-D2nJAO8QrixRuJarFkU
     short-id: 4fd1b3b30e82af52
-- name: V2Get🛰️ 2026-08-29 23:13
-  type: vless
-  server: 185.143.233.5
-  port: 80
-  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
 - name: 'V2Get🛰️ 2026-08-30 00:12 #2'
   type: vless
   server: ger3.danqela.ir
@@ -1124,15 +1134,7 @@ proxies:
   reality-opts:
     public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
     short-id: 44e82fd7b97b14
-- name: 'V2Get🛰️ 2026-08-29 23:13 #2'
-  type: vless
-  server: 3.11.188.198
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 23:13 #3'
+- name: V2Get🛰️ 2026-08-29 23:13
   type: vless
   server: 3.11.188.198
   port: 22224
@@ -1140,7 +1142,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 23:13 #4'
+- name: 'V2Get🛰️ 2026-08-29 23:13 #2'
   type: vless
   server: 150.40.126.19
   port: 443
@@ -1161,6 +1163,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 12:14
   - 'V2Get🛰️ 2026-08-30 12:14 #2'
   - 'V2Get🛰️ 2026-08-30 12:14 #3'
@@ -1180,7 +1185,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 12:13 #5'
   - V2Get🛰️ 2026-08-30 00:12
   - V2Get🛰️ 2026-08-30 06:13
-  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 11:13
   - V2Get🛰️ 2026-08-30 11:14
   - 'V2Get🛰️ 2026-08-30 11:13 #2'
@@ -1251,22 +1255,23 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 00:14 #11'
   - 'V2Get🛰️ 2026-08-30 00:14 #12'
   - 'V2Get🛰️ 2026-08-30 00:14 #13'
-  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-30 00:12 #2'
   - 'V2Get🛰️ 2026-08-30 00:12 #3'
   - 'V2Get🛰️ 2026-08-30 00:12 #4'
   - 'V2Get🛰️ 2026-08-30 00:12 #5'
   - 'V2Get🛰️ 2026-08-30 00:12 #6'
   - 'V2Get🛰️ 2026-08-30 00:13 #2'
+  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
-  - 'V2Get🛰️ 2026-08-29 23:13 #3'
-  - 'V2Get🛰️ 2026-08-29 23:13 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 12:14
   - 'V2Get🛰️ 2026-08-30 12:14 #2'
   - 'V2Get🛰️ 2026-08-30 12:14 #3'
@@ -1286,7 +1291,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 12:13 #5'
   - V2Get🛰️ 2026-08-30 00:12
   - V2Get🛰️ 2026-08-30 06:13
-  - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 11:13
   - V2Get🛰️ 2026-08-30 11:14
   - 'V2Get🛰️ 2026-08-30 11:13 #2'
@@ -1357,16 +1361,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 00:14 #11'
   - 'V2Get🛰️ 2026-08-30 00:14 #12'
   - 'V2Get🛰️ 2026-08-30 00:14 #13'
-  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-30 00:12 #2'
   - 'V2Get🛰️ 2026-08-30 00:12 #3'
   - 'V2Get🛰️ 2026-08-30 00:12 #4'
   - 'V2Get🛰️ 2026-08-30 00:12 #5'
   - 'V2Get🛰️ 2026-08-30 00:12 #6'
   - 'V2Get🛰️ 2026-08-30 00:13 #2'
+  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-08-29 23:13 #2'
-  - 'V2Get🛰️ 2026-08-29 23:13 #3'
-  - 'V2Get🛰️ 2026-08-29 23:13 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
