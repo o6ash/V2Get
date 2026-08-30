@@ -12,27 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 21:11
-  type: ss
-  server: 194.87.47.204
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  udp: true
-- name: V2Get🛰️ 2026-08-29 18:12
+- name: V2Get🛰️ 2026-08-31 03:15
   type: vless
-  server: 159.69.28.178
-  port: 20995
-  uuid: 20bcb7a8-c51b-4771-9686-6b4509dc9cd2
+  server: 138.124.242.252
+  port: 10443
+  uuid: 9760d405-dc30-4d24-b3b2-5afaed396256
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GqIZ3PiZBcvHMfXhk7BDZMWhF2Q4FrGVW9sgkllXkA4
-    short-id: 6ba85179e30d4fc2
+  network: xhttp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-31 03:15 #2'
+  type: vless
+  server: 95.216.142.36
+  port: 443
+  uuid: b94a01b6-8974-4609-bc72-ae72e526a312
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /we
+    headers:
+      Host: amp-api-edge.apps.apple.com
 - name: V2Get🛰️ 2026-08-30 21:15
   type: vless
   server: ger3.danqela.ir
@@ -1194,8 +1193,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 21:11
-  - V2Get🛰️ 2026-08-29 18:12
+  - V2Get🛰️ 2026-08-31 03:15
+  - 'V2Get🛰️ 2026-08-31 03:15 #2'
   - V2Get🛰️ 2026-08-30 21:15
   - 'V2Get🛰️ 2026-08-30 21:15 #2'
   - V2Get🛰️ 2026-08-31 02:16
@@ -1296,8 +1295,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 21:11
-  - V2Get🛰️ 2026-08-29 18:12
+  - V2Get🛰️ 2026-08-31 03:15
+  - 'V2Get🛰️ 2026-08-31 03:15 #2'
   - V2Get🛰️ 2026-08-30 21:15
   - 'V2Get🛰️ 2026-08-30 21:15 #2'
   - V2Get🛰️ 2026-08-31 02:16
