@@ -12,28 +12,48 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-17 21:07
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-30 12:15
+  type: ss
+  server: mn1.levikogjgfdd.ir
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zEoIXTFhh/Z+Mf6dR5l7gdbRVuB0tFFEFUqKxi8hOt8=
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-29 15:11
+- name: 'V2Get🛰️ 2026-08-30 12:15 #2'
   type: vless
-  server: 213.130.137.40
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  server: mn6.levikogjgfdd.ir
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
   udp: true
-  network: xhttp
+  network: grpc
   tls: true
-  servername: panel.freesavesafe.com
+  servername: mold.speedload.online
   client-fingerprint: firefox
   reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 'V2Get🛰️ 2026-08-30 12:15 #3'
+  type: vless
+  server: mn9.levikogjgfdd.ir
+  port: 8443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.google.com
+  reality-opts:
+    public-key: ikgjW7sTpGgWMRVewLHLpovWxHa_FFdczKrq8kMiSFQ
+    short-id: f1c868899d48ba08
+- name: 'V2Get🛰️ 2026-08-30 12:15 #4'
+  type: ss
+  server: mn5.levikogjgfdd.ir
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +RVrrYpka8vzDG1IZIHEcuyFSuvRnfpylJWmqh3xGOc=
+  udp: true
 - name: V2Get🛰️ 2026-08-30 10:13
   type: vless
   server: 95.85.232.112
@@ -1134,37 +1154,16 @@ proxies:
   reality-opts:
     public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
     short-id: 44e82fd7b97b14
-- name: V2Get🛰️ 2026-08-29 23:13
-  type: vless
-  server: 3.11.188.198
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-29 23:13 #2'
-  type: vless
-  server: 150.40.126.19
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: rs2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
-    short-id: 1469af2040b7c323
-  grpc-opts:
-    grpc-service-name: media.v1.ObjectService
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-30 12:15
+  - 'V2Get🛰️ 2026-08-30 12:15 #2'
+  - 'V2Get🛰️ 2026-08-30 12:15 #3'
+  - 'V2Get🛰️ 2026-08-30 12:15 #4'
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 12:14
   - 'V2Get🛰️ 2026-08-30 12:14 #2'
@@ -1261,16 +1260,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 00:12 #5'
   - 'V2Get🛰️ 2026-08-30 00:12 #6'
   - 'V2Get🛰️ 2026-08-30 00:13 #2'
-  - V2Get🛰️ 2026-08-29 23:13
-  - 'V2Get🛰️ 2026-08-29 23:13 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-17 21:07
-  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-30 12:15
+  - 'V2Get🛰️ 2026-08-30 12:15 #2'
+  - 'V2Get🛰️ 2026-08-30 12:15 #3'
+  - 'V2Get🛰️ 2026-08-30 12:15 #4'
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 12:14
   - 'V2Get🛰️ 2026-08-30 12:14 #2'
@@ -1367,8 +1366,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 00:12 #5'
   - 'V2Get🛰️ 2026-08-30 00:12 #6'
   - 'V2Get🛰️ 2026-08-30 00:13 #2'
-  - V2Get🛰️ 2026-08-29 23:13
-  - 'V2Get🛰️ 2026-08-29 23:13 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
