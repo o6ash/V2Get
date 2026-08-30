@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-30 02:13
+  type: vless
+  server: 140.82.33.78
+  port: 20827
+  uuid: 78c61f86-6229-4994-8389-7d7213ce7f42
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-30 14:16
   type: vless
   server: 31.76.106.29
@@ -486,25 +494,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-30 13:13
-  type: vless
-  server: amzzzlu.amirrsub.ir
-  port: 443
-  uuid: 4f2f7683-af83-4cc7-96e6-34be57d277f6
-  udp: true
-  network: ws
-  tls: true
-  servername: amzzzlu.amirrsub.ir
-  ws-opts:
-    path: /nova-geo-psiphon-de
-    headers:
-      Host: amzzzlu.amirrsub.ir
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-30 02:13
   - V2Get🛰️ 2026-08-30 14:16
   - 'V2Get🛰️ 2026-08-30 14:16 #2'
   - V2Get🛰️ 2026-08-30 14:15
@@ -548,13 +544,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 13:14 #21'
   - 'V2Get🛰️ 2026-08-30 13:14 #22'
   - 'V2Get🛰️ 2026-08-30 13:14 #23'
-  - V2Get🛰️ 2026-08-30 13:13
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-30 02:13
   - V2Get🛰️ 2026-08-30 14:16
   - 'V2Get🛰️ 2026-08-30 14:16 #2'
   - V2Get🛰️ 2026-08-30 14:15
@@ -598,7 +594,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 13:14 #21'
   - 'V2Get🛰️ 2026-08-30 13:14 #22'
   - 'V2Get🛰️ 2026-08-30 13:14 #23'
-  - V2Get🛰️ 2026-08-30 13:13
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
