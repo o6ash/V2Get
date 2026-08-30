@@ -12,6 +12,61 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 01:10
+  type: vless
+  server: 144.31.1.201
+  port: 8090
+  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
+  udp: true
+  network: grpc
+  tls: true
+  servername: mold.speedload.online
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+    short-id: 6b2f4e6ac9b1d2f0
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-08-29 15:11
+  type: vless
+  server: 72.56.115.125
+  port: 443
+  uuid: 4e25f371-acc5-4eb6-afb3-b763ee75537d
+  udp: true
+  network: ws
+  tls: true
+  servername: rotterdam.korgivps.ru
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /api/user
+- name: V2Get🛰️ 2026-08-29 22:12
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-30 08:13
+  type: vless
+  server: de57.tranzit-net.ru
+  port: 443
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: d.tranzit-net.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
 - name: V2Get🛰️ 2026-08-30 13:15
   type: vless
   server: 195.123.226.114
@@ -487,19 +542,6 @@ proxies:
     path: /vl-ws
     headers:
       Host: stanngv2-production-e252.up.railway.app
-- name: V2Get🛰️ 2026-08-30 08:13
-  type: vless
-  server: de57.tranzit-net.ru
-  port: 443
-  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: d.tranzit-net.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
 - name: V2Get🛰️ 2026-08-30 12:13
   type: vless
   server: 157.137.237.99
@@ -990,29 +1032,13 @@ proxies:
       Host: eded-52n.pages.dev
 - name: V2Get🛰️ 2026-08-30 03:13
   type: vless
-  server: 212.115.103.189
-  port: 56539
-  uuid: b5539644-22ce-4140-96c9-9e844318ce24
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 03:13 #2'
-  type: vless
-  server: 207.241.173.146
-  port: 56539
-  uuid: 107f1833-7379-43ea-b4ad-509598842770
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 03:13 #3'
-  type: vless
   server: 38.128.251.24
   port: 56539
   uuid: 31301c72-07a9-4a41-86a4-331d6e17dc17
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-30 03:13 #4'
+- name: 'V2Get🛰️ 2026-08-30 03:13 #2'
   type: vless
   server: 5.75.196.117
   port: 56539
@@ -1020,25 +1046,16 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-30 02:13
-  type: vless
-  server: 66.245.207.124
-  port: 32855
-  uuid: b777cf00-b462-4dd7-9857-dc30151707c8
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10
-    short-id: deb7a9e5a6e1d41a
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-29 22:12
+  - V2Get🛰️ 2026-08-30 08:13
   - V2Get🛰️ 2026-08-30 13:15
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 13:14
@@ -1081,7 +1098,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 12:14 #8'
   - 'V2Get🛰️ 2026-08-30 12:14 #9'
   - 'V2Get🛰️ 2026-08-30 12:14 #10'
-  - V2Get🛰️ 2026-08-30 08:13
   - V2Get🛰️ 2026-08-30 12:13
   - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - 'V2Get🛰️ 2026-08-30 12:13 #3'
@@ -1126,15 +1142,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 06:13 #3'
   - V2Get🛰️ 2026-08-30 03:13
   - 'V2Get🛰️ 2026-08-30 03:13 #2'
-  - 'V2Get🛰️ 2026-08-30 03:13 #3'
-  - 'V2Get🛰️ 2026-08-30 03:13 #4'
-  - V2Get🛰️ 2026-08-30 02:13
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-29 15:11
+  - V2Get🛰️ 2026-08-29 22:12
+  - V2Get🛰️ 2026-08-30 08:13
   - V2Get🛰️ 2026-08-30 13:15
   - V2Get🛰️ 2026-08-30 10:13
   - V2Get🛰️ 2026-08-30 13:14
@@ -1177,7 +1194,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 12:14 #8'
   - 'V2Get🛰️ 2026-08-30 12:14 #9'
   - 'V2Get🛰️ 2026-08-30 12:14 #10'
-  - V2Get🛰️ 2026-08-30 08:13
   - V2Get🛰️ 2026-08-30 12:13
   - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - 'V2Get🛰️ 2026-08-30 12:13 #3'
@@ -1222,9 +1238,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-30 06:13 #3'
   - V2Get🛰️ 2026-08-30 03:13
   - 'V2Get🛰️ 2026-08-30 03:13 #2'
-  - 'V2Get🛰️ 2026-08-30 03:13 #3'
-  - 'V2Get🛰️ 2026-08-30 03:13 #4'
-  - V2Get🛰️ 2026-08-30 02:13
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
