@@ -13,6 +13,14 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-09-01 00:18
+  type: vless
+  server: 176.97.218.225
+  port: 2020
+  uuid: 18ac6bf2-890f-4241-a089-13677bba1272
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-01 00:18 #2'
   type: vmess
   server: 109.248.161.228
   port: 443
@@ -1165,14 +1173,6 @@ proxies:
       Host: panel.vip3333.ir
 - name: 'V2Get🛰️ 2026-08-31 19:17 #2'
   type: vless
-  server: zmaoz.faculty.ucdavis.edu
-  port: 80
-  uuid: fe93060a-69ab-4314-8817-ac1405f21e58
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 19:17 #3'
-  type: vless
   server: 31.77.183.88
   port: 5000
   uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
@@ -1192,6 +1192,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-01 00:18
+  - 'V2Get🛰️ 2026-09-01 00:18 #2'
   - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 00:17 #2'
   - 'V2Get🛰️ 2026-09-01 00:17 #3'
@@ -1290,7 +1291,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 20:17 #29'
   - V2Get🛰️ 2026-08-31 19:17
   - 'V2Get🛰️ 2026-08-31 19:17 #2'
-  - 'V2Get🛰️ 2026-08-31 19:17 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1298,6 +1298,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-01 00:18
+  - 'V2Get🛰️ 2026-09-01 00:18 #2'
   - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 00:17 #2'
   - 'V2Get🛰️ 2026-09-01 00:17 #3'
@@ -1396,7 +1397,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 20:17 #29'
   - V2Get🛰️ 2026-08-31 19:17
   - 'V2Get🛰️ 2026-08-31 19:17 #2'
-  - 'V2Get🛰️ 2026-08-31 19:17 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
