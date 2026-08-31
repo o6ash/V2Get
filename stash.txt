@@ -12,70 +12,83 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 11:44
+- name: V2Get🛰️ 2026-08-30 18:14
   type: vless
-  server: 172.67.143.54
-  port: 2086
-  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /taha3
-    headers:
-      Host: aged-silence-8d7d.tahaggs.workers.dev
-- name: V2Get🛰️ 2026-08-29 01:10
-  type: vless
-  server: 144.31.1.201
-  port: 8090
-  uuid: 5f829d2f-2f13-450c-81ac-e9832b8e47ec
-  udp: true
-  network: grpc
-  tls: true
-  servername: mold.speedload.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: 6b2f4e6ac9b1d2f0
-  grpc-opts:
-    grpc-service-name: grpc
-- name: V2Get🛰️ 2026-08-29 16:11
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  ws-opts:
-    path: /RoBeRt
-- name: V2Get🛰️ 2026-08-30 08:13
-  type: vless
-  server: de57.tranzit-net.ru
+  server: 104.19.78.197
   port: 443
-  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: d.tranzit-net.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
-- name: V2Get🛰️ 2026-08-30 12:13
-  type: vless
-  server: us3.lunariai.ru
-  port: 443
-  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: forsh2.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
   ws-opts:
     path: /
     headers:
-      Host: us3.lunariai.ru
-- name: 'V2Get🛰️ 2026-08-30 12:13 #2'
+      Host: forsh2.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-30 18:14 #2'
+  type: vless
+  server: 162.159.81.17
+  port: 443
+  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
+  udp: true
+  network: ws
+  tls: true
+  servername: forsh2.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: forsh2.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-30 18:14 #3'
+  type: vless
+  server: 172.67.140.10
+  port: 2087
+  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
+  udp: true
+  network: ws
+  tls: true
+  servername: forsh2.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: forsh2.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-08-30 18:14 #4'
+  type: vless
+  server: 172.66.146.2
+  port: 2087
+  uuid: a609dde1-ae8b-4b7e-97b1-6ed4806a1095
+  udp: true
+  network: ws
+  tls: true
+  servername: forsh2.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: forsh2.dearhossein-taktaz.ir
+- name: V2Get🛰️ 2026-08-31 15:18
+  type: trojan
+  server: 65.109.217.127
+  port: 19874
+  password: 49fYsrRi8m
+  udp: true
+  sni: amp-api-edge.apps.apple.com
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-30 12:13
   type: vless
   server: 38.107.236.178
   port: 443
@@ -949,12 +962,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 11:44
-  - V2Get🛰️ 2026-08-29 01:10
-  - V2Get🛰️ 2026-08-29 16:11
-  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-30 18:14
+  - 'V2Get🛰️ 2026-08-30 18:14 #2'
+  - 'V2Get🛰️ 2026-08-30 18:14 #3'
+  - 'V2Get🛰️ 2026-08-30 18:14 #4'
+  - V2Get🛰️ 2026-08-31 15:18
   - V2Get🛰️ 2026-08-30 12:13
-  - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-30 19:14
   - V2Get🛰️ 2026-08-31 01:15
@@ -1039,12 +1052,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 11:44
-  - V2Get🛰️ 2026-08-29 01:10
-  - V2Get🛰️ 2026-08-29 16:11
-  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-30 18:14
+  - 'V2Get🛰️ 2026-08-30 18:14 #2'
+  - 'V2Get🛰️ 2026-08-30 18:14 #3'
+  - 'V2Get🛰️ 2026-08-30 18:14 #4'
+  - V2Get🛰️ 2026-08-31 15:18
   - V2Get🛰️ 2026-08-30 12:13
-  - 'V2Get🛰️ 2026-08-30 12:13 #2'
   - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-30 19:14
   - V2Get🛰️ 2026-08-31 01:15
