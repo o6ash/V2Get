@@ -14,13 +14,21 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-08-31 14:16
   type: vless
+  server: gfr.athforce.ir
+  port: 2090
+  uuid: cdc072c2-a357-4bcd-940b-b45c6a2b8322
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-31 14:16 #2'
+  type: vless
   server: 147.182.156.111
   port: 1161
   uuid: 2268450c-1df4-b45f-90b3-263dec7ff456
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 14:16 #2'
+- name: 'V2Get🛰️ 2026-08-31 14:16 #3'
   type: vless
   server: 147.182.156.111
   port: 8039
@@ -1095,18 +1103,6 @@ proxies:
   reality-opts:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
-- name: V2Get🛰️ 2026-08-31 06:15
-  type: vless
-  server: 89.117.112.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=TelegramрҹҮЁрҹҮі+@VPNine1
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -1115,6 +1111,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
+  - 'V2Get🛰️ 2026-08-31 14:16 #3'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1211,7 +1208,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
   - 'V2Get🛰️ 2026-08-31 09:15 #3'
   - V2Get🛰️ 2026-08-31 08:15
-  - V2Get🛰️ 2026-08-31 06:15
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1220,6 +1216,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
+  - 'V2Get🛰️ 2026-08-31 14:16 #3'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1316,7 +1313,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
   - 'V2Get🛰️ 2026-08-31 09:15 #3'
   - V2Get🛰️ 2026-08-31 08:15
-  - V2Get🛰️ 2026-08-31 06:15
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
