@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 13:16
+  type: vless
+  server: neo.harmira.ir
+  port: 2364
+  uuid: 888ace32-07d3-4000-b6c2-1268d9715f1b
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-31 12:16
+  type: vless
+  server: 91.228.227.172
+  port: 443
+  uuid: 96172b09-2ec8-418d-a539-7e9fb118caf8
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-29 22:12
   type: vless
   server: 151.101.56.7
@@ -214,18 +230,6 @@ proxies:
     path: /
     headers:
       Host: de-emergency-service.pavilof.ir
-- name: V2Get🛰️ 2026-08-21 11:55
-  type: vless
-  server: 185.140.12.160
-  port: 2083
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  network: grpc
-  tls: true
-  servername: derman.neobo-tooth.ru
-  client-fingerprint: ios
-  grpc-opts:
-    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-08-27 02:07
   type: vless
   server: 193.238.154.18
@@ -440,14 +444,6 @@ proxies:
   reality-opts:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
-- name: V2Get🛰️ 2026-08-31 12:16
-  type: vless
-  server: 91.228.227.172
-  port: 443
-  uuid: 96172b09-2ec8-418d-a539-7e9fb118caf8
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-08-31 11:16 #3'
   type: vless
   server: cloud1.tsteam7.top
@@ -994,6 +990,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 13:16
+  - V2Get🛰️ 2026-08-31 12:16
   - V2Get🛰️ 2026-08-29 22:12
   - V2Get🛰️ 2026-08-30 22:16
   - V2Get🛰️ 2026-08-29 01:10
@@ -1010,7 +1008,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 10:16 #6'
   - 'V2Get🛰️ 2026-08-31 10:16 #7'
   - 'V2Get🛰️ 2026-08-31 10:16 #8'
-  - V2Get🛰️ 2026-08-21 11:55
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-27 05:06
   - V2Get🛰️ 2026-08-29 15:11
@@ -1028,7 +1025,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 12:17 #7'
   - 'V2Get🛰️ 2026-08-31 12:17 #8'
   - 'V2Get🛰️ 2026-08-31 10:16 #9'
-  - V2Get🛰️ 2026-08-31 12:16
   - 'V2Get🛰️ 2026-08-31 11:16 #3'
   - 'V2Get🛰️ 2026-08-31 11:16 #4'
   - 'V2Get🛰️ 2026-08-31 11:16 #5'
@@ -1082,6 +1078,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 13:16
+  - V2Get🛰️ 2026-08-31 12:16
   - V2Get🛰️ 2026-08-29 22:12
   - V2Get🛰️ 2026-08-30 22:16
   - V2Get🛰️ 2026-08-29 01:10
@@ -1098,7 +1096,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 10:16 #6'
   - 'V2Get🛰️ 2026-08-31 10:16 #7'
   - 'V2Get🛰️ 2026-08-31 10:16 #8'
-  - V2Get🛰️ 2026-08-21 11:55
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-27 05:06
   - V2Get🛰️ 2026-08-29 15:11
@@ -1116,7 +1113,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 12:17 #7'
   - 'V2Get🛰️ 2026-08-31 12:17 #8'
   - 'V2Get🛰️ 2026-08-31 10:16 #9'
-  - V2Get🛰️ 2026-08-31 12:16
   - 'V2Get🛰️ 2026-08-31 11:16 #3'
   - 'V2Get🛰️ 2026-08-31 11:16 #4'
   - 'V2Get🛰️ 2026-08-31 11:16 #5'
