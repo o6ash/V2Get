@@ -12,6 +12,62 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-30 08:13
+  type: vless
+  server: de57.tranzit-net.ru
+  port: 443
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: d.tranzit-net.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
+- name: V2Get🛰️ 2026-08-31 12:15
+  type: vless
+  server: support.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: update.asshole.eu.cc
+- name: V2Get🛰️ 2026-08-31 01:15
+  type: vless
+  server: u.tlpyun.com
+  port: 443
+  uuid: 5ba437f3-f2f4-42e6-be33-5c144eb11b83
+  udp: true
+  network: ws
+  tls: true
+  servername: lukas.irandoc.info
+  client-fingerprint: firefox
+  ws-opts:
+    path: /api1/update
+    headers:
+      Host: lukashost.irandoc.info
+- name: V2Get🛰️ 2026-08-31 01:16
+  type: vless
+  server: stream.tonblack.app
+  port: 2053
+  uuid: 66be8be7-ae9b-4944-a91b-6e4b6b058c92
+  udp: true
+  network: ws
+  tls: true
+  servername: stream.tonblack.app
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /tr1-cdn
+    headers:
+      Host: stream.tonblack.app
 - name: V2Get🛰️ 2026-08-31 11:16
   type: vless
   server: 104.252.30.239
@@ -35,7 +91,7 @@ proxies:
     short-id: 11bcf6be19cb61a7
   grpc-opts:
     grpc-service-name: ''
-- name: V2Get🛰️ 2026-08-31 01:16
+- name: 'V2Get🛰️ 2026-08-31 01:16 #2'
   type: vless
   server: nazi.vip3333.ir
   port: 443
@@ -149,38 +205,6 @@ proxies:
   reality-opts:
     public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
     short-id: a0fbc54d937aaccb
-- name: V2Get🛰️ 2026-08-30 19:14
-  type: vless
-  server: 144.172.119.9
-  port: 110
-  uuid: 18450ff3-1ebb-4665-957b-219aef3d83c7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-30 12:13
-  type: vless
-  server: 38.107.236.178
-  port: 443
-  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-08-31 01:15
-  type: vless
-  server: u.tlpyun.com
-  port: 443
-  uuid: 5ba437f3-f2f4-42e6-be33-5c144eb11b83
-  udp: true
-  network: ws
-  tls: true
-  servername: lukas.irandoc.info
-  client-fingerprint: firefox
-  ws-opts:
-    path: /api1/update
-    headers:
-      Host: lukashost.irandoc.info
 - name: 'V2Get🛰️ 2026-08-31 01:15 #2'
   type: vless
   server: 104.21.70.21
@@ -986,7 +1010,7 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
-- name: 'V2Get🛰️ 2026-08-31 01:16 #2'
+- name: 'V2Get🛰️ 2026-08-31 01:16 #3'
   type: vless
   server: 104.21.70.21
   port: 8080
@@ -998,7 +1022,7 @@ proxies:
     path: /
     headers:
       Host: freeuse.firta.ru
-- name: 'V2Get🛰️ 2026-08-31 01:16 #3'
+- name: 'V2Get🛰️ 2026-08-31 01:16 #4'
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -1019,23 +1043,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 01:16 #4'
-  type: vless
-  server: stream.tonblack.app
-  port: 2053
-  uuid: 66be8be7-ae9b-4944-a91b-6e4b6b058c92
-  udp: true
-  network: ws
-  tls: true
-  servername: stream.tonblack.app
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - http/1.1
-  ws-opts:
-    path: /tr1-cdn
-    headers:
-      Host: stream.tonblack.app
 - name: 'V2Get🛰️ 2026-08-31 01:15 #7'
   type: vless
   server: 146.19.248.148
@@ -1094,9 +1101,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-31 12:15
+  - V2Get🛰️ 2026-08-31 01:15
+  - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 11:16
   - 'V2Get🛰️ 2026-08-31 11:16 #2'
-  - V2Get🛰️ 2026-08-31 01:16
+  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 11:16 #3'
@@ -1107,9 +1118,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 11:16 #8'
   - 'V2Get🛰️ 2026-08-31 11:16 #9'
   - 'V2Get🛰️ 2026-08-31 11:16 #10'
-  - V2Get🛰️ 2026-08-30 19:14
-  - V2Get🛰️ 2026-08-30 12:13
-  - V2Get🛰️ 2026-08-31 01:15
   - 'V2Get🛰️ 2026-08-31 01:15 #2'
   - 'V2Get🛰️ 2026-08-31 11:16 #11'
   - 'V2Get🛰️ 2026-08-31 11:16 #12'
@@ -1174,10 +1182,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 01:17 #2'
   - 'V2Get🛰️ 2026-08-31 01:15 #4'
   - 'V2Get🛰️ 2026-08-31 01:15 #5'
-  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - 'V2Get🛰️ 2026-08-31 01:16 #3'
-  - 'V2Get🛰️ 2026-08-31 01:15 #6'
   - 'V2Get🛰️ 2026-08-31 01:16 #4'
+  - 'V2Get🛰️ 2026-08-31 01:15 #6'
   - 'V2Get🛰️ 2026-08-31 01:15 #7'
   - 'V2Get🛰️ 2026-08-31 01:15 #8'
   - 'V2Get🛰️ 2026-08-31 01:15 #9'
@@ -1189,9 +1196,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-30 08:13
+  - V2Get🛰️ 2026-08-31 12:15
+  - V2Get🛰️ 2026-08-31 01:15
+  - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 11:16
   - 'V2Get🛰️ 2026-08-31 11:16 #2'
-  - V2Get🛰️ 2026-08-31 01:16
+  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 11:16 #3'
@@ -1202,9 +1213,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 11:16 #8'
   - 'V2Get🛰️ 2026-08-31 11:16 #9'
   - 'V2Get🛰️ 2026-08-31 11:16 #10'
-  - V2Get🛰️ 2026-08-30 19:14
-  - V2Get🛰️ 2026-08-30 12:13
-  - V2Get🛰️ 2026-08-31 01:15
   - 'V2Get🛰️ 2026-08-31 01:15 #2'
   - 'V2Get🛰️ 2026-08-31 11:16 #11'
   - 'V2Get🛰️ 2026-08-31 11:16 #12'
@@ -1269,10 +1277,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 01:17 #2'
   - 'V2Get🛰️ 2026-08-31 01:15 #4'
   - 'V2Get🛰️ 2026-08-31 01:15 #5'
-  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - 'V2Get🛰️ 2026-08-31 01:16 #3'
-  - 'V2Get🛰️ 2026-08-31 01:15 #6'
   - 'V2Get🛰️ 2026-08-31 01:16 #4'
+  - 'V2Get🛰️ 2026-08-31 01:15 #6'
   - 'V2Get🛰️ 2026-08-31 01:15 #7'
   - 'V2Get🛰️ 2026-08-31 01:15 #8'
   - 'V2Get🛰️ 2026-08-31 01:15 #9'
