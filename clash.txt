@@ -12,6 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-01 00:18
+  type: vmess
+  server: 109.248.161.228
+  port: 443
+  uuid: 864da6a2-44d2-4d6e-80e3-6a5c77925889
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-09-01 00:17
   type: vless
   server: app2.goonars.com
@@ -1176,23 +1185,13 @@ proxies:
   reality-opts:
     public-key: cpoZcpYNYSvFXGGB21tByHUoNd7-FYrJ0UP7ZDfSFCs
     short-id: a1b2c3d4
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  servername: milan.adaspoloandco.com
-  ws-opts:
-    path: /RoBeRt
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-01 00:18
   - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 00:17 #2'
   - 'V2Get🛰️ 2026-09-01 00:17 #3'
@@ -1292,13 +1291,13 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 19:17
   - 'V2Get🛰️ 2026-08-31 19:17 #2'
   - 'V2Get🛰️ 2026-08-31 19:17 #3'
-  - V2Get🛰️ 2026-08-31 19:16
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-01 00:18
   - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 00:17 #2'
   - 'V2Get🛰️ 2026-09-01 00:17 #3'
@@ -1398,7 +1397,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 19:17
   - 'V2Get🛰️ 2026-08-31 19:17 #2'
   - 'V2Get🛰️ 2026-08-31 19:17 #3'
-  - V2Get🛰️ 2026-08-31 19:16
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
