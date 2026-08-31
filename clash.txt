@@ -13,6 +13,15 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-08-31 09:15
+  type: vmess
+  server: 104.252.30.239
+  port: 8880
+  uuid: 83daeed4-17c7-463e-94ce-360f588aef0b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-31 09:15 #2'
   type: vless
   server: omg.fars-remen.ir
   port: 18149
@@ -25,7 +34,7 @@ proxies:
   reality-opts:
     public-key: LBlScaTInFivNfOiYzDW8ExpwR2O3p4j-vJ8f-4JGWw
     short-id: a4f78af8c177c10a
-- name: 'V2Get🛰️ 2026-08-31 09:15 #2'
+- name: 'V2Get🛰️ 2026-08-31 09:15 #3'
   type: vmess
   server: 104.19.138.197
   port: 443
@@ -37,22 +46,6 @@ proxies:
   tls: true
   servername: xcrouse23ed.iranpuls.ir
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-30 22:15
-  type: vless
-  server: 94.156.232.254
-  port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
-  udp: true
-  network: ws
-  tls: true
-  servername: cf6.rumedia-cdn.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf6.rumedia-cdn.com
 - name: V2Get🛰️ 2026-08-31 08:15
   type: vless
   server: 185.95.231.156
@@ -1201,7 +1194,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-08-31 09:15
   - 'V2Get🛰️ 2026-08-31 09:15 #2'
-  - V2Get🛰️ 2026-08-30 22:15
+  - 'V2Get🛰️ 2026-08-31 09:15 #3'
   - V2Get🛰️ 2026-08-31 08:15
   - V2Get🛰️ 2026-08-31 06:15
   - 'V2Get🛰️ 2026-08-31 06:15 #2'
@@ -1304,7 +1297,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-08-31 09:15
   - 'V2Get🛰️ 2026-08-31 09:15 #2'
-  - V2Get🛰️ 2026-08-30 22:15
+  - 'V2Get🛰️ 2026-08-31 09:15 #3'
   - V2Get🛰️ 2026-08-31 08:15
   - V2Get🛰️ 2026-08-31 06:15
   - 'V2Get🛰️ 2026-08-31 06:15 #2'
