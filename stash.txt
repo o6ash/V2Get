@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 213.182.199.137
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: V2Get🛰️ 2026-08-27 20:09
   type: vless
   server: 146.103.98.84
@@ -436,26 +449,13 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: V2Get🛰️ 2026-08-31 04:15
+- name: 'V2Get🛰️ 2026-08-31 04:15 #2'
   type: trojan
   server: 188.42.145.180
   port: 443
   password: humanity
   udp: true
   sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 'V2Get🛰️ 2026-08-31 04:15 #2'
-  type: trojan
-  server: 213.182.199.137
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
   alpn:
   - http/1.1
   skip-cert-verify: true
@@ -1096,6 +1096,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-08-27 20:09
   - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-08-31 10:17
@@ -1131,7 +1132,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 06:15 #3'
   - 'V2Get🛰️ 2026-08-31 06:15 #4'
   - V2Get🛰️ 2026-08-31 05:15
-  - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 04:15 #3'
   - 'V2Get🛰️ 2026-08-31 02:15 #2'
@@ -1188,6 +1188,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-08-27 20:09
   - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-08-31 10:17
@@ -1223,7 +1224,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 06:15 #3'
   - 'V2Get🛰️ 2026-08-31 06:15 #4'
   - V2Get🛰️ 2026-08-31 05:15
-  - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 04:15 #3'
   - 'V2Get🛰️ 2026-08-31 02:15 #2'
