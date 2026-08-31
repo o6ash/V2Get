@@ -12,22 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 16:14
-  type: vless
-  server: 104.21.8.34
-  port: 2052
-  uuid: abc71b1a-2efb-4982-8cf3-c59be1759bdf
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-31 04:15
+- name: V2Get🛰️ 2026-08-31 05:15
   type: trojan
-  server: 169.40.32.135
-  port: 53
-  password: cq7CcHDiuq
+  server: 45.205.0.6
+  port: 443
+  password: humanity
   udp: true
+  sni: www.calmlunch.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 04:15 #2'
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
   server: 188.42.145.180
   port: 443
@@ -40,7 +38,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 'V2Get🛰️ 2026-08-31 04:15 #3'
+- name: 'V2Get🛰️ 2026-08-31 04:15 #2'
   type: trojan
   server: 213.182.199.137
   port: 443
@@ -53,6 +51,13 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 'V2Get🛰️ 2026-08-31 04:15 #3'
+  type: trojan
+  server: 169.40.32.135
+  port: 53
+  password: cq7CcHDiuq
+  udp: true
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-31 00:15
   type: trojan
   server: 65.109.216.227
@@ -1178,7 +1183,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-31 05:15
   - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 04:15 #3'
@@ -1280,7 +1285,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 16:14
+  - V2Get🛰️ 2026-08-31 05:15
   - V2Get🛰️ 2026-08-31 04:15
   - 'V2Get🛰️ 2026-08-31 04:15 #2'
   - 'V2Get🛰️ 2026-08-31 04:15 #3'
