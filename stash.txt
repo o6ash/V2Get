@@ -12,22 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 15:07
+- name: V2Get🛰️ 2026-08-31 17:16
   type: vless
-  server: md1.univesalsrv.com
+  server: tp.paydar.site
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  uuid: fecffc0f-a6a3-42ec-9a80-406e267a423f
   udp: true
-  network: grpc
-  tls: true
-  servername: md1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-    short-id: 221ba6174224ca5b
-  grpc-opts:
-    grpc-service-name: hub.v1.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-27 15:07
   type: vless
   server: bg2.univesalsrv.com
   port: 443
@@ -990,8 +983,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 17:16
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-08-31 16:17
   - 'V2Get🛰️ 2026-08-31 16:17 #2'
   - 'V2Get🛰️ 2026-08-31 16:17 #3'
@@ -1082,8 +1075,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 17:16
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-08-31 16:17
   - 'V2Get🛰️ 2026-08-31 16:17 #2'
   - 'V2Get🛰️ 2026-08-31 16:17 #3'
