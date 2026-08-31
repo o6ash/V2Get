@@ -12,21 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 01:15
-  type: vless
-  server: u.tlpyun.com
-  port: 443
-  uuid: 5ba437f3-f2f4-42e6-be33-5c144eb11b83
-  udp: true
-  network: ws
-  tls: true
-  servername: lukas.irandoc.info
-  client-fingerprint: firefox
-  ws-opts:
-    path: /api1/update
-    headers:
-      Host: lukashost.irandoc.info
 - name: V2Get🛰️ 2026-08-31 14:16
+  type: trojan
+  server: 152.228.212.243
+  port: 8443
+  password: 0l9tjh9vvc2645rz
+  udp: true
+  sni: mdcjzxxs7ca3.dop66.com
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-31 14:16 #2'
+  type: vless
+  server: 152.228.212.243
+  port: 443
+  uuid: 9ac6f241-b0b1-4f76-aec5-057e6cdc3fb4
+  udp: true
+  network: tcp
+  tls: true
+  servername: mdcjzxxs7ca3.dop66.com
+- name: 'V2Get🛰️ 2026-08-31 14:16 #3'
   type: vless
   server: gfr.athforce.ir
   port: 2090
@@ -34,7 +40,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 14:16 #2'
+- name: 'V2Get🛰️ 2026-08-31 14:16 #4'
   type: vless
   server: 147.182.156.111
   port: 1161
@@ -42,7 +48,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 14:16 #3'
+- name: 'V2Get🛰️ 2026-08-31 14:16 #5'
   type: vless
   server: 147.182.156.111
   port: 8039
@@ -177,19 +183,6 @@ proxies:
     path: /results?ed=2048
     headers:
       Host: de1-thehopn--thehopn--thehopn---thehopn--thehopn--thehopn.aytancollection.ir
-- name: V2Get🛰️ 2026-08-31 09:15
-  type: vless
-  server: omg.fars-remen.ir
-  port: 18149
-  uuid: a1d8b9ad-c214-42f8-b0a8-f51746666fdb
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: LBlScaTInFivNfOiYzDW8ExpwR2O3p4j-vJ8f-4JGWw
-    short-id: a4f78af8c177c10a
 - name: 'V2Get🛰️ 2026-08-31 13:17 #10'
   type: vless
   server: 199.232.78.159
@@ -986,7 +979,7 @@ proxies:
   client-fingerprint: ios
   reality-opts:
     public-key: RxTaQwnqqU8vxMMvD6AeUTFadLVvwzUplghzVAilAEg
-- name: 'V2Get🛰️ 2026-08-31 09:15 #2'
+- name: V2Get🛰️ 2026-08-31 09:15
   type: vmess
   server: 104.252.30.239
   port: 8880
@@ -1001,10 +994,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - 'V2Get🛰️ 2026-08-31 14:16 #3'
+  - 'V2Get🛰️ 2026-08-31 14:16 #4'
+  - 'V2Get🛰️ 2026-08-31 14:16 #5'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1016,7 +1010,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 13:17 #7'
   - 'V2Get🛰️ 2026-08-31 13:17 #8'
   - 'V2Get🛰️ 2026-08-31 13:17 #9'
-  - V2Get🛰️ 2026-08-31 09:15
   - 'V2Get🛰️ 2026-08-31 13:17 #10'
   - 'V2Get🛰️ 2026-08-31 13:17 #11'
   - 'V2Get🛰️ 2026-08-31 13:17 #12'
@@ -1085,17 +1078,18 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #5'
   - 'V2Get🛰️ 2026-08-31 09:16 #6'
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
-  - 'V2Get🛰️ 2026-08-31 09:15 #2'
+  - V2Get🛰️ 2026-08-31 09:15
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - 'V2Get🛰️ 2026-08-31 14:16 #3'
+  - 'V2Get🛰️ 2026-08-31 14:16 #4'
+  - 'V2Get🛰️ 2026-08-31 14:16 #5'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1107,7 +1101,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 13:17 #7'
   - 'V2Get🛰️ 2026-08-31 13:17 #8'
   - 'V2Get🛰️ 2026-08-31 13:17 #9'
-  - V2Get🛰️ 2026-08-31 09:15
   - 'V2Get🛰️ 2026-08-31 13:17 #10'
   - 'V2Get🛰️ 2026-08-31 13:17 #11'
   - 'V2Get🛰️ 2026-08-31 13:17 #12'
@@ -1176,7 +1169,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #5'
   - 'V2Get🛰️ 2026-08-31 09:16 #6'
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
-  - 'V2Get🛰️ 2026-08-31 09:15 #2'
+  - V2Get🛰️ 2026-08-31 09:15
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
