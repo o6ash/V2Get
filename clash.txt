@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 01:15
+  type: vless
+  server: u.tlpyun.com
+  port: 443
+  uuid: 5ba437f3-f2f4-42e6-be33-5c144eb11b83
+  udp: true
+  network: ws
+  tls: true
+  servername: lukas.irandoc.info
+  client-fingerprint: firefox
+  ws-opts:
+    path: /api1/update
+    headers:
+      Host: lukashost.irandoc.info
 - name: V2Get🛰️ 2026-08-31 14:16
   type: vless
   server: gfr.athforce.ir
@@ -1089,26 +1103,13 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-31 08:15
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - 'V2Get🛰️ 2026-08-31 14:16 #3'
@@ -1207,13 +1208,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #6'
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
   - 'V2Get🛰️ 2026-08-31 09:15 #3'
-  - V2Get🛰️ 2026-08-31 08:15
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 14:16
   - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - 'V2Get🛰️ 2026-08-31 14:16 #3'
@@ -1312,7 +1313,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:16 #6'
   - 'V2Get🛰️ 2026-08-31 09:16 #7'
   - 'V2Get🛰️ 2026-08-31 09:15 #3'
-  - V2Get🛰️ 2026-08-31 08:15
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
