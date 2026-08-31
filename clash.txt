@@ -12,84 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 22:15
+- name: V2Get🛰️ 2026-07-28 11:43
   type: vless
-  server: 87.120.126.223
+  server: static.lotussec.com
   port: 443
-  uuid: 4c431901-9c6d-49e3-99f6-011b318a0f59
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
   network: xhttp
   tls: true
-  servername: amd.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: quRKzLDUf2TDHpp9vp92UYOKu7IoYM8uSyqun7l5pxI
-    short-id: 523accb1
-- name: V2Get🛰️ 2026-08-30 22:16
-  type: vless
-  server: 108.61.177.236
-  port: 32263
-  uuid: 1236329f-bc88-43a2-ae3b-7cf63ab1bf11
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-30 23:15
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-31 13:17
-  type: vless
-  server: 5.75.200.15
-  port: 49479
-  uuid: 521dd881-9ff9-4480-9217-10d717685895
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 13:17 #2'
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-- name: 'V2Get🛰️ 2026-08-31 13:17 #3'
-  type: vless
-  server: 13.134.200.6
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-08-31 13:17 #4'
-  type: vmess
-  server: 103.83.87.229
-  port: 31973
-  uuid: c0d6667a-d257-4724-bca0-18c33fdd6b4a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-08-31 13:17 #5'
-  type: vless
-  server: fszbv1e0upvs.nhzh4aedurns.workers.dev
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-fe8ebc517696
-  udp: true
-  network: ws
-  tls: true
-  servername: fszbv1e0upvs.nhzh4aedurns.workers.dev
-  ws-opts:
-    path: /stream/PANEL_ZEUS/fe8ebc517696
-    headers:
-      Host: fszbv1e0upvs.nhzh4aedurns.workers.dev
-- name: 'V2Get🛰️ 2026-08-31 13:17 #6'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -102,11 +37,75 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
+- name: 'V2Get🛰️ 2026-08-31 13:17 #2'
+  type: vless
+  server: fszbv1e0upvs.nhzh4aedurns.workers.dev
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-fe8ebc517696
+  udp: true
+  network: ws
+  tls: true
+  servername: fszbv1e0upvs.nhzh4aedurns.workers.dev
+  ws-opts:
+    path: /stream/PANEL_ZEUS/fe8ebc517696
+    headers:
+      Host: fszbv1e0upvs.nhzh4aedurns.workers.dev
+- name: 'V2Get🛰️ 2026-08-31 13:17 #3'
+  type: vmess
+  server: 103.83.87.229
+  port: 31973
+  uuid: c0d6667a-d257-4724-bca0-18c33fdd6b4a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-08-31 13:17 #4'
+  type: vless
+  server: 13.134.200.6
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-31 13:17 #5'
+  type: vmess
+  server: 118.193.57.167
+  port: 49667
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /d46bf492
+- name: 'V2Get🛰️ 2026-08-31 13:17 #6'
+  type: vless
+  server: 5.75.200.15
+  port: 49479
+  uuid: 521dd881-9ff9-4480-9217-10d717685895
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-31 12:16
   type: vless
   server: 91.228.227.172
   port: 443
   uuid: 96172b09-2ec8-418d-a539-7e9fb118caf8
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-30 23:15
+  type: ss
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-08-30 22:16
+  type: vless
+  server: 108.61.177.236
+  port: 32263
+  uuid: 1236329f-bc88-43a2-ae3b-7cf63ab1bf11
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1107,9 +1106,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 22:15
-  - V2Get🛰️ 2026-08-30 22:16
-  - V2Get🛰️ 2026-08-30 23:15
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-31 13:17
   - 'V2Get🛰️ 2026-08-31 13:17 #2'
   - 'V2Get🛰️ 2026-08-31 13:17 #3'
@@ -1117,6 +1114,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 13:17 #5'
   - 'V2Get🛰️ 2026-08-31 13:17 #6'
   - V2Get🛰️ 2026-08-31 12:16
+  - V2Get🛰️ 2026-08-30 23:15
+  - V2Get🛰️ 2026-08-30 22:16
   - V2Get🛰️ 2026-08-31 13:16
   - 'V2Get🛰️ 2026-08-31 13:16 #2'
   - 'V2Get🛰️ 2026-08-31 13:16 #3'
@@ -1212,9 +1211,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 22:15
-  - V2Get🛰️ 2026-08-30 22:16
-  - V2Get🛰️ 2026-08-30 23:15
+  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-31 13:17
   - 'V2Get🛰️ 2026-08-31 13:17 #2'
   - 'V2Get🛰️ 2026-08-31 13:17 #3'
@@ -1222,6 +1219,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 13:17 #5'
   - 'V2Get🛰️ 2026-08-31 13:17 #6'
   - V2Get🛰️ 2026-08-31 12:16
+  - V2Get🛰️ 2026-08-30 23:15
+  - V2Get🛰️ 2026-08-30 22:16
   - V2Get🛰️ 2026-08-31 13:16
   - 'V2Get🛰️ 2026-08-31 13:16 #2'
   - 'V2Get🛰️ 2026-08-31 13:16 #3'
