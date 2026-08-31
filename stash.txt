@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 14:16
+  type: vless
+  server: 147.182.156.111
+  port: 1161
+  uuid: 2268450c-1df4-b45f-90b3-263dec7ff456
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-08-31 14:16 #2'
+  type: vless
+  server: 147.182.156.111
+  port: 8039
+  uuid: 2268450c-1df4-b45f-90b3-263dec7ff456
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-08-31 13:18
   type: trojan
   server: 104.167.199.251
@@ -967,28 +989,6 @@ proxies:
     short-id: a3a578ab
 - name: V2Get🛰️ 2026-08-31 06:15
   type: vless
-  server: 104.21.96.56
-  port: 80
-  uuid: 923e051a-f598-4ea5-9c6c-f7e37c438a60
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /vl/D2pryqVs9LAgCYdTK76lsafWY?ed=2560
-    headers:
-      Host: vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev
-- name: 'V2Get🛰️ 2026-08-31 06:15 #2'
-  type: vless
-  server: calm-silence-d4a1.217.workers.dev
-  port: 8880
-  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-- name: 'V2Get🛰️ 2026-08-31 06:15 #3'
-  type: vless
   server: 89.117.112.4
   port: 80
   uuid: 424fa201-3f94-479e-b533-d5257cf9a207
@@ -1005,6 +1005,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 14:16
+  - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1088,14 +1090,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:15 #2'
   - V2Get🛰️ 2026-08-31 08:15
   - V2Get🛰️ 2026-08-31 06:15
-  - 'V2Get🛰️ 2026-08-31 06:15 #2'
-  - 'V2Get🛰️ 2026-08-31 06:15 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 14:16
+  - 'V2Get🛰️ 2026-08-31 14:16 #2'
   - V2Get🛰️ 2026-08-31 13:18
   - V2Get🛰️ 2026-08-31 13:17
   - V2Get🛰️ 2026-08-31 12:16
@@ -1179,8 +1181,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 09:15 #2'
   - V2Get🛰️ 2026-08-31 08:15
   - V2Get🛰️ 2026-08-31 06:15
-  - 'V2Get🛰️ 2026-08-31 06:15 #2'
-  - 'V2Get🛰️ 2026-08-31 06:15 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
