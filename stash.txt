@@ -12,43 +12,60 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 21:09
+- name: V2Get🛰️ 2026-08-31 20:17
   type: vless
-  server: 162.19.10.99
+  server: app4.goonars.com
   port: 443
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-27 20:09
-  type: vless
-  server: tg1.wba-pn.ru
-  port: 443
-  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
-  udp: true
-  network: ws
-  tls: true
-  servername: tg1.wba-pn.ru
-  client-fingerprint: qq
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-08-27 20:09 #2'
-  type: vless
-  server: 64.188.59.203
-  port: 443
-  uuid: ae2009b9-76cb-4d18-8612-7515b2b84398
-  udp: true
-  network: ws
-  tls: true
-  servername: tg1.wba-pn.ru
+  servername: app4.goonars.com
   client-fingerprint: firefox
+  reality-opts:
+    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
+    short-id: 09ef88a6
+- name: V2Get🛰️ 2026-08-31 21:17
+  type: vless
+  server: direct-tr01.korvexe.ir
+  port: 21570
+  uuid: c7a9c7f0-4a6b-414e-bdfc-8ad8980f858b
+  udp: true
+  network: ws
+  skip-cert-verify: true
   ws-opts:
     path: /
+    headers:
+      Host: direct-tr01.korvexe.ir
+- name: V2Get🛰️ 2026-09-01 11:19
+  type: vless
+  server: 84.32.102.168
+  port: 443
+  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app23.jarvestip.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U
+    short-id: 2aef5875
+- name: V2Get🛰️ 2026-09-01 00:17
+  type: vless
+  server: app3.goonars.com
+  port: 443
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app3.goonars.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
+    short-id: a17b41ba
 - name: V2Get🛰️ 2026-09-01 11:18
   type: vless
   server: 95.216.27.15
@@ -286,20 +303,6 @@ proxies:
   reality-opts:
     public-key: rWpM1YULmwcQynCxVoOo-Nw7BCPlC7LjD1_ou_vWsGo
     short-id: 04e35a9e
-- name: V2Get🛰️ 2026-09-01 00:17
-  type: vless
-  server: app3.goonars.com
-  port: 443
-  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app3.goonars.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
-    short-id: a17b41ba
 - name: 'V2Get🛰️ 2026-09-01 02:17 #3'
   type: vless
   server: 38.128.251.24
@@ -1045,9 +1048,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 21:09
-  - V2Get🛰️ 2026-08-27 20:09
-  - 'V2Get🛰️ 2026-08-27 20:09 #2'
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-09-01 11:19
+  - V2Get🛰️ 2026-09-01 00:17
   - V2Get🛰️ 2026-09-01 11:18
   - V2Get🛰️ 2026-09-01 08:17
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
@@ -1070,7 +1074,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 23:19 #3'
   - 'V2Get🛰️ 2026-08-31 23:17 #2'
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
-  - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 02:17 #3'
   - 'V2Get🛰️ 2026-09-01 02:17 #4'
   - 'V2Get🛰️ 2026-09-01 02:17 #5'
@@ -1145,9 +1148,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 21:09
-  - V2Get🛰️ 2026-08-27 20:09
-  - 'V2Get🛰️ 2026-08-27 20:09 #2'
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-09-01 11:19
+  - V2Get🛰️ 2026-09-01 00:17
   - V2Get🛰️ 2026-09-01 11:18
   - V2Get🛰️ 2026-09-01 08:17
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
@@ -1170,7 +1174,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 23:19 #3'
   - 'V2Get🛰️ 2026-08-31 23:17 #2'
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
-  - V2Get🛰️ 2026-09-01 00:17
   - 'V2Get🛰️ 2026-09-01 02:17 #3'
   - 'V2Get🛰️ 2026-09-01 02:17 #4'
   - 'V2Get🛰️ 2026-09-01 02:17 #5'
