@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-27 05:06
+  type: vless
+  server: 193.108.112.245
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: alban.freeinternat.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+- name: V2Get🛰️ 2026-08-31 01:16
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: freeuse.firta.ru
+- name: V2Get🛰️ 2026-08-31 10:16
+  type: vless
+  server: 156.67.63.231
+  port: 443
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sync-bridge.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
 - name: V2Get🛰️ 2026-08-31 18:16
   type: vless
   server: 176.97.218.225
@@ -92,43 +132,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: Fijji.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-29 16:11
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  client-fingerprint: qq
-  ws-opts:
-    path: /RoBeRt
-- name: V2Get🛰️ 2026-08-29 16:12
-  type: vless
-  server: 146.59.35.134
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /download.php
-- name: V2Get🛰️ 2026-08-29 17:11
-  type: vless
-  server: 54.169.168.70
-  port: 12346
-  uuid: e77f740b-609e-41e0-86e7-14881c1185ea
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 8CbVZ66WQw2bBVlxbQuCZu9WmbFcxzY6nNSz1JcQZkE
-    short-id: a739eb7afcffa605
 - name: V2Get🛰️ 2026-08-31 01:15
   type: vless
   server: 104.21.70.21
@@ -143,7 +146,7 @@ proxies:
     path: /
     headers:
       Host: freeuse.firta.ru
-- name: V2Get🛰️ 2026-08-31 01:16
+- name: 'V2Get🛰️ 2026-08-31 01:16 #2'
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -1042,6 +1045,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-27 05:06
+  - V2Get🛰️ 2026-08-31 01:16
+  - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 18:16
   - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
@@ -1049,11 +1055,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 10:18
-  - V2Get🛰️ 2026-08-29 16:11
-  - V2Get🛰️ 2026-08-29 16:12
-  - V2Get🛰️ 2026-08-29 17:11
   - V2Get🛰️ 2026-08-31 01:15
-  - V2Get🛰️ 2026-08-31 01:16
+  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 02:18
   - 'V2Get🛰️ 2026-09-01 02:18 #2'
@@ -1140,6 +1143,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-27 05:06
+  - V2Get🛰️ 2026-08-31 01:16
+  - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 18:16
   - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
@@ -1147,11 +1153,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 10:18
-  - V2Get🛰️ 2026-08-29 16:11
-  - V2Get🛰️ 2026-08-29 16:12
-  - V2Get🛰️ 2026-08-29 17:11
   - V2Get🛰️ 2026-08-31 01:15
-  - V2Get🛰️ 2026-08-31 01:16
+  - 'V2Get🛰️ 2026-08-31 01:16 #2'
   - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 02:18
   - 'V2Get🛰️ 2026-09-01 02:18 #2'
