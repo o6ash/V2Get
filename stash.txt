@@ -12,20 +12,60 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 05:06
+- name: V2Get🛰️ 2026-08-20 23:12
   type: vless
-  server: 193.108.112.245
+  server: 95.154.196.63
   port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  uuid: bae47c97-9bc1-48f6-a133-a383ee71c12e
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: alban.freeinternat.com
-  client-fingerprint: firefox
+  servername: foodnetwork.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
+    public-key: o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0
+    short-id: 1e977d0b52eab755
+- name: V2Get🛰️ 2026-08-27 05:06
+  type: vless
+  server: 40.160.69.112
+  port: 8080
+  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-08-27 05:06 #2'
+  type: vless
+  server: 40.160.68.118
+  port: 8080
+  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-27 10:06
+  type: vless
+  server: 40.160.68.122
+  port: 8080
+  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /?ed
+- name: V2Get🛰️ 2026-08-27 21:09
+  type: vless
+  server: 40.160.69.180
+  port: 8080
+  uuid: 11af1c47-865a-47c6-92ff-118013655d78
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-08-31 01:16
   type: vless
   server: 104.21.70.21
@@ -92,20 +132,6 @@ proxies:
     path: /CkgzR7qmHg0TxS4D
     headers:
       Host: worker3.ragiki7564.workers.dev
-- name: V2Get🛰️ 2026-08-30 16:15
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d499fa8c-2e14-4bd5-a3ca-73fae7f04cb5
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: V2Get🛰️ 2026-08-31 21:17
   type: vless
   server: 199.232.78.159
@@ -132,43 +158,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: Fijji.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-31 01:15
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  udp: true
-  network: ws
-  tls: true
-  servername: freeuse.firta.ru
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /
-    headers:
-      Host: freeuse.firta.ru
-- name: 'V2Get🛰️ 2026-08-31 01:16 #2'
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-- name: V2Get🛰️ 2026-08-30 12:13
-  type: vless
-  server: 38.107.236.178
-  port: 443
-  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
 - name: V2Get🛰️ 2026-09-01 02:18
   type: vless
   server: 72.56.7.25
@@ -1045,19 +1034,19 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 23:12
   - V2Get🛰️ 2026-08-27 05:06
+  - 'V2Get🛰️ 2026-08-27 05:06 #2'
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 21:09
   - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 18:16
   - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
   - 'V2Get🛰️ 2026-09-01 12:19 #3'
-  - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 10:18
-  - V2Get🛰️ 2026-08-31 01:15
-  - 'V2Get🛰️ 2026-08-31 01:16 #2'
-  - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 02:18
   - 'V2Get🛰️ 2026-09-01 02:18 #2'
   - V2Get🛰️ 2026-08-31 18:17
@@ -1143,19 +1132,19 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 23:12
   - V2Get🛰️ 2026-08-27 05:06
+  - 'V2Get🛰️ 2026-08-27 05:06 #2'
+  - V2Get🛰️ 2026-08-27 10:06
+  - V2Get🛰️ 2026-08-27 21:09
   - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 18:16
   - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
   - 'V2Get🛰️ 2026-09-01 12:19 #3'
-  - V2Get🛰️ 2026-08-30 16:15
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 10:18
-  - V2Get🛰️ 2026-08-31 01:15
-  - 'V2Get🛰️ 2026-08-31 01:16 #2'
-  - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 02:18
   - 'V2Get🛰️ 2026-09-01 02:18 #2'
   - V2Get🛰️ 2026-08-31 18:17
