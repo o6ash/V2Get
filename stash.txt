@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-30 12:13
   type: vless
   server: us3.lunariai.ru
@@ -86,21 +101,6 @@ proxies:
   servername: rubifen.adaspoloandco.com
   ws-opts:
     path: /GOrbEh
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-02 00:20
   type: vless
   server: de.sdssh-vid.online
@@ -1007,13 +1007,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 11:19
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
   - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 00:20
   - 'V2Get🛰️ 2026-09-02 00:20 #2'
   - 'V2Get🛰️ 2026-09-02 00:20 #3'
@@ -1095,13 +1095,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-30 12:13
   - V2Get🛰️ 2026-09-01 11:19
   - V2Get🛰️ 2026-08-27 02:07
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
   - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 00:20
   - 'V2Get🛰️ 2026-09-02 00:20 #2'
   - 'V2Get🛰️ 2026-09-02 00:20 #3'
