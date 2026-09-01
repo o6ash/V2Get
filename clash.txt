@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-01 21:19
+  type: vless
+  server: 65.109.217.127
+  port: 31862
+  uuid: 49739922-a02a-4afe-9344-ee7d0f12da45
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-31 23:18
   type: vless
   server: 2.27.132.119
@@ -138,7 +146,7 @@ proxies:
     short-id: 4fd1b3b30e82af52
 - name: V2Get🛰️ 2026-08-29 15:11
   type: vless
-  server: 213.130.137.180
+  server: 213.130.137.200
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -151,7 +159,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #2'
   type: vless
-  server: 213.130.137.200
+  server: 213.130.137.100
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -164,7 +172,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #3'
   type: vless
-  server: 213.130.137.100
+  server: 213.130.137.50
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -177,7 +185,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #4'
   type: vless
-  server: 213.130.137.50
+  server: 213.130.137.190
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -190,7 +198,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #5'
   type: vless
-  server: 213.130.137.190
+  server: 213.130.137.160
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -203,7 +211,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #6'
   type: vless
-  server: 213.130.137.160
+  server: 213.130.137.170
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -216,7 +224,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #7'
   type: vless
-  server: 213.130.137.170
+  server: 213.130.137.10
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -229,7 +237,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #8'
   type: vless
-  server: 213.130.137.10
+  server: 213.130.137.60
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -242,7 +250,7 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #9'
   type: vless
-  server: 213.130.137.60
+  server: 213.130.137.30
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
   udp: true
@@ -255,19 +263,6 @@ proxies:
     short-id: 812609fa663c57fb
 - name: 'V2Get🛰️ 2026-08-29 15:11 #10'
   type: vless
-  server: 213.130.137.30
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #11'
-  type: vless
   server: panel.freesavesafe.com
   port: 443
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
@@ -279,7 +274,7 @@ proxies:
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: 812609fa663c57fb
-- name: 'V2Get🛰️ 2026-08-29 15:11 #12'
+- name: 'V2Get🛰️ 2026-08-29 15:11 #11'
   type: vless
   server: 213.130.137.80
   port: 443
@@ -1166,6 +1161,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-01 21:19
   - V2Get🛰️ 2026-08-31 23:18
   - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-01 11:19
@@ -1187,7 +1183,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 15:11 #9'
   - 'V2Get🛰️ 2026-08-29 15:11 #10'
   - 'V2Get🛰️ 2026-08-29 15:11 #11'
-  - 'V2Get🛰️ 2026-08-29 15:11 #12'
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
@@ -1270,6 +1265,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-01 21:19
   - V2Get🛰️ 2026-08-31 23:18
   - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-01 11:19
@@ -1291,7 +1287,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-29 15:11 #9'
   - 'V2Get🛰️ 2026-08-29 15:11 #10'
   - 'V2Get🛰️ 2026-08-29 15:11 #11'
-  - 'V2Get🛰️ 2026-08-29 15:11 #12'
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
