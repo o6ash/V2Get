@@ -12,26 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-01 21:20
   type: vless
-  server: static.lotussec.com
+  server: 172.67.133.76
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: cf7f287d-101a-2c04-348f-8b2300000000
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-20 14:14
+  servername: v25ppi-zvm2x7-gfnz7h.gottasubdvipui.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sync
+    headers:
+      Host: v25ppi-zvm2x7-gfnz7h.gottasubdvipui.workers.dev
+- name: 'V2Get🛰️ 2026-09-01 21:20 #2'
   type: vless
-  server: 180.178.60.254
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  server: 104.21.12.222
+  port: 443
+  uuid: cf7f287d-101a-2c04-348f-8b2300000000
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: v25ppi-zvm2x7-gfnz7h.gottasubdvipui.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sync
+    headers:
+      Host: v25ppi-zvm2x7-gfnz7h.gottasubdvipui.workers.dev
 - name: V2Get🛰️ 2026-08-29 23:13
   type: vless
   server: 185.143.233.5
@@ -44,7 +52,7 @@ proxies:
     path: /
     headers:
       Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
-- name: V2Get🛰️ 2026-09-01 21:20
+- name: 'V2Get🛰️ 2026-09-01 21:20 #3'
   type: trojan
   server: s.vnexjet.ir
   port: 443
@@ -60,7 +68,7 @@ proxies:
     path: /ws
     headers:
       Host: s.azxturbo.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #2'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #4'
   type: trojan
   server: s.vnexjet.ir
   port: 8443
@@ -75,7 +83,7 @@ proxies:
     path: /
     headers:
       Host: s.vnexjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #3'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #5'
   type: vless
   server: s.vnexjet.ir
   port: 2087
@@ -92,7 +100,7 @@ proxies:
     path: /
     headers:
       Host: cdn.azxjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #4'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #6'
   type: vless
   server: s.vnexjet.ir
   port: 2083
@@ -109,40 +117,10 @@ proxies:
     path: /
     headers:
       Host: s.vnexjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #5'
-  type: vless
-  server: ir.azxjet.ir
-  port: 2083
-  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
-  udp: true
-  network: ws
-  tls: true
-  servername: ir.azxjet.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-09-01 21:20 #6'
-  type: vless
-  server: 1.azxjet.ir
-  port: 2083
-  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
-  udp: true
-  network: ws
-  tls: true
-  servername: ir.azxjet.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
 - name: 'V2Get🛰️ 2026-09-01 21:20 #7'
   type: vless
   server: ir.azxjet.ir
-  port: 2087
+  port: 2083
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
   network: ws
@@ -157,7 +135,7 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-01 21:20 #8'
   type: vless
   server: 1.azxjet.ir
-  port: 2087
+  port: 2083
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
   network: ws
@@ -172,7 +150,7 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-01 21:20 #9'
   type: vless
   server: ir.azxjet.ir
-  port: 8443
+  port: 2087
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
   network: ws
@@ -187,7 +165,7 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-01 21:20 #10'
   type: vless
   server: 1.azxjet.ir
-  port: 8443
+  port: 2087
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
   network: ws
@@ -202,6 +180,36 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-01 21:20 #11'
   type: vless
   server: ir.azxjet.ir
+  port: 8443
+  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
+  udp: true
+  network: ws
+  tls: true
+  servername: ir.azxjet.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-09-01 21:20 #12'
+  type: vless
+  server: 1.azxjet.ir
+  port: 8443
+  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
+  udp: true
+  network: ws
+  tls: true
+  servername: ir.azxjet.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-09-01 21:20 #13'
+  type: vless
+  server: ir.azxjet.ir
   port: 19508
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
@@ -213,7 +221,7 @@ proxies:
   - h2
   - http/1.1
   - h3
-- name: 'V2Get🛰️ 2026-09-01 21:20 #12'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #14'
   type: vless
   server: 1.azxjet.ir
   port: 19508
@@ -227,7 +235,7 @@ proxies:
   - h2
   - http/1.1
   - h3
-- name: 'V2Get🛰️ 2026-09-01 21:20 #13'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #15'
   type: vless
   server: ir.azxjet.ir
   port: 20318
@@ -240,7 +248,7 @@ proxies:
   alpn:
   - http/1.1
   - h3
-- name: 'V2Get🛰️ 2026-09-01 21:20 #14'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #16'
   type: vless
   server: mbt-7z5b-wzm.deepl-cdn.com
   port: 40443
@@ -254,7 +262,7 @@ proxies:
   reality-opts:
     public-key: wKPAR2t-xoUMbBqRHV7SLvGuR9dwrcH6bTSknyBO0T8
     short-id: a1b2c3d4e5f6789a
-- name: 'V2Get🛰️ 2026-09-01 21:20 #15'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #17'
   type: vless
   server: z5xa-geo-se.cdnvideo.network
   port: 443
@@ -268,7 +276,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 21:20 #16'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #18'
   type: vless
   server: px1t-tab.de-1.deepl-cdn.com
   port: 8443
@@ -282,7 +290,7 @@ proxies:
   reality-opts:
     public-key: DG904eM7xGecwV_nhjX73c-7g_fGEv8BgjbeAmTE8Bs
     short-id: 505c94b8c65afb0a
-- name: 'V2Get🛰️ 2026-09-01 21:20 #17'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #19'
   type: vless
   server: 178.248.238.81
   port: 2053
@@ -299,7 +307,7 @@ proxies:
     path: /stream?ed=2560&module=video-cdn&app_client_id=cc8c59b8-7c86-417b-a522-b0cc29fcc2f8
     headers:
       Host: stream.cdnvideo.network
-- name: 'V2Get🛰️ 2026-09-01 21:20 #18'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #20'
   type: vless
   server: 132.243.176.11
   port: 443
@@ -313,7 +321,7 @@ proxies:
   reality-opts:
     public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
     short-id: a1b2c3d4e5f6789a
-- name: 'V2Get🛰️ 2026-09-01 21:20 #19'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #21'
   type: vless
   server: b3aa11az-k15gg1.ru.y-tun.com
   port: 8443
@@ -1201,11 +1209,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-20 14:14
-  - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-09-01 21:20
   - 'V2Get🛰️ 2026-09-01 21:20 #2'
+  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-09-01 21:20 #3'
   - 'V2Get🛰️ 2026-09-01 21:20 #4'
   - 'V2Get🛰️ 2026-09-01 21:20 #5'
@@ -1223,6 +1229,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 21:20 #17'
   - 'V2Get🛰️ 2026-09-01 21:20 #18'
   - 'V2Get🛰️ 2026-09-01 21:20 #19'
+  - 'V2Get🛰️ 2026-09-01 21:20 #20'
+  - 'V2Get🛰️ 2026-09-01 21:20 #21'
   - V2Get🛰️ 2026-09-01 21:19
   - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-01 18:18
@@ -1305,11 +1313,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-20 14:14
-  - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-09-01 21:20
   - 'V2Get🛰️ 2026-09-01 21:20 #2'
+  - V2Get🛰️ 2026-08-29 23:13
   - 'V2Get🛰️ 2026-09-01 21:20 #3'
   - 'V2Get🛰️ 2026-09-01 21:20 #4'
   - 'V2Get🛰️ 2026-09-01 21:20 #5'
@@ -1327,6 +1333,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 21:20 #17'
   - 'V2Get🛰️ 2026-09-01 21:20 #18'
   - 'V2Get🛰️ 2026-09-01 21:20 #19'
+  - 'V2Get🛰️ 2026-09-01 21:20 #20'
+  - 'V2Get🛰️ 2026-09-01 21:20 #21'
   - V2Get🛰️ 2026-09-01 21:19
   - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-01 18:18
