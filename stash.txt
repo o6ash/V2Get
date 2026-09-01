@@ -12,45 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-29 03:10
+- name: V2Get🛰️ 2026-08-31 21:17
   type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  server: direct-de01.korvexe.ir
+  port: 14676
+  uuid: c7a9c7f0-4a6b-414e-bdfc-8ad8980f858b
   udp: true
   network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: true
   ws-opts:
-    path: /GOrbEh
-- name: V2Get🛰️ 2026-08-30 09:13
-  type: vless
-  server: 132.243.235.53
-  port: 2096
-  uuid: 60e2a548-96aa-4850-a279-1edab743c39b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dhlparcel.nl
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg
-    short-id: 3dad96f8693ea653
-- name: V2Get🛰️ 2026-08-31 02:15
-  type: vless
-  server: 147.45.229.3
-  port: 443
-  uuid: 338efc17-02d7-433b-902a-e7d4771dc802
-  udp: true
-  network: ws
-  tls: true
-  servername: gaaga.korgivps.ru
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /api/user
+    path: /
+    headers:
+      Host: direct-de01.korvexe.ir
 - name: V2Get🛰️ 2026-08-31 10:16
   type: vless
   server: 156.67.63.231
@@ -65,7 +38,21 @@ proxies:
   reality-opts:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
-- name: V2Get🛰️ 2026-08-31 21:17
+- name: V2Get🛰️ 2026-08-31 02:15
+  type: vless
+  server: 147.45.229.3
+  port: 443
+  uuid: 338efc17-02d7-433b-902a-e7d4771dc802
+  udp: true
+  network: ws
+  tls: true
+  servername: gaaga.korgivps.ru
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /api/user
+- name: 'V2Get🛰️ 2026-08-31 21:17 #2'
   type: vless
   server: direct-tr01.korvexe.ir
   port: 21570
@@ -77,6 +64,20 @@ proxies:
     path: /
     headers:
       Host: direct-tr01.korvexe.ir
+- name: V2Get🛰️ 2026-08-30 09:13
+  type: vless
+  server: 132.243.235.53
+  port: 2096
+  uuid: 60e2a548-96aa-4850-a279-1edab743c39b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dhlparcel.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg
+    short-id: 3dad96f8693ea653
 - name: V2Get🛰️ 2026-09-01 11:18
   type: vless
   server: 178.104.126.91
@@ -1061,11 +1062,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-30 09:13
-  - V2Get🛰️ 2026-08-31 02:15
-  - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-08-31 10:16
+  - V2Get🛰️ 2026-08-31 02:15
+  - 'V2Get🛰️ 2026-08-31 21:17 #2'
+  - V2Get🛰️ 2026-08-30 09:13
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
   - 'V2Get🛰️ 2026-09-01 11:18 #3'
@@ -1162,11 +1163,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-30 09:13
-  - V2Get🛰️ 2026-08-31 02:15
-  - V2Get🛰️ 2026-08-31 10:16
   - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-08-31 10:16
+  - V2Get🛰️ 2026-08-31 02:15
+  - 'V2Get🛰️ 2026-08-31 21:17 #2'
+  - V2Get🛰️ 2026-08-30 09:13
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
   - 'V2Get🛰️ 2026-09-01 11:18 #3'
