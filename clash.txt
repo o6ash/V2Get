@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-30 23:16
+  type: vless
+  server: 91.107.241.29
+  port: 443
+  uuid: 5fb3ebfe-a998-4ffa-b854-3cffacbb9b67
+  udp: true
+  network: xhttp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 94R5Qc5cek_AMwH904kAx4c-HriEjCYUAattL5ZfIXM
+    short-id: b58b
 - name: V2Get🛰️ 2026-09-01 23:23
   type: vless
   server: 91.107.242.197
@@ -20,21 +33,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-31 20:17
   type: vless
   server: 82.24.203.15
@@ -1217,8 +1215,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-30 23:16
   - V2Get🛰️ 2026-09-01 23:23
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 08:17
   - V2Get🛰️ 2026-09-01 15:19
@@ -1319,8 +1317,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-30 23:16
   - V2Get🛰️ 2026-09-01 23:23
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 08:17
   - V2Get🛰️ 2026-09-01 15:19
