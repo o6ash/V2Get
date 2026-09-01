@@ -12,6 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:09
+  type: vless
+  server: 206.71.158.124
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-09-01 15:19
+  type: vless
+  server: 45.59.126.91
+  port: 8080
+  uuid: c63d2c0f-786d-49ff-9891-f63bd1ac58d7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-01 18:19
   type: vless
   server: 88.216.214.143
@@ -127,27 +156,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  servername: milan.adaspoloandco.com
-  ws-opts:
-    path: /RoBeRt
-- name: V2Get🛰️ 2026-08-31 20:17
-  type: vless
-  server: 188.220.67.181
-  port: 2087
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /8f2690e2d016
 - name: 'V2Get🛰️ 2026-09-01 01:17 #2'
   type: vless
   server: 5.129.214.249
@@ -176,14 +184,6 @@ proxies:
   reality-opts:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
-- name: V2Get🛰️ 2026-09-01 15:19
-  type: vless
-  server: 45.59.126.91
-  port: 8080
-  uuid: c63d2c0f-786d-49ff-9891-f63bd1ac58d7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-01 17:19 #3'
   type: vless
   server: 81.12.35.185
@@ -1118,6 +1118,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-09-01 15:19
   - V2Get🛰️ 2026-09-01 18:19
   - 'V2Get🛰️ 2026-09-01 18:19 #2'
   - 'V2Get🛰️ 2026-09-01 18:19 #3'
@@ -1128,11 +1131,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-01 18:18
   - 'V2Get🛰️ 2026-09-01 18:18 #2'
   - V2Get🛰️ 2026-09-01 17:19
-  - V2Get🛰️ 2026-08-31 19:16
-  - V2Get🛰️ 2026-08-31 20:17
   - 'V2Get🛰️ 2026-09-01 01:17 #2'
   - 'V2Get🛰️ 2026-09-01 17:19 #2'
-  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #3'
   - 'V2Get🛰️ 2026-09-01 17:19 #4'
   - 'V2Get🛰️ 2026-09-01 17:19 #5'
@@ -1221,6 +1221,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-09-01 15:19
   - V2Get🛰️ 2026-09-01 18:19
   - 'V2Get🛰️ 2026-09-01 18:19 #2'
   - 'V2Get🛰️ 2026-09-01 18:19 #3'
@@ -1231,11 +1234,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-01 18:18
   - 'V2Get🛰️ 2026-09-01 18:18 #2'
   - V2Get🛰️ 2026-09-01 17:19
-  - V2Get🛰️ 2026-08-31 19:16
-  - V2Get🛰️ 2026-08-31 20:17
   - 'V2Get🛰️ 2026-09-01 01:17 #2'
   - 'V2Get🛰️ 2026-09-01 17:19 #2'
-  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #3'
   - 'V2Get🛰️ 2026-09-01 17:19 #4'
   - 'V2Get🛰️ 2026-09-01 17:19 #5'
