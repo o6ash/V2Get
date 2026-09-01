@@ -12,6 +12,71 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-29 03:10
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  ws-opts:
+    path: /GOrbEh
+- name: V2Get🛰️ 2026-08-30 09:13
+  type: vless
+  server: 132.243.235.53
+  port: 2096
+  uuid: 60e2a548-96aa-4850-a279-1edab743c39b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dhlparcel.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg
+    short-id: 3dad96f8693ea653
+- name: V2Get🛰️ 2026-08-31 02:15
+  type: vless
+  server: 147.45.229.3
+  port: 443
+  uuid: 338efc17-02d7-433b-902a-e7d4771dc802
+  udp: true
+  network: ws
+  tls: true
+  servername: gaaga.korgivps.ru
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /api/user
+- name: V2Get🛰️ 2026-08-31 10:16
+  type: vless
+  server: 156.67.63.231
+  port: 443
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sync-bridge.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+- name: V2Get🛰️ 2026-08-31 21:17
+  type: vless
+  server: direct-tr01.korvexe.ir
+  port: 21570
+  uuid: c7a9c7f0-4a6b-414e-bdfc-8ad8980f858b
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: direct-tr01.korvexe.ir
 - name: V2Get🛰️ 2026-09-01 11:18
   type: vless
   server: 178.104.126.91
@@ -81,42 +146,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: Fijji.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-30 16:15
-  type: vmess
-  server: 13.250.114.194
-  port: 8443
-  uuid: 9dcb8d73-cc0b-4fcc-a12d-d7affb56267c
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-31 09:16
-  type: vless
-  server: 2.27.43.112
-  port: 8443
-  uuid: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: auto.quattro-tech.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: PNofg-BBceWRX1YMelo9Xy5dFnh_vY8J0c54llXfDSk
-    short-id: 31e056654ec129aa
-- name: V2Get🛰️ 2026-08-31 21:17
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 330847c8-123e-4f1e-aea4-f22ae1abaec4
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pane2.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-09-01 10:18 #3'
   type: vless
   server: 185.69.123.106
@@ -202,18 +231,6 @@ proxies:
   reality-opts:
     public-key: rS3WBqXyk41uAM2Rp3shdd5RMQppqvuGEN313Sdsji8
     short-id: f73271359db2de02
-- name: 'V2Get🛰️ 2026-08-31 21:17 #2'
-  type: vless
-  server: direct-de01.korvexe.ir
-  port: 14676
-  uuid: c7a9c7f0-4a6b-414e-bdfc-8ad8980f858b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: direct-de01.korvexe.ir
 - name: V2Get🛰️ 2026-08-31 23:18
   type: vless
   server: 87.58.153.39
@@ -256,23 +273,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 172.66.146.2
-  port: 2087
-  uuid: 8f07252d-fea9-4b9b-ad10-39b56fd4fd2a
-  udp: true
-  network: ws
-  tls: true
-  servername: janebi.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: janebi.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-08-31 23:17 #2'
   type: vless
   server: 104.21.54.6
@@ -1077,15 +1077,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-08-30 09:13
+  - V2Get🛰️ 2026-08-31 02:15
+  - V2Get🛰️ 2026-08-31 10:16
+  - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
   - 'V2Get🛰️ 2026-09-01 11:18 #3'
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 01:17
   - 'V2Get🛰️ 2026-09-01 10:18 #2'
-  - V2Get🛰️ 2026-08-30 16:15
-  - V2Get🛰️ 2026-08-31 09:16
-  - V2Get🛰️ 2026-08-31 21:17
   - 'V2Get🛰️ 2026-09-01 10:18 #3'
   - V2Get🛰️ 2026-09-01 02:17
   - 'V2Get🛰️ 2026-09-01 02:17 #2'
@@ -1095,12 +1097,10 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 23:19
   - 'V2Get🛰️ 2026-08-31 23:19 #2'
   - V2Get🛰️ 2026-09-01 09:17
-  - 'V2Get🛰️ 2026-08-31 21:17 #2'
   - V2Get🛰️ 2026-08-31 23:18
   - V2Get🛰️ 2026-09-01 08:17
   - 'V2Get🛰️ 2026-09-01 08:17 #2'
   - 'V2Get🛰️ 2026-08-31 23:19 #3'
-  - V2Get🛰️ 2026-08-31 19:16
   - 'V2Get🛰️ 2026-08-31 23:17 #2'
   - 'V2Get🛰️ 2026-08-31 23:17 #3'
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
@@ -1180,15 +1180,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-08-30 09:13
+  - V2Get🛰️ 2026-08-31 02:15
+  - V2Get🛰️ 2026-08-31 10:16
+  - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
   - 'V2Get🛰️ 2026-09-01 11:18 #3'
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 01:17
   - 'V2Get🛰️ 2026-09-01 10:18 #2'
-  - V2Get🛰️ 2026-08-30 16:15
-  - V2Get🛰️ 2026-08-31 09:16
-  - V2Get🛰️ 2026-08-31 21:17
   - 'V2Get🛰️ 2026-09-01 10:18 #3'
   - V2Get🛰️ 2026-09-01 02:17
   - 'V2Get🛰️ 2026-09-01 02:17 #2'
@@ -1198,12 +1200,10 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 23:19
   - 'V2Get🛰️ 2026-08-31 23:19 #2'
   - V2Get🛰️ 2026-09-01 09:17
-  - 'V2Get🛰️ 2026-08-31 21:17 #2'
   - V2Get🛰️ 2026-08-31 23:18
   - V2Get🛰️ 2026-09-01 08:17
   - 'V2Get🛰️ 2026-09-01 08:17 #2'
   - 'V2Get🛰️ 2026-08-31 23:19 #3'
-  - V2Get🛰️ 2026-08-31 19:16
   - 'V2Get🛰️ 2026-08-31 23:17 #2'
   - 'V2Get🛰️ 2026-08-31 23:17 #3'
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
