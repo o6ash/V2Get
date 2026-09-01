@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 23:17
+  type: trojan
+  server: 65.109.217.127
+  port: 19874
+  password: gxf6enHGQ1
+  udp: true
+  sni: amp-api-edge.apps.apple.com
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-01 12:21
   type: vless
   server: usa-emergency-service.relqino.ir
@@ -1129,20 +1137,13 @@ proxies:
   reality-opts:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
-- name: 'V2Get🛰️ 2026-09-01 01:17 #9'
-  type: vless
-  server: amator.mrgang.shop
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 23:17
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
   - 'V2Get🛰️ 2026-09-01 12:21 #3'
@@ -1239,13 +1240,13 @@ proxy-groups:
   - V2Get🛰️ 2026-09-01 01:18
   - 'V2Get🛰️ 2026-09-01 01:17 #7'
   - 'V2Get🛰️ 2026-09-01 01:17 #8'
-  - 'V2Get🛰️ 2026-09-01 01:17 #9'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 23:17
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
   - 'V2Get🛰️ 2026-09-01 12:21 #3'
@@ -1342,7 +1343,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-01 01:18
   - 'V2Get🛰️ 2026-09-01 01:17 #7'
   - 'V2Get🛰️ 2026-09-01 01:17 #8'
-  - 'V2Get🛰️ 2026-09-01 01:17 #9'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
