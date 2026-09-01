@@ -12,18 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 20:17
+- name: V2Get🛰️ 2026-08-30 14:14
   type: vless
-  server: 82.24.203.15
-  port: 2083
-  uuid: f2616bce-337a-4d13-8c58-1b5e71986569
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: d499fa8c-2e14-4bd5-a3ca-73fae7f04cb5
   udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: chat.deepseek.com
+  network: ws
   tls: true
-- name: 'V2Get🛰️ 2026-08-31 20:17 #2'
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: V2Get🛰️ 2026-08-31 20:17
   type: vless
   server: 189.74.97.47
   port: 2087
@@ -33,7 +36,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /755276b33b6f
-- name: 'V2Get🛰️ 2026-08-31 20:17 #3'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #2'
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -43,7 +46,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /db55c40bbc75
-- name: 'V2Get🛰️ 2026-08-31 20:17 #4'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #3'
   type: vless
   server: 185.126.238.87
   port: 2083
@@ -54,7 +57,7 @@ proxies:
   grpc-opts:
     grpc-service-name: security.debian.org
   tls: true
-- name: 'V2Get🛰️ 2026-08-31 20:17 #5'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #4'
   type: vless
   server: 82.24.203.9
   port: 2087
@@ -64,7 +67,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /3bfc3e3ed603
-- name: 'V2Get🛰️ 2026-08-31 20:17 #6'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #5'
   type: vless
   server: 188.220.67.198
   port: 2087
@@ -74,7 +77,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /8f2690e2d016
-- name: 'V2Get🛰️ 2026-08-31 20:17 #7'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #6'
   type: vless
   server: 82.24.203.10
   port: 2087
@@ -84,7 +87,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /3bfc3e3ed603
-- name: 'V2Get🛰️ 2026-08-31 20:17 #8'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #7'
   type: vless
   server: 178.95.170.115
   port: 2087
@@ -94,7 +97,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /4bc027a44532
-- name: 'V2Get🛰️ 2026-08-31 20:17 #9'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #8'
   type: vless
   server: 82.24.203.70
   port: 2087
@@ -104,7 +107,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /d51f7fbe4da2
-- name: 'V2Get🛰️ 2026-08-31 20:17 #10'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #9'
   type: vless
   server: 178.95.170.83
   port: 2087
@@ -114,7 +117,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /4bc027a44532
-- name: 'V2Get🛰️ 2026-08-31 20:17 #11'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #10'
   type: vless
   server: 188.220.67.161
   port: 2087
@@ -124,7 +127,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /8f2690e2d016
-- name: 'V2Get🛰️ 2026-08-31 20:17 #12'
+- name: 'V2Get🛰️ 2026-08-31 20:17 #11'
   type: vless
   server: 188.220.67.181
   port: 2087
@@ -1095,6 +1098,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-30 14:14
   - V2Get🛰️ 2026-08-31 20:17
   - 'V2Get🛰️ 2026-08-31 20:17 #2'
   - 'V2Get🛰️ 2026-08-31 20:17 #3'
@@ -1106,7 +1110,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 20:17 #9'
   - 'V2Get🛰️ 2026-08-31 20:17 #10'
   - 'V2Get🛰️ 2026-08-31 20:17 #11'
-  - 'V2Get🛰️ 2026-08-31 20:17 #12'
   - V2Get🛰️ 2026-09-01 12:19
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
@@ -1195,6 +1198,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-30 14:14
   - V2Get🛰️ 2026-08-31 20:17
   - 'V2Get🛰️ 2026-08-31 20:17 #2'
   - 'V2Get🛰️ 2026-08-31 20:17 #3'
@@ -1206,7 +1210,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-08-31 20:17 #9'
   - 'V2Get🛰️ 2026-08-31 20:17 #10'
   - 'V2Get🛰️ 2026-08-31 20:17 #11'
-  - 'V2Get🛰️ 2026-08-31 20:17 #12'
   - V2Get🛰️ 2026-09-01 12:19
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
