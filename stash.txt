@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-01 17:19
+  type: vless
+  server: tp.paydar.site
+  port: 28110
+  uuid: e8c5d791-ce76-4a41-b165-ca22e930b21d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-21 00:14
   type: vless
   server: 5.253.42.163
@@ -116,7 +124,7 @@ proxies:
   - http/1.1
   ws-opts:
     path: /api/user
-- name: V2Get🛰️ 2026-09-01 17:19
+- name: 'V2Get🛰️ 2026-09-01 17:19 #2'
   type: vless
   server: 194.110.207.48
   port: 443
@@ -138,7 +146,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-01 17:19 #2'
+- name: 'V2Get🛰️ 2026-09-01 17:19 #3'
   type: vless
   server: 81.12.35.185
   port: 5003
@@ -150,22 +158,10 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 17:19 #3'
+- name: 'V2Get🛰️ 2026-09-01 17:19 #4'
   type: vless
   server: 81.12.35.187
   port: 5002
-  uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
-  udp: true
-  network: tcp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 17:19 #4'
-  type: vless
-  server: 81.12.35.188
-  port: 5003
   uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
   udp: true
   network: tcp
@@ -177,7 +173,7 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-01 17:19 #5'
   type: vless
   server: 81.12.35.188
-  port: 5004
+  port: 5003
   uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
   udp: true
   network: tcp
@@ -188,8 +184,8 @@ proxies:
   - http/1.1
 - name: 'V2Get🛰️ 2026-09-01 17:19 #6'
   type: vless
-  server: 81.12.35.186
-  port: 5003
+  server: 81.12.35.188
+  port: 5004
   uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
   udp: true
   network: tcp
@@ -200,7 +196,7 @@ proxies:
   - http/1.1
 - name: 'V2Get🛰️ 2026-09-01 17:19 #7'
   type: vless
-  server: 81.12.35.187
+  server: 81.12.35.186
   port: 5003
   uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
   udp: true
@@ -212,6 +208,18 @@ proxies:
   - http/1.1
 - name: 'V2Get🛰️ 2026-09-01 17:19 #8'
   type: vless
+  server: 81.12.35.187
+  port: 5003
+  uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
+  udp: true
+  network: tcp
+  tls: true
+  servername: afr-data-16.myket.ir
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-09-01 17:19 #9'
+  type: vless
   server: 81.12.35.185
   port: 5002
   uuid: c94c9a51-b331-4ddb-af87-9e7b40ed3283
@@ -222,7 +230,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 17:19 #9'
+- name: 'V2Get🛰️ 2026-09-01 17:19 #10'
   type: vless
   server: 81.12.35.186
   port: 5002
@@ -234,7 +242,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 17:19 #10'
+- name: 'V2Get🛰️ 2026-09-01 17:19 #11'
   type: vless
   server: 81.12.35.184
   port: 5002
@@ -247,14 +255,6 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-01 17:19 #11'
-  type: vless
-  server: tp.paydar.site
-  port: 28110
-  uuid: e8c5d791-ce76-4a41-b165-ca22e930b21d
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-01 14:18
   type: vless
   server: 188.114.97.6
@@ -970,6 +970,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-01 17:19
   - V2Get🛰️ 2026-08-21 00:14
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-08-25 17:05
@@ -978,9 +979,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 01:17
-  - V2Get🛰️ 2026-09-01 17:19
-  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #2'
+  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #3'
   - 'V2Get🛰️ 2026-09-01 17:19 #4'
   - 'V2Get🛰️ 2026-09-01 17:19 #5'
@@ -1056,6 +1056,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-01 17:19
   - V2Get🛰️ 2026-08-21 00:14
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-08-25 17:05
@@ -1064,9 +1065,8 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 01:17
-  - V2Get🛰️ 2026-09-01 17:19
-  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #2'
+  - V2Get🛰️ 2026-09-01 15:19
   - 'V2Get🛰️ 2026-09-01 17:19 #3'
   - 'V2Get🛰️ 2026-09-01 17:19 #4'
   - 'V2Get🛰️ 2026-09-01 17:19 #5'
