@@ -12,13 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 23:17
-  type: trojan
-  server: 65.109.217.127
-  port: 19874
-  password: gxf6enHGQ1
+- name: V2Get🛰️ 2026-08-31 18:16
+  type: vless
+  server: 176.97.218.225
+  port: 2020
+  uuid: 60f0b8a0-14c7-4b3d-b21a-69b53f8828ca
   udp: true
-  sni: amp-api-edge.apps.apple.com
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-01 12:19
+  type: vless
+  server: 45.77.53.179
+  port: 51125
+  uuid: b0f95fa6-2cc5-4e41-a33f-0b0ad58daaed
+  udp: true
+  network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-01 12:21
   type: vless
@@ -309,14 +317,6 @@ proxies:
     path: /
     headers:
       Host: footi.dearhossein-taktaz.ir
-- name: V2Get🛰️ 2026-09-01 12:19
-  type: vless
-  server: 45.77.53.179
-  port: 51125
-  uuid: b0f95fa6-2cc5-4e41-a33f-0b0ad58daaed
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-01 12:19 #2'
   type: vless
   server: 104.16.98.215
@@ -1143,7 +1143,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 23:17
+  - V2Get🛰️ 2026-08-31 18:16
+  - V2Get🛰️ 2026-09-01 12:19
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
   - 'V2Get🛰️ 2026-09-01 12:21 #3'
@@ -1163,7 +1164,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 12:20 #8'
   - 'V2Get🛰️ 2026-09-01 12:20 #9'
   - 'V2Get🛰️ 2026-09-01 12:20 #10'
-  - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
   - 'V2Get🛰️ 2026-09-01 12:19 #3'
   - V2Get🛰️ 2026-09-01 10:18
@@ -1246,7 +1246,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 23:17
+  - V2Get🛰️ 2026-08-31 18:16
+  - V2Get🛰️ 2026-09-01 12:19
   - V2Get🛰️ 2026-09-01 12:21
   - 'V2Get🛰️ 2026-09-01 12:21 #2'
   - 'V2Get🛰️ 2026-09-01 12:21 #3'
@@ -1266,7 +1267,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 12:20 #8'
   - 'V2Get🛰️ 2026-09-01 12:20 #9'
   - 'V2Get🛰️ 2026-09-01 12:20 #10'
-  - V2Get🛰️ 2026-09-01 12:19
   - 'V2Get🛰️ 2026-09-01 12:19 #2'
   - 'V2Get🛰️ 2026-09-01 12:19 #3'
   - V2Get🛰️ 2026-09-01 10:18
