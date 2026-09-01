@@ -12,21 +12,80 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-08-30 12:13
+  type: vless
+  server: us3.lunariai.ru
   port: 443
-  password: MiTiVPN
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  skip-cert-verify: true
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+      Host: us3.lunariai.ru
+- name: V2Get🛰️ 2026-09-01 11:19
+  type: vless
+  server: 84.32.102.168
+  port: 443
+  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app23.jarvestip.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U
+    short-id: 2aef5875
+- name: V2Get🛰️ 2026-08-27 02:07
+  type: vless
+  server: 85.90.197.91
+  port: 443
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gr.freeinternat.com
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+- name: V2Get🛰️ 2026-08-29 16:12
+  type: vless
+  server: 146.59.35.134
+  port: 8443
+  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
+  udp: true
+  network: ws
+  tls: true
+  servername: chopin.adaspoloandco.com
+  client-fingerprint: qq
+  ws-opts:
+    path: /download.php
+- name: 'V2Get🛰️ 2026-08-29 16:12 #2'
+  type: vless
+  server: 51.38.127.93
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /GOrbEh
+- name: V2Get🛰️ 2026-08-29 03:10
+  type: vless
+  server: rubifen.adaspoloandco.com
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  ws-opts:
+    path: /GOrbEh
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -42,68 +101,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-27 02:07
-  type: vless
-  server: 85.90.197.91
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gr.freeinternat.com
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: V2Get🛰️ 2026-08-29 03:10
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-- name: V2Get🛰️ 2026-08-29 16:12
-  type: vless
-  server: 51.38.127.93
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /GOrbEh
-- name: 'V2Get🛰️ 2026-08-29 16:12 #2'
-  type: vless
-  server: 146.59.35.134
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /download.php
-- name: V2Get🛰️ 2026-09-01 11:19
-  type: vless
-  server: 84.32.102.168
-  port: 443
-  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app23.jarvestip.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U
-    short-id: 2aef5875
 - name: V2Get🛰️ 2026-09-02 00:20
   type: vless
   server: de.sdssh-vid.online
@@ -1010,13 +1007,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-30 12:13
+  - V2Get🛰️ 2026-09-01 11:19
   - V2Get🛰️ 2026-08-27 02:07
-  - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
-  - V2Get🛰️ 2026-09-01 11:19
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 00:20
   - 'V2Get🛰️ 2026-09-02 00:20 #2'
   - 'V2Get🛰️ 2026-09-02 00:20 #3'
@@ -1098,13 +1095,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-30 12:13
+  - V2Get🛰️ 2026-09-01 11:19
   - V2Get🛰️ 2026-08-27 02:07
-  - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-08-29 16:12
   - 'V2Get🛰️ 2026-08-29 16:12 #2'
-  - V2Get🛰️ 2026-09-01 11:19
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 00:20
   - 'V2Get🛰️ 2026-09-02 00:20 #2'
   - 'V2Get🛰️ 2026-09-02 00:20 #3'
