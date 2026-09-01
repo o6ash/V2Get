@@ -12,40 +12,52 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-21 16:57
-  type: trojan
-  server: 5.180.21.146
-  port: 4443
-  password: owefv0_92Z540k2F_nx83245_J9130oS_tY
+- name: V2Get🛰️ 2026-08-29 18:12
+  type: vless
+  server: 159.69.28.178
+  port: 20995
+  uuid: 20bcb7a8-c51b-4771-9686-6b4509dc9cd2
   udp: true
-  sni: borat-hopp.bumbleshrimp.com
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GqIZ3PiZBcvHMfXhk7BDZMWhF2Q4FrGVW9sgkllXkA4
+    short-id: 6ba85179e30d4fc2
+- name: V2Get🛰️ 2026-08-30 12:13
+  type: vless
+  server: 38.107.236.178
+  port: 443
+  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  udp: true
+  network: ws
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 02:07
-  type: vless
-  server: 85.90.197.91
-  port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-08-31 15:16
+  type: vmess
+  server: 94.156.170.102
+  port: 110
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+  alterId: 0
+  cipher: auto
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gr.freeinternat.com
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: 'V2Get🛰️ 2026-08-27 02:07 #2'
+- name: V2Get🛰️ 2026-09-01 10:18
   type: vless
-  server: lat2.freeinternat.com
+  server: 199.232.78.159
   port: 443
-  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  uuid: 6a30d063-e637-4fb7-bf66-714313290c5c
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: lat2.freeinternat.com
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: Fijji.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-28 16:10
   type: vless
   server: chopin.adaspoloandco.com
@@ -146,19 +158,6 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /29c8fed7ca22
-- name: V2Get🛰️ 2026-09-01 10:18
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 6a30d063-e637-4fb7-bf66-714313290c5c
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: Fijji.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-01 11:19
   type: vless
   server: 81.12.35.185
@@ -962,9 +961,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-21 16:57
-  - V2Get🛰️ 2026-08-27 02:07
-  - 'V2Get🛰️ 2026-08-27 02:07 #2'
+  - V2Get🛰️ 2026-08-29 18:12
+  - V2Get🛰️ 2026-08-30 12:13
+  - V2Get🛰️ 2026-08-31 15:16
+  - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-01 02:18
@@ -973,7 +973,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 17:17
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 01:17
-  - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 11:19
   - 'V2Get🛰️ 2026-09-01 11:19 #2'
   - 'V2Get🛰️ 2026-09-01 11:19 #3'
@@ -1053,9 +1052,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-21 16:57
-  - V2Get🛰️ 2026-08-27 02:07
-  - 'V2Get🛰️ 2026-08-27 02:07 #2'
+  - V2Get🛰️ 2026-08-29 18:12
+  - V2Get🛰️ 2026-08-30 12:13
+  - V2Get🛰️ 2026-08-31 15:16
+  - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-01 02:18
@@ -1064,7 +1064,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-31 17:17
   - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-01 01:17
-  - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 11:19
   - 'V2Get🛰️ 2026-09-01 11:19 #2'
   - 'V2Get🛰️ 2026-09-01 11:19 #3'
