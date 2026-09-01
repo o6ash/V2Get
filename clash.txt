@@ -12,67 +12,63 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-30 12:13
+- name: V2Get🛰️ 2026-07-26 03:09
   type: vless
-  server: 38.107.236.178
+  server: 206.71.158.124
   port: 443
-  uuid: fda82db3-3c0f-4122-87d9-1ed08059bc92
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: ws
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-31 20:17
+  type: vless
+  server: 185.126.238.87
+  port: 2083
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+  udp: true
+  network: grpc
   skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-08-31 01:16
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  network: tcp
+  grpc-opts:
+    grpc-service-name: security.debian.org
   tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-- name: V2Get🛰️ 2026-08-31 18:17
-  type: vless
-  server: 31.77.220.152
-  port: 5015
-  uuid: 74f73fb2-49cc-4744-bd37-97c5f83963ab
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: special.aeternavpn.space
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
-    short-id: a1b2c3d4
-- name: 'V2Get🛰️ 2026-08-31 18:17 #2'
-  type: vless
-  server: 31.77.220.163
-  port: 13443
-  uuid: 74f73fb2-49cc-4744-bd37-97c5f83963ab
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kinopoisk.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: oo5V9WHh_7YUFrbq0yQC19FYbq9kKf1ig1-IiLXvbHk
-    short-id: a1b2c3d4
 - name: V2Get🛰️ 2026-09-01 01:17
   type: vless
-  server: 157.22.133.130
+  server: 188.220.67.140
   port: 2087
-  uuid: e6d369db-22be-4f30-8685-455c717aaa8c
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   udp: true
   network: ws
   skip-cert-verify: true
   ws-opts:
-    path: /5021201ef53f
+    path: /8f2690e2d016
+- name: V2Get🛰️ 2026-09-01 16:18
+  type: vless
+  server: 179.61.138.133
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-01 16:18 #2'
+  type: vless
+  server: server18.peekconfig2.workers.dev
+  port: 8080
+  uuid: 0b2ea024-3ffd-46a7-87ce-86cbb79d7a48
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /eyJqdW5rIjoiT3FNeW1sMVdGVHlvNTIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==?ed=2560
+    headers:
+      Host: server18.peekconfig2.workers.dev
 - name: V2Get🛰️ 2026-09-01 02:18
   type: vless
   server: 88.216.68.68
@@ -1166,11 +1162,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-30 12:13
-  - V2Get🛰️ 2026-08-31 01:16
-  - V2Get🛰️ 2026-08-31 18:17
-  - 'V2Get🛰️ 2026-08-31 18:17 #2'
+  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-01 16:18
+  - 'V2Get🛰️ 2026-09-01 16:18 #2'
   - V2Get🛰️ 2026-09-01 02:18
   - V2Get🛰️ 2026-09-01 15:19
   - V2Get🛰️ 2026-09-01 14:18
@@ -1269,11 +1265,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-30 12:13
-  - V2Get🛰️ 2026-08-31 01:16
-  - V2Get🛰️ 2026-08-31 18:17
-  - 'V2Get🛰️ 2026-08-31 18:17 #2'
+  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-01 16:18
+  - 'V2Get🛰️ 2026-09-01 16:18 #2'
   - V2Get🛰️ 2026-09-01 02:18
   - V2Get🛰️ 2026-09-01 15:19
   - V2Get🛰️ 2026-09-01 14:18
