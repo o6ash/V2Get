@@ -12,6 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-20 14:14
+  type: vless
+  server: 180.178.60.254
+  port: 10000
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-29 23:12
+  type: vless
+  server: 49.50.76.194
+  port: 443
+  uuid: a2d7890a-5451-4470-9300-a059792924bb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-29 23:13
+  type: vless
+  server: 185.143.233.5
+  port: 80
+  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+- name: V2Get🛰️ 2026-08-31 23:17
+  type: trojan
+  server: 65.109.217.127
+  port: 19874
+  password: gxf6enHGQ1
+  udp: true
+  sni: amp-api-edge.apps.apple.com
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-01 14:18
   type: vless
   server: 188.114.97.6
@@ -157,58 +193,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-29 17:11
-  type: vless
-  server: 54.169.168.70
-  port: 12346
-  uuid: e77f740b-609e-41e0-86e7-14881c1185ea
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 8CbVZ66WQw2bBVlxbQuCZu9WmbFcxzY6nNSz1JcQZkE
-    short-id: a739eb7afcffa605
-- name: V2Get🛰️ 2026-08-29 16:12
-  type: vless
-  server: 51.38.127.93
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /GOrbEh
-- name: 'V2Get🛰️ 2026-08-29 16:12 #2'
-  type: vless
-  server: 146.59.35.134
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  udp: true
-  network: ws
-  tls: true
-  servername: chopin.adaspoloandco.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /download.php
-- name: 'V2Get🛰️ 2026-08-29 17:11 #2'
-  type: vless
-  server: 47.129.144.8
-  port: 39742
-  uuid: 0a6c8184-d202-41b2-acdb-1a95df2f74d3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: x3V96vwq7lqcF47qYpDMgnxoAbERJp8Z_fna48bxYnM
-    short-id: 90652b9b58bee5
 - name: V2Get🛰️ 2026-08-30 15:14
   type: vless
   server: 217.12.194.226
@@ -1151,6 +1135,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-20 14:14
+  - V2Get🛰️ 2026-08-29 23:12
+  - V2Get🛰️ 2026-08-29 23:13
+  - V2Get🛰️ 2026-08-31 23:17
   - V2Get🛰️ 2026-09-01 14:18
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 13:20
@@ -1164,10 +1152,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
   - 'V2Get🛰️ 2026-09-01 13:20 #5'
   - 'V2Get🛰️ 2026-09-01 13:20 #6'
-  - V2Get🛰️ 2026-08-29 17:11
-  - V2Get🛰️ 2026-08-29 16:12
-  - 'V2Get🛰️ 2026-08-29 16:12 #2'
-  - 'V2Get🛰️ 2026-08-29 17:11 #2'
   - V2Get🛰️ 2026-08-30 15:14
   - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 01:16
@@ -1251,6 +1235,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-20 14:14
+  - V2Get🛰️ 2026-08-29 23:12
+  - V2Get🛰️ 2026-08-29 23:13
+  - V2Get🛰️ 2026-08-31 23:17
   - V2Get🛰️ 2026-09-01 14:18
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 13:20
@@ -1264,10 +1252,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 01:17 #4'
   - 'V2Get🛰️ 2026-09-01 13:20 #5'
   - 'V2Get🛰️ 2026-09-01 13:20 #6'
-  - V2Get🛰️ 2026-08-29 17:11
-  - V2Get🛰️ 2026-08-29 16:12
-  - 'V2Get🛰️ 2026-08-29 16:12 #2'
-  - 'V2Get🛰️ 2026-08-29 17:11 #2'
   - V2Get🛰️ 2026-08-30 15:14
   - V2Get🛰️ 2026-08-31 01:15
   - V2Get🛰️ 2026-08-31 01:16
