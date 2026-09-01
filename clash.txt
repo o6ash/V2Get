@@ -14,13 +14,27 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-01 11:18
   type: vless
+  server: 178.104.126.91
+  port: 8553
+  uuid: 6dd6417e-231b-5bac-9cc2-408809032d5c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aGuEXuJ93NgSB3OZqwISwhSMUwPQf_J7C5Hqk_3INyE
+    short-id: 84c6c95d45d4a699
+- name: 'V2Get🛰️ 2026-09-01 11:18 #2'
+  type: vless
   server: 147.182.156.111
   port: 1161
   uuid: c6fb301a-eda6-85bf-2ecc-2a309d12a852
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-01 11:18 #2'
+- name: 'V2Get🛰️ 2026-09-01 11:18 #3'
   type: vless
   server: 147.182.156.111
   port: 8039
@@ -34,19 +48,6 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-08-29 15:11
-  type: vless
-  server: 213.130.137.100
-  port: 443
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: panel.freesavesafe.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: 812609fa663c57fb
 - name: V2Get🛰️ 2026-09-01 10:18
   type: vless
   server: 188.220.67.224
@@ -1078,7 +1079,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
-  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-09-01 11:18 #3'
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 01:17
   - 'V2Get🛰️ 2026-09-01 10:18 #2'
@@ -1181,7 +1182,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-09-01 11:18
   - 'V2Get🛰️ 2026-09-01 11:18 #2'
-  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-09-01 11:18 #3'
   - V2Get🛰️ 2026-09-01 10:18
   - V2Get🛰️ 2026-09-01 01:17
   - 'V2Get🛰️ 2026-09-01 10:18 #2'
