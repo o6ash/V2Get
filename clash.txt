@@ -12,6 +12,73 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-27 21:56
+  type: vless
+  server: 162.19.228.119
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /http
+    headers:
+      Host: de.vpnbase.net
+- name: V2Get🛰️ 2026-08-17 21:08
+  type: ss
+  server: 15.204.247.124
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: V2Get🛰️ 2026-09-01 01:17
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /29c8fed7ca22
+- name: V2Get🛰️ 2026-09-02 19:21
+  type: vless
+  server: 91.99.81.222
+  port: 443
+  uuid: aa79a37c-7b18-4184-b64f-1826c4b16e38
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: dYsy51W78tzZf26ql7Fh0Db65VlRSjGp6EH9nsAIRgo
+    short-id: 43e72f85c3
+- name: 'V2Get🛰️ 2026-09-02 19:21 #2'
+  type: vless
+  server: 52.56.123.186
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-02 19:21 #3'
+  type: vless
+  server: 52.56.123.186
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-02 17:23
+  type: vless
+  server: 91.228.227.172
+  port: 110
+  uuid: 02a96d4d-f2f5-4c0b-ba83-d24aec5defb8
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-02 17:21
   type: vless
   server: tp.paydar.site
@@ -164,7 +231,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-02 17:23
+- name: 'V2Get🛰️ 2026-09-02 17:23 #2'
   type: vless
   server: istan.goodname.com.tr
   port: 8444
@@ -177,14 +244,6 @@ proxies:
   reality-opts:
     public-key: 4_-SYNUa6FNFe4yKiomBiyW9UqUZwlJfA8LnXZ0QRXA
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 17:23 #2'
-  type: vless
-  server: 91.228.227.172
-  port: 110
-  uuid: 02a96d4d-f2f5-4c0b-ba83-d24aec5defb8
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-02 17:23 #3'
   type: vless
   server: 91.228.227.172
@@ -412,108 +471,6 @@ proxies:
   type: vless
   server: www.speedtest.net
   port: 8443
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #3'
-  type: vless
-  server: www.chatgpt.com
-  port: 2083
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #4'
-  type: vless
-  server: www.canva.com
-  port: 2087
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #5'
-  type: vless
-  server: 104.17.151.3
-  port: 2083
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #6'
-  type: vless
-  server: 104.16.73.211
-  port: 8443
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #7'
-  type: vless
-  server: 172.64.155.209
-  port: 8443
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-02 15:21 #8'
-  type: vless
-  server: 104.27.204.219
-  port: 2083
   uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
   udp: true
   network: ws
@@ -1042,7 +999,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-- name: 'V2Get🛰️ 2026-09-02 15:21 #9'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #3'
   type: vless
   server: gerne.orangesms.ir
   port: 1824
@@ -1055,7 +1012,7 @@ proxies:
   reality-opts:
     public-key: JIv_D-Lpo1cosiCUgu-qzGSJwOCGciyXSZ8ucNn6aBo
     short-id: 8390ee7a5996648b
-- name: 'V2Get🛰️ 2026-09-02 15:21 #10'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #4'
   type: vless
   server: tur.goodname.com.tr
   port: 8443
@@ -1068,7 +1025,7 @@ proxies:
   reality-opts:
     public-key: TRhKuUcgNtOODXlz6zQ8vPX2CCwqGRiV2LoHrQ0WN2U
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #11'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #5'
   type: vless
   server: istan.goodname.com.tr
   port: 8444
@@ -1081,7 +1038,7 @@ proxies:
   reality-opts:
     public-key: 4_-SYNUa6FNFe4yKiomBiyW9UqUZwlJfA8LnXZ0QRXA
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #12'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #6'
   type: vless
   server: shep.goodname.com.tr
   port: 8446
@@ -1094,7 +1051,7 @@ proxies:
   reality-opts:
     public-key: WGpNMXF7VeunFrYIJtbQBycInfroAc2PZmm80jsjFko
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #13'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #7'
   type: vless
   server: fin.goodname.com.tr
   port: 8447
@@ -1107,7 +1064,7 @@ proxies:
   reality-opts:
     public-key: 2vemWMcM5_ONPpHNr0nLE1w2Y90gmwGPRy5vieJjvxA
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #14'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #8'
   type: vless
   server: nether.goodname.com.tr
   port: 8448
@@ -1120,7 +1077,7 @@ proxies:
   reality-opts:
     public-key: FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #15'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #9'
   type: vless
   server: fin.goodname.com.tr
   port: 8449
@@ -1133,7 +1090,7 @@ proxies:
   reality-opts:
     public-key: i2B1-jEnmlZynPNDAVa2WuorU_QBzcv-_XsHb7Ay5Cw
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #16'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #10'
   type: vless
   server: fin.goodname.com.tr
   port: 8450
@@ -1146,7 +1103,7 @@ proxies:
   reality-opts:
     public-key: GHH3KnDmEWWfo71LQxPV9mtGvzB-lIx1P78QXOQroxk
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #17'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #11'
   type: vless
   server: fin.goodname.com.tr
   port: 8451
@@ -1159,7 +1116,7 @@ proxies:
   reality-opts:
     public-key: GTbTUtL2Xavlf_3xlmaxJW7saV4QsKHriwU7gNCJr3o
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #18'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #12'
   type: vless
   server: fin.goodname.com.tr
   port: 8452
@@ -1172,7 +1129,7 @@ proxies:
   reality-opts:
     public-key: n7_Ddz9DUWdhhtPh92wOWNehjZr1ewHMvJmVyRYGhX4
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #19'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #13'
   type: vless
   server: tur.goodname.com.tr
   port: 8443
@@ -1185,7 +1142,7 @@ proxies:
   reality-opts:
     public-key: TRhKuUcgNtOODXlz6zQ8vPX2CCwqGRiV2LoHrQ0WN2U
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #20'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #14'
   type: vless
   server: shep.goodname.com.tr
   port: 8446
@@ -1198,7 +1155,7 @@ proxies:
   reality-opts:
     public-key: WGpNMXF7VeunFrYIJtbQBycInfroAc2PZmm80jsjFko
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #21'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #15'
   type: vless
   server: fin.goodname.com.tr
   port: 8447
@@ -1211,7 +1168,7 @@ proxies:
   reality-opts:
     public-key: 2vemWMcM5_ONPpHNr0nLE1w2Y90gmwGPRy5vieJjvxA
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #22'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #16'
   type: vless
   server: nether.goodname.com.tr
   port: 8448
@@ -1224,7 +1181,7 @@ proxies:
   reality-opts:
     public-key: FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #23'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #17'
   type: vless
   server: fin.goodname.com.tr
   port: 8449
@@ -1237,7 +1194,7 @@ proxies:
   reality-opts:
     public-key: i2B1-jEnmlZynPNDAVa2WuorU_QBzcv-_XsHb7Ay5Cw
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #24'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #18'
   type: vless
   server: fin.goodname.com.tr
   port: 8450
@@ -1250,7 +1207,7 @@ proxies:
   reality-opts:
     public-key: GHH3KnDmEWWfo71LQxPV9mtGvzB-lIx1P78QXOQroxk
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #25'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #19'
   type: vless
   server: fin.goodname.com.tr
   port: 8451
@@ -1263,7 +1220,7 @@ proxies:
   reality-opts:
     public-key: GTbTUtL2Xavlf_3xlmaxJW7saV4QsKHriwU7gNCJr3o
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #26'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #20'
   type: vless
   server: fin.goodname.com.tr
   port: 8452
@@ -1282,6 +1239,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-02 19:21
+  - 'V2Get🛰️ 2026-09-02 19:21 #2'
+  - 'V2Get🛰️ 2026-09-02 19:21 #3'
+  - V2Get🛰️ 2026-09-02 17:23
   - V2Get🛰️ 2026-09-02 17:21
   - V2Get🛰️ 2026-09-02 18:22
   - V2Get🛰️ 2026-09-02 18:21
@@ -1295,7 +1259,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 18:21 #9'
   - 'V2Get🛰️ 2026-09-02 18:21 #10'
   - 'V2Get🛰️ 2026-09-02 18:21 #11'
-  - V2Get🛰️ 2026-09-02 17:23
   - 'V2Get🛰️ 2026-09-02 17:23 #2'
   - 'V2Get🛰️ 2026-09-02 17:23 #3'
   - V2Get🛰️ 2026-09-02 15:21
@@ -1317,12 +1280,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 16:22 #2'
   - 'V2Get🛰️ 2026-09-02 16:22 #3'
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - 'V2Get🛰️ 2026-09-02 15:21 #3'
-  - 'V2Get🛰️ 2026-09-02 15:21 #4'
-  - 'V2Get🛰️ 2026-09-02 15:21 #5'
-  - 'V2Get🛰️ 2026-09-02 15:21 #6'
-  - 'V2Get🛰️ 2026-09-02 15:21 #7'
-  - 'V2Get🛰️ 2026-09-02 15:21 #8'
   - 'V2Get🛰️ 2026-09-02 16:22 #4'
   - 'V2Get🛰️ 2026-09-02 16:22 #5'
   - 'V2Get🛰️ 2026-09-02 16:22 #6'
@@ -1360,6 +1317,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 15:22 #4'
   - 'V2Get🛰️ 2026-09-02 15:22 #5'
   - 'V2Get🛰️ 2026-09-02 15:22 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
+  - 'V2Get🛰️ 2026-09-02 15:21 #5'
+  - 'V2Get🛰️ 2026-09-02 15:21 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #7'
+  - 'V2Get🛰️ 2026-09-02 15:21 #8'
   - 'V2Get🛰️ 2026-09-02 15:21 #9'
   - 'V2Get🛰️ 2026-09-02 15:21 #10'
   - 'V2Get🛰️ 2026-09-02 15:21 #11'
@@ -1372,18 +1335,19 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 15:21 #18'
   - 'V2Get🛰️ 2026-09-02 15:21 #19'
   - 'V2Get🛰️ 2026-09-02 15:21 #20'
-  - 'V2Get🛰️ 2026-09-02 15:21 #21'
-  - 'V2Get🛰️ 2026-09-02 15:21 #22'
-  - 'V2Get🛰️ 2026-09-02 15:21 #23'
-  - 'V2Get🛰️ 2026-09-02 15:21 #24'
-  - 'V2Get🛰️ 2026-09-02 15:21 #25'
-  - 'V2Get🛰️ 2026-09-02 15:21 #26'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-02 19:21
+  - 'V2Get🛰️ 2026-09-02 19:21 #2'
+  - 'V2Get🛰️ 2026-09-02 19:21 #3'
+  - V2Get🛰️ 2026-09-02 17:23
   - V2Get🛰️ 2026-09-02 17:21
   - V2Get🛰️ 2026-09-02 18:22
   - V2Get🛰️ 2026-09-02 18:21
@@ -1397,7 +1361,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 18:21 #9'
   - 'V2Get🛰️ 2026-09-02 18:21 #10'
   - 'V2Get🛰️ 2026-09-02 18:21 #11'
-  - V2Get🛰️ 2026-09-02 17:23
   - 'V2Get🛰️ 2026-09-02 17:23 #2'
   - 'V2Get🛰️ 2026-09-02 17:23 #3'
   - V2Get🛰️ 2026-09-02 15:21
@@ -1419,12 +1382,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 16:22 #2'
   - 'V2Get🛰️ 2026-09-02 16:22 #3'
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - 'V2Get🛰️ 2026-09-02 15:21 #3'
-  - 'V2Get🛰️ 2026-09-02 15:21 #4'
-  - 'V2Get🛰️ 2026-09-02 15:21 #5'
-  - 'V2Get🛰️ 2026-09-02 15:21 #6'
-  - 'V2Get🛰️ 2026-09-02 15:21 #7'
-  - 'V2Get🛰️ 2026-09-02 15:21 #8'
   - 'V2Get🛰️ 2026-09-02 16:22 #4'
   - 'V2Get🛰️ 2026-09-02 16:22 #5'
   - 'V2Get🛰️ 2026-09-02 16:22 #6'
@@ -1462,6 +1419,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 15:22 #4'
   - 'V2Get🛰️ 2026-09-02 15:22 #5'
   - 'V2Get🛰️ 2026-09-02 15:22 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
+  - 'V2Get🛰️ 2026-09-02 15:21 #5'
+  - 'V2Get🛰️ 2026-09-02 15:21 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #7'
+  - 'V2Get🛰️ 2026-09-02 15:21 #8'
   - 'V2Get🛰️ 2026-09-02 15:21 #9'
   - 'V2Get🛰️ 2026-09-02 15:21 #10'
   - 'V2Get🛰️ 2026-09-02 15:21 #11'
@@ -1474,12 +1437,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 15:21 #18'
   - 'V2Get🛰️ 2026-09-02 15:21 #19'
   - 'V2Get🛰️ 2026-09-02 15:21 #20'
-  - 'V2Get🛰️ 2026-09-02 15:21 #21'
-  - 'V2Get🛰️ 2026-09-02 15:21 #22'
-  - 'V2Get🛰️ 2026-09-02 15:21 #23'
-  - 'V2Get🛰️ 2026-09-02 15:21 #24'
-  - 'V2Get🛰️ 2026-09-02 15:21 #25'
-  - 'V2Get🛰️ 2026-09-02 15:21 #26'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
