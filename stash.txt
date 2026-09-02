@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-03 01:23
   type: vless
   server: 38.128.251.24
@@ -68,20 +98,6 @@ proxies:
   reality-opts:
     public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
     short-id: a1b2c3d4
-- name: V2Get🛰️ 2026-09-02 17:21
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  network: ws
-  tls: true
-  servername: web-socket.tgdaosheng.ggff.net
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.com
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
 - name: V2Get🛰️ 2026-09-02 21:21
   type: vless
   server: 31.77.100.49
@@ -105,19 +121,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-02 18:21
-  type: vless
-  server: 159.195.137.29
-  port: 8443
-  uuid: 2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sellflow.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 - name: V2Get🛰️ 2026-09-02 23:25
   type: vless
   server: 91.99.81.222
@@ -1016,15 +1019,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-03 01:23
   - 'V2Get🛰️ 2026-09-03 01:23 #2'
   - 'V2Get🛰️ 2026-09-03 01:23 #3'
   - V2Get🛰️ 2026-09-03 01:22
   - 'V2Get🛰️ 2026-09-03 01:22 #2'
-  - V2Get🛰️ 2026-09-02 17:21
   - V2Get🛰️ 2026-09-02 21:21
   - V2Get🛰️ 2026-09-02 22:24
-  - V2Get🛰️ 2026-09-02 18:21
   - V2Get🛰️ 2026-09-02 23:25
   - 'V2Get🛰️ 2026-09-02 23:25 #2'
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
@@ -1103,15 +1106,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-03 01:23
   - 'V2Get🛰️ 2026-09-03 01:23 #2'
   - 'V2Get🛰️ 2026-09-03 01:23 #3'
   - V2Get🛰️ 2026-09-03 01:22
   - 'V2Get🛰️ 2026-09-03 01:22 #2'
-  - V2Get🛰️ 2026-09-02 17:21
   - V2Get🛰️ 2026-09-02 21:21
   - V2Get🛰️ 2026-09-02 22:24
-  - V2Get🛰️ 2026-09-02 18:21
   - V2Get🛰️ 2026-09-02 23:25
   - 'V2Get🛰️ 2026-09-02 23:25 #2'
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
