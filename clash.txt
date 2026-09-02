@@ -12,6 +12,83 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-09 14:11
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: V2Get🛰️ 2026-08-26 12:07
+  type: vless
+  server: deproxy2.lckdwn.ru
+  port: 8443
+  uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: deproxy2.lckdwn.ru
+- name: V2Get🛰️ 2026-08-29 15:11
+  type: vless
+  server: 72.56.115.125
+  port: 443
+  uuid: 4e25f371-acc5-4eb6-afb3-b763ee75537d
+  udp: true
+  network: ws
+  tls: true
+  servername: rotterdam.korgivps.ru
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /api/user
+- name: 'V2Get🛰️ 2026-08-29 15:11 #2'
+  type: vless
+  server: panel.freesavesafe.com
+  port: 443
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: panel.freesavesafe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: 812609fa663c57fb
+- name: V2Get🛰️ 2026-08-31 21:17
+  type: vless
+  server: direct-tr01.korvexe.ir
+  port: 21570
+  uuid: c7a9c7f0-4a6b-414e-bdfc-8ad8980f858b
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: direct-tr01.korvexe.ir
+- name: V2Get🛰️ 2026-09-01 23:23
+  type: vless
+  server: 88.216.190.206
+  port: 443
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app4.goonars.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
+    short-id: 09ef88a6
 - name: V2Get🛰️ 2026-09-02 12:20
   type: vless
   server: piracy-android.video-streams.org
@@ -60,16 +137,6 @@ proxies:
     path: /ws
     headers:
       Host: minimize-evenness.cdn-content.com
-- name: V2Get🛰️ 2026-08-31 02:15
-  type: vless
-  server: derman.neobo-tooth.ru
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
 - name: 'V2Get🛰️ 2026-09-02 12:20 #4'
   type: vless
   server: server1.poludiro.workers.dev
@@ -106,14 +173,6 @@ proxies:
     path: /sync
     headers:
       Host: 0406.infinityconfig7.workers.dev
-- name: V2Get🛰️ 2026-09-02 01:20
-  type: vless
-  server: 65.109.217.127
-  port: 53618
-  uuid: 4db504c3-f945-41f4-80c5-78a06434e4cb
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-02 09:21
   type: vless
   server: 65.109.217.127
@@ -1053,70 +1112,24 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-02 01:21
-  type: vless
-  server: 170.114.46.6
-  port: 80
-  uuid: 2475d0bd-bcb1-4121-9b1c-5e30841630b9
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sahanwickramasinghevip.shop
-- name: 'V2Get🛰️ 2026-09-02 01:21 #2'
-  type: vless
-  server: 2.26.124.85
-  port: 443
-  uuid: 30dab345-4de9-4b70-ad9f-8ebd5c66686f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.jsdelivr.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: GRxGFwibgoUjG9OL5Dl1OLyK56yw8WaG5BdFP8ifVgQ
-    short-id: 26f7082dd0e36ca1
-- name: 'V2Get🛰️ 2026-09-02 01:21 #3'
-  type: vless
-  server: 2.27.205.59
-  port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-09-02 01:21 #4'
-  type: vless
-  server: 50.7.188.243
-  port: 443
-  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app26.jarvestip.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: c5vsnqZ0Lr_bFoto-ES-3bVD63PwFeogqfc7xTj2rig
-    short-id: 3f7fb4ee
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-09 14:11
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-09-01 23:23
   - V2Get🛰️ 2026-09-02 12:20
   - 'V2Get🛰️ 2026-09-02 12:20 #2'
   - 'V2Get🛰️ 2026-09-02 12:20 #3'
-  - V2Get🛰️ 2026-08-31 02:15
   - 'V2Get🛰️ 2026-09-02 12:20 #4'
   - 'V2Get🛰️ 2026-09-02 12:20 #5'
   - 'V2Get🛰️ 2026-09-02 12:20 #6'
-  - V2Get🛰️ 2026-09-02 01:20
   - V2Get🛰️ 2026-09-02 09:21
   - V2Get🛰️ 2026-09-02 11:20
   - 'V2Get🛰️ 2026-09-02 11:20 #2'
@@ -1204,24 +1217,24 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 03:19 #2'
   - V2Get🛰️ 2026-09-02 02:20
   - V2Get🛰️ 2026-09-02 02:19
-  - V2Get🛰️ 2026-09-02 01:21
-  - 'V2Get🛰️ 2026-09-02 01:21 #2'
-  - 'V2Get🛰️ 2026-09-02 01:21 #3'
-  - 'V2Get🛰️ 2026-09-02 01:21 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-09 14:11
+  - V2Get🛰️ 2026-08-26 12:07
+  - V2Get🛰️ 2026-08-29 15:11
+  - 'V2Get🛰️ 2026-08-29 15:11 #2'
+  - V2Get🛰️ 2026-08-31 21:17
+  - V2Get🛰️ 2026-09-01 23:23
   - V2Get🛰️ 2026-09-02 12:20
   - 'V2Get🛰️ 2026-09-02 12:20 #2'
   - 'V2Get🛰️ 2026-09-02 12:20 #3'
-  - V2Get🛰️ 2026-08-31 02:15
   - 'V2Get🛰️ 2026-09-02 12:20 #4'
   - 'V2Get🛰️ 2026-09-02 12:20 #5'
   - 'V2Get🛰️ 2026-09-02 12:20 #6'
-  - V2Get🛰️ 2026-09-02 01:20
   - V2Get🛰️ 2026-09-02 09:21
   - V2Get🛰️ 2026-09-02 11:20
   - 'V2Get🛰️ 2026-09-02 11:20 #2'
@@ -1309,10 +1322,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-02 03:19 #2'
   - V2Get🛰️ 2026-09-02 02:20
   - V2Get🛰️ 2026-09-02 02:19
-  - V2Get🛰️ 2026-09-02 01:21
-  - 'V2Get🛰️ 2026-09-02 01:21 #2'
-  - 'V2Get🛰️ 2026-09-02 01:21 #3'
-  - 'V2Get🛰️ 2026-09-02 01:21 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
