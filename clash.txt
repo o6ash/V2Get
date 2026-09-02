@@ -12,17 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: trojan
-  server: 185.18.250.252
+- name: V2Get🛰️ 2026-09-02 16:23
+  type: vless
+  server: k2.cloud--vpn.site
   port: 443
-  password: humanity
+  uuid: d60e2537-13e8-41db-bdad-cd5c054a0ec7
   udp: true
-  sni: www.multiplydose.com
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-25 17:04
   type: vless
   server: 193.160.32.36
@@ -1373,7 +1376,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-09-02 16:23
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
@@ -1475,7 +1478,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-09-02 16:23
   - V2Get🛰️ 2026-08-25 17:04
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
