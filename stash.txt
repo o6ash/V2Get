@@ -12,42 +12,54 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
+- name: V2Get🛰️ 2026-09-02 12:20
   type: vless
-  server: 104.16.72.101
-  port: 80
-  uuid: d5598622-46b8-b017-3af3-232500000001
+  server: piracy-android.video-streams.org
+  port: 443
+  uuid: 8a9b898d-5658-4f77-9fe9-5ff5b61fa107
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: piracy-android.video-streams.org
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /sync
+    path: /ws
     headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: V2Get🛰️ 2026-08-13 09:18
+      Host: piracy-android.video-streams.org
+- name: 'V2Get🛰️ 2026-09-02 12:20 #2'
   type: vless
-  server: 172.67.148.41
-  port: 80
-  uuid: 8be64379-08a5-4362-b8cf-234a65409bda
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  uuid: 8a9b898d-5658-4f77-9fe9-5ff5b61fa107
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: adheres-scruple.quick-cdn.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /eyJqdW5rIjoiOW56N0hTRm9IS252IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ
+    path: /ws
     headers:
-      Host: telegram4.freepersianland8.workers.dev
-- name: V2Get🛰️ 2026-08-13 09:19
+      Host: adheres-scruple.quick-cdn.net
+- name: 'V2Get🛰️ 2026-09-02 12:20 #3'
   type: vless
-  server: 104.21.11.152
-  port: 8080
-  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: 8a9b898d-5658-4f77-9fe9-5ff5b61fa107
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+    path: /ws
     headers:
-      Host: server6.diwir81236.workers.dev
+      Host: minimize-evenness.cdn-content.com
 - name: V2Get🛰️ 2026-08-31 02:15
   type: vless
   server: derman.neobo-tooth.ru
@@ -58,7 +70,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-09-02 12:20
+- name: 'V2Get🛰️ 2026-09-02 12:20 #4'
   type: vless
   server: server1.poludiro.workers.dev
   port: 8080
@@ -70,7 +82,7 @@ proxies:
     path: /eyJqdW5rIjoiSWZqSHF3Q2RLIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed
     headers:
       Host: server1.poludiro.workers.dev
-- name: 'V2Get🛰️ 2026-09-02 12:20 #2'
+- name: 'V2Get🛰️ 2026-09-02 12:20 #5'
   type: vless
   server: volexproxy.karjadidd.workers.dev
   port: 2083
@@ -80,7 +92,7 @@ proxies:
   tls: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-09-02 12:20 #3'
+- name: 'V2Get🛰️ 2026-09-02 12:20 #6'
   type: vless
   server: 0406.infinityconfig7.workers.dev
   port: 2053
@@ -989,13 +1001,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-13 09:18
-  - V2Get🛰️ 2026-08-13 09:19
-  - V2Get🛰️ 2026-08-31 02:15
   - V2Get🛰️ 2026-09-02 12:20
   - 'V2Get🛰️ 2026-09-02 12:20 #2'
   - 'V2Get🛰️ 2026-09-02 12:20 #3'
+  - V2Get🛰️ 2026-08-31 02:15
+  - 'V2Get🛰️ 2026-09-02 12:20 #4'
+  - 'V2Get🛰️ 2026-09-02 12:20 #5'
+  - 'V2Get🛰️ 2026-09-02 12:20 #6'
   - V2Get🛰️ 2026-09-02 01:20
   - V2Get🛰️ 2026-09-02 09:21
   - V2Get🛰️ 2026-09-02 11:20
@@ -1082,13 +1094,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-13 09:18
-  - V2Get🛰️ 2026-08-13 09:19
-  - V2Get🛰️ 2026-08-31 02:15
   - V2Get🛰️ 2026-09-02 12:20
   - 'V2Get🛰️ 2026-09-02 12:20 #2'
   - 'V2Get🛰️ 2026-09-02 12:20 #3'
+  - V2Get🛰️ 2026-08-31 02:15
+  - 'V2Get🛰️ 2026-09-02 12:20 #4'
+  - 'V2Get🛰️ 2026-09-02 12:20 #5'
+  - 'V2Get🛰️ 2026-09-02 12:20 #6'
   - V2Get🛰️ 2026-09-02 01:20
   - V2Get🛰️ 2026-09-02 09:21
   - V2Get🛰️ 2026-09-02 11:20
