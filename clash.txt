@@ -12,55 +12,514 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-08-30 22:15
+  type: vless
+  server: 94.156.232.254
   port: 443
-  password: MiTiVPN
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
   udp: true
-  sni: ssl.fastly.com
+  network: ws
+  tls: true
+  servername: cf6.rumedia-cdn.com
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /cdn/v3/live
     headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+      Host: cf6.rumedia-cdn.com
+- name: V2Get🛰️ 2026-08-31 20:17
+  type: vless
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /755276b33b6f
+- name: V2Get🛰️ 2026-09-01 01:17
+  type: vless
+  server: 157.22.133.130
+  port: 2087
+  uuid: e6d369db-22be-4f30-8685-455c717aaa8c
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /5021201ef53f
+- name: V2Get🛰️ 2026-09-01 16:19
+  type: vless
+  server: 213.136.92.67
+  port: 443
+  uuid: af348651-1624-4710-b55f-0307a22d891f
+  udp: true
+  network: tcp
+  tls: true
+  servername: status.play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo
+    short-id: '5030'
 - name: V2Get🛰️ 2026-09-02 15:21
   type: vless
-  server: shep.goodname.com.tr
-  port: 8446
-  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
+  server: 104.18.24.41
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: WGpNMXF7VeunFrYIJtbQBycInfroAc2PZmm80jsjFko
-    short-id: 68d2d5f8
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-09-02 15:21 #2'
   type: vless
-  server: fin.goodname.com.tr
-  port: 8447
-  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
+  server: 172.66.146.2
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
   udp: true
-  network: tcp
+  network: ws
   tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 2vemWMcM5_ONPpHNr0nLE1w2Y90gmwGPRy5vieJjvxA
-    short-id: 68d2d5f8
-- name: V2Get🛰️ 2026-09-02 18:22
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #3'
   type: vless
-  server: 206.1.96.52
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  server: 104.18.19.193
+  port: 2087
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #4'
+  type: vless
+  server: 104.18.10.167
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #5'
+  type: vless
+  server: 104.21.114.167
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #6'
+  type: vless
+  server: 104.27.13.230
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #7'
+  type: vless
+  server: 172.67.175.9
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #8'
+  type: vless
+  server: 104.21.86.198
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #9'
+  type: vless
+  server: 172.67.151.13
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #10'
+  type: vless
+  server: 104.19.228.181
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #11'
+  type: vless
+  server: 104.18.155.141
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #12'
+  type: vless
+  server: 104.16.75.76
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #13'
+  type: vless
+  server: 104.18.151.69
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #14'
+  type: vless
+  server: 104.18.155.69
+  port: 2087
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #15'
+  type: vless
+  server: 104.20.45.4
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #16'
+  type: vless
+  server: 172.67.149.113
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #17'
+  type: vless
+  server: 104.16.40.223
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #18'
+  type: vless
+  server: 172.67.255.154
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #19'
+  type: vless
+  server: 172.67.175.9
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #20'
+  type: vless
+  server: 172.67.189.28
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #21'
+  type: vless
+  server: 172.66.146.2
+  port: 2087
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #22'
+  type: vless
+  server: 172.66.146.2
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #23'
+  type: vless
+  server: 104.18.19.39
+  port: 2087
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #24'
+  type: vless
+  server: 172.64.155.209
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #25'
+  type: vless
+  server: www.canva.com
+  port: 2087
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #26'
+  type: vless
+  server: www.chatgpt.com
+  port: 2083
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-02 15:21 #27'
+  type: vless
+  server: www.speedtest.net
+  port: 8443
+  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
+  udp: true
+  network: ws
+  tls: true
+  servername: shopki.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shopki.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-09-02 22:24
   type: vless
   server: 45.59.126.91
@@ -725,64 +1184,6 @@ proxies:
     short-id: 377d
 - name: 'V2Get🛰️ 2026-09-02 22:22 #2'
   type: vless
-  server: 38.54.59.209
-  port: 2087
-  uuid: cd842ef8-9577-47f3-83ca-627147ed291b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /d1000b16fe76
-- name: 'V2Get🛰️ 2026-09-02 22:22 #3'
-  type: vless
-  server: 5.34.176.233
-  port: 443
-  uuid: 30523c7b-67f7-4456-b71b-07530b6c350e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8G3UWe1qa0Gzv5IRBOkZ4Fg7Fey-sNdUwg_llufDRGI
-    short-id: ffc177eeffe88a84
-- name: 'V2Get🛰️ 2026-09-02 22:22 #4'
-  type: vless
-  server: 189.74.97.43
-  port: 2087
-  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /73b6faea2d00
-- name: 'V2Get🛰️ 2026-09-02 22:22 #5'
-  type: vless
-  server: 150.251.113.34
-  port: 443
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-- name: 'V2Get🛰️ 2026-09-02 22:22 #6'
-  type: vless
-  server: 178.95.170.98
-  port: 2087
-  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /4bc027a44532
-- name: 'V2Get🛰️ 2026-09-02 22:22 #7'
-  type: vless
   server: 82.24.203.2
   port: 2087
   uuid: 3165b4d0-40f7-4df0-9f59-4c89ccdac92d
@@ -791,7 +1192,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /3bfc3e3ed603
-- name: 'V2Get🛰️ 2026-09-02 22:22 #8'
+- name: 'V2Get🛰️ 2026-09-02 22:22 #3'
   type: vless
   server: 82.24.203.92
   port: 2083
@@ -802,286 +1203,43 @@ proxies:
   grpc-opts:
     grpc-service-name: chat.deepseek.com
   tls: true
-- name: V2Get🛰️ 2026-09-02 22:21
-  type: vless
-  server: sary.vip1111.ir
-  port: 8443
-  uuid: 266b7b62-ca76-45d5-b4c1-644ad378cc52
-  udp: true
-  network: ws
-  tls: true
-  servername: safe.vip1111.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /report/466281-elecomp-29-tech-exhibition-opening/
-    headers:
-      Host: safe.vip1111.ir
-- name: V2Get🛰️ 2026-09-02 21:23
-  type: ss
-  server: 15.204.247.244
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 'V2Get🛰️ 2026-09-02 21:23 #2'
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 'V2Get🛰️ 2026-09-02 21:23 #3'
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: d60e2537-13e8-41db-bdad-cd5c054a0ec7
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: V2Get🛰️ 2026-09-02 21:22
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 57041cbd-f9e9-44d8-a7b1-2a3e18c41c6c
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT
-- name: 'V2Get🛰️ 2026-09-02 21:22 #2'
-  type: vless
-  server: sary.vip1111.ir
-  port: 8443
-  uuid: ad5dac05-0416-421e-bbf9-d4f19306b458
-  udp: true
-  network: ws
-  tls: true
-  servername: safe.vip1111.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /report/466281-elecomp-29-tech-exhibition-opening/
-    headers:
-      Host: safe.vip1111.ir
-- name: 'V2Get🛰️ 2026-09-02 21:22 #3'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 37818
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: dC2R7CAGRLuq7ehxsYmB__Fe6U0bAeU0UKoXLDPTKns
-    short-id: 8bf9ad1fbeefd1
-- name: 'V2Get🛰️ 2026-09-02 21:22 #4'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 17813
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-02 21:22 #5'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 56818
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: C6oDgrCI0F83CdevLE6y5ekZX8fZDZ_W71rDkcdcwmA
-    short-id: 8536954c6cb66c
-- name: 'V2Get🛰️ 2026-09-02 21:22 #6'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 58065
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5AZY_DESIwryv45anY0w1nbmsXEh7qP15hdfGJnvBFQ
-    short-id: e45239ae6f
-- name: 'V2Get🛰️ 2026-09-02 21:22 #7'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 15598
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PwDQ4PkI5N2bF1ut91bTVYIVA_Zp_gVsbM2cnt9K6Wk
-    short-id: e11fe6
-- name: 'V2Get🛰️ 2026-09-02 21:22 #8'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 35205
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GW3N4OlGDSpoS3lAF3LpVUCC4aeOKA86mAz_iZ70ZXE
-    short-id: d48895
-- name: 'V2Get🛰️ 2026-09-02 21:22 #9'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 41984
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: c-ekWK5_hhWqArbZnsyUFKC6LD_80QyhIC4kSh2j4Dw
-    short-id: 557e94764f
-- name: 'V2Get🛰️ 2026-09-02 21:22 #10'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 42945
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QHq9KbfZo5d1Jj3WrgmDx1Mxtd5YKtomnhTetvDCQBU
-    short-id: 4cbf0793
-- name: 'V2Get🛰️ 2026-09-02 21:22 #11'
-  type: vless
-  server: cdn.shop.mygharehshop.ir
-  port: 13897
-  uuid: 992891ba-b6b8-4521-8e1e-dd7667386dbc
-  udp: true
-  network: tcp
-  tls: true
-  servername: snapp.ir
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: K8ATCc0pgKvRghbGJAeIkoukCfcAZgijg8SzkaTaalU
-    short-id: 411486ed7b
-- name: 'V2Get🛰️ 2026-09-02 21:22 #12'
-  type: ss
-  server: 36.224.147.226
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 'V2Get🛰️ 2026-09-02 21:22 #13'
-  type: vless
-  server: 194.110.207.146
-  port: 443
-  uuid: 9c3d8e77-82ca-48d5-9981-dfce97b20ab1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: 'V2Get🛰️ 2026-09-02 21:22 #14'
-  type: vless
-  server: 186.246.22.144
-  port: 443
-  uuid: 194ad316-fd65-4e1b-a337-eb65c9ca68eb
-  udp: true
-  network: xhttp
-  tls: true
-  servername: gitlab.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: XW8pwP7ijTmc1QKtMGMvJ_hcnac2GIQ14o1ALhuTSlQ
-    short-id: 4aa825e50078d7ef
-- name: 'V2Get🛰️ 2026-09-02 21:22 #15'
-  type: vless
-  server: 185.141.227.150
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  network: grpc
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  grpc-opts:
-    grpc-service-name: grpc-reality
-- name: 'V2Get🛰️ 2026-09-02 21:22 #16'
-  type: vless
-  server: 147.45.116.52
-  port: 443
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.wikihow.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
-- name: 'V2Get🛰️ 2026-09-02 21:22 #17'
-  type: vless
-  server: 159.195.115.172
-  port: 443
-  uuid: ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api-as.data-media-social.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc
-    short-id: f3a9d2b1c7d4f608
-- name: 'V2Get🛰️ 2026-09-02 21:22 #18'
-  type: vless
-  server: 2.59.183.167
-  port: 443
-  uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-    short-id: a1b2c3d4
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-30 22:15
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-02 15:21
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - V2Get🛰️ 2026-09-02 18:22
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
+  - 'V2Get🛰️ 2026-09-02 15:21 #5'
+  - 'V2Get🛰️ 2026-09-02 15:21 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #7'
+  - 'V2Get🛰️ 2026-09-02 15:21 #8'
+  - 'V2Get🛰️ 2026-09-02 15:21 #9'
+  - 'V2Get🛰️ 2026-09-02 15:21 #10'
+  - 'V2Get🛰️ 2026-09-02 15:21 #11'
+  - 'V2Get🛰️ 2026-09-02 15:21 #12'
+  - 'V2Get🛰️ 2026-09-02 15:21 #13'
+  - 'V2Get🛰️ 2026-09-02 15:21 #14'
+  - 'V2Get🛰️ 2026-09-02 15:21 #15'
+  - 'V2Get🛰️ 2026-09-02 15:21 #16'
+  - 'V2Get🛰️ 2026-09-02 15:21 #17'
+  - 'V2Get🛰️ 2026-09-02 15:21 #18'
+  - 'V2Get🛰️ 2026-09-02 15:21 #19'
+  - 'V2Get🛰️ 2026-09-02 15:21 #20'
+  - 'V2Get🛰️ 2026-09-02 15:21 #21'
+  - 'V2Get🛰️ 2026-09-02 15:21 #22'
+  - 'V2Get🛰️ 2026-09-02 15:21 #23'
+  - 'V2Get🛰️ 2026-09-02 15:21 #24'
+  - 'V2Get🛰️ 2026-09-02 15:21 #25'
+  - 'V2Get🛰️ 2026-09-02 15:21 #26'
+  - 'V2Get🛰️ 2026-09-02 15:21 #27'
   - V2Get🛰️ 2026-09-02 22:24
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
   - 'V2Get🛰️ 2026-09-02 22:24 #3'
@@ -1150,43 +1308,43 @@ proxy-groups:
   - V2Get🛰️ 2026-09-02 22:22
   - 'V2Get🛰️ 2026-09-02 22:22 #2'
   - 'V2Get🛰️ 2026-09-02 22:22 #3'
-  - 'V2Get🛰️ 2026-09-02 22:22 #4'
-  - 'V2Get🛰️ 2026-09-02 22:22 #5'
-  - 'V2Get🛰️ 2026-09-02 22:22 #6'
-  - 'V2Get🛰️ 2026-09-02 22:22 #7'
-  - 'V2Get🛰️ 2026-09-02 22:22 #8'
-  - V2Get🛰️ 2026-09-02 22:21
-  - V2Get🛰️ 2026-09-02 21:23
-  - 'V2Get🛰️ 2026-09-02 21:23 #2'
-  - 'V2Get🛰️ 2026-09-02 21:23 #3'
-  - V2Get🛰️ 2026-09-02 21:22
-  - 'V2Get🛰️ 2026-09-02 21:22 #2'
-  - 'V2Get🛰️ 2026-09-02 21:22 #3'
-  - 'V2Get🛰️ 2026-09-02 21:22 #4'
-  - 'V2Get🛰️ 2026-09-02 21:22 #5'
-  - 'V2Get🛰️ 2026-09-02 21:22 #6'
-  - 'V2Get🛰️ 2026-09-02 21:22 #7'
-  - 'V2Get🛰️ 2026-09-02 21:22 #8'
-  - 'V2Get🛰️ 2026-09-02 21:22 #9'
-  - 'V2Get🛰️ 2026-09-02 21:22 #10'
-  - 'V2Get🛰️ 2026-09-02 21:22 #11'
-  - 'V2Get🛰️ 2026-09-02 21:22 #12'
-  - 'V2Get🛰️ 2026-09-02 21:22 #13'
-  - 'V2Get🛰️ 2026-09-02 21:22 #14'
-  - 'V2Get🛰️ 2026-09-02 21:22 #15'
-  - 'V2Get🛰️ 2026-09-02 21:22 #16'
-  - 'V2Get🛰️ 2026-09-02 21:22 #17'
-  - 'V2Get🛰️ 2026-09-02 21:22 #18'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-30 22:15
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-09-01 01:17
+  - V2Get🛰️ 2026-09-01 16:19
   - V2Get🛰️ 2026-09-02 15:21
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - V2Get🛰️ 2026-09-02 18:22
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
+  - 'V2Get🛰️ 2026-09-02 15:21 #5'
+  - 'V2Get🛰️ 2026-09-02 15:21 #6'
+  - 'V2Get🛰️ 2026-09-02 15:21 #7'
+  - 'V2Get🛰️ 2026-09-02 15:21 #8'
+  - 'V2Get🛰️ 2026-09-02 15:21 #9'
+  - 'V2Get🛰️ 2026-09-02 15:21 #10'
+  - 'V2Get🛰️ 2026-09-02 15:21 #11'
+  - 'V2Get🛰️ 2026-09-02 15:21 #12'
+  - 'V2Get🛰️ 2026-09-02 15:21 #13'
+  - 'V2Get🛰️ 2026-09-02 15:21 #14'
+  - 'V2Get🛰️ 2026-09-02 15:21 #15'
+  - 'V2Get🛰️ 2026-09-02 15:21 #16'
+  - 'V2Get🛰️ 2026-09-02 15:21 #17'
+  - 'V2Get🛰️ 2026-09-02 15:21 #18'
+  - 'V2Get🛰️ 2026-09-02 15:21 #19'
+  - 'V2Get🛰️ 2026-09-02 15:21 #20'
+  - 'V2Get🛰️ 2026-09-02 15:21 #21'
+  - 'V2Get🛰️ 2026-09-02 15:21 #22'
+  - 'V2Get🛰️ 2026-09-02 15:21 #23'
+  - 'V2Get🛰️ 2026-09-02 15:21 #24'
+  - 'V2Get🛰️ 2026-09-02 15:21 #25'
+  - 'V2Get🛰️ 2026-09-02 15:21 #26'
+  - 'V2Get🛰️ 2026-09-02 15:21 #27'
   - V2Get🛰️ 2026-09-02 22:24
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
   - 'V2Get🛰️ 2026-09-02 22:24 #3'
@@ -1255,33 +1413,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-02 22:22
   - 'V2Get🛰️ 2026-09-02 22:22 #2'
   - 'V2Get🛰️ 2026-09-02 22:22 #3'
-  - 'V2Get🛰️ 2026-09-02 22:22 #4'
-  - 'V2Get🛰️ 2026-09-02 22:22 #5'
-  - 'V2Get🛰️ 2026-09-02 22:22 #6'
-  - 'V2Get🛰️ 2026-09-02 22:22 #7'
-  - 'V2Get🛰️ 2026-09-02 22:22 #8'
-  - V2Get🛰️ 2026-09-02 22:21
-  - V2Get🛰️ 2026-09-02 21:23
-  - 'V2Get🛰️ 2026-09-02 21:23 #2'
-  - 'V2Get🛰️ 2026-09-02 21:23 #3'
-  - V2Get🛰️ 2026-09-02 21:22
-  - 'V2Get🛰️ 2026-09-02 21:22 #2'
-  - 'V2Get🛰️ 2026-09-02 21:22 #3'
-  - 'V2Get🛰️ 2026-09-02 21:22 #4'
-  - 'V2Get🛰️ 2026-09-02 21:22 #5'
-  - 'V2Get🛰️ 2026-09-02 21:22 #6'
-  - 'V2Get🛰️ 2026-09-02 21:22 #7'
-  - 'V2Get🛰️ 2026-09-02 21:22 #8'
-  - 'V2Get🛰️ 2026-09-02 21:22 #9'
-  - 'V2Get🛰️ 2026-09-02 21:22 #10'
-  - 'V2Get🛰️ 2026-09-02 21:22 #11'
-  - 'V2Get🛰️ 2026-09-02 21:22 #12'
-  - 'V2Get🛰️ 2026-09-02 21:22 #13'
-  - 'V2Get🛰️ 2026-09-02 21:22 #14'
-  - 'V2Get🛰️ 2026-09-02 21:22 #15'
-  - 'V2Get🛰️ 2026-09-02 21:22 #16'
-  - 'V2Get🛰️ 2026-09-02 21:22 #17'
-  - 'V2Get🛰️ 2026-09-02 21:22 #18'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
