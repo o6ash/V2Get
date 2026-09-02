@@ -12,20 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-02 15:21
-  type: vless
-  server: tur.goodname.com.tr
-  port: 8443
-  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
   udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: TRhKuUcgNtOODXlz6zQ8vPX2CCwqGRiV2LoHrQ0WN2U
-    short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #2'
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-02 15:21
   type: vless
   server: shep.goodname.com.tr
   port: 8446
@@ -38,7 +40,7 @@ proxies:
   reality-opts:
     public-key: WGpNMXF7VeunFrYIJtbQBycInfroAc2PZmm80jsjFko
     short-id: 68d2d5f8
-- name: 'V2Get🛰️ 2026-09-02 15:21 #3'
+- name: 'V2Get🛰️ 2026-09-02 15:21 #2'
   type: vless
   server: fin.goodname.com.tr
   port: 8447
@@ -1076,9 +1078,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 15:21
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - 'V2Get🛰️ 2026-09-02 15:21 #3'
   - V2Get🛰️ 2026-09-02 18:22
   - V2Get🛰️ 2026-09-02 22:24
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
@@ -1181,9 +1183,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-02 15:21
   - 'V2Get🛰️ 2026-09-02 15:21 #2'
-  - 'V2Get🛰️ 2026-09-02 15:21 #3'
   - V2Get🛰️ 2026-09-02 18:22
   - V2Get🛰️ 2026-09-02 22:24
   - 'V2Get🛰️ 2026-09-02 22:24 #2'
