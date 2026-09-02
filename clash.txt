@@ -12,76 +12,73 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 02:33
-  type: vless
-  server: 83.168.71.216
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
   port: 443
-  uuid: a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a
+  password: MiTiVPN
   udp: true
-  network: tcp
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
-    short-id: 2f49bccf11150ef2
-- name: V2Get🛰️ 2026-08-12 13:17
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-02 15:21
   type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  server: istan.goodname.com.tr
+  port: 8444
+  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: deepl.com
+  servername: amp-api-edge.apps.apple.com
   client-fingerprint: qq
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-- name: V2Get🛰️ 2026-08-26 20:06
+    public-key: 4_-SYNUa6FNFe4yKiomBiyW9UqUZwlJfA8LnXZ0QRXA
+    short-id: 68d2d5f8
+- name: 'V2Get🛰️ 2026-09-02 15:21 #2'
   type: vless
-  server: 31.76.91.72
-  port: 2087
-  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
-  udp: true
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
-    short-id: c226283c4de5b1ad
-  grpc-opts:
-    grpc-service-name: grpc
-- name: V2Get🛰️ 2026-08-27 13:08
-  type: vless
-  server: 185.243.218.182
-  port: 322
-  uuid: 20000024-8788-9182-f000-a35f2e23a020
+  server: shep.goodname.com.tr
+  port: 8446
+  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: wyrebyte.com
+  servername: amp-api-edge.apps.apple.com
   client-fingerprint: qq
   reality-opts:
-    public-key: T7JiblULt3JN3iWxcGPD9E912LAneFSPA3J05PD9MjA
-    short-id: 2757df499273bcb2
-- name: V2Get🛰️ 2026-08-29 01:10
+    public-key: WGpNMXF7VeunFrYIJtbQBycInfroAc2PZmm80jsjFko
+    short-id: 68d2d5f8
+- name: 'V2Get🛰️ 2026-09-02 15:21 #3'
   type: vless
-  server: 45.90.58.216
-  port: 443
-  uuid: 2e8077d9-7bd9-444b-b2e3-de940d2eb35e
+  server: fin.goodname.com.tr
+  port: 8447
+  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: PMYLdOtnvW-ca8Zf6u7CFgGXoGXCvmCMPerPjGY3AAc
-    short-id: 77d7abe2c55892f1
+    public-key: 2vemWMcM5_ONPpHNr0nLE1w2Y90gmwGPRy5vieJjvxA
+    short-id: 68d2d5f8
+- name: 'V2Get🛰️ 2026-09-02 15:21 #4'
+  type: vless
+  server: nether.goodname.com.tr
+  port: 8448
+  uuid: 7feda17e-8e97-452b-8edd-01fb72eb0d14
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I
+    short-id: 68d2d5f8
 - name: V2Get🛰️ 2026-08-29 17:11
   type: vless
   server: 54.251.224.5
@@ -1194,11 +1191,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 02:33
-  - V2Get🛰️ 2026-08-12 13:17
-  - V2Get🛰️ 2026-08-26 20:06
-  - V2Get🛰️ 2026-08-27 13:08
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-02 15:21
+  - 'V2Get🛰️ 2026-09-02 15:21 #2'
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
   - V2Get🛰️ 2026-08-29 17:11
   - V2Get🛰️ 2026-08-29 18:11
   - V2Get🛰️ 2026-08-30 11:13
@@ -1300,11 +1297,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 02:33
-  - V2Get🛰️ 2026-08-12 13:17
-  - V2Get🛰️ 2026-08-26 20:06
-  - V2Get🛰️ 2026-08-27 13:08
-  - V2Get🛰️ 2026-08-29 01:10
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-02 15:21
+  - 'V2Get🛰️ 2026-09-02 15:21 #2'
+  - 'V2Get🛰️ 2026-09-02 15:21 #3'
+  - 'V2Get🛰️ 2026-09-02 15:21 #4'
   - V2Get🛰️ 2026-08-29 17:11
   - V2Get🛰️ 2026-08-29 18:11
   - V2Get🛰️ 2026-08-30 11:13
