@@ -14,6 +14,22 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-02 13:21
   type: vless
+  server: djdjsj-production.up.railway.app
+  port: 443
+  uuid: 5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e
+  udp: true
+  network: ws
+  tls: true
+  servername: djdjsj-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/vless/5ff8e256-cb7e-41fc-8ed2-14a46fd46e4e?ed=2048
+    headers:
+      Host: djdjsj-production.up.railway.app
+- name: 'V2Get🛰️ 2026-09-02 13:21 #2'
+  type: vless
   server: usa5.selqora.ir
   port: 56514
   uuid: e685dff4-9d49-407e-8930-3c22dbb60184
@@ -67,22 +83,6 @@ proxies:
 - name: V2Get🛰️ 2026-09-01 21:20
   type: trojan
   server: s.vnexjet.ir
-  port: 443
-  password: '@VnexVpn@VnexVpn@VnexVpn'
-  udp: true
-  sni: s.azxturbo.ir
-  alpn:
-  - http/1.1
-  - h3
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: s.azxturbo.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #2'
-  type: trojan
-  server: s.vnexjet.ir
   port: 8443
   password: '@VnexVpn@VnexVpn@VnexVpn'
   udp: true
@@ -95,7 +95,7 @@ proxies:
     path: /
     headers:
       Host: s.vnexjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #3'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #2'
   type: vless
   server: s.vnexjet.ir
   port: 2087
@@ -112,7 +112,7 @@ proxies:
     path: /
     headers:
       Host: cdn.azxjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #4'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #3'
   type: vless
   server: s.vnexjet.ir
   port: 2083
@@ -129,9 +129,24 @@ proxies:
     path: /
     headers:
       Host: s.vnexjet.ir
-- name: 'V2Get🛰️ 2026-09-01 21:20 #5'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #4'
   type: vless
   server: ir.azxjet.ir
+  port: 2083
+  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
+  udp: true
+  network: ws
+  tls: true
+  servername: ir.azxjet.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-09-01 21:20 #5'
+  type: vless
+  server: 1.azxjet.ir
   port: 2083
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
@@ -146,8 +161,8 @@ proxies:
     path: /
 - name: 'V2Get🛰️ 2026-09-01 21:20 #6'
   type: vless
-  server: 1.azxjet.ir
-  port: 2083
+  server: ir.azxjet.ir
+  port: 2087
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
   network: ws
@@ -161,7 +176,7 @@ proxies:
     path: /
 - name: 'V2Get🛰️ 2026-09-01 21:20 #7'
   type: vless
-  server: ir.azxjet.ir
+  server: 1.azxjet.ir
   port: 2087
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
   udp: true
@@ -176,21 +191,6 @@ proxies:
     path: /
 - name: 'V2Get🛰️ 2026-09-01 21:20 #8'
   type: vless
-  server: 1.azxjet.ir
-  port: 2087
-  uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
-  udp: true
-  network: ws
-  tls: true
-  servername: ir.azxjet.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-09-01 21:20 #9'
-  type: vless
   server: ir.azxjet.ir
   port: 8443
   uuid: 0f382cdf-3bad-489b-8966-27fc33e29f68
@@ -204,7 +204,7 @@ proxies:
   - h3
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-09-01 21:20 #10'
+- name: 'V2Get🛰️ 2026-09-01 21:20 #9'
   type: vless
   server: 1.azxjet.ir
   port: 8443
@@ -219,7 +219,7 @@ proxies:
   - h3
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-09-02 13:21 #2'
+- name: 'V2Get🛰️ 2026-09-02 13:21 #3'
   type: vless
   server: 31.77.220.163
   port: 15443
@@ -1049,6 +1049,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-02 13:21
+  - 'V2Get🛰️ 2026-09-02 13:21 #2'
   - V2Get🛰️ 2026-09-02 13:20
   - 'V2Get🛰️ 2026-09-02 13:20 #2'
   - 'V2Get🛰️ 2026-09-02 13:20 #3'
@@ -1062,8 +1063,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 21:20 #7'
   - 'V2Get🛰️ 2026-09-01 21:20 #8'
   - 'V2Get🛰️ 2026-09-01 21:20 #9'
-  - 'V2Get🛰️ 2026-09-01 21:20 #10'
-  - 'V2Get🛰️ 2026-09-02 13:21 #2'
+  - 'V2Get🛰️ 2026-09-02 13:21 #3'
   - 'V2Get🛰️ 2026-09-02 13:20 #5'
   - 'V2Get🛰️ 2026-09-02 13:20 #6'
   - V2Get🛰️ 2026-09-02 12:22
@@ -1145,6 +1145,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-02 13:21
+  - 'V2Get🛰️ 2026-09-02 13:21 #2'
   - V2Get🛰️ 2026-09-02 13:20
   - 'V2Get🛰️ 2026-09-02 13:20 #2'
   - 'V2Get🛰️ 2026-09-02 13:20 #3'
@@ -1158,8 +1159,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-01 21:20 #7'
   - 'V2Get🛰️ 2026-09-01 21:20 #8'
   - 'V2Get🛰️ 2026-09-01 21:20 #9'
-  - 'V2Get🛰️ 2026-09-01 21:20 #10'
-  - 'V2Get🛰️ 2026-09-02 13:21 #2'
+  - 'V2Get🛰️ 2026-09-02 13:21 #3'
   - 'V2Get🛰️ 2026-09-02 13:20 #5'
   - 'V2Get🛰️ 2026-09-02 13:20 #6'
   - V2Get🛰️ 2026-09-02 12:22
