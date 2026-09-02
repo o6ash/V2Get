@@ -12,14 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-01 02:17
-  type: vless
-  server: 91.107.144.206
-  port: 56539
-  uuid: 3acd07f0-eb10-4a7a-b46f-d1147ed1a77e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-02 14:22
   type: vmess
   server: dashboard.lunaramarket.top
@@ -29,6 +21,14 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
+- name: V2Get🛰️ 2026-09-01 02:17
+  type: vless
+  server: 91.107.144.206
+  port: 56539
+  uuid: 3acd07f0-eb10-4a7a-b46f-d1147ed1a77e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-01 02:17 #2'
   type: vless
   server: 5.75.201.211
@@ -1110,8 +1110,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-01 02:17
   - V2Get🛰️ 2026-09-02 14:22
+  - V2Get🛰️ 2026-09-01 02:17
   - 'V2Get🛰️ 2026-09-01 02:17 #2'
   - V2Get🛰️ 2026-09-02 14:21
   - 'V2Get🛰️ 2026-09-02 14:21 #2'
@@ -1216,8 +1216,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-01 02:17
   - V2Get🛰️ 2026-09-02 14:22
+  - V2Get🛰️ 2026-09-01 02:17
   - 'V2Get🛰️ 2026-09-01 02:17 #2'
   - V2Get🛰️ 2026-09-02 14:21
   - 'V2Get🛰️ 2026-09-02 14:21 #2'
