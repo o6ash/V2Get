@@ -12,9 +12,9 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 10:54
+- name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
-  server: 199.232.78.160
+  server: 151.101.56.7
   port: 443
   password: MiTiVPN
   udp: true
@@ -24,9 +24,38 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-03 19:24
+  type: vless
+  server: 95.211.164.121
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  udp: true
+  network: grpc
+  tls: true
+  servername: devua.nubuntuhosting.host
+  client-fingerprint: edge
+  reality-opts:
+    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
+    short-id: 3fa234ea9feaa048
+  grpc-opts:
+    grpc-service-name: gun
+- name: 'V2Get🛰️ 2026-09-03 19:24 #2'
+  type: vless
+  server: 91.92.43.177
+  port: 443
+  uuid: 8fe8c95f-1840-42b8-bdf2-35c858eca4e9
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: expire.selfsteal.vip
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NUszayjBaw2LyjJtctsGRPzLltoafwwxO7xgEcDXWGk
+    short-id: 6ba85179e30d4fc2
 - name: V2Get🛰️ 2026-09-03 21:24
   type: vless
   server: tp.paydar.site
@@ -455,35 +484,6 @@ proxies:
   reality-opts:
     public-key: FJSocCQxfTTlHIu0k6sKO2SlfyIOpSGdosSGuhHhcQc
     short-id: 7d2f0a808ede5603
-- name: V2Get🛰️ 2026-09-03 19:24
-  type: vless
-  server: 91.92.43.177
-  port: 443
-  uuid: 8fe8c95f-1840-42b8-bdf2-35c858eca4e9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: expire.selfsteal.vip
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: NUszayjBaw2LyjJtctsGRPzLltoafwwxO7xgEcDXWGk
-    short-id: 6ba85179e30d4fc2
-- name: 'V2Get🛰️ 2026-09-03 19:24 #2'
-  type: vless
-  server: 95.211.164.121
-  port: 443
-  uuid: d7430ae7-320c-4658-808b-3006d0627d82
-  udp: true
-  network: grpc
-  tls: true
-  servername: devua.nubuntuhosting.host
-  client-fingerprint: edge
-  reality-opts:
-    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
-    short-id: 3fa234ea9feaa048
-  grpc-opts:
-    grpc-service-name: gun
 - name: 'V2Get🛰️ 2026-09-03 19:24 #3'
   type: vless
   server: sa-ee0441551507e46c.sr-cbeea22261c8564d.r.vpvpn.club
@@ -778,7 +778,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-03 19:24
+  - 'V2Get🛰️ 2026-09-03 19:24 #2'
   - V2Get🛰️ 2026-09-03 21:24
   - 'V2Get🛰️ 2026-09-03 21:24 #2'
   - V2Get🛰️ 2026-09-03 21:23
@@ -813,8 +815,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-03 20:25 #7'
   - 'V2Get🛰️ 2026-09-03 20:25 #8'
   - 'V2Get🛰️ 2026-09-03 20:25 #9'
-  - V2Get🛰️ 2026-09-03 19:24
-  - 'V2Get🛰️ 2026-09-03 19:24 #2'
   - 'V2Get🛰️ 2026-09-03 19:24 #3'
   - 'V2Get🛰️ 2026-09-03 16:24 #5'
   - V2Get🛰️ 2026-09-03 17:24
@@ -843,7 +843,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-03 19:24
+  - 'V2Get🛰️ 2026-09-03 19:24 #2'
   - V2Get🛰️ 2026-09-03 21:24
   - 'V2Get🛰️ 2026-09-03 21:24 #2'
   - V2Get🛰️ 2026-09-03 21:23
@@ -878,8 +880,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-03 20:25 #7'
   - 'V2Get🛰️ 2026-09-03 20:25 #8'
   - 'V2Get🛰️ 2026-09-03 20:25 #9'
-  - V2Get🛰️ 2026-09-03 19:24
-  - 'V2Get🛰️ 2026-09-03 19:24 #2'
   - 'V2Get🛰️ 2026-09-03 19:24 #3'
   - 'V2Get🛰️ 2026-09-03 16:24 #5'
   - V2Get🛰️ 2026-09-03 17:24
