@@ -12,6 +12,13 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-03 23:25
+  type: trojan
+  server: 95.182.90.208
+  port: 23
+  password: c4neCCPCP6
+  udp: true
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-03 23:24
   type: vless
   server: tp.paydar.site
@@ -20,21 +27,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-25 20:05
   type: vless
   server: 179.61.251.89
@@ -1198,8 +1190,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-03 23:25
   - V2Get🛰️ 2026-09-03 23:24
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-25 20:05
   - 'V2Get🛰️ 2026-09-03 23:24 #2'
   - V2Get🛰️ 2026-09-03 03:22
@@ -1301,8 +1293,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-03 23:25
   - V2Get🛰️ 2026-09-03 23:24
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-25 20:05
   - 'V2Get🛰️ 2026-09-03 23:24 #2'
   - V2Get🛰️ 2026-09-03 03:22
