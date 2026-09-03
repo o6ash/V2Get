@@ -12,20 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-09 13:11
+- name: V2Get🛰️ 2026-09-03 11:23
   type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: spiderpanel-production-0264.up.railway.app
+  port: 443
+  uuid: 37c98dc8-2cfc-497a-8608-38671471bbfe
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: fuck.rkn
+  servername: spiderpanel-production-0264.up.railway.app
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/37c98dc8-2cfc-497a-8608-38671471bbfe
+    headers:
+      Host: spiderpanel-production-0264.up.railway.app
 - name: V2Get🛰️ 2026-08-13 09:19
   type: vless
   server: 172.67.143.139
@@ -1248,7 +1250,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-09-03 11:23
   - V2Get🛰️ 2026-08-13 09:19
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-09-03 10:25
@@ -1352,7 +1354,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-09-03 11:23
   - V2Get🛰️ 2026-08-13 09:19
   - V2Get🛰️ 2026-08-22 09:57
   - V2Get🛰️ 2026-09-03 10:25
