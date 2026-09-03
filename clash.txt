@@ -12,25 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 13:05
+- name: V2Get🛰️ 2026-09-03 11:25
   type: vless
-  server: 72.56.92.177
-  port: 40443
-  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+  server: ez-b3e3cd.ezaccess14a29e0.workers.dev
+  port: 443
+  uuid: 6cfbc7d9-a3cc-07f6-c2db-e25500000000
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
-    short-id: 01d1bf2d4755d40c
-- name: V2Get🛰️ 2026-08-17 21:08
+  servername: ez-b3e3cd.ezaccess14a29e0.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-b3e3cd.ezaccess14a29e0.workers.dev
+- name: 'V2Get🛰️ 2026-09-03 11:25 #2'
   type: ss
-  server: 15.204.247.124
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+  server: 109.230.196.66
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: JyDK9zwcxXnTGt3G8HtHqA
   udp: true
 - name: V2Get🛰️ 2026-08-20 22:13
   type: vless
@@ -1187,8 +1188,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 13:05
-  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-09-03 11:25
+  - 'V2Get🛰️ 2026-09-03 11:25 #2'
   - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 17:09
@@ -1290,8 +1291,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 13:05
-  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-09-03 11:25
+  - 'V2Get🛰️ 2026-09-03 11:25 #2'
   - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-08-28 16:10
   - V2Get🛰️ 2026-08-28 17:09
