@@ -12,19 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: V2Get🛰️ 2026-09-02 19:21
   type: vless
   server: 185.204.171.95
@@ -51,6 +38,19 @@ proxies:
     path: /NL4W
     headers:
       Host: nl4.pad-service.com
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: V2Get🛰️ 2026-09-03 14:23
   type: vless
   server: 31.58.144.31
@@ -1249,9 +1249,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-02 19:21
   - V2Get🛰️ 2026-09-03 11:24
+  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 03:22
   - V2Get🛰️ 2026-08-27 13:08
@@ -1355,9 +1355,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-02 19:21
   - V2Get🛰️ 2026-09-03 11:24
+  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 03:22
   - V2Get🛰️ 2026-08-27 13:08
