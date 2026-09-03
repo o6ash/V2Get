@@ -12,6 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-03 10:25
+  type: vless
+  server: 91.228.227.172
+  port: 8080
+  uuid: c5249cf1-d682-42d9-8af8-c1faade2fdec
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-03 10:25 #2'
+  type: vless
+  server: 91.228.227.172
+  port: 443
+  uuid: f016723f-5025-43d5-9842-a85d332ce81c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-03 10:25 #3'
+  type: vless
+  server: 91.228.227.172
+  port: 8080
+  uuid: f016723f-5025-43d5-9842-a85d332ce81c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -208,35 +232,11 @@ proxies:
   reality-opts:
     public-key: 4HizFUAIvYp3wzM4p1_VcbhLWsRVHzG53XZG4f7oWiY
     short-id: b21f41e79ecbac55
-- name: V2Get🛰️ 2026-09-03 10:25
-  type: vless
-  server: 91.228.227.172
-  port: 8080
-  uuid: c5249cf1-d682-42d9-8af8-c1faade2fdec
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-03 10:25 #2'
-  type: vless
-  server: 91.228.227.172
-  port: 443
-  uuid: f016723f-5025-43d5-9842-a85d332ce81c
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-03 10:25 #3'
-  type: vless
-  server: 91.228.227.172
-  port: 443
-  uuid: c5249cf1-d682-42d9-8af8-c1faade2fdec
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-03 10:25 #4'
   type: vless
   server: 91.228.227.172
-  port: 110
-  uuid: 06fb7225-95f0-40dd-a3eb-ee1917bc83d2
+  port: 443
+  uuid: c5249cf1-d682-42d9-8af8-c1faade2fdec
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -244,23 +244,23 @@ proxies:
   type: vless
   server: 91.228.227.172
   port: 110
-  uuid: f016723f-5025-43d5-9842-a85d332ce81c
+  uuid: 06fb7225-95f0-40dd-a3eb-ee1917bc83d2
   udp: true
   network: tcp
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-03 10:25 #6'
   type: vless
   server: 91.228.227.172
-  port: 443
-  uuid: 06fb7225-95f0-40dd-a3eb-ee1917bc83d2
+  port: 110
+  uuid: f016723f-5025-43d5-9842-a85d332ce81c
   udp: true
   network: tcp
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-03 10:25 #7'
   type: vless
   server: 91.228.227.172
-  port: 8080
-  uuid: f016723f-5025-43d5-9842-a85d332ce81c
+  port: 443
+  uuid: 06fb7225-95f0-40dd-a3eb-ee1917bc83d2
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1058,6 +1058,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-03 10:25
+  - 'V2Get🛰️ 2026-09-03 10:25 #2'
+  - 'V2Get🛰️ 2026-09-03 10:25 #3'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-30 22:15
   - V2Get🛰️ 2026-08-31 00:15
@@ -1073,9 +1076,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-02 00:20
   - V2Get🛰️ 2026-09-02 19:23
   - V2Get🛰️ 2026-09-02 23:23
-  - V2Get🛰️ 2026-09-03 10:25
-  - 'V2Get🛰️ 2026-09-03 10:25 #2'
-  - 'V2Get🛰️ 2026-09-03 10:25 #3'
   - 'V2Get🛰️ 2026-09-03 10:25 #4'
   - 'V2Get🛰️ 2026-09-03 10:25 #5'
   - 'V2Get🛰️ 2026-09-03 10:25 #6'
@@ -1146,6 +1146,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-03 10:25
+  - 'V2Get🛰️ 2026-09-03 10:25 #2'
+  - 'V2Get🛰️ 2026-09-03 10:25 #3'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-30 22:15
   - V2Get🛰️ 2026-08-31 00:15
@@ -1161,9 +1164,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-02 00:20
   - V2Get🛰️ 2026-09-02 19:23
   - V2Get🛰️ 2026-09-02 23:23
-  - V2Get🛰️ 2026-09-03 10:25
-  - 'V2Get🛰️ 2026-09-03 10:25 #2'
-  - 'V2Get🛰️ 2026-09-03 10:25 #3'
   - 'V2Get🛰️ 2026-09-03 10:25 #4'
   - 'V2Get🛰️ 2026-09-03 10:25 #5'
   - 'V2Get🛰️ 2026-09-03 10:25 #6'
