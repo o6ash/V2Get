@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-03 22:24
+  type: vless
+  server: tgfree.rush-server.com
+  port: 443
+  uuid: ebd1c0d6-7ff4-4b9f-8692-237517a27a64
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: anyfile2file.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: 64c1fe36c7846400
 - name: V2Get🛰️ 2026-09-04 13:25
   type: vless
   server: 204.10.194.34
@@ -1168,7 +1182,7 @@ proxies:
 - name: V2Get🛰️ 2026-09-04 11:25
   type: vless
   server: serverfast.trexnet.shop
-  port: 5072
+  port: 5050
   uuid: 5693c221-a780-46a5-ac4a-9d870b81f1e8
   udp: true
   network: tcp
@@ -1181,19 +1195,6 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-04 11:25 #2'
   type: vless
   server: serverfast.trexnet.shop
-  port: 5050
-  uuid: 5693c221-a780-46a5-ac4a-9d870b81f1e8
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 2e2nvZhmOUkyYuLPewZPzB2fzxnQW64kz8rrdHGFnXc
-    short-id: 52ef3f1d4248ff9a
-- name: 'V2Get🛰️ 2026-09-04 11:25 #3'
-  type: vless
-  server: serverfast.trexnet.shop
   port: 5067
   uuid: 5693c221-a780-46a5-ac4a-9d870b81f1e8
   udp: true
@@ -1204,7 +1205,7 @@ proxies:
   reality-opts:
     public-key: 2e2nvZhmOUkyYuLPewZPzB2fzxnQW64kz8rrdHGFnXc
     short-id: 52ef3f1d4248ff9a
-- name: 'V2Get🛰️ 2026-09-04 11:25 #4'
+- name: 'V2Get🛰️ 2026-09-04 11:25 #3'
   type: vless
   server: serverfast.trexnet.shop
   port: 5052
@@ -1223,6 +1224,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-03 22:24
   - V2Get🛰️ 2026-09-04 13:25
   - 'V2Get🛰️ 2026-09-04 13:25 #2'
   - 'V2Get🛰️ 2026-09-04 13:25 #3'
@@ -1321,13 +1323,13 @@ proxy-groups:
   - V2Get🛰️ 2026-09-04 11:25
   - 'V2Get🛰️ 2026-09-04 11:25 #2'
   - 'V2Get🛰️ 2026-09-04 11:25 #3'
-  - 'V2Get🛰️ 2026-09-04 11:25 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-03 22:24
   - V2Get🛰️ 2026-09-04 13:25
   - 'V2Get🛰️ 2026-09-04 13:25 #2'
   - 'V2Get🛰️ 2026-09-04 13:25 #3'
@@ -1426,7 +1428,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-04 11:25
   - 'V2Get🛰️ 2026-09-04 11:25 #2'
   - 'V2Get🛰️ 2026-09-04 11:25 #3'
-  - 'V2Get🛰️ 2026-09-04 11:25 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
