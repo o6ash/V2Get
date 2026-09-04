@@ -14,6 +14,14 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-04 23:26
   type: vless
+  server: tp.paydar.site
+  port: 2086
+  uuid: 82f2a802-19cd-4b64-ac06-61cef36c4a65
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-04 23:26 #2'
+  type: vless
   server: 143.246.183.213
   port: 443
   uuid: fefa36a1-6bfc-455a-8985-9adc22590fe4
@@ -1267,21 +1275,13 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-04 20:26
   type: vless
-  server: 204.10.194.34
-  port: 56539
-  uuid: 930feb4b-dbc6-4668-9491-be861b7266c5
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 20:26 #2'
-  type: vless
   server: 5.75.201.28
   port: 56539
   uuid: 3289f9a3-5959-4b67-9826-d08e5a0fa01e
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 20:26 #3'
+- name: 'V2Get🛰️ 2026-09-04 20:26 #2'
   type: vless
   server: 172.66.146.2
   port: 8443
@@ -1295,7 +1295,7 @@ proxies:
     path: /
     headers:
       Host: shopkharid.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-04 20:26 #4'
+- name: 'V2Get🛰️ 2026-09-04 20:26 #3'
   type: vless
   server: 172.66.146.2
   port: 2087
@@ -1309,7 +1309,7 @@ proxies:
     path: /
     headers:
       Host: shopkharid.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-04 20:26 #5'
+- name: 'V2Get🛰️ 2026-09-04 20:26 #4'
   type: vless
   server: 16.60.79.65
   port: 22222
@@ -1317,7 +1317,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 20:26 #6'
+- name: 'V2Get🛰️ 2026-09-04 20:26 #5'
   type: vless
   server: 5.75.196.249
   port: 110
@@ -1325,7 +1325,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 20:26 #7'
+- name: 'V2Get🛰️ 2026-09-04 20:26 #6'
   type: vless
   server: romania.epicserver.web.tr
   port: 443
@@ -1346,6 +1346,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-04 23:26
+  - 'V2Get🛰️ 2026-09-04 23:26 #2'
   - V2Get🛰️ 2026-09-04 22:27
   - 'V2Get🛰️ 2026-09-04 22:27 #2'
   - 'V2Get🛰️ 2026-09-04 22:27 #3'
@@ -1438,7 +1439,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 20:26 #4'
   - 'V2Get🛰️ 2026-09-04 20:26 #5'
   - 'V2Get🛰️ 2026-09-04 20:26 #6'
-  - 'V2Get🛰️ 2026-09-04 20:26 #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1446,6 +1446,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-04 23:26
+  - 'V2Get🛰️ 2026-09-04 23:26 #2'
   - V2Get🛰️ 2026-09-04 22:27
   - 'V2Get🛰️ 2026-09-04 22:27 #2'
   - 'V2Get🛰️ 2026-09-04 22:27 #3'
@@ -1538,7 +1539,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 20:26 #4'
   - 'V2Get🛰️ 2026-09-04 20:26 #5'
   - 'V2Get🛰️ 2026-09-04 20:26 #6'
-  - 'V2Get🛰️ 2026-09-04 20:26 #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
