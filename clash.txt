@@ -12,6 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-04 10:25
+  type: vless
+  server: 199.232.78.140
+  port: 443
+  uuid: 912db0bc-1d22-422b-997f-17be5291398f
+  udp: true
+  network: xhttp
+  tls: true
+  servername: global.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-09-03 14:23
   type: vless
   server: k2.cloud--vpn.site
@@ -39,21 +51,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pane3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-03 15:23
   type: vless
   server: 151.101.56.6
@@ -1281,9 +1278,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-04 10:25
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 21:23
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-03 15:23
   - V2Get🛰️ 2026-09-03 23:24
   - V2Get🛰️ 2026-09-03 18:24
@@ -1386,9 +1383,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-04 10:25
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 21:23
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-03 15:23
   - V2Get🛰️ 2026-09-03 23:24
   - V2Get🛰️ 2026-09-03 18:24
