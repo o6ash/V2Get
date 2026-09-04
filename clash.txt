@@ -14,6 +14,20 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-04 16:26
   type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 607f4f6c-2a71-43aa-e047-1ff5b5c23f67
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 'V2Get🛰️ 2026-09-04 16:26 #2'
+  type: vless
   server: 69.46.46.4
   port: 443
   uuid: d2388b80-1851-f681-722d-209274e8f83e
@@ -1200,14 +1214,6 @@ proxies:
     short-id: e1ac2faf5e5f309e
 - name: 'V2Get🛰️ 2026-09-04 12:25 #27'
   type: vless
-  server: italy.selqora.ir
-  port: 22211
-  uuid: bc7a2074-9be4-4108-9631-872ff4fd69eb
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 12:25 #28'
-  type: vless
   server: usa5.selqora.ir
   port: 56514
   uuid: bc7a2074-9be4-4108-9631-872ff4fd69eb
@@ -1219,7 +1225,7 @@ proxies:
   reality-opts:
     public-key: GRgIJHNAOFEDtZlHhxkkoxhUk3xxm04NNuI9h2VATH8
     short-id: 7649a935e6fd2399
-- name: 'V2Get🛰️ 2026-09-04 12:25 #29'
+- name: 'V2Get🛰️ 2026-09-04 12:25 #28'
   type: vless
   server: fr.selqora.ir
   port: 31663
@@ -1232,7 +1238,7 @@ proxies:
   reality-opts:
     public-key: HbzPMj4dHY0RX8oZCiFU60HPoc5pCc5iuORNYlTCOWY
     short-id: 32bf1b3fe9c072a9
-- name: 'V2Get🛰️ 2026-09-04 12:25 #30'
+- name: 'V2Get🛰️ 2026-09-04 12:25 #29'
   type: vless
   server: f2qj5hrp.danqela.ir
   port: 50303
@@ -1252,6 +1258,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-04 16:26
+  - 'V2Get🛰️ 2026-09-04 16:26 #2'
   - V2Get🛰️ 2026-09-04 12:27
   - V2Get🛰️ 2026-09-04 15:25
   - 'V2Get🛰️ 2026-09-04 15:25 #2'
@@ -1350,7 +1357,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 12:25 #27'
   - 'V2Get🛰️ 2026-09-04 12:25 #28'
   - 'V2Get🛰️ 2026-09-04 12:25 #29'
-  - 'V2Get🛰️ 2026-09-04 12:25 #30'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1358,6 +1364,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-04 16:26
+  - 'V2Get🛰️ 2026-09-04 16:26 #2'
   - V2Get🛰️ 2026-09-04 12:27
   - V2Get🛰️ 2026-09-04 15:25
   - 'V2Get🛰️ 2026-09-04 15:25 #2'
@@ -1456,7 +1463,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 12:25 #27'
   - 'V2Get🛰️ 2026-09-04 12:25 #28'
   - 'V2Get🛰️ 2026-09-04 12:25 #29'
-  - 'V2Get🛰️ 2026-09-04 12:25 #30'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
