@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-04 12:27
   type: vless
   server: 69.46.46.69
@@ -1187,13 +1202,6 @@ proxies:
     public-key: 660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc
     short-id: e1ac2faf5e5f309e
 - name: 'V2Get🛰️ 2026-09-04 12:25 #27'
-  type: ss
-  server: ukd.selqora.ir
-  port: 25221
-  cipher: chacha20-ietf-poly1305
-  password: ZkGvUqBVR7GCs2U3LEfGHSI7-0RlwDUN
-  udp: true
-- name: 'V2Get🛰️ 2026-09-04 12:25 #28'
   type: vless
   server: italy.selqora.ir
   port: 22211
@@ -1201,7 +1209,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 12:25 #29'
+- name: 'V2Get🛰️ 2026-09-04 12:25 #28'
   type: vless
   server: usa5.selqora.ir
   port: 56514
@@ -1214,7 +1222,7 @@ proxies:
   reality-opts:
     public-key: GRgIJHNAOFEDtZlHhxkkoxhUk3xxm04NNuI9h2VATH8
     short-id: 7649a935e6fd2399
-- name: 'V2Get🛰️ 2026-09-04 12:25 #30'
+- name: 'V2Get🛰️ 2026-09-04 12:25 #29'
   type: vless
   server: fr.selqora.ir
   port: 31663
@@ -1227,7 +1235,7 @@ proxies:
   reality-opts:
     public-key: HbzPMj4dHY0RX8oZCiFU60HPoc5pCc5iuORNYlTCOWY
     short-id: 32bf1b3fe9c072a9
-- name: 'V2Get🛰️ 2026-09-04 12:25 #31'
+- name: 'V2Get🛰️ 2026-09-04 12:25 #30'
   type: vless
   server: f2qj5hrp.danqela.ir
   port: 50303
@@ -1246,6 +1254,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-04 12:27
   - V2Get🛰️ 2026-09-04 15:25
   - 'V2Get🛰️ 2026-09-04 15:25 #2'
@@ -1345,13 +1354,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 12:25 #28'
   - 'V2Get🛰️ 2026-09-04 12:25 #29'
   - 'V2Get🛰️ 2026-09-04 12:25 #30'
-  - 'V2Get🛰️ 2026-09-04 12:25 #31'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-04 12:27
   - V2Get🛰️ 2026-09-04 15:25
   - 'V2Get🛰️ 2026-09-04 15:25 #2'
@@ -1451,7 +1460,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 12:25 #28'
   - 'V2Get🛰️ 2026-09-04 12:25 #29'
   - 'V2Get🛰️ 2026-09-04 12:25 #30'
-  - 'V2Get🛰️ 2026-09-04 12:25 #31'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
