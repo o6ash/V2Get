@@ -12,18 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:09
-  type: vless
-  server: 206.71.158.124
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  password: MiTiVPN
   udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: chrome
+  sni: ssl.fastly.com
   alpn:
-  - h2
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-28 11:43
   type: vless
   server: static.lotussec.com
@@ -1261,7 +1264,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-10 15:11
@@ -1366,7 +1369,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-10 15:11
