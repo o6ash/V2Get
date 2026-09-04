@@ -14,13 +14,25 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-04 19:26
   type: vless
+  server: 65.109.238.140
+  port: 443
+  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+  udp: true
+  network: xhttp
+  tls: true
+  servername: hel1.nordlinkcloud.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-04 19:26 #2'
+  type: vless
   server: 147.182.157.72
   port: 1161
   uuid: 3ce5535d-eb33-d247-dad0-6b87dfb798cc
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-04 19:26 #2'
+- name: 'V2Get🛰️ 2026-09-04 19:26 #3'
   type: vless
   server: 147.182.157.72
   port: 8039
@@ -34,13 +46,6 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-08-21 17:56
-  type: ss
-  server: 15.204.247.175
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
 - name: V2Get🛰️ 2026-08-27 01:06
   type: vless
   server: wsnl24.wba-pn.ru
@@ -1197,7 +1202,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-09-04 19:26
   - 'V2Get🛰️ 2026-09-04 19:26 #2'
-  - V2Get🛰️ 2026-08-21 17:56
+  - 'V2Get🛰️ 2026-09-04 19:26 #3'
   - V2Get🛰️ 2026-08-27 01:06
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 18:24
@@ -1302,7 +1307,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-09-04 19:26
   - 'V2Get🛰️ 2026-09-04 19:26 #2'
-  - V2Get🛰️ 2026-08-21 17:56
+  - 'V2Get🛰️ 2026-09-04 19:26 #3'
   - V2Get🛰️ 2026-08-27 01:06
   - V2Get🛰️ 2026-09-03 14:23
   - V2Get🛰️ 2026-09-03 18:24
