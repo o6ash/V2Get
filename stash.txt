@@ -12,17 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-07 08:39
-  type: vmess
-  server: guanwang.awsno.com
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  password: MiTiVPN
   udp: true
-  network: tcp
-  tls: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-22 23:57
   type: vless
   server: 176.109.88.216
@@ -1134,7 +1138,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-22 23:57
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-27 15:07
@@ -1224,7 +1228,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-07 08:39
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-22 23:57
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-27 15:07
