@@ -12,6 +12,101 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-08-21 17:56
+  type: ss
+  server: 15.204.247.175
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: V2Get🛰️ 2026-08-27 01:06
+  type: vless
+  server: wsnl24.wba-pn.ru
+  port: 8443
+  uuid: 9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc
+  udp: true
+  network: ws
+  tls: true
+  servername: wsnl24.wba-pn.ru
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-09-03 14:23
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 08ffff12-93bb-42eb-8c83-6489644a1d04
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: V2Get🛰️ 2026-09-03 18:24
+  type: vless
+  server: cl.nigali.ir
+  port: 2087
+  uuid: cf1d2ded-2472-483a-f2f2-12c83d1826dd
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdnmin.esmahdi9.com
+  client-fingerprint: chrome
+- name: V2Get🛰️ 2026-09-03 21:23
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: e5c5c006-facc-45be-99bc-20d772372d5c
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-04 16:26
   type: vless
   server: k2.cloud--vpn.site
@@ -26,106 +121,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-07-30 11:01
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.gossipglove.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: V2Get🛰️ 2026-08-10 15:11
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-17 23:09
-  type: vless
-  server: 89.144.30.154
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-18 01:08
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  network: tcp
-  tls: true
-  servername: 186.190.211.188
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: V2Get🛰️ 2026-08-18 02:08
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-21 21:55
-  type: vless
-  server: 87.117.234.19
-  port: 443
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: strapi.io
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: V2Get🛰️ 2026-08-31 21:17
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  udp: true
-  network: ws
-  tls: true
-  servername: btrum.pages.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: btrum.pages.dev
 - name: V2Get🛰️ 2026-09-03 20:24
   type: ss
   server: 20.107.193.38
@@ -1217,15 +1212,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-21 17:56
+  - V2Get🛰️ 2026-08-27 01:06
+  - V2Get🛰️ 2026-09-03 14:23
+  - V2Get🛰️ 2026-09-03 18:24
+  - V2Get🛰️ 2026-09-03 21:23
   - V2Get🛰️ 2026-09-04 16:26
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-30 11:01
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-18 02:08
-  - V2Get🛰️ 2026-08-21 21:55
-  - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-03 20:24
   - V2Get🛰️ 2026-09-04 04:24
   - V2Get🛰️ 2026-09-04 12:25
@@ -1323,15 +1318,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-08-21 17:56
+  - V2Get🛰️ 2026-08-27 01:06
+  - V2Get🛰️ 2026-09-03 14:23
+  - V2Get🛰️ 2026-09-03 18:24
+  - V2Get🛰️ 2026-09-03 21:23
   - V2Get🛰️ 2026-09-04 16:26
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-30 11:01
-  - V2Get🛰️ 2026-08-10 15:11
-  - V2Get🛰️ 2026-08-17 23:09
-  - V2Get🛰️ 2026-08-18 01:08
-  - V2Get🛰️ 2026-08-18 02:08
-  - V2Get🛰️ 2026-08-21 21:55
-  - V2Get🛰️ 2026-08-31 21:17
   - V2Get🛰️ 2026-09-03 20:24
   - V2Get🛰️ 2026-09-04 04:24
   - V2Get🛰️ 2026-09-04 12:25
