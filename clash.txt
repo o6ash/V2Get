@@ -12,21 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
   port: 443
-  password: MiTiVPN
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  sni: ssl.fastly.com
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+  - h2
+- name: V2Get🛰️ 2026-09-05 22:30
+  type: vless
+  server: 69.46.46.34
+  port: 443
+  uuid: f1c63399-f3b9-9a7b-4ec4-2e2d1b9e09fc
+  udp: true
+  network: xhttp
+  tls: true
+  servername: sunny-reef-cd7f-production.up.railway.app
+  client-fingerprint: ios
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -723,7 +732,7 @@ proxies:
   reality-opts:
     public-key: fWMKEV9hR-_beCPExZqE9VSRIihgX08UHeS_Iw1D20o
     short-id: bc553653
-- name: V2Get🛰️ 2026-09-05 22:30
+- name: 'V2Get🛰️ 2026-09-05 22:30 #2'
   type: trojan
   server: 185.75.243.102
   port: 443
@@ -735,7 +744,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'V2Get🛰️ 2026-09-05 22:30 #2'
+- name: 'V2Get🛰️ 2026-09-05 22:30 #3'
   type: vless
   server: 104.18.31.171
   port: 443
@@ -748,7 +757,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-05 22:30 #3'
+- name: 'V2Get🛰️ 2026-09-05 22:30 #4'
   type: vless
   server: 69.46.46.35
   port: 443
@@ -757,18 +766,6 @@ proxies:
   network: xhttp
   tls: true
   servername: cobalt-beacon-a070-production.up.railway.app
-  client-fingerprint: ios
-  alpn:
-  - h2
-- name: 'V2Get🛰️ 2026-09-05 22:30 #4'
-  type: vless
-  server: 69.46.46.34
-  port: 443
-  uuid: f1c63399-f3b9-9a7b-4ec4-2e2d1b9e09fc
-  udp: true
-  network: xhttp
-  tls: true
-  servername: sunny-reef-cd7f-production.up.railway.app
   client-fingerprint: ios
   alpn:
   - h2
@@ -1206,7 +1203,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-05 22:30
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-05 20:29
   - V2Get🛰️ 2026-09-05 23:30
@@ -1262,7 +1260,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 23:28 #3'
   - 'V2Get🛰️ 2026-09-05 23:28 #4'
   - 'V2Get🛰️ 2026-09-05 23:28 #5'
-  - V2Get🛰️ 2026-09-05 22:30
   - 'V2Get🛰️ 2026-09-05 22:30 #2'
   - 'V2Get🛰️ 2026-09-05 22:30 #3'
   - 'V2Get🛰️ 2026-09-05 22:30 #4'
@@ -1311,7 +1308,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-05 22:30
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-05 20:29
   - V2Get🛰️ 2026-09-05 23:30
@@ -1367,7 +1365,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 23:28 #3'
   - 'V2Get🛰️ 2026-09-05 23:28 #4'
   - 'V2Get🛰️ 2026-09-05 23:28 #5'
-  - V2Get🛰️ 2026-09-05 22:30
   - 'V2Get🛰️ 2026-09-05 22:30 #2'
   - 'V2Get🛰️ 2026-09-05 22:30 #3'
   - 'V2Get🛰️ 2026-09-05 22:30 #4'
