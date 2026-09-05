@@ -12,6 +12,13 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-05 16:28
+  type: ss
+  server: 5.160.163.14
+  port: 8557
+  cipher: 2022-blake3-aes-128-gcm
+  password: utFJDdY5BcZ0f3tFBEFQ9w==:hFhaL8S0XTedAASusRZwnQ==
+  udp: true
 - name: V2Get🛰️ 2026-09-05 15:29
   type: vless
   server: 179.237.110.190
@@ -1124,21 +1131,13 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-05 02:26
   type: vless
-  server: 5.75.201.28
-  port: 56539
-  uuid: 6bc88da4-fa49-416a-8811-cecff1f6f9d8
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-05 02:26 #2'
-  type: vless
   server: 5.75.207.78
   port: 56539
   uuid: 2a74ecad-e582-4854-a43d-b513e2479ce2
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-05 02:26 #3'
+- name: 'V2Get🛰️ 2026-09-05 02:26 #2'
   type: vless
   server: 204.10.194.34
   port: 56539
@@ -1146,7 +1145,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-05 02:26 #4'
+- name: 'V2Get🛰️ 2026-09-05 02:26 #3'
   type: vless
   server: 5.75.201.230
   port: 56539
@@ -1160,6 +1159,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-05 16:28
   - V2Get🛰️ 2026-09-05 15:29
   - 'V2Get🛰️ 2026-09-05 15:29 #2'
   - 'V2Get🛰️ 2026-09-05 15:29 #3'
@@ -1258,13 +1258,13 @@ proxy-groups:
   - V2Get🛰️ 2026-09-05 02:26
   - 'V2Get🛰️ 2026-09-05 02:26 #2'
   - 'V2Get🛰️ 2026-09-05 02:26 #3'
-  - 'V2Get🛰️ 2026-09-05 02:26 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-05 16:28
   - V2Get🛰️ 2026-09-05 15:29
   - 'V2Get🛰️ 2026-09-05 15:29 #2'
   - 'V2Get🛰️ 2026-09-05 15:29 #3'
@@ -1363,7 +1363,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-05 02:26
   - 'V2Get🛰️ 2026-09-05 02:26 #2'
   - 'V2Get🛰️ 2026-09-05 02:26 #3'
-  - 'V2Get🛰️ 2026-09-05 02:26 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
