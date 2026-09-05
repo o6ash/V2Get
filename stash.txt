@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-05 16:28
+  type: vless
+  server: 5.160.163.14
+  port: 8553
+  uuid: 711e1b5a-1b7d-54ee-95c7-6eefd40c6599
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xTfed4tQM3nHG75OnEWl-pPCRQGngTq5JkEvxmyjZzA
+    short-id: 5df64a3ccd185e53
 - name: V2Get🛰️ 2026-09-05 15:29
   type: vless
   server: 138.124.123.127
@@ -991,21 +1005,13 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-05 02:26
   type: vless
-  server: 5.75.207.78
-  port: 56539
-  uuid: 2a74ecad-e582-4854-a43d-b513e2479ce2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-05 02:26 #2'
-  type: vless
   server: 204.10.194.34
   port: 56539
   uuid: 6d2a5092-7152-4b56-8d07-77f5478ce298
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-05 02:26 #3'
+- name: 'V2Get🛰️ 2026-09-05 02:26 #2'
   type: vless
   server: 5.75.201.230
   port: 56539
@@ -1019,6 +1025,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-05 16:28
   - V2Get🛰️ 2026-09-05 15:29
   - 'V2Get🛰️ 2026-09-05 15:29 #2'
   - 'V2Get🛰️ 2026-09-05 15:29 #3'
@@ -1103,13 +1110,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 03:26 #5'
   - V2Get🛰️ 2026-09-05 02:26
   - 'V2Get🛰️ 2026-09-05 02:26 #2'
-  - 'V2Get🛰️ 2026-09-05 02:26 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-05 16:28
   - V2Get🛰️ 2026-09-05 15:29
   - 'V2Get🛰️ 2026-09-05 15:29 #2'
   - 'V2Get🛰️ 2026-09-05 15:29 #3'
@@ -1194,7 +1201,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 03:26 #5'
   - V2Get🛰️ 2026-09-05 02:26
   - 'V2Get🛰️ 2026-09-05 02:26 #2'
-  - 'V2Get🛰️ 2026-09-05 02:26 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
