@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-04 12:25
+  type: vless
+  server: 88.216.190.205
+  port: 443
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apiv91.jarvesitw.ru
+  reality-opts:
+    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
+    short-id: b0ffeec3
 - name: V2Get🛰️ 2026-09-05 12:27
   type: vless
   server: 207.241.172.254
@@ -983,23 +996,6 @@ proxies:
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-04 22:27
   type: vless
-  server: www.chatgpt.com
-  port: 2083
-  uuid: 5469e67c-987a-4bb8-8b75-b984c3cd4570
-  udp: true
-  network: ws
-  tls: true
-  servername: shopkharid.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shopkharid.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-04 22:27 #2'
-  type: vless
   server: www.speedtest.net
   port: 8443
   uuid: 5469e67c-987a-4bb8-8b75-b984c3cd4570
@@ -1021,6 +1017,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-04 12:25
   - V2Get🛰️ 2026-09-05 12:27
   - 'V2Get🛰️ 2026-09-05 12:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #3'
@@ -1104,13 +1101,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 23:26 #2'
   - 'V2Get🛰️ 2026-09-04 23:26 #3'
   - V2Get🛰️ 2026-09-04 22:27
-  - 'V2Get🛰️ 2026-09-04 22:27 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-04 12:25
   - V2Get🛰️ 2026-09-05 12:27
   - 'V2Get🛰️ 2026-09-05 12:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #3'
@@ -1194,7 +1191,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-04 23:26 #2'
   - 'V2Get🛰️ 2026-09-04 23:26 #3'
   - V2Get🛰️ 2026-09-04 22:27
-  - 'V2Get🛰️ 2026-09-04 22:27 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
