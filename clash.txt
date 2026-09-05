@@ -27,6 +27,29 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-05 12:27
+  type: vmess
+  server: 185.204.169.127
+  port: 443
+  uuid: 5fd0c433-efe8-466a-9fd7-233a448e8b58
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+  tls: true
+  servername: 185.204.169.127
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-05 11:27
+  type: vless
+  server: 37.221.110.245
+  port: 2085
+  uuid: 02c05088-fcb4-4366-b8d3-98d68c7bdb98
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -137,7 +160,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 9FQFbgD0NCg68qIZbnFH46MlwQPbzl84
   udp: true
-- name: V2Get🛰️ 2026-09-05 11:27
+- name: 'V2Get🛰️ 2026-09-05 11:27 #2'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -150,18 +173,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-05 12:27
-  type: vmess
-  server: 185.204.169.127
-  port: 443
-  uuid: 5fd0c433-efe8-466a-9fd7-233a448e8b58
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: httpupgrade
-  tls: true
-  servername: 185.204.169.127
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-05 12:27 #2'
   type: vless
   server: 207.241.172.254
@@ -204,17 +215,6 @@ proxies:
   reality-opts:
     public-key: 8ZL2JgDP9gHkgGTbGF-uK8omfWkFplZnCH0N2_U18Uo
     short-id: 01115788253bc845
-- name: 'V2Get🛰️ 2026-09-05 11:27 #2'
-  type: vless
-  server: 37.221.110.245
-  port: 2085
-  uuid: 02c05088-fcb4-4366-b8d3-98d68c7bdb98
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: vless
-  tls: true
 - name: 'V2Get🛰️ 2026-09-05 12:27 #5'
   type: ss
   server: 130.94.81.244
@@ -1185,6 +1185,8 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-05 12:27
+  - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 04:15
@@ -1194,12 +1196,10 @@ proxy-groups:
   - V2Get🛰️ 2026-09-05 13:28
   - 'V2Get🛰️ 2026-09-05 13:28 #2'
   - V2Get🛰️ 2026-09-04 23:27
-  - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-09-05 12:27
+  - 'V2Get🛰️ 2026-09-05 11:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #3'
   - 'V2Get🛰️ 2026-09-05 12:27 #4'
-  - 'V2Get🛰️ 2026-09-05 11:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #5'
   - V2Get🛰️ 2026-09-05 00:27
   - V2Get🛰️ 2026-09-05 11:29
@@ -1291,6 +1291,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-05 12:27
+  - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-31 01:16
   - V2Get🛰️ 2026-08-31 04:15
@@ -1300,12 +1302,10 @@ proxy-groups:
   - V2Get🛰️ 2026-09-05 13:28
   - 'V2Get🛰️ 2026-09-05 13:28 #2'
   - V2Get🛰️ 2026-09-04 23:27
-  - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-09-05 12:27
+  - 'V2Get🛰️ 2026-09-05 11:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #3'
   - 'V2Get🛰️ 2026-09-05 12:27 #4'
-  - 'V2Get🛰️ 2026-09-05 11:27 #2'
   - 'V2Get🛰️ 2026-09-05 12:27 #5'
   - V2Get🛰️ 2026-09-05 00:27
   - V2Get🛰️ 2026-09-05 11:29
