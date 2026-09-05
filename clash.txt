@@ -12,6 +12,48 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-04 19:26
+  type: vless
+  server: 65.109.238.140
+  port: 443
+  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+  udp: true
+  network: xhttp
+  tls: true
+  servername: hel1.nordlinkcloud.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-09-05 17:28
   type: ss
   server: 2.28.77.247
@@ -32,18 +74,6 @@ proxies:
   reality-opts:
     public-key: HbzPMj4dHY0RX8oZCiFU60HPoc5pCc5iuORNYlTCOWY
     short-id: 32bf1b3fe9c072a9
-- name: V2Get🛰️ 2026-08-20 22:13
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: V2Get🛰️ 2026-09-05 15:29
   type: vless
   server: 138.124.123.127
@@ -1100,34 +1130,6 @@ proxies:
   udp: true
 - name: V2Get🛰️ 2026-09-05 03:26
   type: vless
-  server: www.e.mobilesari.ir
-  port: 7333
-  uuid: 2ae5a5a5-49ba-448c-b8a5-551ed547ff65
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: isO0qF2Xg6UI1GKARgfg9UHZSrrUBcOazkz04mTl-kE
-    short-id: 0f62cf6250eb31c0
-- name: 'V2Get🛰️ 2026-09-05 03:26 #2'
-  type: vless
-  server: 5.75.201.230
-  port: 40792
-  uuid: 09d20121-a470-4d88-85a5-c280bae67b0c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CkuULNczLmaVd-vabRfj3UpPd__M7BlrXivZ728Toyg
-    short-id: 546b264aac9b6fed
-- name: 'V2Get🛰️ 2026-09-05 03:26 #3'
-  type: vless
   server: 153.80.249.125
   port: 443
   uuid: 901e6dca-1b73-4266-978b-f7dc1266a7f6
@@ -1140,7 +1142,7 @@ proxies:
   reality-opts:
     public-key: 1_a2G1x-DIEjDogZAiV4WFuOczGWcj-3zPiPxenUZhs
     short-id: 23ae46816e87c7b8
-- name: 'V2Get🛰️ 2026-09-05 03:26 #4'
+- name: 'V2Get🛰️ 2026-09-05 03:26 #2'
   type: vless
   server: 212.115.103.189
   port: 56539
@@ -1154,9 +1156,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-04 19:26
   - V2Get🛰️ 2026-09-05 17:28
   - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-09-05 15:29
   - V2Get🛰️ 2026-09-05 15:28
   - V2Get🛰️ 2026-09-05 16:28
@@ -1250,17 +1254,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 03:27 #22'
   - V2Get🛰️ 2026-09-05 03:26
   - 'V2Get🛰️ 2026-09-05 03:26 #2'
-  - 'V2Get🛰️ 2026-09-05 03:26 #3'
-  - 'V2Get🛰️ 2026-09-05 03:26 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-04 19:26
   - V2Get🛰️ 2026-09-05 17:28
   - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-09-05 15:29
   - V2Get🛰️ 2026-09-05 15:28
   - V2Get🛰️ 2026-09-05 16:28
@@ -1354,8 +1358,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-05 03:27 #22'
   - V2Get🛰️ 2026-09-05 03:26
   - 'V2Get🛰️ 2026-09-05 03:26 #2'
-  - 'V2Get🛰️ 2026-09-05 03:26 #3'
-  - 'V2Get🛰️ 2026-09-05 03:26 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
