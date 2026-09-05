@@ -12,21 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-09-05 18:28
+  type: vless
+  server: 69.46.46.50
   port: 443
-  password: MiTiVPN
+  uuid: 023df737-e0f3-3707-ad8a-ab7a705a84ab
   udp: true
-  sni: ssl.fastly.com
+  network: xhttp
+  tls: true
+  servername: sunny-ridge-2429-production.up.railway.app
+  client-fingerprint: ios
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+  - h2
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -1156,7 +1153,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-05 18:28
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-04 19:26
   - V2Get🛰️ 2026-09-05 17:28
@@ -1260,7 +1257,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-05 18:28
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-04 19:26
   - V2Get🛰️ 2026-09-05 17:28
