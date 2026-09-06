@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-01 01:17
+  type: vless
+  server: 157.22.133.130
+  port: 2087
+  uuid: e6d369db-22be-4f30-8685-455c717aaa8c
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /5021201ef53f
 - name: V2Get🛰️ 2026-09-06 09:29
   type: vless
   server: 147.182.157.72
@@ -34,48 +74,6 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-08-19 10:08
-  type: vless
-  server: 188.114.96.3
-  port: 2053
-  uuid: 0779dc74-2464-461f-90ef-874e4cae7fae
-  udp: true
-  network: ws
-  tls: true
-  servername: weathered-math-1f8b.amiralighasempor010.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiUHQ4YzBma3IxczlPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed
-    headers:
-      Host: weathered-math-1f8b.amiralighasempor010.workers.dev
-- name: V2Get🛰️ 2026-08-19 13:10
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  network: ws
-  tls: true
-  servername: bab-6.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: V2Get🛰️ 2026-08-22 23:57
-  type: vless
-  server: 176.109.88.216
-  port: 443
-  uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk
-    short-id: a9c4f17e3b62d8
 - name: V2Get🛰️ 2026-08-25 20:03
   type: vless
   server: rs1.univesalsrv.com
@@ -1228,11 +1226,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-06 09:29
   - 'V2Get🛰️ 2026-09-06 09:29 #2'
-  - V2Get🛰️ 2026-08-19 10:08
-  - V2Get🛰️ 2026-08-19 13:10
-  - V2Get🛰️ 2026-08-22 23:57
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-27 15:07
@@ -1333,11 +1331,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-06 09:29
   - 'V2Get🛰️ 2026-09-06 09:29 #2'
-  - V2Get🛰️ 2026-08-19 10:08
-  - V2Get🛰️ 2026-08-19 13:10
-  - V2Get🛰️ 2026-08-22 23:57
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-27 15:07
