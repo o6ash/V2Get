@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-06 17:30
+  type: vless
+  server: 145.63.132.218
+  port: 40832
+  uuid: eec6edb9-08c8-4a14-9634-0a0771d209d2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-06 17:30 #2'
+  type: vless
+  server: 91.107.174.203
+  port: 14639
+  uuid: ae3ed90c-9e5a-4021-b29a-29e97fd7ebb8
+  udp: true
+  network: xhttp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AL1Q34aEyaqV5FlCsQU75ga6XoKRLIktpytwS0jrtUA
+    short-id: c4659970
 - name: V2Get🛰️ 2026-09-06 16:30
   type: vless
   server: 46.225.223.87
@@ -20,7 +41,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-06 17:30
+- name: 'V2Get🛰️ 2026-09-06 17:30 #3'
   type: vless
   server: fn6.bexait.ir
   port: 2434
@@ -33,32 +54,6 @@ proxies:
   reality-opts:
     public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
     short-id: 9de041877612a718
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-01 18:18
-  type: vless
-  server: 82.24.203.174
-  port: 2083
-  uuid: f2616bce-337a-4d13-8c58-1b5e71986569
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: chat.deepseek.com
-  tls: true
 - name: V2Get🛰️ 2026-09-06 13:31
   type: vless
   server: 144.31.5.64
@@ -1159,10 +1154,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-06 16:30
   - V2Get🛰️ 2026-09-06 17:30
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-09-01 18:18
+  - 'V2Get🛰️ 2026-09-06 17:30 #2'
+  - V2Get🛰️ 2026-09-06 16:30
+  - 'V2Get🛰️ 2026-09-06 17:30 #3'
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-03 22:24
@@ -1262,10 +1257,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-06 16:30
   - V2Get🛰️ 2026-09-06 17:30
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-09-01 18:18
+  - 'V2Get🛰️ 2026-09-06 17:30 #2'
+  - V2Get🛰️ 2026-09-06 16:30
+  - 'V2Get🛰️ 2026-09-06 17:30 #3'
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-03 22:24
