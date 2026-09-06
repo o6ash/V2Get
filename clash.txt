@@ -12,6 +12,59 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-25 20:05
+  type: vless
+  server: 179.61.251.89
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-09-06 13:30
   type: vless
   server: 104.16.6.70
@@ -1057,58 +1110,6 @@ proxies:
     short-id: '13724435'
 - name: 'V2Get🛰️ 2026-09-06 01:29 #7'
   type: vless
-  server: 172.64.52.175
-  port: 8443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  network: ws
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-06 01:29 #8'
-  type: vless
-  server: 104.18.42.54
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  network: ws
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-- name: 'V2Get🛰️ 2026-09-06 01:29 #9'
-  type: vless
-  server: 104.16.150.246
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  network: ws
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-06 01:29 #10'
-  type: vless
-  server: 104.18.40.152
-  port: 2083
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  network: ws
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-06 01:29 #11'
-  type: vless
   server: cf.9999669.xyz
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -1126,6 +1127,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-09-06 13:30
   - 'V2Get🛰️ 2026-09-06 13:30 #2'
   - 'V2Get🛰️ 2026-09-06 13:30 #3'
@@ -1220,16 +1225,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-06 01:29 #5'
   - 'V2Get🛰️ 2026-09-06 01:29 #6'
   - 'V2Get🛰️ 2026-09-06 01:29 #7'
-  - 'V2Get🛰️ 2026-09-06 01:29 #8'
-  - 'V2Get🛰️ 2026-09-06 01:29 #9'
-  - 'V2Get🛰️ 2026-09-06 01:29 #10'
-  - 'V2Get🛰️ 2026-09-06 01:29 #11'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-09-06 13:30
   - 'V2Get🛰️ 2026-09-06 13:30 #2'
   - 'V2Get🛰️ 2026-09-06 13:30 #3'
@@ -1324,10 +1329,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-06 01:29 #5'
   - 'V2Get🛰️ 2026-09-06 01:29 #6'
   - 'V2Get🛰️ 2026-09-06 01:29 #7'
-  - 'V2Get🛰️ 2026-09-06 01:29 #8'
-  - 'V2Get🛰️ 2026-09-06 01:29 #9'
-  - 'V2Get🛰️ 2026-09-06 01:29 #10'
-  - 'V2Get🛰️ 2026-09-06 01:29 #11'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
