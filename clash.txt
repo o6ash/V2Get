@@ -12,48 +12,88 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+- name: V2Get🛰️ 2026-08-17 21:08
+  type: ss
+  server: 15.204.247.124
+  port: 2375
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
   udp: true
-  network: xhttp
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 'V2Get🛰️ 2026-08-31 04:15 #2'
+  type: trojan
+  server: 213.182.199.137
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-03 16:24
+  type: vless
+  server: 91.210.169.181
+  port: 443
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  udp: true
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
+  servername: wstg.datasynctrue.online
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/connect
+    headers:
+      Host: wstg.datasynctrue.online
+- name: V2Get🛰️ 2026-09-06 13:31
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
   alpn:
   - h2
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-09-07 14:33
+  type: vless
+  server: 87.58.154.128
   port: 443
-  password: MiTiVPN
+  uuid: 263a627b-7a5e-4180-b6af-a6cb0f03cc90
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
+  network: httpupgrade
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-08-27 15:07
+  type: vless
+  server: 45.9.156.42
   port: 443
-  password: MiTiVPN
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+  network: grpc
+  tls: true
+  servername: bg5.univesalsrv.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
+    short-id: 1a3102bb8e51399e
+  grpc-opts:
+    grpc-service-name: gw.v2.RelayService
 - name: V2Get🛰️ 2026-09-07 17:32
   type: trojan
   server: 91.107.174.133
@@ -93,18 +133,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-09-06 13:31
-  type: vless
-  server: 144.31.5.64
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  alpn:
-  - h2
 - name: 'V2Get🛰️ 2026-09-07 19:33 #2'
   type: ss
   server: 15.204.233.41
@@ -112,29 +140,6 @@ proxies:
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: V2Get🛰️ 2026-09-07 14:33
-  type: vless
-  server: 87.58.154.128
-  port: 443
-  uuid: 263a627b-7a5e-4180-b6af-a6cb0f03cc90
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 89.35.14.31
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-    short-id: d36a38659ce106cb
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
 - name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
   server: 45.9.156.24
@@ -197,21 +202,6 @@ proxies:
     grpc-service-name: cloud.v1.RelayService
 - name: 'V2Get🛰️ 2026-08-27 15:07 #6'
   type: vless
-  server: 45.9.156.42
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
-    short-id: 1a3102bb8e51399e
-  grpc-opts:
-    grpc-service-name: gw.v2.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
-  type: vless
   server: 45.9.156.27
   port: 443
   uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
@@ -225,7 +215,7 @@ proxies:
     short-id: 1be1bd931c98c84a
   grpc-opts:
     grpc-service-name: home.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #8'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
   type: vless
   server: 150.40.126.24
   port: 443
@@ -1155,24 +1145,24 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-08-31 04:15
+  - 'V2Get🛰️ 2026-08-31 04:15 #2'
+  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-07 14:33
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-07 17:32
   - V2Get🛰️ 2026-09-07 18:32
   - V2Get🛰️ 2026-09-07 19:33
   - V2Get🛰️ 2026-09-01 11:19
-  - V2Get🛰️ 2026-09-06 13:31
   - 'V2Get🛰️ 2026-09-07 19:33 #2'
-  - V2Get🛰️ 2026-09-07 14:33
-  - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - 'V2Get🛰️ 2026-08-27 15:07 #5'
   - 'V2Get🛰️ 2026-08-27 15:07 #6'
   - 'V2Get🛰️ 2026-08-27 15:07 #7'
-  - 'V2Get🛰️ 2026-08-27 15:07 #8'
   - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-08-30 16:14
   - V2Get🛰️ 2026-08-31 21:17
@@ -1257,24 +1247,24 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-08-17 21:08
+  - V2Get🛰️ 2026-08-31 04:15
+  - 'V2Get🛰️ 2026-08-31 04:15 #2'
+  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-07 14:33
+  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-07 17:32
   - V2Get🛰️ 2026-09-07 18:32
   - V2Get🛰️ 2026-09-07 19:33
   - V2Get🛰️ 2026-09-01 11:19
-  - V2Get🛰️ 2026-09-06 13:31
   - 'V2Get🛰️ 2026-09-07 19:33 #2'
-  - V2Get🛰️ 2026-09-07 14:33
-  - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
   - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - 'V2Get🛰️ 2026-08-27 15:07 #5'
   - 'V2Get🛰️ 2026-08-27 15:07 #6'
   - 'V2Get🛰️ 2026-08-27 15:07 #7'
-  - 'V2Get🛰️ 2026-08-27 15:07 #8'
   - V2Get🛰️ 2026-08-29 23:13
   - V2Get🛰️ 2026-08-30 16:14
   - V2Get🛰️ 2026-08-31 21:17
