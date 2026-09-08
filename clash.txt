@@ -12,6 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-02 22:22
+  type: vless
+  server: 82.24.203.92
+  port: 2083
+  uuid: f2616bce-337a-4d13-8c58-1b5e71986569
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: chat.deepseek.com
+  tls: true
+- name: V2Get🛰️ 2026-09-08 11:35
+  type: vless
+  server: 217.16.31.162
+  port: 443
+  uuid: af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: e7
+- name: V2Get🛰️ 2026-09-08 08:34
+  type: vless
+  server: 95.85.241.209
+  port: 443
+  uuid: 14f4be39-cb89-4f2b-8200-704666b6fa4e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
 - name: V2Get🛰️ 2026-09-07 23:33
   type: vless
   server: 49.13.168.128
@@ -33,21 +71,6 @@ proxies:
   reality-opts:
     public-key: 1r9bE2nkZmePI3f3aNUtwn-ilR4QB2o6VlOJZH8ejio
     short-id: 8f972fa134f511c4
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-06 13:31
   type: vless
   server: 144.31.2.33
@@ -259,18 +282,6 @@ proxies:
   password: lsR8y2oUEb1ypOkTmkuU73QdqzP2QLI_
   udp: true
 - name: V2Get🛰️ 2026-09-05 22:28
-  type: trojan
-  server: 104.21.33.59
-  port: 443
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  udp: true
-  sni: id1.nathaya.web.id
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: id1.nathaya.web.id
-- name: 'V2Get🛰️ 2026-09-05 22:28 #2'
   type: vless
   server: 188.114.97.6
   port: 443
@@ -283,7 +294,7 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 'V2Get🛰️ 2026-09-05 22:28 #3'
+- name: 'V2Get🛰️ 2026-09-05 22:28 #2'
   type: trojan
   server: 172.67.217.240
   port: 443
@@ -708,19 +719,6 @@ proxies:
   reality-opts:
     public-key: GkBVJX2DnjBRp3hLqpb6AW5iUE-WnOj9OfbwArNXwlk
     short-id: efc881a6e4ef55a1
-- name: V2Get🛰️ 2026-09-08 08:34
-  type: vless
-  server: 95.85.241.209
-  port: 443
-  uuid: 14f4be39-cb89-4f2b-8200-704666b6fa4e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
 - name: 'V2Get🛰️ 2026-09-08 03:33 #2'
   type: vless
   server: 79.174.92.85
@@ -1189,9 +1187,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-02 22:22
+  - V2Get🛰️ 2026-09-08 11:35
+  - V2Get🛰️ 2026-09-08 08:34
   - V2Get🛰️ 2026-09-07 23:33
   - V2Get🛰️ 2026-09-08 00:34
-  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-08 11:34
   - 'V2Get🛰️ 2026-09-08 11:34 #2'
@@ -1216,7 +1216,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-08 10:34
   - V2Get🛰️ 2026-09-05 22:28
   - 'V2Get🛰️ 2026-09-05 22:28 #2'
-  - 'V2Get🛰️ 2026-09-05 22:28 #3'
   - V2Get🛰️ 2026-09-06 21:31
   - 'V2Get🛰️ 2026-09-08 10:34 #2'
   - 'V2Get🛰️ 2026-09-08 10:34 #3'
@@ -1249,7 +1248,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 00:34 #5'
   - 'V2Get🛰️ 2026-09-08 00:34 #6'
   - 'V2Get🛰️ 2026-09-08 00:34 #7'
-  - V2Get🛰️ 2026-09-08 08:34
   - 'V2Get🛰️ 2026-09-08 03:33 #2'
   - 'V2Get🛰️ 2026-09-08 03:33 #3'
   - 'V2Get🛰️ 2026-09-08 02:33 #2'
@@ -1294,9 +1292,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-02 22:22
+  - V2Get🛰️ 2026-09-08 11:35
+  - V2Get🛰️ 2026-09-08 08:34
   - V2Get🛰️ 2026-09-07 23:33
   - V2Get🛰️ 2026-09-08 00:34
-  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-08 11:34
   - 'V2Get🛰️ 2026-09-08 11:34 #2'
@@ -1321,7 +1321,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-08 10:34
   - V2Get🛰️ 2026-09-05 22:28
   - 'V2Get🛰️ 2026-09-05 22:28 #2'
-  - 'V2Get🛰️ 2026-09-05 22:28 #3'
   - V2Get🛰️ 2026-09-06 21:31
   - 'V2Get🛰️ 2026-09-08 10:34 #2'
   - 'V2Get🛰️ 2026-09-08 10:34 #3'
@@ -1354,7 +1353,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 00:34 #5'
   - 'V2Get🛰️ 2026-09-08 00:34 #6'
   - 'V2Get🛰️ 2026-09-08 00:34 #7'
-  - V2Get🛰️ 2026-09-08 08:34
   - 'V2Get🛰️ 2026-09-08 03:33 #2'
   - 'V2Get🛰️ 2026-09-08 03:33 #3'
   - 'V2Get🛰️ 2026-09-08 02:33 #2'
