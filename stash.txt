@@ -12,36 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-09-08 16:34
+  type: vless
+  server: 204.11.2.120
+  port: 16565
+  uuid: 2edbad06-49de-4f75-bfc9-993a12cfe3f1
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+  network: grpc
+  tls: true
+  servername: cdn.diba4movie.xyz
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: CuCszXg3N1y8X2klMaK70LeoRbF3vasPI0DG92Dyymo
+    short-id: e3151e5761d8971b
+  grpc-opts:
+    grpc-service-name: ''
+- name: 'V2Get🛰️ 2026-09-08 16:34 #2'
+  type: vless
+  server: a2.arshia-nova.ir
   port: 443
-  password: MiTiVPN
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-08 15:35
   type: vless
   server: tunafra.clonecloudcenter.ir
@@ -1013,8 +1012,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-08 16:34
+  - 'V2Get🛰️ 2026-09-08 16:34 #2'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
   - 'V2Get🛰️ 2026-09-08 15:35 #3'
@@ -1096,8 +1095,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-08 16:34
+  - 'V2Get🛰️ 2026-09-08 16:34 #2'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
   - 'V2Get🛰️ 2026-09-08 15:35 #3'
