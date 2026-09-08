@@ -12,6 +12,53 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-08 14:35
+  type: vless
+  server: 178.83.226.142
+  port: 56539
+  uuid: a94f4215-b5fa-4e1c-a3b5-d930439d6874
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-08 22:36
+  type: trojan
+  server: 104.253.74.50
+  port: 12934
+  password: dajcugry14f71eir
+  udp: true
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-08 22:36 #2'
+  type: vless
+  server: 104.253.74.50
+  port: 32255
+  uuid: e366973f-d3ca-4e70-9a29-81473cbb30bc
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-08 15:35
+  type: vless
+  server: 5.75.201.137
+  port: 56539
+  uuid: f8f72d96-e558-48cb-918c-f9cb934808df
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-08 15:35 #2'
+  type: vless
+  server: 5.75.197.60
+  port: 56539
+  uuid: fbda9d04-0bd2-435f-8552-62f8f08ecdb9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-08 15:35 #3'
+  type: vless
+  server: 5.75.196.199
+  port: 56539
+  uuid: 760d153d-b5fb-4714-904a-798343dbb7a7
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-08 22:35
   type: vless
   server: sv8.nonpath.ir
@@ -26,33 +73,6 @@ proxies:
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: Dig9t4E8rdydV1374b3Euw==:lgTnhJZnReAKsIQ7duaQ6A==
-  udp: true
-- name: V2Get🛰️ 2026-08-31 21:17
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
-  udp: true
-  network: ws
-  tls: true
-  servername: btrum.pages.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: btrum.pages.dev
-- name: V2Get🛰️ 2026-09-06 19:31
-  type: ss
-  server: 52.236.93.60
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: OrkF5D95cuM97Dly
-  udp: true
-- name: V2Get🛰️ 2026-09-06 20:31
-  type: ss
-  server: 52.236.93.60
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: gMvuOJ2BhtjWmjjX
   udp: true
 - name: V2Get🛰️ 2026-09-07 02:31
   type: vless
@@ -976,7 +996,7 @@ proxies:
     path: /
     headers:
       Host: pas.speedoraa.ir
-- name: V2Get🛰️ 2026-09-08 15:35
+- name: 'V2Get🛰️ 2026-09-08 15:35 #4'
   type: vless
   server: tunafra.clonecloudcenter.ir
   port: 6066
@@ -1032,7 +1052,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 'V2Get🛰️ 2026-09-08 15:35 #2'
+- name: 'V2Get🛰️ 2026-09-08 15:35 #5'
   type: vless
   server: 89.208.104.118
   port: 2054
@@ -1046,7 +1066,7 @@ proxies:
     public-key: uSv_IgtbnbUd7_FcH--Zl0O57Nb_ddsSGAZQJlqpU0U
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-09-08 15:35 #3'
+- name: 'V2Get🛰️ 2026-09-08 15:35 #6'
   type: vless
   server: 104.194.144.106
   port: 9990
@@ -1059,30 +1079,6 @@ proxies:
   reality-opts:
     public-key: bThKArw7XzgGi3dw6mXUtSMKeTDa8vhwGoK1YEzUaWk
     short-id: f7
-- name: 'V2Get🛰️ 2026-09-08 15:35 #4'
-  type: vless
-  server: 5.75.196.199
-  port: 56539
-  uuid: 760d153d-b5fb-4714-904a-798343dbb7a7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 15:35 #5'
-  type: vless
-  server: 5.75.201.137
-  port: 56539
-  uuid: f8f72d96-e558-48cb-918c-f9cb934808df
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 15:35 #6'
-  type: vless
-  server: 5.75.197.60
-  port: 56539
-  uuid: fbda9d04-0bd2-435f-8552-62f8f08ecdb9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-08 14:37
   type: vless
   server: cdn.onyxour.com
@@ -1181,11 +1177,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-08 14:35
+  - V2Get🛰️ 2026-09-08 22:36
+  - 'V2Get🛰️ 2026-09-08 22:36 #2'
+  - V2Get🛰️ 2026-09-08 15:35
+  - 'V2Get🛰️ 2026-09-08 15:35 #2'
+  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-08 22:35
   - 'V2Get🛰️ 2026-09-08 22:35 #2'
-  - V2Get🛰️ 2026-08-31 21:17
-  - V2Get🛰️ 2026-09-06 19:31
-  - V2Get🛰️ 2026-09-06 20:31
   - V2Get🛰️ 2026-09-07 02:31
   - V2Get🛰️ 2026-09-08 21:36
   - 'V2Get🛰️ 2026-09-08 21:36 #2'
@@ -1262,13 +1261,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 16:35 #7'
   - 'V2Get🛰️ 2026-09-08 16:35 #8'
   - 'V2Get🛰️ 2026-09-08 16:35 #9'
-  - V2Get🛰️ 2026-09-08 15:35
+  - 'V2Get🛰️ 2026-09-08 15:35 #4'
   - V2Get🛰️ 2026-09-08 16:34
   - 'V2Get🛰️ 2026-09-08 16:35 #10'
   - 'V2Get🛰️ 2026-09-08 16:34 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
-  - 'V2Get🛰️ 2026-09-08 15:35 #4'
   - 'V2Get🛰️ 2026-09-08 15:35 #5'
   - 'V2Get🛰️ 2026-09-08 15:35 #6'
   - V2Get🛰️ 2026-09-08 14:37
@@ -1287,11 +1283,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-08 14:35
+  - V2Get🛰️ 2026-09-08 22:36
+  - 'V2Get🛰️ 2026-09-08 22:36 #2'
+  - V2Get🛰️ 2026-09-08 15:35
+  - 'V2Get🛰️ 2026-09-08 15:35 #2'
+  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-08 22:35
   - 'V2Get🛰️ 2026-09-08 22:35 #2'
-  - V2Get🛰️ 2026-08-31 21:17
-  - V2Get🛰️ 2026-09-06 19:31
-  - V2Get🛰️ 2026-09-06 20:31
   - V2Get🛰️ 2026-09-07 02:31
   - V2Get🛰️ 2026-09-08 21:36
   - 'V2Get🛰️ 2026-09-08 21:36 #2'
@@ -1368,13 +1367,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 16:35 #7'
   - 'V2Get🛰️ 2026-09-08 16:35 #8'
   - 'V2Get🛰️ 2026-09-08 16:35 #9'
-  - V2Get🛰️ 2026-09-08 15:35
+  - 'V2Get🛰️ 2026-09-08 15:35 #4'
   - V2Get🛰️ 2026-09-08 16:34
   - 'V2Get🛰️ 2026-09-08 16:35 #10'
   - 'V2Get🛰️ 2026-09-08 16:34 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
-  - 'V2Get🛰️ 2026-09-08 15:35 #4'
   - 'V2Get🛰️ 2026-09-08 15:35 #5'
   - 'V2Get🛰️ 2026-09-08 15:35 #6'
   - V2Get🛰️ 2026-09-08 14:37
