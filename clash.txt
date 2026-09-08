@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-02 17:21
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  udp: true
+  network: ws
+  tls: true
+  servername: web-socket.tgdaosheng.ggff.net
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /proxyip=bpb.yousef.isegaro.com
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
+- name: V2Get🛰️ 2026-09-08 18:35
+  type: ss
+  server: 20.164.211.25
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
+  udp: true
 - name: V2Get🛰️ 2026-09-08 17:35
   type: trojan
   server: 167.82.79.164
@@ -26,33 +47,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn-mitivpn-bb-mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-09-03 21:23
   type: vless
   server: 199.232.78.159
@@ -1208,9 +1202,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-02 17:21
+  - V2Get🛰️ 2026-09-08 18:35
   - V2Get🛰️ 2026-09-08 17:35
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-09-03 21:23
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-08 16:35
@@ -1311,9 +1305,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-02 17:21
+  - V2Get🛰️ 2026-09-08 18:35
   - V2Get🛰️ 2026-09-08 17:35
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-09-03 21:23
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-08 16:35
