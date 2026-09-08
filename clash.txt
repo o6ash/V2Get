@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-07 20:34
+  type: ss
+  server: 20.164.43.105
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
+  udp: true
+- name: V2Get🛰️ 2026-09-08 02:33
+  type: ss
+  server: 64.83.33.45
+  port: 443
+  cipher: aes-256-gcm
+  password: AyqX8KynyyQLReOZorQRQbsvmiwxBQOf
+  udp: true
+- name: V2Get🛰️ 2026-09-08 08:34
+  type: vless
+  server: 95.85.241.209
+  port: 443
+  uuid: 14f4be39-cb89-4f2b-8200-704666b6fa4e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0
 - name: V2Get🛰️ 2026-09-08 23:36
   type: vless
   server: uka.mobileemdad.top
@@ -1081,20 +1121,12 @@ proxies:
 - name: 'V2Get🛰️ 2026-09-08 16:35 #4'
   type: vless
   server: 15.188.152.249
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 16:35 #5'
-  type: vless
-  server: 15.188.152.249
   port: 22224
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 16:35 #6'
+- name: 'V2Get🛰️ 2026-09-08 16:35 #5'
   type: vless
   server: 66.33.22.229
   port: 43332
@@ -1107,7 +1139,7 @@ proxies:
   reality-opts:
     public-key: UT-idtQ3uOpbcVz2GXAn-9IkNL4Q6mwfqgb_z9JHTVw
     short-id: 7aae950fc7d5
-- name: 'V2Get🛰️ 2026-09-08 16:35 #7'
+- name: 'V2Get🛰️ 2026-09-08 16:35 #6'
   type: vless
   server: 45.145.42.43
   port: 443
@@ -1120,7 +1152,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: Af5z1nqUp0NV9zY4hEtB66G1Df1vzs0TzX-ttU9BPA8
-- name: 'V2Get🛰️ 2026-09-08 16:35 #8'
+- name: 'V2Get🛰️ 2026-09-08 16:35 #7'
   type: vless
   server: interchange.proxy.rlwy.net
   port: 32814
@@ -1130,7 +1162,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-09-08 16:35 #9'
+- name: 'V2Get🛰️ 2026-09-08 16:35 #8'
   type: vless
   server: pass.speedoraa.ir
   port: 443
@@ -1146,55 +1178,16 @@ proxies:
     path: /
     headers:
       Host: pas.speedoraa.ir
-- name: V2Get🛰️ 2026-09-08 16:34
-  type: vless
-  server: 204.11.2.120
-  port: 16565
-  uuid: 2edbad06-49de-4f75-bfc9-993a12cfe3f1
-  udp: true
-  network: grpc
-  tls: true
-  servername: cdn.diba4movie.xyz
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CuCszXg3N1y8X2klMaK70LeoRbF3vasPI0DG92Dyymo
-    short-id: e3151e5761d8971b
-  grpc-opts:
-    grpc-service-name: ''
-- name: 'V2Get🛰️ 2026-09-08 16:35 #10'
-  type: vless
-  server: q8gg2dua.danqela.ir
-  port: 50303
-  uuid: 7dd0330c-de3d-4b7b-9b34-b034ded5a12f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: check-host.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: rBrdXxzD9I11ZPwrjv2KX0l2JBROsrlkb0F30HriIAE
-    short-id: 57c0daf484ae6072
-- name: 'V2Get🛰️ 2026-09-08 16:34 #2'
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-07 20:34
+  - V2Get🛰️ 2026-09-08 02:33
+  - V2Get🛰️ 2026-09-08 08:34
   - V2Get🛰️ 2026-09-08 23:36
   - 'V2Get🛰️ 2026-09-08 23:36 #2'
   - 'V2Get🛰️ 2026-09-08 23:36 #3'
@@ -1291,16 +1284,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 16:35 #6'
   - 'V2Get🛰️ 2026-09-08 16:35 #7'
   - 'V2Get🛰️ 2026-09-08 16:35 #8'
-  - 'V2Get🛰️ 2026-09-08 16:35 #9'
-  - V2Get🛰️ 2026-09-08 16:34
-  - 'V2Get🛰️ 2026-09-08 16:35 #10'
-  - 'V2Get🛰️ 2026-09-08 16:34 #2'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-07 20:34
+  - V2Get🛰️ 2026-09-08 02:33
+  - V2Get🛰️ 2026-09-08 08:34
   - V2Get🛰️ 2026-09-08 23:36
   - 'V2Get🛰️ 2026-09-08 23:36 #2'
   - 'V2Get🛰️ 2026-09-08 23:36 #3'
@@ -1397,10 +1390,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 16:35 #6'
   - 'V2Get🛰️ 2026-09-08 16:35 #7'
   - 'V2Get🛰️ 2026-09-08 16:35 #8'
-  - 'V2Get🛰️ 2026-09-08 16:35 #9'
-  - V2Get🛰️ 2026-09-08 16:34
-  - 'V2Get🛰️ 2026-09-08 16:35 #10'
-  - 'V2Get🛰️ 2026-09-08 16:34 #2'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
