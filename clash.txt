@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-08 23:36
+  type: vless
+  server: gi6.moblemangol.ir
+  port: 800
+  uuid: 83d9de40-95b6-476a-bb4f-092ae85febdc
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: Myket.ir
+- name: 'V2Get🛰️ 2026-09-08 23:36 #2'
+  type: vless
+  server: moblemangol.ir
+  port: 80
+  uuid: 83d9de40-95b6-476a-bb4f-092ae85febdc
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-08 23:35
   type: vless
   server: nsm.cloudbashz.ir
@@ -204,14 +224,6 @@ proxies:
   server: 5.75.197.60
   port: 56539
   uuid: fbda9d04-0bd2-435f-8552-62f8f08ecdb9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 15:35 #3'
-  type: vless
-  server: 5.75.196.199
-  port: 56539
-  uuid: 760d153d-b5fb-4714-904a-798343dbb7a7
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1173,25 +1185,14 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 'V2Get🛰️ 2026-09-08 15:35 #4'
-  type: vless
-  server: 104.194.144.106
-  port: 9990
-  uuid: 81686214-6ce3-4345-ae4d-cf848c97160a
-  udp: true
-  network: tcp
-  tls: true
-  servername: dealersource.electronics.sony.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bThKArw7XzgGi3dw6mXUtSMKeTDa8vhwGoK1YEzUaWk
-    short-id: f7
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-08 23:36
+  - 'V2Get🛰️ 2026-09-08 23:36 #2'
   - V2Get🛰️ 2026-09-08 23:35
   - 'V2Get🛰️ 2026-09-08 23:35 #2'
   - 'V2Get🛰️ 2026-09-08 23:35 #3'
@@ -1211,7 +1212,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 22:36 #2'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-08 22:35
   - 'V2Get🛰️ 2026-09-08 22:35 #2'
   - V2Get🛰️ 2026-09-08 21:36
@@ -1291,13 +1291,14 @@ proxy-groups:
   - V2Get🛰️ 2026-09-08 16:34
   - 'V2Get🛰️ 2026-09-08 16:35 #10'
   - 'V2Get🛰️ 2026-09-08 16:34 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #4'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-08 23:36
+  - 'V2Get🛰️ 2026-09-08 23:36 #2'
   - V2Get🛰️ 2026-09-08 23:35
   - 'V2Get🛰️ 2026-09-08 23:35 #2'
   - 'V2Get🛰️ 2026-09-08 23:35 #3'
@@ -1317,7 +1318,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 22:36 #2'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-08 22:35
   - 'V2Get🛰️ 2026-09-08 22:35 #2'
   - V2Get🛰️ 2026-09-08 21:36
@@ -1397,7 +1397,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-08 16:34
   - 'V2Get🛰️ 2026-09-08 16:35 #10'
   - 'V2Get🛰️ 2026-09-08 16:34 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #4'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
