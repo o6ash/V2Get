@@ -12,20 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-03 16:24
+- name: V2Get🛰️ 2026-09-09 01:36
   type: vless
-  server: 91.210.169.181
+  server: 144.31.17.66
   port: 443
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  uuid: 7c39a52e-aae1-484e-a673-9fe72524173b
+  udp: true
+  network: tcp
+  tls: true
+  servername: refersion.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Kit4AiOzaBN_zhhwe8eU9SHexYW4fwAo20MnDbjPEWc
+    short-id: c7514dbbd2af28b5
+- name: 'V2Get🛰️ 2026-09-09 01:36 #2'
+  type: vless
+  server: 69.46.46.126
+  port: 443
+  uuid: b732329b-8c5a-ac60-0bfd-8bb353dd7a22
   udp: true
   network: ws
   tls: true
-  servername: wstg.datasynctrue.online
+  servername: norl-productionopop.up.railway.app
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /api/connect
+    path: /ws/b732329b-8c5a-ac60-0bfd-8bb353dd7a22
     headers:
-      Host: wstg.datasynctrue.online
+      Host: norl-productionopop.up.railway.app
 - name: V2Get🛰️ 2026-09-08 16:35
   type: vless
   server: 199.232.78.159
@@ -152,21 +167,13 @@ proxies:
       Host: mitivpn-ss-mitivpn---mitivpn--mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-08 15:35
   type: vless
-  server: 5.75.196.199
-  port: 56539
-  uuid: 760d153d-b5fb-4714-904a-798343dbb7a7
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 15:35 #2'
-  type: vless
   server: 5.75.201.137
   port: 56539
   uuid: f8f72d96-e558-48cb-918c-f9cb934808df
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-08 15:35 #3'
+- name: 'V2Get🛰️ 2026-09-08 15:35 #2'
   type: vless
   server: 5.75.197.60
   port: 56539
@@ -864,7 +871,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-09 01:36
+  - 'V2Get🛰️ 2026-09-09 01:36 #2'
   - V2Get🛰️ 2026-09-08 16:35
   - V2Get🛰️ 2026-09-08 23:35
   - 'V2Get🛰️ 2026-09-08 23:35 #2'
@@ -876,7 +884,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 17:35 #5'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-09 00:37
   - 'V2Get🛰️ 2026-09-09 00:37 #2'
   - 'V2Get🛰️ 2026-09-09 00:37 #3'
@@ -944,7 +951,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-09 01:36
+  - 'V2Get🛰️ 2026-09-09 01:36 #2'
   - V2Get🛰️ 2026-09-08 16:35
   - V2Get🛰️ 2026-09-08 23:35
   - 'V2Get🛰️ 2026-09-08 23:35 #2'
@@ -956,7 +964,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-08 17:35 #5'
   - V2Get🛰️ 2026-09-08 15:35
   - 'V2Get🛰️ 2026-09-08 15:35 #2'
-  - 'V2Get🛰️ 2026-09-08 15:35 #3'
   - V2Get🛰️ 2026-09-09 00:37
   - 'V2Get🛰️ 2026-09-09 00:37 #2'
   - 'V2Get🛰️ 2026-09-09 00:37 #3'
