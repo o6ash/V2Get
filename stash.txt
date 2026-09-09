@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-09 02:36
+  type: vless
+  server: 168.119.103.176
+  port: 80
+  uuid: 8aae31db-4a64-47e2-9f0e-8e014ae5d995
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-09 02:36 #2'
+  type: vless
+  server: italic.dearhossein-taktaz.ir
+  port: 8080
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: italic.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -255,7 +275,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-09 02:36
+- name: 'V2Get🛰️ 2026-09-09 02:36 #3'
   type: vless
   server: 212.192.13.172
   port: 443
@@ -263,26 +283,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 02:36 #2'
-  type: vless
-  server: 168.119.103.176
-  port: 80
-  uuid: 8aae31db-4a64-47e2-9f0e-8e014ae5d995
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 02:36 #3'
-  type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: italic.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-09-09 02:36 #4'
   type: vless
   server: italic.dearhossein-taktaz.ir
@@ -833,6 +833,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-09 02:36
+  - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-07 16:32
@@ -853,8 +855,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 00:35 #5'
   - 'V2Get🛰️ 2026-09-09 00:35 #6'
   - 'V2Get🛰️ 2026-09-09 00:35 #7'
-  - V2Get🛰️ 2026-09-09 02:36
-  - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - 'V2Get🛰️ 2026-09-09 02:36 #3'
   - 'V2Get🛰️ 2026-09-09 02:36 #4'
   - V2Get🛰️ 2026-09-08 23:35
@@ -910,6 +910,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-09 02:36
+  - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-07 16:32
@@ -930,8 +932,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 00:35 #5'
   - 'V2Get🛰️ 2026-09-09 00:35 #6'
   - 'V2Get🛰️ 2026-09-09 00:35 #7'
-  - V2Get🛰️ 2026-09-09 02:36
-  - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - 'V2Get🛰️ 2026-09-09 02:36 #3'
   - 'V2Get🛰️ 2026-09-09 02:36 #4'
   - V2Get🛰️ 2026-09-08 23:35
