@@ -12,6 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-10 15:11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-09 02:36
+  type: vless
+  server: 212.192.13.172
+  port: 443
+  uuid: e962823c-b197-48c9-b89f-4b18dc44e93c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-08 18:35
+  type: ss
+  server: 20.164.211.25
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
+  udp: true
 - name: V2Get🛰️ 2026-09-05 11:27
   type: vless
   server: 199.232.78.159
@@ -25,34 +64,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-08 16:35
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 4fe00c41-a1d0-4d98-8a05-cab09db9faaf
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pane2.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-08 18:35
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: V2Get🛰️ 2026-09-09 02:36
-  type: vless
-  server: 212.192.13.172
-  port: 443
-  uuid: e962823c-b197-48c9-b89f-4b18dc44e93c
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-09 00:35
   type: vless
   server: 13.37.73.8
@@ -74,11 +85,11 @@ proxies:
   reality-opts:
     public-key: ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk
     short-id: a88550765b9956ee
-- name: V2Get🛰️ 2026-09-03 21:23
+- name: V2Get🛰️ 2026-09-08 16:35
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: e5c5c006-facc-45be-99bc-20d772372d5c
+  uuid: 4fe00c41-a1d0-4d98-8a05-cab09db9faaf
   udp: true
   network: ws
   tls: true
@@ -86,7 +97,7 @@ proxies:
   ws-opts:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
-      Host: pane3.global.ssl.fastly.net
+      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-08 15:34
   type: vless
   server: 151.101.56.6
@@ -169,18 +180,6 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-09-04 10:25
-  type: vless
-  server: 54.39.96.233
-  port: 8443
-  uuid: db3f09ae-23f2-42b8-abee-7b89fb392c5e
-  udp: true
-  network: ws
-  tls: true
-  servername: maple.adaspoloandco.com
-  client-fingerprint: qq
-  ws-opts:
-    path: /uploader.php
 - name: V2Get🛰️ 2026-09-06 04:29
   type: ss
   server: 51.222.107.43
@@ -1036,13 +1035,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-09-08 16:35
-  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-09-09 02:36
+  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-09 00:35
   - V2Get🛰️ 2026-09-09 01:36
-  - V2Get🛰️ 2026-09-03 21:23
+  - V2Get🛰️ 2026-09-08 16:35
   - V2Get🛰️ 2026-09-08 15:34
   - V2Get🛰️ 2026-09-09 04:36
   - 'V2Get🛰️ 2026-09-09 04:36 #2'
@@ -1051,7 +1051,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - 'V2Get🛰️ 2026-09-09 02:36 #3'
   - V2Get🛰️ 2026-09-07 16:32
-  - V2Get🛰️ 2026-09-04 10:25
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-06 21:32
@@ -1137,13 +1136,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-05 11:27
-  - V2Get🛰️ 2026-09-08 16:35
-  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-09-09 02:36
+  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-09 00:35
   - V2Get🛰️ 2026-09-09 01:36
-  - V2Get🛰️ 2026-09-03 21:23
+  - V2Get🛰️ 2026-09-08 16:35
   - V2Get🛰️ 2026-09-08 15:34
   - V2Get🛰️ 2026-09-09 04:36
   - 'V2Get🛰️ 2026-09-09 04:36 #2'
@@ -1152,7 +1152,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 02:36 #2'
   - 'V2Get🛰️ 2026-09-09 02:36 #3'
   - V2Get🛰️ 2026-09-07 16:32
-  - V2Get🛰️ 2026-09-04 10:25
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-06 21:32
