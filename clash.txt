@@ -12,33 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 23:18
+- name: V2Get🛰️ 2026-09-09 16:37
   type: vless
-  server: 178.83.31.93
+  server: k2.cloud--vpn.site
   port: 443
-  uuid: 4a97788b-5d8a-410c-875c-ba36930e185e
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 989gq45ogQSZLDoUTcLNSYW5v_3ER7W_6Oi_8swZzXo
-    short-id: cb55f541
-- name: V2Get🛰️ 2026-09-09 01:36
-  type: vless
-  server: de-2.starsping.com
-  port: 443
-  uuid: 1577b744-8004-4eef-862c-8cae0cd27ab9
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk
-    short-id: a88550765b9956ee
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-09 15:38
   type: vless
   server: 178.105.61.61
@@ -52,6 +39,27 @@ proxies:
   reality-opts:
     public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
     short-id: af04ff8094115e93
+- name: V2Get🛰️ 2026-09-09 23:38
+  type: vless
+  server: 91.98.46.126
+  port: 443
+  uuid: 88589fa2-65c5-4764-bb32-4d796723dc37
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-09 01:36
+  type: vless
+  server: de-2.starsping.com
+  port: 443
+  uuid: 1577b744-8004-4eef-862c-8cae0cd27ab9
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk
+    short-id: a88550765b9956ee
 - name: V2Get🛰️ 2026-09-10 00:39
   type: trojan
   server: 107.150.105.84
@@ -166,14 +174,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: fancii.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-09 23:38
-  type: vless
-  server: 91.98.46.126
-  port: 443
-  uuid: 88589fa2-65c5-4764-bb32-4d796723dc37
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-09 23:38 #2'
   type: vless
   server: m1r.speedtestmark.com
@@ -1127,9 +1127,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 23:18
-  - V2Get🛰️ 2026-09-09 01:36
+  - V2Get🛰️ 2026-09-09 16:37
   - V2Get🛰️ 2026-09-09 15:38
+  - V2Get🛰️ 2026-09-09 23:38
+  - V2Get🛰️ 2026-09-09 01:36
   - V2Get🛰️ 2026-09-10 00:39
   - 'V2Get🛰️ 2026-09-10 00:39 #2'
   - 'V2Get🛰️ 2026-09-10 00:39 #3'
@@ -1140,7 +1141,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-10 00:38 #3'
   - 'V2Get🛰️ 2026-09-10 00:38 #4'
   - V2Get🛰️ 2026-09-10 00:37
-  - V2Get🛰️ 2026-09-09 23:38
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
@@ -1229,9 +1229,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 23:18
-  - V2Get🛰️ 2026-09-09 01:36
+  - V2Get🛰️ 2026-09-09 16:37
   - V2Get🛰️ 2026-09-09 15:38
+  - V2Get🛰️ 2026-09-09 23:38
+  - V2Get🛰️ 2026-09-09 01:36
   - V2Get🛰️ 2026-09-10 00:39
   - 'V2Get🛰️ 2026-09-10 00:39 #2'
   - 'V2Get🛰️ 2026-09-10 00:39 #3'
@@ -1242,7 +1243,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-10 00:38 #3'
   - 'V2Get🛰️ 2026-09-10 00:38 #4'
   - V2Get🛰️ 2026-09-10 00:37
-  - V2Get🛰️ 2026-09-09 23:38
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
