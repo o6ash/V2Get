@@ -14,6 +14,33 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-10 00:38
   type: vless
+  server: nnbfyhcgiiiutfc.vahidzhv.ir
+  port: 14779
+  uuid: a6e02f9e-be9a-4247-8261-742dce89d24e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-10 00:38 #2'
+  type: vless
+  server: 5.75.207.73
+  port: 12204
+  uuid: a6e02f9e-be9a-4247-8261-742dce89d24e
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: 'V2Get🛰️ 2026-09-10 00:38 #3'
+  type: vless
+  server: tfast.clnet.site
+  port: 443
+  uuid: a6e02f9e-be9a-4247-8261-742dce89d24e
+  udp: true
+  network: xhttp
+  tls: true
+  servername: global.fastly.com
+- name: 'V2Get🛰️ 2026-09-10 00:38 #4'
+  type: vless
   server: 199.232.78.159
   port: 443
   uuid: b8908b7c-8e63-4d0b-a4da-8f47c6c9dd6a
@@ -46,20 +73,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-09 14:37
-  type: trojan
-  server: 167.82.76.27
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-09-09 23:38 #2'
   type: vless
   server: m1r.speedtestmark.com
@@ -110,38 +123,7 @@ proxies:
   tls: true
   servername: eeaxtirr4c22.dop33.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-09-09 15:37
-  type: vless
-  server: 172.67.91.146
-  port: 443
-  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
-  udp: true
-  network: ws
-  tls: true
-  servername: shophg.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: shophg.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-09-09 15:39
-  type: vless
-  server: 104.19.115.162
-  port: 443
-  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
-  udp: true
-  network: ws
-  tls: true
-  servername: shophg.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shophg.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-09 15:39 #2'
   type: vless
   server: 199.33.232.250
   port: 443
@@ -158,7 +140,7 @@ proxies:
     path: /
     headers:
       Host: shophg.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-09 15:39 #3'
+- name: 'V2Get🛰️ 2026-09-09 15:39 #2'
   type: vless
   server: 172.67.95.209
   port: 443
@@ -1161,17 +1143,17 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-10 00:38
+  - 'V2Get🛰️ 2026-09-10 00:38 #2'
+  - 'V2Get🛰️ 2026-09-10 00:38 #3'
+  - 'V2Get🛰️ 2026-09-10 00:38 #4'
   - V2Get🛰️ 2026-09-10 00:37
   - V2Get🛰️ 2026-09-09 23:38
-  - V2Get🛰️ 2026-09-09 14:37
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
   - V2Get🛰️ 2026-09-09 16:37
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
-  - V2Get🛰️ 2026-09-09 15:37
   - V2Get🛰️ 2026-09-09 15:39
   - 'V2Get🛰️ 2026-09-09 15:39 #2'
-  - 'V2Get🛰️ 2026-09-09 15:39 #3'
   - V2Get🛰️ 2026-09-09 22:38
   - 'V2Get🛰️ 2026-09-09 22:38 #2'
   - 'V2Get🛰️ 2026-09-09 22:38 #3'
@@ -1263,17 +1245,17 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-10 00:38
+  - 'V2Get🛰️ 2026-09-10 00:38 #2'
+  - 'V2Get🛰️ 2026-09-10 00:38 #3'
+  - 'V2Get🛰️ 2026-09-10 00:38 #4'
   - V2Get🛰️ 2026-09-10 00:37
   - V2Get🛰️ 2026-09-09 23:38
-  - V2Get🛰️ 2026-09-09 14:37
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
   - V2Get🛰️ 2026-09-09 16:37
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
-  - V2Get🛰️ 2026-09-09 15:37
   - V2Get🛰️ 2026-09-09 15:39
   - 'V2Get🛰️ 2026-09-09 15:39 #2'
-  - 'V2Get🛰️ 2026-09-09 15:39 #3'
   - V2Get🛰️ 2026-09-09 22:38
   - 'V2Get🛰️ 2026-09-09 22:38 #2'
   - 'V2Get🛰️ 2026-09-09 22:38 #3'
