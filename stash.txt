@@ -12,6 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 213.182.199.137
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-03 16:24
+  type: vless
+  server: 91.210.169.181
+  port: 443
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  udp: true
+  network: ws
+  tls: true
+  servername: wstg.datasynctrue.online
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/connect
+    headers:
+      Host: wstg.datasynctrue.online
 - name: V2Get🛰️ 2026-09-09 13:37
   type: vless
   server: bestnet-production-80df.up.railway.app
@@ -261,34 +288,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-05 18:28
-  type: vless
-  server: 206.251.54.34
-  port: 55596
-  uuid: 9fc6444b-987a-41d5-9bf5-195d147e0a05
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QQUHUyF5Wb3XeRRrky-WOaRTxBtHokNaMec02HURWSI
-    short-id: 6ac09686189038
-- name: V2Get🛰️ 2026-09-06 18:31
-  type: vless
-  server: 31.76.60.110
-  port: 443
-  uuid: 188079af-1b15-4256-90f7-d1c4646d2062
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: uk1.hat.onl
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
-    short-id: 76132b3b39704c44
 - name: V2Get🛰️ 2026-09-07 02:31
   type: vless
   server: 217.16.31.218
@@ -906,6 +905,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-09 13:37
   - 'V2Get🛰️ 2026-09-09 13:37 #2'
   - 'V2Get🛰️ 2026-09-09 13:37 #3'
@@ -929,8 +930,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
-  - V2Get🛰️ 2026-09-05 18:28
-  - V2Get🛰️ 2026-09-06 18:31
   - V2Get🛰️ 2026-09-07 02:31
   - V2Get🛰️ 2026-09-08 19:35
   - 'V2Get🛰️ 2026-09-08 19:35 #2'
@@ -986,6 +985,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-09 13:37
   - 'V2Get🛰️ 2026-09-09 13:37 #2'
   - 'V2Get🛰️ 2026-09-09 13:37 #3'
@@ -1009,8 +1010,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
-  - V2Get🛰️ 2026-09-05 18:28
-  - V2Get🛰️ 2026-09-06 18:31
   - V2Get🛰️ 2026-09-07 02:31
   - V2Get🛰️ 2026-09-08 19:35
   - 'V2Get🛰️ 2026-09-08 19:35 #2'
