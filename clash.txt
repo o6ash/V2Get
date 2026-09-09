@@ -12,36 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -57,6 +27,50 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-09 14:37
+  type: trojan
+  server: 167.82.76.27
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-03 22:24
   type: vless
   server: tgfree.rush-server.com
@@ -106,20 +120,6 @@ proxies:
   reality-opts:
     public-key: EsGa1C0nTVYyW4luB4-VBu0ECgbm2-61A5mjUDzpwSA
     short-id: 9794b16a7080255c
-- name: V2Get🛰️ 2026-09-09 14:37
-  type: trojan
-  server: 167.82.76.27
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-09 12:37
   type: vless
   server: 144.31.17.66
@@ -1130,14 +1130,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 14:37
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-09-03 22:24
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-08 14:35
   - V2Get🛰️ 2026-09-09 00:37
-  - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-09 12:37
   - 'V2Get🛰️ 2026-09-09 12:37 #2'
   - 'V2Get🛰️ 2026-09-09 12:37 #3'
@@ -1230,14 +1230,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 14:37
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-07-26 03:07
   - V2Get🛰️ 2026-09-03 22:24
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-08 14:35
   - V2Get🛰️ 2026-09-09 00:37
-  - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-09 12:37
   - 'V2Get🛰️ 2026-09-09 12:37 #2'
   - 'V2Get🛰️ 2026-09-09 12:37 #3'
