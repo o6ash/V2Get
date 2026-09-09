@@ -12,13 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:56
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: V2Get🛰️ 2026-08-10 15:11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-08-29 23:12
   type: vless
   server: 49.50.76.194
@@ -1144,7 +1149,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-29 23:12
   - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-07 16:32
@@ -1246,7 +1251,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:56
+  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-29 23:12
   - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-07 16:32
