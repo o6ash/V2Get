@@ -12,20 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-30 11:01
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-09-09 13:36
+  type: vless
+  server: 202.133.90.179
+  port: 24443
+  uuid: 4fab76a4-7a02-49f9-b800-00a78ad4fb1d
   udp: true
-  sni: www.gossipglove.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-09 13:36 #2'
+  type: vless
+  server: 202.133.90.179
+  port: 7443
+  uuid: 4fab76a4-7a02-49f9-b800-00a78ad4fb1d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-09 13:36 #3'
+  type: vless
+  server: 202.133.90.179
+  port: 8443
+  uuid: 4fab76a4-7a02-49f9-b800-00a78ad4fb1d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
   server: 8.47.69.0
@@ -72,35 +82,6 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 02:06
-  type: vless
-  server: b2n.ir
-  port: 443
-  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
-  udp: true
-  network: xhttp
-  tls: true
-  servername: chopin.kaftarkakolbesarwifi.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-- name: V2Get🛰️ 2026-08-27 11:06
-  type: vless
-  server: md5.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
-    short-id: aa9884f2982b7d3c
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
 - name: V2Get🛰️ 2026-08-27 15:07
   type: vless
   server: md3.univesalsrv.com
@@ -1238,14 +1219,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-30 11:01
+  - V2Get🛰️ 2026-09-09 13:36
+  - 'V2Get🛰️ 2026-09-09 13:36 #2'
+  - 'V2Get🛰️ 2026-09-09 13:36 #3'
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
   - V2Get🛰️ 2026-09-09 12:36
   - 'V2Get🛰️ 2026-09-09 12:36 #2'
-  - V2Get🛰️ 2026-08-27 02:06
-  - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
@@ -1342,14 +1323,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-30 11:01
+  - V2Get🛰️ 2026-09-09 13:36
+  - 'V2Get🛰️ 2026-09-09 13:36 #2'
+  - 'V2Get🛰️ 2026-09-09 13:36 #3'
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
   - V2Get🛰️ 2026-09-09 12:36
   - 'V2Get🛰️ 2026-09-09 12:36 #2'
-  - V2Get🛰️ 2026-08-27 02:06
-  - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
