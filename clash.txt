@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-10 00:40
   type: vless
   server: y6309skk.danqela.ir
@@ -102,21 +117,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 150.40.126.24
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: rs5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
-    short-id: 4872856d5489c37d
-  grpc-opts:
-    grpc-service-name: gw.v1.ObjectService
 - name: V2Get🛰️ 2026-09-05 11:27
   type: vless
   server: 199.232.78.159
@@ -1162,6 +1162,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-10 00:40
   - 'V2Get🛰️ 2026-09-10 00:40 #2'
   - 'V2Get🛰️ 2026-09-10 00:40 #3'
@@ -1169,7 +1170,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-10 00:40 #5'
   - 'V2Get🛰️ 2026-09-10 00:40 #6'
   - V2Get🛰️ 2026-09-09 23:38
-  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-05 14:28
   - V2Get🛰️ 2026-09-06 18:31
@@ -1265,6 +1265,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-10 00:40
   - 'V2Get🛰️ 2026-09-10 00:40 #2'
   - 'V2Get🛰️ 2026-09-10 00:40 #3'
@@ -1272,7 +1273,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-10 00:40 #5'
   - 'V2Get🛰️ 2026-09-10 00:40 #6'
   - V2Get🛰️ 2026-09-09 23:38
-  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-05 14:28
   - V2Get🛰️ 2026-09-06 18:31
