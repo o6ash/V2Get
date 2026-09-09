@@ -12,36 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-09-09 19:37
+  type: vless
+  server: 147.182.157.72
+  port: 1161
+  uuid: 12d67793-4087-0237-bb9c-d91ac0406d58
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
+  network: tcp
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
+- name: 'V2Get🛰️ 2026-09-09 19:37 #2'
+  type: vless
+  server: 147.182.157.72
+  port: 8039
+  uuid: 12d67793-4087-0237-bb9c-d91ac0406d58
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play.google.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -71,7 +63,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-09 19:37
+- name: 'V2Get🛰️ 2026-09-09 19:37 #3'
   type: vless
   server: 5.75.207.199
   port: 56539
@@ -79,7 +71,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 19:37 #2'
+- name: 'V2Get🛰️ 2026-09-09 19:37 #4'
   type: vless
   server: 5.75.193.123
   port: 56539
@@ -87,7 +79,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 19:37 #3'
+- name: 'V2Get🛰️ 2026-09-09 19:37 #5'
   type: vless
   server: speedtest.net
   port: 80
@@ -95,7 +87,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 19:37 #4'
+- name: 'V2Get🛰️ 2026-09-09 19:37 #6'
   type: vless
   server: sourceforge.net
   port: 2086
@@ -103,7 +95,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 19:37 #5'
+- name: 'V2Get🛰️ 2026-09-09 19:37 #7'
   type: vless
   server: cdn.devmixa.ir
   port: 2086
@@ -1106,15 +1098,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-09 19:37
   - 'V2Get🛰️ 2026-09-09 19:37 #2'
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 14:37
   - 'V2Get🛰️ 2026-09-09 19:37 #3'
   - 'V2Get🛰️ 2026-09-09 19:37 #4'
   - 'V2Get🛰️ 2026-09-09 19:37 #5'
+  - 'V2Get🛰️ 2026-09-09 19:37 #6'
+  - 'V2Get🛰️ 2026-09-09 19:37 #7'
   - V2Get🛰️ 2026-09-07 23:34
   - V2Get🛰️ 2026-09-08 10:35
   - V2Get🛰️ 2026-09-08 18:35
@@ -1206,15 +1198,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-09 19:37
   - 'V2Get🛰️ 2026-09-09 19:37 #2'
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 14:37
   - 'V2Get🛰️ 2026-09-09 19:37 #3'
   - 'V2Get🛰️ 2026-09-09 19:37 #4'
   - 'V2Get🛰️ 2026-09-09 19:37 #5'
+  - 'V2Get🛰️ 2026-09-09 19:37 #6'
+  - 'V2Get🛰️ 2026-09-09 19:37 #7'
   - V2Get🛰️ 2026-09-07 23:34
   - V2Get🛰️ 2026-09-08 10:35
   - V2Get🛰️ 2026-09-08 18:35
