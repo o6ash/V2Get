@@ -12,6 +12,60 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-09 04:36
+  type: vless
+  server: dl6.sepid-dl.ir
+  port: 80
+  uuid: 985b1fdf-85c3-499f-a6a9-1161e1115e4a
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-09 15:37
+  type: vless
+  server: chess.com
+  port: 443
+  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
+  udp: true
+  network: ws
+  tls: true
+  servername: shophg.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shophg.dearhossein-taktaz.ir
+- name: V2Get🛰️ 2026-09-09 15:39
+  type: vless
+  server: parstoday.ir
+  port: 443
+  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
+  udp: true
+  network: ws
+  tls: true
+  servername: shophg.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: shophg.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-09-10 00:38
   type: vless
   server: nnbfyhcgiiiutfc.vahidzhv.ir
@@ -87,20 +141,6 @@ proxies:
   reality-opts:
     public-key: Bp49BC_XtsdC4Jvp5p-vfR1voCti6QrYyIPKQSIt_Hw
     short-id: '4326'
-- name: V2Get🛰️ 2026-09-09 16:37
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: 'V2Get🛰️ 2026-09-09 23:38 #3'
   type: vmess
   server: 85.234.65.189
@@ -123,40 +163,6 @@ proxies:
   tls: true
   servername: eeaxtirr4c22.dop33.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-09-09 15:39
-  type: vless
-  server: 199.33.232.250
-  port: 443
-  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
-  udp: true
-  network: ws
-  tls: true
-  servername: shophg.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shophg.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-09 15:39 #2'
-  type: vless
-  server: 172.67.95.209
-  port: 443
-  uuid: 00606c96-bf89-4573-8a5b-a47ae1ca2df9
-  udp: true
-  network: ws
-  tls: true
-  servername: shophg.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: shophg.dearhossein-taktaz.ir
 - name: V2Get🛰️ 2026-09-09 22:38
   type: vless
   server: ber12ajdub.ramcalshoping.ir
@@ -1027,19 +1033,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-09 18:38 #11'
   type: vless
-  server: 199.232.237.79
-  port: 443
-  uuid: 78a9fc3e-6e25-47f5-8bfa-a4ae2cf870aa
-  udp: true
-  network: xhttp
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: ios
-  alpn:
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-09-09 18:38 #12'
-  type: vless
   server: uk-on-cdn-apple-9t6ni35l8n2ckw6d.mozzfing.shop
   port: 443
   uuid: 78a9fc3e-6e25-47f5-8bfa-a4ae2cf870aa
@@ -1052,7 +1045,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #13'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #12'
   type: vless
   server: www.mozzfing.shop
   port: 443
@@ -1066,7 +1059,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #14'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #13'
   type: vless
   server: on-cdn-apple-9t6ni35l8n2ckw6dge1.savlix.ir
   port: 443
@@ -1080,7 +1073,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #15'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #14'
   type: vless
   server: mn-cdn-apple-9t6ni35l8n2ckw6dfl3.savlix.ir
   port: 443
@@ -1094,7 +1087,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #16'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #15'
   type: vless
   server: fl2-cdn-apple-9t6ni35l8n2ckw6d.savlix.ir
   port: 443
@@ -1108,7 +1101,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #17'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #16'
   type: vless
   server: fn-cdn-google-922p938m204clvxefl1.wanfira.ir
   port: 443
@@ -1122,7 +1115,7 @@ proxies:
   reality-opts:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
-- name: 'V2Get🛰️ 2026-09-09 18:38 #18'
+- name: 'V2Get🛰️ 2026-09-09 18:38 #17'
   type: vless
   server: fr1.novexnet.ir
   port: 443
@@ -1142,6 +1135,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 04:36
+  - V2Get🛰️ 2026-09-09 15:37
+  - V2Get🛰️ 2026-09-09 15:39
   - V2Get🛰️ 2026-09-10 00:38
   - 'V2Get🛰️ 2026-09-10 00:38 #2'
   - 'V2Get🛰️ 2026-09-10 00:38 #3'
@@ -1149,11 +1146,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-10 00:37
   - V2Get🛰️ 2026-09-09 23:38
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
-  - V2Get🛰️ 2026-09-09 16:37
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
-  - V2Get🛰️ 2026-09-09 15:39
-  - 'V2Get🛰️ 2026-09-09 15:39 #2'
   - V2Get🛰️ 2026-09-09 22:38
   - 'V2Get🛰️ 2026-09-09 22:38 #2'
   - 'V2Get🛰️ 2026-09-09 22:38 #3'
@@ -1237,13 +1231,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 18:38 #15'
   - 'V2Get🛰️ 2026-09-09 18:38 #16'
   - 'V2Get🛰️ 2026-09-09 18:38 #17'
-  - 'V2Get🛰️ 2026-09-09 18:38 #18'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 04:36
+  - V2Get🛰️ 2026-09-09 15:37
+  - V2Get🛰️ 2026-09-09 15:39
   - V2Get🛰️ 2026-09-10 00:38
   - 'V2Get🛰️ 2026-09-10 00:38 #2'
   - 'V2Get🛰️ 2026-09-10 00:38 #3'
@@ -1251,11 +1248,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-10 00:37
   - V2Get🛰️ 2026-09-09 23:38
   - 'V2Get🛰️ 2026-09-09 23:38 #2'
-  - V2Get🛰️ 2026-09-09 16:37
   - 'V2Get🛰️ 2026-09-09 23:38 #3'
   - 'V2Get🛰️ 2026-09-09 23:38 #4'
-  - V2Get🛰️ 2026-09-09 15:39
-  - 'V2Get🛰️ 2026-09-09 15:39 #2'
   - V2Get🛰️ 2026-09-09 22:38
   - 'V2Get🛰️ 2026-09-09 22:38 #2'
   - 'V2Get🛰️ 2026-09-09 22:38 #3'
@@ -1339,7 +1333,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 18:38 #15'
   - 'V2Get🛰️ 2026-09-09 18:38 #16'
   - 'V2Get🛰️ 2026-09-09 18:38 #17'
-  - 'V2Get🛰️ 2026-09-09 18:38 #18'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
