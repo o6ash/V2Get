@@ -12,51 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-25 20:03
-  type: vless
-  server: rs1.univesalsrv.com
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  password: MiTiVPN
   udp: true
-  network: grpc
-  tls: true
-  servername: rs1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY
-    short-id: ed0cd5cc2e26e6e7
-  grpc-opts:
-    grpc-service-name: node.v2.ObjectService
-- name: V2Get🛰️ 2026-08-26 17:07
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-08 15:34
   type: vless
-  server: 89.35.14.30
+  server: 151.101.56.6
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  uuid: f54c98ce-ac44-4984-db61-ccca1fdbbf72
   udp: true
-  network: grpc
+  network: ws
   tls: true
-  servername: md1.univesalsrv.com
+  servername: ssl.fastly.com
   client-fingerprint: firefox
-  reality-opts:
-    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-    short-id: 221ba6174224ca5b
-  grpc-opts:
-    grpc-service-name: hub.v1.RelayService
-- name: V2Get🛰️ 2026-08-27 11:06
-  type: vless
-  server: md5.univesalsrv.com
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
+- name: V2Get🛰️ 2026-09-08 17:35
+  type: trojan
+  server: 167.82.101.75
   port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  password: MiTiVPN
   udp: true
-  network: grpc
-  tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
-    short-id: aa9884f2982b7d3c
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLS4s---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-ss-mitivpn---mitivpn--mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-27 15:07
   type: vless
   server: md3.univesalsrv.com
@@ -961,9 +959,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-25 20:03
-  - V2Get🛰️ 2026-08-26 17:07
-  - V2Get🛰️ 2026-08-27 11:06
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-08 15:34
+  - V2Get🛰️ 2026-09-08 17:35
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
@@ -1038,9 +1036,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-25 20:03
-  - V2Get🛰️ 2026-08-26 17:07
-  - V2Get🛰️ 2026-08-27 11:06
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-08 15:34
+  - V2Get🛰️ 2026-09-08 17:35
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
