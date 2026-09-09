@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-08 18:35
+  type: ss
+  server: 20.164.211.25
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
+  udp: true
+- name: V2Get🛰️ 2026-09-09 02:36
+  type: vless
+  server: 168.119.103.176
+  port: 80
+  uuid: 8aae31db-4a64-47e2-9f0e-8e014ae5d995
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-09 15:39
   type: vless
   server: parstoday.ir
@@ -876,14 +891,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-09 12:36 #3'
   type: vless
-  server: cdn.devmixa.ir
-  port: 2086
-  uuid: 59ad4ebd-ccb2-4399-a779-add3b2c74639
-  udp: true
-  network: xhttp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-09 12:36 #4'
-  type: vless
   server: sourceforge.net
   port: 2086
   uuid: 59ad4ebd-ccb2-4399-a779-add3b2c74639
@@ -999,7 +1006,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: 'V2Get🛰️ 2026-09-09 12:36 #5'
+- name: 'V2Get🛰️ 2026-09-09 12:36 #4'
   type: vless
   server: 45.131.212.37
   port: 443
@@ -1104,14 +1111,7 @@ proxies:
     path: /stream/PANEL_ZEUS/cfcfe93432f4/loc-0
     headers:
       Host: y6zbhoehu0qs.ezaccess16d5fe0.workers.dev
-- name: 'V2Get🛰️ 2026-09-09 12:36 #6'
-  type: ss
-  server: 89.117.16.78
-  port: 41500
-  cipher: chacha20-ietf-poly1305
-  password: 3cb2bbb40f879cdc
-  udp: true
-- name: 'V2Get🛰️ 2026-09-09 12:36 #7'
+- name: 'V2Get🛰️ 2026-09-09 12:36 #5'
   type: vless
   server: lovesykun.cn
   port: 443
@@ -1125,7 +1125,7 @@ proxies:
     path: /15753/socket
     headers:
       Host: dews.irandoc.info
-- name: 'V2Get🛰️ 2026-09-09 12:36 #8'
+- name: 'V2Get🛰️ 2026-09-09 12:36 #6'
   type: trojan
   server: de9w7ehd8ejr9fyd-development-m0t2g.lucity.app
   port: 443
@@ -1143,6 +1143,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-09-09 02:36
   - V2Get🛰️ 2026-09-09 15:39
   - 'V2Get🛰️ 2026-09-09 15:39 #2'
   - 'V2Get🛰️ 2026-09-09 15:39 #3'
@@ -1216,7 +1218,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
   - 'V2Get🛰️ 2026-09-09 12:36 #3'
-  - 'V2Get🛰️ 2026-09-09 12:36 #4'
   - 'V2Get🛰️ 2026-09-09 12:38 #3'
   - 'V2Get🛰️ 2026-09-09 12:38 #4'
   - 'V2Get🛰️ 2026-09-09 12:38 #5'
@@ -1226,7 +1227,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 12:38 #9'
   - 'V2Get🛰️ 2026-09-09 12:38 #10'
   - 'V2Get🛰️ 2026-09-09 12:38 #11'
-  - 'V2Get🛰️ 2026-09-09 12:36 #5'
+  - 'V2Get🛰️ 2026-09-09 12:36 #4'
   - 'V2Get🛰️ 2026-09-09 12:37 #4'
   - 'V2Get🛰️ 2026-09-09 12:37 #5'
   - 'V2Get🛰️ 2026-09-09 12:37 #6'
@@ -1234,15 +1235,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 12:37 #8'
   - 'V2Get🛰️ 2026-09-09 12:37 #9'
   - 'V2Get🛰️ 2026-09-09 12:37 #10'
+  - 'V2Get🛰️ 2026-09-09 12:36 #5'
   - 'V2Get🛰️ 2026-09-09 12:36 #6'
-  - 'V2Get🛰️ 2026-09-09 12:36 #7'
-  - 'V2Get🛰️ 2026-09-09 12:36 #8'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-08 18:35
+  - V2Get🛰️ 2026-09-09 02:36
   - V2Get🛰️ 2026-09-09 15:39
   - 'V2Get🛰️ 2026-09-09 15:39 #2'
   - 'V2Get🛰️ 2026-09-09 15:39 #3'
@@ -1316,7 +1318,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-09 12:38 #2'
   - 'V2Get🛰️ 2026-09-09 12:36 #3'
-  - 'V2Get🛰️ 2026-09-09 12:36 #4'
   - 'V2Get🛰️ 2026-09-09 12:38 #3'
   - 'V2Get🛰️ 2026-09-09 12:38 #4'
   - 'V2Get🛰️ 2026-09-09 12:38 #5'
@@ -1326,7 +1327,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 12:38 #9'
   - 'V2Get🛰️ 2026-09-09 12:38 #10'
   - 'V2Get🛰️ 2026-09-09 12:38 #11'
-  - 'V2Get🛰️ 2026-09-09 12:36 #5'
+  - 'V2Get🛰️ 2026-09-09 12:36 #4'
   - 'V2Get🛰️ 2026-09-09 12:37 #4'
   - 'V2Get🛰️ 2026-09-09 12:37 #5'
   - 'V2Get🛰️ 2026-09-09 12:37 #6'
@@ -1334,9 +1335,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-09 12:37 #8'
   - 'V2Get🛰️ 2026-09-09 12:37 #9'
   - 'V2Get🛰️ 2026-09-09 12:37 #10'
+  - 'V2Get🛰️ 2026-09-09 12:36 #5'
   - 'V2Get🛰️ 2026-09-09 12:36 #6'
-  - 'V2Get🛰️ 2026-09-09 12:36 #7'
-  - 'V2Get🛰️ 2026-09-09 12:36 #8'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
