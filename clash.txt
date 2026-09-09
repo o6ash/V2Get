@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-09 16:37
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-09 15:38
   type: vless
   server: 178.105.61.61
@@ -221,21 +235,6 @@ proxies:
   alpn:
   - h2
 - name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: bg3.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg3.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk
-    short-id: 1be1bd931c98c84a
-  grpc-opts:
-    grpc-service-name: home.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
   server: bg5.univesalsrv.com
   port: 443
@@ -1195,6 +1194,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-09 16:37
   - V2Get🛰️ 2026-09-09 15:38
   - V2Get🛰️ 2026-09-09 19:39
   - 'V2Get🛰️ 2026-09-09 19:39 #2'
@@ -1213,7 +1213,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-09-02 01:19
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-05 14:28
@@ -1300,6 +1299,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-09 16:37
   - V2Get🛰️ 2026-09-09 15:38
   - V2Get🛰️ 2026-09-09 19:39
   - 'V2Get🛰️ 2026-09-09 19:39 #2'
@@ -1318,7 +1318,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-09-02 01:19
   - V2Get🛰️ 2026-09-05 11:27
   - V2Get🛰️ 2026-09-05 14:28
