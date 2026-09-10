@@ -12,6 +12,67 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-10 03:38
+  type: vless
+  server: 194.34.175.218
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: V2Get🛰️ 2026-09-10 14:39
+  type: vless
+  server: ru2.oshost.network
+  port: 80
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /api/v2/stream
+- name: V2Get🛰️ 2026-09-10 18:39
+  type: vless
+  server: 103.83.86.31
+  port: 8080
+  uuid: b511876c-e048-4653-a7e0-f3dc53f8a04f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-09-10 21:40
+  type: vless
+  server: 202.155.11.249
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  network: ws
+  tls: true
+  servername: cf2.rumedia-cdn.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf2.rumedia-cdn.com
+- name: 'V2Get🛰️ 2026-09-10 21:40 #2'
+  type: vless
+  server: 89.106.206.57
+  port: 443
+  uuid: f081b5e2-f3a0-4ef5-833b-1ea59e0797b6
+  udp: true
+  network: ws
+  tls: true
+  servername: fcs013.getdcz.me
+  client-fingerprint: chrome
+  ws-opts:
+    path: /6d2fed050b30
+    headers:
+      Host: fcs013.getdcz.me
 - name: V2Get🛰️ 2026-09-10 00:40
   type: vless
   server: s7s5gvec.selqora.ir
@@ -40,7 +101,7 @@ proxies:
   reality-opts:
     public-key: AnPwnnQy18IvfHehiAvVYp42GKu-6PpdNer4CrGcHhg
     short-id: a60d712cac1f9233
-- name: V2Get🛰️ 2026-09-10 21:40
+- name: 'V2Get🛰️ 2026-09-10 21:40 #3'
   type: vless
   server: dfc.tarnishedking.ir
   port: 8443
@@ -53,7 +114,7 @@ proxies:
   reality-opts:
     public-key: yYjMMztcB_8Ao3sp9QIP9ZF0XtsUGXawIBUGWeIvglc
     short-id: 130b94c8e5124031
-- name: 'V2Get🛰️ 2026-09-10 21:40 #2'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #4'
   type: vless
   server: 188.126.76.234
   port: 2087
@@ -66,7 +127,7 @@ proxies:
   reality-opts:
     public-key: 06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo
     short-id: 2b044515f70accef
-- name: 'V2Get🛰️ 2026-09-10 21:40 #3'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #5'
   type: vless
   server: 62.238.115.33
   port: 15617
@@ -79,7 +140,7 @@ proxies:
   reality-opts:
     public-key: zAjmD7mwpdYpvo5W5iZvSJAJ1xnuXnFNEZAQ-NoSXwg
     short-id: 8cf95f839e46a5c3
-- name: 'V2Get🛰️ 2026-09-10 21:40 #4'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #6'
   type: vless
   server: 167.233.128.58
   port: 8443
@@ -93,7 +154,7 @@ proxies:
   reality-opts:
     public-key: XPXUo59drUs9Jzr-xX5Q4DiW_DZ8v1ZN4rWiJ_R5ww4
     short-id: 67c88e27625cc625
-- name: 'V2Get🛰️ 2026-09-10 21:40 #5'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #7'
   type: vless
   server: 62.238.115.33
   port: 4006
@@ -171,7 +232,7 @@ proxies:
   reality-opts:
     public-key: Pxqqq-cbFslG1Wla5VAcqPBCpNJbwH1O3IyKQ45uD0M
     short-id: 99115a
-- name: 'V2Get🛰️ 2026-09-10 21:40 #6'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #8'
   type: vless
   server: 5.75.207.73
   port: 29524
@@ -190,7 +251,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-09-10 21:40 #7'
+- name: 'V2Get🛰️ 2026-09-10 21:40 #9'
   type: vless
   server: service-4be6b1-f7ea97-production.up.railway.app
   port: 443
@@ -240,81 +301,6 @@ proxies:
       Host: core-d79e53-5f2007-production.up.railway.app
 - name: V2Get🛰️ 2026-08-27 15:07
   type: vless
-  server: md4.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md4.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg
-    short-id: 8e07337954f9823f
-  grpc-opts:
-    grpc-service-name: hub.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
-  type: vless
-  server: 89.35.14.32
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md3.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ
-    short-id: 9a72d40f1ff882b3
-  grpc-opts:
-    grpc-service-name: stats.v2.PushService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #3'
-  type: vless
-  server: md2.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-    short-id: d36a38659ce106cb
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #4'
-  type: vless
-  server: 45.9.156.24
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0f0dh_FUju5cHgQcIwUjHvxQb9aIZ00p0kZRHeE7Ey4
-    short-id: 501ab3325b77e1ca
-  grpc-opts:
-    grpc-service-name: api.v2.PushService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #5'
-  type: vless
-  server: bg3.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg3.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk
-    short-id: 1be1bd931c98c84a
-  grpc-opts:
-    grpc-service-name: home.v1.ApiService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #6'
-  type: vless
   server: bg5.univesalsrv.com
   port: 443
   uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
@@ -328,7 +314,7 @@ proxies:
     short-id: 1a3102bb8e51399e
   grpc-opts:
     grpc-service-name: gw.v2.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #7'
+- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
   server: 45.9.156.27
   port: 443
@@ -961,31 +947,31 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-10 00:40
-  - 'V2Get🛰️ 2026-09-10 00:40 #2'
+  - V2Get🛰️ 2026-09-10 03:38
+  - V2Get🛰️ 2026-09-10 14:39
+  - V2Get🛰️ 2026-09-10 18:39
   - V2Get🛰️ 2026-09-10 21:40
   - 'V2Get🛰️ 2026-09-10 21:40 #2'
+  - V2Get🛰️ 2026-09-10 00:40
+  - 'V2Get🛰️ 2026-09-10 00:40 #2'
   - 'V2Get🛰️ 2026-09-10 21:40 #3'
   - 'V2Get🛰️ 2026-09-10 21:40 #4'
   - 'V2Get🛰️ 2026-09-10 21:40 #5'
+  - 'V2Get🛰️ 2026-09-10 21:40 #6'
+  - 'V2Get🛰️ 2026-09-10 21:40 #7'
   - V2Get🛰️ 2026-09-10 20:40
   - 'V2Get🛰️ 2026-09-10 20:40 #2'
   - 'V2Get🛰️ 2026-09-10 20:40 #3'
   - V2Get🛰️ 2026-09-06 18:31
   - V2Get🛰️ 2026-09-08 12:35
   - V2Get🛰️ 2026-09-10 15:39
-  - 'V2Get🛰️ 2026-09-10 21:40 #6'
+  - 'V2Get🛰️ 2026-09-10 21:40 #8'
   - V2Get🛰️ 2026-09-10 19:40
-  - 'V2Get🛰️ 2026-09-10 21:40 #7'
+  - 'V2Get🛰️ 2026-09-10 21:40 #9'
   - V2Get🛰️ 2026-09-10 21:39
   - 'V2Get🛰️ 2026-09-10 21:39 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - 'V2Get🛰️ 2026-08-27 15:07 #3'
-  - 'V2Get🛰️ 2026-08-27 15:07 #4'
-  - 'V2Get🛰️ 2026-08-27 15:07 #5'
-  - 'V2Get🛰️ 2026-08-27 15:07 #6'
-  - 'V2Get🛰️ 2026-08-27 15:07 #7'
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 20:12
   - V2Get🛰️ 2026-08-29 23:13
@@ -1042,31 +1028,31 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-10 00:40
-  - 'V2Get🛰️ 2026-09-10 00:40 #2'
+  - V2Get🛰️ 2026-09-10 03:38
+  - V2Get🛰️ 2026-09-10 14:39
+  - V2Get🛰️ 2026-09-10 18:39
   - V2Get🛰️ 2026-09-10 21:40
   - 'V2Get🛰️ 2026-09-10 21:40 #2'
+  - V2Get🛰️ 2026-09-10 00:40
+  - 'V2Get🛰️ 2026-09-10 00:40 #2'
   - 'V2Get🛰️ 2026-09-10 21:40 #3'
   - 'V2Get🛰️ 2026-09-10 21:40 #4'
   - 'V2Get🛰️ 2026-09-10 21:40 #5'
+  - 'V2Get🛰️ 2026-09-10 21:40 #6'
+  - 'V2Get🛰️ 2026-09-10 21:40 #7'
   - V2Get🛰️ 2026-09-10 20:40
   - 'V2Get🛰️ 2026-09-10 20:40 #2'
   - 'V2Get🛰️ 2026-09-10 20:40 #3'
   - V2Get🛰️ 2026-09-06 18:31
   - V2Get🛰️ 2026-09-08 12:35
   - V2Get🛰️ 2026-09-10 15:39
-  - 'V2Get🛰️ 2026-09-10 21:40 #6'
+  - 'V2Get🛰️ 2026-09-10 21:40 #8'
   - V2Get🛰️ 2026-09-10 19:40
-  - 'V2Get🛰️ 2026-09-10 21:40 #7'
+  - 'V2Get🛰️ 2026-09-10 21:40 #9'
   - V2Get🛰️ 2026-09-10 21:39
   - 'V2Get🛰️ 2026-09-10 21:39 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - 'V2Get🛰️ 2026-08-27 15:07 #3'
-  - 'V2Get🛰️ 2026-08-27 15:07 #4'
-  - 'V2Get🛰️ 2026-08-27 15:07 #5'
-  - 'V2Get🛰️ 2026-08-27 15:07 #6'
-  - 'V2Get🛰️ 2026-08-27 15:07 #7'
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-29 20:12
   - V2Get🛰️ 2026-08-29 23:13
