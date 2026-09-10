@@ -14,27 +14,28 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-10 23:41
   type: vless
+  server: 69.46.46.113
+  port: 443
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+  udp: true
+  network: ws
+  tls: true
+  servername: cloud-bae8f3-546ee8-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Default
+    headers:
+      Host: cloud-bae8f3-546ee8-production.up.railway.app
+- name: 'V2Get🛰️ 2026-09-10 23:41 #2'
+  type: vless
   server: 2.28.40.166
   port: 8686
   uuid: 80eb59ea-d992-456f-adf0-0ada38ffa062
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-26 17:07
-  type: vless
-  server: 89.35.14.30
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-    short-id: 221ba6174224ca5b
-  grpc-opts:
-    grpc-service-name: hub.v1.RelayService
 - name: V2Get🛰️ 2026-08-27 15:07
   type: vless
   server: 45.9.156.24
@@ -1227,7 +1228,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-10 23:41
-  - V2Get🛰️ 2026-08-26 17:07
+  - 'V2Get🛰️ 2026-09-10 23:41 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
@@ -1332,7 +1333,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-10 23:41
-  - V2Get🛰️ 2026-08-26 17:07
+  - 'V2Get🛰️ 2026-09-10 23:41 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - 'V2Get🛰️ 2026-08-27 15:07 #3'
