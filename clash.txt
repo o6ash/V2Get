@@ -12,33 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-09-10 10:39
+  type: vless
+  server: 193.148.253.210
+  port: 2080
+  uuid: ba036bad-6098-4736-ad6d-8707e9f2a50e
   udp: true
-  sni: global.fastly.com
+  network: httpupgrade
+  tls: true
+  servername: 193.148.253.210
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-10 10:39 #2'
+  type: trojan
+  server: 185.204.169.163
+  port: 8080
+  password: 3cun8ob5macv9vpj
+  udp: true
+  sni: 185.204.169.163
+  alpn:
+  - http/1.1
   network: ws
   ws-opts:
-    path: /de=mitivpn
+    path: /
     headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-10 15:11
+      Host: 185.204.169.163
+- name: 'V2Get🛰️ 2026-09-10 10:39 #3'
   type: vless
-  server: dey.lnmarketplace.net
+  server: 85.198.49.74
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  uuid: 41fb4d2d-08c9-45d9-9fd9-949e743d6632
   udp: true
   network: xhttp
   tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
+  servername: 185.204.169.163
+  client-fingerprint: chrome
   alpn:
   - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-09-08 13:35
   type: trojan
   server: 95.182.90.96
@@ -71,7 +83,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-10 10:39
+- name: 'V2Get🛰️ 2026-09-10 10:39 #4'
   type: vless
   server: 104.194.134.126
   port: 443
@@ -259,19 +271,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-05 14:28
-  type: vless
-  server: xnforo.ir
-  port: 443
-  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
-  udp: true
-  network: xhttp
-  tls: true
-  servername: chopin.paxr.ir
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 - name: 'V2Get🛰️ 2026-09-06 08:29 #2'
   type: vless
   server: 172.67.185.65
@@ -1150,12 +1149,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-09-10 10:39
+  - 'V2Get🛰️ 2026-09-10 10:39 #2'
+  - 'V2Get🛰️ 2026-09-10 10:39 #3'
   - V2Get🛰️ 2026-09-08 13:35
   - V2Get🛰️ 2026-09-09 15:39
   - V2Get🛰️ 2026-09-09 16:39
-  - V2Get🛰️ 2026-09-10 10:39
+  - 'V2Get🛰️ 2026-09-10 10:39 #4'
   - V2Get🛰️ 2026-09-10 00:39
   - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-10 02:38
@@ -1172,7 +1172,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-10 03:38
   - V2Get🛰️ 2026-09-10 10:38
-  - V2Get🛰️ 2026-09-05 14:28
   - 'V2Get🛰️ 2026-09-06 08:29 #2'
   - 'V2Get🛰️ 2026-09-06 08:29 #3'
   - 'V2Get🛰️ 2026-09-06 08:29 #4'
@@ -1251,12 +1250,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-09-10 10:39
+  - 'V2Get🛰️ 2026-09-10 10:39 #2'
+  - 'V2Get🛰️ 2026-09-10 10:39 #3'
   - V2Get🛰️ 2026-09-08 13:35
   - V2Get🛰️ 2026-09-09 15:39
   - V2Get🛰️ 2026-09-09 16:39
-  - V2Get🛰️ 2026-09-10 10:39
+  - 'V2Get🛰️ 2026-09-10 10:39 #4'
   - V2Get🛰️ 2026-09-10 00:39
   - V2Get🛰️ 2026-09-09 14:37
   - V2Get🛰️ 2026-09-10 02:38
@@ -1273,7 +1273,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-10 03:38
   - V2Get🛰️ 2026-09-10 10:38
-  - V2Get🛰️ 2026-09-05 14:28
   - 'V2Get🛰️ 2026-09-06 08:29 #2'
   - 'V2Get🛰️ 2026-09-06 08:29 #3'
   - 'V2Get🛰️ 2026-09-06 08:29 #4'
