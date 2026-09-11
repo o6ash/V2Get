@@ -12,6 +12,61 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-10 00:37
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 5ff561f7-e1f1-4280-84bf-ac640b4d10d1
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: fancii.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-10 00:38
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: b8908b7c-8e63-4d0b-a4da-8f47c6c9dd6a
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: Fijji.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-11 11:41
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-11 11:40
   type: trojan
   server: 151.101.56.6
@@ -55,39 +110,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-08 01:10
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: V2Get🛰️ 2026-08-08 19:10
-  type: ss
-  server: 216.105.168.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-  udp: true
-- name: V2Get🛰️ 2026-08-12 12:18
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: V2Get🛰️ 2026-08-13 05:18
-  type: vless
-  server: 185.136.12.190
-  port: 443
-  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
-  udp: true
-  network: xhttp
-  tls: true
-  servername: deu683.lackerdeu.org
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-13 15:19
   type: vless
   server: 104.21.84.47
@@ -1201,13 +1223,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-10 00:37
+  - V2Get🛰️ 2026-09-10 00:38
+  - V2Get🛰️ 2026-09-11 11:41
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-08-18 01:06
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
-  - V2Get🛰️ 2026-08-08 01:10
-  - V2Get🛰️ 2026-08-08 19:10
-  - V2Get🛰️ 2026-08-12 12:18
-  - V2Get🛰️ 2026-08-13 05:18
   - V2Get🛰️ 2026-08-13 15:19
   - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-20 14:14
@@ -1306,13 +1328,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-10 00:37
+  - V2Get🛰️ 2026-09-10 00:38
+  - V2Get🛰️ 2026-09-11 11:41
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-08-18 01:06
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
-  - V2Get🛰️ 2026-08-08 01:10
-  - V2Get🛰️ 2026-08-08 19:10
-  - V2Get🛰️ 2026-08-12 12:18
-  - V2Get🛰️ 2026-08-13 05:18
   - V2Get🛰️ 2026-08-13 15:19
   - V2Get🛰️ 2026-08-17 21:08
   - V2Get🛰️ 2026-08-20 14:14
