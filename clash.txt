@@ -12,30 +12,38 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:10
-  type: trojan
-  server: 172.67.149.60
+- name: V2Get🛰️ 2026-09-11 10:41
+  type: vless
+  server: s1b.syslogd.ir
   port: 443
-  password: humanity
+  uuid: e149f4db-ef8d-414b-9b5b-8757df2642ad
   udp: true
-  sni: www.ignitelimit.com
   network: ws
+  tls: true
+  servername: f4d5c2729dd475d0.zirabserver.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
   ws-opts:
-    path: /assignment
+    path: /pa-m-v2
     headers:
-      Host: www.ignitelimit.com
-- name: V2Get🛰️ 2026-08-07 02:43
-  type: trojan
-  server: render.com
+      Host: prx.zirabserver.ir
+- name: 'V2Get🛰️ 2026-09-11 10:41 #2'
+  type: vless
+  server: 69.46.46.114
   port: 443
-  password: humanity
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
   udp: true
-  sni: www.ignitelimit.com
   network: ws
+  tls: true
+  servername: cls-adf727hjid-62e3c1-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /assignment
+    path: /ws/Default
     headers:
-      Host: www.ignitelimit.com
+      Host: cls-adf727hjid-62e3c1-production.up.railway.app
 - name: V2Get🛰️ 2026-08-07 08:40
   type: trojan
   server: 188.114.97.7
@@ -1216,8 +1224,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:10
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-09-11 10:41
+  - 'V2Get🛰️ 2026-09-11 10:41 #2'
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-09-03 22:24
@@ -1321,8 +1329,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:10
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-09-11 10:41
+  - 'V2Get🛰️ 2026-09-11 10:41 #2'
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-09-03 22:24
