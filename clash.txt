@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-10 00:40
   type: vless
   server: 167.233.128.58
@@ -315,19 +330,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: fancii.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-09 01:36
-  type: vless
-  server: de-2.starsping.com
-  port: 443
-  uuid: 1577b744-8004-4eef-862c-8cae0cd27ab9
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.icloud.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk
-    short-id: a88550765b9956ee
 - name: V2Get🛰️ 2026-09-09 12:38
   type: vless
   server: 5.175.249.208
@@ -1215,6 +1217,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-10 00:40
   - V2Get🛰️ 2026-09-10 03:38
   - V2Get🛰️ 2026-09-11 13:41
@@ -1241,7 +1244,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
   - V2Get🛰️ 2026-09-10 00:38
   - V2Get🛰️ 2026-09-10 00:37
-  - V2Get🛰️ 2026-09-09 01:36
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-10 03:38 #2'
   - V2Get🛰️ 2026-09-10 08:38
@@ -1319,6 +1321,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-10 00:40
   - V2Get🛰️ 2026-09-10 03:38
   - V2Get🛰️ 2026-09-11 13:41
@@ -1345,7 +1348,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
   - V2Get🛰️ 2026-09-10 00:38
   - V2Get🛰️ 2026-09-10 00:37
-  - V2Get🛰️ 2026-09-09 01:36
   - V2Get🛰️ 2026-09-09 12:38
   - 'V2Get🛰️ 2026-09-10 03:38 #2'
   - V2Get🛰️ 2026-09-10 08:38
