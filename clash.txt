@@ -12,6 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 20:17
+  type: vless
+  server: 178.95.170.115
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /4bc027a44532
+- name: V2Get🛰️ 2026-09-02 01:21
+  type: vless
+  server: 2.27.205.59
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-09-03 20:25
+  type: vless
+  server: neth8.lunariai.ru
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: neth8.lunariai.ru
+- name: V2Get🛰️ 2026-09-10 23:40
+  type: ss
+  server: 83.171.225.55
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: ZjAxZ
+  udp: true
 - name: V2Get🛰️ 2026-09-11 19:42
   type: vless
   server: 38.207.178.88
@@ -229,13 +268,6 @@ proxies:
   reality-opts:
     public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
     short-id: f88610dd
-- name: V2Get🛰️ 2026-09-10 23:40
-  type: ss
-  server: 20.234.82.250
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: kYhF4RWqohTpbVau
-  udp: true
 - name: 'V2Get🛰️ 2026-09-11 19:42 #17'
   type: vless
   server: 16.61.187.149
@@ -522,34 +554,6 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-- name: V2Get🛰️ 2026-09-10 03:38
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: V2Get🛰️ 2026-09-10 21:41
-  type: trojan
-  server: 5.75.171.12
-  port: 1080
-  password: BbNnpOgc1j9WOaWoslbSyeob1r47IRHV
-  udp: true
-  sni: maps.google.com
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-10 23:40 #2'
-  type: vless
-  server: mine-host.mcufa.pro
-  port: 443
-  uuid: 5ba7b2fe-8738-4dd9-b2f4-c3450b6f32fe
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: on.mcufa.pro
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -P8DgKISSG4jnLuj6ihZDqZs1_zt-juBrhVhTylHiAo
 - name: V2Get🛰️ 2026-09-11 00:39
   type: vless
   server: nl4-6vkfut.vpvr4ib84nuv6hdkt.ru
@@ -1090,6 +1094,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-03 20:25
+  - V2Get🛰️ 2026-09-10 23:40
   - V2Get🛰️ 2026-09-11 19:42
   - 'V2Get🛰️ 2026-09-11 19:42 #2'
   - 'V2Get🛰️ 2026-09-11 19:42 #3'
@@ -1106,7 +1114,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 19:42 #14'
   - 'V2Get🛰️ 2026-09-11 19:42 #15'
   - 'V2Get🛰️ 2026-09-11 19:42 #16'
-  - V2Get🛰️ 2026-09-10 23:40
   - 'V2Get🛰️ 2026-09-11 19:42 #17'
   - 'V2Get🛰️ 2026-09-11 19:42 #18'
   - V2Get🛰️ 2026-09-11 12:41
@@ -1135,9 +1142,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 15:41 #5'
   - 'V2Get🛰️ 2026-09-11 15:41 #6'
   - 'V2Get🛰️ 2026-09-11 15:42 #2'
-  - V2Get🛰️ 2026-09-10 03:38
-  - V2Get🛰️ 2026-09-10 21:41
-  - 'V2Get🛰️ 2026-09-10 23:40 #2'
   - V2Get🛰️ 2026-09-11 00:39
   - 'V2Get🛰️ 2026-09-11 00:39 #2'
   - V2Get🛰️ 2026-09-11 08:40
@@ -1190,6 +1194,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 20:17
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-03 20:25
+  - V2Get🛰️ 2026-09-10 23:40
   - V2Get🛰️ 2026-09-11 19:42
   - 'V2Get🛰️ 2026-09-11 19:42 #2'
   - 'V2Get🛰️ 2026-09-11 19:42 #3'
@@ -1206,7 +1214,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 19:42 #14'
   - 'V2Get🛰️ 2026-09-11 19:42 #15'
   - 'V2Get🛰️ 2026-09-11 19:42 #16'
-  - V2Get🛰️ 2026-09-10 23:40
   - 'V2Get🛰️ 2026-09-11 19:42 #17'
   - 'V2Get🛰️ 2026-09-11 19:42 #18'
   - V2Get🛰️ 2026-09-11 12:41
@@ -1235,9 +1242,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-11 15:41 #5'
   - 'V2Get🛰️ 2026-09-11 15:41 #6'
   - 'V2Get🛰️ 2026-09-11 15:42 #2'
-  - V2Get🛰️ 2026-09-10 03:38
-  - V2Get🛰️ 2026-09-10 21:41
-  - 'V2Get🛰️ 2026-09-10 23:40 #2'
   - V2Get🛰️ 2026-09-11 00:39
   - 'V2Get🛰️ 2026-09-11 00:39 #2'
   - V2Get🛰️ 2026-09-11 08:40
