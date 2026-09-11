@@ -12,6 +12,17 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-10 12:39
+  type: vless
+  server: 66.90.104.42
+  port: 2083
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
 - name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
   server: 8.47.69.0
@@ -159,19 +170,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-26 13:05
-  type: vless
-  server: 172.67.161.136
-  port: 443
-  uuid: d713a25e-d96c-4755-94f4-9a0e0cd1ad68
-  udp: true
-  network: ws
-  tls: true
-  servername: bpb-PanEl-4e2C.SAkWra939.wORKErS.DEV
-  ws-opts:
-    path: /eyJqdW5rIjoiVndBTWp2RGsyc0g4TlgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed
-    headers:
-      Host: bpb-panel-4e2c.sakwra939.workers.dev
 - name: V2Get🛰️ 2026-08-26 17:07
   type: vless
   server: 89.35.14.30
@@ -943,6 +941,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-10 12:39
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-10 21:41
   - V2Get🛰️ 2026-09-11 11:42
@@ -954,7 +953,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-10 00:38
   - V2Get🛰️ 2026-09-11 11:40
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
-  - V2Get🛰️ 2026-08-26 13:05
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-04 04:24
@@ -1022,6 +1020,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-10 12:39
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-10 21:41
   - V2Get🛰️ 2026-09-11 11:42
@@ -1033,7 +1032,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-10 00:38
   - V2Get🛰️ 2026-09-11 11:40
   - 'V2Get🛰️ 2026-09-11 11:40 #2'
-  - V2Get🛰️ 2026-08-26 13:05
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-04 04:24
