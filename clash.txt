@@ -12,18 +12,64 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-11 21:43
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 193.148.253.210
+  port: 48130
+  uuid: 83e7a70d-13e1-4825-9972-67c358c71d0b
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-11 21:43 #2'
+  type: vmess
+  server: 193.148.253.210
+  port: 442
+  uuid: 83e7a70d-13e1-4825-9972-67c358c71d0b
+  alterId: 0
+  cipher: auto
   udp: true
   network: xhttp
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
+  servername: 193.148.253.210
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-11 21:43 #3'
+  type: vmess
+  server: 193.148.253.210
+  port: 443
+  uuid: 83e7a70d-13e1-4825-9972-67c358c71d0b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: httpupgrade
+  tls: true
+  servername: 193.148.253.210
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-11 21:43 #4'
+  type: trojan
+  server: 193.148.253.210
+  port: 2053
+  password: uawb5cvb5t4q8yg4
+  udp: true
+  sni: 193.148.253.210
   alpn:
-  - h2
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 193.148.253.210
+- name: 'V2Get🛰️ 2026-09-11 21:43 #5'
+  type: vless
+  server: 193.148.253.210
+  port: 8081
+  uuid: 83e7a70d-13e1-4825-9972-67c358c71d0b
+  udp: true
+  network: httpupgrade
+  tls: true
+  servername: 193.148.253.210
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: V2Get🛰️ 2026-09-11 12:41
   type: vless
   server: 178.83.226.142
@@ -32,56 +78,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-18 01:09
-  type: vless
-  server: 179.61.138.105
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-18 02:08
-  type: vless
-  server: 5.175.249.149
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-25 20:05
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 89.35.14.34
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
-    short-id: aa9884f2982b7d3c
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
 - name: V2Get🛰️ 2026-09-05 18:28
   type: vless
   server: 206.251.54.34
@@ -1287,12 +1283,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-11 21:43
+  - 'V2Get🛰️ 2026-09-11 21:43 #2'
+  - 'V2Get🛰️ 2026-09-11 21:43 #3'
+  - 'V2Get🛰️ 2026-09-11 21:43 #4'
+  - 'V2Get🛰️ 2026-09-11 21:43 #5'
   - V2Get🛰️ 2026-09-11 12:41
-  - V2Get🛰️ 2026-08-18 01:09
-  - V2Get🛰️ 2026-08-18 02:08
-  - V2Get🛰️ 2026-08-25 20:05
-  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-05 18:28
   - V2Get🛰️ 2026-09-09 12:38
   - V2Get🛰️ 2026-09-11 08:40
@@ -1389,12 +1385,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-11 21:43
+  - 'V2Get🛰️ 2026-09-11 21:43 #2'
+  - 'V2Get🛰️ 2026-09-11 21:43 #3'
+  - 'V2Get🛰️ 2026-09-11 21:43 #4'
+  - 'V2Get🛰️ 2026-09-11 21:43 #5'
   - V2Get🛰️ 2026-09-11 12:41
-  - V2Get🛰️ 2026-08-18 01:09
-  - V2Get🛰️ 2026-08-18 02:08
-  - V2Get🛰️ 2026-08-25 20:05
-  - V2Get🛰️ 2026-08-27 15:07
   - V2Get🛰️ 2026-09-05 18:28
   - V2Get🛰️ 2026-09-09 12:38
   - V2Get🛰️ 2026-09-11 08:40
