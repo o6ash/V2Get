@@ -12,36 +12,39 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-09-09 21:37
+  type: vmess
+  server: 165.140.217.2
   port: 443
-  password: MiTiVPN
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
+  network: tcp
+- name: V2Get🛰️ 2026-09-10 03:38
+  type: trojan
+  server: chat.openai.com
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /assignment
     headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
+      Host: www.calmlunch.com
+- name: V2Get🛰️ 2026-09-12 12:42
+  type: vless
+  server: 89.47.55.8
   port: 443
-  password: MiTiVPN
+  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+  network: xhttp
+  tls: true
+  servername: www.canon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
 - name: V2Get🛰️ 2026-09-12 10:43
   type: trojan
   server: 167.82.76.7
@@ -70,6 +73,18 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-12 12:42 #2'
+  type: vless
+  server: 170.168.99.8
+  port: 443
+  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
+  udp: true
+  network: xhttp
+  tls: true
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: skXBkyphBIt0TWVM0R5U3U-8UG0cuW00ONkaQpJ-OxU
 - name: V2Get🛰️ 2026-08-26 17:07
   type: vless
   server: 89.35.14.30
@@ -201,30 +216,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: Fijji.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-12 12:42
-  type: vless
-  server: 89.47.55.8
-  port: 443
-  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.canon.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
-- name: 'V2Get🛰️ 2026-09-12 12:42 #2'
-  type: vless
-  server: 170.168.99.8
-  port: 443
-  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
-  udp: true
-  network: xhttp
-  tls: true
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: skXBkyphBIt0TWVM0R5U3U-8UG0cuW00ONkaQpJ-OxU
 - name: 'V2Get🛰️ 2026-09-12 12:42 #3'
   type: vless
   server: 170.168.97.8
@@ -1132,10 +1123,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 21:37
+  - V2Get🛰️ 2026-09-10 03:38
+  - V2Get🛰️ 2026-09-12 12:42
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-26 20:06
   - V2Get🛰️ 2026-08-27 15:07
@@ -1145,8 +1138,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 16:14
   - V2Get🛰️ 2026-09-06 20:31
   - V2Get🛰️ 2026-09-10 00:38
-  - V2Get🛰️ 2026-09-12 12:42
-  - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - 'V2Get🛰️ 2026-09-12 12:42 #3'
   - V2Get🛰️ 2026-09-12 15:43
   - 'V2Get🛰️ 2026-09-12 15:43 #2'
@@ -1236,10 +1227,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-09 21:37
+  - V2Get🛰️ 2026-09-10 03:38
+  - V2Get🛰️ 2026-09-12 12:42
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - V2Get🛰️ 2026-08-26 17:07
   - V2Get🛰️ 2026-08-26 20:06
   - V2Get🛰️ 2026-08-27 15:07
@@ -1249,8 +1242,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-30 16:14
   - V2Get🛰️ 2026-09-06 20:31
   - V2Get🛰️ 2026-09-10 00:38
-  - V2Get🛰️ 2026-09-12 12:42
-  - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - 'V2Get🛰️ 2026-09-12 12:42 #3'
   - V2Get🛰️ 2026-09-12 15:43
   - 'V2Get🛰️ 2026-09-12 15:43 #2'
