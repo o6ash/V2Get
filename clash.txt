@@ -12,42 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-12 09:42
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 144.225.65.222
+  port: 50985
+  uuid: fe884a27-75f0-471e-baa2-51f7ee435d67
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-18 01:09
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-12 09:42 #2'
   type: vless
-  server: 179.61.138.105
+  server: 45.135.194.212
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: fe884a27-75f0-471e-baa2-51f7ee435d67
   udp: true
-  network: xhttp
+  network: tcp
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-18 02:08
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: XelFfSltHTuT57oHzTPWS5QpdANtvD87Kz-mYc0P9hQ
+    short-id: 8e9c512de94090a3
+- name: 'V2Get🛰️ 2026-09-12 09:42 #3'
   type: vless
-  server: 5.175.249.149
+  server: 144.225.65.222
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: fe884a27-75f0-471e-baa2-51f7ee435d67
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: yi72IQ0kccNU982xsatymgivg6i0KukrRcKUaJ1FARw
+    short-id: 3ca9cbdfb6af866a
 - name: V2Get🛰️ 2026-08-25 20:03
   type: vless
   server: rs1.univesalsrv.com
@@ -1239,9 +1238,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-18 01:09
-  - V2Get🛰️ 2026-08-18 02:08
+  - V2Get🛰️ 2026-09-12 09:42
+  - 'V2Get🛰️ 2026-09-12 09:42 #2'
+  - 'V2Get🛰️ 2026-09-12 09:42 #3'
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-27 02:06
   - V2Get🛰️ 2026-08-27 15:07
@@ -1342,9 +1341,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-18 01:09
-  - V2Get🛰️ 2026-08-18 02:08
+  - V2Get🛰️ 2026-09-12 09:42
+  - 'V2Get🛰️ 2026-09-12 09:42 #2'
+  - 'V2Get🛰️ 2026-09-12 09:42 #3'
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-27 02:06
   - V2Get🛰️ 2026-08-27 15:07
