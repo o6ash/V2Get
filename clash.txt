@@ -12,15 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-09 21:37
-  type: vmess
-  server: 165.140.217.2
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
+  password: MiTiVPN
   udp: true
-  network: tcp
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-12 12:42
   type: vless
   server: 89.47.55.8
@@ -1129,7 +1135,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-09 21:37
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-12 12:42
   - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - 'V2Get🛰️ 2026-09-12 12:42 #3'
@@ -1233,7 +1239,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-09 21:37
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-12 12:42
   - 'V2Get🛰️ 2026-09-12 12:42 #2'
   - 'V2Get🛰️ 2026-09-12 12:42 #3'
