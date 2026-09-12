@@ -12,18 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-02 01:21
   type: vless
-  server: static.lotussec.com
+  server: 2.27.205.59
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   udp: true
-  network: xhttp
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-09-12 10:42
+  type: vless
+  server: austria.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision-udp443
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-09-12 10:42 #2'
+  type: vless
+  server: austria-2.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision-udp443
+  tls: true
+  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-09-12 10:43
   type: trojan
   server: 151.101.56.101
@@ -38,31 +56,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-25 20:05
-  type: vless
-  server: 179.61.251.89
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-27 02:06
-  type: vless
-  server: b2n.ir
-  port: 443
-  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
-  udp: true
-  network: xhttp
-  tls: true
-  servername: chopin.kaftarkakolbesarwifi.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 - name: V2Get🛰️ 2026-08-27 11:06
   type: vless
   server: md5.univesalsrv.com
@@ -1082,10 +1075,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-12 10:42
+  - 'V2Get🛰️ 2026-09-12 10:42 #2'
   - V2Get🛰️ 2026-09-12 10:43
-  - V2Get🛰️ 2026-08-25 20:05
-  - V2Get🛰️ 2026-08-27 02:06
   - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
@@ -1188,10 +1181,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-12 10:42
+  - 'V2Get🛰️ 2026-09-12 10:42 #2'
   - V2Get🛰️ 2026-09-12 10:43
-  - V2Get🛰️ 2026-08-25 20:05
-  - V2Get🛰️ 2026-08-27 02:06
   - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
