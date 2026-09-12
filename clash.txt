@@ -12,39 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-09-11 22:42
+  type: vmess
+  server: 62.238.46.61
+  port: 28111
+  uuid: 95aaf72c-3e64-4b74-9e29-741f783720d7
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: ssl.fastly.com
+  network: tcp
+- name: V2Get🛰️ 2026-09-11 22:43
+  type: vless
+  server: app-906799-3e7ffb-production.up.railway.app
+  port: 443
+  uuid: 26285e31-991f-5ca8-816a-b076a03a1cfe
+  udp: true
+  network: ws
+  tls: true
+  servername: app-906799-3e7ffb-production.up.railway.app
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /ws/Hame
     headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-05 00:32
-  type: vmess
-  server: 165.140.216.142
+      Host: app-906799-3e7ffb-production.up.railway.app
+- name: 'V2Get🛰️ 2026-09-11 22:43 #2'
+  type: vless
+  server: 69.46.46.6
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
+  uuid: 26285e31-991f-5ca8-816a-b076a03a1cfe
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
+  network: ws
+  tls: true
+  servername: app-906799-3e7ffb-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Hame
+    headers:
+      Host: app-906799-3e7ffb-production.up.railway.app
 - name: V2Get🛰️ 2026-08-09 01:10
   type: vmess
   server: 165.154.195.38
@@ -1104,9 +1112,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-05 00:32
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-09-11 22:42
+  - V2Get🛰️ 2026-09-11 22:43
+  - 'V2Get🛰️ 2026-09-11 22:43 #2'
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-24 19:01
   - V2Get🛰️ 2026-08-29 16:11
@@ -1208,9 +1216,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-05 00:32
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-09-11 22:42
+  - V2Get🛰️ 2026-09-11 22:43
+  - 'V2Get🛰️ 2026-09-11 22:43 #2'
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-24 19:01
   - V2Get🛰️ 2026-08-29 16:11
