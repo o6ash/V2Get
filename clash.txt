@@ -12,32 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-13 18:46
   type: vless
-  server: static.lotussec.com
+  server: 91.99.7.24
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: 77330700-c6ce-424d-a8af-c36cf44fb4b0
   udp: true
-  network: xhttp
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-13 18:46 #2'
+  type: vless
+  server: asvenx4g-production.up.railway.app
+  port: 443
+  uuid: e4f47235-151b-2eef-605c-30ba8813f799
+  udp: true
+  network: ws
   tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-07-30 11:01
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.gossipglove.com
+  servername: asvenx4g-production.up.railway.app
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
-    path: /assignment
+    path: /ws/e4f47235-151b-2eef-605c-30ba8813f799
     headers:
-      Host: www.gossipglove.com
+      Host: asvenx4g-production.up.railway.app
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -1133,8 +1131,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-30 11:01
+  - V2Get🛰️ 2026-09-13 18:46
+  - 'V2Get🛰️ 2026-09-13 18:46 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-10 15:11
@@ -1235,8 +1233,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-07-30 11:01
+  - V2Get🛰️ 2026-09-13 18:46
+  - 'V2Get🛰️ 2026-09-13 18:46 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-10 15:11
