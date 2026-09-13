@@ -12,55 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-13 23:46
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
+  server: 104.143.223.217
+  port: 2085
+  uuid: c9373ff0-c263-4949-885f-366671f3c6a1
   udp: true
-  network: ws
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
   tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
-- name: 'V2Get🛰️ 2026-09-13 23:46 #2'
-  type: trojan
-  server: 91.107.249.32
-  port: 30141
-  password: '@Cooonfig'
-  udp: true
 - name: V2Get🛰️ 2026-09-12 10:43
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #3'
   type: trojan
   server: 151.101.56.101
   port: 443
@@ -74,7 +64,27 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-13 23:46 #2'
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
 - name: 'V2Get🛰️ 2026-09-13 23:46 #3'
+  type: trojan
+  server: 91.107.249.32
+  port: 30141
+  password: '@Cooonfig'
+  udp: true
+- name: 'V2Get🛰️ 2026-09-13 23:46 #4'
   type: vless
   server: 198.200.42.129
   port: 52977
@@ -87,17 +97,6 @@ proxies:
   reality-opts:
     public-key: X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4
     short-id: 0fb9c965
-- name: 'V2Get🛰️ 2026-09-13 23:46 #4'
-  type: vless
-  server: 104.143.223.217
-  port: 2085
-  uuid: c9373ff0-c263-4949-885f-366671f3c6a1
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: vless
-  tls: true
 - name: 'V2Get🛰️ 2026-09-13 23:46 #5'
   type: vless
   server: 77.110.117.199
@@ -1278,11 +1277,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-13 23:46
-  - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - 'V2Get🛰️ 2026-09-13 23:46 #3'
   - 'V2Get🛰️ 2026-09-13 23:46 #4'
   - 'V2Get🛰️ 2026-09-13 23:46 #5'
@@ -1384,11 +1383,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-13 23:46
-  - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - 'V2Get🛰️ 2026-09-13 23:46 #3'
   - 'V2Get🛰️ 2026-09-13 23:46 #4'
   - 'V2Get🛰️ 2026-09-13 23:46 #5'
