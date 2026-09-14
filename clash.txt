@@ -12,6 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-14 14:48
+  type: vless
+  server: 140.82.34.114
+  port: 25585
+  uuid: 8b84bbec-9a55-47c2-ac2e-03c41065e572
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-14 14:48 #2'
+  type: vless
+  server: 140.82.34.114
+  port: 25585
+  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-12 10:43
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-14 20:48
   type: ss
   server: dopr.rehan-iogsar.ir
@@ -64,7 +94,7 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
   udp: true
-- name: V2Get🛰️ 2026-09-12 10:43
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 167.82.76.7
   port: 443
@@ -78,20 +108,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-14 18:48
   type: vless
   server: 199.232.78.159
@@ -568,7 +584,7 @@ proxies:
   reality-opts:
     public-key: HRYczMIBQrJhl5NDDV7wECumCgz1qFqfY0Awavc7dyQ
     short-id: 9892bd4cd2
-- name: V2Get🛰️ 2026-09-14 14:48
+- name: 'V2Get🛰️ 2026-09-14 14:48 #3'
   type: vless
   server: 144.31.214.236
   port: 443
@@ -595,7 +611,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: LJsl2DgOqknCTlIUAJ9RIp5-2L5chl_sOycmWzmeWgY
-- name: 'V2Get🛰️ 2026-09-14 14:48 #2'
+- name: 'V2Get🛰️ 2026-09-14 14:48 #4'
   type: vless
   server: 150.241.72.43
   port: 443
@@ -623,7 +639,7 @@ proxies:
   reality-opts:
     public-key: xy8AHr_xZCNqFOuLq_t2fe4oLlrv5iu38uCQ1hUJ40w
     short-id: 954c99065465428d
-- name: 'V2Get🛰️ 2026-09-14 14:48 #3'
+- name: 'V2Get🛰️ 2026-09-14 14:48 #5'
   type: vless
   server: 31.76.4.75
   port: 443
@@ -642,14 +658,6 @@ proxies:
   server: 35.181.254.51
   port: 22223
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-14 14:48 #4'
-  type: vless
-  server: 140.82.34.114
-  port: 25585
-  uuid: 8b84bbec-9a55-47c2-ac2e-03c41065e572
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1055,14 +1063,6 @@ proxies:
   tls: true
   servername: austria-3.moritech.net
   client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-09-14 14:48 #5'
-  type: vless
-  server: 140.82.34.114
-  port: 25585
-  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-14 17:48 #2'
   type: vless
   server: 2.27.59.255
@@ -1289,12 +1289,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-14 14:48
+  - 'V2Get🛰️ 2026-09-14 14:48 #2'
+  - V2Get🛰️ 2026-09-12 10:43
   - V2Get🛰️ 2026-09-14 20:48
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-14 17:47
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-09-06 04:29
-  - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 18:48
   - V2Get🛰️ 2026-08-31 04:15
@@ -1332,13 +1334,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 20:48 #9'
   - 'V2Get🛰️ 2026-09-14 20:48 #10'
   - 'V2Get🛰️ 2026-09-14 20:48 #11'
-  - V2Get🛰️ 2026-09-14 14:48
-  - V2Get🛰️ 2026-09-14 16:47
-  - 'V2Get🛰️ 2026-09-14 14:48 #2'
-  - V2Get🛰️ 2026-09-14 18:47
   - 'V2Get🛰️ 2026-09-14 14:48 #3'
-  - V2Get🛰️ 2026-09-14 19:48
+  - V2Get🛰️ 2026-09-14 16:47
   - 'V2Get🛰️ 2026-09-14 14:48 #4'
+  - V2Get🛰️ 2026-09-14 18:47
+  - 'V2Get🛰️ 2026-09-14 14:48 #5'
+  - V2Get🛰️ 2026-09-14 19:48
   - V2Get🛰️ 2026-09-14 17:49
   - 'V2Get🛰️ 2026-09-14 19:48 #2'
   - 'V2Get🛰️ 2026-09-14 19:48 #3'
@@ -1370,7 +1371,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-14 17:48
   - 'V2Get🛰️ 2026-09-14 17:49 #3'
   - 'V2Get🛰️ 2026-09-14 17:49 #4'
-  - 'V2Get🛰️ 2026-09-14 14:48 #5'
   - 'V2Get🛰️ 2026-09-14 17:48 #2'
   - 'V2Get🛰️ 2026-09-14 17:47 #3'
   - V2Get🛰️ 2026-09-14 16:48
@@ -1395,12 +1395,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-14 14:48
+  - 'V2Get🛰️ 2026-09-14 14:48 #2'
+  - V2Get🛰️ 2026-09-12 10:43
   - V2Get🛰️ 2026-09-14 20:48
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-14 17:47
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-09-06 04:29
-  - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 18:48
   - V2Get🛰️ 2026-08-31 04:15
@@ -1438,13 +1440,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 20:48 #9'
   - 'V2Get🛰️ 2026-09-14 20:48 #10'
   - 'V2Get🛰️ 2026-09-14 20:48 #11'
-  - V2Get🛰️ 2026-09-14 14:48
-  - V2Get🛰️ 2026-09-14 16:47
-  - 'V2Get🛰️ 2026-09-14 14:48 #2'
-  - V2Get🛰️ 2026-09-14 18:47
   - 'V2Get🛰️ 2026-09-14 14:48 #3'
-  - V2Get🛰️ 2026-09-14 19:48
+  - V2Get🛰️ 2026-09-14 16:47
   - 'V2Get🛰️ 2026-09-14 14:48 #4'
+  - V2Get🛰️ 2026-09-14 18:47
+  - 'V2Get🛰️ 2026-09-14 14:48 #5'
+  - V2Get🛰️ 2026-09-14 19:48
   - V2Get🛰️ 2026-09-14 17:49
   - 'V2Get🛰️ 2026-09-14 19:48 #2'
   - 'V2Get🛰️ 2026-09-14 19:48 #3'
@@ -1476,7 +1477,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-14 17:48
   - 'V2Get🛰️ 2026-09-14 17:49 #3'
   - 'V2Get🛰️ 2026-09-14 17:49 #4'
-  - 'V2Get🛰️ 2026-09-14 14:48 #5'
   - 'V2Get🛰️ 2026-09-14 17:48 #2'
   - 'V2Get🛰️ 2026-09-14 17:47 #3'
   - V2Get🛰️ 2026-09-14 16:48
