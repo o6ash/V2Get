@@ -12,45 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-02 22:02
+- name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
-  server: 151.101.56.7
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-12 10:43
+  type: trojan
+  server: 151.101.56.101
   port: 443
   password: MiTiVPN
   udp: true
   sni: ssl.fastly.com
   alpn:
   - http/1.1
-  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-10 15:11
+      Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-12 14:43
   type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  server: 93.94.52.23
+  port: 40443
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
   udp: true
-  network: xhttp
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
+  servername: deepl.com
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
 - name: V2Get🛰️ 2026-08-18 02:08
   type: vless
   server: 5.175.249.149
@@ -304,7 +305,7 @@ proxies:
     short-id: b4e3b0b55b8dc75b
   grpc-opts:
     grpc-service-name: shiforgrpc
-- name: V2Get🛰️ 2026-09-12 10:43
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 199.232.78.101
   port: 443
@@ -1300,9 +1301,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-12 10:43
+  - V2Get🛰️ 2026-09-12 14:43
   - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-25 20:05
@@ -1322,7 +1323,7 @@ proxy-groups:
   - V2Get🛰️ 2026-09-09 08:37
   - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-11 21:41
-  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-12 12:43
   - 'V2Get🛰️ 2026-09-12 12:43 #2'
   - V2Get🛰️ 2026-09-13 17:45
@@ -1406,9 +1407,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-12 10:43
+  - V2Get🛰️ 2026-09-12 14:43
   - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-08-25 20:03
   - V2Get🛰️ 2026-08-25 20:05
@@ -1428,7 +1429,7 @@ proxy-groups:
   - V2Get🛰️ 2026-09-09 08:37
   - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-11 21:41
-  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-12 12:43
   - 'V2Get🛰️ 2026-09-12 12:43 #2'
   - V2Get🛰️ 2026-09-13 17:45
