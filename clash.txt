@@ -12,36 +12,58 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-09-15 02:48
+  type: vless
+  server: 88.99.125.243
+  port: 80
+  uuid: 45933928-a410-4206-bd59-01016da08817
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  skip-cert-verify: true
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
-    headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 00:53
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MITIVPN
+    path: /
+- name: 'V2Get🛰️ 2026-09-15 02:48 #2'
+  type: vless
+  server: media-dan1.team-pluss.ir
+  port: 12345
+  uuid: 17dee937-7ba5-45d8-8564-b27466317f58
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sheets.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw
+    short-id: 2b368990a94e8cbb
+- name: 'V2Get🛰️ 2026-09-15 02:48 #3'
+  type: vless
+  server: 207.241.172.98
+  port: 12345
+  uuid: abc83c2b-9b3b-438f-9145-192dd4d85cbb
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sheets.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw
+    short-id: 2b368990a94e8cbb
+- name: 'V2Get🛰️ 2026-09-15 02:48 #4'
+  type: vless
+  server: sql.popmintxo.cc
+  port: 443
+  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
+    short-id: b558b9305a0b
 - name: V2Get🛰️ 2026-09-15 01:48
   type: vless
   server: sodoxi-trebegrit.duskshore.art
@@ -1138,34 +1160,6 @@ proxies:
   skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-14 19:48 #3'
   type: vless
-  server: al1.h1cloud.net
-  port: 25235
-  uuid: 10a70ad2-bd6f-49f0-b776-5f2966b03e02
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: Bor45w9BuqHH4nmDfMuyGIn3o2VPlP48PfjiaKOXBXk
-    short-id: 2100c53b9471100c
-- name: 'V2Get🛰️ 2026-09-14 19:48 #4'
-  type: vless
-  server: 103.112.68.143
-  port: 8443
-  uuid: 8f409f4e-61ef-4550-9b0a-c95d11473f12
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: antichka.zanet.baby
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: IEDz3rVrctt3f7I1dJ6XRLspNm7jql7khrHc1on8TnA
-    short-id: f3acddbb
-- name: 'V2Get🛰️ 2026-09-14 19:48 #5'
-  type: vless
   server: 194.76.155.80
   port: 40443
   uuid: 588456a5-f724-46a7-a08b-5d336d9f8f56
@@ -1184,8 +1178,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-15 02:48
+  - 'V2Get🛰️ 2026-09-15 02:48 #2'
+  - 'V2Get🛰️ 2026-09-15 02:48 #3'
+  - 'V2Get🛰️ 2026-09-15 02:48 #4'
   - V2Get🛰️ 2026-09-15 01:48
   - 'V2Get🛰️ 2026-09-15 01:48 #2'
   - 'V2Get🛰️ 2026-09-15 01:48 #3'
@@ -1280,16 +1276,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 20:48 #11'
   - 'V2Get🛰️ 2026-09-14 19:48 #2'
   - 'V2Get🛰️ 2026-09-14 19:48 #3'
-  - 'V2Get🛰️ 2026-09-14 19:48 #4'
-  - 'V2Get🛰️ 2026-09-14 19:48 #5'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-15 02:48
+  - 'V2Get🛰️ 2026-09-15 02:48 #2'
+  - 'V2Get🛰️ 2026-09-15 02:48 #3'
+  - 'V2Get🛰️ 2026-09-15 02:48 #4'
   - V2Get🛰️ 2026-09-15 01:48
   - 'V2Get🛰️ 2026-09-15 01:48 #2'
   - 'V2Get🛰️ 2026-09-15 01:48 #3'
@@ -1384,8 +1380,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 20:48 #11'
   - 'V2Get🛰️ 2026-09-14 19:48 #2'
   - 'V2Get🛰️ 2026-09-14 19:48 #3'
-  - 'V2Get🛰️ 2026-09-14 19:48 #4'
-  - 'V2Get🛰️ 2026-09-14 19:48 #5'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
