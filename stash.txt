@@ -12,34 +12,39 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-08-31 20:17
+  type: vless
+  server: 178.95.170.115
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
+  network: ws
   skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /assignment
-- name: V2Get🛰️ 2026-09-12 10:43
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTiVPN
+    path: /4bc027a44532
+- name: V2Get🛰️ 2026-09-14 12:47
+  type: vmess
+  server: 65.109.184.159
+  port: 8080
+  uuid: a6f758f0-0a40-4844-b4d5-e42d71a5da64
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
+  network: tcp
+- name: V2Get🛰️ 2026-09-14 11:47
+  type: vless
+  server: 107.161.174.26
+  port: 443
+  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: books.blackbigdog.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
+- name: V2Get🛰️ 2026-09-12 10:43
   type: trojan
   server: 151.101.56.101
   port: 443
@@ -53,7 +58,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-14 12:47
+- name: 'V2Get🛰️ 2026-09-14 12:47 #2'
   type: vless
   server: 51.194.251.114
   port: 61592
@@ -77,7 +82,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: V2Get🛰️ 2026-09-14 11:47
+- name: 'V2Get🛰️ 2026-09-14 11:47 #2'
   type: vless
   server: 31.130.155.114
   port: 443
@@ -91,7 +96,7 @@ proxies:
   reality-opts:
     public-key: aySWi4vGm4__zU_RFNtym1AyjtfY0AX9WoigfVG7hWA
     short-id: 6c183039c8fe2676
-- name: 'V2Get🛰️ 2026-09-14 11:47 #2'
+- name: 'V2Get🛰️ 2026-09-14 11:47 #3'
   type: vless
   server: 193.35.17.133
   port: 8443
@@ -105,7 +110,7 @@ proxies:
   reality-opts:
     public-key: wjBCPpdDXJxQhYabEsKQrBH7umpeZYnMOHMviAus1V8
     short-id: 086007
-- name: 'V2Get🛰️ 2026-09-14 11:47 #3'
+- name: 'V2Get🛰️ 2026-09-14 11:47 #4'
   type: vless
   server: 194.87.59.17
   port: 2085
@@ -116,7 +121,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: 'V2Get🛰️ 2026-09-14 11:47 #4'
+- name: 'V2Get🛰️ 2026-09-14 11:47 #5'
   type: vless
   server: 194.87.59.12
   port: 2085
@@ -127,7 +132,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: 'V2Get🛰️ 2026-09-14 11:47 #5'
+- name: 'V2Get🛰️ 2026-09-14 11:47 #6'
   type: vless
   server: 185.87.24.4
   port: 2085
@@ -138,19 +143,6 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: 'V2Get🛰️ 2026-09-14 11:47 #6'
-  type: vless
-  server: 107.161.174.26
-  port: 443
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: books.blackbigdog.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
 - name: V2Get🛰️ 2026-09-14 09:46
   type: vless
   server: 2.29.22.151
@@ -1096,12 +1088,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-14 12:47
-  - V2Get🛰️ 2026-09-14 10:48
   - V2Get🛰️ 2026-09-14 11:47
+  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-14 12:47 #2'
+  - V2Get🛰️ 2026-09-14 10:48
   - 'V2Get🛰️ 2026-09-14 11:47 #2'
   - 'V2Get🛰️ 2026-09-14 11:47 #3'
   - 'V2Get🛰️ 2026-09-14 11:47 #4'
@@ -1193,12 +1185,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-08-31 20:17
   - V2Get🛰️ 2026-09-14 12:47
-  - V2Get🛰️ 2026-09-14 10:48
   - V2Get🛰️ 2026-09-14 11:47
+  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-14 12:47 #2'
+  - V2Get🛰️ 2026-09-14 10:48
   - 'V2Get🛰️ 2026-09-14 11:47 #2'
   - 'V2Get🛰️ 2026-09-14 11:47 #3'
   - 'V2Get🛰️ 2026-09-14 11:47 #4'
