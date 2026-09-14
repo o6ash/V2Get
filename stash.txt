@@ -12,18 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:10
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-09-11 21:41
+  type: vless
+  server: 31.56.184.132
+  port: 8443
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
   udp: true
-  sni: www.ignitelimit.com
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
+    short-id: b4e3b0b55b8dc75b
+  grpc-opts:
+    grpc-service-name: shiforgrpc
+- name: V2Get🛰️ 2026-09-14 17:47
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
+  udp: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: /assignment
+    path: /?TELEGRAMConfigvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------
     headers:
-      Host: www.ignitelimit.com
+      Host: c12.com
+- name: 'V2Get🛰️ 2026-09-14 17:47 #2'
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -246,21 +277,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-14 17:47
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAMConfigvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------
-    headers:
-      Host: c12.com
-- name: 'V2Get🛰️ 2026-09-14 17:47 #2'
+- name: 'V2Get🛰️ 2026-09-14 17:47 #3'
   type: vless
   server: 146.75.119.82
   port: 80
@@ -272,20 +289,6 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: 'V2Get🛰️ 2026-09-14 17:47 #3'
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: bdaf42dd-f75b-4594-d5f8-51c0feeb8406
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: V2Get🛰️ 2026-09-14 16:48
   type: vless
   server: w7tjfftjdt.vk-maps.net
@@ -1080,7 +1083,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:10
+  - V2Get🛰️ 2026-09-11 21:41
+  - V2Get🛰️ 2026-09-14 17:47
+  - 'V2Get🛰️ 2026-09-14 17:47 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-19 15:09
@@ -1099,8 +1104,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 17:49 #3'
   - V2Get🛰️ 2026-09-14 12:48
   - 'V2Get🛰️ 2026-09-14 14:48 #2'
-  - V2Get🛰️ 2026-09-14 17:47
-  - 'V2Get🛰️ 2026-09-14 17:47 #2'
   - 'V2Get🛰️ 2026-09-14 17:47 #3'
   - V2Get🛰️ 2026-09-14 16:48
   - 'V2Get🛰️ 2026-09-14 16:48 #2'
@@ -1169,7 +1172,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:10
+  - V2Get🛰️ 2026-09-11 21:41
+  - V2Get🛰️ 2026-09-14 17:47
+  - 'V2Get🛰️ 2026-09-14 17:47 #2'
   - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-19 15:09
@@ -1188,8 +1193,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 17:49 #3'
   - V2Get🛰️ 2026-09-14 12:48
   - 'V2Get🛰️ 2026-09-14 14:48 #2'
-  - V2Get🛰️ 2026-09-14 17:47
-  - 'V2Get🛰️ 2026-09-14 17:47 #2'
   - 'V2Get🛰️ 2026-09-14 17:47 #3'
   - V2Get🛰️ 2026-09-14 16:48
   - 'V2Get🛰️ 2026-09-14 16:48 #2'
