@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-14 14:47
   type: vless
   server: 15.236.17.252
@@ -21,20 +36,6 @@ proxies:
   network: tcp
   skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-12 10:43
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 167.82.76.7
   port: 443
@@ -48,7 +49,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #3'
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 151.101.56.101
   port: 443
@@ -1088,10 +1089,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-14 14:47
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
   - V2Get🛰️ 2026-09-12 14:43
   - V2Get🛰️ 2026-09-13 22:46
   - V2Get🛰️ 2026-09-13 23:46
@@ -1182,10 +1183,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-02 22:02
   - V2Get🛰️ 2026-09-14 14:47
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
   - V2Get🛰️ 2026-09-12 14:43
   - V2Get🛰️ 2026-09-13 22:46
   - V2Get🛰️ 2026-09-13 23:46
