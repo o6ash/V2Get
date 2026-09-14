@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-14 09:47
+  type: vless
+  server: 147.182.157.72
+  port: 1161
+  uuid: baeb2038-827e-f3fb-432b-18b49e5dd676
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-14 09:47 #2'
+  type: vless
+  server: 147.182.157.72
+  port: 8039
+  uuid: baeb2038-827e-f3fb-432b-18b49e5dd676
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-09-14 09:46
   type: vless
   server: 2.29.22.151
@@ -128,20 +150,6 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: grpc
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-14 02:46
   type: vless
   server: 146.75.119.82
@@ -176,7 +184,7 @@ proxies:
   reality-opts:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
-- name: 'V2Get🛰️ 2026-09-12 10:43 #3'
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 167.82.76.7
   port: 443
@@ -204,19 +212,6 @@ proxies:
   password: aWmF8gJdGU
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-11 15:42
-  type: vless
-  server: 143.246.193.215
-  port: 443
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.blocket.se
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
 - name: V2Get🛰️ 2026-09-12 11:43
   type: vless
   server: themeforest.net
@@ -1085,6 +1080,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-14 09:47
+  - 'V2Get🛰️ 2026-09-14 09:47 #2'
   - V2Get🛰️ 2026-09-14 09:46
   - 'V2Get🛰️ 2026-09-14 09:46 #2'
   - 'V2Get🛰️ 2026-09-14 09:46 #3'
@@ -1096,14 +1093,12 @@ proxy-groups:
   - V2Get🛰️ 2026-09-13 23:46
   - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - 'V2Get🛰️ 2026-09-13 23:46 #3'
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 02:46
   - 'V2Get🛰️ 2026-09-14 02:46 #2'
   - 'V2Get🛰️ 2026-09-14 02:46 #3'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 08:47
   - V2Get🛰️ 2026-09-14 08:46
-  - V2Get🛰️ 2026-09-11 15:42
   - V2Get🛰️ 2026-09-12 11:43
   - V2Get🛰️ 2026-09-13 01:44
   - 'V2Get🛰️ 2026-09-13 01:44 #2'
@@ -1178,6 +1173,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-14 09:47
+  - 'V2Get🛰️ 2026-09-14 09:47 #2'
   - V2Get🛰️ 2026-09-14 09:46
   - 'V2Get🛰️ 2026-09-14 09:46 #2'
   - 'V2Get🛰️ 2026-09-14 09:46 #3'
@@ -1189,14 +1186,12 @@ proxy-groups:
   - V2Get🛰️ 2026-09-13 23:46
   - 'V2Get🛰️ 2026-09-13 23:46 #2'
   - 'V2Get🛰️ 2026-09-13 23:46 #3'
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 02:46
   - 'V2Get🛰️ 2026-09-14 02:46 #2'
   - 'V2Get🛰️ 2026-09-14 02:46 #3'
-  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-14 08:47
   - V2Get🛰️ 2026-09-14 08:46
-  - V2Get🛰️ 2026-09-11 15:42
   - V2Get🛰️ 2026-09-12 11:43
   - V2Get🛰️ 2026-09-13 01:44
   - 'V2Get🛰️ 2026-09-13 01:44 #2'
