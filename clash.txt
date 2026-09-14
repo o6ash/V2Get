@@ -12,62 +12,105 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vless
-  server: 194.55.189.249
-  port: 40443
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  udp: true
-  network: tcp
-  tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-    short-id: aae8
-- name: V2Get🛰️ 2026-08-31 10:16
-  type: vless
-  server: 156.67.63.231
+- name: V2Get🛰️ 2026-08-02 22:02
+  type: trojan
+  server: 151.101.56.7
   port: 443
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  password: MiTiVPN
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sync-bridge.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-- name: V2Get🛰️ 2026-09-06 19:31
-  type: vless
-  server: 192.145.31.5
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-03 10:54
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-12 10:43
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-12 10:43 #3'
+  type: trojan
+  server: 151.101.56.101
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-13 21:45
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-09-07 16:32
-  type: ss
-  server: 141.95.29.163
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
-  udp: true
-- name: V2Get🛰️ 2026-09-12 14:43
+    headers:
+      Host: c12.com
+- name: V2Get🛰️ 2026-09-13 22:46
   type: vless
-  server: 93.94.52.23
-  port: 40443
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  server: 199.232.78.159
+  port: 443
+  uuid: 404aa1e8-4935-4919-8b74-60e88b065cf4
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-14 13:47
   type: vless
   server: lg1s.plasmoon.ir
@@ -82,34 +125,6 @@ proxies:
   reality-opts:
     public-key: 33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM
     short-id: 3e5cba1bd6eb6221
-- name: V2Get🛰️ 2026-09-02 19:23
-  type: vless
-  server: 72.56.78.50
-  port: 443
-  uuid: fee2cdd8-55d1-4c5b-a67a-cfde8d45eed0
-  udp: true
-  network: grpc
-  tls: true
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: huH_8n0Dfk4iolIkzrc-qET8ySHWgZAr-i6K6lr6xSs
-    short-id: 375838bc17c0
-  grpc-opts:
-    grpc-service-name: ''
-- name: V2Get🛰️ 2026-09-12 12:43
-  type: vless
-  server: 77.233.213.106
-  port: 40443
-  uuid: 279a8eef-898f-44ef-b4f5-67a494f4b542
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deepl.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M
-    short-id: 5b98
 - name: V2Get🛰️ 2026-09-13 19:46
   type: vless
   server: 194.59.245.250
@@ -1191,14 +1206,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-31 10:16
-  - V2Get🛰️ 2026-09-06 19:31
-  - V2Get🛰️ 2026-09-07 16:32
-  - V2Get🛰️ 2026-09-12 14:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - V2Get🛰️ 2026-09-13 21:45
+  - V2Get🛰️ 2026-09-13 22:46
   - V2Get🛰️ 2026-09-14 13:47
-  - V2Get🛰️ 2026-09-02 19:23
-  - V2Get🛰️ 2026-09-12 12:43
   - V2Get🛰️ 2026-09-13 19:46
   - 'V2Get🛰️ 2026-09-14 13:47 #2'
   - 'V2Get🛰️ 2026-09-14 13:47 #3'
@@ -1293,14 +1308,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-31 10:16
-  - V2Get🛰️ 2026-09-06 19:31
-  - V2Get🛰️ 2026-09-07 16:32
-  - V2Get🛰️ 2026-09-12 14:43
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-09-12 10:43
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - 'V2Get🛰️ 2026-09-12 10:43 #3'
+  - V2Get🛰️ 2026-09-13 21:45
+  - V2Get🛰️ 2026-09-13 22:46
   - V2Get🛰️ 2026-09-14 13:47
-  - V2Get🛰️ 2026-09-02 19:23
-  - V2Get🛰️ 2026-09-12 12:43
   - V2Get🛰️ 2026-09-13 19:46
   - 'V2Get🛰️ 2026-09-14 13:47 #2'
   - 'V2Get🛰️ 2026-09-14 13:47 #3'
