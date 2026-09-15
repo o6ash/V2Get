@@ -12,62 +12,56 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
+- name: V2Get🛰️ 2026-09-14 22:48
   type: trojan
-  server: 151.101.56.7
+  server: 199.232.78.101
   port: 443
   password: MITIVPN
   udp: true
   sni: ssl.fastly.com
   alpn:
   - http/1.1
-  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=d--ee
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-03 00:53
-  type: trojan
+      Host: mitivpn---ss--s---mitivpn-11s.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-15 20:50
+  type: vless
   server: 199.232.78.160
   port: 443
-  password: MITIVPN
+  uuid: f58b0a1f-5a89-45eb-84e3-3e47c8157bb2
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-20 22:13
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.fastly.com
+  client-fingerprint: qq
+- name: 'V2Get🛰️ 2026-09-15 20:50 #2'
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
+  server: 199.232.79.166
   port: 443
-  password: humanity
+  uuid: f58b0a1f-5a89-45eb-84e3-3e47c8157bb2
   udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: V2Get🛰️ 2026-09-14 22:48
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.fastly.com
+  client-fingerprint: ios
+- name: 'V2Get🛰️ 2026-09-15 20:50 #3'
+  type: vless
+  server: 185.26.51.228
+  port: 3389
+  uuid: 5ceca91f-cff4-4bb7-a0bc-d1d019daf3b8
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: x_Xq8H5s1Vg-hKv9IAsMCt5It6tXCF13SAe9ffafW2g
+    short-id: 8110ac36ab75
+- name: 'V2Get🛰️ 2026-09-14 22:48 #2'
   type: trojan
   server: 167.82.76.7
   port: 443
@@ -1051,11 +1045,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-03 00:53
-  - V2Get🛰️ 2026-08-20 22:13
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-09-15 20:50
+  - 'V2Get🛰️ 2026-09-15 20:50 #2'
+  - 'V2Get🛰️ 2026-09-15 20:50 #3'
+  - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-15 01:48
   - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 14:51
@@ -1144,11 +1138,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-08-03 00:53
-  - V2Get🛰️ 2026-08-20 22:13
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-09-15 20:50
+  - 'V2Get🛰️ 2026-09-15 20:50 #2'
+  - 'V2Get🛰️ 2026-09-15 20:50 #3'
+  - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-15 01:48
   - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 14:51
