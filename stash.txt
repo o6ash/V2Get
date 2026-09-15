@@ -12,6 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-13 23:46
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-14 03:46
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: V2Get🛰️ 2026-09-15 10:49
   type: vless
   server: bestproj-production-06a4.up.railway.app
@@ -133,51 +173,6 @@ proxies:
     headers:
       Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: md1.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY
-    short-id: 221ba6174224ca5b
-  grpc-opts:
-    grpc-service-name: hub.v1.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
-  type: vless
-  server: 89.35.14.31
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o
-    short-id: d36a38659ce106cb
-  grpc-opts:
-    grpc-service-name: hub.v1.SyncService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #3'
-  type: vless
-  server: 45.9.156.42
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
-    short-id: 1a3102bb8e51399e
-  grpc-opts:
-    grpc-service-name: gw.v2.RelayService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #4'
   type: vless
   server: 150.40.126.24
   port: 443
@@ -1060,6 +1055,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-13 23:46
+  - V2Get🛰️ 2026-09-14 03:46
   - V2Get🛰️ 2026-09-15 10:49
   - 'V2Get🛰️ 2026-09-15 10:49 #2'
   - 'V2Get🛰️ 2026-09-15 10:49 #3'
@@ -1069,9 +1067,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-14 22:48
   - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - 'V2Get🛰️ 2026-08-27 15:07 #3'
-  - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - V2Get🛰️ 2026-08-28 20:09
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-30 16:14
@@ -1150,6 +1145,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-13 23:46
+  - V2Get🛰️ 2026-09-14 03:46
   - V2Get🛰️ 2026-09-15 10:49
   - 'V2Get🛰️ 2026-09-15 10:49 #2'
   - 'V2Get🛰️ 2026-09-15 10:49 #3'
@@ -1159,9 +1157,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-14 22:48
   - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - 'V2Get🛰️ 2026-08-27 15:07 #3'
-  - 'V2Get🛰️ 2026-08-27 15:07 #4'
   - V2Get🛰️ 2026-08-28 20:09
   - V2Get🛰️ 2026-08-29 19:14
   - V2Get🛰️ 2026-08-30 16:14
