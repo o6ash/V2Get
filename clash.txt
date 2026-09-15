@@ -12,30 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 11:43
+- name: V2Get🛰️ 2026-09-15 23:51
   type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  server: 95.179.169.44
+  port: 53224
+  uuid: 5f00ca4e-3f26-473e-ad1c-414112abb0a3
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-07 02:43
-  type: trojan
-  server: render.com
-  port: 443
-  password: humanity
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-15 23:51 #2'
+  type: vless
+  server: 95.179.169.44
+  port: 53224
+  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
   udp: true
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-19 15:09
   type: trojan
   server: 130.250.137.171
@@ -1085,8 +1077,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-09-15 23:51
+  - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-09-15 23:50
   - 'V2Get🛰️ 2026-09-15 23:50 #2'
@@ -1184,8 +1176,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 11:43
-  - V2Get🛰️ 2026-08-07 02:43
+  - V2Get🛰️ 2026-09-15 23:51
+  - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-08-19 15:09
   - V2Get🛰️ 2026-09-15 23:50
   - 'V2Get🛰️ 2026-09-15 23:50 #2'
