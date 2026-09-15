@@ -12,20 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-14 22:48
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MITIVPN
+- name: V2Get🛰️ 2026-08-17 21:07
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: ssl.fastly.com
+  network: tcp
+- name: V2Get🛰️ 2026-09-06 13:31
+  type: vless
+  server: pl3.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
   alpn:
-  - http/1.1
+  - h2
+- name: V2Get🛰️ 2026-09-15 15:49
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
+  udp: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: mitivpn---ss--s---mitivpn-11s.global.ssl.fastly.net
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-15 20:50
   type: vless
   server: 199.232.78.160
@@ -61,20 +82,6 @@ proxies:
   reality-opts:
     public-key: x_Xq8H5s1Vg-hKv9IAsMCt5It6tXCF13SAe9ffafW2g
     short-id: 8110ac36ab75
-- name: 'V2Get🛰️ 2026-09-14 22:48 #2'
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-15 01:48
   type: vless
   server: 91.98.102.240
@@ -379,20 +386,6 @@ proxies:
   reality-opts:
     public-key: lkMM9FR-o7Z6NwmmQVK8rLhCQR1mbJTgjY_0upeS2SY
     short-id: 0436301fb0178b
-- name: V2Get🛰️ 2026-09-15 15:49
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: 'V2Get🛰️ 2026-09-15 18:50 #3'
   type: vless
   server: nls2.plasmoon.ir
@@ -1045,11 +1038,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-15 15:49
   - V2Get🛰️ 2026-09-15 20:50
   - 'V2Get🛰️ 2026-09-15 20:50 #2'
   - 'V2Get🛰️ 2026-09-15 20:50 #3'
-  - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-15 01:48
   - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 14:51
@@ -1075,7 +1069,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 19:50 #18'
   - 'V2Get🛰️ 2026-09-15 19:50 #19'
   - 'V2Get🛰️ 2026-09-15 18:50 #2'
-  - V2Get🛰️ 2026-09-15 15:49
   - 'V2Get🛰️ 2026-09-15 18:50 #3'
   - 'V2Get🛰️ 2026-09-15 18:50 #4'
   - V2Get🛰️ 2026-09-15 17:49
@@ -1138,11 +1131,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-08-17 21:07
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-15 15:49
   - V2Get🛰️ 2026-09-15 20:50
   - 'V2Get🛰️ 2026-09-15 20:50 #2'
   - 'V2Get🛰️ 2026-09-15 20:50 #3'
-  - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-15 01:48
   - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 14:51
@@ -1168,7 +1162,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 19:50 #18'
   - 'V2Get🛰️ 2026-09-15 19:50 #19'
   - 'V2Get🛰️ 2026-09-15 18:50 #2'
-  - V2Get🛰️ 2026-09-15 15:49
   - 'V2Get🛰️ 2026-09-15 18:50 #3'
   - 'V2Get🛰️ 2026-09-15 18:50 #4'
   - V2Get🛰️ 2026-09-15 17:49
