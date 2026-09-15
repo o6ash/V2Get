@@ -12,19 +12,18 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
+- name: V2Get🛰️ 2026-08-18 02:08
+  type: vless
+  server: 5.175.249.149
   port: 443
-  password: humanity
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
   udp: true
-  sni: www.volumeroot.com
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  - h2
 - name: V2Get🛰️ 2026-09-13 01:44
   type: vless
   server: austria-3.moritech.net
@@ -1128,7 +1127,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-09-13 01:44
   - V2Get🛰️ 2026-09-14 22:48
   - V2Get🛰️ 2026-09-15 00:48
@@ -1226,7 +1225,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-09-13 01:44
   - V2Get🛰️ 2026-09-14 22:48
   - V2Get🛰️ 2026-09-15 00:48
