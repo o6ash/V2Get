@@ -12,34 +12,101 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-11 20:42
+- name: V2Get🛰️ 2026-07-28 11:43
   type: vless
-  server: 207.57.134.109
-  port: 56439
-  uuid: 7a0388fd-2dc9-4af5-8515-d3649ec77d9b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.ebay.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: aPioc-Rwi9TdjorJ0uqg7JXXeqZhaztKagc1eMuC2Dc
-- name: 'V2Get🛰️ 2026-09-11 20:42 #2'
-  type: vless
-  server: 88.216.57.220
+  server: static.lotussec.com
   port: 443
-  uuid: 02722550-1915-4629-a653-cbe95e594f70
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-03 00:53
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-06 13:31
+  type: vless
+  server: 144.31.5.64
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: cdn12usa.goonars.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo
-    short-id: 6591f200
+  servername: pl6.moritech.net
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-14 03:46
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-14 22:48
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-15 11:49
+  type: ss
+  server: 20.107.184.151
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zziXHDOFXc4qRjoj
+  udp: true
 - name: V2Get🛰️ 2026-09-15 23:52
+  type: vless
+  server: 13.39.134.201
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-15 22:50
+  type: vless
+  server: 170.168.97.6
+  port: 443
+  uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
+  udp: true
+  network: xhttp
+  tls: true
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+- name: 'V2Get🛰️ 2026-09-15 23:52 #2'
   type: vless
   server: 91.215.40.6
   port: 443
@@ -54,72 +121,7 @@ proxies:
     short-id: 5c766813929a1fdd
   grpc-opts:
     grpc-service-name: grpc
-- name: V2Get🛰️ 2026-09-04 19:27
-  type: vless
-  server: 150.40.126.18
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: rs1.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY
-    short-id: ed0cd5cc2e26e6e7
-  grpc-opts:
-    grpc-service-name: node.v2.ObjectService
-- name: V2Get🛰️ 2026-09-14 16:47
-  type: vless
-  server: 45.91.138.179
-  port: 443
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: us05.shifor01.life
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-- name: V2Get🛰️ 2026-09-14 20:48
-  type: vless
-  server: 94.103.2.251
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: io.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: a8huhMB5qb3Q0zYwG1QzPjSDTrXufkZMlADT-_EMPhc
-    short-id: '00000000'
-- name: V2Get🛰️ 2026-09-15 00:48
-  type: vless
-  server: api.betust.net
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api.betust.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: YczbievYAOeZIypa58aRpil6XbfdyifK_0cFJWn8-yg
-    short-id: d6c172d3
-- name: V2Get🛰️ 2026-09-15 01:48
-  type: vless
-  server: 91.98.102.240
-  port: 42718
-  uuid: b775630e-1386-44a6-9d89-61d029d4b5ab
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-15 23:52 #2'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #3'
   type: vless
   server: 199.232.78.159
   port: 80
@@ -131,7 +133,7 @@ proxies:
     path: /
     headers:
       Host: BlackGod.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-15 23:52 #3'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #4'
   type: vless
   server: 188.225.57.78
   port: 443
@@ -145,7 +147,7 @@ proxies:
   reality-opts:
     public-key: NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk
     short-id: 3f7e0363
-- name: 'V2Get🛰️ 2026-09-15 23:52 #4'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #5'
   type: vless
   server: 178.105.168.171
   port: 9443
@@ -158,7 +160,7 @@ proxies:
   reality-opts:
     public-key: OvEpExEu-A6ZRSO1BddxIrQVCvLNcHCVlVpb8Gxzcxs
     short-id: a57f7057942da836
-- name: 'V2Get🛰️ 2026-09-15 23:52 #5'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #6'
   type: vless
   server: 89.47.55.5
   port: 443
@@ -170,7 +172,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU
-- name: 'V2Get🛰️ 2026-09-15 23:52 #6'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #7'
   type: vless
   server: 104.19.151.7
   port: 2083
@@ -184,14 +186,14 @@ proxies:
     path: /
     headers:
       Host: ez-0b9f28.ezaccess1c317f6.workers.dev
-- name: 'V2Get🛰️ 2026-09-15 23:52 #7'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #8'
   type: ss
   server: 20.87.3.84
   port: 443
   cipher: chacha20-ietf-poly1305
   password: w0Yff67jxd3zXY9g
   udp: true
-- name: 'V2Get🛰️ 2026-09-15 23:52 #8'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #9'
   type: vless
   server: spa1.plasmoon.ir
   port: 56562
@@ -205,7 +207,7 @@ proxies:
   reality-opts:
     public-key: 33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM
     short-id: 8101b9ba16eb77c7
-- name: 'V2Get🛰️ 2026-09-15 23:52 #9'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #10'
   type: vless
   server: lfn2.plasmoon.ir
   port: 56562
@@ -219,7 +221,7 @@ proxies:
   reality-opts:
     public-key: 33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM
     short-id: 8101b9ba16eb77c7
-- name: 'V2Get🛰️ 2026-09-15 23:52 #10'
+- name: 'V2Get🛰️ 2026-09-15 23:52 #11'
   type: vless
   server: lfn1.plasmoon.ir
   port: 56562
@@ -233,7 +235,7 @@ proxies:
   reality-opts:
     public-key: 33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM
     short-id: 8101b9ba16eb77c7
-- name: V2Get🛰️ 2026-09-15 22:50
+- name: 'V2Get🛰️ 2026-09-15 22:50 #2'
   type: vless
   server: 130.49.77.5
   port: 8443
@@ -261,18 +263,6 @@ proxies:
   reality-opts:
     public-key: lkMM9FR-o7Z6NwmmQVK8rLhCQR1mbJTgjY_0upeS2SY
     short-id: 0436301fb0178b
-- name: 'V2Get🛰️ 2026-09-15 22:50 #2'
-  type: vless
-  server: 170.168.97.6
-  port: 443
-  uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
-  udp: true
-  network: xhttp
-  tls: true
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
 - name: V2Get🛰️ 2026-09-15 19:50
   type: vless
   server: 93.152.220.23
@@ -1170,14 +1160,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-11 20:42
-  - 'V2Get🛰️ 2026-09-11 20:42 #2'
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-14 03:46
+  - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-09-15 11:49
   - V2Get🛰️ 2026-09-15 23:52
-  - V2Get🛰️ 2026-09-04 19:27
-  - V2Get🛰️ 2026-09-14 16:47
-  - V2Get🛰️ 2026-09-14 20:48
-  - V2Get🛰️ 2026-09-15 00:48
-  - V2Get🛰️ 2026-09-15 01:48
+  - V2Get🛰️ 2026-09-15 22:50
   - 'V2Get🛰️ 2026-09-15 23:52 #2'
   - 'V2Get🛰️ 2026-09-15 23:52 #3'
   - 'V2Get🛰️ 2026-09-15 23:52 #4'
@@ -1187,9 +1177,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 23:52 #8'
   - 'V2Get🛰️ 2026-09-15 23:52 #9'
   - 'V2Get🛰️ 2026-09-15 23:52 #10'
-  - V2Get🛰️ 2026-09-15 22:50
-  - V2Get🛰️ 2026-09-15 18:50
+  - 'V2Get🛰️ 2026-09-15 23:52 #11'
   - 'V2Get🛰️ 2026-09-15 22:50 #2'
+  - V2Get🛰️ 2026-09-15 18:50
   - V2Get🛰️ 2026-09-15 19:50
   - 'V2Get🛰️ 2026-09-15 22:50 #3'
   - 'V2Get🛰️ 2026-09-15 22:50 #4'
@@ -1274,14 +1264,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-11 20:42
-  - 'V2Get🛰️ 2026-09-11 20:42 #2'
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-14 03:46
+  - V2Get🛰️ 2026-09-14 22:48
+  - V2Get🛰️ 2026-09-15 11:49
   - V2Get🛰️ 2026-09-15 23:52
-  - V2Get🛰️ 2026-09-04 19:27
-  - V2Get🛰️ 2026-09-14 16:47
-  - V2Get🛰️ 2026-09-14 20:48
-  - V2Get🛰️ 2026-09-15 00:48
-  - V2Get🛰️ 2026-09-15 01:48
+  - V2Get🛰️ 2026-09-15 22:50
   - 'V2Get🛰️ 2026-09-15 23:52 #2'
   - 'V2Get🛰️ 2026-09-15 23:52 #3'
   - 'V2Get🛰️ 2026-09-15 23:52 #4'
@@ -1291,9 +1281,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 23:52 #8'
   - 'V2Get🛰️ 2026-09-15 23:52 #9'
   - 'V2Get🛰️ 2026-09-15 23:52 #10'
-  - V2Get🛰️ 2026-09-15 22:50
-  - V2Get🛰️ 2026-09-15 18:50
+  - 'V2Get🛰️ 2026-09-15 23:52 #11'
   - 'V2Get🛰️ 2026-09-15 22:50 #2'
+  - V2Get🛰️ 2026-09-15 18:50
   - V2Get🛰️ 2026-09-15 19:50
   - 'V2Get🛰️ 2026-09-15 22:50 #3'
   - 'V2Get🛰️ 2026-09-15 22:50 #4'
