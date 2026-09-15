@@ -12,15 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-15 23:50
+  type: vless
+  server: 91.107.155.220
+  port: 56539
+  uuid: 7acf89aa-9283-48bd-81a1-de35edf8737d
   udp: true
   network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-15 23:50 #2'
+  type: vless
+  server: 91.107.146.91
+  port: 56539
+  uuid: 2f9431a6-68fc-42b6-912e-755bff524267
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-15 23:50 #3'
+  type: vless
+  server: 91.107.155.220
+  port: 56539
+  uuid: 89bab277-3e30-4e0d-86df-5829fbbd6152
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-10 15:11
   type: vless
   server: dey.lnmarketplace.net
@@ -473,30 +500,6 @@ proxies:
   server: 95.179.169.44
   port: 53224
   uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-15 23:50
-  type: vless
-  server: 91.107.155.220
-  port: 56539
-  uuid: 7acf89aa-9283-48bd-81a1-de35edf8737d
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-15 23:50 #2'
-  type: vless
-  server: 91.107.146.91
-  port: 56539
-  uuid: 2f9431a6-68fc-42b6-912e-755bff524267
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-15 23:50 #3'
-  type: vless
-  server: 91.107.155.220
-  port: 56539
-  uuid: 89bab277-3e30-4e0d-86df-5829fbbd6152
   udp: true
   network: tcp
   skip-cert-verify: true
@@ -1153,7 +1156,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-15 23:50
+  - 'V2Get🛰️ 2026-09-15 23:50 #2'
+  - 'V2Get🛰️ 2026-09-15 23:50 #3'
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-14 22:49
@@ -1192,9 +1198,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 23:51 #10'
   - 'V2Get🛰️ 2026-09-15 23:51 #11'
   - 'V2Get🛰️ 2026-09-15 23:51 #12'
-  - V2Get🛰️ 2026-09-15 23:50
-  - 'V2Get🛰️ 2026-09-15 23:50 #2'
-  - 'V2Get🛰️ 2026-09-15 23:50 #3'
   - 'V2Get🛰️ 2026-09-15 23:50 #4'
   - V2Get🛰️ 2026-09-15 20:50
   - 'V2Get🛰️ 2026-09-15 20:50 #2'
@@ -1257,7 +1260,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-09-15 23:50
+  - 'V2Get🛰️ 2026-09-15 23:50 #2'
+  - 'V2Get🛰️ 2026-09-15 23:50 #3'
   - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-14 22:49
@@ -1296,9 +1302,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-15 23:51 #10'
   - 'V2Get🛰️ 2026-09-15 23:51 #11'
   - 'V2Get🛰️ 2026-09-15 23:51 #12'
-  - V2Get🛰️ 2026-09-15 23:50
-  - 'V2Get🛰️ 2026-09-15 23:50 #2'
-  - 'V2Get🛰️ 2026-09-15 23:50 #3'
   - 'V2Get🛰️ 2026-09-15 23:50 #4'
   - V2Get🛰️ 2026-09-15 20:50
   - 'V2Get🛰️ 2026-09-15 20:50 #2'
