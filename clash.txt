@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-15 19:51
+  type: vless
+  server: 49.13.19.156
+  port: 28111
+  uuid: edda919b-a762-47e1-a81f-67b6e1698572
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-15 19:50
   type: vless
   server: 165.227.172.195
@@ -46,18 +54,6 @@ proxies:
   tls: true
   servername: global.fastly.com
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-18 02:08
   type: vless
   server: 5.175.249.149
@@ -1084,11 +1080,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 19:50
   - 'V2Get🛰️ 2026-09-15 19:50 #2'
   - 'V2Get🛰️ 2026-09-15 19:50 #3'
   - V2Get🛰️ 2026-09-15 18:50
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-18 02:08
   - 'V2Get🛰️ 2026-09-15 19:50 #4'
   - 'V2Get🛰️ 2026-09-15 19:50 #5'
@@ -1178,11 +1174,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-15 19:51
   - V2Get🛰️ 2026-09-15 19:50
   - 'V2Get🛰️ 2026-09-15 19:50 #2'
   - 'V2Get🛰️ 2026-09-15 19:50 #3'
   - V2Get🛰️ 2026-09-15 18:50
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-18 02:08
   - 'V2Get🛰️ 2026-09-15 19:50 #4'
   - 'V2Get🛰️ 2026-09-15 19:50 #5'
