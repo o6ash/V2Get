@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-16 23:55
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 55130f2c-2e0e-44ee-85e5-560c648c07fc
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: BlackGod.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
   server: 188.42.145.180
@@ -40,18 +54,6 @@ proxies:
   udp: true
   sni: cloud.lakshan.us
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-20 19:13
-  type: vless
-  server: lizca2.footballfantasyforum.com
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  network: tcp
-  tls: true
-  servername: lizca2.footballfantasyforum.com
-  alpn:
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-09-06 13:31
   type: vless
   server: 144.31.5.64
@@ -1200,10 +1202,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-16 23:55
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-16 23:54
-  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-09 00:35
   - V2Get🛰️ 2026-09-14 22:49
@@ -1306,10 +1308,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-16 23:55
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-16 23:54
-  - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-09 00:35
   - V2Get🛰️ 2026-09-14 22:49
