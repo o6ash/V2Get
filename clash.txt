@@ -12,21 +12,54 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 00:53
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-09-10 23:41
+  type: vless
+  server: 69.46.46.113
   port: 443
-  password: MITIVPN
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
   udp: true
-  sni: ssl.fastly.com
+  network: ws
+  tls: true
+  servername: cloud-bae8f3-546ee8-production.up.railway.app
+  client-fingerprint: chrome
   alpn:
   - http/1.1
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /ws/Default
     headers:
-      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+      Host: cloud-bae8f3-546ee8-production.up.railway.app
+- name: V2Get🛰️ 2026-09-16 21:52
+  type: vmess
+  server: FbQiGm0365DaY.12l.iR
+  port: 42654
+  uuid: e8260ec9-3285-4778-a440-6f84b3eade70
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 'V2Get🛰️ 2026-09-16 21:52 #2'
+  type: trojan
+  server: 193.148.253.28
+  port: 443
+  password: 4yphdcvkt15i492i
+  udp: true
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-16 21:52 #3'
+  type: vless
+  server: 69.46.46.109
+  port: 443
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+  udp: true
+  network: ws
+  tls: true
+  servername: net-05b215-358e1e-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Default
+    headers:
+      Host: net-05b215-358e1e-production.up.railway.app
 - name: V2Get🛰️ 2026-09-16 20:53
   type: vless
   server: 69.46.46.115
@@ -1067,37 +1100,6 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-16 15:52 #7'
-  type: vless
-  server: 81.12.35.186
-  port: 5002
-  uuid: 5fae84b3-9f6f-439f-a25a-26716acdd3a5
-  udp: true
-  network: xhttp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-09-16 15:52 #8'
-  type: vless
-  server: 81.12.35.185
-  port: 5002
-  uuid: 5fae84b3-9f6f-439f-a25a-26716acdd3a5
-  udp: true
-  network: xhttp
-  tls: true
-  servername: afr-data-16.myket.ir
-  alpn:
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-09-16 15:52 #9'
-  type: ss
-  server: 81.12.35.185
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: f7UaLBSfrLI0p09nP7PJgg8nD8z3qDuH
-  udp: true
 - name: 'V2Get🛰️ 2026-09-16 16:52 #4'
   type: vless
   server: snapp.ir
@@ -1241,7 +1243,7 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 'V2Get🛰️ 2026-09-16 15:52 #10'
+- name: 'V2Get🛰️ 2026-09-16 15:52 #7'
   type: vless
   server: 172.67.179.98
   port: 8880
@@ -1259,7 +1261,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-10 23:41
+  - V2Get🛰️ 2026-09-16 21:52
+  - 'V2Get🛰️ 2026-09-16 21:52 #2'
+  - 'V2Get🛰️ 2026-09-16 21:52 #3'
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-16 20:52
   - 'V2Get🛰️ 2026-09-16 20:52 #2'
@@ -1342,9 +1347,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 16:53 #13'
   - 'V2Get🛰️ 2026-09-16 16:52 #3'
   - 'V2Get🛰️ 2026-09-16 15:52 #6'
-  - 'V2Get🛰️ 2026-09-16 15:52 #7'
-  - 'V2Get🛰️ 2026-09-16 15:52 #8'
-  - 'V2Get🛰️ 2026-09-16 15:52 #9'
   - 'V2Get🛰️ 2026-09-16 16:52 #4'
   - 'V2Get🛰️ 2026-09-16 15:53 #6'
   - 'V2Get🛰️ 2026-09-16 15:53 #7'
@@ -1357,14 +1359,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:53 #14'
   - 'V2Get🛰️ 2026-09-16 15:53 #15'
   - 'V2Get🛰️ 2026-09-16 15:53 #16'
-  - 'V2Get🛰️ 2026-09-16 15:52 #10'
+  - 'V2Get🛰️ 2026-09-16 15:52 #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 00:53
+  - V2Get🛰️ 2026-09-10 23:41
+  - V2Get🛰️ 2026-09-16 21:52
+  - 'V2Get🛰️ 2026-09-16 21:52 #2'
+  - 'V2Get🛰️ 2026-09-16 21:52 #3'
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-16 20:52
   - 'V2Get🛰️ 2026-09-16 20:52 #2'
@@ -1447,9 +1452,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 16:53 #13'
   - 'V2Get🛰️ 2026-09-16 16:52 #3'
   - 'V2Get🛰️ 2026-09-16 15:52 #6'
-  - 'V2Get🛰️ 2026-09-16 15:52 #7'
-  - 'V2Get🛰️ 2026-09-16 15:52 #8'
-  - 'V2Get🛰️ 2026-09-16 15:52 #9'
   - 'V2Get🛰️ 2026-09-16 16:52 #4'
   - 'V2Get🛰️ 2026-09-16 15:53 #6'
   - 'V2Get🛰️ 2026-09-16 15:53 #7'
@@ -1462,7 +1464,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:53 #14'
   - 'V2Get🛰️ 2026-09-16 15:53 #15'
   - 'V2Get🛰️ 2026-09-16 15:53 #16'
-  - 'V2Get🛰️ 2026-09-16 15:52 #10'
+  - 'V2Get🛰️ 2026-09-16 15:52 #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
