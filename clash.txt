@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-17 01:53
+  type: vless
+  server: 956775g57b675.garluma.ir
+  port: 11000
+  uuid: c373eca9-71bc-4bbf-8b50-ffb2ec2db698
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-16 23:53
   type: vless
   server: 49.13.19.156
@@ -20,18 +28,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-07-28 11:43
-  type: vless
-  server: static.lotussec.com
-  port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-  udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-18 02:08
   type: vless
   server: 5.175.249.149
@@ -1190,8 +1186,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-16 23:53
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-09-11 21:41
@@ -1296,8 +1292,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-16 23:53
-  - V2Get🛰️ 2026-07-28 11:43
   - V2Get🛰️ 2026-08-18 02:08
   - V2Get🛰️ 2026-08-25 20:05
   - V2Get🛰️ 2026-09-11 21:41
