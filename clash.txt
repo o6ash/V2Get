@@ -12,6 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-31 22:17
+  type: vless
+  server: 31.76.76.28
+  port: 443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-09-15 18:50
+  type: vless
+  server: 31.76.76.28
+  port: 8443
+  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
+  udp: true
+  network: tcp
+  tls: true
+  servername: neth4.lckdwn.ru
+  client-fingerprint: firefox
 - name: V2Get🛰️ 2026-09-16 14:51
   type: vless
   server: 209.38.34.152
@@ -34,29 +54,7 @@ proxies:
   reality-opts:
     public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
     short-id: 35938c4e546cd459
-- name: V2Get🛰️ 2026-09-14 22:48
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MITIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-15 23:51
-  type: vless
-  server: 95.179.169.44
-  port: 53224
-  uuid: 5f00ca4e-3f26-473e-ad1c-414112abb0a3
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-15 23:51 #2'
   type: vless
   server: 95.179.169.44
   port: 53224
@@ -1164,11 +1162,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-31 22:17
+  - V2Get🛰️ 2026-09-15 18:50
   - V2Get🛰️ 2026-09-16 14:51
   - 'V2Get🛰️ 2026-09-16 14:51 #2'
-  - V2Get🛰️ 2026-09-14 22:48
   - V2Get🛰️ 2026-09-15 23:51
-  - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-09-15 23:52
   - V2Get🛰️ 2026-09-16 13:53
   - 'V2Get🛰️ 2026-09-16 13:53 #2'
@@ -1268,11 +1266,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-31 22:17
+  - V2Get🛰️ 2026-09-15 18:50
   - V2Get🛰️ 2026-09-16 14:51
   - 'V2Get🛰️ 2026-09-16 14:51 #2'
-  - V2Get🛰️ 2026-09-14 22:48
   - V2Get🛰️ 2026-09-15 23:51
-  - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-09-15 23:52
   - V2Get🛰️ 2026-09-16 13:53
   - 'V2Get🛰️ 2026-09-16 13:53 #2'
