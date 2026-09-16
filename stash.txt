@@ -12,18 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-20 22:13
+- name: V2Get🛰️ 2026-09-15 18:50
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 94.237.92.65
+  port: 443
+  uuid: e4b11ac9-46f7-4cc0-92ed-bb9dfaaf3600
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lkMM9FR-o7Z6NwmmQVK8rLhCQR1mbJTgjY_0upeS2SY
+    short-id: 0436301fb0178b
+- name: V2Get🛰️ 2026-09-16 11:51
+  type: vless
+  server: 188.166.44.179
+  port: 443
+  uuid: 18f1b94e-35f1-4c7f-953c-7b4681c52339
+  udp: true
+  network: tcp
   skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: V2Get🛰️ 2026-09-12 12:43
   type: vless
   server: 77.233.213.106
@@ -51,14 +61,6 @@ proxies:
   reality-opts:
     public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
     short-id: 7bf47eabf939728b
-- name: V2Get🛰️ 2026-09-16 11:51
-  type: vless
-  server: 188.166.44.179
-  port: 443
-  uuid: 18f1b94e-35f1-4c7f-953c-7b4681c52339
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-11 21:41
   type: vless
   server: 31.56.184.132
@@ -892,10 +894,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-09-15 18:50
+  - V2Get🛰️ 2026-09-16 11:51
   - V2Get🛰️ 2026-09-12 12:43
   - V2Get🛰️ 2026-09-14 23:50
-  - V2Get🛰️ 2026-09-16 11:51
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-13 15:45
   - V2Get🛰️ 2026-09-14 09:47
@@ -976,10 +978,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-09-15 18:50
+  - V2Get🛰️ 2026-09-16 11:51
   - V2Get🛰️ 2026-09-12 12:43
   - V2Get🛰️ 2026-09-14 23:50
-  - V2Get🛰️ 2026-09-16 11:51
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-13 15:45
   - V2Get🛰️ 2026-09-14 09:47
