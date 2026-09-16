@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-03 00:53
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MITIVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s2-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-16 20:53
   type: vless
   server: 69.46.46.115
@@ -1083,13 +1098,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: f7UaLBSfrLI0p09nP7PJgg8nD8z3qDuH
   udp: true
-- name: 'V2Get🛰️ 2026-09-16 15:52 #10'
-  type: ss
-  server: 81.12.32.102
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: f7UaLBSfrLI0p09nP7PJgg8nD8z3qDuH
-  udp: true
 - name: 'V2Get🛰️ 2026-09-16 16:52 #4'
   type: vless
   server: snapp.ir
@@ -1233,7 +1241,7 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 'V2Get🛰️ 2026-09-16 15:52 #11'
+- name: 'V2Get🛰️ 2026-09-16 15:52 #10'
   type: vless
   server: 172.67.179.98
   port: 8880
@@ -1251,6 +1259,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-16 20:52
   - 'V2Get🛰️ 2026-09-16 20:52 #2'
@@ -1336,7 +1345,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:52 #7'
   - 'V2Get🛰️ 2026-09-16 15:52 #8'
   - 'V2Get🛰️ 2026-09-16 15:52 #9'
-  - 'V2Get🛰️ 2026-09-16 15:52 #10'
   - 'V2Get🛰️ 2026-09-16 16:52 #4'
   - 'V2Get🛰️ 2026-09-16 15:53 #6'
   - 'V2Get🛰️ 2026-09-16 15:53 #7'
@@ -1349,13 +1357,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:53 #14'
   - 'V2Get🛰️ 2026-09-16 15:53 #15'
   - 'V2Get🛰️ 2026-09-16 15:53 #16'
-  - 'V2Get🛰️ 2026-09-16 15:52 #11'
+  - 'V2Get🛰️ 2026-09-16 15:52 #10'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-03 00:53
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-16 20:52
   - 'V2Get🛰️ 2026-09-16 20:52 #2'
@@ -1441,7 +1450,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:52 #7'
   - 'V2Get🛰️ 2026-09-16 15:52 #8'
   - 'V2Get🛰️ 2026-09-16 15:52 #9'
-  - 'V2Get🛰️ 2026-09-16 15:52 #10'
   - 'V2Get🛰️ 2026-09-16 16:52 #4'
   - 'V2Get🛰️ 2026-09-16 15:53 #6'
   - 'V2Get🛰️ 2026-09-16 15:53 #7'
@@ -1454,7 +1462,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-16 15:53 #14'
   - 'V2Get🛰️ 2026-09-16 15:53 #15'
   - 'V2Get🛰️ 2026-09-16 15:53 #16'
-  - 'V2Get🛰️ 2026-09-16 15:52 #11'
+  - 'V2Get🛰️ 2026-09-16 15:52 #10'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
