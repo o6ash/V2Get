@@ -12,15 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
   udp: true
-  network: tcp
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-16 23:54
+  type: trojan
+  server: cloud.lakshan.us
+  port: 119
+  password: skynet
+  udp: true
+  sni: cloud.lakshan.us
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-20 19:13
   type: vless
   server: lizca2.footballfantasyforum.com
@@ -117,14 +129,6 @@ proxies:
     path: /ws/Default
     headers:
       Host: service-f437d6-66e56a-production.up.railway.app
-- name: V2Get🛰️ 2026-09-16 23:54
-  type: trojan
-  server: cloud.lakshan.us
-  port: 119
-  password: skynet
-  udp: true
-  sni: cloud.lakshan.us
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-16 23:54 #2'
   type: vless
   server: 80.91.65.89
@@ -1024,7 +1028,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-09 00:35
@@ -1032,7 +1037,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 22:49 #2'
   - V2Get🛰️ 2026-09-16 22:52
   - 'V2Get🛰️ 2026-09-16 22:52 #2'
-  - V2Get🛰️ 2026-09-16 23:54
   - 'V2Get🛰️ 2026-09-16 23:54 #2'
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-15 12:49
@@ -1111,7 +1115,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-08-20 19:13
   - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-09 00:35
@@ -1119,7 +1124,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-14 22:49 #2'
   - V2Get🛰️ 2026-09-16 22:52
   - 'V2Get🛰️ 2026-09-16 22:52 #2'
-  - V2Get🛰️ 2026-09-16 23:54
   - 'V2Get🛰️ 2026-09-16 23:54 #2'
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-15 12:49
