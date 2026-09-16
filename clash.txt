@@ -12,7 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-03 16:24
+  type: vless
+  server: 91.210.169.181
+  port: 443
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  udp: true
+  network: ws
+  tls: true
+  servername: wstg.datasynctrue.online
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/connect
+    headers:
+      Host: wstg.datasynctrue.online
+- name: V2Get🛰️ 2026-09-15 23:52
+  type: ss
+  server: 20.87.3.84
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: w0Yff67jxd3zXY9g
+  udp: true
 - name: V2Get🛰️ 2026-09-16 21:54
+  type: vless
+  server: russia.storageservice.info
+  port: 8008
+  uuid: 5cd162b5-69a0-44d6-a137-57d1d9488ccd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: LSro6ZRkw41yEZzs_udFG44r0JkZWYnpS311CGKmdV4
+    short-id: 071f25d7e9e20168
+- name: 'V2Get🛰️ 2026-09-16 21:54 #2'
   type: vless
   server: 69.46.46.38
   port: 443
@@ -28,7 +63,7 @@ proxies:
     path: /ws/Default
     headers:
       Host: vhr-ghy7ygsj-7syh-8494cf-production.up.railway.app
-- name: 'V2Get🛰️ 2026-09-16 21:54 #2'
+- name: 'V2Get🛰️ 2026-09-16 21:54 #3'
   type: vless
   server: 69.46.46.36
   port: 443
@@ -44,7 +79,7 @@ proxies:
     path: /ws/Default
     headers:
       Host: srv-caef5f-fcd991-production.up.railway.app
-- name: 'V2Get🛰️ 2026-09-16 21:54 #3'
+- name: 'V2Get🛰️ 2026-09-16 21:54 #4'
   type: vless
   server: 69.46.46.37
   port: 443
@@ -60,7 +95,7 @@ proxies:
     path: /ws/Default
     headers:
       Host: service-2e9ca4-a3c172-production.up.railway.app
-- name: 'V2Get🛰️ 2026-09-16 21:54 #4'
+- name: 'V2Get🛰️ 2026-09-16 21:54 #5'
   type: vless
   server: a2.arshia-nova.ir
   port: 443
@@ -74,7 +109,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 'V2Get🛰️ 2026-09-16 21:54 #5'
+- name: 'V2Get🛰️ 2026-09-16 21:54 #6'
   type: vless
   server: 69.46.46.41
   port: 443
@@ -136,44 +171,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-06 13:31
-  type: vless
-  server: pl3.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-09-06 21:32
-  type: vless
-  server: pl4.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  client-fingerprint: firefox
-  alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-- name: V2Get🛰️ 2026-09-13 22:46
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 404aa1e8-4935-4919-8b74-60e88b065cf4
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pane2.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-09-14 22:48 #2'
   type: trojan
   server: 199.232.78.101
@@ -1251,17 +1248,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-15 23:52
   - V2Get🛰️ 2026-09-16 21:54
   - 'V2Get🛰️ 2026-09-16 21:54 #2'
   - 'V2Get🛰️ 2026-09-16 21:54 #3'
   - 'V2Get🛰️ 2026-09-16 21:54 #4'
   - 'V2Get🛰️ 2026-09-16 21:54 #5'
+  - 'V2Get🛰️ 2026-09-16 21:54 #6'
   - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-14 22:48
-  - V2Get🛰️ 2026-09-06 13:31
-  - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-13 22:46
   - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-16 21:53
   - 'V2Get🛰️ 2026-09-16 21:53 #2'
@@ -1356,17 +1353,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-09-15 23:52
   - V2Get🛰️ 2026-09-16 21:54
   - 'V2Get🛰️ 2026-09-16 21:54 #2'
   - 'V2Get🛰️ 2026-09-16 21:54 #3'
   - 'V2Get🛰️ 2026-09-16 21:54 #4'
   - 'V2Get🛰️ 2026-09-16 21:54 #5'
+  - 'V2Get🛰️ 2026-09-16 21:54 #6'
   - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 20:53
   - V2Get🛰️ 2026-09-14 22:48
-  - V2Get🛰️ 2026-09-06 13:31
-  - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-13 22:46
   - 'V2Get🛰️ 2026-09-14 22:48 #2'
   - V2Get🛰️ 2026-09-16 21:53
   - 'V2Get🛰️ 2026-09-16 21:53 #2'
