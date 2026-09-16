@@ -12,28 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-02 01:21
-  type: vless
-  server: 2.27.205.59
-  port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-09-03 20:25
-  type: vless
-  server: neth8.lunariai.ru
-  port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: neth8.lunariai.ru
 - name: V2Get🛰️ 2026-09-04 19:27
   type: vless
   server: 150.40.126.18
@@ -49,6 +27,16 @@ proxies:
     short-id: ed0cd5cc2e26e6e7
   grpc-opts:
     grpc-service-name: node.v2.ObjectService
+- name: V2Get🛰️ 2026-09-02 01:21
+  type: vless
+  server: 2.27.205.59
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-09-08 10:35
   type: vless
   server: 144.31.5.3
@@ -63,48 +51,18 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-09-11 21:41
+- name: V2Get🛰️ 2026-09-03 20:25
   type: vless
-  server: 31.56.184.132
-  port: 8443
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  udp: true
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  grpc-opts:
-    grpc-service-name: shiforgrpc
-- name: V2Get🛰️ 2026-09-12 12:43
-  type: vless
-  server: 179.61.138.5
+  server: neth8.lunariai.ru
   port: 443
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   udp: true
-  network: xhttp
-  tls: true
-  servername: static.lotussec.com
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-09-17 02:53
-  type: vless
-  server: 95.111.211.246
-  port: 8080
-  uuid: 54489c49-cd94-460b-b6fd-0d3b0b25016d
-  udp: true
-  network: tcp
+  network: ws
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-17 02:53 #2'
-  type: vless
-  server: 52.47.212.72
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: neth8.lunariai.ru
 - name: V2Get🛰️ 2026-09-16 22:53
   type: ss
   server: 178.95.176.16
@@ -140,6 +98,48 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: p20Y6AFEN1pS7LJX
   udp: true
+- name: V2Get🛰️ 2026-09-11 21:41
+  type: vless
+  server: 31.56.184.132
+  port: 8443
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  udp: true
+  network: grpc
+  tls: true
+  servername: cloudflare.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
+    short-id: b4e3b0b55b8dc75b
+  grpc-opts:
+    grpc-service-name: shiforgrpc
+- name: V2Get🛰️ 2026-09-17 02:53
+  type: vless
+  server: 52.47.212.72
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-12 12:43
+  type: vless
+  server: 179.61.138.5
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-17 02:53 #2'
+  type: vless
+  server: 95.111.211.246
+  port: 8080
+  uuid: 54489c49-cd94-460b-b6fd-0d3b0b25016d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-17 01:53 #2'
   type: vless
   server: 128.254.186.11
@@ -1196,18 +1196,18 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-02 01:21
-  - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-04 19:27
+  - V2Get🛰️ 2026-09-02 01:21
   - V2Get🛰️ 2026-09-08 10:35
-  - V2Get🛰️ 2026-09-11 21:41
-  - V2Get🛰️ 2026-09-12 12:43
-  - V2Get🛰️ 2026-09-17 02:53
-  - 'V2Get🛰️ 2026-09-17 02:53 #2'
+  - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-17 01:53
   - 'V2Get🛰️ 2026-09-16 22:53 #2'
   - 'V2Get🛰️ 2026-09-16 22:53 #3'
+  - V2Get🛰️ 2026-09-11 21:41
+  - V2Get🛰️ 2026-09-17 02:53
+  - V2Get🛰️ 2026-09-12 12:43
+  - 'V2Get🛰️ 2026-09-17 02:53 #2'
   - 'V2Get🛰️ 2026-09-17 01:53 #2'
   - 'V2Get🛰️ 2026-09-17 02:53 #3'
   - 'V2Get🛰️ 2026-09-17 02:53 #4'
@@ -1301,18 +1301,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-02 01:21
-  - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-04 19:27
+  - V2Get🛰️ 2026-09-02 01:21
   - V2Get🛰️ 2026-09-08 10:35
-  - V2Get🛰️ 2026-09-11 21:41
-  - V2Get🛰️ 2026-09-12 12:43
-  - V2Get🛰️ 2026-09-17 02:53
-  - 'V2Get🛰️ 2026-09-17 02:53 #2'
+  - V2Get🛰️ 2026-09-03 20:25
   - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-17 01:53
   - 'V2Get🛰️ 2026-09-16 22:53 #2'
   - 'V2Get🛰️ 2026-09-16 22:53 #3'
+  - V2Get🛰️ 2026-09-11 21:41
+  - V2Get🛰️ 2026-09-17 02:53
+  - V2Get🛰️ 2026-09-12 12:43
+  - 'V2Get🛰️ 2026-09-17 02:53 #2'
   - 'V2Get🛰️ 2026-09-17 01:53 #2'
   - 'V2Get🛰️ 2026-09-17 02:53 #3'
   - 'V2Get🛰️ 2026-09-17 02:53 #4'
