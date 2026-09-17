@@ -12,21 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:07
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-08-05 08:28
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
+  network: tcp
 - name: V2Get🛰️ 2026-07-28 17:00
   type: vless
   server: 194.76.154.31
@@ -39,6 +33,20 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
+- name: V2Get🛰️ 2026-09-18 02:55
+  type: vless
+  server: 108.165.32.16
+  port: 443
+  uuid: 6dff8e33-b201-4cbb-8f89-b9418702bff2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.logitech.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU
+    short-id: ca3d
 - name: V2Get🛰️ 2026-08-02 22:02
   type: trojan
   server: 151.101.56.7
@@ -54,6 +62,20 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-12 10:43
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MiTiVPN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-03 10:54
   type: trojan
   server: 199.232.78.160
@@ -69,16 +91,34 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-26 03:07
+  type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: MiTiVPN
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-09-12 10:43
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /de=mitivpn
+    headers:
+      Host: cdn-mitivpn.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-18 02:55 #2'
+  type: vless
+  server: helixgaming.ir
+  port: 80
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
   type: trojan
   server: 199.232.78.101
   port: 443
@@ -92,254 +132,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-12 10:43 #2'
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-18 02:55
-  type: vless
-  server: 172.96.164.66
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: usanode.velox-network.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 3XDozLVIfNqaBb7viWiGxeraYaD7N0ejmmOpjPIV100
-    short-id: a1ab5a56bcca12
-- name: 'V2Get🛰️ 2026-09-18 02:55 #2'
-  type: vless
-  server: us-1.gsafevpnapi.com
-  port: 20270
-  uuid: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE
-    short-id: e67d9a00676f15ac
-- name: 'V2Get🛰️ 2026-09-18 02:55 #3'
-  type: vless
-  server: usanode.velox-network.org
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: usanode.velox-network.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 3XDozLVIfNqaBb7viWiGxeraYaD7N0ejmmOpjPIV100
-    short-id: a1ab5a56bcca12
-- name: 'V2Get🛰️ 2026-09-18 02:55 #4'
-  type: vless
-  server: 31.41.33.133
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: al.cloudload.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: eGTUZ3Yldc4A80oyCXEM0V5kULFUwM2NNF9QhDP4DSw
-    short-id: a1ab5a56bcca12
-- name: 'V2Get🛰️ 2026-09-18 02:55 #5'
-  type: vless
-  server: al.cloudload.org
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: al.cloudload.org
-  client-fingerprint: qq
-  reality-opts:
-    public-key: eGTUZ3Yldc4A80oyCXEM0V5kULFUwM2NNF9QhDP4DSw
-    short-id: a1ab5a56bcca12
-- name: 'V2Get🛰️ 2026-09-18 02:55 #6'
-  type: vless
-  server: captaingold.app
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: captaingold.app
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6V_LHB1yblp9RDyo5GOXL-V_V9MFa-mBRO0epwSQP3U
-    short-id: a1ab5a56bca2b1d3
-- name: 'V2Get🛰️ 2026-09-18 02:55 #7'
-  type: vless
-  server: 179.43.178.18
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: captaingold.app
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6V_LHB1yblp9RDyo5GOXL-V_V9MFa-mBRO0epwSQP3U
-    short-id: a1ab5a56bca2b1d3
-- name: 'V2Get🛰️ 2026-09-18 02:55 #8'
-  type: vless
-  server: 193.34.213.32
-  port: 443
-  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland1.cloudload.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ws3y8aVY4t99_jYv7J58dDBFCCh56U9b2_oO-r-g_Tg
-    short-id: a1ab5a56bc
-- name: 'V2Get🛰️ 2026-09-18 02:55 #9'
-  type: vless
-  server: ve9373773jsjdbshaz.hormozmobile10.ir
-  port: 80
-  uuid: 5e0d4371-23c1-4f16-89db-99c9c055af94
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /bmi.ir
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 'V2Get🛰️ 2026-09-18 02:55 #10'
-  type: vless
-  server: 104.18.19.39
-  port: 2087
-  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
-  udp: true
-  network: ws
-  tls: true
-  servername: lishmania.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: lishmania.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-18 02:55 #11'
-  type: vless
-  server: 172.67.189.28
-  port: 2083
-  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
-  udp: true
-  network: ws
-  tls: true
-  servername: lishmania.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: lishmania.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-18 02:55 #12'
-  type: vless
-  server: 172.66.146.2
-  port: 8443
-  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
-  udp: true
-  network: ws
-  tls: true
-  servername: lishmania.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: lishmania.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-18 02:55 #13'
-  type: vless
-  server: 104.18.10.167
-  port: 8443
-  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
-  udp: true
-  network: ws
-  tls: true
-  servername: lishmania.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: lishmania.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-18 02:55 #14'
-  type: vless
-  server: 104.18.24.41
-  port: 8443
-  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
-  udp: true
-  network: ws
-  tls: true
-  servername: lishmania.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  - h3
-  ws-opts:
-    path: /
-    headers:
-      Host: lishmania.dearhossein-taktaz.ir
-- name: 'V2Get🛰️ 2026-09-18 02:55 #15'
-  type: vless
-  server: helixgaming.ir
-  port: 80
-  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 'V2Get🛰️ 2026-09-18 02:55 #16'
-  type: vless
-  server: 108.165.32.16
-  port: 443
-  uuid: 6dff8e33-b201-4cbb-8f89-b9418702bff2
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.logitech.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU
-    short-id: ca3d
 - name: V2Get🛰️ 2026-09-18 01:56
   type: trojan
   server: 91.107.155.9
@@ -415,6 +207,91 @@ proxies:
     public-key: Sq7mtLmaanwsTVNBR9gU7ECU87ftrb_wFGRLLNRBlmQ
   grpc-opts:
     grpc-service-name: TunService
+- name: 'V2Get🛰️ 2026-09-18 02:55 #3'
+  type: vless
+  server: 104.18.24.41
+  port: 8443
+  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
+  udp: true
+  network: ws
+  tls: true
+  servername: lishmania.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: lishmania.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-18 02:55 #4'
+  type: vless
+  server: 104.18.10.167
+  port: 8443
+  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
+  udp: true
+  network: ws
+  tls: true
+  servername: lishmania.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: lishmania.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-18 02:55 #5'
+  type: vless
+  server: 172.66.146.2
+  port: 8443
+  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
+  udp: true
+  network: ws
+  tls: true
+  servername: lishmania.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: lishmania.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-18 02:55 #6'
+  type: vless
+  server: 172.67.189.28
+  port: 2083
+  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
+  udp: true
+  network: ws
+  tls: true
+  servername: lishmania.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: lishmania.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-18 02:55 #7'
+  type: vless
+  server: 104.18.19.39
+  port: 2087
+  uuid: 70ef5717-4ed9-4890-b5f4-0589929a1165
+  udp: true
+  network: ws
+  tls: true
+  servername: lishmania.dearhossein-taktaz.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  - h3
+  ws-opts:
+    path: /
+    headers:
+      Host: lishmania.dearhossein-taktaz.ir
 - name: 'V2Get🛰️ 2026-09-18 01:56 #2'
   type: vless
   server: www.canva.com
@@ -429,6 +306,129 @@ proxies:
     path: /
     headers:
       Host: lishmania.dearhossein-taktaz.ir
+- name: 'V2Get🛰️ 2026-09-18 02:55 #8'
+  type: vless
+  server: ve9373773jsjdbshaz.hormozmobile10.ir
+  port: 80
+  uuid: 5e0d4371-23c1-4f16-89db-99c9c055af94
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /bmi.ir
+    headers:
+      Host: play-apps-features.googleusercontent.com
+- name: 'V2Get🛰️ 2026-09-18 02:55 #9'
+  type: vless
+  server: 193.34.213.32
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland1.cloudload.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ws3y8aVY4t99_jYv7J58dDBFCCh56U9b2_oO-r-g_Tg
+    short-id: a1ab5a56bc
+- name: 'V2Get🛰️ 2026-09-18 02:55 #10'
+  type: vless
+  server: 179.43.178.18
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: captaingold.app
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6V_LHB1yblp9RDyo5GOXL-V_V9MFa-mBRO0epwSQP3U
+    short-id: a1ab5a56bca2b1d3
+- name: 'V2Get🛰️ 2026-09-18 02:55 #11'
+  type: vless
+  server: captaingold.app
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: captaingold.app
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6V_LHB1yblp9RDyo5GOXL-V_V9MFa-mBRO0epwSQP3U
+    short-id: a1ab5a56bca2b1d3
+- name: 'V2Get🛰️ 2026-09-18 02:55 #12'
+  type: vless
+  server: al.cloudload.org
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: al.cloudload.org
+  client-fingerprint: qq
+  reality-opts:
+    public-key: eGTUZ3Yldc4A80oyCXEM0V5kULFUwM2NNF9QhDP4DSw
+    short-id: a1ab5a56bcca12
+- name: 'V2Get🛰️ 2026-09-18 02:55 #13'
+  type: vless
+  server: 31.41.33.133
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: al.cloudload.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: eGTUZ3Yldc4A80oyCXEM0V5kULFUwM2NNF9QhDP4DSw
+    short-id: a1ab5a56bcca12
+- name: 'V2Get🛰️ 2026-09-18 02:55 #14'
+  type: vless
+  server: usanode.velox-network.org
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: usanode.velox-network.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3XDozLVIfNqaBb7viWiGxeraYaD7N0ejmmOpjPIV100
+    short-id: a1ab5a56bcca12
+- name: 'V2Get🛰️ 2026-09-18 02:55 #15'
+  type: vless
+  server: us-1.gsafevpnapi.com
+  port: 20270
+  uuid: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE
+    short-id: e67d9a00676f15ac
+- name: 'V2Get🛰️ 2026-09-18 02:55 #16'
+  type: vless
+  server: 172.96.164.66
+  port: 443
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: usanode.velox-network.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3XDozLVIfNqaBb7viWiGxeraYaD7N0ejmmOpjPIV100
+    short-id: a1ab5a56bcca12
 - name: 'V2Get🛰️ 2026-09-18 01:56 #3'
   type: vless
   server: 104.16.75.76
@@ -945,20 +945,27 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-28 17:00
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-07-28 17:00
   - V2Get🛰️ 2026-09-18 02:55
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-12 10:43
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-09-18 02:55 #2'
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-09-18 01:56
+  - V2Get🛰️ 2026-09-18 01:55
+  - V2Get🛰️ 2026-09-17 23:56
+  - 'V2Get🛰️ 2026-09-17 23:56 #2'
+  - 'V2Get🛰️ 2026-09-18 01:55 #2'
+  - 'V2Get🛰️ 2026-09-18 01:55 #3'
   - 'V2Get🛰️ 2026-09-18 02:55 #3'
   - 'V2Get🛰️ 2026-09-18 02:55 #4'
   - 'V2Get🛰️ 2026-09-18 02:55 #5'
   - 'V2Get🛰️ 2026-09-18 02:55 #6'
   - 'V2Get🛰️ 2026-09-18 02:55 #7'
+  - 'V2Get🛰️ 2026-09-18 01:56 #2'
   - 'V2Get🛰️ 2026-09-18 02:55 #8'
   - 'V2Get🛰️ 2026-09-18 02:55 #9'
   - 'V2Get🛰️ 2026-09-18 02:55 #10'
@@ -968,13 +975,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-18 02:55 #14'
   - 'V2Get🛰️ 2026-09-18 02:55 #15'
   - 'V2Get🛰️ 2026-09-18 02:55 #16'
-  - V2Get🛰️ 2026-09-18 01:56
-  - V2Get🛰️ 2026-09-18 01:55
-  - V2Get🛰️ 2026-09-17 23:56
-  - 'V2Get🛰️ 2026-09-17 23:56 #2'
-  - 'V2Get🛰️ 2026-09-18 01:55 #2'
-  - 'V2Get🛰️ 2026-09-18 01:55 #3'
-  - 'V2Get🛰️ 2026-09-18 01:56 #2'
   - 'V2Get🛰️ 2026-09-18 01:56 #3'
   - 'V2Get🛰️ 2026-09-18 01:56 #4'
   - 'V2Get🛰️ 2026-09-18 01:56 #5'
@@ -1022,20 +1022,27 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:07
-  - V2Get🛰️ 2026-07-28 17:00
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-09-12 10:43
-  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-07-28 17:00
   - V2Get🛰️ 2026-09-18 02:55
+  - V2Get🛰️ 2026-08-02 22:02
+  - V2Get🛰️ 2026-09-12 10:43
+  - V2Get🛰️ 2026-08-03 10:54
+  - V2Get🛰️ 2026-07-26 03:07
   - 'V2Get🛰️ 2026-09-18 02:55 #2'
+  - 'V2Get🛰️ 2026-09-12 10:43 #2'
+  - V2Get🛰️ 2026-09-18 01:56
+  - V2Get🛰️ 2026-09-18 01:55
+  - V2Get🛰️ 2026-09-17 23:56
+  - 'V2Get🛰️ 2026-09-17 23:56 #2'
+  - 'V2Get🛰️ 2026-09-18 01:55 #2'
+  - 'V2Get🛰️ 2026-09-18 01:55 #3'
   - 'V2Get🛰️ 2026-09-18 02:55 #3'
   - 'V2Get🛰️ 2026-09-18 02:55 #4'
   - 'V2Get🛰️ 2026-09-18 02:55 #5'
   - 'V2Get🛰️ 2026-09-18 02:55 #6'
   - 'V2Get🛰️ 2026-09-18 02:55 #7'
+  - 'V2Get🛰️ 2026-09-18 01:56 #2'
   - 'V2Get🛰️ 2026-09-18 02:55 #8'
   - 'V2Get🛰️ 2026-09-18 02:55 #9'
   - 'V2Get🛰️ 2026-09-18 02:55 #10'
@@ -1045,13 +1052,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-18 02:55 #14'
   - 'V2Get🛰️ 2026-09-18 02:55 #15'
   - 'V2Get🛰️ 2026-09-18 02:55 #16'
-  - V2Get🛰️ 2026-09-18 01:56
-  - V2Get🛰️ 2026-09-18 01:55
-  - V2Get🛰️ 2026-09-17 23:56
-  - 'V2Get🛰️ 2026-09-17 23:56 #2'
-  - 'V2Get🛰️ 2026-09-18 01:55 #2'
-  - 'V2Get🛰️ 2026-09-18 01:55 #3'
-  - 'V2Get🛰️ 2026-09-18 01:56 #2'
   - 'V2Get🛰️ 2026-09-18 01:56 #3'
   - 'V2Get🛰️ 2026-09-18 01:56 #4'
   - 'V2Get🛰️ 2026-09-18 01:56 #5'
