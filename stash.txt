@@ -12,6 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-15 21:50
+  type: vless
+  server: new3.smart-cats.ru
+  port: 2053
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
+    short-id: 4881f8244d1b9021
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-09-17 14:54
+  type: vless
+  server: 94.237.54.196
+  port: 8443
+  uuid: dbfb17c3-0e1a-4523-a748-f9901b46569d
+  udp: true
+  network: tcp
+  tls: true
+  servername: brb.yahoo.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZbL83iqwFDO-QON63ZJSgaRpKmX3CZrvRdc7i_62i1U
+    short-id: a9
+- name: V2Get🛰️ 2026-09-17 13:54
+  type: vless
+  server: 104.167.199.20
+  port: 443
+  uuid: 181a9868-62bb-4580-ac82-2f43fc2f2886
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
   server: 188.42.145.180
@@ -46,45 +82,7 @@ proxies:
   password: 4yphdcvkt15i492i
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-17 13:54
-  type: vless
-  server: 104.167.199.20
-  port: 443
-  uuid: 181a9868-62bb-4580-ac82-2f43fc2f2886
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-27 11:06
-  type: vless
-  server: md5.univesalsrv.com
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: md5.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg
-    short-id: aa9884f2982b7d3c
-  grpc-opts:
-    grpc-service-name: app.v1.PushService
 - name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 45.9.156.24
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
-  udp: true
-  network: grpc
-  tls: true
-  servername: bg2.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0f0dh_FUju5cHgQcIwUjHvxQb9aIZ00p0kZRHeE7Ey4
-    short-id: 501ab3325b77e1ca
-  grpc-opts:
-    grpc-service-name: api.v2.PushService
-- name: 'V2Get🛰️ 2026-08-27 15:07 #2'
   type: vless
   server: 150.40.126.24
   port: 443
@@ -929,13 +927,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-15 21:50
+  - V2Get🛰️ 2026-09-17 14:54
+  - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
-  - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-04 19:27
   - V2Get🛰️ 2026-09-06 13:31
@@ -1008,13 +1006,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-15 21:50
+  - V2Get🛰️ 2026-09-17 14:54
+  - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
-  - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-08-27 11:06
   - V2Get🛰️ 2026-08-27 15:07
-  - 'V2Get🛰️ 2026-08-27 15:07 #2'
   - V2Get🛰️ 2026-09-03 16:24
   - V2Get🛰️ 2026-09-04 19:27
   - V2Get🛰️ 2026-09-06 13:31
