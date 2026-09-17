@@ -12,6 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-15 21:50
+  type: vless
+  server: new3.smart-cats.ru
+  port: 2053
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
+    short-id: 4881f8244d1b9021
+  grpc-opts:
+    grpc-service-name: grpc
+- name: V2Get🛰️ 2026-09-17 11:54
+  type: vless
+  server: t3.fullserver.sbs
+  port: 48246
+  uuid: e5e20d7b-86c0-44c0-87d1-5499bcb6e1cc
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-17 11:54 #2'
+  type: vless
+  server: mci.fullserver.sbs
+  port: 8080
+  uuid: e5e20d7b-86c0-44c0-87d1-5499bcb6e1cc
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-17 10:54
   type: vless
   server: 146.75.119.82
@@ -92,14 +123,6 @@ proxies:
   reality-opts:
     public-key: bPrWBtA93mdiJHxFvwR0JqCaJ-Kv1AGs6LP6elikcXQ
     short-id: ff3fc136afdec400
-- name: V2Get🛰️ 2026-09-15 23:51
-  type: vless
-  server: 95.179.169.44
-  port: 53224
-  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-16 23:54
   type: trojan
   server: cloud.lakshan.us
@@ -196,35 +219,7 @@ proxies:
   reality-opts:
     public-key: Kit4AiOzaBN_zhhwe8eU9SHexYW4fwAo20MnDbjPEWc
     short-id: c7514dbbd2af28b5
-- name: V2Get🛰️ 2026-09-15 13:49
-  type: vless
-  server: 31.76.3.34
-  port: 443
-  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM
-    short-id: 8a2b3c4d5e6f7012
 - name: V2Get🛰️ 2026-09-16 09:52
-  type: vless
-  server: 45.11.27.86
-  port: 443
-  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
-    short-id: d0aae44f
-- name: 'V2Get🛰️ 2026-09-16 09:52 #2'
   type: trojan
   server: mmd.asan9720.ir
   port: 8880
@@ -1174,6 +1169,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-15 21:50
+  - V2Get🛰️ 2026-09-17 11:54
+  - 'V2Get🛰️ 2026-09-17 11:54 #2'
   - V2Get🛰️ 2026-09-17 10:54
   - V2Get🛰️ 2026-09-17 11:53
   - 'V2Get🛰️ 2026-09-17 11:53 #2'
@@ -1181,7 +1179,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 10:54 #3'
   - 'V2Get🛰️ 2026-09-17 10:54 #4'
   - 'V2Get🛰️ 2026-09-17 10:54 #5'
-  - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 10:53
   - 'V2Get🛰️ 2026-09-17 10:53 #2'
@@ -1191,9 +1188,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 10:53 #6'
   - 'V2Get🛰️ 2026-09-17 10:53 #7'
   - 'V2Get🛰️ 2026-09-17 10:53 #8'
-  - V2Get🛰️ 2026-09-15 13:49
   - V2Get🛰️ 2026-09-16 09:52
-  - 'V2Get🛰️ 2026-09-16 09:52 #2'
   - V2Get🛰️ 2026-09-16 12:51
   - 'V2Get🛰️ 2026-09-16 12:51 #2'
   - 'V2Get🛰️ 2026-09-16 12:51 #3'
@@ -1277,6 +1272,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-15 21:50
+  - V2Get🛰️ 2026-09-17 11:54
+  - 'V2Get🛰️ 2026-09-17 11:54 #2'
   - V2Get🛰️ 2026-09-17 10:54
   - V2Get🛰️ 2026-09-17 11:53
   - 'V2Get🛰️ 2026-09-17 11:53 #2'
@@ -1284,7 +1282,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 10:54 #3'
   - 'V2Get🛰️ 2026-09-17 10:54 #4'
   - 'V2Get🛰️ 2026-09-17 10:54 #5'
-  - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 10:53
   - 'V2Get🛰️ 2026-09-17 10:53 #2'
@@ -1294,9 +1291,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 10:53 #6'
   - 'V2Get🛰️ 2026-09-17 10:53 #7'
   - 'V2Get🛰️ 2026-09-17 10:53 #8'
-  - V2Get🛰️ 2026-09-15 13:49
   - V2Get🛰️ 2026-09-16 09:52
-  - 'V2Get🛰️ 2026-09-16 09:52 #2'
   - V2Get🛰️ 2026-09-16 12:51
   - 'V2Get🛰️ 2026-09-16 12:51 #2'
   - 'V2Get🛰️ 2026-09-16 12:51 #3'
