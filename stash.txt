@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-17 16:54
+  type: vless
+  server: 209.38.34.152
+  port: 1161
+  uuid: ebf554d3-3b67-5392-758d-e118fb10f02c
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-17 16:54 #2'
+  type: vless
+  server: 209.38.34.152
+  port: 8039
+  uuid: ebf554d3-3b67-5392-758d-e118fb10f02c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-09-14 03:46
   type: vless
   server: 188.114.97.6
@@ -60,35 +82,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-08 10:35
-  type: vless
-  server: 144.31.5.3
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  - http/1.1
-- name: V2Get🛰️ 2026-09-11 21:41
-  type: vless
-  server: 31.56.184.132
-  port: 8443
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  udp: true
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  grpc-opts:
-    grpc-service-name: shiforgrpc
 - name: V2Get🛰️ 2026-09-17 02:53
   type: vless
   server: 52.47.212.72
@@ -961,12 +954,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-17 16:54
+  - 'V2Get🛰️ 2026-09-17 16:54 #2'
   - V2Get🛰️ 2026-09-14 03:46
   - V2Get🛰️ 2026-09-17 15:55
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-09-08 10:35
-  - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-17 02:53
   - V2Get🛰️ 2026-09-17 15:54
   - 'V2Get🛰️ 2026-09-17 15:54 #2'
@@ -1043,12 +1036,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-17 16:54
+  - 'V2Get🛰️ 2026-09-17 16:54 #2'
   - V2Get🛰️ 2026-09-14 03:46
   - V2Get🛰️ 2026-09-17 15:55
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-09-08 10:35
-  - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-17 02:53
   - V2Get🛰️ 2026-09-17 15:54
   - 'V2Get🛰️ 2026-09-17 15:54 #2'
