@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-17 02:53
+  type: vless
+  server: 95.111.211.246
+  port: 8080
+  uuid: 54489c49-cd94-460b-b6fd-0d3b0b25016d
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-17 14:55
   type: vless
   server: 176.65.151.240
@@ -281,21 +289,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-15 21:50
-  type: vless
-  server: new3.smart-cats.ru
-  port: 2053
-  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
-    short-id: 4881f8244d1b9021
-  grpc-opts:
-    grpc-service-name: grpc
 - name: V2Get🛰️ 2026-09-16 18:53
   type: vless
   server: k2.cloud--vpn.site
@@ -947,6 +940,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-17 02:53
   - V2Get🛰️ 2026-09-17 14:55
   - 'V2Get🛰️ 2026-09-17 14:55 #2'
   - 'V2Get🛰️ 2026-09-17 14:55 #3'
@@ -968,7 +962,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-17 09:54
   - V2Get🛰️ 2026-09-17 14:54
   - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-09-15 21:50
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
   - V2Get🛰️ 2026-09-15 23:51
@@ -1028,6 +1021,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-17 02:53
   - V2Get🛰️ 2026-09-17 14:55
   - 'V2Get🛰️ 2026-09-17 14:55 #2'
   - 'V2Get🛰️ 2026-09-17 14:55 #3'
@@ -1049,7 +1043,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-17 09:54
   - V2Get🛰️ 2026-09-17 14:54
   - V2Get🛰️ 2026-09-17 13:54
-  - V2Get🛰️ 2026-09-15 21:50
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
   - V2Get🛰️ 2026-09-15 23:51
