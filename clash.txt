@@ -12,35 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-09-17 10:54
+  type: vless
+  server: 15.237.34.168
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: V2Get🛰️ 2026-09-06 04:29
-  type: ss
-  server: 51.222.107.43
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
+- name: 'V2Get🛰️ 2026-09-17 10:54 #2'
+  type: vless
+  server: 15.237.34.168
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-17 10:54 #3'
+  type: vless
+  server: 31.76.111.192
+  port: 443
+  uuid: 24b84bd3-baa3-4192-9625-23c9690ae6f6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ge1.gleb.space
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bPrWBtA93mdiJHxFvwR0JqCaJ-Kv1AGs6LP6elikcXQ
+    short-id: ff3fc136afdec400
 - name: V2Get🛰️ 2026-09-15 23:51
   type: vless
   server: 95.179.169.44
@@ -1164,9 +1165,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-06 04:29
+  - V2Get🛰️ 2026-09-17 10:54
+  - 'V2Get🛰️ 2026-09-17 10:54 #2'
+  - 'V2Get🛰️ 2026-09-17 10:54 #3'
   - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 10:53
@@ -1267,9 +1268,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-06 04:29
+  - V2Get🛰️ 2026-09-17 10:54
+  - 'V2Get🛰️ 2026-09-17 10:54 #2'
+  - 'V2Get🛰️ 2026-09-17 10:54 #3'
   - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 10:53
