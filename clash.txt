@@ -12,27 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-28 11:43
+  type: vless
+  server: static.lotussec.com
+  port: 443
+  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
+  udp: true
+  network: xhttp
+  tls: true
+  servername: static.lotussec.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-10 15:11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-16 00:50
+  type: vless
+  server: 192.248.182.183
+  port: 39244
+  uuid: 5fc7563b-552d-417f-9409-08ef92284599
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-08-20 22:13
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
   skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+- name: V2Get🛰️ 2026-09-16 22:53
+  type: ss
+  server: 94.245.88.26
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p20Y6AFEN1pS7LJX
+  udp: true
 - name: V2Get🛰️ 2026-09-15 13:49
   type: vless
   server: 172.67.221.237
@@ -228,14 +246,6 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: yMoulSTnxnbOfAjWPfB244a29ms9HUkjgA1zLZ65Nzw
-- name: V2Get🛰️ 2026-09-16 00:50
-  type: vless
-  server: 192.248.182.183
-  port: 39244
-  uuid: 5fc7563b-552d-417f-9409-08ef92284599
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-17 14:54
   type: vless
   server: 94.237.54.196
@@ -278,13 +288,6 @@ proxies:
   port: 1080
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
-  udp: true
-- name: V2Get🛰️ 2026-09-16 22:53
-  type: ss
-  server: 94.245.88.26
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: p20Y6AFEN1pS7LJX
   udp: true
 - name: V2Get🛰️ 2026-09-16 18:53
   type: vless
@@ -1120,8 +1123,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-09-16 00:50
+  - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-15 13:49
   - V2Get🛰️ 2026-09-15 16:49
   - V2Get🛰️ 2026-09-16 02:50
@@ -1138,12 +1143,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 14:55 #10'
   - 'V2Get🛰️ 2026-09-17 14:55 #11'
   - V2Get🛰️ 2026-09-17 09:54
-  - V2Get🛰️ 2026-09-16 00:50
   - V2Get🛰️ 2026-09-17 14:54
   - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-09-15 21:50
   - 'V2Get🛰️ 2026-09-17 14:54 #2'
-  - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
   - 'V2Get🛰️ 2026-09-15 13:49 #2'
@@ -1222,8 +1225,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-07-28 11:43
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-09-16 00:50
+  - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-15 13:49
   - V2Get🛰️ 2026-09-15 16:49
   - V2Get🛰️ 2026-09-16 02:50
@@ -1240,12 +1245,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 14:55 #10'
   - 'V2Get🛰️ 2026-09-17 14:55 #11'
   - V2Get🛰️ 2026-09-17 09:54
-  - V2Get🛰️ 2026-09-16 00:50
   - V2Get🛰️ 2026-09-17 14:54
   - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-09-15 21:50
   - 'V2Get🛰️ 2026-09-17 14:54 #2'
-  - V2Get🛰️ 2026-09-16 22:53
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
   - 'V2Get🛰️ 2026-09-15 13:49 #2'
