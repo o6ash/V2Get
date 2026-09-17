@@ -12,21 +12,13 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-27 15:07
-  type: vless
-  server: 45.9.156.28
-  port: 443
-  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+- name: V2Get🛰️ 2026-09-17 17:54
+  type: ss
+  server: 23.252.104.131
+  port: 54321
+  cipher: aes-256-gcm
+  password: Proxy2024
   udp: true
-  network: grpc
-  tls: true
-  servername: bg4.univesalsrv.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: k-vH6pkyAv26L1_dXKOFhp0Kesur9-FCUDoj-IIpVhc
-    short-id: 51f45d4fd58cc319
-  grpc-opts:
-    grpc-service-name: cloud.v1.RelayService
 - name: V2Get🛰️ 2026-09-05 14:28
   type: vless
   server: xnforo.ir
@@ -36,32 +28,6 @@ proxies:
   network: xhttp
   tls: true
   servername: ratatouille.rahmatokaduie.ir
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-- name: V2Get🛰️ 2026-09-09 08:37
-  type: vless
-  server: darsadgir.ir
-  port: 8443
-  uuid: d85711cf-c5f5-4166-8000-25958322b13f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: sausage.esmbegudota.ir
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-- name: V2Get🛰️ 2026-09-09 19:38
-  type: vless
-  server: b2n.ir
-  port: 8443
-  uuid: d85711cf-c5f5-4166-8000-25958322b13f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: sausage.esmbegudota.ir
   alpn:
   - h2
   - http/1.1
@@ -90,107 +56,19 @@ proxies:
     path: /home
     headers:
       Host: cdn.dachniy-vopros.org
-- name: V2Get🛰️ 2026-09-16 19:52
+- name: V2Get🛰️ 2026-09-09 08:37
   type: vless
-  server: 134.122.86.165
-  port: 440
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-16 22:53
-  type: vless
-  server: 164.92.252.15
-  port: 440
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-16 23:54
-  type: trojan
-  server: cloud.lakshan.us
-  port: 119
-  password: skynet
-  udp: true
-  sni: cloud.lakshan.us
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-17 19:55
-  type: vless
-  server: 49.13.19.156
-  port: 28116
-  uuid: b905f8bd-6f72-4aa0-b51a-3762c7cfaf99
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-17 19:55 #2'
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 'V2Get🛰️ 2026-09-17 19:55 #3'
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: c12.com
-- name: 'V2Get🛰️ 2026-09-17 19:55 #4'
-  type: vless
-  server: 15.224.160.193
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-17 19:55 #5'
-  type: vless
-  server: loc1-cdn.mycarservhpdd10.ir
-  port: 43054
-  uuid: 527462f9-95a9-4470-ba22-ba1c45903954
+  server: darsadgir.ir
+  port: 8443
+  uuid: d85711cf-c5f5-4166-8000-25958322b13f
   udp: true
   network: xhttp
   tls: true
-  servername: translate.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: YhntgPILPFepw5l3EZwsODZ8AQbjyztiUNbC0DqB1SQ
-    short-id: be595a95ec409d13
-- name: 'V2Get🛰️ 2026-09-17 19:55 #6'
-  type: vless
-  server: 139.64.235.117
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  network: ws
-  tls: true
-  servername: nb.lovecf.ggff.net
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: V2Get🛰️ 2026-09-17 17:54
-  type: ss
-  server: 23.252.104.131
-  port: 54321
-  cipher: aes-256-gcm
-  password: Proxy2024
-  udp: true
+  servername: sausage.esmbegudota.ir
+  alpn:
+  - h2
+  - http/1.1
+  - h3
 - name: 'V2Get🛰️ 2026-09-17 17:54 #2'
   type: vless
   server: xtepalopp-production.up.railway.app
@@ -204,6 +82,84 @@ proxies:
     path: /ws/c380e22d-ce7a-a214-0e2d-d93c5b741ed9
     headers:
       Host: xtepalopp-production.up.railway.app
+- name: V2Get🛰️ 2026-09-09 19:38
+  type: vless
+  server: b2n.ir
+  port: 8443
+  uuid: d85711cf-c5f5-4166-8000-25958322b13f
+  udp: true
+  network: xhttp
+  tls: true
+  servername: sausage.esmbegudota.ir
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+- name: V2Get🛰️ 2026-09-17 19:55
+  type: vless
+  server: 139.64.235.117
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  network: ws
+  tls: true
+  servername: nb.lovecf.ggff.net
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: V2Get🛰️ 2026-09-16 23:54
+  type: trojan
+  server: cloud.lakshan.us
+  port: 119
+  password: skynet
+  udp: true
+  sni: cloud.lakshan.us
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-08-27 15:07
+  type: vless
+  server: 45.9.156.28
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  udp: true
+  network: grpc
+  tls: true
+  servername: bg4.univesalsrv.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: k-vH6pkyAv26L1_dXKOFhp0Kesur9-FCUDoj-IIpVhc
+    short-id: 51f45d4fd58cc319
+  grpc-opts:
+    grpc-service-name: cloud.v1.RelayService
+- name: V2Get🛰️ 2026-09-16 22:53
+  type: vless
+  server: 164.92.252.15
+  port: 440
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-16 19:52
+  type: vless
+  server: 134.122.86.165
+  port: 440
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-17 19:55 #2'
+  type: vless
+  server: loc1-cdn.mycarservhpdd10.ir
+  port: 43054
+  uuid: 527462f9-95a9-4470-ba22-ba1c45903954
+  udp: true
+  network: xhttp
+  tls: true
+  servername: translate.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: YhntgPILPFepw5l3EZwsODZ8AQbjyztiUNbC0DqB1SQ
+    short-id: be595a95ec409d13
 - name: 'V2Get🛰️ 2026-09-17 17:54 #3'
   type: vless
   server: t4.php.rest
@@ -215,6 +171,42 @@ proxies:
   servername: pish-data-32.myket.ir
   ws-opts:
     path: /api
+- name: 'V2Get🛰️ 2026-09-17 19:55 #3'
+  type: vless
+  server: 15.224.160.193
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-17 19:55 #4'
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
+    headers:
+      Host: c12.com
+- name: 'V2Get🛰️ 2026-09-17 19:55 #5'
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-17 16:55
   type: vless
   server: 199.232.78.159
@@ -228,6 +220,14 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan1.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-17 19:55 #6'
+  type: vless
+  server: 49.13.19.156
+  port: 28116
+  uuid: b905f8bd-6f72-4aa0-b51a-3762c7cfaf99
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-17 19:55 #7'
   type: vless
   server: pniomniooo-production.up.railway.app
@@ -1107,25 +1107,25 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-09-17 17:54
   - V2Get🛰️ 2026-09-05 14:28
-  - V2Get🛰️ 2026-09-09 08:37
-  - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-16 09:52
   - V2Get🛰️ 2026-09-16 13:52
-  - V2Get🛰️ 2026-09-16 19:52
-  - V2Get🛰️ 2026-09-16 22:53
-  - V2Get🛰️ 2026-09-16 23:54
+  - V2Get🛰️ 2026-09-09 08:37
+  - 'V2Get🛰️ 2026-09-17 17:54 #2'
+  - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-17 19:55
+  - V2Get🛰️ 2026-09-16 23:54
+  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-09-16 22:53
+  - V2Get🛰️ 2026-09-16 19:52
   - 'V2Get🛰️ 2026-09-17 19:55 #2'
+  - 'V2Get🛰️ 2026-09-17 17:54 #3'
   - 'V2Get🛰️ 2026-09-17 19:55 #3'
   - 'V2Get🛰️ 2026-09-17 19:55 #4'
   - 'V2Get🛰️ 2026-09-17 19:55 #5'
-  - 'V2Get🛰️ 2026-09-17 19:55 #6'
-  - V2Get🛰️ 2026-09-17 17:54
-  - 'V2Get🛰️ 2026-09-17 17:54 #2'
-  - 'V2Get🛰️ 2026-09-17 17:54 #3'
   - V2Get🛰️ 2026-09-17 16:55
+  - 'V2Get🛰️ 2026-09-17 19:55 #6'
   - 'V2Get🛰️ 2026-09-17 19:55 #7'
   - V2Get🛰️ 2026-09-17 15:54
   - 'V2Get🛰️ 2026-09-17 15:54 #2'
@@ -1205,25 +1205,25 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-09-17 17:54
   - V2Get🛰️ 2026-09-05 14:28
-  - V2Get🛰️ 2026-09-09 08:37
-  - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-16 09:52
   - V2Get🛰️ 2026-09-16 13:52
-  - V2Get🛰️ 2026-09-16 19:52
-  - V2Get🛰️ 2026-09-16 22:53
-  - V2Get🛰️ 2026-09-16 23:54
+  - V2Get🛰️ 2026-09-09 08:37
+  - 'V2Get🛰️ 2026-09-17 17:54 #2'
+  - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-17 19:55
+  - V2Get🛰️ 2026-09-16 23:54
+  - V2Get🛰️ 2026-08-27 15:07
+  - V2Get🛰️ 2026-09-16 22:53
+  - V2Get🛰️ 2026-09-16 19:52
   - 'V2Get🛰️ 2026-09-17 19:55 #2'
+  - 'V2Get🛰️ 2026-09-17 17:54 #3'
   - 'V2Get🛰️ 2026-09-17 19:55 #3'
   - 'V2Get🛰️ 2026-09-17 19:55 #4'
   - 'V2Get🛰️ 2026-09-17 19:55 #5'
-  - 'V2Get🛰️ 2026-09-17 19:55 #6'
-  - V2Get🛰️ 2026-09-17 17:54
-  - 'V2Get🛰️ 2026-09-17 17:54 #2'
-  - 'V2Get🛰️ 2026-09-17 17:54 #3'
   - V2Get🛰️ 2026-09-17 16:55
+  - 'V2Get🛰️ 2026-09-17 19:55 #6'
   - 'V2Get🛰️ 2026-09-17 19:55 #7'
   - V2Get🛰️ 2026-09-17 15:54
   - 'V2Get🛰️ 2026-09-17 15:54 #2'
