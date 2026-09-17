@@ -12,28 +12,54 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-02 01:21
+- name: V2Get🛰️ 2026-09-14 03:46
   type: vless
-  server: 2.27.205.59
+  server: 188.114.97.6
   port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-09-03 20:25
-  type: vless
-  server: neth8.lunariai.ru
-  port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  udp: true
-  network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: unsafe
   ws-opts:
     path: /
     headers:
-      Host: neth8.lunariai.ru
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-17 15:55
+  type: vless
+  server: 104.21.236.63
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-16 23:53
+  type: vless
+  server: 104.21.63.28
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  ws-opts:
+    path: /mtmvpn
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-17 13:54
+  type: vless
+  server: 104.167.199.20
+  port: 443
+  uuid: 181a9868-62bb-4580-ac82-2f43fc2f2886
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-08 10:35
   type: vless
   server: 144.31.5.3
@@ -478,14 +504,6 @@ proxies:
   reality-opts:
     public-key: ZbL83iqwFDO-QON63ZJSgaRpKmX3CZrvRdc7i_62i1U
     short-id: a9
-- name: V2Get🛰️ 2026-09-17 13:54
-  type: vless
-  server: 104.167.199.20
-  port: 443
-  uuid: 181a9868-62bb-4580-ac82-2f43fc2f2886
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-09-17 14:54 #2'
   type: ss
   server: 153.52.92.81
@@ -618,19 +636,6 @@ proxies:
   reality-opts:
     public-key: V68zHcpVxZikuIwGE5YJV8fVK_X_jNelIoaIPyOiZx8
     short-id: b29ea6cee03411cd
-- name: V2Get🛰️ 2026-09-16 23:53
-  type: vless
-  server: 104.21.63.28
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /mtmvpn
-    headers:
-      Host: cfvvv-ev1.pages.dev
 - name: 'V2Get🛰️ 2026-09-16 23:53 #2'
   type: vless
   server: 104.21.51.132
@@ -1116,8 +1121,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-02 01:21
-  - V2Get🛰️ 2026-09-03 20:25
+  - V2Get🛰️ 2026-09-14 03:46
+  - V2Get🛰️ 2026-09-17 15:55
+  - V2Get🛰️ 2026-09-16 23:53
+  - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-09-08 10:35
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-12 12:43
@@ -1154,7 +1161,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 14:55 #18'
   - 'V2Get🛰️ 2026-09-17 14:55 #19'
   - V2Get🛰️ 2026-09-17 14:54
-  - V2Get🛰️ 2026-09-17 13:54
   - 'V2Get🛰️ 2026-09-17 14:54 #2'
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
@@ -1166,7 +1172,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-16 21:54
   - 'V2Get🛰️ 2026-09-16 22:53 #2'
   - 'V2Get🛰️ 2026-09-16 22:53 #3'
-  - V2Get🛰️ 2026-09-16 23:53
   - 'V2Get🛰️ 2026-09-16 23:53 #2'
   - 'V2Get🛰️ 2026-09-16 23:53 #3'
   - V2Get🛰️ 2026-09-17 10:54
@@ -1217,8 +1222,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-02 01:21
-  - V2Get🛰️ 2026-09-03 20:25
+  - V2Get🛰️ 2026-09-14 03:46
+  - V2Get🛰️ 2026-09-17 15:55
+  - V2Get🛰️ 2026-09-16 23:53
+  - V2Get🛰️ 2026-09-17 13:54
   - V2Get🛰️ 2026-09-08 10:35
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-12 12:43
@@ -1255,7 +1262,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-17 14:55 #18'
   - 'V2Get🛰️ 2026-09-17 14:55 #19'
   - V2Get🛰️ 2026-09-17 14:54
-  - V2Get🛰️ 2026-09-17 13:54
   - 'V2Get🛰️ 2026-09-17 14:54 #2'
   - V2Get🛰️ 2026-09-16 18:53
   - V2Get🛰️ 2026-09-16 21:52
@@ -1267,7 +1273,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-16 21:54
   - 'V2Get🛰️ 2026-09-16 22:53 #2'
   - 'V2Get🛰️ 2026-09-16 22:53 #3'
-  - V2Get🛰️ 2026-09-16 23:53
   - 'V2Get🛰️ 2026-09-16 23:53 #2'
   - 'V2Get🛰️ 2026-09-16 23:53 #3'
   - V2Get🛰️ 2026-09-17 10:54
