@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-17 18:55
+  type: vless
+  server: 69.46.46.118
+  port: 443
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+  udp: true
+  network: ws
+  tls: true
+  servername: sys-2004b8-1cc4a8-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Default
+    headers:
+      Host: sys-2004b8-1cc4a8-production.up.railway.app
 - name: V2Get🛰️ 2026-09-18 10:56
   type: vless
   server: 69.46.46.121
@@ -52,20 +68,6 @@ proxies:
     headers:
       Host: app-821120-2d167b-production.up.railway.app
 - name: V2Get🛰️ 2026-09-16 15:53
-  type: vless
-  server: 5.230.13.223
-  port: 52006
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api5.vk-maps.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
-    short-id: 08
-- name: 'V2Get🛰️ 2026-09-16 15:53 #2'
   type: vless
   server: freesocks.work
   port: 2052
@@ -988,11 +990,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-17 18:55
   - V2Get🛰️ 2026-09-18 10:56
   - 'V2Get🛰️ 2026-09-18 10:56 #2'
   - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 15:53
-  - 'V2Get🛰️ 2026-09-16 15:53 #2'
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 16:55
   - V2Get🛰️ 2026-09-17 23:55
@@ -1067,11 +1069,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-17 18:55
   - V2Get🛰️ 2026-09-18 10:56
   - 'V2Get🛰️ 2026-09-18 10:56 #2'
   - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 15:53
-  - 'V2Get🛰️ 2026-09-16 15:53 #2'
   - V2Get🛰️ 2026-09-16 23:54
   - V2Get🛰️ 2026-09-17 16:55
   - V2Get🛰️ 2026-09-17 23:55
