@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-18 21:57
+  type: vless
+  server: 91.107.244.212
+  port: 8080
+  uuid: a2f590d6-bb73-418d-8907-9d52a44e1a5a
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-16 20:52
   type: vless
   server: 69.46.46.117
@@ -28,21 +36,6 @@ proxies:
     path: /ws/Default
     headers:
       Host: app-821120-2d167b-production.up.railway.app
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: cloudflare.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-02 01:19
   type: vless
   server: darsadgir.ir
@@ -1233,8 +1226,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-18 21:57
   - V2Get🛰️ 2026-09-16 20:52
-  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-09-02 01:19
   - V2Get🛰️ 2026-09-05 14:28
   - V2Get🛰️ 2026-09-07 16:32
@@ -1338,8 +1331,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-18 21:57
   - V2Get🛰️ 2026-09-16 20:52
-  - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-09-02 01:19
   - V2Get🛰️ 2026-09-05 14:28
   - V2Get🛰️ 2026-09-07 16:32
