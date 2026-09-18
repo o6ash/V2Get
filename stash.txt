@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-16 20:52
+  type: vless
+  server: 69.46.46.117
+  port: 443
+  uuid: 10c3b62f-59da-55cb-b24f-2072ecb4348c
+  udp: true
+  network: ws
+  tls: true
+  servername: app-821120-2d167b-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Default
+    headers:
+      Host: app-821120-2d167b-production.up.railway.app
 - name: V2Get🛰️ 2026-09-16 15:53
   type: vless
   server: 45.58.126.115
@@ -193,19 +209,6 @@ proxies:
   reality-opts:
     public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
     short-id: 7a0300af51a1c4cf
-- name: V2Get🛰️ 2026-09-16 02:50
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
 - name: V2Get🛰️ 2026-09-16 23:53
   type: vless
   server: 104.21.63.28
@@ -990,6 +993,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 15:53
   - 'V2Get🛰️ 2026-09-16 15:53 #2'
   - 'V2Get🛰️ 2026-09-16 15:53 #3'
@@ -1004,7 +1008,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-18 08:56 #3'
   - 'V2Get🛰️ 2026-09-18 08:56 #4'
   - 'V2Get🛰️ 2026-09-18 08:56 #5'
-  - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 19:55
   - 'V2Get🛰️ 2026-09-17 19:55 #2'
@@ -1069,6 +1072,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-16 20:52
   - V2Get🛰️ 2026-09-16 15:53
   - 'V2Get🛰️ 2026-09-16 15:53 #2'
   - 'V2Get🛰️ 2026-09-16 15:53 #3'
@@ -1083,7 +1087,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-18 08:56 #3'
   - 'V2Get🛰️ 2026-09-18 08:56 #4'
   - 'V2Get🛰️ 2026-09-18 08:56 #5'
-  - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 19:55
   - 'V2Get🛰️ 2026-09-17 19:55 #2'
