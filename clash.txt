@@ -13,12 +13,17 @@ dns:
   - 9.9.9.9
 proxies:
 - name: V2Get🛰️ 2026-09-19 20:00
-  type: ss
+  type: trojan
   server: 51.75.118.169
   port: 20172
-  cipher: aes-256-gcm
-  password: QMLv-YUphoVXDT_FoZ10mQ
+  password: 2c538cc2-10bd-4db8-bf31-69201326ca14
   udp: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /knight-trojan
+    headers:
+      Host: 51.75.118.169
 - name: 'V2Get🛰️ 2026-09-19 20:00 #2'
   type: vless
   server: 51.75.118.169
@@ -34,17 +39,12 @@ proxies:
     public-key: YVY0bXKyUYZ6a6SYoqSRzBjochClNIvr7OlEdwON8W4
     short-id: 0b261d32
 - name: 'V2Get🛰️ 2026-09-19 20:00 #3'
-  type: trojan
+  type: ss
   server: 51.75.118.169
   port: 20172
-  password: 2c538cc2-10bd-4db8-bf31-69201326ca14
+  cipher: aes-256-gcm
+  password: QMLv-YUphoVXDT_FoZ10mQ
   udp: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /knight-trojan
-    headers:
-      Host: 51.75.118.169
 - name: V2Get🛰️ 2026-08-08 01:09
   type: ss
   server: 156.146.38.169
