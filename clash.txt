@@ -12,49 +12,98 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: mitivpn
+- name: V2Get🛰️ 2026-08-04 01:44
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: cloudflare.com
+  network: tcp
+- name: V2Get🛰️ 2026-08-10 15:11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-20 19:13
+  type: vless
+  server: lizca2.footballfantasyforum.com
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  network: tcp
+  tls: true
+  servername: lizca2.footballfantasyforum.com
+  alpn:
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
   alpn:
   - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-18 13:56
-  type: trojan
-  server: 151.101.56.56
+    path: /assignment
+- name: V2Get🛰️ 2026-09-06 13:31
+  type: vless
+  server: 144.31.5.64
   port: 443
-  password: mitivpn
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
-  sni: ssl.fastly.com
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
   alpn:
-  - http/1.1
+  - h2
+- name: V2Get🛰️ 2026-09-09 00:35
+  type: vless
+  server: 172.66.0.236
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
   network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: unsafe
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: mitivpn---ss--s---mitivpn-66e.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-18 13:56 #2'
-  type: trojan
-  server: 167.82.76.7
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-16 15:53
+  type: vless
+  server: 104.21.89.41
   port: 443
-  password: mitivpn
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
   network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-18 17:56
+  type: ss
+  server: 20.238.35.153
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LB2J8MvTt2SBgD6o
+  udp: true
 - name: V2Get🛰️ 2026-09-20 00:00
   type: vless
   server: 49.13.2.132
@@ -63,45 +112,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-19 15:59
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 'V2Get🛰️ 2026-09-19 15:59 #2'
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  network: ws
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-19 15:59 #3'
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
 - name: 'V2Get🛰️ 2026-09-20 00:00 #2'
   type: vless
   server: k2.cloud--vpn.site
@@ -1122,34 +1132,6 @@ proxies:
   udp: true
 - name: 'V2Get🛰️ 2026-09-19 19:00 #3'
   type: vless
-  server: nl.organic-cdn.net
-  port: 8443
-  uuid: c6597692-e811-4e2d-81d3-21a52960050e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nl.convexia.net
-  client-fingerprint: qq
-  reality-opts:
-    public-key: jydkvpm6P7x3p5Ueco8tMR9b3XrbwRSyr445QpWrjTo
-    short-id: '563774'
-- name: 'V2Get🛰️ 2026-09-19 19:00 #4'
-  type: vless
-  server: ee.organic-cdn.net
-  port: 443
-  uuid: c6597692-e811-4e2d-81d3-21a52960050e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ee.convexia.net
-  client-fingerprint: qq
-  reality-opts:
-    public-key: dAywk2CpVoA14GcQBWxgkamea0yaLkF6jUmy4--vHAU
-    short-id: fd
-- name: 'V2Get🛰️ 2026-09-19 19:00 #5'
-  type: vless
   server: de.organic-cdn.net
   port: 443
   uuid: c6597692-e811-4e2d-81d3-21a52960050e
@@ -1162,7 +1144,7 @@ proxies:
   reality-opts:
     public-key: jydkvpm6P7x3p5Ueco8tMR9b3XrbwRSyr445QpWrjTo
     short-id: '563774'
-- name: 'V2Get🛰️ 2026-09-19 19:00 #6'
+- name: 'V2Get🛰️ 2026-09-19 19:00 #4'
   type: vless
   server: de.organic-cdn.net
   port: 8443
@@ -1177,7 +1159,7 @@ proxies:
     short-id: '563774'
   grpc-opts:
     grpc-service-name: de.convexia.net
-- name: 'V2Get🛰️ 2026-09-19 19:00 #7'
+- name: 'V2Get🛰️ 2026-09-19 19:00 #5'
   type: vless
   server: at.organic-cdn.net
   port: 443
@@ -1191,7 +1173,7 @@ proxies:
   reality-opts:
     public-key: dAywk2CpVoA14GcQBWxgkamea0yaLkF6jUmy4--vHAU
     short-id: fd
-- name: 'V2Get🛰️ 2026-09-19 19:00 #8'
+- name: 'V2Get🛰️ 2026-09-19 19:00 #6'
   type: vless
   server: de2.organic-cdn.net
   port: 443
@@ -1205,7 +1187,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: api/v2/internal/mnpc
-- name: 'V2Get🛰️ 2026-09-19 19:00 #9'
+- name: 'V2Get🛰️ 2026-09-19 19:00 #7'
   type: vless
   server: se.organic-cdn.net
   port: 443
@@ -1219,7 +1201,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: grpc
-- name: 'V2Get🛰️ 2026-09-19 19:00 #10'
+- name: 'V2Get🛰️ 2026-09-19 19:00 #8'
   type: vless
   server: tr.organic-cdn.net
   port: 443
@@ -1239,13 +1221,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
+  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-20 19:13
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-09 00:35
+  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-18 17:56
   - V2Get🛰️ 2026-09-20 00:00
-  - V2Get🛰️ 2026-09-19 15:59
-  - 'V2Get🛰️ 2026-09-19 15:59 #2'
-  - 'V2Get🛰️ 2026-09-19 15:59 #3'
   - 'V2Get🛰️ 2026-09-20 00:00 #2'
   - 'V2Get🛰️ 2026-09-20 00:00 #3'
   - 'V2Get🛰️ 2026-09-20 00:00 #4'
@@ -1336,21 +1320,21 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 19:00 #6'
   - 'V2Get🛰️ 2026-09-19 19:00 #7'
   - 'V2Get🛰️ 2026-09-19 19:00 #8'
-  - 'V2Get🛰️ 2026-09-19 19:00 #9'
-  - 'V2Get🛰️ 2026-09-19 19:00 #10'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
+  - V2Get🛰️ 2026-08-04 01:44
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-20 19:13
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-09 00:35
+  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-18 17:56
   - V2Get🛰️ 2026-09-20 00:00
-  - V2Get🛰️ 2026-09-19 15:59
-  - 'V2Get🛰️ 2026-09-19 15:59 #2'
-  - 'V2Get🛰️ 2026-09-19 15:59 #3'
   - 'V2Get🛰️ 2026-09-20 00:00 #2'
   - 'V2Get🛰️ 2026-09-20 00:00 #3'
   - 'V2Get🛰️ 2026-09-20 00:00 #4'
@@ -1441,8 +1425,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 19:00 #6'
   - 'V2Get🛰️ 2026-09-19 19:00 #7'
   - 'V2Get🛰️ 2026-09-19 19:00 #8'
-  - 'V2Get🛰️ 2026-09-19 19:00 #9'
-  - 'V2Get🛰️ 2026-09-19 19:00 #10'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
