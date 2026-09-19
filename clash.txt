@@ -12,14 +12,32 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-18 11:56
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  udp: true
+  network: ws
+  tls: true
+  servername: vip.868068.xyz
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
 - name: V2Get🛰️ 2026-09-19 22:59
   type: vless
-  server: best10.daltoon-server.ir
-  port: 35768
-  uuid: 5775cdac-c076-4524-8252-2b34a27f9dee
+  server: 45.88.13.6
+  port: 443
+  uuid: f0e0d780-a43b-98ef-d7fe-f628cfb1a606
   udp: true
-  network: tcp
-  skip-cert-verify: true
+  network: xhttp
+  tls: true
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
 - name: V2Get🛰️ 2026-09-18 13:56
   type: trojan
   server: 199.232.78.101
@@ -34,6 +52,14 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-09-19 22:59 #2'
+  type: vless
+  server: best10.daltoon-server.ir
+  port: 35768
+  uuid: 5775cdac-c076-4524-8252-2b34a27f9dee
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-19 10:58
   type: vless
   server: 193.233.91.200
@@ -104,19 +130,6 @@ proxies:
     short-id: 2e9f4c7b1a8d6e3f
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
-- name: V2Get🛰️ 2026-09-05 14:28
-  type: vless
-  server: darsadgir.ir
-  port: 2087
-  uuid: c75775e9-cf53-47b6-9d1d-29c3a46633fd
-  udp: true
-  network: xhttp
-  tls: true
-  servername: ratatouille.rahmatokaduie.ir
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 - name: 'V2Get🛰️ 2026-09-19 21:59 #3'
   type: vless
   server: 185.207.66.8
@@ -386,19 +399,6 @@ proxies:
   tls: true
   servername: fish.kaftarkakolbesarwifi.ir
   client-fingerprint: chrome
-- name: 'V2Get🛰️ 2026-09-05 14:28 #2'
-  type: vless
-  server: xnforo.ir
-  port: 443
-  uuid: d5af4dfe-eaf1-460c-87aa-fefe930db0ba
-  udp: true
-  network: xhttp
-  tls: true
-  servername: chopin.paxr.ir
-  alpn:
-  - h2
-  - http/1.1
-  - h3
 - name: V2Get🛰️ 2026-09-19 21:00
   type: vless
   server: bestproj-production-4727.up.railway.app
@@ -1247,14 +1247,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-19 22:59
   - V2Get🛰️ 2026-09-18 13:56
+  - 'V2Get🛰️ 2026-09-19 22:59 #2'
   - V2Get🛰️ 2026-09-19 10:58
   - V2Get🛰️ 2026-09-19 13:59
   - V2Get🛰️ 2026-09-10 23:41
   - V2Get🛰️ 2026-09-19 21:59
   - 'V2Get🛰️ 2026-09-19 21:59 #2'
-  - V2Get🛰️ 2026-09-05 14:28
   - 'V2Get🛰️ 2026-09-19 21:59 #3'
   - 'V2Get🛰️ 2026-09-19 21:59 #4'
   - V2Get🛰️ 2026-09-16 21:52
@@ -1276,7 +1277,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 21:59 #18'
   - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-07 16:32
-  - 'V2Get🛰️ 2026-09-05 14:28 #2'
   - V2Get🛰️ 2026-09-19 21:00
   - 'V2Get🛰️ 2026-09-19 21:00 #2'
   - 'V2Get🛰️ 2026-09-19 21:00 #3'
@@ -1350,14 +1350,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-19 22:59
   - V2Get🛰️ 2026-09-18 13:56
+  - 'V2Get🛰️ 2026-09-19 22:59 #2'
   - V2Get🛰️ 2026-09-19 10:58
   - V2Get🛰️ 2026-09-19 13:59
   - V2Get🛰️ 2026-09-10 23:41
   - V2Get🛰️ 2026-09-19 21:59
   - 'V2Get🛰️ 2026-09-19 21:59 #2'
-  - V2Get🛰️ 2026-09-05 14:28
   - 'V2Get🛰️ 2026-09-19 21:59 #3'
   - 'V2Get🛰️ 2026-09-19 21:59 #4'
   - V2Get🛰️ 2026-09-16 21:52
@@ -1379,7 +1380,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 21:59 #18'
   - V2Get🛰️ 2026-09-09 19:38
   - V2Get🛰️ 2026-09-07 16:32
-  - 'V2Get🛰️ 2026-09-05 14:28 #2'
   - V2Get🛰️ 2026-09-19 21:00
   - 'V2Get🛰️ 2026-09-19 21:00 #2'
   - 'V2Get🛰️ 2026-09-19 21:00 #3'
