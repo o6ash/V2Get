@@ -12,43 +12,55 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
+- name: V2Get🛰️ 2026-09-13 19:45
+  type: ss
+  server: 4.168.198.18
   port: 443
-  password: mitivpn
+  cipher: chacha20-ietf-poly1305
+  password: FYGlWYggB4Akk6HP
   udp: true
-  sni: cloudflare.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-20 19:13
+- name: 'V2Get🛰️ 2026-09-13 19:45 #2'
   type: vless
-  server: 184.107.106.68
+  server: 15.236.112.22
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-13 21:45
+  type: vless
+  server: 199.232.78.159
   port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  uuid: b386bef3-46ba-4dbe-9ef9-2883b3508322
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT
+- name: V2Get🛰️ 2026-09-13 23:47
+  type: vless
+  server: 35.181.22.53
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-19 13:58
+  type: vless
+  server: 87.120.106.181
+  port: 8443
+  uuid: 7236a0bd-6b2b-402f-b926-aaf4d2bd17ae
   udp: true
   network: tcp
   tls: true
-  servername: lizca2.footballfantasyforum.com
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: UNxylQLY4RHp8gIhGvV5o5K_Xj053tFm6hkA6eOpZTM
+    short-id: 641ca295f26e1a25
 - name: V2Get🛰️ 2026-09-19 12:58
   type: vless
   server: mxp6jvjacystdp-s4f.kjnnv3i410u6mq-itd.workers.dev
@@ -224,33 +236,6 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: V2Get🛰️ 2026-09-15 23:51
-  type: vless
-  server: 104.24.0.184
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: V2Get🛰️ 2026-09-16 02:50
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
 - name: V2Get🛰️ 2026-09-16 23:53
   type: vless
   server: 104.21.63.28
@@ -1198,9 +1183,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-20 19:13
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-13 19:45
+  - 'V2Get🛰️ 2026-09-13 19:45 #2'
+  - V2Get🛰️ 2026-09-13 21:45
+  - V2Get🛰️ 2026-09-13 23:47
+  - V2Get🛰️ 2026-09-19 13:58
   - V2Get🛰️ 2026-09-19 12:58
   - V2Get🛰️ 2026-09-18 13:56
   - 'V2Get🛰️ 2026-09-18 13:56 #2'
@@ -1216,8 +1203,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 00:57 #2'
   - V2Get🛰️ 2026-09-18 17:56
   - 'V2Get🛰️ 2026-09-19 00:57 #3'
-  - V2Get🛰️ 2026-09-15 23:51
-  - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 01:53
   - 'V2Get🛰️ 2026-09-17 01:53 #2'
@@ -1300,9 +1285,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-18 01:06
-  - V2Get🛰️ 2026-08-20 19:13
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-13 19:45
+  - 'V2Get🛰️ 2026-09-13 19:45 #2'
+  - V2Get🛰️ 2026-09-13 21:45
+  - V2Get🛰️ 2026-09-13 23:47
+  - V2Get🛰️ 2026-09-19 13:58
   - V2Get🛰️ 2026-09-19 12:58
   - V2Get🛰️ 2026-09-18 13:56
   - 'V2Get🛰️ 2026-09-18 13:56 #2'
@@ -1318,8 +1305,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-19 00:57 #2'
   - V2Get🛰️ 2026-09-18 17:56
   - 'V2Get🛰️ 2026-09-19 00:57 #3'
-  - V2Get🛰️ 2026-09-15 23:51
-  - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 23:53
   - V2Get🛰️ 2026-09-17 01:53
   - 'V2Get🛰️ 2026-09-17 01:53 #2'
