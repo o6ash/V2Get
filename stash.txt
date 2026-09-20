@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-20 20:01
+  type: vless
+  server: 15.237.5.137
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-20 18:01
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: V2Get🛰️ 2026-09-20 21:02
   type: vless
   server: www.tworiverssoftware.com.tworiverssoftware.com
@@ -407,7 +429,7 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /proxyip=us.xiabibi.cf
-- name: V2Get🛰️ 2026-09-20 20:01
+- name: 'V2Get🛰️ 2026-09-20 20:01 #2'
   type: vless
   server: vip.fi.veraxideas.ir
   port: 20700
@@ -420,7 +442,7 @@ proxies:
   reality-opts:
     public-key: hLMggUThR-UQTA1qGk_yAixl5XgkzzJq55gkg6Xo_TI
     short-id: 443b095cb4d4118a
-- name: 'V2Get🛰️ 2026-09-20 20:01 #2'
+- name: 'V2Get🛰️ 2026-09-20 20:01 #3'
   type: vless
   server: 15.237.5.137
   port: 22223
@@ -428,7 +450,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-20 20:01 #3'
+- name: 'V2Get🛰️ 2026-09-20 20:01 #4'
   type: vless
   server: 178.255.222.200
   port: 81
@@ -436,18 +458,10 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-20 20:01 #4'
+- name: 'V2Get🛰️ 2026-09-20 20:01 #5'
   type: vless
   server: 15.237.17.206
   port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-20 20:01 #5'
-  type: vless
-  server: 15.237.5.137
-  port: 22224
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   network: tcp
@@ -466,7 +480,7 @@ proxies:
   reality-opts:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
-- name: V2Get🛰️ 2026-09-20 18:01
+- name: 'V2Get🛰️ 2026-09-20 18:01 #2'
   type: vless
   server: 144.31.214.172
   port: 9443
@@ -480,20 +494,6 @@ proxies:
   reality-opts:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: ad20d2bc
-- name: 'V2Get🛰️ 2026-09-20 18:01 #2'
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
 - name: V2Get🛰️ 2026-09-20 19:02
   type: vless
   server: 199.232.78.159
@@ -857,6 +857,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-20 20:01
+  - V2Get🛰️ 2026-09-20 18:01
   - V2Get🛰️ 2026-09-20 21:02
   - 'V2Get🛰️ 2026-09-20 21:02 #2'
   - 'V2Get🛰️ 2026-09-20 21:02 #3'
@@ -888,13 +890,11 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 16:02
   - 'V2Get🛰️ 2026-09-20 20:02 #3'
   - 'V2Get🛰️ 2026-09-20 20:02 #4'
-  - V2Get🛰️ 2026-09-20 20:01
   - 'V2Get🛰️ 2026-09-20 20:01 #2'
   - 'V2Get🛰️ 2026-09-20 20:01 #3'
   - 'V2Get🛰️ 2026-09-20 20:01 #4'
   - 'V2Get🛰️ 2026-09-20 20:01 #5'
   - 'V2Get🛰️ 2026-09-20 20:01 #6'
-  - V2Get🛰️ 2026-09-20 18:01
   - 'V2Get🛰️ 2026-09-20 18:01 #2'
   - V2Get🛰️ 2026-09-20 19:02
   - V2Get🛰️ 2026-09-20 18:02
@@ -932,6 +932,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-20 20:01
+  - V2Get🛰️ 2026-09-20 18:01
   - V2Get🛰️ 2026-09-20 21:02
   - 'V2Get🛰️ 2026-09-20 21:02 #2'
   - 'V2Get🛰️ 2026-09-20 21:02 #3'
@@ -963,13 +965,11 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 16:02
   - 'V2Get🛰️ 2026-09-20 20:02 #3'
   - 'V2Get🛰️ 2026-09-20 20:02 #4'
-  - V2Get🛰️ 2026-09-20 20:01
   - 'V2Get🛰️ 2026-09-20 20:01 #2'
   - 'V2Get🛰️ 2026-09-20 20:01 #3'
   - 'V2Get🛰️ 2026-09-20 20:01 #4'
   - 'V2Get🛰️ 2026-09-20 20:01 #5'
   - 'V2Get🛰️ 2026-09-20 20:01 #6'
-  - V2Get🛰️ 2026-09-20 18:01
   - 'V2Get🛰️ 2026-09-20 18:01 #2'
   - V2Get🛰️ 2026-09-20 19:02
   - V2Get🛰️ 2026-09-20 18:02
