@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-20 17:02
+  type: vless
+  server: 152.42.149.187
+  port: 1161
+  uuid: af0d5e14-6937-37cc-2a0a-033a83a9a3e2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-20 17:02 #2'
+  type: vless
+  server: 152.42.149.187
+  port: 8039
+  uuid: af0d5e14-6937-37cc-2a0a-033a83a9a3e2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-09-20 00:00
   type: vless
   server: k2.cloud--vpn.site
@@ -278,32 +300,6 @@ proxies:
     short-id: 212a8beb0ea4817b
 - name: V2Get🛰️ 2026-09-19 15:59
   type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 'V2Get🛰️ 2026-09-19 15:59 #2'
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  network: ws
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-19 15:59 #3'
-  type: vless
   server: 5.157.10.250
   port: 443
   uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
@@ -316,7 +312,7 @@ proxies:
   reality-opts:
     public-key: pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U
     short-id: 6aa2d2e950441a9a
-- name: 'V2Get🛰️ 2026-09-19 15:59 #4'
+- name: 'V2Get🛰️ 2026-09-19 15:59 #2'
   type: vless
   server: 162.159.192.125
   port: 443
@@ -997,6 +993,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-20 17:02
+  - 'V2Get🛰️ 2026-09-20 17:02 #2'
   - V2Get🛰️ 2026-09-20 00:00
   - V2Get🛰️ 2026-09-20 00:59
   - 'V2Get🛰️ 2026-09-20 00:59 #2'
@@ -1023,8 +1021,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 11:00
   - V2Get🛰️ 2026-09-19 15:59
   - 'V2Get🛰️ 2026-09-19 15:59 #2'
-  - 'V2Get🛰️ 2026-09-19 15:59 #3'
-  - 'V2Get🛰️ 2026-09-19 15:59 #4'
   - V2Get🛰️ 2026-09-20 03:00
   - V2Get🛰️ 2026-09-20 05:00
   - V2Get🛰️ 2026-09-20 09:00
@@ -1082,6 +1078,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-20 17:02
+  - 'V2Get🛰️ 2026-09-20 17:02 #2'
   - V2Get🛰️ 2026-09-20 00:00
   - V2Get🛰️ 2026-09-20 00:59
   - 'V2Get🛰️ 2026-09-20 00:59 #2'
@@ -1108,8 +1106,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 11:00
   - V2Get🛰️ 2026-09-19 15:59
   - 'V2Get🛰️ 2026-09-19 15:59 #2'
-  - 'V2Get🛰️ 2026-09-19 15:59 #3'
-  - 'V2Get🛰️ 2026-09-19 15:59 #4'
   - V2Get🛰️ 2026-09-20 03:00
   - V2Get🛰️ 2026-09-20 05:00
   - V2Get🛰️ 2026-09-20 09:00
