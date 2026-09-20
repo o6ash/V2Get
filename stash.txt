@@ -12,20 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-16 15:53
-  type: vless
-  server: 45.58.126.115
-  port: 8444
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+- name: V2Get🛰️ 2026-09-20 00:59
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: MiTIVPN
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nbcnews.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: OyUyHy3-04xKvFMvAzUbiVf7tkWX2a_gC2E_sEHGVw8
-    short-id: 08
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-20 18:01
   type: vless
   server: 93.152.224.133
@@ -907,7 +907,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-20 18:01
   - V2Get🛰️ 2026-09-20 21:03
   - 'V2Get🛰️ 2026-09-20 21:03 #2'
@@ -985,7 +985,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-20 18:01
   - V2Get🛰️ 2026-09-20 21:03
   - 'V2Get🛰️ 2026-09-20 21:03 #2'
