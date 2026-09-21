@@ -12,32 +12,63 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-08 19:10
+- name: V2Get🛰️ 2026-09-20 11:02
   type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  server: 152.228.139.33
+  port: 35108
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  grpc-opts:
+    grpc-service-name: grpc-common3
+- name: V2Get🛰️ 2026-09-21 01:03
+  type: vless
+  server: 45.58.126.92
+  port: 8444
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: nbcnews.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-- name: V2Get🛰️ 2026-08-31 05:15
-  type: trojan
-  server: 45.205.0.6
+    public-key: OyUyHy3-04xKvFMvAzUbiVf7tkWX2a_gC2E_sEHGVw8
+    short-id: 08
+- name: V2Get🛰️ 2026-09-15 23:51
+  type: vless
+  server: 104.21.60.109
   port: 443
-  password: humanity
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
-  sni: www.calmlunch.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: unsafe
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-18 11:56
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  udp: true
+  network: ws
+  tls: true
+  servername: vip.868068.xyz
+  client-fingerprint: unsafe
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
 - name: V2Get🛰️ 2026-09-13 23:46
   type: vless
   server: 104.16.10.185
@@ -54,20 +85,6 @@ proxies:
 - name: V2Get🛰️ 2026-09-14 03:46
   type: vless
   server: 188.114.97.6
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: V2Get🛰️ 2026-09-15 23:51
-  type: vless
-  server: 104.21.60.109
   port: 443
   uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
@@ -145,20 +162,6 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: V2Get🛰️ 2026-09-18 11:56
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  udp: true
-  network: ws
-  tls: true
-  servername: vip.868068.xyz
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
 - name: V2Get🛰️ 2026-09-19 13:59
   type: vless
   server: 138.124.125.236
@@ -1085,17 +1088,17 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-08 19:10
-  - V2Get🛰️ 2026-08-31 05:15
+  - V2Get🛰️ 2026-09-20 11:02
+  - V2Get🛰️ 2026-09-21 01:03
+  - V2Get🛰️ 2026-09-15 23:51
+  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-13 23:46
   - V2Get🛰️ 2026-09-14 03:46
-  - V2Get🛰️ 2026-09-15 23:51
   - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 15:53
   - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-17 22:55
-  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-19 13:59
   - 'V2Get🛰️ 2026-09-19 13:59 #2'
   - V2Get🛰️ 2026-09-19 15:59
@@ -1172,17 +1175,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-08 19:10
-  - V2Get🛰️ 2026-08-31 05:15
+  - V2Get🛰️ 2026-09-20 11:02
+  - V2Get🛰️ 2026-09-21 01:03
+  - V2Get🛰️ 2026-09-15 23:51
+  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-13 23:46
   - V2Get🛰️ 2026-09-14 03:46
-  - V2Get🛰️ 2026-09-15 23:51
   - 'V2Get🛰️ 2026-09-15 23:51 #2'
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-16 15:53
   - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-17 22:55
-  - V2Get🛰️ 2026-09-18 11:56
   - V2Get🛰️ 2026-09-19 13:59
   - 'V2Get🛰️ 2026-09-19 13:59 #2'
   - V2Get🛰️ 2026-09-19 15:59
