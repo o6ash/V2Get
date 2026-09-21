@@ -12,28 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-09-16 15:53
+- name: V2Get🛰️ 2026-09-21 13:04
   type: vless
-  server: 104.21.89.41
+  server: 199.232.78.160
   port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  uuid: fa557f75-e220-4699-a8f6-47b9be71b466
   udp: true
-  network: ws
+  network: xhttp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+- name: 'V2Get🛰️ 2026-09-21 13:04 #2'
+  type: vless
+  server: 199.232.79.166
+  port: 443
+  uuid: fa557f75-e220-4699-a8f6-47b9be71b466
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.fastly.com
+  client-fingerprint: ios
 - name: V2Get🛰️ 2026-09-17 01:53
   type: vless
   server: 104.21.70.228
@@ -47,7 +47,7 @@ proxies:
     path: /
     headers:
       Host: cfvvv-ev1.pages.dev
-- name: V2Get🛰️ 2026-09-21 13:04
+- name: 'V2Get🛰️ 2026-09-21 13:04 #3'
   type: vless
   server: az-hti-de.ramzshadi.ir
   port: 8088
@@ -59,7 +59,7 @@ proxies:
     path: /bmi.ir
     headers:
       Host: play-apps-features.googleusercontent.com
-- name: 'V2Get🛰️ 2026-09-21 13:04 #2'
+- name: 'V2Get🛰️ 2026-09-21 13:04 #4'
   type: vless
   server: norw-sca-eta.ramzshadi.ir
   port: 43312
@@ -1219,11 +1219,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-09-16 15:53
-  - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-21 13:04
   - 'V2Get🛰️ 2026-09-21 13:04 #2'
+  - V2Get🛰️ 2026-09-17 01:53
+  - 'V2Get🛰️ 2026-09-21 13:04 #3'
+  - 'V2Get🛰️ 2026-09-21 13:04 #4'
   - V2Get🛰️ 2026-09-21 12:04
   - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-21 13:03
@@ -1322,11 +1322,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
-  - V2Get🛰️ 2026-09-16 15:53
-  - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-21 13:04
   - 'V2Get🛰️ 2026-09-21 13:04 #2'
+  - V2Get🛰️ 2026-09-17 01:53
+  - 'V2Get🛰️ 2026-09-21 13:04 #3'
+  - 'V2Get🛰️ 2026-09-21 13:04 #4'
   - V2Get🛰️ 2026-09-21 12:04
   - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-21 13:03
