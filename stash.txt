@@ -12,6 +12,54 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-16 15:53
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-20 18:01
+  type: vless
+  server: 144.31.214.172
+  port: 9443
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: ad20d2bc
+- name: V2Get🛰️ 2026-09-21 01:02
+  type: vless
+  server: 104.16.10.117
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  network: ws
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: V2Get🛰️ 2026-09-21 12:03
+  type: vless
+  server: search.navard.net
+  port: 80
+  uuid: b40ddc5e-9d01-43e1-975c-30200fda12c4
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-21 19:04
   type: vless
   server: newyork-production-b497.up.railway.app
@@ -90,54 +138,6 @@ proxies:
     path: /ws/1de0cb56-82c8-fc04-4b26-f660ae27eae3
     headers:
       Host: newyork-production-b497.up.railway.app
-- name: V2Get🛰️ 2026-09-17 01:53
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: V2Get🛰️ 2026-09-21 12:03
-  type: vless
-  server: search.navard.net
-  port: 80
-  uuid: b40ddc5e-9d01-43e1-975c-30200fda12c4
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-18 03:55
-  type: vless
-  server: pl6.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-09-20 00:59
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-55e.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-21 18:04
   type: vless
   server: gerswds.speedtest-shop.ir
@@ -954,15 +954,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-20 18:01
+  - V2Get🛰️ 2026-09-21 01:02
+  - V2Get🛰️ 2026-09-21 12:03
   - V2Get🛰️ 2026-09-21 19:04
   - 'V2Get🛰️ 2026-09-21 19:04 #2'
   - 'V2Get🛰️ 2026-09-21 19:04 #3'
   - 'V2Get🛰️ 2026-09-21 19:04 #4'
   - 'V2Get🛰️ 2026-09-21 19:04 #5'
-  - V2Get🛰️ 2026-09-17 01:53
-  - V2Get🛰️ 2026-09-21 12:03
-  - V2Get🛰️ 2026-09-18 03:55
-  - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-21 18:04
   - 'V2Get🛰️ 2026-09-21 18:04 #2'
   - 'V2Get🛰️ 2026-09-21 18:04 #3'
@@ -1037,15 +1037,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-16 15:53
+  - V2Get🛰️ 2026-09-20 18:01
+  - V2Get🛰️ 2026-09-21 01:02
+  - V2Get🛰️ 2026-09-21 12:03
   - V2Get🛰️ 2026-09-21 19:04
   - 'V2Get🛰️ 2026-09-21 19:04 #2'
   - 'V2Get🛰️ 2026-09-21 19:04 #3'
   - 'V2Get🛰️ 2026-09-21 19:04 #4'
   - 'V2Get🛰️ 2026-09-21 19:04 #5'
-  - V2Get🛰️ 2026-09-17 01:53
-  - V2Get🛰️ 2026-09-21 12:03
-  - V2Get🛰️ 2026-09-18 03:55
-  - V2Get🛰️ 2026-09-20 00:59
   - V2Get🛰️ 2026-09-21 18:04
   - 'V2Get🛰️ 2026-09-21 18:04 #2'
   - 'V2Get🛰️ 2026-09-21 18:04 #3'
