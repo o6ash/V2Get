@@ -14,6 +14,103 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-21 11:03
   type: vless
+  server: 93.190.9.45
+  port: 3090
+  uuid: b1ca4f7c-d50a-41b2-b779-07c3e6ed09b2
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-09-21 11:03 #2'
+  type: vless
+  server: 93.190.9.58
+  port: 3090
+  uuid: a02acef7-4321-43b7-a10d-d5445b999e84
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-09-21 11:03 #3'
+  type: vless
+  server: 93.190.9.44
+  port: 3090
+  uuid: b1ca4f7c-d50a-41b2-b779-07c3e6ed09b2
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-09-21 11:03 #4'
+  type: vless
+  server: 93.190.9.34
+  port: 3090
+  uuid: b1ca4f7c-d50a-41b2-b779-07c3e6ed09b2
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-09-21 11:03 #5'
+  type: vless
+  server: 93.190.9.41
+  port: 3090
+  uuid: b1ca4f7c-d50a-41b2-b779-07c3e6ed09b2
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: V2Get🛰️ 2026-09-21 01:02
+  type: vless
+  server: 31.77.220.190
+  port: 443
+  uuid: ad181c5d-2998-408a-8706-003969e557a7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de3.global-cdn.org
+  client-fingerprint: safari
+  reality-opts:
+    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
+    short-id: f7d0420b8ab26060
+- name: 'V2Get🛰️ 2026-09-21 01:02 #2'
+  type: vless
+  server: 176.222.53.236
+  port: 8445
+  uuid: e5d73666-1ac5-49fc-8e4d-5c8cad769588
+  udp: true
+  network: grpc
+  tls: true
+  servername: hetzner.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
+    short-id: 6ba85179e30d4fc2
+  grpc-opts:
+    grpc-service-name: Google
+- name: 'V2Get🛰️ 2026-09-21 01:02 #3'
+  type: vless
+  server: 140.150.238.11
+  port: 8446
+  uuid: e5d73666-1ac5-49fc-8e4d-5c8cad769588
+  udp: true
+  network: xhttp
+  tls: true
+  servername: hetzner.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
+    short-id: 6ba85179e30d4fc2
+- name: 'V2Get🛰️ 2026-09-21 11:03 #6'
+  type: vless
   server: 199.232.78.159
   port: 443
   uuid: 00864d0f-3c82-419a-a65e-52534d023242
@@ -25,47 +122,6 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: fancii.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-18 11:56
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  udp: true
-  network: ws
-  tls: true
-  servername: vip.868068.xyz
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: V2Get🛰️ 2026-09-20 00:59
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTIVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-19 15:59
-  type: vless
-  server: 162.159.192.125
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  network: ws
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
 - name: V2Get🛰️ 2026-09-21 01:03
   type: vless
   server: 45.58.126.92
@@ -334,7 +390,7 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: V2Get🛰️ 2026-09-21 01:02
+- name: 'V2Get🛰️ 2026-09-21 01:02 #4'
   type: vless
   server: 94.228.219.154
   port: 443
@@ -348,7 +404,7 @@ proxies:
   reality-opts:
     public-key: e_90GPqlV4NPUmq-C1KTzyo_flnUDXzIg1WZUZbDs3s
     short-id: fe54fc7a
-- name: 'V2Get🛰️ 2026-09-21 01:02 #2'
+- name: 'V2Get🛰️ 2026-09-21 01:02 #5'
   type: vless
   server: 62.60.157.56
   port: 443
@@ -362,7 +418,7 @@ proxies:
   reality-opts:
     public-key: ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118
     short-id: 940dbf5b
-- name: 'V2Get🛰️ 2026-09-21 01:02 #3'
+- name: 'V2Get🛰️ 2026-09-21 01:02 #6'
   type: vless
   server: 213.176.78.168
   port: 443
@@ -376,21 +432,7 @@ proxies:
   reality-opts:
     public-key: wK66Ve91QmwuclMGLWiN3ADL0i4-VwEK-_P4sDynogo
     short-id: 99bfeeeb5c1c
-- name: 'V2Get🛰️ 2026-09-21 01:02 #4'
-  type: vless
-  server: 31.77.220.190
-  port: 443
-  uuid: ad181c5d-2998-408a-8706-003969e557a7
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de3.global-cdn.org
-  client-fingerprint: safari
-  reality-opts:
-    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
-    short-id: f7d0420b8ab26060
-- name: 'V2Get🛰️ 2026-09-21 01:02 #5'
+- name: 'V2Get🛰️ 2026-09-21 01:02 #7'
   type: vless
   server: 5.175.186.10
   port: 443
@@ -404,34 +446,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-09-21 01:02 #6'
-  type: vless
-  server: 176.222.53.236
-  port: 8445
-  uuid: e5d73666-1ac5-49fc-8e4d-5c8cad769588
-  udp: true
-  network: grpc
-  tls: true
-  servername: hetzner.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-  grpc-opts:
-    grpc-service-name: Google
-- name: 'V2Get🛰️ 2026-09-21 01:02 #7'
-  type: vless
-  server: 140.150.238.11
-  port: 8446
-  uuid: e5d73666-1ac5-49fc-8e4d-5c8cad769588
-  udp: true
-  network: xhttp
-  tls: true
-  servername: hetzner.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
 - name: 'V2Get🛰️ 2026-09-21 01:02 #8'
   type: vless
   server: 138.124.64.23
@@ -1138,31 +1152,12 @@ proxies:
   udp: true
 - name: 'V2Get🛰️ 2026-09-20 23:02 #2'
   type: ss
-  server: 89.125.244.241
-  port: 10011
-  cipher: aes-256-gcm
-  password: 9cfaa78d51ac366f
-  udp: true
-- name: 'V2Get🛰️ 2026-09-20 23:02 #3'
-  type: vless
-  server: 6ba63396dedd.ginvexa.ir
-  port: 2096
-  uuid: d4618518-0e84-4c7a-b487-5b66bbf714b9
-  udp: true
-  network: tcp
-  tls: true
-  servername: 6ba63396dedd.ginvexa.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'V2Get🛰️ 2026-09-20 23:02 #4'
-  type: ss
   server: 64b4327358143ff0.salzivo.ir
   port: 2093
   cipher: chacha20-ietf-poly1305
   password: yZIWJH64lpnTqN3GEYalaF5mYU4evXkg
   udp: true
-- name: 'V2Get🛰️ 2026-09-20 23:02 #5'
+- name: 'V2Get🛰️ 2026-09-20 23:02 #3'
   type: ss
   server: 185.22.155.203
   port: 10900
@@ -1176,9 +1171,14 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-21 11:03
-  - V2Get🛰️ 2026-09-18 11:56
-  - V2Get🛰️ 2026-09-20 00:59
-  - V2Get🛰️ 2026-09-19 15:59
+  - 'V2Get🛰️ 2026-09-21 11:03 #2'
+  - 'V2Get🛰️ 2026-09-21 11:03 #3'
+  - 'V2Get🛰️ 2026-09-21 11:03 #4'
+  - 'V2Get🛰️ 2026-09-21 11:03 #5'
+  - V2Get🛰️ 2026-09-21 01:02
+  - 'V2Get🛰️ 2026-09-21 01:02 #2'
+  - 'V2Get🛰️ 2026-09-21 01:02 #3'
+  - 'V2Get🛰️ 2026-09-21 11:03 #6'
   - V2Get🛰️ 2026-09-21 01:03
   - V2Get🛰️ 2026-09-21 10:03
   - 'V2Get🛰️ 2026-09-21 10:03 #2'
@@ -1202,9 +1202,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-21 04:02 #12'
   - V2Get🛰️ 2026-09-20 23:02
   - V2Get🛰️ 2026-09-21 00:02
-  - V2Get🛰️ 2026-09-21 01:02
-  - 'V2Get🛰️ 2026-09-21 01:02 #2'
-  - 'V2Get🛰️ 2026-09-21 01:02 #3'
   - 'V2Get🛰️ 2026-09-21 01:02 #4'
   - 'V2Get🛰️ 2026-09-21 01:02 #5'
   - 'V2Get🛰️ 2026-09-21 01:02 #6'
@@ -1268,8 +1265,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-21 00:02 #4'
   - 'V2Get🛰️ 2026-09-20 23:02 #2'
   - 'V2Get🛰️ 2026-09-20 23:02 #3'
-  - 'V2Get🛰️ 2026-09-20 23:02 #4'
-  - 'V2Get🛰️ 2026-09-20 23:02 #5'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1277,9 +1272,14 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-21 11:03
-  - V2Get🛰️ 2026-09-18 11:56
-  - V2Get🛰️ 2026-09-20 00:59
-  - V2Get🛰️ 2026-09-19 15:59
+  - 'V2Get🛰️ 2026-09-21 11:03 #2'
+  - 'V2Get🛰️ 2026-09-21 11:03 #3'
+  - 'V2Get🛰️ 2026-09-21 11:03 #4'
+  - 'V2Get🛰️ 2026-09-21 11:03 #5'
+  - V2Get🛰️ 2026-09-21 01:02
+  - 'V2Get🛰️ 2026-09-21 01:02 #2'
+  - 'V2Get🛰️ 2026-09-21 01:02 #3'
+  - 'V2Get🛰️ 2026-09-21 11:03 #6'
   - V2Get🛰️ 2026-09-21 01:03
   - V2Get🛰️ 2026-09-21 10:03
   - 'V2Get🛰️ 2026-09-21 10:03 #2'
@@ -1303,9 +1303,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-21 04:02 #12'
   - V2Get🛰️ 2026-09-20 23:02
   - V2Get🛰️ 2026-09-21 00:02
-  - V2Get🛰️ 2026-09-21 01:02
-  - 'V2Get🛰️ 2026-09-21 01:02 #2'
-  - 'V2Get🛰️ 2026-09-21 01:02 #3'
   - 'V2Get🛰️ 2026-09-21 01:02 #4'
   - 'V2Get🛰️ 2026-09-21 01:02 #5'
   - 'V2Get🛰️ 2026-09-21 01:02 #6'
@@ -1369,8 +1366,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-21 00:02 #4'
   - 'V2Get🛰️ 2026-09-20 23:02 #2'
   - 'V2Get🛰️ 2026-09-20 23:02 #3'
-  - 'V2Get🛰️ 2026-09-20 23:02 #4'
-  - 'V2Get🛰️ 2026-09-20 23:02 #5'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
