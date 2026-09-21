@@ -12,26 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 22:06
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: V2Get🛰️ 2026-09-17 15:55
+- name: V2Get🛰️ 2026-09-21 11:04
   type: vless
-  server: 104.21.236.63
+  server: 199.232.78.160
   port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  uuid: 16785f8f-f72a-49e5-b912-6159f2d4e194
   udp: true
-  network: ws
+  network: xhttp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+- name: 'V2Get🛰️ 2026-09-21 11:04 #2'
+  type: vless
+  server: 199.232.79.166
+  port: 443
+  uuid: 16785f8f-f72a-49e5-b912-6159f2d4e194
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.fastly.com
+  client-fingerprint: ios
 - name: V2Get🛰️ 2026-09-18 03:55
   type: vless
   server: pl6.moritech.net
@@ -1195,8 +1197,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 22:06
-  - V2Get🛰️ 2026-09-17 15:55
+  - V2Get🛰️ 2026-09-21 11:04
+  - 'V2Get🛰️ 2026-09-21 11:04 #2'
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-19 15:59
   - V2Get🛰️ 2026-09-21 01:03
@@ -1297,8 +1299,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 22:06
-  - V2Get🛰️ 2026-09-17 15:55
+  - V2Get🛰️ 2026-09-21 11:04
+  - 'V2Get🛰️ 2026-09-21 11:04 #2'
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-19 15:59
   - V2Get🛰️ 2026-09-21 01:03
