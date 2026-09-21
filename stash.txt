@@ -12,6 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-21 17:05
+  type: vless
+  server: 66.33.22.243
+  port: 48196
+  uuid: e1c8e7b4-1fe5-4fb6-b50a-4711d49e691f
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
 - name: V2Get🛰️ 2026-09-21 12:03
   type: vless
   server: 91.107.144.22
@@ -119,19 +129,6 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: vip.868068.xyz
-- name: V2Get🛰️ 2026-09-16 15:53
-  type: vless
-  server: 104.21.89.41
-  port: 443
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  network: ws
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
 - name: V2Get🛰️ 2026-09-17 01:53
   type: vless
   server: 104.21.70.228
@@ -1076,6 +1073,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-21 17:05
   - V2Get🛰️ 2026-09-21 12:03
   - V2Get🛰️ 2026-09-21 17:04
   - 'V2Get🛰️ 2026-09-21 17:04 #2'
@@ -1085,7 +1083,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 11:02
   - V2Get🛰️ 2026-09-21 01:03
   - V2Get🛰️ 2026-09-18 11:56
-  - V2Get🛰️ 2026-09-16 15:53
   - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-17 22:55
   - V2Get🛰️ 2026-09-19 13:59
@@ -1163,6 +1160,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-21 17:05
   - V2Get🛰️ 2026-09-21 12:03
   - V2Get🛰️ 2026-09-21 17:04
   - 'V2Get🛰️ 2026-09-21 17:04 #2'
@@ -1172,7 +1170,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 11:02
   - V2Get🛰️ 2026-09-21 01:03
   - V2Get🛰️ 2026-09-18 11:56
-  - V2Get🛰️ 2026-09-16 15:53
   - V2Get🛰️ 2026-09-17 01:53
   - V2Get🛰️ 2026-09-17 22:55
   - V2Get🛰️ 2026-09-19 13:59
