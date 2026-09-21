@@ -12,13 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-26 22:06
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
+- name: V2Get🛰️ 2026-09-20 00:59
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MiTIVPN
   udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-55e.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-21 15:03
+  type: vless
+  server: 91.107.144.22
+  port: 29972
+  uuid: 0b05ddba-6e1f-4a77-ac5a-4a9f9d08d543
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-09-21 15:04
+  type: vless
+  server: 144.31.38.106
+  port: 10000
+  uuid: 446801f8-c401-4f56-8e51-7fac24bc15b2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-17 15:55
   type: vless
   server: 104.21.236.63
@@ -136,7 +159,7 @@ proxies:
   password: AF8kQplmJw
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-21 15:04
+- name: 'V2Get🛰️ 2026-09-21 15:04 #2'
   type: vless
   server: 185.186.143.237
   port: 443
@@ -151,7 +174,7 @@ proxies:
     short-id: f74c6a18133e2e72
   grpc-opts:
     grpc-service-name: grpc
-- name: 'V2Get🛰️ 2026-09-21 15:04 #2'
+- name: 'V2Get🛰️ 2026-09-21 15:04 #3'
   type: vless
   server: 159.194.216.52
   port: 443
@@ -165,7 +188,7 @@ proxies:
   reality-opts:
     public-key: ZCkzN4RC2NGdmwF_jxdru_73azXyyHmhA5_c_g7giyE
     short-id: 669986f0d1c155ea
-- name: 'V2Get🛰️ 2026-09-21 15:04 #3'
+- name: 'V2Get🛰️ 2026-09-21 15:04 #4'
   type: vless
   server: 146.75.119.82
   port: 80
@@ -177,14 +200,6 @@ proxies:
     path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
       Host: rb24.ir
-- name: 'V2Get🛰️ 2026-09-21 15:04 #4'
-  type: vless
-  server: 144.31.38.106
-  port: 10000
-  uuid: 446801f8-c401-4f56-8e51-7fac24bc15b2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-21 13:03
   type: vless
   server: us-1.veraspeed.ir
@@ -228,7 +243,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   grpc-opts:
     grpc-service-name: Google
-- name: V2Get🛰️ 2026-09-21 15:03
+- name: 'V2Get🛰️ 2026-09-21 15:03 #2'
   type: vless
   server: 144.225.65.177
   port: 443
@@ -236,7 +251,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-21 15:03 #2'
+- name: 'V2Get🛰️ 2026-09-21 15:03 #3'
   type: vless
   server: germanynewirancell.xdragonfroums.com
   port: 32210
@@ -258,14 +273,6 @@ proxies:
   type: vless
   server: 91.107.144.22
   port: 29979
-  uuid: 0b05ddba-6e1f-4a77-ac5a-4a9f9d08d543
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-21 15:03 #3'
-  type: vless
-  server: 91.107.144.22
-  port: 29972
   uuid: 0b05ddba-6e1f-4a77-ac5a-4a9f9d08d543
   udp: true
   network: tcp
@@ -1168,7 +1175,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-26 22:06
+  - V2Get🛰️ 2026-09-20 00:59
+  - V2Get🛰️ 2026-09-21 15:03
+  - V2Get🛰️ 2026-09-21 15:04
   - V2Get🛰️ 2026-09-17 15:55
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-19 15:59
@@ -1180,18 +1189,16 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 15:02
   - V2Get🛰️ 2026-09-20 16:01
   - V2Get🛰️ 2026-09-20 23:02
-  - V2Get🛰️ 2026-09-21 15:04
   - 'V2Get🛰️ 2026-09-21 15:04 #2'
   - 'V2Get🛰️ 2026-09-21 15:04 #3'
   - 'V2Get🛰️ 2026-09-21 15:04 #4'
   - V2Get🛰️ 2026-09-21 13:03
   - 'V2Get🛰️ 2026-09-21 13:03 #2'
   - V2Get🛰️ 2026-09-21 12:04
-  - V2Get🛰️ 2026-09-21 15:03
   - 'V2Get🛰️ 2026-09-21 15:03 #2'
+  - 'V2Get🛰️ 2026-09-21 15:03 #3'
   - V2Get🛰️ 2026-09-21 14:03
   - V2Get🛰️ 2026-09-21 12:03
-  - 'V2Get🛰️ 2026-09-21 15:03 #3'
   - 'V2Get🛰️ 2026-09-21 14:03 #2'
   - 'V2Get🛰️ 2026-09-21 12:04 #2'
   - V2Get🛰️ 2026-09-21 13:04
@@ -1272,7 +1279,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-26 22:06
+  - V2Get🛰️ 2026-09-20 00:59
+  - V2Get🛰️ 2026-09-21 15:03
+  - V2Get🛰️ 2026-09-21 15:04
   - V2Get🛰️ 2026-09-17 15:55
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-19 15:59
@@ -1284,18 +1293,16 @@ proxy-groups:
   - V2Get🛰️ 2026-09-20 15:02
   - V2Get🛰️ 2026-09-20 16:01
   - V2Get🛰️ 2026-09-20 23:02
-  - V2Get🛰️ 2026-09-21 15:04
   - 'V2Get🛰️ 2026-09-21 15:04 #2'
   - 'V2Get🛰️ 2026-09-21 15:04 #3'
   - 'V2Get🛰️ 2026-09-21 15:04 #4'
   - V2Get🛰️ 2026-09-21 13:03
   - 'V2Get🛰️ 2026-09-21 13:03 #2'
   - V2Get🛰️ 2026-09-21 12:04
-  - V2Get🛰️ 2026-09-21 15:03
   - 'V2Get🛰️ 2026-09-21 15:03 #2'
+  - 'V2Get🛰️ 2026-09-21 15:03 #3'
   - V2Get🛰️ 2026-09-21 14:03
   - V2Get🛰️ 2026-09-21 12:03
-  - 'V2Get🛰️ 2026-09-21 15:03 #3'
   - 'V2Get🛰️ 2026-09-21 14:03 #2'
   - 'V2Get🛰️ 2026-09-21 12:04 #2'
   - V2Get🛰️ 2026-09-21 13:04
