@@ -14,6 +14,28 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-22 19:07
   type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 4a5fa7d0-3409-4f5d-905f-79521675113a
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+- name: 'V2Get🛰️ 2026-09-22 19:07 #2'
+  type: vless
+  server: 199.232.79.166
+  port: 443
+  uuid: 4a5fa7d0-3409-4f5d-905f-79521675113a
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.fastly.com
+  client-fingerprint: ios
+- name: 'V2Get🛰️ 2026-09-22 19:07 #3'
+  type: vless
   server: 5.223.74.174
   port: 2053
   uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
@@ -26,7 +48,7 @@ proxies:
   reality-opts:
     public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
     short-id: 36151c48e28cfb65
-- name: 'V2Get🛰️ 2026-09-22 19:07 #2'
+- name: 'V2Get🛰️ 2026-09-22 19:07 #4'
   type: vless
   server: 5.78.159.214
   port: 80
@@ -40,7 +62,7 @@ proxies:
   reality-opts:
     public-key: NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg
     short-id: 0db5c018ed7bb596
-- name: 'V2Get🛰️ 2026-09-22 19:07 #3'
+- name: 'V2Get🛰️ 2026-09-22 19:07 #5'
   type: vless
   server: 159.69.103.251
   port: 2053
@@ -1141,27 +1163,6 @@ proxies:
     short-id: aefc7f3722
 - name: V2Get🛰️ 2026-09-22 15:06
   type: vless
-  server: 188.114.96.12
-  port: 2052
-  uuid: 1cc9916b-7de3-451d-941e-0fe4298208cb
-  udp: true
-  network: httpupgrade
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-22 14:06
-  type: vless
-  server: 176.222.53.176
-  port: 8446
-  uuid: c6f6ecc2-26af-4e2f-95a7-e7018819a716
-  udp: true
-  network: xhttp
-  tls: true
-  servername: hetzner.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-- name: 'V2Get🛰️ 2026-09-22 15:06 #2'
-  type: vless
   server: 104.21.8.201
   port: 2096
   uuid: bdc5e450-3e2d-4001-928e-e3bc6cecb249
@@ -1299,6 +1300,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-22 19:07
   - 'V2Get🛰️ 2026-09-22 19:07 #2'
   - 'V2Get🛰️ 2026-09-22 19:07 #3'
+  - 'V2Get🛰️ 2026-09-22 19:07 #4'
+  - 'V2Get🛰️ 2026-09-22 19:07 #5'
   - V2Get🛰️ 2026-09-22 18:06
   - 'V2Get🛰️ 2026-09-22 18:06 #2'
   - 'V2Get🛰️ 2026-09-22 18:06 #3'
@@ -1383,8 +1386,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-22 18:08 #3'
   - 'V2Get🛰️ 2026-09-22 18:08 #4'
   - V2Get🛰️ 2026-09-22 15:06
-  - V2Get🛰️ 2026-09-22 14:06
-  - 'V2Get🛰️ 2026-09-22 15:06 #2'
   - V2Get🛰️ 2026-09-22 17:06
   - 'V2Get🛰️ 2026-09-22 17:06 #2'
   - 'V2Get🛰️ 2026-09-22 17:06 #3'
@@ -1404,6 +1405,8 @@ proxy-groups:
   - V2Get🛰️ 2026-09-22 19:07
   - 'V2Get🛰️ 2026-09-22 19:07 #2'
   - 'V2Get🛰️ 2026-09-22 19:07 #3'
+  - 'V2Get🛰️ 2026-09-22 19:07 #4'
+  - 'V2Get🛰️ 2026-09-22 19:07 #5'
   - V2Get🛰️ 2026-09-22 18:06
   - 'V2Get🛰️ 2026-09-22 18:06 #2'
   - 'V2Get🛰️ 2026-09-22 18:06 #3'
@@ -1488,8 +1491,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-22 18:08 #3'
   - 'V2Get🛰️ 2026-09-22 18:08 #4'
   - V2Get🛰️ 2026-09-22 15:06
-  - V2Get🛰️ 2026-09-22 14:06
-  - 'V2Get🛰️ 2026-09-22 15:06 #2'
   - V2Get🛰️ 2026-09-22 17:06
   - 'V2Get🛰️ 2026-09-22 17:06 #2'
   - 'V2Get🛰️ 2026-09-22 17:06 #3'
