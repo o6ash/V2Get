@@ -12,27 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-09 01:10
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-08-20 22:13
+- name: V2Get🛰️ 2026-09-22 12:05
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: prisonvpnc-production-e9b5.up.railway.app
+  port: 443
+  uuid: a3b60b1e-91ef-4f73-b37b-81fcc94f77d4
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: prisonvpnc-production-e9b5.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
   ws-opts:
-    path: /fp
+    path: /vless
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: prisonvpnc-production-e9b5.up.railway.app
+- name: 'V2Get🛰️ 2026-09-22 12:05 #2'
+  type: vless
+  server: 144.31.103.195
+  port: 8443
+  uuid: 61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl1.hys.braidx.tech
+  client-fingerprint: safari
 - name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
   server: 188.42.145.180
@@ -951,8 +958,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-09 01:10
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-09-22 12:05
+  - 'V2Get🛰️ 2026-09-22 12:05 #2'
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 21:32
   - V2Get🛰️ 2026-09-07 20:34
@@ -1029,8 +1036,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-09 01:10
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-09-22 12:05
+  - 'V2Get🛰️ 2026-09-22 12:05 #2'
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 21:32
   - V2Get🛰️ 2026-09-07 20:34
