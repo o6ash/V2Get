@@ -12,18 +12,85 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-08 21:10
+- name: V2Get🛰️ 2026-09-23 12:09
+  type: vless
+  server: 31.76.249.87
+  port: 443
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.akamai.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
+- name: V2Get🛰️ 2026-09-23 12:08
+  type: vless
+  server: nl-xh02.tcp-reset-club.net
+  port: 8443
+  uuid: 721bacfe-ff09-4e63-a735-686015bc1351
+  udp: true
+  network: xhttp
+  tls: true
+  servername: s3.netavex.com
+  reality-opts:
+    public-key: Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg
+    short-id: e0
+- name: V2Get🛰️ 2026-09-22 14:07
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  udp: true
+  network: ws
+  tls: true
+  servername: cdn-de.skyvora.app
+  client-fingerprint: chrome
+  ws-opts:
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+- name: V2Get🛰️ 2026-09-23 11:08
+  type: vless
+  server: 172.64.153.11
+  port: 8880
+  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: soft-scene-d370.55-7ff.workers.dev
+- name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
-  server: 172.64.152.23
+  server: 8.47.69.0
   port: 443
   password: humanity
   udp: true
-  sni: www.calmlunch.com
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmlunch.com
+      Host: www.pleadcourt.org
+- name: V2Get🛰️ 2026-09-22 20:07
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
 - name: V2Get🛰️ 2026-08-09 01:10
   type: vmess
   server: 165.154.195.38
@@ -87,20 +154,6 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-- name: V2Get🛰️ 2026-09-07 20:34
-  type: trojan
-  server: 8.47.69.0
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
 - name: V2Get🛰️ 2026-09-16 02:50
   type: vless
   server: 54.37.136.194
@@ -236,7 +289,7 @@ proxies:
     path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
     headers:
       Host: c12.com
-- name: V2Get🛰️ 2026-09-22 14:07
+- name: 'V2Get🛰️ 2026-09-22 14:07 #2'
   type: vless
   server: 104.21.8.201
   port: 2096
@@ -250,20 +303,6 @@ proxies:
     path: /9hf8a67dhf
     headers:
       Host: cdn-fr.skyvora.app
-- name: 'V2Get🛰️ 2026-09-22 14:07 #2'
-  type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 735b8344-0b95-464c-b687-1c5616138908
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn-de.skyvora.app
-  client-fingerprint: chrome
-  ws-opts:
-    path: /3cagtz3
-    headers:
-      Host: cdn-de.skyvora.app
 - name: 'V2Get🛰️ 2026-09-22 14:07 #3'
   type: vless
   server: 172.67.130.159
@@ -292,7 +331,7 @@ proxies:
   reality-opts:
     public-key: eZXyfQzQgQSreAbhKSorx38cgnKmGuSOiQbthBfG5k0
     short-id: 0e903b415d812c59
-- name: V2Get🛰️ 2026-09-22 20:07
+- name: 'V2Get🛰️ 2026-09-22 20:07 #2'
   type: vless
   server: 188.114.97.6
   port: 443
@@ -306,20 +345,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 'V2Get🛰️ 2026-09-22 20:07 #2'
-  type: vless
-  server: 45.95.96.236
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gesmankos.sadiepinki.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
 - name: V2Get🛰️ 2026-09-23 01:07
   type: vless
   server: 193.23.201.65
@@ -330,7 +355,7 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   client-fingerprint: safari
-- name: V2Get🛰️ 2026-09-23 12:09
+- name: 'V2Get🛰️ 2026-09-23 12:09 #2'
   type: vless
   server: 9a2a6a9663a1d454.fn-1.globalmymusic.com
   port: 443
@@ -344,7 +369,7 @@ proxies:
   reality-opts:
     public-key: lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw
     short-id: b684d13617792bb2
-- name: 'V2Get🛰️ 2026-09-23 12:09 #2'
+- name: 'V2Get🛰️ 2026-09-23 12:09 #3'
   type: vless
   server: 103.245.229.32
   port: 443
@@ -358,7 +383,7 @@ proxies:
   reality-opts:
     public-key: sUDdxp5g9lRHlVEH6meJWXah84yhLDyVI7KuZhW-MTQ
     short-id: b4e44a
-- name: 'V2Get🛰️ 2026-09-23 12:09 #3'
+- name: 'V2Get🛰️ 2026-09-23 12:09 #4'
   type: vless
   server: 5dccc2ba02c049e8.us-1.globalmymusic.com
   port: 443
@@ -441,7 +466,7 @@ proxies:
   reality-opts:
     public-key: 2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4
     short-id: 7bb730e3e6616d31
-- name: V2Get🛰️ 2026-09-23 12:08
+- name: 'V2Get🛰️ 2026-09-23 12:08 #2'
   type: vless
   server: 3cfb1b7e160a0559.de-1.globalmymusic.com
   port: 443
@@ -455,7 +480,7 @@ proxies:
   reality-opts:
     public-key: lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw
     short-id: b684d13617792bb2
-- name: 'V2Get🛰️ 2026-09-23 12:08 #2'
+- name: 'V2Get🛰️ 2026-09-23 12:08 #3'
   type: vless
   server: empty-water-a05b.gfbghfbfngbdgbghngf.workers.dev
   port: 443
@@ -465,18 +490,6 @@ proxies:
   tls: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-09-23 12:08 #3'
-  type: vless
-  server: nl-xh02.tcp-reset-club.net
-  port: 8443
-  uuid: 721bacfe-ff09-4e63-a735-686015bc1351
-  udp: true
-  network: xhttp
-  tls: true
-  servername: s3.netavex.com
-  reality-opts:
-    public-key: Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg
-    short-id: e0
 - name: 'V2Get🛰️ 2026-09-23 12:08 #4'
   type: vless
   server: speed.mahfel.xyz
@@ -950,7 +963,7 @@ proxies:
   reality-opts:
     public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
     short-id: c56d4f1c
-- name: V2Get🛰️ 2026-09-23 11:08
+- name: 'V2Get🛰️ 2026-09-23 11:08 #2'
   type: vless
   server: 188.114.97.6
   port: 80
@@ -962,18 +975,6 @@ proxies:
     path: /CooonfigCooonfigCooonfigCooonfigCooonfig
     headers:
       Host: msjsi.azazilvpn.sbs.
-- name: 'V2Get🛰️ 2026-09-23 11:08 #2'
-  type: vless
-  server: 172.64.153.11
-  port: 8880
-  uuid: 2d309706-de61-4c33-a086-3888e595b8eb
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: soft-scene-d370.55-7ff.workers.dev
 - name: 'V2Get🛰️ 2026-09-23 10:08 #3'
   type: vless
   server: 199.232.78.160
@@ -1252,14 +1253,18 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-08 21:10
+  - V2Get🛰️ 2026-09-23 12:09
+  - V2Get🛰️ 2026-09-23 12:08
+  - V2Get🛰️ 2026-09-22 14:07
+  - V2Get🛰️ 2026-09-23 11:08
+  - V2Get🛰️ 2026-09-07 20:34
+  - V2Get🛰️ 2026-09-22 20:07
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-22 14:05
@@ -1270,22 +1275,19 @@ proxy-groups:
   - V2Get🛰️ 2026-09-21 21:05
   - V2Get🛰️ 2026-09-21 23:04
   - V2Get🛰️ 2026-09-21 23:05
-  - V2Get🛰️ 2026-09-22 14:07
   - 'V2Get🛰️ 2026-09-22 14:07 #2'
   - 'V2Get🛰️ 2026-09-22 14:07 #3'
   - V2Get🛰️ 2026-09-22 17:06
-  - V2Get🛰️ 2026-09-22 20:07
   - 'V2Get🛰️ 2026-09-22 20:07 #2'
   - V2Get🛰️ 2026-09-23 01:07
-  - V2Get🛰️ 2026-09-23 12:09
   - 'V2Get🛰️ 2026-09-23 12:09 #2'
   - 'V2Get🛰️ 2026-09-23 12:09 #3'
+  - 'V2Get🛰️ 2026-09-23 12:09 #4'
   - V2Get🛰️ 2026-09-23 04:07
   - 'V2Get🛰️ 2026-09-23 04:07 #2'
   - 'V2Get🛰️ 2026-09-23 04:07 #3'
   - V2Get🛰️ 2026-09-23 10:08
   - 'V2Get🛰️ 2026-09-23 10:08 #2'
-  - V2Get🛰️ 2026-09-23 12:08
   - 'V2Get🛰️ 2026-09-23 12:08 #2'
   - 'V2Get🛰️ 2026-09-23 12:08 #3'
   - 'V2Get🛰️ 2026-09-23 12:08 #4'
@@ -1322,7 +1324,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-23 12:08 #35'
   - 'V2Get🛰️ 2026-09-23 12:08 #36'
   - 'V2Get🛰️ 2026-09-23 12:08 #37'
-  - V2Get🛰️ 2026-09-23 11:08
   - 'V2Get🛰️ 2026-09-23 11:08 #2'
   - 'V2Get🛰️ 2026-09-23 10:08 #3'
   - 'V2Get🛰️ 2026-09-23 10:08 #4'
@@ -1355,14 +1356,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-08 21:10
+  - V2Get🛰️ 2026-09-23 12:09
+  - V2Get🛰️ 2026-09-23 12:08
+  - V2Get🛰️ 2026-09-22 14:07
+  - V2Get🛰️ 2026-09-23 11:08
+  - V2Get🛰️ 2026-09-07 20:34
+  - V2Get🛰️ 2026-09-22 20:07
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-17 21:07
   - V2Get🛰️ 2026-08-20 22:13
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-06 04:29
   - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-18 03:55
   - V2Get🛰️ 2026-09-22 14:05
@@ -1373,22 +1378,19 @@ proxy-groups:
   - V2Get🛰️ 2026-09-21 21:05
   - V2Get🛰️ 2026-09-21 23:04
   - V2Get🛰️ 2026-09-21 23:05
-  - V2Get🛰️ 2026-09-22 14:07
   - 'V2Get🛰️ 2026-09-22 14:07 #2'
   - 'V2Get🛰️ 2026-09-22 14:07 #3'
   - V2Get🛰️ 2026-09-22 17:06
-  - V2Get🛰️ 2026-09-22 20:07
   - 'V2Get🛰️ 2026-09-22 20:07 #2'
   - V2Get🛰️ 2026-09-23 01:07
-  - V2Get🛰️ 2026-09-23 12:09
   - 'V2Get🛰️ 2026-09-23 12:09 #2'
   - 'V2Get🛰️ 2026-09-23 12:09 #3'
+  - 'V2Get🛰️ 2026-09-23 12:09 #4'
   - V2Get🛰️ 2026-09-23 04:07
   - 'V2Get🛰️ 2026-09-23 04:07 #2'
   - 'V2Get🛰️ 2026-09-23 04:07 #3'
   - V2Get🛰️ 2026-09-23 10:08
   - 'V2Get🛰️ 2026-09-23 10:08 #2'
-  - V2Get🛰️ 2026-09-23 12:08
   - 'V2Get🛰️ 2026-09-23 12:08 #2'
   - 'V2Get🛰️ 2026-09-23 12:08 #3'
   - 'V2Get🛰️ 2026-09-23 12:08 #4'
@@ -1425,7 +1427,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-23 12:08 #35'
   - 'V2Get🛰️ 2026-09-23 12:08 #36'
   - 'V2Get🛰️ 2026-09-23 12:08 #37'
-  - V2Get🛰️ 2026-09-23 11:08
   - 'V2Get🛰️ 2026-09-23 11:08 #2'
   - 'V2Get🛰️ 2026-09-23 10:08 #3'
   - 'V2Get🛰️ 2026-09-23 10:08 #4'
