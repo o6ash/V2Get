@@ -12,15 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-05 08:28
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-07-27 21:55
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: humanity
   udp: true
-  network: tcp
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: V2Get🛰️ 2026-08-29 16:11
   type: vless
   server: milan.adaspoloandco.com
@@ -1123,7 +1124,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-09-20 12:01
   - V2Get🛰️ 2026-09-22 02:04
@@ -1213,7 +1214,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-05 08:28
+  - V2Get🛰️ 2026-07-27 21:55
   - V2Get🛰️ 2026-08-29 16:11
   - V2Get🛰️ 2026-09-20 12:01
   - V2Get🛰️ 2026-09-22 02:04
