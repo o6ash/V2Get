@@ -12,6 +12,45 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-10 15:11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-22 14:06
+  type: vless
+  server: 193.56.135.137
+  port: 9543
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
 - name: V2Get🛰️ 2026-09-24 21:12
   type: vless
   server: 107.189.26.158
@@ -1119,53 +1158,15 @@ proxies:
   reality-opts:
     public-key: tm-eZylkXA8308bx_Gik886Gfc2uMVrjs-4SVVZlMUI
     short-id: d774703ebee04d5f
-- name: 'V2Get🛰️ 2026-09-24 13:11 #3'
-  type: vless
-  server: 31.77.152.31
-  port: 443
-  uuid: d8b18d95-ca86-4742-a44f-6141e075a752
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e.backup.iplane.top
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 1he5EyHxI595x0mNkFNxOebUOQZGVGIy_c92bn1qO2o
-    short-id: ac31827454d7f693
-- name: 'V2Get🛰️ 2026-09-24 13:11 #4'
-  type: vless
-  server: 91.196.162.125
-  port: 8443
-  uuid: d8c4f273-be7e-4138-8338-8d02884d9598
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: vSVdqyvJE-9wuX4vXQD1LWNe5NyOuC3t81v9KvNwbkw
-    short-id: bdb6527dc796ed0a
-- name: 'V2Get🛰️ 2026-09-24 13:11 #5'
-  type: vless
-  server: 194.59.40.85
-  port: 443
-  uuid: 09f2257c-5013-463a-a468-e5a8d11d0709
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: J3VtmWNXqMjyf4y7gVjl46_iI-hrSRUwMbv05BlFp3c
-    short-id: 55c9ebca4b7716f5
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-22 14:06
   - V2Get🛰️ 2026-09-24 21:12
   - 'V2Get🛰️ 2026-09-24 21:12 #2'
   - 'V2Get🛰️ 2026-09-24 21:12 #3'
@@ -1261,15 +1262,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 14:11 #3'
   - V2Get🛰️ 2026-09-24 13:11
   - 'V2Get🛰️ 2026-09-24 13:11 #2'
-  - 'V2Get🛰️ 2026-09-24 13:11 #3'
-  - 'V2Get🛰️ 2026-09-24 13:11 #4'
-  - 'V2Get🛰️ 2026-09-24 13:11 #5'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-22 14:06
   - V2Get🛰️ 2026-09-24 21:12
   - 'V2Get🛰️ 2026-09-24 21:12 #2'
   - 'V2Get🛰️ 2026-09-24 21:12 #3'
@@ -1365,9 +1366,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 14:11 #3'
   - V2Get🛰️ 2026-09-24 13:11
   - 'V2Get🛰️ 2026-09-24 13:11 #2'
-  - 'V2Get🛰️ 2026-09-24 13:11 #3'
-  - 'V2Get🛰️ 2026-09-24 13:11 #4'
-  - 'V2Get🛰️ 2026-09-24 13:11 #5'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
