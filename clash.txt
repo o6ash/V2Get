@@ -12,6 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-20 10:01
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: V2Get🛰️ 2026-09-22 20:07
+  type: vless
+  server: 45.95.96.236
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+- name: V2Get🛰️ 2026-09-24 02:09
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 214bf4c5-045a-4ddb-944b-e2eef9b33338
+  udp: true
+  network: ws
+  tls: true
+  servername: cdn-fr.skyvora.app
+  client-fingerprint: chrome
+  alpn:
+  - GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN--GHOFLSHCAN
+  ws-opts:
+    path: /9hf8a67dhf
+    headers:
+      Host: cdn-fr.skyvora.app
 - name: V2Get🛰️ 2026-09-24 20:11
   type: vless
   server: dns3.havray2025.ir
@@ -1183,53 +1226,15 @@ proxies:
   reality-opts:
     public-key: 8n7BW_F1QmukGwu8R_Lh8JvPvcZbDLsy-KA_MnnndyY
     short-id: a7c3e91f6b2d8405
-- name: 'V2Get🛰️ 2026-09-24 13:11 #30'
-  type: vless
-  server: 194.102.104.245
-  port: 443
-  uuid: 1fe44e89-f2e5-4e34-aad7-8c9590b43e51
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.ebay.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: jIMRdMXBCdzxrh-_uvR7ccf0twffPwmRkHQB1ctfhGk
-    short-id: 3c5af20b3fee4a59
-- name: 'V2Get🛰️ 2026-09-24 13:11 #31'
-  type: vless
-  server: 144.31.248.154
-  port: 443
-  uuid: 1fe44e89-f2e5-4e34-aad7-8c9590b43e51
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.ebay.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: KBTI_nHsZRQ-4XHOKb85ENrr4ESLBrEfCvQoIbpw6AI
-    short-id: f518916635336aea
-- name: 'V2Get🛰️ 2026-09-24 13:11 #32'
-  type: vless
-  server: 179.237.84.90
-  port: 443
-  uuid: 79624664-22c0-43d9-b1a8-e2a0381588cb
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ti1m2fw94zq.edgepop.lol
-  client-fingerprint: safari
-  reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-20 10:01
+  - V2Get🛰️ 2026-09-22 20:07
+  - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-24 20:11
   - 'V2Get🛰️ 2026-09-24 20:11 #2'
   - 'V2Get🛰️ 2026-09-24 20:11 #3'
@@ -1326,15 +1331,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 13:11 #27'
   - 'V2Get🛰️ 2026-09-24 13:11 #28'
   - 'V2Get🛰️ 2026-09-24 13:11 #29'
-  - 'V2Get🛰️ 2026-09-24 13:11 #30'
-  - 'V2Get🛰️ 2026-09-24 13:11 #31'
-  - 'V2Get🛰️ 2026-09-24 13:11 #32'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-20 10:01
+  - V2Get🛰️ 2026-09-22 20:07
+  - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-24 20:11
   - 'V2Get🛰️ 2026-09-24 20:11 #2'
   - 'V2Get🛰️ 2026-09-24 20:11 #3'
@@ -1431,9 +1436,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 13:11 #27'
   - 'V2Get🛰️ 2026-09-24 13:11 #28'
   - 'V2Get🛰️ 2026-09-24 13:11 #29'
-  - 'V2Get🛰️ 2026-09-24 13:11 #30'
-  - 'V2Get🛰️ 2026-09-24 13:11 #31'
-  - 'V2Get🛰️ 2026-09-24 13:11 #32'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
