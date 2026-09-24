@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-22 18:06
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: MITIVpN
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-24 12:10
   type: vless
   server: zcsagftt.selqora.ir
@@ -931,20 +945,13 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-24 00:09
-  type: vless
-  server: 5.75.202.116
-  port: 5718
-  uuid: 2789c2ec-d860-4b75-a614-49e8ab65f7bc
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-22 18:06
   - V2Get🛰️ 2026-09-24 12:10
   - 'V2Get🛰️ 2026-09-24 12:10 #2'
   - 'V2Get🛰️ 2026-09-24 12:10 #3'
@@ -1025,13 +1032,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 00:10 #15'
   - 'V2Get🛰️ 2026-09-24 00:10 #16'
   - 'V2Get🛰️ 2026-09-24 00:10 #17'
-  - V2Get🛰️ 2026-09-24 00:09
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-22 18:06
   - V2Get🛰️ 2026-09-24 12:10
   - 'V2Get🛰️ 2026-09-24 12:10 #2'
   - 'V2Get🛰️ 2026-09-24 12:10 #3'
@@ -1112,7 +1119,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 00:10 #15'
   - 'V2Get🛰️ 2026-09-24 00:10 #16'
   - 'V2Get🛰️ 2026-09-24 00:10 #17'
-  - V2Get🛰️ 2026-09-24 00:09
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
