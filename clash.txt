@@ -12,13 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-19 12:09
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: V2Get🛰️ 2026-09-25 21:14
+  type: vless
+  server: core-db460c-7d6609-production.up.railway.app
+  port: 443
+  uuid: c13b8e48-7f71-59b4-929b-18325b467a7f
   udp: true
+  network: ws
+  tls: true
+  servername: core-db460c-7d6609-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/Vipv2
+    headers:
+      Host: core-db460c-7d6609-production.up.railway.app
 - name: V2Get🛰️ 2026-09-22 18:07
   type: vless
   server: 193.56.135.233
@@ -1230,7 +1239,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-19 12:09
+  - V2Get🛰️ 2026-09-25 21:14
   - V2Get🛰️ 2026-09-22 18:07
   - V2Get🛰️ 2026-09-22 20:06
   - V2Get🛰️ 2026-09-25 11:13
@@ -1334,7 +1343,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-19 12:09
+  - V2Get🛰️ 2026-09-25 21:14
   - V2Get🛰️ 2026-09-22 18:07
   - V2Get🛰️ 2026-09-22 20:06
   - V2Get🛰️ 2026-09-25 11:13
