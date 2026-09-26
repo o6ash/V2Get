@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-26 20:18
+  type: vless
+  server: 91.107.147.213
+  port: 32864
+  uuid: 6d758a04-e7f6-48b4-a2a9-bf59c07dafed
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-26 20:17
   type: vless
   server: marzban-node-production-8408.up.railway.app
@@ -28,21 +36,6 @@ proxies:
     path: /vless
     headers:
       Host: marzban-node-production-8408.up.railway.app
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-12 10:43
   type: trojan
   server: 199.232.78.101
@@ -1142,8 +1135,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-09-26 20:17
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-26 19:18
@@ -1238,8 +1231,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-09-26 20:17
-  - V2Get🛰️ 2026-08-03 10:54
   - V2Get🛰️ 2026-09-12 10:43
   - 'V2Get🛰️ 2026-09-12 10:43 #2'
   - V2Get🛰️ 2026-09-26 19:18
