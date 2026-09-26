@@ -12,45 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-25 14:13
-  type: trojan
-  server: 206.1.98.86
-  port: 53
-  password: NXxicgBkkH
-  udp: true
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-25 16:15
-  type: vless
-  server: 91.107.241.194
-  port: 443
-  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-25 16:15 #2'
-  type: vless
-  server: 199.232.78.143
-  port: 443
-  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: speedtest.net
-  client-fingerprint: edge
-  alpn:
-  - h2
-- name: 'V2Get🛰️ 2026-09-25 16:15 #3'
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-09-26 00:15
   type: vless
   server: 163.128.99.14
@@ -65,13 +26,13 @@ proxies:
   reality-opts:
     public-key: -LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0
     short-id: e3a4bdfe3d6fd8ec
-- name: V2Get🛰️ 2026-09-26 09:16
-  type: ss
-  server: 20.234.96.89
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+- name: V2Get🛰️ 2026-09-25 14:13
+  type: trojan
+  server: 206.1.98.86
+  port: 53
+  password: NXxicgBkkH
   udp: true
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-26 01:15
   type: ss
   server: 20.164.220.82
@@ -79,6 +40,45 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Qy7KyMo4epSCiluJ
   udp: true
+- name: V2Get🛰️ 2026-09-26 09:16
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V3WiGKNQiqOCsT60
+  udp: true
+- name: V2Get🛰️ 2026-09-25 16:15
+  type: vless
+  server: 199.232.78.143
+  port: 443
+  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
+  udp: true
+  network: xhttp
+  tls: true
+  servername: speedtest.net
+  client-fingerprint: edge
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-25 16:15 #2'
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-25 16:15 #3'
+  type: vless
+  server: 91.107.241.194
+  port: 443
+  uuid: de7722c2-ae6a-44a6-84ee-7eb3f147b19f
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
   server: 8.47.69.0
@@ -1160,13 +1160,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-26 00:15
   - V2Get🛰️ 2026-09-25 14:13
+  - V2Get🛰️ 2026-09-26 01:15
+  - V2Get🛰️ 2026-09-26 09:16
   - V2Get🛰️ 2026-09-25 16:15
   - 'V2Get🛰️ 2026-09-25 16:15 #2'
   - 'V2Get🛰️ 2026-09-25 16:15 #3'
-  - V2Get🛰️ 2026-09-26 00:15
-  - V2Get🛰️ 2026-09-26 09:16
-  - V2Get🛰️ 2026-09-26 01:15
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-18 03:55
@@ -1265,13 +1265,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-26 00:15
   - V2Get🛰️ 2026-09-25 14:13
+  - V2Get🛰️ 2026-09-26 01:15
+  - V2Get🛰️ 2026-09-26 09:16
   - V2Get🛰️ 2026-09-25 16:15
   - 'V2Get🛰️ 2026-09-25 16:15 #2'
   - 'V2Get🛰️ 2026-09-25 16:15 #3'
-  - V2Get🛰️ 2026-09-26 00:15
-  - V2Get🛰️ 2026-09-26 09:16
-  - V2Get🛰️ 2026-09-26 01:15
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-16 02:50
   - V2Get🛰️ 2026-09-18 03:55
