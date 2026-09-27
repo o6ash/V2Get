@@ -12,44 +12,7 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-27 14:20
-  type: vless
-  server: 18.171.3.214
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-27 17:21
-  type: ss
-  server: 20.164.220.189
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: UbkyrKvOtfSd2xQb
-  udp: true
-- name: 'V2Get🛰️ 2026-09-27 17:21 #2'
-  type: vless
-  server: 31.130.149.165
-  port: 875
-  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-27 17:21 #3'
-  type: vless
-  server: 209.38.53.131
-  port: 8039
-  uuid: 969a990d-5289-7ae1-5e71-90476928f93a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.tno.nl
-  client-fingerprint: ios
-  reality-opts:
-    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
-    short-id: 35938c4e546cd459
-- name: 'V2Get🛰️ 2026-09-27 17:21 #4'
   type: vless
   server: 91.107.255.228
   port: 443
@@ -63,6 +26,43 @@ proxies:
   reality-opts:
     public-key: iMi_BgDPs17iBPlwmjXMbwjBmFLc2UpgR4_c-30FXSQ
     short-id: 25ca379ad2
+- name: 'V2Get🛰️ 2026-09-27 17:21 #2'
+  type: vless
+  server: 209.38.53.131
+  port: 8039
+  uuid: 969a990d-5289-7ae1-5e71-90476928f93a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tno.nl
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
+- name: V2Get🛰️ 2026-09-27 14:20
+  type: vless
+  server: 18.171.3.214
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-27 17:21 #3'
+  type: vless
+  server: 31.130.149.165
+  port: 875
+  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-27 17:21 #4'
+  type: ss
+  server: 20.164.220.189
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: UbkyrKvOtfSd2xQb
+  udp: true
 - name: V2Get🛰️ 2026-09-12 10:43
   type: trojan
   server: 167.82.76.7
@@ -1292,9 +1292,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-27 14:20
   - V2Get🛰️ 2026-09-27 17:21
   - 'V2Get🛰️ 2026-09-27 17:21 #2'
+  - V2Get🛰️ 2026-09-27 14:20
   - 'V2Get🛰️ 2026-09-27 17:21 #3'
   - 'V2Get🛰️ 2026-09-27 17:21 #4'
   - V2Get🛰️ 2026-09-12 10:43
@@ -1398,9 +1398,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-27 14:20
   - V2Get🛰️ 2026-09-27 17:21
   - 'V2Get🛰️ 2026-09-27 17:21 #2'
+  - V2Get🛰️ 2026-09-27 14:20
   - 'V2Get🛰️ 2026-09-27 17:21 #3'
   - 'V2Get🛰️ 2026-09-27 17:21 #4'
   - V2Get🛰️ 2026-09-12 10:43
