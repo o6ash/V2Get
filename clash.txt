@@ -14,13 +14,21 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-27 16:20
   type: vless
+  server: 178.104.219.134
+  port: 9443
+  uuid: e9938bd6-4ee5-4ec1-a3b4-1b212406a8f0
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-27 16:20 #2'
+  type: vless
   server: 209.38.53.131
   port: 1161
   uuid: ea9592b5-8737-2dca-49c9-ab6a414f30de
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-27 16:20 #2'
+- name: 'V2Get🛰️ 2026-09-27 16:20 #3'
   type: vless
   server: 209.38.53.131
   port: 8039
@@ -48,18 +56,6 @@ proxies:
   reality-opts:
     public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
     short-id: c85d029f5e8eb393
-- name: V2Get🛰️ 2026-08-10 15:11
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  network: xhttp
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-29 03:10
   type: vless
   server: rubifen.adaspoloandco.com
@@ -1196,8 +1192,8 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-09-27 16:20
   - 'V2Get🛰️ 2026-09-27 16:20 #2'
+  - 'V2Get🛰️ 2026-09-27 16:20 #3'
   - V2Get🛰️ 2026-09-19 14:58
-  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-02 01:21
   - V2Get🛰️ 2026-09-22 19:07
@@ -1301,8 +1297,8 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-09-27 16:20
   - 'V2Get🛰️ 2026-09-27 16:20 #2'
+  - 'V2Get🛰️ 2026-09-27 16:20 #3'
   - V2Get🛰️ 2026-09-19 14:58
-  - V2Get🛰️ 2026-08-10 15:11
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-02 01:21
   - V2Get🛰️ 2026-09-22 19:07
