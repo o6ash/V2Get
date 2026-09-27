@@ -12,65 +12,151 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 10:54
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-12 00:12
-  type: trojan
-  server: 151.101.56.9
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: default.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-12 10:43
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-24 17:11
-  type: trojan
-  server: 151.101.56.255
-  port: 443
-  password: MiTiVPN
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-27 13:20
+  type: vless
+  server: panel.syscorea.info
+  port: 4443
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: grpc
+  tls: true
+  servername: youtu.be
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MpmKFqEQCwmH9_3t9VpWEt0efDel4cpufdV4T6ZIO0I
+    short-id: ac2a
+  grpc-opts:
+    grpc-service-name: ''
+- name: 'V2Get🛰️ 2026-09-27 13:20 #2'
+  type: vless
+  server: panel.syscorea.info
+  port: 9443
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: ue-author.semiconductor.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BbG7ujN1PZHI9FniAhoVxTbLSaVXkliFDLmY30e50Gc
+    short-id: a5155626
+- name: 'V2Get🛰️ 2026-09-27 13:20 #3'
+  type: vless
+  server: panel.syscorea.info
+  port: 2086
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4jM7Y6Fo7Ko0MHNePpSjHRoFaCpvDFfbg8e6qQ-A7jM
+    short-id: 179f98f69418edea
+- name: 'V2Get🛰️ 2026-09-27 13:20 #4'
+  type: vless
+  server: panel.syscorea.info
+  port: 2082
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: drivers.amd.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mXRLsmkVPMvbtHkI9rW3qlbHL6YKQRX_0m7qAX7anwM
+    short-id: 6e6094b24038dbc5
+- name: 'V2Get🛰️ 2026-09-27 13:20 #5'
+  type: vless
+  server: panel.syscorea.info
+  port: 8080
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.sony.com.au
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nhTAUMhJTqqdbU9iJGo_neOndhJU341LY9nh7O-tWEI
+    short-id: a5a150116b157b
+- name: 'V2Get🛰️ 2026-09-27 13:20 #6'
+  type: vless
+  server: panel.syscorea.info
+  port: 2095
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: i.s-microsoft.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -NViofKVHLipNowdZuHyF0Jvg9C_h9epetWyyqAbaAk
+    short-id: 762298b955
+- name: 'V2Get🛰️ 2026-09-27 13:20 #7'
+  type: vless
+  server: panel.syscorea.info
+  port: 2087
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: gx-target-rconfig-frontend-api-cdn.gx-stg.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Sr-jU1wTnkpIE13JSJlTv5sR6LhS85IEPsAvKwAt7xY
+    short-id: c7c921a9017f
+- name: 'V2Get🛰️ 2026-09-27 13:20 #8'
+  type: vless
+  server: panel.syscorea.info
+  port: 443
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vFTT_HdB2qC8WW6dgwevjAK0SH8cv_Ns80ATp1L_HTw
+    short-id: 8e25
+- name: 'V2Get🛰️ 2026-09-27 13:20 #9'
+  type: vless
+  server: panel.syscorea.info
+  port: 2052
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _vXj5a7nxfHk_oyz2a8fIPYdPeU1aAmrPIuSid3J218
+    short-id: be83a38c6189
+- name: 'V2Get🛰️ 2026-09-27 13:20 #10'
+  type: vless
+  server: panel.syscorea.info
+  port: 2083
+  uuid: 39eb7019-be3d-4400-80d9-3e8815554c21
+  udp: true
+  network: tcp
+  tls: true
+  servername: youtubekids.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0FmZGgYCE_FweDd-hbGMHJ0I7bZda5DiVErEchOmGgk
+    short-id: 34b8373924
+- name: 'V2Get🛰️ 2026-09-27 13:20 #11'
+  type: vmess
+  server: ge.duravexv.ir
+  port: 17289
+  uuid: e9010b99-30b3-497b-aeec-c204ec481e09
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  tls: true
+  servername: ge.duravexv.ir
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-27 13:20 #12'
   type: vless
   server: romse.k44lawm.ir
   port: 8443
@@ -83,7 +169,7 @@ proxies:
     path: /rows/
     headers:
       Host: romse.k44lawm.ir
-- name: 'V2Get🛰️ 2026-09-27 13:20 #2'
+- name: 'V2Get🛰️ 2026-09-27 13:20 #13'
   type: vless
   server: holiia.azad0namah.ir
   port: 8080
@@ -96,7 +182,7 @@ proxies:
   reality-opts:
     public-key: mxIFTCVHgKXE24OOgIDbCGi2GwsbJ2TB8BeR-CwAqhQ
     short-id: e68b4136a647de07
-- name: 'V2Get🛰️ 2026-09-27 13:20 #3'
+- name: 'V2Get🛰️ 2026-09-27 13:20 #14'
   type: vless
   server: tcdnu.azad0namah.ir
   port: 8443
@@ -109,7 +195,7 @@ proxies:
     path: /tuws/
     headers:
       Host: tcdnu.azad0namah.ir
-- name: 'V2Get🛰️ 2026-09-27 13:20 #4'
+- name: 'V2Get🛰️ 2026-09-27 13:20 #15'
   type: vless
   server: dehet.color-panel.ir
   port: 8080
@@ -117,7 +203,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-27 13:20 #5'
+- name: 'V2Get🛰️ 2026-09-27 13:20 #16'
   type: vless
   server: dehet.color-panel.ir
   port: 443
@@ -130,19 +216,6 @@ proxies:
   reality-opts:
     public-key: vOkR__TLf5EgrDI5ZhfFLOUg5m7p-zTjL64T19ylLyA
     short-id: 938b00a30b5f9750
-- name: V2Get🛰️ 2026-09-27 01:18
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 9e9fd625-e4d7-4944-ae7e-4145342fa5db
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-27 01:19
   type: vless
   server: 201.51.4.39
@@ -168,33 +241,6 @@ proxies:
     path: /api/v1/payment/verify/9mQ2rL8sKp4xN7
     headers:
       Host: camera.tgseenrobo.ir
-- name: V2Get🛰️ 2026-09-26 22:18
-  type: vless
-  server: 80.47.6.12
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: polkakurvich.hohoterz.beer
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: X6gBZNZSv_k1pyvLmQaDD4LsYk7jIA1SObRR5r-4Ynk
-    short-id: fcfd621a2f36e3b6
-- name: 'V2Get🛰️ 2026-09-27 01:18 #2'
-  type: vless
-  server: germa12.ggisopi.su
-  port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: germa12.ggisopi.su
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
 - name: V2Get🛰️ 2026-09-27 13:19
   type: vless
   server: 199.232.78.159
@@ -296,20 +342,6 @@ proxies:
   reality-opts:
     public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
     short-id: 21270a66
-- name: 'V2Get🛰️ 2026-09-26 22:18 #2'
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  udp: true
-  network: ws
-  tls: true
-  servername: llm-api.sofurry.dpdns.org
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
 - name: V2Get🛰️ 2026-09-27 12:19
   type: vless
   server: 5.75.205.201
@@ -457,46 +489,6 @@ proxies:
     path: /
 - name: 'V2Get🛰️ 2026-09-27 01:19 #2'
   type: vless
-  server: 144.31.130.24
-  port: 443
-  uuid: 24843110-9424-4bb7-8fe7-941f815c915e
-  udp: true
-  network: ws
-  tls: true
-  servername: pageshipper.melodramaonline.net
-  client-fingerprint: safari
-  ws-opts:
-    path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #3'
-  type: vless
-  server: 185.99.98.45
-  port: 443
-  uuid: c6896f9f-5cfd-42cd-83d0-b338f9b09402
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: izbaproject.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: WAGp6lGVP9y0ytgVr4FqEb4qPiXZiSbKPeqVXEvsviY
-    short-id: 1e91e50e2353275a
-- name: 'V2Get🛰️ 2026-09-27 01:19 #4'
-  type: vless
-  server: 188.130.209.219
-  port: 8443
-  uuid: 7faa65a6-b43b-413e-9480-a81fae3d0c49
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: edge-fr.extazy.net
-  client-fingerprint: safari
-  reality-opts:
-    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
-    short-id: ba4b2afa9e7193ea
-- name: 'V2Get🛰️ 2026-09-27 01:19 #5'
-  type: vless
   server: 5.175.161.78
   port: 443
   uuid: 16ff7414-21ca-4986-bc6a-b3b53c4a9daf
@@ -509,7 +501,7 @@ proxies:
   reality-opts:
     public-key: zIhDtqZo--gCOBxMLqpRETmsGUNTzyHQzBDtRov_Qjk
     short-id: 84249c1249f4b2d5
-- name: 'V2Get🛰️ 2026-09-27 01:19 #6'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #3'
   type: vless
   server: 185.161.251.152
   port: 443
@@ -521,7 +513,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #7'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #4'
   type: vless
   server: 159.200.230.126
   port: 443
@@ -535,7 +527,7 @@ proxies:
   reality-opts:
     public-key: Mz5FVYK-46hGT2nszJnScxIuaXgmzl-dvY3sVhFgYHs
     short-id: b58db792ef79c94c
-- name: 'V2Get🛰️ 2026-09-27 01:19 #8'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #5'
   type: vless
   server: 188.225.33.210
   port: 443
@@ -549,7 +541,7 @@ proxies:
   reality-opts:
     public-key: XjamcOgmbuYfaS8HJJvIPbWyBYTLRuspXuB_XN-uZzo
     short-id: f86442acf4463693
-- name: 'V2Get🛰️ 2026-09-27 01:19 #9'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #6'
   type: vless
   server: 185.186.143.14
   port: 443
@@ -562,7 +554,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: nKikcOP7PyFvJevamH27_aQNWs-WhylrF8sii96TMmE
-- name: 'V2Get🛰️ 2026-09-27 01:19 #10'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #7'
   type: vless
   server: 185.236.8.146
   port: 443
@@ -574,7 +566,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #11'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #8'
   type: vless
   server: 89.144.20.169
   port: 443
@@ -586,7 +578,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #12'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #9'
   type: vless
   server: 5.175.161.194
   port: 443
@@ -600,7 +592,7 @@ proxies:
   reality-opts:
     public-key: UZc4OlyX-cYmQh5FJtjzoSuVqtbiGJCNQGF_MN8CxA4
     short-id: 748e4f563dd9bd02
-- name: 'V2Get🛰️ 2026-09-27 01:19 #13'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #10'
   type: vless
   server: 93.188.185.22
   port: 443
@@ -613,7 +605,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
-- name: 'V2Get🛰️ 2026-09-27 01:19 #14'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #11'
   type: vless
   server: 45.135.128.6
   port: 443
@@ -626,7 +618,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-- name: 'V2Get🛰️ 2026-09-27 01:19 #15'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #12'
   type: vless
   server: 188.225.75.240
   port: 443
@@ -640,7 +632,7 @@ proxies:
   reality-opts:
     public-key: KNQxtGq8kplj8hbd-9jlBbcz8BdCLJssPOQGTr2n1zY
     short-id: 3bc877693f9ea08e
-- name: 'V2Get🛰️ 2026-09-27 01:19 #16'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #13'
   type: vless
   server: 5.175.161.211
   port: 443
@@ -654,7 +646,7 @@ proxies:
   reality-opts:
     public-key: UdBGJ1I5lzeteEjn5sLZfVTUcUidtjTx3cF92rPzgGk
     short-id: 3eed9b237e5e5baf
-- name: 'V2Get🛰️ 2026-09-27 01:19 #17'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #14'
   type: vless
   server: 144.31.2.103
   port: 443
@@ -666,7 +658,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #18'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #15'
   type: vless
   server: 5.175.161.196
   port: 8443
@@ -680,7 +672,7 @@ proxies:
   reality-opts:
     public-key: a5fyDdAxG-lU54h4F5KPPa-CuCswv9EBAuXYKdmcnjE
     short-id: f7a5b6b3bb04abb6
-- name: 'V2Get🛰️ 2026-09-27 01:19 #19'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #16'
   type: vless
   server: 103.246.248.181
   port: 443
@@ -693,7 +685,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: lrcvhYPvMfH_MpHC_PFYNb_bsw6vy2VR0yZxv3Pv8C4
-- name: 'V2Get🛰️ 2026-09-27 01:19 #20'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #17'
   type: vless
   server: 5.175.161.193
   port: 443
@@ -707,7 +699,7 @@ proxies:
   reality-opts:
     public-key: 53u64exYWpO2W3vlx4UUlDUFQpBFMUKQPeN6miQtpXE
     short-id: 1cb422f39c02f3ec
-- name: 'V2Get🛰️ 2026-09-27 01:19 #21'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #18'
   type: vless
   server: 84.75.255.49
   port: 443
@@ -721,7 +713,7 @@ proxies:
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
     short-id: 356a70f0d72b4e80
-- name: 'V2Get🛰️ 2026-09-27 01:19 #22'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #19'
   type: vless
   server: 94.228.161.44
   port: 443
@@ -733,7 +725,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #23'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #20'
   type: vless
   server: 103.41.177.20
   port: 8444
@@ -747,7 +739,7 @@ proxies:
     path: /ws
     headers:
       Host: usa-ws.duck-net.pro
-- name: 'V2Get🛰️ 2026-09-27 01:19 #24'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #21'
   type: vless
   server: 144.31.129.165
   port: 443
@@ -759,7 +751,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #25'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #22'
   type: vless
   server: 2.27.27.239
   port: 443
@@ -771,7 +763,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #26'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #23'
   type: vless
   server: 46.8.210.234
   port: 443
@@ -785,7 +777,7 @@ proxies:
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
     short-id: bbe7cea59ba5fc76
-- name: 'V2Get🛰️ 2026-09-27 01:19 #27'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #24'
   type: vless
   server: 13.143.180.62
   port: 443
@@ -797,7 +789,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #28'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #25'
   type: vless
   server: 144.31.2.109
   port: 443
@@ -809,7 +801,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #29'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #26'
   type: vless
   server: 2.27.26.96
   port: 443
@@ -821,7 +813,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #30'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #27'
   type: vless
   server: 85.192.29.221
   port: 443
@@ -835,7 +827,7 @@ proxies:
   reality-opts:
     public-key: z6WQuRnYDQ3ELjui32NCPJaOVVNHMsy-DyBXY_B7ZC4
     short-id: 6ba85179e30d4fc2
-- name: 'V2Get🛰️ 2026-09-27 01:19 #31'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #28'
   type: vless
   server: 144.31.130.97
   port: 443
@@ -847,7 +839,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #32'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #29'
   type: vless
   server: 45.144.52.233
   port: 443
@@ -859,7 +851,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #33'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #30'
   type: vless
   server: 31.7.56.139
   port: 8443
@@ -871,7 +863,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /ws
-- name: 'V2Get🛰️ 2026-09-27 01:19 #34'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #31'
   type: vless
   server: 5.175.161.195
   port: 443
@@ -885,7 +877,7 @@ proxies:
   reality-opts:
     public-key: 90gg8QRDqwmrelQBiQ159MlmdUreo4h1-yBgRmp7U2c
     short-id: 082e4d45beed1487
-- name: 'V2Get🛰️ 2026-09-27 01:19 #35'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #32'
   type: vless
   server: 201.51.3.184
   port: 8443
@@ -899,7 +891,7 @@ proxies:
     public-key: gPaIIv3cDLigMHD-cm9SPvlHJlifMi5nEitdihwuNUM
   grpc-opts:
     grpc-service-name: ''
-- name: 'V2Get🛰️ 2026-09-27 01:19 #36'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #33'
   type: vless
   server: 188.225.77.227
   port: 443
@@ -913,7 +905,7 @@ proxies:
   reality-opts:
     public-key: cf3bZVqTQL0ksSxntpFU1uFQQEHrcV_8b3ZDVoFxTis
     short-id: 1e573a22e9d313bc
-- name: 'V2Get🛰️ 2026-09-27 01:19 #37'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #34'
   type: vless
   server: 2.27.26.168
   port: 443
@@ -925,7 +917,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #38'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #35'
   type: vless
   server: 94.103.2.224
   port: 50445
@@ -938,7 +930,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
-- name: 'V2Get🛰️ 2026-09-27 01:19 #39'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #36'
   type: vless
   server: 13.143.164.45
   port: 443
@@ -952,7 +944,7 @@ proxies:
   reality-opts:
     public-key: FScgwYQ_dBoGl0aBxxey5XtCWlUiRQxBZgQQT5XA0XI
     short-id: 024bcbd9a3725da1
-- name: 'V2Get🛰️ 2026-09-27 01:19 #40'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #37'
   type: vless
   server: 194.124.251.180
   port: 443
@@ -966,7 +958,7 @@ proxies:
   reality-opts:
     public-key: UjQYCcMCD2NW7ijZ6SqK74OvT18UjC964rzYHEZ7qmw
     short-id: 7a3920ff8867
-- name: 'V2Get🛰️ 2026-09-27 01:19 #41'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #38'
   type: vless
   server: 37.49.226.222
   port: 443
@@ -980,7 +972,7 @@ proxies:
   reality-opts:
     public-key: _CbLQm3wopCKcM82NEeVJmQXJtJvikZHF3Hn89ZMBEc
     short-id: 1c9ac5
-- name: 'V2Get🛰️ 2026-09-27 01:19 #42'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #39'
   type: vless
   server: 84.32.22.117
   port: 443
@@ -994,7 +986,7 @@ proxies:
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
     short-id: bbe7cea59ba5fc76
-- name: 'V2Get🛰️ 2026-09-27 01:19 #43'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #40'
   type: vless
   server: 31.76.91.242
   port: 443
@@ -1008,7 +1000,7 @@ proxies:
   reality-opts:
     public-key: owLGqhpAPNagcXFyqC74M3xarMvkL90ktbGw3d5t9wI
     short-id: a1d41b1b695c9965
-- name: 'V2Get🛰️ 2026-09-27 01:19 #44'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #41'
   type: vless
   server: 13.143.164.44
   port: 443
@@ -1022,7 +1014,7 @@ proxies:
   reality-opts:
     public-key: xnL5NgZ6mHbm_ZthGvfxIPa5IbL3KDqCjzqNyGtpQwU
     short-id: 3165175e736cf373
-- name: 'V2Get🛰️ 2026-09-27 01:19 #45'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #42'
   type: vless
   server: 139.28.170.17
   port: 443
@@ -1036,7 +1028,7 @@ proxies:
   reality-opts:
     public-key: tmpzXLbsYoUH_IYJWizUHtW7260mpUXvL8t1zjN6fl4
     short-id: dc3c542119
-- name: 'V2Get🛰️ 2026-09-27 01:19 #46'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #43'
   type: vless
   server: 84.32.51.165
   port: 443
@@ -1050,7 +1042,7 @@ proxies:
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
     short-id: a08f46e4b03d9dd3
-- name: 'V2Get🛰️ 2026-09-27 01:19 #47'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #44'
   type: vless
   server: 89.185.80.216
   port: 443
@@ -1062,7 +1054,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #48'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #45'
   type: vless
   server: 5.175.161.210
   port: 443
@@ -1076,7 +1068,7 @@ proxies:
   reality-opts:
     public-key: _hvd47UytqRrbVTiFFe2vwvWgeg4visStJQpj9xcGjM
     short-id: 681c5f389bb35191
-- name: 'V2Get🛰️ 2026-09-27 01:19 #49'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #46'
   type: vless
   server: 69.48.229.50
   port: 40443
@@ -1089,7 +1081,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: 6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY
-- name: 'V2Get🛰️ 2026-09-27 01:19 #50'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #47'
   type: vless
   server: 93.92.112.233
   port: 443
@@ -1103,7 +1095,7 @@ proxies:
   reality-opts:
     public-key: ftL0TyOTjUa1sL0t8BihJw4mivq1vmxVmln9UWtcWQ4
     short-id: 9fa94b480b31db5e
-- name: 'V2Get🛰️ 2026-09-27 01:19 #51'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #48'
   type: vless
   server: 144.31.131.96
   port: 443
@@ -1115,7 +1107,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /media/ws/
-- name: 'V2Get🛰️ 2026-09-27 01:19 #52'
+- name: 'V2Get🛰️ 2026-09-27 01:19 #49'
   type: vless
   server: 95.129.236.28
   port: 443
@@ -1135,20 +1127,24 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-12 00:12
-  - V2Get🛰️ 2026-09-12 10:43
-  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-27 13:20
   - 'V2Get🛰️ 2026-09-27 13:20 #2'
   - 'V2Get🛰️ 2026-09-27 13:20 #3'
   - 'V2Get🛰️ 2026-09-27 13:20 #4'
   - 'V2Get🛰️ 2026-09-27 13:20 #5'
-  - V2Get🛰️ 2026-09-27 01:18
+  - 'V2Get🛰️ 2026-09-27 13:20 #6'
+  - 'V2Get🛰️ 2026-09-27 13:20 #7'
+  - 'V2Get🛰️ 2026-09-27 13:20 #8'
+  - 'V2Get🛰️ 2026-09-27 13:20 #9'
+  - 'V2Get🛰️ 2026-09-27 13:20 #10'
+  - 'V2Get🛰️ 2026-09-27 13:20 #11'
+  - 'V2Get🛰️ 2026-09-27 13:20 #12'
+  - 'V2Get🛰️ 2026-09-27 13:20 #13'
+  - 'V2Get🛰️ 2026-09-27 13:20 #14'
+  - 'V2Get🛰️ 2026-09-27 13:20 #15'
+  - 'V2Get🛰️ 2026-09-27 13:20 #16'
   - V2Get🛰️ 2026-09-27 01:19
   - V2Get🛰️ 2026-09-27 10:19
-  - V2Get🛰️ 2026-09-26 22:18
-  - 'V2Get🛰️ 2026-09-27 01:18 #2'
   - V2Get🛰️ 2026-09-27 13:19
   - 'V2Get🛰️ 2026-09-27 13:19 #2'
   - 'V2Get🛰️ 2026-09-27 13:19 #3'
@@ -1158,7 +1154,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-27 13:19 #7'
   - 'V2Get🛰️ 2026-09-27 13:19 #8'
   - 'V2Get🛰️ 2026-09-27 13:19 #9'
-  - 'V2Get🛰️ 2026-09-26 22:18 #2'
   - V2Get🛰️ 2026-09-27 12:19
   - 'V2Get🛰️ 2026-09-27 10:19 #2'
   - V2Get🛰️ 2026-09-27 09:19
@@ -1219,29 +1214,30 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-27 01:19 #47'
   - 'V2Get🛰️ 2026-09-27 01:19 #48'
   - 'V2Get🛰️ 2026-09-27 01:19 #49'
-  - 'V2Get🛰️ 2026-09-27 01:19 #50'
-  - 'V2Get🛰️ 2026-09-27 01:19 #51'
-  - 'V2Get🛰️ 2026-09-27 01:19 #52'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 10:54
-  - V2Get🛰️ 2026-08-12 00:12
-  - V2Get🛰️ 2026-09-12 10:43
-  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-27 13:20
   - 'V2Get🛰️ 2026-09-27 13:20 #2'
   - 'V2Get🛰️ 2026-09-27 13:20 #3'
   - 'V2Get🛰️ 2026-09-27 13:20 #4'
   - 'V2Get🛰️ 2026-09-27 13:20 #5'
-  - V2Get🛰️ 2026-09-27 01:18
+  - 'V2Get🛰️ 2026-09-27 13:20 #6'
+  - 'V2Get🛰️ 2026-09-27 13:20 #7'
+  - 'V2Get🛰️ 2026-09-27 13:20 #8'
+  - 'V2Get🛰️ 2026-09-27 13:20 #9'
+  - 'V2Get🛰️ 2026-09-27 13:20 #10'
+  - 'V2Get🛰️ 2026-09-27 13:20 #11'
+  - 'V2Get🛰️ 2026-09-27 13:20 #12'
+  - 'V2Get🛰️ 2026-09-27 13:20 #13'
+  - 'V2Get🛰️ 2026-09-27 13:20 #14'
+  - 'V2Get🛰️ 2026-09-27 13:20 #15'
+  - 'V2Get🛰️ 2026-09-27 13:20 #16'
   - V2Get🛰️ 2026-09-27 01:19
   - V2Get🛰️ 2026-09-27 10:19
-  - V2Get🛰️ 2026-09-26 22:18
-  - 'V2Get🛰️ 2026-09-27 01:18 #2'
   - V2Get🛰️ 2026-09-27 13:19
   - 'V2Get🛰️ 2026-09-27 13:19 #2'
   - 'V2Get🛰️ 2026-09-27 13:19 #3'
@@ -1251,7 +1247,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-27 13:19 #7'
   - 'V2Get🛰️ 2026-09-27 13:19 #8'
   - 'V2Get🛰️ 2026-09-27 13:19 #9'
-  - 'V2Get🛰️ 2026-09-26 22:18 #2'
   - V2Get🛰️ 2026-09-27 12:19
   - 'V2Get🛰️ 2026-09-27 10:19 #2'
   - V2Get🛰️ 2026-09-27 09:19
@@ -1312,9 +1307,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-27 01:19 #47'
   - 'V2Get🛰️ 2026-09-27 01:19 #48'
   - 'V2Get🛰️ 2026-09-27 01:19 #49'
-  - 'V2Get🛰️ 2026-09-27 01:19 #50'
-  - 'V2Get🛰️ 2026-09-27 01:19 #51'
-  - 'V2Get🛰️ 2026-09-27 01:19 #52'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
