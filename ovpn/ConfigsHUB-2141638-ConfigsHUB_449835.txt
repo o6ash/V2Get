@@ -1,0 +1,78 @@
+# OVPN_FRIENDLY_PROFILE_NAME=V2Get🔒 2026-09-27 08:51
+dev tun
+auth-nocache
+remote-random
+<connection>
+remote 217.138.192.214 1196 udp
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+explicit-exit-notify 1
+mssfix 1450
+connect-retry 5 5
+</connection>
+keepalive 10 60
+dhcp-option DNS 8.8.8.8
+dhcp-option DNS 82.196.13.196
+remote-cert-tls server
+push-peer-info
+mute-replay-warnings
+ncp-ciphers AES-256-CBC
+resolv-retry infinite
+cipher AES-256-CBC
+auth SHA256
+auth-user-pass
+client
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDSzCCAjOgAwIBAgIUOvCcRYImiJDukZaL/9uR7xds0nowDQYJKoZIhvcNAQEL
+BQAwFjEUMBIGA1UEAwwLRWFzeS1SU0EgQ0EwHhcNMjIwNzIxMDkxMTQwWhcNMzIw
+NzE4MDkxMTQwWjAWMRQwEgYDVQQDDAtFYXN5LVJTQSBDQTCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBAMqWv1vDSTbrRM9v56EY41tQtvQJAbDs3+1UxHv6
+qc+TqdbPoNAyRLJos2084+zrk/Nqqb4mhy/NGJg7lodq/AI1nQkMtMFUlSXuH4Lb
+Z+037kWgG55le10joYOOL/uxdbh//63hg5URvKwyEaEmX1lNyJxFps1FGzTouxd3
+iZVbscbMuyZb9pTiYbK/5Rv8Hk+1JwtTdbmyc3YXLwWsUgx1/awsjrVEDIDsBy9h
+7dvmLFE3i37eyYoD0ZO+G1H6JGPhZ6H9L51P/HUeC0lFZeevw1pldCsDLOqEubkN
+HSm7rpxcU4ZzBKi4S8PI0B+jt7jAl6AOhHukaQ+c+vdRJ8sCAwEAAaOBkDCBjTAM
+BgNVHRMEBTADAQH/MB0GA1UdDgQWBBS6egRZcgYdqb7y1xjxoqanh8d2NzBRBgNV
+HSMESjBIgBS6egRZcgYdqb7y1xjxoqanh8d2N6EapBgwFjEUMBIGA1UEAwwLRWFz
+eS1SU0EgQ0GCFDrwnEWCJoiQ7pGWi//bke8XbNJ6MAsGA1UdDwQEAwIBBjANBgkq
+hkiG9w0BAQsFAAOCAQEAredKYbTHv+yd0Zowep5/sdgJv8mNLCS1MdtCQhNUjf8H
+xEilgUNaRAxVeO9HY9QrUBbPLatz+hzSxuTYrtNr4cNoVZoOxs95GvHOfTfEXWgA
+gyZIpvwWrQ9WYJxcg3j/3TD+za0b8AyB5t+wPksKtiTX5wIQ5GXC1MrjUSrDOZPU
+RQD/KWJrqwbklhj8EVTqgG9kgLMeqaJHhzY8ZBL5EhHvke/TyI6ynNfMabyrklFU
+97kUPeCPb9kOI2xXDA0NnEfSeoxK/znMC/aKvlKiFxcL/2yMEnXCesvfxG8GOjUB
+UYC+Xkg4RDqTVUser5n4lt8YAc8hUU64HMLXvFEmPA==
+-----END CERTIFICATE-----
+
+</ca>
+key-direction 1
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+a8766ac327acfe176833676bc527e0d0
+278629b27f9f91521311ec2dfcf174cb
+2f13015cbb7929fa4489d4a640ed043b
+b6ff6bad2e5b082ca431eff3f70df170
+571f5eceee6f282f9f2fc5774a423ba7
+3f380e4df08a06ae32d538892931282a
+ed928f5f1ca2effbabd8d0a885fa114d
+b4c707e6695ecce37680bb4950ab77a0
+7d482da203d6a607b7823c3b42e9d405
+4c0885b7eb4a2257d83b5dc84b81a7b7
+2d45e3634c6b7cace49f955ef435a767
+60912110b9bd3aa90ade558f451514c7
+ede1badf8986eaa13d2a828ba67fdaf2
+ba1794948b30210564798591c00f9f62
+40d203d54e4356c995ce700a904ae3c1
+3881131229603e8c555ac6c09feea210
+-----END OpenVPN Static key V1-----
+
+</tls-auth>
+
+<auth-user-pass>
+01M3CPFGPE2HCB9J33TSY95Q26
+01M3CPFGPE2HCB9J33TSY95Q27
+</auth-user-pass>
