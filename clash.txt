@@ -14,6 +14,18 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-29 00:25
   type: vless
+  server: nice.iranapplecenter.com
+  port: 443
+  uuid: 6ba68c69-e108-502d-7b1c-e806fbc3cccd
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-09-29 00:25 #2'
+  type: vless
   server: victoryprovpn-production-c6dc.up.railway.app
   port: 443
   uuid: 736062c3-e976-838c-8624-a977e95ee324
@@ -28,21 +40,6 @@ proxies:
     path: /ws/736062c3-e976-838c-8624-a977e95ee324
     headers:
       Host: victoryprovpn-production-c6dc.up.railway.app
-- name: V2Get🛰️ 2026-09-11 21:41
-  type: vless
-  server: 31.56.184.132
-  port: 8443
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  udp: true
-  network: grpc
-  tls: true
-  servername: cloudflare.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  grpc-opts:
-    grpc-service-name: shiforgrpc
 - name: V2Get🛰️ 2026-09-20 10:01
   type: vmess
   server: 188.114.96.19
@@ -1231,7 +1228,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-29 00:25
-  - V2Get🛰️ 2026-09-11 21:41
+  - 'V2Get🛰️ 2026-09-29 00:25 #2'
   - V2Get🛰️ 2026-09-20 10:01
   - V2Get🛰️ 2026-09-26 04:15
   - V2Get🛰️ 2026-09-27 13:20
@@ -1331,7 +1328,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-29 00:25
-  - V2Get🛰️ 2026-09-11 21:41
+  - 'V2Get🛰️ 2026-09-29 00:25 #2'
   - V2Get🛰️ 2026-09-20 10:01
   - V2Get🛰️ 2026-09-26 04:15
   - V2Get🛰️ 2026-09-27 13:20
