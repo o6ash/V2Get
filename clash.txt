@@ -12,67 +12,68 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-06 09:19
-  type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: V2Get🛰️ 2026-08-09 13:11
+- name: V2Get🛰️ 2026-08-10 15:11
   type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: 'V2Get🛰️ 2026-08-09 13:11 #2'
-  type: vless
-  server: 169.40.42.75
+  server: dey.lnmarketplace.net
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: xhttp
   tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-20 13:13
-  type: vless
-  server: 169.40.42.229
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  password: humanity
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-20 22:13
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-09-02 01:21
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 2.27.205.59
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   udp: true
   network: ws
   skip-cert-verify: true
   ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+    path: /
+- name: V2Get🛰️ 2026-09-24 23:12
+  type: vless
+  server: 185.171.202.106
+  port: 443
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fra2.loozerp.wiki
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+- name: V2Get🛰️ 2026-09-26 06:15
+  type: vless
+  server: 185.171.202.105
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fra.loozerp.wiki
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
 - name: V2Get🛰️ 2026-09-01 01:17
   type: vless
   server: 163.8.195.241
@@ -1242,11 +1243,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-09 13:11
-  - 'V2Get🛰️ 2026-08-09 13:11 #2'
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-09-26 06:15
   - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-11 23:42
   - V2Get🛰️ 2026-09-19 00:57
@@ -1343,11 +1344,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-06 09:19
-  - V2Get🛰️ 2026-08-09 13:11
-  - 'V2Get🛰️ 2026-08-09 13:11 #2'
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-08-10 15:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-09-02 01:21
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-09-26 06:15
   - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-11 23:42
   - V2Get🛰️ 2026-09-19 00:57
