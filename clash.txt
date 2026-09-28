@@ -12,31 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-02 22:02
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
+- name: V2Get🛰️ 2026-09-28 19:25
+  type: vless
+  server: 129.212.195.56
+  port: 1161
+  uuid: 1821a2c5-21a9-788c-5fba-b5e6abb733b0
   udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
+  network: tcp
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s1-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-07 08:40
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
+- name: 'V2Get🛰️ 2026-09-28 19:25 #2'
+  type: vless
+  server: 129.212.195.56
+  port: 8039
+  uuid: 1821a2c5-21a9-788c-5fba-b5e6abb733b0
   udp: true
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tno.nl
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-09-26 11:16
   type: vless
   server: www.gameturk.bestvnxv.org
@@ -1262,8 +1259,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-07 08:40
+  - V2Get🛰️ 2026-09-28 19:25
+  - 'V2Get🛰️ 2026-09-28 19:25 #2'
   - V2Get🛰️ 2026-09-26 11:16
   - 'V2Get🛰️ 2026-09-26 11:16 #2'
   - V2Get🛰️ 2026-09-27 17:21
@@ -1367,8 +1364,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-02 22:02
-  - V2Get🛰️ 2026-08-07 08:40
+  - V2Get🛰️ 2026-09-28 19:25
+  - 'V2Get🛰️ 2026-09-28 19:25 #2'
   - V2Get🛰️ 2026-09-26 11:16
   - 'V2Get🛰️ 2026-09-26 11:16 #2'
   - V2Get🛰️ 2026-09-27 17:21
