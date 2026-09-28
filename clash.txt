@@ -12,17 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-25 22:04
+- name: V2Get🛰️ 2026-09-29 00:25
   type: vless
-  server: 206.71.158.125
+  server: victoryprovpn-production-c6dc.up.railway.app
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  uuid: 736062c3-e976-838c-8624-a977e95ee324
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: dey.lnmarketplace.net
+  servername: victoryprovpn-production-c6dc.up.railway.app
+  client-fingerprint: ios
   alpn:
-  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws/736062c3-e976-838c-8624-a977e95ee324
+    headers:
+      Host: victoryprovpn-production-c6dc.up.railway.app
 - name: V2Get🛰️ 2026-09-11 21:41
   type: vless
   server: 31.56.184.132
@@ -1225,7 +1230,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-25 22:04
+  - V2Get🛰️ 2026-09-29 00:25
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-20 10:01
   - V2Get🛰️ 2026-09-26 04:15
@@ -1325,7 +1330,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-25 22:04
+  - V2Get🛰️ 2026-09-29 00:25
   - V2Get🛰️ 2026-09-11 21:41
   - V2Get🛰️ 2026-09-20 10:01
   - V2Get🛰️ 2026-09-26 04:15
