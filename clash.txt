@@ -12,33 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-26 18:17
-  type: vless
-  server: 89.105.197.202
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: 22a375e0-f7c6-4d8f-a154-81189914bbf4
+  password: mitivpn
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: findmypackets.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
-    short-id: 64c1fe36c7846400
-- name: V2Get🛰️ 2026-09-27 01:18
-  type: vless
-  server: germa12.ggisopi.su
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-18 13:56
+  type: trojan
+  server: 167.82.76.7
   port: 443
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  password: mitivpn
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: germa12.ggisopi.su
-  client-fingerprint: qq
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-24 17:11
+  type: trojan
+  server: 199.232.78.188
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
 - name: V2Get🛰️ 2026-09-28 02:21
   type: vless
   server: 188.114.97.6
@@ -180,20 +196,6 @@ proxies:
   reality-opts:
     public-key: XgdHElYEGdc0A5NTZP4uTya2Y4WTKnfFV4ormD7rLx4
     short-id: debb
-- name: V2Get🛰️ 2026-09-26 04:15
-  type: vless
-  server: finporkzov.com
-  port: 443
-  uuid: 7b93e3f1-c5bf-43cd-8fcd-e0e745c92d10
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: finporkzov.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: _0N3gACBkKvGKTh0q5-dmt-XqSHB3xfEHSANRXu-U0I
-    short-id: f00f58383241c807
 - name: V2Get🛰️ 2026-09-27 13:20
   type: vless
   server: 93.183.87.85
@@ -1182,8 +1184,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-26 18:17
-  - V2Get🛰️ 2026-09-27 01:18
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-18 13:56
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-29 00:26
   - V2Get🛰️ 2026-09-29 17:30
@@ -1195,7 +1198,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-29 14:27
   - V2Get🛰️ 2026-09-29 16:28
   - V2Get🛰️ 2026-09-29 15:28
-  - V2Get🛰️ 2026-09-26 04:15
   - V2Get🛰️ 2026-09-27 13:20
   - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-09-27 21:21
@@ -1287,8 +1289,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-26 18:17
-  - V2Get🛰️ 2026-09-27 01:18
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-18 13:56
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-29 00:26
   - V2Get🛰️ 2026-09-29 17:30
@@ -1300,7 +1303,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-29 14:27
   - V2Get🛰️ 2026-09-29 16:28
   - V2Get🛰️ 2026-09-29 15:28
-  - V2Get🛰️ 2026-09-26 04:15
   - V2Get🛰️ 2026-09-27 13:20
   - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-09-27 21:21
