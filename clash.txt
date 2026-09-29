@@ -12,31 +12,33 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:10
-  type: trojan
-  server: 172.67.149.60
+- name: V2Get🛰️ 2026-09-24 23:12
+  type: vless
+  server: 137.74.16.237
   port: 443
-  password: humanity
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
   udp: true
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: V2Get🛰️ 2026-07-29 14:50
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+- name: V2Get🛰️ 2026-09-30 00:28
+  type: vless
+  server: 206.1.99.14
+  port: 39907
+  uuid: 5d4557de-2778-4002-b12f-0211251e7595
   udp: true
-  sni: www.calmloud.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
+  network: tcp
+  tls: true
+  servername: rpc.anker.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: WKMa8Yg-WkXAnbHV4HK9YHQOXDyQzH2xcAL9hRRJWA4
+    short-id: f7a5d3
 - name: V2Get🛰️ 2026-08-04 01:44
   type: vless
   server: 169.40.42.184
@@ -1194,8 +1196,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:10
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-09-30 00:28
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-21 12:57
@@ -1297,8 +1299,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:10
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-09-30 00:28
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-07 08:40
   - V2Get🛰️ 2026-08-21 12:57
