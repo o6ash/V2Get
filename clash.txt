@@ -14,6 +14,14 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-09-29 23:29
   type: vless
+  server: 91.107.160.117
+  port: 2091
+  uuid: d636f99d-c29c-4f95-8a56-bc37806783ae
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-29 23:29 #2'
+  type: vless
   server: 91.107.171.10
   port: 2091
   uuid: f628a861-f351-4695-ba9d-f27f450d23a2
@@ -179,20 +187,6 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
   udp: true
-- name: V2Get🛰️ 2026-08-08 22:11
-  type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: 'V2Get🛰️ 2026-08-09 13:11 #2'
   type: vless
   server: 15.204.97.206
@@ -1201,6 +1195,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-09-29 23:29
+  - 'V2Get🛰️ 2026-09-29 23:29 #2'
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 22:13
@@ -1214,7 +1209,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 17:11 #2'
   - V2Get🛰️ 2026-09-06 21:32
   - V2Get🛰️ 2026-09-06 04:29
-  - V2Get🛰️ 2026-08-08 22:11
   - 'V2Get🛰️ 2026-08-09 13:11 #2'
   - 'V2Get🛰️ 2026-08-09 13:11 #3'
   - V2Get🛰️ 2026-08-11 02:12
@@ -1304,6 +1298,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-09-29 23:29
+  - 'V2Get🛰️ 2026-09-29 23:29 #2'
   - V2Get🛰️ 2026-08-09 01:10
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 22:13
@@ -1317,7 +1312,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-24 17:11 #2'
   - V2Get🛰️ 2026-09-06 21:32
   - V2Get🛰️ 2026-09-06 04:29
-  - V2Get🛰️ 2026-08-08 22:11
   - 'V2Get🛰️ 2026-08-09 13:11 #2'
   - 'V2Get🛰️ 2026-08-09 13:11 #3'
   - V2Get🛰️ 2026-08-11 02:12
