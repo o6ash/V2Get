@@ -12,35 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-08 18:10
+- name: V2Get🛰️ 2026-09-29 20:28
   type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 129.212.140.252
+  port: 1161
+  uuid: c35bf983-44dd-0432-0fdf-a7324d4193eb
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-29 20:28 #2'
+  type: vless
+  server: 129.212.140.252
+  port: 8039
+  uuid: c35bf983-44dd-0432-0fdf-a7324d4193eb
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: www.tno.nl
   client-fingerprint: ios
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-08-09 13:11
   type: vless
   server: 169.40.42.75
@@ -975,8 +968,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-08 18:10
+  - V2Get🛰️ 2026-09-29 20:28
+  - 'V2Get🛰️ 2026-09-29 20:28 #2'
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-20 13:13
@@ -1059,8 +1052,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-08 18:10
+  - V2Get🛰️ 2026-09-29 20:28
+  - 'V2Get🛰️ 2026-09-29 20:28 #2'
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-18 01:06
   - V2Get🛰️ 2026-08-20 13:13
