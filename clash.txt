@@ -12,20 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-19 23:59
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+- name: V2Get🛰️ 2026-08-06 18:05
+  type: vless
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
   udp: true
-- name: 'V2Get🛰️ 2026-09-19 23:59 #2'
-  type: ss
-  server: 94.249.187.46
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-26 20:18
+  type: vless
+  server: moblemangol.ir
+  port: 2082
+  uuid: 6a219111-9ee4-4a7a-b9df-af0a33918cb2
   udp: true
+  network: httpupgrade
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-29 23:30
   type: vless
   server: sub.begoovip.ir
@@ -1062,8 +1069,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-19 23:59
-  - 'V2Get🛰️ 2026-09-19 23:59 #2'
+  - V2Get🛰️ 2026-08-06 18:05
+  - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-09-29 23:30
   - V2Get🛰️ 2026-09-30 01:29
   - V2Get🛰️ 2026-09-30 10:04
@@ -1161,8 +1168,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-19 23:59
-  - 'V2Get🛰️ 2026-09-19 23:59 #2'
+  - V2Get🛰️ 2026-08-06 18:05
+  - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-09-29 23:30
   - V2Get🛰️ 2026-09-30 01:29
   - V2Get🛰️ 2026-09-30 10:04
