@@ -12,6 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-30 23:06
   type: vless
   server: o8odx1bt.danqela.ir
@@ -142,19 +157,6 @@ proxies:
     public-key: TJ3ltW_Xa1x5bn7bY3jx2mpirm0GHOskSSG88Ft68CA
     short-id: 46641eff6d03ffb1
 - name: V2Get🛰️ 2026-09-30 01:29
-  type: vless
-  server: ru-test.omuservice.tech
-  port: 8443
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ozone.nl
-  reality-opts:
-    public-key: yyH7Fyfh1ULPH4L5mFVtqPf_rB1IY6jwDgOuIRY7-wA
-    short-id: 9409a3561ba49f30
-- name: 'V2Get🛰️ 2026-09-30 01:29 #2'
   type: vless
   server: 172.67.92.203
   port: 443
@@ -924,6 +926,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-30 23:06
   - 'V2Get🛰️ 2026-09-30 23:06 #2'
   - 'V2Get🛰️ 2026-09-30 23:06 #3'
@@ -936,7 +939,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-30 23:05 #5'
   - 'V2Get🛰️ 2026-09-30 23:05 #6'
   - V2Get🛰️ 2026-09-30 01:29
-  - 'V2Get🛰️ 2026-09-30 01:29 #2'
   - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-09-30 22:06 #2'
   - 'V2Get🛰️ 2026-09-30 22:06 #3'
@@ -1003,6 +1005,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-30 23:06
   - 'V2Get🛰️ 2026-09-30 23:06 #2'
   - 'V2Get🛰️ 2026-09-30 23:06 #3'
@@ -1015,7 +1018,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-30 23:05 #5'
   - 'V2Get🛰️ 2026-09-30 23:05 #6'
   - V2Get🛰️ 2026-09-30 01:29
-  - 'V2Get🛰️ 2026-09-30 01:29 #2'
   - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-09-30 22:06 #2'
   - 'V2Get🛰️ 2026-09-30 22:06 #3'
