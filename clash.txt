@@ -12,33 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-09 13:11
+- name: V2Get🛰️ 2026-09-30 21:05
   type: vless
-  server: 169.40.42.133
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 104.248.100.244
+  port: 1161
+  uuid: 1ca536cc-ba4f-8780-d1c7-3e85671daf58
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-09-30 21:05 #2'
+  type: vless
+  server: 104.248.100.244
+  port: 8039
+  uuid: 1ca536cc-ba4f-8780-d1c7-3e85671daf58
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: www.tno.nl
+  client-fingerprint: ios
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-17 23:07
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-09-21 00:03
   type: vmess
   server: 188.114.96.19
@@ -1101,8 +1096,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-09 13:11
-  - V2Get🛰️ 2026-08-17 23:07
+  - V2Get🛰️ 2026-09-30 21:05
+  - 'V2Get🛰️ 2026-09-30 21:05 #2'
   - V2Get🛰️ 2026-09-21 00:03
   - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-08-21 23:57
@@ -1201,8 +1196,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-09 13:11
-  - V2Get🛰️ 2026-08-17 23:07
+  - V2Get🛰️ 2026-09-30 21:05
+  - 'V2Get🛰️ 2026-09-30 21:05 #2'
   - V2Get🛰️ 2026-09-21 00:03
   - V2Get🛰️ 2026-09-26 20:18
   - V2Get🛰️ 2026-08-21 23:57
