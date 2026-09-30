@@ -12,36 +12,44 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
+- name: V2Get🛰️ 2026-08-19 12:11
+  type: vless
+  server: 57.129.132.223
+  port: 80
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  skip-cert-verify: true
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    path: /vless/
     headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-18 01:06
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: mitivpn
+      Host: google.com
+- name: V2Get🛰️ 2026-09-11 15:41
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-  sni: cloudflare.com
+- name: V2Get🛰️ 2026-09-21 00:02
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: V2Get🛰️ 2026-09-19 00:57
+  type: vless
+  server: host.taghvimtime.ir
+  port: 8443
+  uuid: 9f44d517-29f2-4c6d-cc06-a1268f13da58
+  udp: true
+  network: xhttp
+  tls: true
+  servername: host.taghvimtime.ir
+  client-fingerprint: chrome
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 3-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+  - h2
 - name: V2Get🛰️ 2026-09-24 17:11
   type: trojan
   server: 151.101.56.9
@@ -328,18 +336,6 @@ proxies:
   password: yhmz9WmAN4
   udp: true
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-19 00:57
-  type: vless
-  server: host.taghvimtime.ir
-  port: 8443
-  uuid: 9f44d517-29f2-4c6d-cc06-a1268f13da58
-  udp: true
-  network: xhttp
-  tls: true
-  servername: host.taghvimtime.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-08-29 03:10
   type: vless
   server: rubifen.adaspoloandco.com
@@ -624,13 +620,6 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: V2Get🛰️ 2026-09-21 00:02
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
 - name: V2Get🛰️ 2026-10-01 01:06
   type: vless
   server: 2.27.249.130
@@ -1135,8 +1124,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-19 12:11
+  - V2Get🛰️ 2026-09-11 15:41
+  - V2Get🛰️ 2026-09-21 00:02
+  - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-26 10:17
   - V2Get🛰️ 2026-09-28 14:23
@@ -1160,7 +1151,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 02:05 #2'
   - V2Get🛰️ 2026-09-30 22:05
   - V2Get🛰️ 2026-09-30 21:05
-  - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-09 08:36
   - 'V2Get🛰️ 2026-10-01 02:05 #3'
@@ -1183,7 +1173,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-09-24 23:12
-  - V2Get🛰️ 2026-09-21 00:02
   - V2Get🛰️ 2026-10-01 01:06
   - 'V2Get🛰️ 2026-10-01 01:06 #2'
   - 'V2Get🛰️ 2026-10-01 01:06 #3'
@@ -1232,8 +1221,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-18 01:06
+  - V2Get🛰️ 2026-08-19 12:11
+  - V2Get🛰️ 2026-09-11 15:41
+  - V2Get🛰️ 2026-09-21 00:02
+  - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-26 10:17
   - V2Get🛰️ 2026-09-28 14:23
@@ -1257,7 +1248,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 02:05 #2'
   - V2Get🛰️ 2026-09-30 22:05
   - V2Get🛰️ 2026-09-30 21:05
-  - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-08-29 03:10
   - V2Get🛰️ 2026-09-09 08:36
   - 'V2Get🛰️ 2026-10-01 02:05 #3'
@@ -1280,7 +1270,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-09-24 23:12
-  - V2Get🛰️ 2026-09-21 00:02
   - V2Get🛰️ 2026-10-01 01:06
   - 'V2Get🛰️ 2026-10-01 01:06 #2'
   - 'V2Get🛰️ 2026-10-01 01:06 #3'
