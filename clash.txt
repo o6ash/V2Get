@@ -12,15 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-22 02:04
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-09-16 02:50
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   udp: true
   network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+- name: V2Get🛰️ 2026-09-30 17:05
+  type: vless
+  server: 78.17.97.201
+  port: 443
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ozone.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
+    short-id: 42df
+- name: V2Get🛰️ 2026-09-30 09:29
+  type: ss
+  server: 20.123.34.66
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r5D6YOSrT6kC76ro
+  udp: true
 - name: V2Get🛰️ 2026-09-24 17:11
   type: trojan
   server: 199.232.78.188
@@ -35,13 +60,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
-- name: V2Get🛰️ 2026-09-30 09:29
-  type: ss
-  server: 20.123.34.66
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r5D6YOSrT6kC76ro
-  udp: true
 - name: V2Get🛰️ 2026-09-29 13:28
   type: trojan
   server: 199.232.78.170
@@ -111,7 +129,7 @@ proxies:
   reality-opts:
     public-key: _0N3gACBkKvGKTh0q5-dmt-XqSHB3xfEHSANRXu-U0I
     short-id: f00f58383241c807
-- name: V2Get🛰️ 2026-09-30 17:05
+- name: 'V2Get🛰️ 2026-09-30 17:05 #2'
   type: vless
   server: ls-21.shalinmarket1.ir
   port: 2095
@@ -123,14 +141,14 @@ proxies:
     path: /shop
     headers:
       Host: sd-ge.futball91.ir
-- name: 'V2Get🛰️ 2026-09-30 17:05 #2'
+- name: 'V2Get🛰️ 2026-09-30 17:05 #3'
   type: ss
   server: sql.popmintxo.cc
   port: 43385
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
   udp: true
-- name: 'V2Get🛰️ 2026-09-30 17:05 #3'
+- name: 'V2Get🛰️ 2026-09-30 17:05 #4'
   type: vless
   server: gscloud.cz
   port: 2052
@@ -139,7 +157,7 @@ proxies:
   network: httpupgrade
   flow: xtls-rprx-vision
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-09-30 17:05 #4'
+- name: 'V2Get🛰️ 2026-09-30 17:05 #5'
   type: vless
   server: cou.shalinmarket1.ir
   port: 2095
@@ -151,20 +169,6 @@ proxies:
     path: /shop
     headers:
       Host: sd-ge.futball91.ir
-- name: 'V2Get🛰️ 2026-09-30 17:05 #5'
-  type: vless
-  server: 78.17.97.201
-  port: 443
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ozone.nl
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 42df
 - name: 'V2Get🛰️ 2026-09-30 17:05 #6'
   type: vless
   server: 199.232.78.159
@@ -1046,15 +1050,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-22 02:04
-  - V2Get🛰️ 2026-09-24 17:11
+  - V2Get🛰️ 2026-09-16 02:50
+  - V2Get🛰️ 2026-09-30 17:05
   - V2Get🛰️ 2026-09-30 09:29
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-29 13:28
   - V2Get🛰️ 2026-09-29 23:30
   - V2Get🛰️ 2026-09-30 01:29
   - 'V2Get🛰️ 2026-09-30 01:29 #2'
   - V2Get🛰️ 2026-09-26 04:15
-  - V2Get🛰️ 2026-09-30 17:05
   - 'V2Get🛰️ 2026-09-30 17:05 #2'
   - 'V2Get🛰️ 2026-09-30 17:05 #3'
   - 'V2Get🛰️ 2026-09-30 17:05 #4'
@@ -1143,15 +1147,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-22 02:04
-  - V2Get🛰️ 2026-09-24 17:11
+  - V2Get🛰️ 2026-09-16 02:50
+  - V2Get🛰️ 2026-09-30 17:05
   - V2Get🛰️ 2026-09-30 09:29
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-29 13:28
   - V2Get🛰️ 2026-09-29 23:30
   - V2Get🛰️ 2026-09-30 01:29
   - 'V2Get🛰️ 2026-09-30 01:29 #2'
   - V2Get🛰️ 2026-09-26 04:15
-  - V2Get🛰️ 2026-09-30 17:05
   - 'V2Get🛰️ 2026-09-30 17:05 #2'
   - 'V2Get🛰️ 2026-09-30 17:05 #3'
   - 'V2Get🛰️ 2026-09-30 17:05 #4'
