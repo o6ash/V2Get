@@ -12,6 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-30 12:05
+  type: vless
+  server: lineartronic-ii.subaru-volga.com
+  port: 443
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  udp: true
+  network: tcp
+  tls: true
+  servername: lineartronic-ii.subaru-volga.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: jOOQIxM4PRxWaZDfTj_63smCGJX_inthmmb8WG-SIHI
+    short-id: 6fda
+- name: 'V2Get🛰️ 2026-09-30 12:05 #2'
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  network: ws
+  tls: true
+  servername: sub.merky.top
+  client-fingerprint: chrome
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 'V2Get🛰️ 2026-09-30 12:05 #3'
+  type: vless
+  server: 31.207.7.74
+  port: 443
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pkg.go.dev
+  client-fingerprint: random
+  reality-opts:
+    public-key: RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s
+    short-id: 457ae5b8bef4d1b3
 - name: V2Get🛰️ 2026-09-29 22:29
   type: vless
   server: 19990ed1bb252449.ironly4l.ir
@@ -39,16 +80,6 @@ proxies:
   reality-opts:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
-- name: V2Get🛰️ 2026-09-01 01:17
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /29c8fed7ca22
 - name: V2Get🛰️ 2026-09-18 13:56
   type: trojan
   server: 199.232.78.101
@@ -148,31 +179,6 @@ proxies:
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
     short-id: 50ba05992b05c1c3
-- name: V2Get🛰️ 2026-09-06 21:32
-  type: vless
-  server: pl4.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  client-fingerprint: firefox
-  alpn:
-  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
-- name: V2Get🛰️ 2026-09-06 13:31
-  type: vless
-  server: 144.31.2.33
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
   server: 8.47.69.0
@@ -991,9 +997,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-30 12:05
+  - 'V2Get🛰️ 2026-09-30 12:05 #2'
+  - 'V2Get🛰️ 2026-09-30 12:05 #3'
   - V2Get🛰️ 2026-09-29 22:29
   - V2Get🛰️ 2026-09-30 08:29
-  - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-28 13:24
@@ -1001,8 +1009,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-29 23:30
   - 'V2Get🛰️ 2026-09-24 17:11 #2'
   - V2Get🛰️ 2026-09-16 02:50
-  - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-11 23:42
   - V2Get🛰️ 2026-09-20 11:02
@@ -1073,9 +1079,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-30 12:05
+  - 'V2Get🛰️ 2026-09-30 12:05 #2'
+  - 'V2Get🛰️ 2026-09-30 12:05 #3'
   - V2Get🛰️ 2026-09-29 22:29
   - V2Get🛰️ 2026-09-30 08:29
-  - V2Get🛰️ 2026-09-01 01:17
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-28 13:24
@@ -1083,8 +1091,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-29 23:30
   - 'V2Get🛰️ 2026-09-24 17:11 #2'
   - V2Get🛰️ 2026-09-16 02:50
-  - V2Get🛰️ 2026-09-06 21:32
-  - V2Get🛰️ 2026-09-06 13:31
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-09-11 23:42
   - V2Get🛰️ 2026-09-20 11:02
