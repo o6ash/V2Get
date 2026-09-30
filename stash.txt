@@ -12,220 +12,50 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-28 14:44
-  type: vless
-  server: mypanel.unixzone.us
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
   udp: true
-  network: ws
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
-  ws-opts:
-    path: /
-- name: V2Get🛰️ 2026-07-31 13:53
-  type: vless
-  server: 85.17.145.65
-  port: 12068
-  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
-  udp: true
   network: ws
-  skip-cert-verify: true
   ws-opts:
-    path: /
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: mypanel.unixzone.us
-- name: V2Get🛰️ 2026-08-03 13:35
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-30 21:05
+  type: trojan
+  server: 206.1.99.106
+  port: 53
+  password: yhmz9WmAN4
+  udp: true
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-01 02:05
   type: vless
-  server: 169.40.42.95
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: d0b4lvzr.danqela.ir
+  port: 34257
+  uuid: c2abb151-f683-46f9-9099-b0455852e6f9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-01 02:05 #2'
+  type: vless
+  server: xg8j0ft7.selqora.ir
+  port: 51595
+  uuid: c2abb151-f683-46f9-9099-b0455852e6f9
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-03 13:35 #2'
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-08 18:10
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-08 18:10 #2'
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-08 22:11
-  type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
+  servername: play.google.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 11:11
-  type: vless
-  server: 169.40.42.16
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: 'V2Get🛰️ 2026-08-09 11:11 #2'
-  type: vless
-  server: 169.40.42.173
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 13:10
-  type: vless
-  server: 169.40.42.52
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 13:11
-  type: vless
-  server: 169.40.42.133
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-18 10:07
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-19 17:09
-  type: vless
-  server: 169.40.42.182
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-20 13:13
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-20 21:13
-  type: vless
-  server: 169.40.42.89
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-21 18:56
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: AJjXkgHlDAdrUkG8hK3_ECdPa-baeGYacNmLPyc_hEo
+    short-id: f54d3ca92dc2e938
 - name: V2Get🛰️ 2026-08-29 03:10
   type: vless
   server: rubifen.adaspoloandco.com
@@ -235,18 +65,6 @@ proxies:
   network: ws
   tls: true
   servername: rubifen.adaspoloandco.com
-  ws-opts:
-    path: /GOrbEh
-- name: V2Get🛰️ 2026-08-29 16:12
-  type: vless
-  server: 51.38.127.93
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  network: ws
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  client-fingerprint: firefox
   ws-opts:
     path: /GOrbEh
 - name: V2Get🛰️ 2026-09-09 08:36
@@ -263,87 +81,20 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: V2Get🛰️ 2026-09-18 13:56
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-18 13:56 #2'
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-24 17:11
-  type: trojan
-  server: 199.232.78.188
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
-- name: V2Get🛰️ 2026-09-24 23:12
+- name: 'V2Get🛰️ 2026-10-01 02:05 #3'
   type: vless
-  server: 66.90.104.43
-  port: 2083
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: vless
-  tls: true
-- name: V2Get🛰️ 2026-09-26 10:16
-  type: vless
-  server: 169.40.42.90
+  server: bgroup.us2.ilovegairport.com
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
+  servername: us-west-2.console.aws.amazon.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-09-29 02:25
-  type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY
+    short-id: afe73effea
 - name: V2Get🛰️ 2026-09-29 12:27
   type: vless
   server: 65.109.28.164
@@ -358,19 +109,19 @@ proxies:
   reality-opts:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
-- name: V2Get🛰️ 2026-09-29 12:28
+- name: V2Get🛰️ 2026-09-30 22:06
   type: vless
-  server: 199.232.78.159
+  server: 95.85.247.128
   port: 443
-  uuid: aa7c2760-e4c3-4034-9455-40a8a584f64c
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
+  servername: ne0003.kubservice.icu
+  client-fingerprint: qq
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
 - name: V2Get🛰️ 2026-09-29 20:28
   type: vless
   server: test.keoplentuio.xyz
@@ -379,19 +130,32 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-30 16:05
+- name: 'V2Get🛰️ 2026-09-30 22:06 #2'
   type: vless
-  server: g4.haxat.bestvbest.ir
-  port: 56126
-  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
+  server: slowkd.sadiepinki.com
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: play.google.com
-  client-fingerprint: chrome
+  servername: slowkd.sadiepinki.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
-    short-id: 228b68f87a662053
+    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
+    short-id: 9c2378562188c3cb
+- name: 'V2Get🛰️ 2026-10-01 02:05 #4'
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 70a7fefc-6b71-4ab9-8cf5-eb12bb48cf1d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+    headers:
+      Host: rb24.ir
 - name: V2Get🛰️ 2026-09-30 18:06
   type: vless
   server: iranivib.kashimo.top
@@ -421,6 +185,19 @@ proxies:
     short-id: 13121b7150ad7fc6
   grpc-opts:
     grpc-service-name: ''
+- name: V2Get🛰️ 2026-09-30 16:05
+  type: vless
+  server: g4.haxat.bestvbest.ir
+  port: 56126
+  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
+  udp: true
+  network: tcp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
+    short-id: 228b68f87a662053
 - name: 'V2Get🛰️ 2026-09-30 18:06 #3'
   type: vless
   server: iran.mstr.pingxoxo.info
@@ -435,81 +212,304 @@ proxies:
   reality-opts:
     public-key: IYhfI8lsuJrFV8zzp1XXbh9sPkvBlBNOTtJwBubhxxw
     short-id: e4eb3ada03de9e92
-- name: V2Get🛰️ 2026-10-01 02:05
+- name: V2Get🛰️ 2026-09-29 12:28
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 70a7fefc-6b71-4ab9-8cf5-eb12bb48cf1d
+  server: 199.232.78.159
+  port: 443
+  uuid: aa7c2760-e4c3-4034-9455-40a8a584f64c
   udp: true
   network: ws
-  skip-cert-verify: true
+  tls: true
+  servername: ssl.fastly.com
   ws-opts:
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+    path: /
     headers:
-      Host: rb24.ir
-- name: 'V2Get🛰️ 2026-10-01 02:05 #2'
-  type: vless
-  server: bgroup.us2.ilovegairport.com
+      Host: pannn1.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-18 13:56
+  type: trojan
+  server: 167.82.76.7
   port: 443
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-18 10:07
+  type: vless
+  server: 169.40.42.35
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: us-west-2.console.aws.amazon.com
+  servername: yahoo.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-20 13:13
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY
-    short-id: afe73effea
-- name: 'V2Get🛰️ 2026-10-01 02:05 #3'
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-09-24 17:11
+  type: trojan
+  server: 199.232.78.188
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
+- name: 'V2Get🛰️ 2026-09-18 13:56 #2'
+  type: trojan
+  server: 199.232.78.101
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-09 13:10
   type: vless
-  server: xg8j0ft7.selqora.ir
-  port: 51595
-  uuid: c2abb151-f683-46f9-9099-b0455852e6f9
+  server: 169.40.42.52
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: play.google.com
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-09 11:11
+  type: vless
+  server: 169.40.42.173
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: AJjXkgHlDAdrUkG8hK3_ECdPa-baeGYacNmLPyc_hEo
-    short-id: f54d3ca92dc2e938
-- name: 'V2Get🛰️ 2026-10-01 02:05 #4'
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-08 18:10
   type: vless
-  server: d0b4lvzr.danqela.ir
-  port: 34257
-  uuid: c2abb151-f683-46f9-9099-b0455852e6f9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-30 22:06
-  type: vless
-  server: 95.85.247.128
+  server: 169.40.42.179
   port: 443
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: ne0003.kubservice.icu
-  client-fingerprint: qq
+  servername: yahoo.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-- name: 'V2Get🛰️ 2026-09-30 22:06 #2'
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: 'V2Get🛰️ 2026-08-09 11:11 #2'
   type: vless
-  server: slowkd.sadiepinki.com
+  server: 169.40.42.16
   port: 443
-  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: slowkd.sadiepinki.com
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-08 22:11
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-09-29 02:25
+  type: vless
+  server: 169.40.42.163
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-21 18:56
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-29 16:12
+  type: vless
+  server: 51.38.127.93
+  port: 443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  udp: true
+  network: ws
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: /GOrbEh
+- name: V2Get🛰️ 2026-08-03 13:35
+  type: vless
+  server: 169.40.42.95
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
-    short-id: 9c2378562188c3cb
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: 'V2Get🛰️ 2026-08-08 18:10 #2'
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-09-26 10:16
+  type: vless
+  server: 169.40.42.90
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: 'V2Get🛰️ 2026-08-03 13:35 #2'
+  type: vless
+  server: 169.40.42.232
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-20 21:13
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-09 13:11
+  type: vless
+  server: 169.40.42.133
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-09-24 23:12
+  type: vless
+  server: 66.90.104.43
+  port: 2083
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: V2Get🛰️ 2026-08-19 17:09
+  type: vless
+  server: 169.40.42.182
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-01 01:06
   type: vless
   server: 2.27.249.130
@@ -1001,44 +1001,44 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-28 14:44
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-03 13:35
-  - 'V2Get🛰️ 2026-08-03 13:35 #2'
-  - V2Get🛰️ 2026-08-08 18:10
-  - 'V2Get🛰️ 2026-08-08 18:10 #2'
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-09 11:11
-  - 'V2Get🛰️ 2026-08-09 11:11 #2'
-  - V2Get🛰️ 2026-08-09 13:10
-  - V2Get🛰️ 2026-08-09 13:11
-  - V2Get🛰️ 2026-08-18 10:07
-  - V2Get🛰️ 2026-08-19 17:09
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-08-20 21:13
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-29 16:12
-  - V2Get🛰️ 2026-09-09 08:36
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
-  - V2Get🛰️ 2026-09-24 17:11
-  - V2Get🛰️ 2026-09-24 23:12
-  - V2Get🛰️ 2026-09-26 10:16
-  - V2Get🛰️ 2026-09-29 02:25
-  - V2Get🛰️ 2026-09-29 12:27
-  - V2Get🛰️ 2026-09-29 12:28
-  - V2Get🛰️ 2026-09-29 20:28
-  - V2Get🛰️ 2026-09-30 16:05
-  - V2Get🛰️ 2026-09-30 18:06
-  - 'V2Get🛰️ 2026-09-30 18:06 #2'
-  - 'V2Get🛰️ 2026-09-30 18:06 #3'
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-01 02:05
   - 'V2Get🛰️ 2026-10-01 02:05 #2'
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-09-09 08:36
   - 'V2Get🛰️ 2026-10-01 02:05 #3'
-  - 'V2Get🛰️ 2026-10-01 02:05 #4'
+  - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 22:06
+  - V2Get🛰️ 2026-09-29 20:28
   - 'V2Get🛰️ 2026-09-30 22:06 #2'
+  - 'V2Get🛰️ 2026-10-01 02:05 #4'
+  - V2Get🛰️ 2026-09-30 18:06
+  - 'V2Get🛰️ 2026-09-30 18:06 #2'
+  - V2Get🛰️ 2026-09-30 16:05
+  - 'V2Get🛰️ 2026-09-30 18:06 #3'
+  - V2Get🛰️ 2026-09-29 12:28
+  - V2Get🛰️ 2026-09-18 13:56
+  - V2Get🛰️ 2026-08-18 10:07
+  - V2Get🛰️ 2026-08-20 13:13
+  - V2Get🛰️ 2026-09-24 17:11
+  - 'V2Get🛰️ 2026-09-18 13:56 #2'
+  - V2Get🛰️ 2026-08-09 13:10
+  - V2Get🛰️ 2026-08-09 11:11
+  - V2Get🛰️ 2026-08-08 18:10
+  - 'V2Get🛰️ 2026-08-09 11:11 #2'
+  - V2Get🛰️ 2026-08-08 22:11
+  - V2Get🛰️ 2026-09-29 02:25
+  - V2Get🛰️ 2026-08-21 18:56
+  - V2Get🛰️ 2026-08-29 16:12
+  - V2Get🛰️ 2026-08-03 13:35
+  - 'V2Get🛰️ 2026-08-08 18:10 #2'
+  - V2Get🛰️ 2026-09-26 10:16
+  - 'V2Get🛰️ 2026-08-03 13:35 #2'
+  - V2Get🛰️ 2026-08-20 21:13
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-08-19 17:09
   - V2Get🛰️ 2026-10-01 01:06
   - V2Get🛰️ 2026-09-30 23:05
   - 'V2Get🛰️ 2026-10-01 01:06 #2'
@@ -1084,44 +1084,44 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-28 14:44
-  - V2Get🛰️ 2026-07-31 13:53
-  - V2Get🛰️ 2026-08-03 13:35
-  - 'V2Get🛰️ 2026-08-03 13:35 #2'
-  - V2Get🛰️ 2026-08-08 18:10
-  - 'V2Get🛰️ 2026-08-08 18:10 #2'
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-09 11:11
-  - 'V2Get🛰️ 2026-08-09 11:11 #2'
-  - V2Get🛰️ 2026-08-09 13:10
-  - V2Get🛰️ 2026-08-09 13:11
-  - V2Get🛰️ 2026-08-18 10:07
-  - V2Get🛰️ 2026-08-19 17:09
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-08-20 21:13
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-29 03:10
-  - V2Get🛰️ 2026-08-29 16:12
-  - V2Get🛰️ 2026-09-09 08:36
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
-  - V2Get🛰️ 2026-09-24 17:11
-  - V2Get🛰️ 2026-09-24 23:12
-  - V2Get🛰️ 2026-09-26 10:16
-  - V2Get🛰️ 2026-09-29 02:25
-  - V2Get🛰️ 2026-09-29 12:27
-  - V2Get🛰️ 2026-09-29 12:28
-  - V2Get🛰️ 2026-09-29 20:28
-  - V2Get🛰️ 2026-09-30 16:05
-  - V2Get🛰️ 2026-09-30 18:06
-  - 'V2Get🛰️ 2026-09-30 18:06 #2'
-  - 'V2Get🛰️ 2026-09-30 18:06 #3'
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-01 02:05
   - 'V2Get🛰️ 2026-10-01 02:05 #2'
+  - V2Get🛰️ 2026-08-29 03:10
+  - V2Get🛰️ 2026-09-09 08:36
   - 'V2Get🛰️ 2026-10-01 02:05 #3'
-  - 'V2Get🛰️ 2026-10-01 02:05 #4'
+  - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 22:06
+  - V2Get🛰️ 2026-09-29 20:28
   - 'V2Get🛰️ 2026-09-30 22:06 #2'
+  - 'V2Get🛰️ 2026-10-01 02:05 #4'
+  - V2Get🛰️ 2026-09-30 18:06
+  - 'V2Get🛰️ 2026-09-30 18:06 #2'
+  - V2Get🛰️ 2026-09-30 16:05
+  - 'V2Get🛰️ 2026-09-30 18:06 #3'
+  - V2Get🛰️ 2026-09-29 12:28
+  - V2Get🛰️ 2026-09-18 13:56
+  - V2Get🛰️ 2026-08-18 10:07
+  - V2Get🛰️ 2026-08-20 13:13
+  - V2Get🛰️ 2026-09-24 17:11
+  - 'V2Get🛰️ 2026-09-18 13:56 #2'
+  - V2Get🛰️ 2026-08-09 13:10
+  - V2Get🛰️ 2026-08-09 11:11
+  - V2Get🛰️ 2026-08-08 18:10
+  - 'V2Get🛰️ 2026-08-09 11:11 #2'
+  - V2Get🛰️ 2026-08-08 22:11
+  - V2Get🛰️ 2026-09-29 02:25
+  - V2Get🛰️ 2026-08-21 18:56
+  - V2Get🛰️ 2026-08-29 16:12
+  - V2Get🛰️ 2026-08-03 13:35
+  - 'V2Get🛰️ 2026-08-08 18:10 #2'
+  - V2Get🛰️ 2026-09-26 10:16
+  - 'V2Get🛰️ 2026-08-03 13:35 #2'
+  - V2Get🛰️ 2026-08-20 21:13
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-09-24 23:12
+  - V2Get🛰️ 2026-08-19 17:09
   - V2Get🛰️ 2026-10-01 01:06
   - V2Get🛰️ 2026-09-30 23:05
   - 'V2Get🛰️ 2026-10-01 01:06 #2'
