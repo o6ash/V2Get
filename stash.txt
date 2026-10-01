@@ -12,7 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-24 17:11
+  type: trojan
+  server: 199.232.78.188
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
 - name: V2Get🛰️ 2026-10-01 11:06
+  type: vless
+  server: 65.109.187.18
+  port: 49092
+  uuid: b7e7ed42-5b9d-462d-8e54-5a4bd46f6822
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
+  type: vless
+  server: 86.62.52.5
+  port: 2085
+  uuid: e9e84ca7-611f-4843-b75b-5af8a7c6fbbe
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-10-01 11:06 #3'
   type: vless
   server: 129.212.192.155
   port: 1161
@@ -20,7 +53,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #4'
   type: vless
   server: 129.212.192.155
   port: 8039
@@ -92,15 +125,6 @@ proxies:
   reality-opts:
     public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
     short-id: 9c2378562188c3cb
-- name: V2Get🛰️ 2026-09-22 23:07
-  type: vmess
-  server: 89.41.172.85
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-09-27 01:18
   type: vless
   server: germa12.ggisopi.su
@@ -163,33 +187,6 @@ proxies:
   reality-opts:
     public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
     short-id: ef7c4e4302bd52d7
-- name: V2Get🛰️ 2026-09-19 18:59
-  type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rusbid.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-- name: V2Get🛰️ 2026-09-24 10:10
-  type: vless
-  server: 45.152.113.206
-  port: 443
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 1.ru.oncloudnineservicestreang.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs
-    short-id: 65557338e1cd5605
 - name: V2Get🛰️ 2026-09-26 10:16
   type: vless
   server: 172.67.194.138
@@ -1040,21 +1037,21 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
+  - 'V2Get🛰️ 2026-10-01 11:06 #3'
+  - 'V2Get🛰️ 2026-10-01 11:06 #4'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
   - V2Get🛰️ 2026-10-01 00:06
   - V2Get🛰️ 2026-09-30 22:06
-  - V2Get🛰️ 2026-09-22 23:07
   - V2Get🛰️ 2026-09-27 01:18
   - V2Get🛰️ 2026-09-30 20:05
   - V2Get🛰️ 2026-10-01 09:06
   - 'V2Get🛰️ 2026-10-01 09:06 #2'
   - 'V2Get🛰️ 2026-10-01 09:06 #3'
-  - V2Get🛰️ 2026-09-19 18:59
-  - V2Get🛰️ 2026-09-24 10:10
   - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-09-26 22:18
   - V2Get🛰️ 2026-09-27 09:19
@@ -1128,21 +1125,21 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
+  - 'V2Get🛰️ 2026-10-01 11:06 #3'
+  - 'V2Get🛰️ 2026-10-01 11:06 #4'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
   - V2Get🛰️ 2026-10-01 00:06
   - V2Get🛰️ 2026-09-30 22:06
-  - V2Get🛰️ 2026-09-22 23:07
   - V2Get🛰️ 2026-09-27 01:18
   - V2Get🛰️ 2026-09-30 20:05
   - V2Get🛰️ 2026-10-01 09:06
   - 'V2Get🛰️ 2026-10-01 09:06 #2'
   - 'V2Get🛰️ 2026-10-01 09:06 #3'
-  - V2Get🛰️ 2026-09-19 18:59
-  - V2Get🛰️ 2026-09-24 10:10
   - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-09-26 22:18
   - V2Get🛰️ 2026-09-27 09:19
