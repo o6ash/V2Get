@@ -12,21 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
+- name: V2Get🛰️ 2026-10-01 11:06
+  type: vless
+  server: 116.202.2.220
+  port: 2087
+  uuid: 773c840c-e96e-4857-9d2a-0d0ce45cdd14
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: WbQjly966etKlWv8mlCLEsOC9YS7MeIX64bwezCWHlI
+    short-id: 6cf1ce00d9
 - name: V2Get🛰️ 2026-08-03 13:35
   type: vless
   server: 169.40.42.95
@@ -380,7 +378,7 @@ proxies:
     path: /
     headers:
       Host: pan2e.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-01 11:06
+- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
   type: vless
   server: 104.18.36.122
   port: 8880
@@ -392,7 +390,7 @@ proxies:
     path: /
     headers:
       Host: sweet-truth-ccdb.134-7e9.workers.dev
-- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #3'
   type: vless
   server: sub.skyshopnet.ir
   port: 443
@@ -405,7 +403,7 @@ proxies:
   reality-opts:
     public-key: hpqn8r_F_YEnWuzRgNtRM5uHgUkrIzx99VEwzJH-PTI
     short-id: 7bc1b614
-- name: 'V2Get🛰️ 2026-10-01 11:06 #3'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #4'
   type: vless
   server: 31.14.123.220
   port: 49433
@@ -413,7 +411,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #4'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #5'
   type: vless
   server: 91.233.121.32
   port: 443
@@ -426,7 +424,7 @@ proxies:
   reality-opts:
     public-key: Ez3w5uLzFlysA6Owr7SguTK5kzlIFZ09TgalzUHGAR4
     short-id: 9f51e98fb874846b
-- name: 'V2Get🛰️ 2026-10-01 11:06 #5'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #6'
   type: vless
   server: 185.106.97.96
   port: 2356
@@ -440,7 +438,7 @@ proxies:
   reality-opts:
     public-key: xOvRaMt_OKG0ZfRGclQ8B4ARaFnbhroH979FsI3IkWM
     short-id: 9a73c118f64b2e40
-- name: 'V2Get🛰️ 2026-10-01 11:06 #6'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #7'
   type: vless
   server: xn--us-qw52aklja.valdino.ir
   port: 2089
@@ -448,7 +446,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #7'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #8'
   type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
@@ -463,7 +461,7 @@ proxies:
     short-id: 4be4110078ebed4a
   grpc-opts:
     grpc-service-name: ''
-- name: 'V2Get🛰️ 2026-10-01 11:06 #8'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #9'
   type: vless
   server: 86.62.52.5
   port: 2085
@@ -474,7 +472,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #9'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #10'
   type: vless
   server: 86.62.52.4
   port: 2085
@@ -485,7 +483,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #10'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #11'
   type: vless
   server: 65.109.187.18
   port: 49092
@@ -501,7 +499,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #11'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #12'
   type: vmess
   server: mygptagent.org
   port: 443
@@ -517,7 +515,7 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 'V2Get🛰️ 2026-10-01 11:06 #12'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #13'
   type: vless
   server: 129.212.192.155
   port: 1161
@@ -525,7 +523,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 11:06 #13'
+- name: 'V2Get🛰️ 2026-10-01 11:06 #14'
   type: vless
   server: 129.212.192.155
   port: 8039
@@ -1187,7 +1185,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-08-03 13:35
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 18:10
@@ -1215,7 +1213,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-30 10:04 #3'
   - V2Get🛰️ 2026-09-30 10:05
   - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 11:06 #3'
   - 'V2Get🛰️ 2026-10-01 11:06 #4'
@@ -1225,10 +1222,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 11:06 #8'
   - 'V2Get🛰️ 2026-10-01 11:06 #9'
   - 'V2Get🛰️ 2026-10-01 11:06 #10'
-  - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-10-01 11:06 #11'
+  - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-10-01 11:06 #12'
   - 'V2Get🛰️ 2026-10-01 11:06 #13'
+  - 'V2Get🛰️ 2026-10-01 11:06 #14'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
@@ -1289,7 +1287,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-08-03 13:35
   - V2Get🛰️ 2026-08-06 09:19
   - V2Get🛰️ 2026-08-08 18:10
@@ -1317,7 +1315,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-09-30 10:04 #3'
   - V2Get🛰️ 2026-09-30 10:05
   - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 11:06 #3'
   - 'V2Get🛰️ 2026-10-01 11:06 #4'
@@ -1327,10 +1324,11 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 11:06 #8'
   - 'V2Get🛰️ 2026-10-01 11:06 #9'
   - 'V2Get🛰️ 2026-10-01 11:06 #10'
-  - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-10-01 11:06 #11'
+  - V2Get🛰️ 2026-09-30 22:06
   - 'V2Get🛰️ 2026-10-01 11:06 #12'
   - 'V2Get🛰️ 2026-10-01 11:06 #13'
+  - 'V2Get🛰️ 2026-10-01 11:06 #14'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
