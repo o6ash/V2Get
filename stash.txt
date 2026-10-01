@@ -12,29 +12,36 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-01 11:06
+- name: V2Get🛰️ 2026-08-19 17:09
   type: vless
-  server: 31.14.123.220
-  port: 49433
-  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
+  server: 169.40.42.182
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
   network: tcp
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-10-01 17:06
+  type: vless
+  server: usa2.armageddonvpn.xyz
+  port: 443
+  uuid: e86ba41f-f2c4-4773-a6da-6534f12163bb
+  udp: true
+  network: ws
+  tls: true
+  servername: usa2.armageddonvpn.xyz
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /gbV2rcwZ?ed=2560
+    headers:
+      Host: usa2.armageddonvpn.xyz
 - name: V2Get🛰️ 2026-10-01 15:06
   type: vless
   server: 199.232.78.159
@@ -48,6 +55,28 @@ proxies:
     path: /
     headers:
       Host: pokerrr.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-01 12:06
+  type: vless
+  server: id-nl-01.mintrocket.org
+  port: 443
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+- name: V2Get🛰️ 2026-10-01 11:06
+  type: vless
+  server: 31.14.123.220
+  port: 49433
+  uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-01 16:07
   type: vless
   server: 158.247.125.162
@@ -183,20 +212,6 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: V2Get🛰️ 2026-10-01 12:06
-  type: vless
-  server: id-nl-01.mintrocket.org
-  port: 443
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: safari
-  reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
 - name: V2Get🛰️ 2026-09-28 02:21
   type: vless
   server: 188.114.97.6
@@ -331,20 +346,6 @@ proxies:
     path: /fintest
     headers:
       Host: findo.chalghooz.com
-- name: V2Get🛰️ 2026-08-20 13:13
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-08-20 21:13
   type: vless
   server: 169.40.42.89
@@ -968,9 +969,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-10-01 11:06
+  - V2Get🛰️ 2026-08-19 17:09
+  - V2Get🛰️ 2026-10-01 17:06
   - V2Get🛰️ 2026-10-01 15:06
+  - V2Get🛰️ 2026-10-01 12:06
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 16:07
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
@@ -981,7 +984,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 01:06
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-17 20:55
   - 'V2Get🛰️ 2026-10-01 15:06 #2'
@@ -992,7 +994,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #7'
   - 'V2Get🛰️ 2026-10-01 16:07 #8'
   - 'V2Get🛰️ 2026-10-01 16:07 #9'
-  - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-08-28 16:10
@@ -1045,9 +1046,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-10-01 11:06
+  - V2Get🛰️ 2026-08-19 17:09
+  - V2Get🛰️ 2026-10-01 17:06
   - V2Get🛰️ 2026-10-01 15:06
+  - V2Get🛰️ 2026-10-01 12:06
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 16:07
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
@@ -1058,7 +1061,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 01:06
   - V2Get🛰️ 2026-09-24 17:11
   - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-17 20:55
   - 'V2Get🛰️ 2026-10-01 15:06 #2'
@@ -1069,7 +1071,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #7'
   - 'V2Get🛰️ 2026-10-01 16:07 #8'
   - 'V2Get🛰️ 2026-10-01 16:07 #9'
-  - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-08-28 16:10
