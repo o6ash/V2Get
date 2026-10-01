@@ -12,6 +12,64 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-01 13:07
+  type: vless
+  server: 93.190.9.110
+  port: 3090
+  uuid: 74aed07d-280c-4e14-aa20-cbb815214af8
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-10-01 13:07 #2'
+  type: vless
+  server: 104.143.223.217
+  port: 2085
+  uuid: 74aed07d-280c-4e14-aa20-cbb815214af8
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-10-01 13:07 #3'
+  type: vless
+  server: 86.62.52.5
+  port: 2085
+  uuid: 564d8aeb-ef79-46ac-92bd-88b231f51c90
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
+- name: 'V2Get🛰️ 2026-10-01 13:07 #4'
+  type: vless
+  server: 93.89.220.37
+  port: 443
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ibm.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+- name: V2Get🛰️ 2026-10-01 11:06
+  type: vless
+  server: 86.62.52.4
+  port: 2085
+  uuid: e9e84ca7-611f-4843-b75b-5af8a7c6fbbe
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
 - name: V2Get🛰️ 2026-10-01 12:06
   type: vless
   server: 65.109.178.171
@@ -20,39 +78,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-06 13:31
-  type: vless
-  server: pl3.moritech.net
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-09-19 00:57
-  type: vless
-  server: host.taghvimtime.ir
-  port: 8443
-  uuid: 9f44d517-29f2-4c6d-cc06-a1268f13da58
-  udp: true
-  network: xhttp
-  tls: true
-  servername: host.taghvimtime.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-09-23 15:09
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-10-01 13:06
   type: vless
   server: nasnet-571299667-direct.mbghalibaf.com
@@ -77,7 +102,7 @@ proxies:
   reality-opts:
     public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
     short-id: fee1f986a72444db
-- name: V2Get🛰️ 2026-10-01 11:06
+- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
   type: vmess
   server: mygptagent.org
   port: 443
@@ -93,17 +118,6 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
-  type: vless
-  server: 86.62.52.4
-  port: 2085
-  uuid: e9e84ca7-611f-4843-b75b-5af8a7c6fbbe
-  udp: true
-  network: grpc
-  skip-cert-verify: true
-  grpc-opts:
-    grpc-service-name: vless
-  tls: true
 - name: 'V2Get🛰️ 2026-10-01 13:06 #2'
   type: vless
   server: 95.182.93.25
@@ -203,15 +217,6 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-28 14:23
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
 - name: V2Get🛰️ 2026-09-30 22:06
   type: vless
   server: slowkd.sadiepinki.com
@@ -1144,13 +1149,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-01 13:07
+  - 'V2Get🛰️ 2026-10-01 13:07 #2'
+  - 'V2Get🛰️ 2026-10-01 13:07 #3'
+  - 'V2Get🛰️ 2026-10-01 13:07 #4'
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 12:06
-  - V2Get🛰️ 2026-09-06 13:31
-  - V2Get🛰️ 2026-09-19 00:57
-  - V2Get🛰️ 2026-09-23 15:09
   - V2Get🛰️ 2026-10-01 13:06
   - 'V2Get🛰️ 2026-10-01 12:06 #2'
-  - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 13:06 #2'
   - 'V2Get🛰️ 2026-10-01 13:06 #3'
@@ -1161,7 +1167,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 13:06 #8'
   - 'V2Get🛰️ 2026-10-01 13:06 #9'
   - 'V2Get🛰️ 2026-10-01 13:06 #10'
-  - V2Get🛰️ 2026-09-28 14:23
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 21:05
@@ -1246,13 +1251,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-01 13:07
+  - 'V2Get🛰️ 2026-10-01 13:07 #2'
+  - 'V2Get🛰️ 2026-10-01 13:07 #3'
+  - 'V2Get🛰️ 2026-10-01 13:07 #4'
+  - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 12:06
-  - V2Get🛰️ 2026-09-06 13:31
-  - V2Get🛰️ 2026-09-19 00:57
-  - V2Get🛰️ 2026-09-23 15:09
   - V2Get🛰️ 2026-10-01 13:06
   - 'V2Get🛰️ 2026-10-01 12:06 #2'
-  - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 13:06 #2'
   - 'V2Get🛰️ 2026-10-01 13:06 #3'
@@ -1263,7 +1269,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 13:06 #8'
   - 'V2Get🛰️ 2026-10-01 13:06 #9'
   - 'V2Get🛰️ 2026-10-01 13:06 #10'
-  - V2Get🛰️ 2026-09-28 14:23
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 21:05
