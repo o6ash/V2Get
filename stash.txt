@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-01 13:07
+  type: vless
+  server: 93.89.220.37
+  port: 443
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ibm.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
 - name: V2Get🛰️ 2026-10-01 11:06
   type: vless
   server: 31.14.123.220
@@ -130,20 +144,6 @@ proxies:
     path: /
     headers:
       Host: pannn1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-28 13:24
-  type: vless
-  server: 31.77.227.10
-  port: 52006
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fr.setlisting.ru
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
 - name: 'V2Get🛰️ 2026-10-01 16:07 #2'
   type: vless
   server: 176.109.111.7
@@ -1006,6 +1006,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 23:08
   - V2Get🛰️ 2026-10-01 23:07
@@ -1015,7 +1016,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 18:07
-  - V2Get🛰️ 2026-09-28 13:24
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #4'
   - 'V2Get🛰️ 2026-10-01 23:07 #5'
@@ -1088,6 +1088,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-01 11:06
   - V2Get🛰️ 2026-10-01 23:08
   - V2Get🛰️ 2026-10-01 23:07
@@ -1097,7 +1098,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 18:07
-  - V2Get🛰️ 2026-09-28 13:24
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #4'
   - 'V2Get🛰️ 2026-10-01 23:07 #5'
