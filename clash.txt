@@ -12,6 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-01 18:07
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 36e8e5e8-8010-45a1-9fb7-9fa21f7e4c66
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-08 22:11
   type: vless
   server: 169.40.42.15
@@ -475,19 +488,6 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: V2Get🛰️ 2026-10-01 18:07
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 36e8e5e8-8010-45a1-9fb7-9fa21f7e4c66
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-10-01 16:07 #4'
   type: ss
   server: 20.166.59.119
@@ -1144,6 +1144,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-09-21 00:02
   - V2Get🛰️ 2026-09-22 02:04
@@ -1183,7 +1184,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
   - V2Get🛰️ 2026-10-01 01:05
   - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-10-01 18:07
   - 'V2Get🛰️ 2026-10-01 16:07 #4'
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-09-30 20:05
@@ -1243,6 +1243,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-08-08 22:11
   - V2Get🛰️ 2026-09-21 00:02
   - V2Get🛰️ 2026-09-22 02:04
@@ -1282,7 +1283,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
   - V2Get🛰️ 2026-10-01 01:05
   - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-10-01 18:07
   - 'V2Get🛰️ 2026-10-01 16:07 #4'
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-09-30 20:05
