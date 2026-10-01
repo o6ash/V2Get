@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-01 11:06
+  type: vless
+  server: 129.212.192.155
+  port: 1161
+  uuid: 734342f5-a24c-15a0-3641-e4f279ce4a86
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-01 11:06 #2'
+  type: vless
+  server: 129.212.192.155
+  port: 8039
+  uuid: 734342f5-a24c-15a0-3641-e4f279ce4a86
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tno.nl
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-10-01 10:06
   type: vless
   server: francedobo.paslanmaz.ir
@@ -141,32 +163,6 @@ proxies:
   reality-opts:
     public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
     short-id: ef7c4e4302bd52d7
-- name: V2Get🛰️ 2026-09-14 23:50
-  type: vless
-  server: 89.185.81.95
-  port: 8765
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: r-b8a34c.vless.monster
-  reality-opts:
-    public-key: Da_s-Cgqm5kqaIbCgXVJdrq_KF7fCQveRByRhKUzonc
-    short-id: 7bf47eabf939728b
-- name: V2Get🛰️ 2026-09-18 11:57
-  type: vless
-  server: 172.67.68.157
-  port: 2096
-  uuid: c49a0981-6d37-4ec0-9a01-1b63ccc07e4f
-  udp: true
-  network: ws
-  tls: true
-  servername: pEeKcOnFig.haMRaHfREe1.wOrKerS.DEv
-  ws-opts:
-    path: /eyJqdW5rIjoiZHlCcVpqeEYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
-    headers:
-      Host: peekconfig.hamrahfree1.workers.dev
 - name: V2Get🛰️ 2026-09-19 18:59
   type: vless
   server: 31.77.13.19
@@ -1044,6 +1040,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-01 11:06
+  - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
@@ -1055,8 +1053,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 09:06
   - 'V2Get🛰️ 2026-10-01 09:06 #2'
   - 'V2Get🛰️ 2026-10-01 09:06 #3'
-  - V2Get🛰️ 2026-09-14 23:50
-  - V2Get🛰️ 2026-09-18 11:57
   - V2Get🛰️ 2026-09-19 18:59
   - V2Get🛰️ 2026-09-24 10:10
   - V2Get🛰️ 2026-09-26 10:16
@@ -1132,6 +1128,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-01 11:06
+  - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - V2Get🛰️ 2026-10-01 10:06
   - 'V2Get🛰️ 2026-10-01 10:06 #2'
   - 'V2Get🛰️ 2026-10-01 10:06 #3'
@@ -1143,8 +1141,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-01 09:06
   - 'V2Get🛰️ 2026-10-01 09:06 #2'
   - 'V2Get🛰️ 2026-10-01 09:06 #3'
-  - V2Get🛰️ 2026-09-14 23:50
-  - V2Get🛰️ 2026-09-18 11:57
   - V2Get🛰️ 2026-09-19 18:59
   - V2Get🛰️ 2026-09-24 10:10
   - V2Get🛰️ 2026-09-26 10:16
