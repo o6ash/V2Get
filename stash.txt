@@ -12,6 +12,50 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-29 00:26
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: V2Get🛰️ 2026-09-28 02:21
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: V2Get🛰️ 2026-10-01 12:06
+  type: vless
+  server: id-nl-01.mintrocket.org
+  port: 443
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
 - name: V2Get🛰️ 2026-10-01 18:07
   type: vless
   server: 199.232.78.159
@@ -287,20 +331,6 @@ proxies:
     path: '@mehrosabiran'
     headers:
       Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-01 12:06
-  type: vless
-  server: id-nl-01.mintrocket.org
-  port: 443
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: safari
-  reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
 - name: V2Get🛰️ 2026-10-01 17:06
   type: vless
   server: usa2.armageddonvpn.xyz
@@ -373,36 +403,6 @@ proxies:
     short-id: aabbccdd
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: V2Get🛰️ 2026-09-29 00:26
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  network: ws
-  tls: true
-  servername: shephe.dpdns.org
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: V2Get🛰️ 2026-09-28 02:21
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  network: ws
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: V2Get🛰️ 2026-09-17 20:55
   type: vless
   server: 169.40.42.168
@@ -963,6 +963,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-29 00:26
+  - V2Get🛰️ 2026-09-28 02:21
+  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-17 23:07
@@ -984,15 +987,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
   - V2Get🛰️ 2026-10-01 18:06
   - 'V2Get🛰️ 2026-09-29 13:28 #2'
-  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 17:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #4'
   - 'V2Get🛰️ 2026-10-01 16:07 #5'
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 01:06
-  - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-17 20:55
   - 'V2Get🛰️ 2026-10-01 15:06 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #6'
@@ -1040,6 +1040,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-29 00:26
+  - V2Get🛰️ 2026-09-28 02:21
+  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-08-04 01:44
   - V2Get🛰️ 2026-08-17 23:07
@@ -1061,15 +1064,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #3'
   - V2Get🛰️ 2026-10-01 18:06
   - 'V2Get🛰️ 2026-09-29 13:28 #2'
-  - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 17:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #4'
   - 'V2Get🛰️ 2026-10-01 16:07 #5'
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 01:06
-  - V2Get🛰️ 2026-09-29 00:26
-  - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-17 20:55
   - 'V2Get🛰️ 2026-10-01 15:06 #2'
   - 'V2Get🛰️ 2026-10-01 16:07 #6'
