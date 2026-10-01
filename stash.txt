@@ -12,52 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-01 13:06
+- name: V2Get🛰️ 2026-09-06 13:31
   type: vless
-  server: 65.109.186.206
-  port: 8444
-  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-01 13:06 #2'
-  type: vless
-  server: 65.109.186.206
-  port: 40792
-  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
+  server: pl3.moritech.net
+  port: 443
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: amp-api-edge.apps.apple.com
+  servername: pl3.moritech.net
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-09-23 15:09
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-10-01 13:06
+  type: vless
+  server: nasnet-571299667-direct.mbghalibaf.com
+  port: 443
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
   client-fingerprint: chrome
-  reality-opts:
-    public-key: CkuULNczLmaVd-vabRfj3UpPd__M7BlrXivZ728Toyg
-    short-id: 945e447ee4b74501
-- name: 'V2Get🛰️ 2026-10-01 13:06 #3'
-  type: vless
-  server: g1.gymyoga.ir
-  port: 80
-  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: G1.gymyoga.ir
-- name: 'V2Get🛰️ 2026-10-01 13:06 #4'
-  type: vless
-  server: f1.gymyoga.ir
-  port: 80
-  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f1.gymyoga.ir
 - name: V2Get🛰️ 2026-10-01 12:06
   type: vless
   server: id-nl-01.mintrocket.org
@@ -99,6 +84,52 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
   tls: true
+- name: 'V2Get🛰️ 2026-10-01 13:06 #2'
+  type: vless
+  server: 65.109.186.206
+  port: 8444
+  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-01 13:06 #3'
+  type: vless
+  server: 65.109.186.206
+  port: 40792
+  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: CkuULNczLmaVd-vabRfj3UpPd__M7BlrXivZ728Toyg
+    short-id: 945e447ee4b74501
+- name: 'V2Get🛰️ 2026-10-01 13:06 #4'
+  type: vless
+  server: g1.gymyoga.ir
+  port: 80
+  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: G1.gymyoga.ir
+- name: 'V2Get🛰️ 2026-10-01 13:06 #5'
+  type: vless
+  server: f1.gymyoga.ir
+  port: 80
+  uuid: f9a3d821-7c51-4e7c-8029-aa8589bad2a2
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: f1.gymyoga.ir
 - name: V2Get🛰️ 2026-09-28 14:23
   type: vmess
   server: 31.77.8.97
@@ -122,20 +153,6 @@ proxies:
   reality-opts:
     public-key: z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo
     short-id: 9c2378562188c3cb
-- name: V2Get🛰️ 2026-09-24 17:11
-  type: trojan
-  server: 199.232.78.188
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.nett
 - name: 'V2Get🛰️ 2026-10-01 12:06 #2'
   type: vless
   server: 65.109.178.171
@@ -191,35 +208,6 @@ proxies:
   reality-opts:
     public-key: Ez3w5uLzFlysA6Owr7SguTK5kzlIFZ09TgalzUHGAR4
     short-id: 9f51e98fb874846b
-- name: V2Get🛰️ 2026-09-26 10:17
-  type: vless
-  server: 83.168.95.145
-  port: 443
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: google.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-- name: V2Get🛰️ 2026-09-28 02:21
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  network: ws
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 - name: V2Get🛰️ 2026-09-29 18:28
   type: vless
   server: 169.40.42.235
@@ -981,23 +969,23 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-23 15:09
   - V2Get🛰️ 2026-10-01 13:06
-  - 'V2Get🛰️ 2026-10-01 13:06 #2'
-  - 'V2Get🛰️ 2026-10-01 13:06 #3'
-  - 'V2Get🛰️ 2026-10-01 13:06 #4'
   - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
+  - 'V2Get🛰️ 2026-10-01 13:06 #2'
+  - 'V2Get🛰️ 2026-10-01 13:06 #3'
+  - 'V2Get🛰️ 2026-10-01 13:06 #4'
+  - 'V2Get🛰️ 2026-10-01 13:06 #5'
   - V2Get🛰️ 2026-09-28 14:23
   - V2Get🛰️ 2026-09-30 22:06
-  - V2Get🛰️ 2026-09-24 17:11
   - 'V2Get🛰️ 2026-10-01 12:06 #2'
   - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-09-29 13:28
   - 'V2Get🛰️ 2026-10-01 11:06 #3'
-  - V2Get🛰️ 2026-09-26 10:17
-  - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-09-30 10:04
   - 'V2Get🛰️ 2026-09-30 10:04 #2'
@@ -1066,23 +1054,23 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-06 13:31
+  - V2Get🛰️ 2026-09-23 15:09
   - V2Get🛰️ 2026-10-01 13:06
-  - 'V2Get🛰️ 2026-10-01 13:06 #2'
-  - 'V2Get🛰️ 2026-10-01 13:06 #3'
-  - 'V2Get🛰️ 2026-10-01 13:06 #4'
   - V2Get🛰️ 2026-10-01 12:06
   - V2Get🛰️ 2026-10-01 11:06
   - 'V2Get🛰️ 2026-10-01 11:06 #2'
+  - 'V2Get🛰️ 2026-10-01 13:06 #2'
+  - 'V2Get🛰️ 2026-10-01 13:06 #3'
+  - 'V2Get🛰️ 2026-10-01 13:06 #4'
+  - 'V2Get🛰️ 2026-10-01 13:06 #5'
   - V2Get🛰️ 2026-09-28 14:23
   - V2Get🛰️ 2026-09-30 22:06
-  - V2Get🛰️ 2026-09-24 17:11
   - 'V2Get🛰️ 2026-10-01 12:06 #2'
   - V2Get🛰️ 2026-09-29 12:27
   - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-09-29 13:28
   - 'V2Get🛰️ 2026-10-01 11:06 #3'
-  - V2Get🛰️ 2026-09-26 10:17
-  - V2Get🛰️ 2026-09-28 02:21
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-09-30 10:04
   - 'V2Get🛰️ 2026-09-30 10:04 #2'
