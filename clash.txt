@@ -12,26 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-30 15:05
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: bfb1ec97-a326-4cf3-adcf-d2a0e2dc49f8
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-30 21:05
-  type: trojan
-  server: 206.1.99.106
-  port: 53
-  password: yhmz9WmAN4
-  udp: true
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-02 20:07
   type: vless
   server: 65.109.209.172
@@ -64,6 +44,19 @@ proxies:
   servername: default.ssl.fastly.net
   alpn:
   - h2
+- name: V2Get🛰️ 2026-09-30 15:05
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: bfb1ec97-a326-4cf3-adcf-d2a0e2dc49f8
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: pan2e.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-02 16:07
   type: vless
   server: chatgpt.com
@@ -77,6 +70,13 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: V2Get🛰️ 2026-09-30 21:05
+  type: trojan
+  server: 206.1.99.106
+  port: 53
+  password: yhmz9WmAN4
+  udp: true
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-17 23:07
   type: vless
   server: 169.40.42.74
@@ -1245,12 +1245,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-02 20:07
   - V2Get🛰️ 2026-10-02 19:08
   - 'V2Get🛰️ 2026-10-02 19:08 #2'
+  - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-02 16:07
+  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-21 23:57
@@ -1350,12 +1350,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-02 20:07
   - V2Get🛰️ 2026-10-02 19:08
   - 'V2Get🛰️ 2026-10-02 19:08 #2'
+  - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-02 16:07
+  - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-20 13:13
   - V2Get🛰️ 2026-08-21 23:57
