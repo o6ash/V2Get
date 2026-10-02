@@ -12,6 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-08 22:11
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-10-02 11:07
+  type: vless
+  server: 2.27.249.133
+  port: 443
+  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: vault.connectiux.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
+    short-id: 9e15546f267baa64
+- name: 'V2Get🛰️ 2026-10-02 11:07 #2'
+  type: vless
+  server: 84.32.100.169
+  port: 8443
+  uuid: b655491a-c67b-4c6b-880d-d0da3cddd916
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn-482.veltacdn.cc
+  client-fingerprint: safari
+  reality-opts:
+    public-key: yJZgUPduM3ePryc6rU0Cr9yoVvucTENzinJQSazx5mo
+    short-id: f27e655c75ba2c81
 - name: V2Get🛰️ 2026-09-30 15:05
   type: vless
   server: 199.232.78.159
@@ -276,19 +317,6 @@ proxies:
   reality-opts:
     public-key: 02ev9WxbVtkm-lUE8kFIFaSuoouQQ4JrLIlVnLWeuxs
     short-id: 87ac0e
-- name: V2Get🛰️ 2026-09-27 16:20
-  type: vless
-  server: 152.53.106.47
-  port: 443
-  uuid: c0f08edc-395b-4163-92aa-87772605e331
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 9mJq2cP3srX_6K1YfMDp1yndvo5CtgL6TEVQ8tm4fVc
 - name: V2Get🛰️ 2026-09-28 13:24
   type: vless
   server: 179.254.71.20
@@ -426,7 +454,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-02 11:07
+- name: 'V2Get🛰️ 2026-10-02 11:07 #3'
   type: vless
   server: 144.31.150.124
   port: 443
@@ -440,7 +468,7 @@ proxies:
   reality-opts:
     public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
     short-id: ae64c9b46bff174a
-- name: 'V2Get🛰️ 2026-10-02 11:07 #2'
+- name: 'V2Get🛰️ 2026-10-02 11:07 #4'
   type: vless
   server: 45.132.177.80
   port: 9881
@@ -455,7 +483,7 @@ proxies:
     short-id: aabb
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 'V2Get🛰️ 2026-10-02 11:07 #3'
+- name: 'V2Get🛰️ 2026-10-02 11:07 #5'
   type: vless
   server: 5.253.42.159
   port: 443
@@ -512,33 +540,6 @@ proxies:
   reality-opts:
     public-key: Fd6VTTHCVNkP_H9EZBlSXEsHp_J3aRKeBpoYZ5gRiQc
     short-id: a2b95f1d
-- name: 'V2Get🛰️ 2026-10-02 11:07 #4'
-  type: vless
-  server: 84.32.100.169
-  port: 8443
-  uuid: b655491a-c67b-4c6b-880d-d0da3cddd916
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn-482.veltacdn.cc
-  client-fingerprint: safari
-  reality-opts:
-    public-key: yJZgUPduM3ePryc6rU0Cr9yoVvucTENzinJQSazx5mo
-    short-id: f27e655c75ba2c81
-- name: 'V2Get🛰️ 2026-10-02 11:07 #5'
-  type: vless
-  server: 2.27.249.133
-  port: 443
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: vault.connectiux.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
 - name: V2Get🛰️ 2026-10-02 10:08
   type: vless
   server: 104.21.88.201
@@ -1139,6 +1140,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-08 22:11
+  - V2Get🛰️ 2026-10-02 11:07
+  - 'V2Get🛰️ 2026-10-02 11:07 #2'
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-01 18:07
@@ -1160,7 +1164,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-02 00:07 #3'
   - 'V2Get🛰️ 2026-10-02 01:07 #2'
   - V2Get🛰️ 2026-10-02 11:08
-  - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-09-28 13:24
   - 'V2Get🛰️ 2026-09-28 13:24 #2'
   - V2Get🛰️ 2026-09-29 18:28
@@ -1172,14 +1175,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - V2Get🛰️ 2026-10-01 19:06
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
-  - V2Get🛰️ 2026-10-02 11:07
-  - 'V2Get🛰️ 2026-10-02 11:07 #2'
   - 'V2Get🛰️ 2026-10-02 11:07 #3'
+  - 'V2Get🛰️ 2026-10-02 11:07 #4'
+  - 'V2Get🛰️ 2026-10-02 11:07 #5'
   - V2Get🛰️ 2026-10-02 02:07
   - 'V2Get🛰️ 2026-10-02 02:07 #2'
   - V2Get🛰️ 2026-10-02 01:08
-  - 'V2Get🛰️ 2026-10-02 11:07 #4'
-  - 'V2Get🛰️ 2026-10-02 11:07 #5'
   - V2Get🛰️ 2026-10-02 10:08
   - 'V2Get🛰️ 2026-10-02 10:08 #2'
   - 'V2Get🛰️ 2026-10-02 10:08 #3'
@@ -1234,6 +1235,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-08 22:11
+  - V2Get🛰️ 2026-10-02 11:07
+  - 'V2Get🛰️ 2026-10-02 11:07 #2'
   - V2Get🛰️ 2026-09-30 15:05
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-01 18:07
@@ -1255,7 +1259,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-02 00:07 #3'
   - 'V2Get🛰️ 2026-10-02 01:07 #2'
   - V2Get🛰️ 2026-10-02 11:08
-  - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-09-28 13:24
   - 'V2Get🛰️ 2026-09-28 13:24 #2'
   - V2Get🛰️ 2026-09-29 18:28
@@ -1267,14 +1270,12 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-01 16:07 #2'
   - V2Get🛰️ 2026-10-01 19:06
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
-  - V2Get🛰️ 2026-10-02 11:07
-  - 'V2Get🛰️ 2026-10-02 11:07 #2'
   - 'V2Get🛰️ 2026-10-02 11:07 #3'
+  - 'V2Get🛰️ 2026-10-02 11:07 #4'
+  - 'V2Get🛰️ 2026-10-02 11:07 #5'
   - V2Get🛰️ 2026-10-02 02:07
   - 'V2Get🛰️ 2026-10-02 02:07 #2'
   - V2Get🛰️ 2026-10-02 01:08
-  - 'V2Get🛰️ 2026-10-02 11:07 #4'
-  - 'V2Get🛰️ 2026-10-02 11:07 #5'
   - V2Get🛰️ 2026-10-02 10:08
   - 'V2Get🛰️ 2026-10-02 10:08 #2'
   - 'V2Get🛰️ 2026-10-02 10:08 #3'
