@@ -12,20 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-03 16:24
+- name: V2Get🛰️ 2026-10-02 14:08
   type: vless
-  server: 91.210.169.181
+  server: rezagrootz-production-9802.up.railway.app
   port: 443
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  uuid: 0a55d190-652c-c9d8-717f-ba1a6362ebd9
   udp: true
   network: ws
   tls: true
-  servername: wstg.datasynctrue.online
+  servername: rezagrootz-production-9802.up.railway.app
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /api/connect
+    path: /ws/0a55d190-652c-c9d8-717f-ba1a6362ebd9
     headers:
-      Host: wstg.datasynctrue.online
+      Host: rezagrootz-production-9802.up.railway.app
 - name: V2Get🛰️ 2026-09-28 14:24
   type: vless
   server: 143.246.208.113
@@ -970,7 +972,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-10-02 14:08
   - V2Get🛰️ 2026-09-28 14:24
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-10-01 23:07
@@ -1049,7 +1051,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-03 16:24
+  - V2Get🛰️ 2026-10-02 14:08
   - V2Get🛰️ 2026-09-28 14:24
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-10-01 23:07
