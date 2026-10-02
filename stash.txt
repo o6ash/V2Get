@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-28 13:24
+  type: vless
+  server: 31.77.227.10
+  port: 52006
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fr.setlisting.ru
+  client-fingerprint: safari
+  alpn:
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-09-28 13:24 #2'
+  type: vless
+  server: 87.192.47.10
+  port: 52006
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: grok.setlisting.ru
+  client-fingerprint: safari
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-10-02 20:07
   type: vless
   server: 65.109.209.172
@@ -20,17 +48,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  servername: milan.adaspoloandco.com
-  ws-opts:
-    path: /RoBeRt
 - name: V2Get🛰️ 2026-09-15 23:51
   type: vless
   server: 198.251.78.29
@@ -139,20 +156,6 @@ proxies:
   reality-opts:
     public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
     short-id: d345ad4657adeef9
-- name: V2Get🛰️ 2026-09-28 13:24
-  type: vless
-  server: 87.192.47.10
-  port: 52006
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: grok.setlisting.ru
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-09-29 18:28
   type: vless
   server: 169.40.42.235
@@ -1072,8 +1075,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-28 13:24
+  - 'V2Get🛰️ 2026-09-28 13:24 #2'
   - V2Get🛰️ 2026-10-02 20:07
-  - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-09-20 11:02
@@ -1082,7 +1086,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-24 23:12
   - V2Get🛰️ 2026-09-25 00:12
   - V2Get🛰️ 2026-09-26 10:17
-  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-09-30 12:05
   - V2Get🛰️ 2026-09-30 15:05
@@ -1158,8 +1161,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-28 13:24
+  - 'V2Get🛰️ 2026-09-28 13:24 #2'
   - V2Get🛰️ 2026-10-02 20:07
-  - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-09-15 23:51
   - V2Get🛰️ 2026-09-19 00:57
   - V2Get🛰️ 2026-09-20 11:02
@@ -1168,7 +1172,6 @@ proxy-groups:
   - V2Get🛰️ 2026-09-24 23:12
   - V2Get🛰️ 2026-09-25 00:12
   - V2Get🛰️ 2026-09-26 10:17
-  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-09-30 12:05
   - V2Get🛰️ 2026-09-30 15:05
