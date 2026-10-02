@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-02 15:07
+  type: vless
+  server: reza-fast-grootz-production.up.railway.app
+  port: 443
+  uuid: 7832290a-40d8-a481-ed00-22ac4936d61f
+  udp: true
+  network: ws
+  tls: true
+  servername: reza-fast-grootz-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/7832290a-40d8-a481-ed00-22ac4936d61f
+    headers:
+      Host: reza-fast-grootz-production.up.railway.app
 - name: V2Get🛰️ 2026-10-02 13:07
   type: vless
   server: 91.107.249.200
@@ -36,18 +52,6 @@ proxies:
     path: /ws/0a55d190-652c-c9d8-717f-ba1a6362ebd9
     headers:
       Host: rezagrootz-production-9802.up.railway.app
-- name: V2Get🛰️ 2026-09-28 14:24
-  type: vless
-  server: 143.246.208.113
-  port: 443
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  udp: true
-  network: grpc
-  tls: true
-  servername: assets-fr4.pleiades.codes
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
 - name: V2Get🛰️ 2026-09-30 22:06
   type: vless
   server: slowkd.sadiepinki.com
@@ -972,9 +976,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-02 15:07
   - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-02 14:08
-  - V2Get🛰️ 2026-09-28 14:24
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 14:07
@@ -1051,9 +1055,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-02 15:07
   - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-02 14:08
-  - V2Get🛰️ 2026-09-28 14:24
   - V2Get🛰️ 2026-09-30 22:06
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 14:07
