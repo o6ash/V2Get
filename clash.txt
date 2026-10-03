@@ -12,6 +12,20 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-09-28 13:24
+  type: vless
+  server: 87.192.47.10
+  port: 52006
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: grok.setlisting.ru
+  client-fingerprint: safari
+  alpn:
+  - h2
+  - http/1.1
 - name: V2Get🛰️ 2026-10-03 10:08
   type: vless
   server: 91.98.108.153
@@ -38,20 +52,6 @@ proxies:
     path: /
     headers:
       Host: pan2e.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-28 13:24
-  type: vless
-  server: 179.254.71.20
-  port: 52006
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.setlisting.ru
-  client-fingerprint: safari
-  alpn:
-  - h2
-  - http/1.1
 - name: V2Get🛰️ 2026-09-28 20:24
   type: vmess
   server: 38.107.226.227
@@ -1136,9 +1136,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-10-03 10:08
   - V2Get🛰️ 2026-10-03 11:08
-  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-09-28 20:24
   - V2Get🛰️ 2026-10-03 13:08
   - 'V2Get🛰️ 2026-10-03 13:08 #2'
@@ -1231,9 +1231,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-10-03 10:08
   - V2Get🛰️ 2026-10-03 11:08
-  - V2Get🛰️ 2026-09-28 13:24
   - V2Get🛰️ 2026-09-28 20:24
   - V2Get🛰️ 2026-10-03 13:08
   - 'V2Get🛰️ 2026-10-03 13:08 #2'
