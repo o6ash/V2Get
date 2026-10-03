@@ -12,21 +12,16 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-02 18:07
-  type: vless
-  server: fast.jkerm.com
-  port: 443
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+- name: V2Get🛰️ 2026-10-03 13:08
+  type: vmess
+  server: 206.1.103.51
+  port: 42894
+  uuid: 335ae194-ce79-4021-90e2-e016742bf9c8
+  alterId: 0
+  cipher: auto
   udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: pokerrr.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-02 18:07 #2'
+  network: tcp
+- name: V2Get🛰️ 2026-10-02 18:07
   type: vless
   server: 199.232.78.159
   port: 443
@@ -1007,8 +1002,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-03 13:08
   - V2Get🛰️ 2026-10-02 18:07
-  - 'V2Get🛰️ 2026-10-02 18:07 #2'
   - V2Get🛰️ 2026-10-03 12:09
   - 'V2Get🛰️ 2026-10-03 12:09 #2'
   - V2Get🛰️ 2026-10-03 12:08
@@ -1088,8 +1083,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-03 13:08
   - V2Get🛰️ 2026-10-02 18:07
-  - 'V2Get🛰️ 2026-10-02 18:07 #2'
   - V2Get🛰️ 2026-10-03 12:09
   - 'V2Get🛰️ 2026-10-03 12:09 #2'
   - V2Get🛰️ 2026-10-03 12:08
