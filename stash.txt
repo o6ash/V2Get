@@ -12,6 +12,30 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-03 04:08
+  type: vless
+  server: 88.198.168.133
+  port: 34257
+  uuid: b01da04a-ef41-4caa-97e3-a99f6c6dab6d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 'V2Get🛰️ 2026-10-03 04:08 #2'
+  type: vless
+  server: 2.28.52.229
+  port: 34257
+  uuid: b01da04a-ef41-4caa-97e3-a99f6c6dab6d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 - name: V2Get🛰️ 2026-10-03 02:08
   type: vless
   server: 103.75.125.17
@@ -60,30 +84,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-21 18:56
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  network: ws
-  tls: true
-  servername: milan.adaspoloandco.com
-  ws-opts:
-    path: /RoBeRt
 - name: V2Get🛰️ 2026-09-24 02:09
   type: vless
   server: 87.120.216.144
@@ -995,13 +995,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-03 04:08
+  - 'V2Get🛰️ 2026-10-03 04:08 #2'
   - V2Get🛰️ 2026-10-03 02:08
   - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-02 20:07
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-24 23:12
   - V2Get🛰️ 2026-09-26 10:16
@@ -1079,13 +1079,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-03 04:08
+  - 'V2Get🛰️ 2026-10-03 04:08 #2'
   - V2Get🛰️ 2026-10-03 02:08
   - V2Get🛰️ 2026-09-30 21:05
   - V2Get🛰️ 2026-10-01 18:07
   - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-02 20:07
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-31 19:16
   - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-24 23:12
   - V2Get🛰️ 2026-09-26 10:16
