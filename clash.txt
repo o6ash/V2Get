@@ -12,45 +12,41 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-09-29 18:28
+  type: vless
+  server: kala.fortresshost.ir
   port: 443
-  password: mitivpn
+  uuid: 9eb6abc0-8423-4ff6-efb3-7603ddfb9636
   udp: true
-  sni: global.fastly.com
+  network: xhttp
+  tls: true
+  servername: kala.fortresshost.ir
   alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-17 23:07
+  - h2
+- name: V2Get🛰️ 2026-10-01 15:06
   type: vless
-  server: 169.40.42.74
+  server: 104.21.201.219
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-31 19:16
-  type: vless
-  server: 57.131.21.102
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   network: ws
   tls: true
-  servername: milan.adaspoloandco.com
+  servername: edgetunnel-4uw.pages.dev
   ws-opts:
-    path: /RoBeRt
+    path: ?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: V2Get🛰️ 2026-10-01 16:07
+  type: vless
+  server: 86.62.52.2
+  port: 2085
+  uuid: 0636f736-3364-4bc5-b6c2-1a5fc64e008c
+  udp: true
+  network: grpc
+  skip-cert-verify: true
+  grpc-opts:
+    grpc-service-name: vless
+  tls: true
 - name: V2Get🛰️ 2026-09-18 13:56
   type: trojan
   server: 167.82.76.7
@@ -1119,9 +1115,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-17 23:07
-  - V2Get🛰️ 2026-08-31 19:16
+  - V2Get🛰️ 2026-09-29 18:28
+  - V2Get🛰️ 2026-10-01 15:06
+  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-09-27 13:19
   - V2Get🛰️ 2026-10-02 23:08
@@ -1215,9 +1211,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-17 23:07
-  - V2Get🛰️ 2026-08-31 19:16
+  - V2Get🛰️ 2026-09-29 18:28
+  - V2Get🛰️ 2026-10-01 15:06
+  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-09-27 13:19
   - V2Get🛰️ 2026-10-02 23:08
