@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-03 18:08
+  type: vless
+  server: 69.46.46.71
+  port: 443
+  uuid: 1fa97fa6ec5f7f899962da9de3072f71
+  udp: true
+  network: ws
+  tls: true
+  servername: core-166442-d9f37e-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/1fa97fa6ec5f7f899962da9de3072f71
+    headers:
+      Host: core-166442-d9f37e-production.up.railway.app
 - name: V2Get🛰️ 2026-10-03 17:10
   type: vless
   server: 91.107.153.108
@@ -20,20 +36,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-01 13:07
-  type: vless
-  server: 93.89.220.37
-  port: 443
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ibm.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
 - name: V2Get🛰️ 2026-10-01 16:07
   type: vless
   server: 142.91.106.31
@@ -1091,8 +1093,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-03 18:08
   - V2Get🛰️ 2026-10-03 17:10
-  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-03 17:09
   - 'V2Get🛰️ 2026-10-03 17:09 #2'
@@ -1180,8 +1182,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-03 18:08
   - V2Get🛰️ 2026-10-03 17:10
-  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-03 17:09
   - 'V2Get🛰️ 2026-10-03 17:09 #2'
