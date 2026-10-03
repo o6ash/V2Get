@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-03 20:08
+  type: vless
+  server: 147.182.144.185
+  port: 1161
+  uuid: 3f2eaa98-5e92-20d8-c006-899e69c948a4
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-03 20:08 #2'
+  type: vless
+  server: 147.182.144.185
+  port: 8039
+  uuid: 3f2eaa98-5e92-20d8-c006-899e69c948a4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tno.nl
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-10-03 19:09
   type: vless
   server: ujl.novarairam.ir
@@ -157,28 +179,6 @@ proxies:
     short-id: aabbccdd
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: V2Get🛰️ 2026-10-02 18:07
-  type: vless
-  server: fast.jkerm.com
-  port: 443
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: pokerrr.global.ssl.fastly.net.
-- name: V2Get🛰️ 2026-10-02 13:07
-  type: vless
-  server: 91.107.249.200
-  port: 9093
-  uuid: 39a4fc8e-1991-45dc-9a70-89169df89ec9
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-03 00:08
   type: vless
   server: 152.53.236.22
@@ -269,7 +269,7 @@ proxies:
   servername: newblocksgerm.site
   reality-opts:
     public-key: _aURfmVUjvCRZipDI2eqMO0VQa64BJRGYFOdlBFi1XQ
-- name: 'V2Get🛰️ 2026-10-02 18:07 #2'
+- name: V2Get🛰️ 2026-10-02 18:07
   type: vless
   server: fast.jkerm.com
   port: 443
@@ -1059,6 +1059,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-03 20:08
+  - 'V2Get🛰️ 2026-10-03 20:08 #2'
   - V2Get🛰️ 2026-10-03 19:09
   - 'V2Get🛰️ 2026-10-03 19:09 #2'
   - 'V2Get🛰️ 2026-10-03 19:09 #3'
@@ -1070,8 +1072,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-03 18:09
   - V2Get🛰️ 2026-10-03 11:08
   - V2Get🛰️ 2026-10-02 23:08
-  - V2Get🛰️ 2026-10-02 18:07
-  - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-03 00:08
   - V2Get🛰️ 2026-10-03 01:08
   - 'V2Get🛰️ 2026-10-03 18:09 #2'
@@ -1079,7 +1079,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-03 18:09 #4'
   - V2Get🛰️ 2026-10-03 17:09
   - 'V2Get🛰️ 2026-10-03 17:09 #2'
-  - 'V2Get🛰️ 2026-10-02 18:07 #2'
+  - V2Get🛰️ 2026-10-02 18:07
   - V2Get🛰️ 2026-10-02 19:08
   - V2Get🛰️ 2026-10-03 11:09
   - 'V2Get🛰️ 2026-10-03 11:09 #2'
@@ -1146,6 +1146,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-03 20:08
+  - 'V2Get🛰️ 2026-10-03 20:08 #2'
   - V2Get🛰️ 2026-10-03 19:09
   - 'V2Get🛰️ 2026-10-03 19:09 #2'
   - 'V2Get🛰️ 2026-10-03 19:09 #3'
@@ -1157,8 +1159,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-03 18:09
   - V2Get🛰️ 2026-10-03 11:08
   - V2Get🛰️ 2026-10-02 23:08
-  - V2Get🛰️ 2026-10-02 18:07
-  - V2Get🛰️ 2026-10-02 13:07
   - V2Get🛰️ 2026-10-03 00:08
   - V2Get🛰️ 2026-10-03 01:08
   - 'V2Get🛰️ 2026-10-03 18:09 #2'
@@ -1166,7 +1166,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-03 18:09 #4'
   - V2Get🛰️ 2026-10-03 17:09
   - 'V2Get🛰️ 2026-10-03 17:09 #2'
-  - 'V2Get🛰️ 2026-10-02 18:07 #2'
+  - V2Get🛰️ 2026-10-02 18:07
   - V2Get🛰️ 2026-10-02 19:08
   - V2Get🛰️ 2026-10-03 11:09
   - 'V2Get🛰️ 2026-10-03 11:09 #2'
