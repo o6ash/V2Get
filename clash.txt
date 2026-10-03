@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-02 13:07
+  type: vless
+  server: 91.107.249.200
+  port: 9093
+  uuid: 39a4fc8e-1991-45dc-9a70-89169df89ec9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-03 15:08
+  type: vless
+  server: 91.107.154.161
+  port: 443
+  uuid: add5595f-cb6a-4241-87dc-1a701a384423
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-03 00:08
   type: ss
   server: 20.238.125.195
@@ -53,34 +69,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: p37ZjYUo_QYgQksozHpGMg
   udp: true
-- name: V2Get🛰️ 2026-09-30 09:29
-  type: vless
-  server: 104.225.237.87
-  port: 443
-  uuid: 2db85988-715e-4481-aad6-90605ca4736d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: LBeNoujOB6Su0ZKL5-sp51LkIZsNbPzE1xVhufJJaGc
-    short-id: b6bac1f358b14f15
-- name: V2Get🛰️ 2026-10-01 20:07
-  type: vless
-  server: 185.166.154.111
-  port: 443
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
 - name: V2Get🛰️ 2026-10-01 23:07
   type: vmess
   server: cdn.sfacg.uk
@@ -1108,13 +1096,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-02 13:07
+  - V2Get🛰️ 2026-10-03 15:08
   - V2Get🛰️ 2026-10-03 00:08
   - 'V2Get🛰️ 2026-10-03 00:08 #2'
   - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-03 22:09
   - 'V2Get🛰️ 2026-10-03 22:09 #2'
-  - V2Get🛰️ 2026-09-30 09:29
-  - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-01 23:07
   - 'V2Get🛰️ 2026-10-01 23:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
@@ -1204,13 +1192,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-02 13:07
+  - V2Get🛰️ 2026-10-03 15:08
   - V2Get🛰️ 2026-10-03 00:08
   - 'V2Get🛰️ 2026-10-03 00:08 #2'
   - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-03 22:09
   - 'V2Get🛰️ 2026-10-03 22:09 #2'
-  - V2Get🛰️ 2026-09-30 09:29
-  - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-01 23:07
   - 'V2Get🛰️ 2026-10-01 23:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
