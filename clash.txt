@@ -12,15 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-27 13:20
+- name: V2Get🛰️ 2026-10-03 15:08
   type: vless
-  server: 151.101.213.164
+  server: 91.107.154.161
   port: 443
-  uuid: eb98ab60-f16d-4662-a740-c89307400939
+  uuid: add5595f-cb6a-4241-87dc-1a701a384423
   udp: true
-  network: xhttp
-  tls: true
-  servername: accounts.fastly.com
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-09-30 09:29
   type: vless
   server: 104.225.237.87
@@ -1244,7 +1243,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-27 13:20
+  - V2Get🛰️ 2026-10-03 15:08
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 14:07
@@ -1349,7 +1348,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-27 13:20
+  - V2Get🛰️ 2026-10-03 15:08
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 14:07
