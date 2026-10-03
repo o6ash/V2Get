@@ -12,34 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-10-03 00:08
+  type: ss
+  server: 20.238.125.195
   port: 443
-  password: mitivpn
+  cipher: chacha20-ietf-poly1305
+  password: ng0XTChgbJJ3Sv2d
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-29 13:28
+- name: 'V2Get🛰️ 2026-10-03 00:08 #2'
+  type: ss
+  server: 20.238.125.195
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: jUg9wluj5iOiY9sI
+  udp: true
+- name: V2Get🛰️ 2026-10-02 23:08
+  type: ss
+  server: 20.238.125.195
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Qr3RLHJLngbplPWd
+  udp: true
+- name: V2Get🛰️ 2026-10-03 22:09
   type: vless
-  server: 103.172.197.3
-  port: 16006
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  server: p2tun0.greewebservices.ir
+  port: 28820
+  uuid: a4b8d677-ecfe-4357-9b68-981c201f3701
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: play.google.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+- name: 'V2Get🛰️ 2026-10-03 22:09 #2'
+  type: ss
+  server: p2tun2.greewebservices.ir
+  port: 1020
+  cipher: chacha20-ietf-poly1305
+  password: p37ZjYUo_QYgQksozHpGMg
+  udp: true
 - name: V2Get🛰️ 2026-09-30 09:29
   type: vless
   server: 104.225.237.87
@@ -111,19 +124,12 @@ proxies:
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
-- name: V2Get🛰️ 2026-10-02 23:08
+- name: 'V2Get🛰️ 2026-10-02 23:08 #2'
   type: ss
   server: 4.168.234.190
   port: 443
   cipher: chacha20-ietf-poly1305
   password: SBw5b6E9noHolBdA
-  udp: true
-- name: 'V2Get🛰️ 2026-10-02 23:08 #2'
-  type: ss
-  server: 20.238.125.195
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: Qr3RLHJLngbplPWd
   udp: true
 - name: V2Get🛰️ 2026-10-03 11:08
   type: vless
@@ -320,7 +326,7 @@ proxies:
   reality-opts:
     public-key: XNDo_IssePPu4qVW3xiLE_87CEqoS6F1iLj0g3Q89G0
     short-id: da4d87fa
-- name: V2Get🛰️ 2026-10-03 22:09
+- name: 'V2Get🛰️ 2026-10-03 22:09 #3'
   type: vless
   server: areal4.greewebservices.ir
   port: 5455
@@ -333,20 +339,7 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
     short-id: e3085d4fc679ba12
-- name: 'V2Get🛰️ 2026-10-03 22:09 #2'
-  type: vless
-  server: p2tun0.greewebservices.ir
-  port: 28820
-  uuid: a4b8d677-ecfe-4357-9b68-981c201f3701
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: e3085d4fc679ba12
-- name: 'V2Get🛰️ 2026-10-03 22:09 #3'
+- name: 'V2Get🛰️ 2026-10-03 22:09 #4'
   type: vless
   server: p2tun01.greewebservices.ir
   port: 28830
@@ -367,13 +360,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-03 22:09 #4'
-  type: ss
-  server: p2tun2.greewebservices.ir
-  port: 1020
-  cipher: chacha20-ietf-poly1305
-  password: p37ZjYUo_QYgQksozHpGMg
-  udp: true
 - name: 'V2Get🛰️ 2026-10-03 22:09 #5'
   type: vless
   server: areal5.greewebservices.ir
@@ -1122,14 +1108,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-09-29 13:28
+  - V2Get🛰️ 2026-10-03 00:08
+  - 'V2Get🛰️ 2026-10-03 00:08 #2'
+  - V2Get🛰️ 2026-10-02 23:08
+  - V2Get🛰️ 2026-10-03 22:09
+  - 'V2Get🛰️ 2026-10-03 22:09 #2'
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-01 23:07
   - 'V2Get🛰️ 2026-10-01 23:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
-  - V2Get🛰️ 2026-10-02 23:08
   - 'V2Get🛰️ 2026-10-02 23:08 #2'
   - V2Get🛰️ 2026-10-03 11:08
   - V2Get🛰️ 2026-10-03 11:09
@@ -1146,11 +1134,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-03 20:09 #4'
   - 'V2Get🛰️ 2026-10-03 20:09 #5'
   - 'V2Get🛰️ 2026-10-03 20:09 #6'
-  - V2Get🛰️ 2026-10-03 22:09
-  - 'V2Get🛰️ 2026-10-03 22:09 #2'
   - 'V2Get🛰️ 2026-10-03 22:09 #3'
-  - 'V2Get🛰️ 2026-10-03 23:09 #7'
   - 'V2Get🛰️ 2026-10-03 22:09 #4'
+  - 'V2Get🛰️ 2026-10-03 23:09 #7'
   - 'V2Get🛰️ 2026-10-03 22:09 #5'
   - 'V2Get🛰️ 2026-10-03 23:09 #8'
   - 'V2Get🛰️ 2026-10-03 23:09 #9'
@@ -1218,14 +1204,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-09-29 13:28
+  - V2Get🛰️ 2026-10-03 00:08
+  - 'V2Get🛰️ 2026-10-03 00:08 #2'
+  - V2Get🛰️ 2026-10-02 23:08
+  - V2Get🛰️ 2026-10-03 22:09
+  - 'V2Get🛰️ 2026-10-03 22:09 #2'
   - V2Get🛰️ 2026-09-30 09:29
   - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-01 23:07
   - 'V2Get🛰️ 2026-10-01 23:07 #2'
   - 'V2Get🛰️ 2026-10-01 23:07 #3'
-  - V2Get🛰️ 2026-10-02 23:08
   - 'V2Get🛰️ 2026-10-02 23:08 #2'
   - V2Get🛰️ 2026-10-03 11:08
   - V2Get🛰️ 2026-10-03 11:09
@@ -1242,11 +1230,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-03 20:09 #4'
   - 'V2Get🛰️ 2026-10-03 20:09 #5'
   - 'V2Get🛰️ 2026-10-03 20:09 #6'
-  - V2Get🛰️ 2026-10-03 22:09
-  - 'V2Get🛰️ 2026-10-03 22:09 #2'
   - 'V2Get🛰️ 2026-10-03 22:09 #3'
-  - 'V2Get🛰️ 2026-10-03 23:09 #7'
   - 'V2Get🛰️ 2026-10-03 22:09 #4'
+  - 'V2Get🛰️ 2026-10-03 23:09 #7'
   - 'V2Get🛰️ 2026-10-03 22:09 #5'
   - 'V2Get🛰️ 2026-10-03 23:09 #8'
   - 'V2Get🛰️ 2026-10-03 23:09 #9'
