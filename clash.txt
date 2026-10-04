@@ -12,6 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-04 13:51
+  type: vless
+  server: 172.93.122.4
+  port: 8443
+  uuid: b812a4e0-c90a-4864-8ffb-2af71d69d4f4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl2.reddotcorp.org
+  client-fingerprint: safari
+  reality-opts:
+    public-key: VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U
+    short-id: 1be482b8e08aa0ef
+- name: V2Get🛰️ 2026-10-04 20:52
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 6ead3f4c-023f-4322-b5c4-ac4e327d259d
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-04 20:52 #2'
+  type: vless
+  server: 31.77.168.192
+  port: 443
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
 - name: V2Get🛰️ 2026-10-04 20:51
   type: ss
   server: deals1.selqora.ir
@@ -32,47 +73,6 @@ proxies:
   reality-opts:
     public-key: OUjXze5L4dZ4AiyHDo_CklgmkeYzvv_neOscgdEyyz4
     short-id: 3d6b6202f55aa7de
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: V2Get🛰️ 2026-09-18 13:56
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-18 13:56 #2'
-  type: trojan
-  server: 199.232.78.101
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-04 19:52
   type: vless
   server: farad.color-shop.ir
@@ -515,7 +515,7 @@ proxies:
   reality-opts:
     public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
     short-id: 3d31326f95
-- name: V2Get🛰️ 2026-10-04 13:51
+- name: 'V2Get🛰️ 2026-10-04 13:51 #2'
   type: ss
   server: 20.87.209.138
   port: 443
@@ -536,7 +536,7 @@ proxies:
   reality-opts:
     public-key: KXSpnwf7y_HDbtQgMo51t2hJDns73AuUlR6LEjK4Ah0
     short-id: 73fea0f1b66b52
-- name: 'V2Get🛰️ 2026-10-04 13:51 #2'
+- name: 'V2Get🛰️ 2026-10-04 13:51 #3'
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -604,7 +604,7 @@ proxies:
   udp: true
   network: xhttp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-04 13:51 #3'
+- name: 'V2Get🛰️ 2026-10-04 13:51 #4'
   type: vless
   server: 185.106.98.138
   port: 443
@@ -1039,11 +1039,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-04 13:51
+  - V2Get🛰️ 2026-10-04 20:52
+  - 'V2Get🛰️ 2026-10-04 20:52 #2'
   - V2Get🛰️ 2026-10-04 20:51
   - V2Get🛰️ 2026-10-04 18:51
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
   - V2Get🛰️ 2026-10-04 19:52
   - 'V2Get🛰️ 2026-10-04 19:52 #2'
   - V2Get🛰️ 2026-10-04 14:51
@@ -1083,16 +1083,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 17:52 #3'
   - 'V2Get🛰️ 2026-10-04 17:52 #4'
   - V2Get🛰️ 2026-10-04 17:51
-  - V2Get🛰️ 2026-10-04 13:51
-  - 'V2Get🛰️ 2026-10-04 17:51 #2'
   - 'V2Get🛰️ 2026-10-04 13:51 #2'
+  - 'V2Get🛰️ 2026-10-04 17:51 #2'
+  - 'V2Get🛰️ 2026-10-04 13:51 #3'
   - 'V2Get🛰️ 2026-10-04 17:51 #3'
   - 'V2Get🛰️ 2026-10-04 17:51 #4'
   - 'V2Get🛰️ 2026-10-04 17:51 #5'
   - 'V2Get🛰️ 2026-10-04 17:51 #6'
   - 'V2Get🛰️ 2026-10-04 17:51 #7'
   - 'V2Get🛰️ 2026-10-04 17:51 #8'
-  - 'V2Get🛰️ 2026-10-04 13:51 #3'
+  - 'V2Get🛰️ 2026-10-04 13:51 #4'
   - 'V2Get🛰️ 2026-10-04 16:51 #2'
   - 'V2Get🛰️ 2026-10-04 16:51 #3'
   - 'V2Get🛰️ 2026-10-04 16:51 #4'
@@ -1133,11 +1133,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-04 13:51
+  - V2Get🛰️ 2026-10-04 20:52
+  - 'V2Get🛰️ 2026-10-04 20:52 #2'
   - V2Get🛰️ 2026-10-04 20:51
   - V2Get🛰️ 2026-10-04 18:51
-  - V2Get🛰️ 2026-08-31 04:15
-  - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
   - V2Get🛰️ 2026-10-04 19:52
   - 'V2Get🛰️ 2026-10-04 19:52 #2'
   - V2Get🛰️ 2026-10-04 14:51
@@ -1177,16 +1177,16 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 17:52 #3'
   - 'V2Get🛰️ 2026-10-04 17:52 #4'
   - V2Get🛰️ 2026-10-04 17:51
-  - V2Get🛰️ 2026-10-04 13:51
-  - 'V2Get🛰️ 2026-10-04 17:51 #2'
   - 'V2Get🛰️ 2026-10-04 13:51 #2'
+  - 'V2Get🛰️ 2026-10-04 17:51 #2'
+  - 'V2Get🛰️ 2026-10-04 13:51 #3'
   - 'V2Get🛰️ 2026-10-04 17:51 #3'
   - 'V2Get🛰️ 2026-10-04 17:51 #4'
   - 'V2Get🛰️ 2026-10-04 17:51 #5'
   - 'V2Get🛰️ 2026-10-04 17:51 #6'
   - 'V2Get🛰️ 2026-10-04 17:51 #7'
   - 'V2Get🛰️ 2026-10-04 17:51 #8'
-  - 'V2Get🛰️ 2026-10-04 13:51 #3'
+  - 'V2Get🛰️ 2026-10-04 13:51 #4'
   - 'V2Get🛰️ 2026-10-04 16:51 #2'
   - 'V2Get🛰️ 2026-10-04 16:51 #3'
   - 'V2Get🛰️ 2026-10-04 16:51 #4'
