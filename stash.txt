@@ -14,13 +14,29 @@ dns:
 proxies:
 - name: V2Get🛰️ 2026-10-04 19:52
   type: vless
+  server: 69.46.46.71
+  port: 443
+  uuid: d4c7937b83242588878da7ab7eb1e9a8
+  udp: true
+  network: ws
+  tls: true
+  servername: core-166442-d9f37e-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/d4c7937b83242588878da7ab7eb1e9a8
+    headers:
+      Host: core-166442-d9f37e-production.up.railway.app
+- name: 'V2Get🛰️ 2026-10-04 19:52 #2'
+  type: vless
   server: trkke.musichubmel.ir
   port: 2084
   uuid: 56cdba27-4aed-4013-a10c-f43254833005
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-04 19:52 #2'
+- name: 'V2Get🛰️ 2026-10-04 19:52 #3'
   type: vless
   server: tunn.musichubmel.ir
   port: 33737
@@ -788,14 +804,6 @@ proxies:
   reality-opts:
     public-key: JDUHaCWFryv7gFDYFcjcbdZiMJ7ympfTJGB8JXDwEnU
     short-id: 798467fa
-- name: 'V2Get🛰️ 2026-10-04 13:51 #12'
-  type: vless
-  server: 178.83.122.88
-  port: 443
-  uuid: 1dfe9b7e-a0e6-4e0a-a4a1-717d186af439
-  udp: true
-  network: tcp
-  tls: true
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -804,6 +812,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-10-04 19:52
   - 'V2Get🛰️ 2026-10-04 19:52 #2'
+  - 'V2Get🛰️ 2026-10-04 19:52 #3'
   - V2Get🛰️ 2026-10-04 19:51
   - 'V2Get🛰️ 2026-10-04 19:51 #2'
   - 'V2Get🛰️ 2026-10-04 19:51 #3'
@@ -863,7 +872,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 13:51 #9'
   - 'V2Get🛰️ 2026-10-04 13:51 #10'
   - 'V2Get🛰️ 2026-10-04 13:51 #11'
-  - 'V2Get🛰️ 2026-10-04 13:51 #12'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -872,6 +880,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-10-04 19:52
   - 'V2Get🛰️ 2026-10-04 19:52 #2'
+  - 'V2Get🛰️ 2026-10-04 19:52 #3'
   - V2Get🛰️ 2026-10-04 19:51
   - 'V2Get🛰️ 2026-10-04 19:51 #2'
   - 'V2Get🛰️ 2026-10-04 19:51 #3'
@@ -931,7 +940,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 13:51 #9'
   - 'V2Get🛰️ 2026-10-04 13:51 #10'
   - 'V2Get🛰️ 2026-10-04 13:51 #11'
-  - 'V2Get🛰️ 2026-10-04 13:51 #12'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
