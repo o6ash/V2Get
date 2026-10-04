@@ -12,6 +12,22 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-04 21:52
+  type: vless
+  server: 69.46.46.71
+  port: 443
+  uuid: 272b2505f1719e0a70a1c11d6dc0dc9c
+  udp: true
+  network: ws
+  tls: true
+  servername: cloud-1e863b-5e462d-production.up.railway.app
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws/272b2505f1719e0a70a1c11d6dc0dc9c
+    headers:
+      Host: cloud-1e863b-5e462d-production.up.railway.app
 - name: V2Get🛰️ 2026-10-04 21:51
   type: vless
   server: 130.49.187.185
@@ -1039,25 +1055,13 @@ proxies:
   reality-opts:
     public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
     short-id: 61a0eb582ed4f2b5
-- name: 'V2Get🛰️ 2026-10-04 14:51 #5'
-  type: vless
-  server: ghatem.color-shop.ir
-  port: 443
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-  udp: true
-  network: tcp
-  tls: true
-  servername: vox-cdn.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PeS4xF85yQ_eE-gqFBQnq2ylysTtQIx5D6HZNyQJS1w
-    short-id: 9f5a01a37505cf29
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-04 21:52
   - V2Get🛰️ 2026-10-04 21:51
   - 'V2Get🛰️ 2026-10-04 21:51 #2'
   - 'V2Get🛰️ 2026-10-04 21:51 #3'
@@ -1145,13 +1149,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 14:52 #5'
   - 'V2Get🛰️ 2026-10-04 14:51 #3'
   - 'V2Get🛰️ 2026-10-04 14:51 #4'
-  - 'V2Get🛰️ 2026-10-04 14:51 #5'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-04 21:52
   - V2Get🛰️ 2026-10-04 21:51
   - 'V2Get🛰️ 2026-10-04 21:51 #2'
   - 'V2Get🛰️ 2026-10-04 21:51 #3'
@@ -1239,7 +1243,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 14:52 #5'
   - 'V2Get🛰️ 2026-10-04 14:51 #3'
   - 'V2Get🛰️ 2026-10-04 14:51 #4'
-  - 'V2Get🛰️ 2026-10-04 14:51 #5'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
