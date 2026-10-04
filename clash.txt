@@ -12,21 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
+- name: V2Get🛰️ 2026-10-04 20:51
+  type: ss
+  server: deals1.selqora.ir
+  port: 51595
+  cipher: chacha20-ietf-poly1305
+  password: xhhIT6KUjPknX2i_wpYo0qrk8T48S51m
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-04 18:51
+  type: vless
+  server: deals1.selqora.ir
+  port: 34257
+  uuid: b01da04a-ef41-4caa-97e3-a99f6c6dab6d
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: OUjXze5L4dZ4AiyHDo_CklgmkeYzvv_neOscgdEyyz4
+    short-id: 3d6b6202f55aa7de
 - name: V2Get🛰️ 2026-08-31 04:15
   type: trojan
   server: 188.42.145.180
@@ -446,19 +451,6 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
     short-id: e3085d4fc679ba12
-- name: V2Get🛰️ 2026-10-04 18:51
-  type: vless
-  server: deals1.selqora.ir
-  port: 34257
-  uuid: b01da04a-ef41-4caa-97e3-a99f6c6dab6d
-  udp: true
-  network: xhttp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: OUjXze5L4dZ4AiyHDo_CklgmkeYzvv_neOscgdEyyz4
-    short-id: 3d6b6202f55aa7de
 - name: V2Get🛰️ 2026-10-04 17:52
   type: vless
   server: 199.232.78.160
@@ -1047,7 +1039,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-04 20:51
+  - V2Get🛰️ 2026-10-04 18:51
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-18 13:56
   - 'V2Get🛰️ 2026-09-18 13:56 #2'
@@ -1085,7 +1078,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 18:52 #12'
   - 'V2Get🛰️ 2026-10-04 18:52 #13'
   - 'V2Get🛰️ 2026-10-04 18:52 #14'
-  - V2Get🛰️ 2026-10-04 18:51
   - V2Get🛰️ 2026-10-04 17:52
   - 'V2Get🛰️ 2026-10-04 17:52 #2'
   - 'V2Get🛰️ 2026-10-04 17:52 #3'
@@ -1141,7 +1133,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-04 20:51
+  - V2Get🛰️ 2026-10-04 18:51
   - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-09-18 13:56
   - 'V2Get🛰️ 2026-09-18 13:56 #2'
@@ -1179,7 +1172,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-04 18:52 #12'
   - 'V2Get🛰️ 2026-10-04 18:52 #13'
   - 'V2Get🛰️ 2026-10-04 18:52 #14'
-  - V2Get🛰️ 2026-10-04 18:51
   - V2Get🛰️ 2026-10-04 17:52
   - 'V2Get🛰️ 2026-10-04 17:52 #2'
   - 'V2Get🛰️ 2026-10-04 17:52 #3'
