@@ -12,64 +12,59 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-20 13:13
+- name: V2Get🛰️ 2026-10-04 14:52
   type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: true.helpmainert.ir
+  port: 4852
+  uuid: ba01d54f-0824-42a5-b6e2-927992d90ee1
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: xhttp
   tls: true
-  servername: yahoo.com
+  servername: app.sharetimetable.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-09-11 11:40
-  type: trojan
-  server: 167.82.76.27
+    public-key: QiM8GN2wWUv-C5Oc-kGbw8kwN6sf3aEI4igFb7L_IHo
+    short-id: 5dcb0c1da5a07e70
+- name: 'V2Get🛰️ 2026-10-04 14:52 #2'
+  type: vless
+  server: 146.75.56.143
   port: 443
-  password: mitivpn
+  uuid: ba01d54f-0824-42a5-b6e2-927992d90ee1
   udp: true
-  sni: ssl.fastly.com
+  network: xhttp
+  tls: true
+  servername: global.fastly.com
+  client-fingerprint: edge
   alpn:
+  - h2
   - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-04 14:52 #3'
+  type: vless
+  server: dbd.forcebook.ir
+  port: 443
+  uuid: ba01d54f-0824-42a5-b6e2-927992d90ee1
+  udp: true
+  network: xhttp
+  tls: true
+  servername: kbr.esvacloud.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Kdyq5RcEkVaFdU3vqbMjWWCg4P_a_rsZFVLDchtzJW8
+    short-id: 65427af7cc34ad59
+- name: 'V2Get🛰️ 2026-10-04 14:52 #4'
+  type: vless
+  server: tkfc.forcebook.ir
+  port: 2889
+  uuid: ba01d54f-0824-42a5-b6e2-927992d90ee1
+  udp: true
+  network: xhttp
+  tls: true
+  servername: insightsquid.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Kdyq5RcEkVaFdU3vqbMjWWCg4P_a_rsZFVLDchtzJW8
+    short-id: 65427af7cc34ad59
 - name: V2Get🛰️ 2026-09-18 13:56
-  type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-09-18 13:56 #2'
   type: trojan
   server: 199.232.78.101
   port: 443
@@ -1264,11 +1259,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-04 14:52
+  - 'V2Get🛰️ 2026-10-04 14:52 #2'
+  - 'V2Get🛰️ 2026-10-04 14:52 #3'
+  - 'V2Get🛰️ 2026-10-04 14:52 #4'
   - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
   - V2Get🛰️ 2026-10-04 14:51
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-10-04 01:51
@@ -1370,11 +1365,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-20 13:13
-  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-04 14:52
+  - 'V2Get🛰️ 2026-10-04 14:52 #2'
+  - 'V2Get🛰️ 2026-10-04 14:52 #3'
+  - 'V2Get🛰️ 2026-10-04 14:52 #4'
   - V2Get🛰️ 2026-09-18 13:56
-  - 'V2Get🛰️ 2026-09-18 13:56 #2'
   - V2Get🛰️ 2026-10-04 14:51
   - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-10-04 01:51
