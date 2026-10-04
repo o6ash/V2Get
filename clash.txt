@@ -12,6 +12,28 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-04 15:51
+  type: vless
+  server: 161.35.90.177
+  port: 1161
+  uuid: 3520813e-0e6f-70be-db5c-cbdead26aada
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-04 15:51 #2'
+  type: vless
+  server: 161.35.90.177
+  port: 8039
+  uuid: 3520813e-0e6f-70be-db5c-cbdead26aada
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tno.nl
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZrdPHtBvi7yMRj17SohKaGQEXuDptmCJWCi8gk5HlD8
+    short-id: 35938c4e546cd459
 - name: V2Get🛰️ 2026-10-04 14:52
   type: vmess
   server: 206.1.103.179
@@ -80,17 +102,6 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: 8NwabdWBXK1q1QaBhF69rw==:d8C1FciKoaFD6xRFbCYyFQ==
   udp: true
-- name: V2Get🛰️ 2026-09-29 18:28
-  type: vless
-  server: kala.fortresshost.ir
-  port: 443
-  uuid: 9eb6abc0-8423-4ff6-efb3-7603ddfb9636
-  udp: true
-  network: xhttp
-  tls: true
-  servername: kala.fortresshost.ir
-  alpn:
-  - h2
 - name: V2Get🛰️ 2026-10-04 01:51
   type: vless
   server: s3.bamans.uk
@@ -130,20 +141,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-01 16:07
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: 'V2Get🛰️ 2026-10-04 14:51 #3'
   type: ss
   server: Bulbul.color-panel.ir
@@ -1254,18 +1251,18 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-04 15:51
+  - 'V2Get🛰️ 2026-10-04 15:51 #2'
   - V2Get🛰️ 2026-10-04 14:52
   - 'V2Get🛰️ 2026-10-04 14:52 #2'
   - 'V2Get🛰️ 2026-10-04 14:52 #3'
   - 'V2Get🛰️ 2026-10-04 14:52 #4'
   - 'V2Get🛰️ 2026-10-04 14:52 #5'
   - V2Get🛰️ 2026-10-04 14:51
-  - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-10-04 01:51
   - 'V2Get🛰️ 2026-10-04 14:51 #2'
   - V2Get🛰️ 2026-10-03 18:09
   - 'V2Get🛰️ 2026-10-04 01:51 #2'
-  - V2Get🛰️ 2026-10-01 16:07
   - 'V2Get🛰️ 2026-10-04 14:51 #3'
   - 'V2Get🛰️ 2026-10-04 14:51 #4'
   - V2Get🛰️ 2026-10-03 00:08
@@ -1360,18 +1357,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-04 15:51
+  - 'V2Get🛰️ 2026-10-04 15:51 #2'
   - V2Get🛰️ 2026-10-04 14:52
   - 'V2Get🛰️ 2026-10-04 14:52 #2'
   - 'V2Get🛰️ 2026-10-04 14:52 #3'
   - 'V2Get🛰️ 2026-10-04 14:52 #4'
   - 'V2Get🛰️ 2026-10-04 14:52 #5'
   - V2Get🛰️ 2026-10-04 14:51
-  - V2Get🛰️ 2026-09-29 18:28
   - V2Get🛰️ 2026-10-04 01:51
   - 'V2Get🛰️ 2026-10-04 14:51 #2'
   - V2Get🛰️ 2026-10-03 18:09
   - 'V2Get🛰️ 2026-10-04 01:51 #2'
-  - V2Get🛰️ 2026-10-01 16:07
   - 'V2Get🛰️ 2026-10-04 14:51 #3'
   - 'V2Get🛰️ 2026-10-04 14:51 #4'
   - V2Get🛰️ 2026-10-03 00:08
