@@ -12,21 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-10-05 00:52
+  type: vless
+  server: 172.66.216.48
   port: 443
-  password: mitivpn
+  uuid: 50414e45-4c5f-5a45-5553-c3a3341ec775
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: pfzdb4eoud8s.its-awmir1.workers.dev
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    path: /stream/PANEL_ZEUS/c3a3341ec775
     headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+      Host: pfzdb4eoud8s.its-awmir1.workers.dev
 - name: V2Get🛰️ 2026-09-11 11:40
   type: trojan
   server: 167.82.76.27
@@ -1320,7 +1318,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-05 00:52
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-10-04 20:52
@@ -1426,7 +1424,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-05 00:52
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-09-18 13:56
   - V2Get🛰️ 2026-10-04 20:52
