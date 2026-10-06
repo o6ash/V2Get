@@ -12,33 +12,57 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-08-20 22:13
+- name: V2Get🛰️ 2026-10-06 21:54
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 167.82.76.31
+  port: 443
+  uuid: a860fdce-1aa0-48b2-9229-d32c477250d1
   udp: true
-  network: ws
+  network: xhttp
+  tls: true
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-06 21:54 #2'
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: a860fdce-1aa0-48b2-9229-d32c477250d1
+  udp: true
+  network: xhttp
+  tls: true
+  servername: speedtest.net
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-06 20:53
+  type: vless
+  server: 199.232.78.199
+  port: 443
+  uuid: 886c8a40-6a8a-40ff-8c10-c0ee80d62f6f
+  udp: true
+  network: xhttp
+  tls: true
+  servername: www.speedtest.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-10-06 20:54
+  type: vless
+  server: 165.231.177.50
+  port: 443
+  uuid: 70ad3e9c-89e6-4ee3-91c3-7cb10a4e483a
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cab-6ac3cf79.ferrin.uk
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-10-06 20:53 #2'
+  type: vless
+  server: 65.109.176.245
+  port: 3030
+  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
+  udp: true
+  network: tcp
   skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: V2Get🛰️ 2026-08-21 18:56
   type: vless
   server: 169.40.42.231
@@ -158,7 +182,7 @@ proxies:
     path: /?ed=2056/?TELEGRAM--BYA--CHANEL---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
       Host: uol258ehdmsohzh.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-06 20:53
+- name: 'V2Get🛰️ 2026-10-06 20:53 #3'
   type: vless
   server: fi3.h1cloud.net
   port: 25090
@@ -172,7 +196,7 @@ proxies:
   reality-opts:
     public-key: biCk-kVr64zr2Vm6PRkrt3egFtuVXdJF5buWaG4wA1Y
     short-id: 36e15949603e0e6e
-- name: 'V2Get🛰️ 2026-10-06 20:53 #2'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #4'
   type: vless
   server: 89.208.97.84
   port: 4040
@@ -185,7 +209,7 @@ proxies:
   reality-opts:
     public-key: _OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk
     short-id: 73693dea6faae051
-- name: 'V2Get🛰️ 2026-10-06 20:53 #3'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #5'
   type: vless
   server: 165.231.177.114
   port: 443
@@ -197,7 +221,7 @@ proxies:
   client-fingerprint: safari
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-10-06 20:53 #4'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #6'
   type: vless
   server: 91.107.240.245
   port: 7070
@@ -205,15 +229,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-06 20:53 #5'
-  type: vless
-  server: 65.109.176.245
-  port: 3030
-  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-06 20:53 #6'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #7'
   type: vless
   server: 199.232.78.185
   port: 443
@@ -225,7 +241,7 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-10-06 20:53 #7'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #8'
   type: vless
   server: 151.101.110.201
   port: 443
@@ -237,7 +253,7 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-10-06 20:53 #8'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #9'
   type: vless
   server: 199.232.78.133
   port: 443
@@ -249,23 +265,11 @@ proxies:
   client-fingerprint: firefox
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-10-06 20:53 #9'
+- name: 'V2Get🛰️ 2026-10-06 20:53 #10'
   type: vless
   server: simpletr.asan-ps.ir
   port: 443
   uuid: eb01538d-5251-4a31-92a9-14482f6c70b3
-  udp: true
-  network: xhttp
-  tls: true
-  servername: www.speedtest.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: 'V2Get🛰️ 2026-10-06 20:53 #10'
-  type: vless
-  server: 199.232.78.199
-  port: 443
-  uuid: 886c8a40-6a8a-40ff-8c10-c0ee80d62f6f
   udp: true
   network: xhttp
   tls: true
@@ -304,7 +308,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: y7KeRTzmH0vXT2kp
   udp: true
-- name: V2Get🛰️ 2026-10-06 20:54
+- name: 'V2Get🛰️ 2026-10-06 20:54 #2'
   type: vless
   server: fasted.netbazshop.ir
   port: 2053
@@ -314,7 +318,7 @@ proxies:
   tls: true
   servername: dasshboard.netbazshop.ir
   client-fingerprint: chrome
-- name: 'V2Get🛰️ 2026-10-06 20:54 #2'
+- name: 'V2Get🛰️ 2026-10-06 20:54 #3'
   type: vless
   server: de3.xelnivo.ir
   port: 44389
@@ -327,7 +331,7 @@ proxies:
   reality-opts:
     public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
     short-id: 8f798d413a5dbf01
-- name: 'V2Get🛰️ 2026-10-06 20:54 #3'
+- name: 'V2Get🛰️ 2026-10-06 20:54 #4'
   type: vless
   server: 80.96.113.48
   port: 443
@@ -340,17 +344,6 @@ proxies:
     path: /glasspanel/guest000_0_5de14443985f/
     headers:
       Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 'V2Get🛰️ 2026-10-06 20:54 #4'
-  type: vless
-  server: 165.231.177.50
-  port: 443
-  uuid: 70ad3e9c-89e6-4ee3-91c3-7cb10a4e483a
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cab-6ac3cf79.ferrin.uk
-  alpn:
-  - h2
 - name: 'V2Get🛰️ 2026-10-06 20:54 #5'
   type: vless
   server: 196.240.125.3
@@ -1070,8 +1063,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-10-06 21:54
+  - 'V2Get🛰️ 2026-10-06 21:54 #2'
+  - V2Get🛰️ 2026-10-06 20:53
+  - V2Get🛰️ 2026-10-06 20:54
+  - 'V2Get🛰️ 2026-10-06 20:53 #2'
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-09-18 13:56
@@ -1082,8 +1078,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-06 01:53 #2'
   - 'V2Get🛰️ 2026-10-06 01:53 #3'
   - 'V2Get🛰️ 2026-10-06 01:53 #4'
-  - V2Get🛰️ 2026-10-06 20:53
-  - 'V2Get🛰️ 2026-10-06 20:53 #2'
   - 'V2Get🛰️ 2026-10-06 20:53 #3'
   - 'V2Get🛰️ 2026-10-06 20:53 #4'
   - 'V2Get🛰️ 2026-10-06 20:53 #5'
@@ -1095,7 +1089,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-06 20:53 #11'
   - 'V2Get🛰️ 2026-10-06 20:53 #12'
   - 'V2Get🛰️ 2026-10-06 20:53 #13'
-  - V2Get🛰️ 2026-10-06 20:54
   - 'V2Get🛰️ 2026-10-06 20:54 #2'
   - 'V2Get🛰️ 2026-10-06 20:54 #3'
   - 'V2Get🛰️ 2026-10-06 20:54 #4'
@@ -1160,8 +1153,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-08-20 22:13
+  - V2Get🛰️ 2026-10-06 21:54
+  - 'V2Get🛰️ 2026-10-06 21:54 #2'
+  - V2Get🛰️ 2026-10-06 20:53
+  - V2Get🛰️ 2026-10-06 20:54
+  - 'V2Get🛰️ 2026-10-06 20:53 #2'
   - V2Get🛰️ 2026-08-21 18:56
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-09-18 13:56
@@ -1172,8 +1168,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-06 01:53 #2'
   - 'V2Get🛰️ 2026-10-06 01:53 #3'
   - 'V2Get🛰️ 2026-10-06 01:53 #4'
-  - V2Get🛰️ 2026-10-06 20:53
-  - 'V2Get🛰️ 2026-10-06 20:53 #2'
   - 'V2Get🛰️ 2026-10-06 20:53 #3'
   - 'V2Get🛰️ 2026-10-06 20:53 #4'
   - 'V2Get🛰️ 2026-10-06 20:53 #5'
@@ -1185,7 +1179,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-06 20:53 #11'
   - 'V2Get🛰️ 2026-10-06 20:53 #12'
   - 'V2Get🛰️ 2026-10-06 20:53 #13'
-  - V2Get🛰️ 2026-10-06 20:54
   - 'V2Get🛰️ 2026-10-06 20:54 #2'
   - 'V2Get🛰️ 2026-10-06 20:54 #3'
   - 'V2Get🛰️ 2026-10-06 20:54 #4'
