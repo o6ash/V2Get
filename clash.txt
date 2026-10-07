@@ -12,6 +12,53 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-07 23:55
+  type: vless
+  server: dns5.m3hrzd.ir
+  port: 8030
+  uuid: 3915ffb6-c509-46a1-9a37-72a9b1c2a346
+  udp: true
+  network: tcp
+  tls: true
+  servername: race.egistration.ir
+  client-fingerprint: safari
+  reality-opts:
+    public-key: yNCiWHU2y1M-cWl5jJLfSDwwYM_9gdP5sqBLANxxdAs
+    short-id: 38dda82955d5791e
+- name: V2Get🛰️ 2026-10-07 18:54
+  type: vless
+  server: 216.173.71.43
+  port: 443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: lv.nztvpn.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
+    short-id: 0da7e14db353e7d0
+- name: 'V2Get🛰️ 2026-10-07 18:54 #2'
+  type: vless
+  server: psf-3.weedly.top
+  port: 80
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: machinemag.ir
+- name: V2Get🛰️ 2026-10-07 20:55
+  type: vless
+  server: 65.109.176.245
+  port: 9098
+  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-07 22:55
   type: vless
   server: es.srv.dvzh.net
@@ -37,13 +84,6 @@ proxies:
   servername: speedtest.net
   alpn:
   - h2
-- name: V2Get🛰️ 2026-07-29 14:50
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
 - name: V2Get🛰️ 2026-07-31 11:19
   type: ss
   server: 82.38.31.17
@@ -355,7 +395,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: V2Get🛰️ 2026-10-07 20:55
+- name: 'V2Get🛰️ 2026-10-07 20:55 #2'
   type: vless
   server: 87.120.106.133
   port: 8443
@@ -604,14 +644,6 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 'V2Get🛰️ 2026-10-07 20:55 #2'
-  type: vless
-  server: 65.109.176.245
-  port: 9098
-  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-10-07 20:55 #3'
   type: vless
   server: 91.107.240.245
@@ -620,20 +652,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-07 18:54
-  type: vless
-  server: 216.173.71.43
-  port: 443
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lv.nztvpn.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
-    short-id: 0da7e14db353e7d0
 - name: 'V2Get🛰️ 2026-10-07 20:55 #4'
   type: vless
   server: 199.232.237.79
@@ -1032,18 +1050,6 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: api-v1-6ac60b55.vmagnum.win
-- name: 'V2Get🛰️ 2026-10-07 18:54 #2'
-  type: vless
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
 - name: 'V2Get🛰️ 2026-10-07 18:54 #3'
   type: trojan
   server: 31.76.103.140
@@ -1126,9 +1132,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-07 23:55
+  - V2Get🛰️ 2026-10-07 18:54
+  - 'V2Get🛰️ 2026-10-07 18:54 #2'
+  - V2Get🛰️ 2026-10-07 20:55
   - V2Get🛰️ 2026-10-07 22:55
   - 'V2Get🛰️ 2026-10-07 22:55 #2'
-  - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-07-31 11:19
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-25 22:03
@@ -1159,7 +1168,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 22:55 #20'
   - 'V2Get🛰️ 2026-10-07 22:55 #21'
   - V2Get🛰️ 2026-10-07 21:55
-  - V2Get🛰️ 2026-10-07 20:55
+  - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - 'V2Get🛰️ 2026-10-07 22:55 #22'
   - V2Get🛰️ 2026-10-07 19:55
   - 'V2Get🛰️ 2026-10-07 22:55 #23'
@@ -1179,9 +1188,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 22:55 #31'
   - 'V2Get🛰️ 2026-10-07 21:55 #3'
   - 'V2Get🛰️ 2026-10-07 21:55 #4'
-  - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - 'V2Get🛰️ 2026-10-07 20:55 #3'
-  - V2Get🛰️ 2026-10-07 18:54
   - 'V2Get🛰️ 2026-10-07 20:55 #4'
   - 'V2Get🛰️ 2026-10-07 20:55 #5'
   - 'V2Get🛰️ 2026-10-07 20:55 #6'
@@ -1216,7 +1223,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 17:55 #7'
   - 'V2Get🛰️ 2026-10-07 17:55 #8'
   - 'V2Get🛰️ 2026-10-07 17:55 #9'
-  - 'V2Get🛰️ 2026-10-07 18:54 #2'
   - 'V2Get🛰️ 2026-10-07 18:54 #3'
   - 'V2Get🛰️ 2026-10-07 17:55 #10'
   - 'V2Get🛰️ 2026-10-07 17:55 #11'
@@ -1229,9 +1235,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-07 23:55
+  - V2Get🛰️ 2026-10-07 18:54
+  - 'V2Get🛰️ 2026-10-07 18:54 #2'
+  - V2Get🛰️ 2026-10-07 20:55
   - V2Get🛰️ 2026-10-07 22:55
   - 'V2Get🛰️ 2026-10-07 22:55 #2'
-  - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-07-31 11:19
   - V2Get🛰️ 2026-08-05 11:19
   - V2Get🛰️ 2026-08-25 22:03
@@ -1262,7 +1271,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 22:55 #20'
   - 'V2Get🛰️ 2026-10-07 22:55 #21'
   - V2Get🛰️ 2026-10-07 21:55
-  - V2Get🛰️ 2026-10-07 20:55
+  - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - 'V2Get🛰️ 2026-10-07 22:55 #22'
   - V2Get🛰️ 2026-10-07 19:55
   - 'V2Get🛰️ 2026-10-07 22:55 #23'
@@ -1282,9 +1291,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 22:55 #31'
   - 'V2Get🛰️ 2026-10-07 21:55 #3'
   - 'V2Get🛰️ 2026-10-07 21:55 #4'
-  - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - 'V2Get🛰️ 2026-10-07 20:55 #3'
-  - V2Get🛰️ 2026-10-07 18:54
   - 'V2Get🛰️ 2026-10-07 20:55 #4'
   - 'V2Get🛰️ 2026-10-07 20:55 #5'
   - 'V2Get🛰️ 2026-10-07 20:55 #6'
@@ -1319,7 +1326,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-07 17:55 #7'
   - 'V2Get🛰️ 2026-10-07 17:55 #8'
   - 'V2Get🛰️ 2026-10-07 17:55 #9'
-  - 'V2Get🛰️ 2026-10-07 18:54 #2'
   - 'V2Get🛰️ 2026-10-07 18:54 #3'
   - 'V2Get🛰️ 2026-10-07 17:55 #10'
   - 'V2Get🛰️ 2026-10-07 17:55 #11'
