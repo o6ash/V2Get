@@ -12,6 +12,63 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-11 11:40
+  type: trojan
+  server: 167.82.76.27
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-08 00:55
+  type: trojan
+  server: 151.101.38.7
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: jjl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn--vip.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-08 00:55 #2'
+  type: trojan
+  server: 146.75.57.238
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl-mitivpn.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-4--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-07 22:55
   type: vless
   server: 65.109.176.245
@@ -20,62 +77,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-08-21 18:56
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: V2Get🛰️ 2026-09-30 12:05
-  type: vless
-  server: 31.207.7.74
-  port: 443
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pkg.go.dev
-  client-fingerprint: random
-  reality-opts:
-    public-key: RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s
-    short-id: 457ae5b8bef4d1b3
-- name: V2Get🛰️ 2026-10-02 16:07
-  type: vless
-  server: 177.1.186.44
-  port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mcde.67resserv67.info
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
-- name: V2Get🛰️ 2026-10-04 12:51
-  type: vless
-  server: us-2.srv.dvzh.net
-  port: 443
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: us-2.srv.dvzh.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: d30f9d846a7c8cba
 - name: V2Get🛰️ 2026-10-05 15:52
   type: vless
   server: de2.srv.vbuste.ru
@@ -1146,11 +1147,11 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-08 00:55
+  - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - V2Get🛰️ 2026-10-07 22:55
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-09-30 12:05
-  - V2Get🛰️ 2026-10-02 16:07
-  - V2Get🛰️ 2026-10-04 12:51
   - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-06 20:53
   - V2Get🛰️ 2026-10-07 23:55
@@ -1249,11 +1250,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-08 00:55
+  - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - V2Get🛰️ 2026-10-07 22:55
-  - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-09-30 12:05
-  - V2Get🛰️ 2026-10-02 16:07
-  - V2Get🛰️ 2026-10-04 12:51
   - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-06 20:53
   - V2Get🛰️ 2026-10-07 23:55
