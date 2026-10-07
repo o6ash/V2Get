@@ -12,13 +12,6 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-06 20:53
-  type: ss
-  server: c3.nastuh.link
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: y7KeRTzmH0vXT2kp
-  udp: true
 - name: V2Get🛰️ 2026-10-06 22:54
   type: ss
   server: 20.223.236.165
@@ -28,14 +21,6 @@ proxies:
   udp: true
 - name: V2Get🛰️ 2026-10-07 20:55
   type: vless
-  server: 65.109.176.245
-  port: 9098
-  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
-  udp: true
-  network: tcp
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-07 20:55 #2'
-  type: vless
   server: fast.jkerm.com
   port: 443
   uuid: ea079069-0a2d-4f88-892d-8394f6f82e68
@@ -44,6 +29,21 @@ proxies:
   tls: true
   servername: speedtest.net
   client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-06 20:53
+  type: ss
+  server: c3.nastuh.link
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: y7KeRTzmH0vXT2kp
+  udp: true
+- name: 'V2Get🛰️ 2026-10-07 20:55 #2'
+  type: vless
+  server: 65.109.176.245
+  port: 9098
+  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-07 19:55
   type: vless
   server: p2real4.greewebservices.ir
@@ -1176,9 +1176,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-10-06 20:53
   - V2Get🛰️ 2026-10-06 22:54
   - V2Get🛰️ 2026-10-07 20:55
+  - V2Get🛰️ 2026-10-06 20:53
   - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - V2Get🛰️ 2026-10-07 19:55
   - 'V2Get🛰️ 2026-10-07 19:55 #2'
@@ -1280,9 +1280,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-10-06 20:53
   - V2Get🛰️ 2026-10-06 22:54
   - V2Get🛰️ 2026-10-07 20:55
+  - V2Get🛰️ 2026-10-06 20:53
   - 'V2Get🛰️ 2026-10-07 20:55 #2'
   - V2Get🛰️ 2026-10-07 19:55
   - 'V2Get🛰️ 2026-10-07 19:55 #2'
