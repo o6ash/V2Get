@@ -12,20 +12,72 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-07 12:54
+- name: V2Get🛰️ 2026-09-11 15:41
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  udp: true
+- name: V2Get🛰️ 2026-10-01 13:07
   type: vless
-  server: 203.202.232.211
+  server: 93.89.220.37
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ibm.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+- name: V2Get🛰️ 2026-10-08 20:22
+  type: vmess
+  server: editmamad.ddns.ge
+  port: 443
+  uuid: ad6b5184-5a52-4e1a-94a2-4440ca0d93a4
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
   tls: true
-  servername: ccc.010304.xyz
+  servername: editmamad.ddns.ge
+  skip-cert-verify: true
   ws-opts:
-    path: /fp=chrome
+    path: /gw/a01c8a69-4d22-4455-8cb0-22d56d03d829?ed=2560
     headers:
-      Host: ccc.010304.xyz
-- name: V2Get🛰️ 2026-10-08 20:22
+      Host: editmamad.ddns.ge
+- name: 'V2Get🛰️ 2026-10-08 20:22 #2'
+  type: trojan
+  server: editmamad.ddns.ge
+  port: 443
+  password: IN8m7BCqy3w4qq78LeWsVW54VCXv0WNO
+  udp: true
+  sni: editmamad.ddns.ge
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /live/137e6314-6b50-4274-b785-c31271dbabbd?ed=2560
+    headers:
+      Host: editmamad.ddns.ge
+- name: V2Get🛰️ 2026-10-08 12:22
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
+  udp: true
+  network: ws
+  tls: true
+  servername: safa.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-08 20:22 #3'
   type: vless
   server: editmamad.ddns.ge
   port: 443
@@ -41,7 +93,14 @@ proxies:
     path: /ws/b13cf4d2-5c16-4e9f-a19f-b819876da75d?ed=2560
     headers:
       Host: editmamad.ddns.ge
-- name: 'V2Get🛰️ 2026-10-08 20:22 #2'
+- name: V2Get🛰️ 2026-10-08 17:22
+  type: ss
+  server: 47.85.168.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 'V2Get🛰️ 2026-10-08 20:22 #4'
   type: vless
   server: 103.241.65.169
   port: 443
@@ -76,26 +135,6 @@ proxies:
   reality-opts:
     public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
     short-id: 0da7e14db353e7d0
-- name: V2Get🛰️ 2026-10-08 12:22
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
-  udp: true
-  network: ws
-  tls: true
-  servername: safa.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-08 17:22
-  type: ss
-  server: 47.85.168.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
-  udp: true
 - name: V2Get🛰️ 2026-10-08 15:22
   type: vless
   server: 199.232.239.239
@@ -311,37 +350,6 @@ proxies:
   reality-opts:
     public-key: qEdNLEE3XO_XAo8m_u7ft-tKxTG5fV0bb9h1laYafng
     short-id: cbb8dbfa
-- name: V2Get🛰️ 2026-10-06 22:54
-  type: vless
-  server: tg1.cdnphotos.org
-  port: 443
-  uuid: f04cc810-aaf2-4a7b-8cad-356cdd30d394
-  udp: true
-  network: xhttp
-  tls: true
-  servername: tg1.cdnphotos.org
-  alpn:
-  - h2
-- name: V2Get🛰️ 2026-10-07 08:54
-  type: vless
-  server: 163.245.43.50
-  port: 443
-  uuid: 203d434a-2a92-45df-8973-ca80434ecf73
-  udp: true
-  network: grpc
-  tls: true
-  servername: se-twitch.global-cdn.org
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 'V2Get🛰️ 2026-10-07 08:54 #2'
-  type: vless
-  server: fs.koomeh.net
-  port: 443
-  uuid: 8decb53d-a198-4b9b-8dfc-814a7715a062
-  udp: true
-  network: xhttp
-  tls: true
-  servername: ssl.fastly.com
 - name: V2Get🛰️ 2026-10-07 23:55
   type: vless
   server: gb.srv.dvzh.net
@@ -1188,13 +1196,16 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-10-07 12:54
+  - V2Get🛰️ 2026-09-11 15:41
+  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
+  - V2Get🛰️ 2026-10-08 12:22
+  - 'V2Get🛰️ 2026-10-08 20:22 #3'
+  - V2Get🛰️ 2026-10-08 17:22
+  - 'V2Get🛰️ 2026-10-08 20:22 #4'
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-07 18:54
-  - V2Get🛰️ 2026-10-08 12:22
-  - V2Get🛰️ 2026-10-08 17:22
   - V2Get🛰️ 2026-10-08 15:22
   - V2Get🛰️ 2026-10-08 11:21
   - 'V2Get🛰️ 2026-10-08 15:22 #2'
@@ -1213,9 +1224,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 17:22 #3'
-  - V2Get🛰️ 2026-10-06 22:54
-  - V2Get🛰️ 2026-10-07 08:54
-  - 'V2Get🛰️ 2026-10-07 08:54 #2'
   - V2Get🛰️ 2026-10-07 23:55
   - 'V2Get🛰️ 2026-10-08 17:22 #4'
   - 'V2Get🛰️ 2026-10-08 17:22 #5'
@@ -1293,13 +1301,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-10-07 12:54
+  - V2Get🛰️ 2026-09-11 15:41
+  - V2Get🛰️ 2026-10-01 13:07
   - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
+  - V2Get🛰️ 2026-10-08 12:22
+  - 'V2Get🛰️ 2026-10-08 20:22 #3'
+  - V2Get🛰️ 2026-10-08 17:22
+  - 'V2Get🛰️ 2026-10-08 20:22 #4'
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-07 18:54
-  - V2Get🛰️ 2026-10-08 12:22
-  - V2Get🛰️ 2026-10-08 17:22
   - V2Get🛰️ 2026-10-08 15:22
   - V2Get🛰️ 2026-10-08 11:21
   - 'V2Get🛰️ 2026-10-08 15:22 #2'
@@ -1318,9 +1329,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 17:22 #3'
-  - V2Get🛰️ 2026-10-06 22:54
-  - V2Get🛰️ 2026-10-07 08:54
-  - 'V2Get🛰️ 2026-10-07 08:54 #2'
   - V2Get🛰️ 2026-10-07 23:55
   - 'V2Get🛰️ 2026-10-08 17:22 #4'
   - 'V2Get🛰️ 2026-10-08 17:22 #5'
