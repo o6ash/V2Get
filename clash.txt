@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-08 14:22
+  type: vless
+  server: fnil1.sublinkplas.ir
+  port: 15694
+  uuid: 7c1a2143-8047-4649-9bb6-3c7821f14110
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ajax.googleapis.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: BY0QfaqwH2Kv1WUU584R7NHcm4Z1Praq5YuYGrJ1BkM
+    short-id: 3e5cba1bd6eb6221
+- name: V2Get🛰️ 2026-10-08 00:55
+  type: trojan
+  server: 151.101.38.7
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: jjl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-07-26 03:08
   type: trojan
   server: 199.232.78.160
@@ -62,20 +90,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-08 14:22
-  type: vless
-  server: fnil1.sublinkplas.ir
-  port: 15694
-  uuid: 7c1a2143-8047-4649-9bb6-3c7821f14110
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ajax.googleapis.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: BY0QfaqwH2Kv1WUU584R7NHcm4Z1Praq5YuYGrJ1BkM
-    short-id: 3e5cba1bd6eb6221
 - name: 'V2Get🛰️ 2026-10-08 14:22 #2'
   type: vless
   server: nl.xelnivo.ir
@@ -102,20 +116,6 @@ proxies:
   reality-opts:
     public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
     short-id: 8f798d413a5dbf01
-- name: V2Get🛰️ 2026-10-08 00:55
-  type: trojan
-  server: 151.101.38.7
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: jjl.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn--vip.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-10-08 00:55 #2'
   type: trojan
   server: 146.75.57.238
@@ -1192,14 +1192,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-08 14:22
+  - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-10-08 13:21
   - V2Get🛰️ 2026-10-07 23:55
-  - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 14:22 #3'
-  - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - V2Get🛰️ 2026-10-08 01:55
   - 'V2Get🛰️ 2026-10-08 13:21 #2'
@@ -1298,14 +1298,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-08 14:22
+  - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-11 11:40
   - V2Get🛰️ 2026-10-08 13:21
   - V2Get🛰️ 2026-10-07 23:55
-  - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 14:22 #3'
-  - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - V2Get🛰️ 2026-10-08 01:55
   - 'V2Get🛰️ 2026-10-08 13:21 #2'
