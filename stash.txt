@@ -12,6 +12,43 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-09-11 11:40
+  type: trojan
+  server: 167.82.76.27
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-07 23:55
+  type: vless
+  server: 91.107.249.185
+  port: 6065
+  uuid: 9804f109-f750-4dec-9c3a-091982320501
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-08 14:22
   type: vless
   server: fnil1.sublinkplas.ir
@@ -80,14 +117,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-4--vip.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-07 23:55
-  type: vless
-  server: 91.107.249.185
-  port: 6065
-  uuid: 9804f109-f750-4dec-9c3a-091982320501
-  udp: true
-  network: tcp
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-08 01:55
   type: vless
   server: 65.109.176.245
@@ -184,18 +213,6 @@ proxies:
   reality-opts:
     public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
     short-id: aa6582cf25e243ce
-- name: V2Get🛰️ 2026-10-07 16:54
-  type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: e4ed5619-5e91-442a-92f1-755a7f6331b8
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: beat.ir
 - name: 'V2Get🛰️ 2026-10-08 12:22 #5'
   type: vless
   server: 5.otherconnectius.com
@@ -210,18 +227,6 @@ proxies:
   reality-opts:
     public-key: zHBghkPsbtlZgPf5q2Ngu1FunKztIMk1wU2bXnlKcTA
     short-id: 48f24adb
-- name: V2Get🛰️ 2026-10-07 18:54
-  type: vless
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
 - name: 'V2Get🛰️ 2026-10-08 12:22 #6'
   type: vless
   server: 172.64.229.129
@@ -873,12 +878,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 14:22 #3'
   - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
-  - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 01:55
   - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-08 10:22
@@ -887,9 +894,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 11:21
   - 'V2Get🛰️ 2026-10-08 12:22 #4'
   - V2Get🛰️ 2026-10-08 10:21
-  - V2Get🛰️ 2026-10-07 16:54
   - 'V2Get🛰️ 2026-10-08 12:22 #5'
-  - V2Get🛰️ 2026-10-07 18:54
   - 'V2Get🛰️ 2026-10-08 12:22 #6'
   - 'V2Get🛰️ 2026-10-08 12:22 #7'
   - 'V2Get🛰️ 2026-10-08 12:22 #8'
@@ -949,12 +954,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-09-11 11:40
+  - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 14:22 #3'
   - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
-  - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 01:55
   - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-08 10:22
@@ -963,9 +970,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 11:21
   - 'V2Get🛰️ 2026-10-08 12:22 #4'
   - V2Get🛰️ 2026-10-08 10:21
-  - V2Get🛰️ 2026-10-07 16:54
   - 'V2Get🛰️ 2026-10-08 12:22 #5'
-  - V2Get🛰️ 2026-10-07 18:54
   - 'V2Get🛰️ 2026-10-08 12:22 #6'
   - 'V2Get🛰️ 2026-10-08 12:22 #7'
   - 'V2Get🛰️ 2026-10-08 12:22 #8'
