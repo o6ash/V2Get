@@ -12,21 +12,26 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-10-08 18:22
+  type: vless
+  server: we5.sublinkplas.ir
   port: 443
-  password: mitivpn
+  uuid: 21063f06-c22f-438f-9040-24a2b37717a1
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-08 18:22 #2'
+  type: vless
+  server: avr.rlrlco.ir
+  port: 443
+  uuid: 21063f06-c22f-438f-9040-24a2b37717a1
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
 - name: V2Get🛰️ 2026-10-08 16:22
   type: trojan
   server: 199.232.28.205
@@ -83,7 +88,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-4--vip.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-08 18:22
+- name: 'V2Get🛰️ 2026-10-08 18:22 #3'
   type: vless
   server: 91.107.165.48
   port: 443
@@ -96,7 +101,7 @@ proxies:
   reality-opts:
     public-key: _OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk
     short-id: 73693dea6faae051
-- name: 'V2Get🛰️ 2026-10-08 18:22 #2'
+- name: 'V2Get🛰️ 2026-10-08 18:22 #4'
   type: vless
   server: 157.10.201.93
   port: 14789
@@ -223,20 +228,6 @@ proxies:
   reality-opts:
     public-key: qEdNLEE3XO_XAo8m_u7ft-tKxTG5fV0bb9h1laYafng
     short-id: cbb8dbfa
-- name: V2Get🛰️ 2026-10-02 23:08
-  type: vless
-  server: cdn-de.bulkavpn.top
-  port: 443
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn-de.bulkavpn.top
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
 - name: V2Get🛰️ 2026-10-04 19:51
   type: vmess
   server: 39.108.113.127
@@ -1200,13 +1191,14 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 18:22
+  - 'V2Get🛰️ 2026-10-08 18:22 #2'
   - V2Get🛰️ 2026-10-08 16:22
   - 'V2Get🛰️ 2026-10-08 16:22 #2'
   - 'V2Get🛰️ 2026-10-08 16:22 #3'
   - V2Get🛰️ 2026-10-08 00:55
-  - V2Get🛰️ 2026-10-08 18:22
-  - 'V2Get🛰️ 2026-10-08 18:22 #2'
+  - 'V2Get🛰️ 2026-10-08 18:22 #3'
+  - 'V2Get🛰️ 2026-10-08 18:22 #4'
   - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-08 11:21
@@ -1217,7 +1209,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - 'V2Get🛰️ 2026-10-08 17:22 #2'
-  - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-04 19:51
   - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-06 20:53
@@ -1306,13 +1297,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 18:22
+  - 'V2Get🛰️ 2026-10-08 18:22 #2'
   - V2Get🛰️ 2026-10-08 16:22
   - 'V2Get🛰️ 2026-10-08 16:22 #2'
   - 'V2Get🛰️ 2026-10-08 16:22 #3'
   - V2Get🛰️ 2026-10-08 00:55
-  - V2Get🛰️ 2026-10-08 18:22
-  - 'V2Get🛰️ 2026-10-08 18:22 #2'
+  - 'V2Get🛰️ 2026-10-08 18:22 #3'
+  - 'V2Get🛰️ 2026-10-08 18:22 #4'
   - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-08 11:21
@@ -1323,7 +1315,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - 'V2Get🛰️ 2026-10-08 00:55 #2'
   - 'V2Get🛰️ 2026-10-08 17:22 #2'
-  - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-04 19:51
   - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-06 20:53
