@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-07 23:55
+  type: vless
+  server: 91.107.249.185
+  port: 6065
+  uuid: 9804f109-f750-4dec-9c3a-091982320501
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-08 12:22
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
+  udp: true
+  network: ws
+  tls: true
+  servername: safa.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-01 20:07
   type: vless
   server: 144.31.215.227
@@ -62,19 +83,6 @@ proxies:
   reality-opts:
     public-key: QHh_UJffm-Oe4QtuSljlmCBlgCPidsAVY-DGfK9DoCg
     short-id: 9cc9137a
-- name: V2Get🛰️ 2026-10-08 12:22
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
-  udp: true
-  network: ws
-  tls: true
-  servername: safa.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-08 20:22
   type: vless
   server: editmamad.ddns.ge
@@ -172,20 +180,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-01 16:07
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-06 22:54
   type: vless
   server: 79.108.225.112
@@ -275,7 +269,7 @@ proxies:
   reality-opts:
     public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
     short-id: e4e77e76e6e49da7
-- name: V2Get🛰️ 2026-10-07 23:55
+- name: 'V2Get🛰️ 2026-10-07 23:55 #2'
   type: vless
   server: gb.srv.dvzh.net
   port: 443
@@ -289,7 +283,7 @@ proxies:
   reality-opts:
     public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
     short-id: d30f9d846a7c8cba
-- name: 'V2Get🛰️ 2026-10-07 23:55 #2'
+- name: 'V2Get🛰️ 2026-10-07 23:55 #3'
   type: vless
   server: 31.77.114.114
   port: 443
@@ -1024,11 +1018,12 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-07 23:55
+  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-07 12:54
   - V2Get🛰️ 2026-10-08 15:22
   - V2Get🛰️ 2026-10-08 21:22
-  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #3'
@@ -1036,7 +1031,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 21:22 #3'
   - 'V2Get🛰️ 2026-10-08 21:22 #4'
   - 'V2Get🛰️ 2026-10-08 21:22 #5'
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-06 22:54
   - V2Get🛰️ 2026-10-07 09:54
   - V2Get🛰️ 2026-10-07 11:54
@@ -1044,8 +1038,8 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 18:54
   - V2Get🛰️ 2026-10-07 22:55
   - 'V2Get🛰️ 2026-10-07 22:55 #2'
-  - V2Get🛰️ 2026-10-07 23:55
   - 'V2Get🛰️ 2026-10-07 23:55 #2'
+  - 'V2Get🛰️ 2026-10-07 23:55 #3'
   - V2Get🛰️ 2026-10-08 10:22
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 15:22 #2'
@@ -1106,11 +1100,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-07 23:55
+  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-01 20:07
   - V2Get🛰️ 2026-10-07 12:54
   - V2Get🛰️ 2026-10-08 15:22
   - V2Get🛰️ 2026-10-08 21:22
-  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #3'
@@ -1118,7 +1113,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 21:22 #3'
   - 'V2Get🛰️ 2026-10-08 21:22 #4'
   - 'V2Get🛰️ 2026-10-08 21:22 #5'
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-06 22:54
   - V2Get🛰️ 2026-10-07 09:54
   - V2Get🛰️ 2026-10-07 11:54
@@ -1126,8 +1120,8 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 18:54
   - V2Get🛰️ 2026-10-07 22:55
   - 'V2Get🛰️ 2026-10-07 22:55 #2'
-  - V2Get🛰️ 2026-10-07 23:55
   - 'V2Get🛰️ 2026-10-07 23:55 #2'
+  - 'V2Get🛰️ 2026-10-07 23:55 #3'
   - V2Get🛰️ 2026-10-08 10:22
   - V2Get🛰️ 2026-10-08 14:22
   - 'V2Get🛰️ 2026-10-08 15:22 #2'
