@@ -12,19 +12,40 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-05 22:28
+- name: V2Get🛰️ 2026-10-08 18:22
   type: vless
-  server: 188.114.97.6
+  server: 91.107.165.48
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 6f0f17f0-d45c-4584-bf50-a00cb6e423d3
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.actionvfx.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: _OmNcv89o5SDt4H3ButRX9UynGIVwNZR250w4Zie-yk
+    short-id: 73693dea6faae051
+- name: 'V2Get🛰️ 2026-10-08 18:22 #2'
+  type: vless
+  server: 157.10.201.93
+  port: 14789
+  uuid: 45ea5597-150e-4e3b-b1f1-bba1d82dac86
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-08 12:22
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
   udp: true
   network: ws
   tls: true
-  servername: a.cwvps.eu.org
+  servername: safa.fastly.com
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: a.cwvps.eu.org
+      Host: pannn1.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-07 22:55
   type: vless
   server: 188.114.97.6
@@ -131,33 +152,6 @@ proxies:
   reality-opts:
     public-key: qEdNLEE3XO_XAo8m_u7ft-tKxTG5fV0bb9h1laYafng
     short-id: cbb8dbfa
-- name: V2Get🛰️ 2026-10-08 12:22
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 4975ba8b-7378-468b-b1be-e2f274c62e97
-  udp: true
-  network: ws
-  tls: true
-  servername: safa.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-09-27 16:20
-  type: vless
-  server: 89.125.48.177
-  port: 2200
-  uuid: d7255425-34b4-4ccc-8a88-427082401e94
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: Q3HqBRWKnEcg1TFXSmOggXIFtzIMO7lxbh8WUmAJG0Y
-    short-id: a1b2c3d4e5f6789a
 - name: V2Get🛰️ 2026-10-01 23:07
   type: vless
   server: 77.72.85.246
@@ -1204,7 +1198,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-05 22:28
+  - V2Get🛰️ 2026-10-08 18:22
+  - 'V2Get🛰️ 2026-10-08 18:22 #2'
+  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-08 11:21
   - V2Get🛰️ 2026-10-08 17:22
@@ -1214,8 +1210,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 17:22 #2'
-  - V2Get🛰️ 2026-10-08 12:22
-  - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-04 19:51
@@ -1310,7 +1304,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-05 22:28
+  - V2Get🛰️ 2026-10-08 18:22
+  - 'V2Get🛰️ 2026-10-08 18:22 #2'
+  - V2Get🛰️ 2026-10-08 12:22
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-08 11:21
   - V2Get🛰️ 2026-10-08 17:22
@@ -1320,8 +1316,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 14:22 #2'
   - V2Get🛰️ 2026-10-08 00:55
   - 'V2Get🛰️ 2026-10-08 17:22 #2'
-  - V2Get🛰️ 2026-10-08 12:22
-  - V2Get🛰️ 2026-09-27 16:20
   - V2Get🛰️ 2026-10-01 23:07
   - V2Get🛰️ 2026-10-02 23:08
   - V2Get🛰️ 2026-10-04 19:51
