@@ -12,67 +12,82 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:09
-  type: vless
-  server: 206.71.158.124
+- name: V2Get🛰️ 2026-07-29 14:50
+  type: trojan
+  server: 188.114.97.6
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  password: humanity
   udp: true
-  network: xhttp
+  sni: www.calmloud.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: V2Get🛰️ 2026-08-25 22:03
+  type: ss
+  server: 193.29.139.147
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: V2Get🛰️ 2026-10-07 12:54
+  type: vless
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  network: ws
   tls: true
-  servername: dey.lnmarketplace.net
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: V2Get🛰️ 2026-10-07 22:55
+  type: ss
+  server: 20.164.212.146
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e6UqAb4130ycM7qM
+  udp: true
+- name: V2Get🛰️ 2026-10-08 17:22
+  type: ss
+  server: 47.85.168.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: V2Get🛰️ 2026-10-08 20:22
+  type: vless
+  server: editmamad.ddns.ge
+  port: 443
+  uuid: 1f638b4a-9d50-41b3-807d-61d62c08d9b0
+  udp: true
+  network: ws
+  tls: true
+  servername: editmamad.ddns.ge
   client-fingerprint: chrome
   alpn:
-  - h2
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 169.40.42.95
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-04 01:44
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 11:11
-  type: vless
-  server: 169.40.42.16
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 13:10
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-  udp: true
+  - http/1.1
+  ws-opts:
+    path: /ws/b13cf4d2-5c16-4e9f-a19f-b819876da75d?ed=2560
+    headers:
+      Host: editmamad.ddns.ge
 - name: V2Get🛰️ 2026-08-09 13:11
   type: vless
   server: 169.40.42.75
@@ -140,7 +155,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-25 22:03
+- name: 'V2Get🛰️ 2026-08-25 22:03 #2'
   type: ss
   server: 193.29.139.225
   port: 8080
@@ -176,19 +191,6 @@ proxies:
   reality-opts:
     public-key: 9OV_GN4lgwY_4llPfYCGev-PPXLMj-hfYnveKF4tjws
     short-id: f8
-- name: V2Get🛰️ 2026-08-31 04:15
-  type: trojan
-  server: 188.42.145.180
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.volumeroot.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: V2Get🛰️ 2026-08-31 11:16
   type: vless
   server: 83.147.18.3
@@ -524,22 +526,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: G6kJ_7QmepnaR6UfQfm-dg3lBaUVSvq5
   udp: true
-- name: V2Get🛰️ 2026-10-08 20:22
-  type: vless
-  server: editmamad.ddns.ge
-  port: 443
-  uuid: 1f638b4a-9d50-41b3-807d-61d62c08d9b0
-  udp: true
-  network: ws
-  tls: true
-  servername: editmamad.ddns.ge
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ws/b13cf4d2-5c16-4e9f-a19f-b819876da75d?ed=2560
-    headers:
-      Host: editmamad.ddns.ge
 - name: 'V2Get🛰️ 2026-10-08 20:22 #2'
   type: trojan
   server: editmamad.ddns.ge
@@ -1039,7 +1025,7 @@ proxies:
   reality-opts:
     public-key: 5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c
     short-id: 13975a8e0bd50e7c
-- name: V2Get🛰️ 2026-10-08 17:22
+- name: 'V2Get🛰️ 2026-10-08 17:22 #2'
   type: vless
   server: 188.130.209.222
   port: 443
@@ -1133,7 +1119,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'V2Get🛰️ 2026-10-08 17:22 #2'
+- name: 'V2Get🛰️ 2026-10-08 17:22 #3'
   type: ss
   server: 89.167.109.177
   port: 888
@@ -1236,7 +1222,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-08 17:22 #3'
+- name: 'V2Get🛰️ 2026-10-08 17:22 #4'
   type: vless
   server: 213.182.213.31
   port: 8080
@@ -1249,7 +1235,7 @@ proxies:
   reality-opts:
     public-key: qEdNLEE3XO_XAo8m_u7ft-tKxTG5fV0bb9h1laYafng
     short-id: cbb8dbfa
-- name: 'V2Get🛰️ 2026-10-08 17:22 #4'
+- name: 'V2Get🛰️ 2026-10-08 17:22 #5'
   type: vless
   server: 188.130.209.197
   port: 443
@@ -1263,7 +1249,7 @@ proxies:
   reality-opts:
     public-key: G4fqCmAVU43HdijV43q-USF8wRgPt8Ld3L7_msJyfTo
     short-id: fc1b2a12a84ea61b
-- name: 'V2Get🛰️ 2026-10-08 17:22 #5'
+- name: 'V2Get🛰️ 2026-10-08 17:22 #6'
   type: vless
   server: 104.194.143.86
   port: 443
@@ -1283,20 +1269,21 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:09
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-09 11:11
-  - V2Get🛰️ 2026-08-09 13:10
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-07 12:54
+  - V2Get🛰️ 2026-10-07 22:55
+  - V2Get🛰️ 2026-10-08 17:22
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-10-08 20:22
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-19 17:09
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-25 22:03
+  - 'V2Get🛰️ 2026-08-25 22:03 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-08-31 11:16
   - V2Get🛰️ 2026-09-06 01:29
   - V2Get🛰️ 2026-09-17 20:55
@@ -1323,7 +1310,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 21:22
   - 'V2Get🛰️ 2026-10-08 21:22 #2'
   - 'V2Get🛰️ 2026-10-08 21:22 #3'
-  - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #3'
   - 'V2Get🛰️ 2026-10-08 21:22 #4'
@@ -1363,14 +1349,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 20:23 #21'
   - 'V2Get🛰️ 2026-10-08 20:23 #22'
   - 'V2Get🛰️ 2026-10-08 20:23 #23'
-  - V2Get🛰️ 2026-10-08 17:22
+  - 'V2Get🛰️ 2026-10-08 17:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #6'
   - 'V2Get🛰️ 2026-10-08 20:22 #7'
   - 'V2Get🛰️ 2026-10-08 20:22 #8'
   - 'V2Get🛰️ 2026-10-08 20:22 #9'
   - 'V2Get🛰️ 2026-10-08 20:22 #10'
   - 'V2Get🛰️ 2026-10-08 20:22 #11'
-  - 'V2Get🛰️ 2026-10-08 17:22 #2'
+  - 'V2Get🛰️ 2026-10-08 17:22 #3'
   - 'V2Get🛰️ 2026-10-08 20:22 #12'
   - 'V2Get🛰️ 2026-10-08 20:22 #13'
   - 'V2Get🛰️ 2026-10-08 20:22 #14'
@@ -1379,29 +1365,30 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 18:22 #2'
   - 'V2Get🛰️ 2026-10-08 18:22 #3'
   - 'V2Get🛰️ 2026-10-08 18:22 #4'
-  - 'V2Get🛰️ 2026-10-08 17:22 #3'
   - 'V2Get🛰️ 2026-10-08 17:22 #4'
   - 'V2Get🛰️ 2026-10-08 17:22 #5'
+  - 'V2Get🛰️ 2026-10-08 17:22 #6'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:09
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-04 01:44
-  - V2Get🛰️ 2026-08-09 11:11
-  - V2Get🛰️ 2026-08-09 13:10
+  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-07 12:54
+  - V2Get🛰️ 2026-10-07 22:55
+  - V2Get🛰️ 2026-10-08 17:22
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-10-08 20:22
   - V2Get🛰️ 2026-08-09 13:11
   - V2Get🛰️ 2026-08-17 23:07
   - V2Get🛰️ 2026-08-19 17:09
   - V2Get🛰️ 2026-08-20 21:13
   - V2Get🛰️ 2026-08-21 18:56
-  - V2Get🛰️ 2026-08-25 22:03
+  - 'V2Get🛰️ 2026-08-25 22:03 #2'
   - V2Get🛰️ 2026-08-27 15:07
   - 'V2Get🛰️ 2026-08-27 15:07 #2'
-  - V2Get🛰️ 2026-08-31 04:15
   - V2Get🛰️ 2026-08-31 11:16
   - V2Get🛰️ 2026-09-06 01:29
   - V2Get🛰️ 2026-09-17 20:55
@@ -1428,7 +1415,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-08 21:22
   - 'V2Get🛰️ 2026-10-08 21:22 #2'
   - 'V2Get🛰️ 2026-10-08 21:22 #3'
-  - V2Get🛰️ 2026-10-08 20:22
   - 'V2Get🛰️ 2026-10-08 20:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #3'
   - 'V2Get🛰️ 2026-10-08 21:22 #4'
@@ -1468,14 +1454,14 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 20:23 #21'
   - 'V2Get🛰️ 2026-10-08 20:23 #22'
   - 'V2Get🛰️ 2026-10-08 20:23 #23'
-  - V2Get🛰️ 2026-10-08 17:22
+  - 'V2Get🛰️ 2026-10-08 17:22 #2'
   - 'V2Get🛰️ 2026-10-08 20:22 #6'
   - 'V2Get🛰️ 2026-10-08 20:22 #7'
   - 'V2Get🛰️ 2026-10-08 20:22 #8'
   - 'V2Get🛰️ 2026-10-08 20:22 #9'
   - 'V2Get🛰️ 2026-10-08 20:22 #10'
   - 'V2Get🛰️ 2026-10-08 20:22 #11'
-  - 'V2Get🛰️ 2026-10-08 17:22 #2'
+  - 'V2Get🛰️ 2026-10-08 17:22 #3'
   - 'V2Get🛰️ 2026-10-08 20:22 #12'
   - 'V2Get🛰️ 2026-10-08 20:22 #13'
   - 'V2Get🛰️ 2026-10-08 20:22 #14'
@@ -1484,9 +1470,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-08 18:22 #2'
   - 'V2Get🛰️ 2026-10-08 18:22 #3'
   - 'V2Get🛰️ 2026-10-08 18:22 #4'
-  - 'V2Get🛰️ 2026-10-08 17:22 #3'
   - 'V2Get🛰️ 2026-10-08 17:22 #4'
   - 'V2Get🛰️ 2026-10-08 17:22 #5'
+  - 'V2Get🛰️ 2026-10-08 17:22 #6'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
