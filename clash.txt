@@ -12,6 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-08-25 22:03
+  type: ss
+  server: 193.29.139.225
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-10-05 15:52
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
 - name: V2Get🛰️ 2026-10-09 14:23
   type: ss
   server: 217.144.105.49
@@ -1027,20 +1048,6 @@ proxies:
     path: /ws/49ade50d-9cd6-81a9-db5d-8e4a7f56930b
     headers:
       Host: 51.75.118.165
-- name: V2Get🛰️ 2026-10-09 00:23
-  type: vless
-  server: nl8.limehub.online
-  port: 443
-  uuid: ce73d2b8-13ea-4b8b-b7f7-8ec9cf7efe1d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nl8.limehub.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: miGe3_kafjYo0ynErSJn15jkhFwbI143sEOD823Wxjc
-    short-id: 65dc600a1bec9726
 - name: 'V2Get🛰️ 2026-10-09 02:22 #11'
   type: vless
   server: ee.edgemedia.lol
@@ -1137,21 +1144,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.pleadcourt.org
-- name: 'V2Get🛰️ 2026-10-09 00:23 #2'
-  type: vless
-  server: 31.76.240.20
-  port: 443
-  uuid: ce73d2b8-13ea-4b8b-b7f7-8ec9cf7efe1d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fi-new.limehub.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SB49zkOFhuB4v-PfpfS-Xdoeb5H7l1FoX9S_efTdQms
-    short-id: cad7b45fa43ce56f
-- name: 'V2Get🛰️ 2026-10-09 00:23 #3'
+- name: V2Get🛰️ 2026-10-09 00:23
   type: vless
   server: apple.limehub.online
   port: 443
@@ -1171,6 +1164,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-09 14:23
   - 'V2Get🛰️ 2026-10-09 14:23 #2'
   - 'V2Get🛰️ 2026-10-09 14:23 #3'
@@ -1260,7 +1255,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-09 02:22 #8'
   - 'V2Get🛰️ 2026-10-09 02:22 #9'
   - 'V2Get🛰️ 2026-10-09 02:22 #10'
-  - V2Get🛰️ 2026-10-09 00:23
   - 'V2Get🛰️ 2026-10-09 02:22 #11'
   - 'V2Get🛰️ 2026-10-09 02:22 #12'
   - 'V2Get🛰️ 2026-10-09 02:22 #13'
@@ -1269,14 +1263,15 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-09 02:22 #16'
   - 'V2Get🛰️ 2026-10-09 02:22 #17'
   - 'V2Get🛰️ 2026-10-09 02:22 #18'
-  - 'V2Get🛰️ 2026-10-09 00:23 #2'
-  - 'V2Get🛰️ 2026-10-09 00:23 #3'
+  - V2Get🛰️ 2026-10-09 00:23
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-05 15:52
   - V2Get🛰️ 2026-10-09 14:23
   - 'V2Get🛰️ 2026-10-09 14:23 #2'
   - 'V2Get🛰️ 2026-10-09 14:23 #3'
@@ -1366,7 +1361,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-09 02:22 #8'
   - 'V2Get🛰️ 2026-10-09 02:22 #9'
   - 'V2Get🛰️ 2026-10-09 02:22 #10'
-  - V2Get🛰️ 2026-10-09 00:23
   - 'V2Get🛰️ 2026-10-09 02:22 #11'
   - 'V2Get🛰️ 2026-10-09 02:22 #12'
   - 'V2Get🛰️ 2026-10-09 02:22 #13'
@@ -1375,8 +1369,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-09 02:22 #16'
   - 'V2Get🛰️ 2026-10-09 02:22 #17'
   - 'V2Get🛰️ 2026-10-09 02:22 #18'
-  - 'V2Get🛰️ 2026-10-09 00:23 #2'
-  - 'V2Get🛰️ 2026-10-09 00:23 #3'
+  - V2Get🛰️ 2026-10-09 00:23
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
