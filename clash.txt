@@ -12,28 +12,37 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:09
+- name: V2Get🛰️ 2026-08-25 22:03
   type: ss
-  server: 82.38.31.3
+  server: 193.29.139.225
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: V2Get🛰️ 2026-10-05 15:52
+  type: vless
+  server: de2.srv.vbuste.ru
+  port: 443
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+- name: V2Get🛰️ 2026-10-09 13:23
+  type: vmess
+  server: 193.164.155.29
+  port: 60392
+  uuid: 5551d2e8-d3d4-42d2-95c8-fb780b4f6e6d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
 - name: V2Get🛰️ 2026-07-27 21:56
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 'V2Get🛰️ 2026-07-27 21:56 #2'
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 'V2Get🛰️ 2026-07-27 21:56 #3'
   type: ss
   server: 82.38.31.176
   port: 8080
@@ -59,7 +68,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: V2Get🛰️ 2026-08-25 22:03
+- name: 'V2Get🛰️ 2026-08-25 22:03 #2'
   type: ss
   server: 193.29.139.147
   port: 8080
@@ -1197,13 +1206,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-05 15:52
+  - V2Get🛰️ 2026-10-09 13:23
   - V2Get🛰️ 2026-07-27 21:56
-  - 'V2Get🛰️ 2026-07-27 21:56 #2'
-  - 'V2Get🛰️ 2026-07-27 21:56 #3'
   - V2Get🛰️ 2026-07-28 14:44
   - V2Get🛰️ 2026-08-08 21:10
-  - V2Get🛰️ 2026-08-25 22:03
+  - 'V2Get🛰️ 2026-08-25 22:03 #2'
   - V2Get🛰️ 2026-09-06 16:30
   - V2Get🛰️ 2026-09-25 14:14
   - V2Get🛰️ 2026-09-26 10:16
@@ -1303,13 +1312,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-05 15:52
+  - V2Get🛰️ 2026-10-09 13:23
   - V2Get🛰️ 2026-07-27 21:56
-  - 'V2Get🛰️ 2026-07-27 21:56 #2'
-  - 'V2Get🛰️ 2026-07-27 21:56 #3'
   - V2Get🛰️ 2026-07-28 14:44
   - V2Get🛰️ 2026-08-08 21:10
-  - V2Get🛰️ 2026-08-25 22:03
+  - 'V2Get🛰️ 2026-08-25 22:03 #2'
   - V2Get🛰️ 2026-09-06 16:30
   - V2Get🛰️ 2026-09-25 14:14
   - V2Get🛰️ 2026-09-26 10:16
