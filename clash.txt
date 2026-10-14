@@ -12,54 +12,97 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 169.40.42.232
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-08 00:55
+  type: trojan
+  server: 146.75.57.238
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl-mitivpn.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-4--vip.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-08 16:22
+  type: trojan
+  server: 167.82.64.46
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: play.google.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-44--vip.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-15 02:35
+  type: vless
+  server: 2.31.10.158
+  port: 2091
+  uuid: b43bdf55-b43d-4fda-8a30-a55373a5fdf5
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-08 18:10
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-15 01:35
   type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: p1tun01.greewebservices.ir
+  port: 38830
+  uuid: b5ee6d22-5bdb-4087-8bcd-0ce1c654aa03
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: play.google.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-08 22:11
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4f
+- name: 'V2Get🛰️ 2026-10-15 01:35 #2'
   type: vless
-  server: 169.40.42.15
+  server: f1.greewebservices.ir
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: b5ee6d22-5bdb-4087-8bcd-0ce1c654aa03
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: xhttp
   tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-09 01:11
-  type: ss
-  server: 158.173.20.208
+  servername: default.ssl.fastly.net
+  client-fingerprint: random
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-10-15 01:34
+  type: vless
+  server: wwww.qarvian.ir
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
   udp: true
+  network: ws
+  tls: true
+  servername: google.com
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-08-09 11:11
   type: vless
   server: 169.40.42.16
@@ -261,7 +304,7 @@ proxies:
   network: ws
   ws-opts:
     path: /github.com/Alvin9999-newpac/fanqiang
-- name: V2Get🛰️ 2026-10-15 01:34
+- name: 'V2Get🛰️ 2026-10-15 01:34 #2'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -274,7 +317,7 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM
     headers:
       Host: pannn1.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-15 01:34 #2'
+- name: 'V2Get🛰️ 2026-10-15 01:34 #3'
   type: vless
   server: 146.75.59.186
   port: 443
@@ -287,19 +330,6 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM
     headers:
       Host: pan2e.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-15 01:34 #3'
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
-  udp: true
-  network: ws
-  tls: true
-  servername: google.com
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM
-    headers:
-      Host: azdddaiji5.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-15 00:35
   type: trojan
   server: 151.101.38.6
@@ -315,7 +345,7 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn--s3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-15 01:35
+- name: 'V2Get🛰️ 2026-10-15 01:35 #3'
   type: vless
   server: p1real4.greewebservices.ir
   port: 1260
@@ -328,7 +358,7 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
     short-id: 9b60d3
-- name: 'V2Get🛰️ 2026-10-15 01:35 #2'
+- name: 'V2Get🛰️ 2026-10-15 01:35 #4'
   type: vless
   server: p11real1.greewebservices.ir
   port: 1020
@@ -341,7 +371,7 @@ proxies:
   reality-opts:
     public-key: GzjL8Jq6iNwatTxuqL9gXElWIUgtOfbbCDaZ_wHG5SY
     short-id: 9b60d3
-- name: 'V2Get🛰️ 2026-10-15 01:35 #3'
+- name: 'V2Get🛰️ 2026-10-15 01:35 #5'
   type: vless
   server: c1.greewebservices.ir
   port: 443
@@ -353,21 +383,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h2
-- name: 'V2Get🛰️ 2026-10-15 01:35 #4'
-  type: vless
-  server: f1.greewebservices.ir
-  port: 443
-  uuid: b5ee6d22-5bdb-4087-8bcd-0ce1c654aa03
-  udp: true
-  network: xhttp
-  tls: true
-  servername: default.ssl.fastly.net
-  client-fingerprint: random
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-10-15 01:35 #5'
+- name: 'V2Get🛰️ 2026-10-15 01:35 #6'
   type: vless
   server: f2.greewebservices.ir
   port: 443
@@ -381,7 +397,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: 'V2Get🛰️ 2026-10-15 01:35 #6'
+- name: 'V2Get🛰️ 2026-10-15 01:35 #7'
   type: vless
   server: p1tun0.greewebservices.ir
   port: 38820
@@ -394,19 +410,6 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
     short-id: 66ded2
-- name: 'V2Get🛰️ 2026-10-15 01:35 #7'
-  type: vless
-  server: p1tun01.greewebservices.ir
-  port: 38830
-  uuid: b5ee6d22-5bdb-4087-8bcd-0ce1c654aa03
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: e3085d4f
 - name: 'V2Get🛰️ 2026-10-15 01:34 #4'
   type: vless
   server: 188.42.89.89
@@ -1214,10 +1217,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-08 18:10
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-09 01:11
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 00:55
+  - V2Get🛰️ 2026-10-08 16:22
+  - V2Get🛰️ 2026-10-15 02:35
+  - V2Get🛰️ 2026-10-15 01:35
+  - 'V2Get🛰️ 2026-10-15 01:35 #2'
+  - V2Get🛰️ 2026-10-15 01:34
   - V2Get🛰️ 2026-08-09 11:11
   - 'V2Get🛰️ 2026-08-09 11:11 #2'
   - V2Get🛰️ 2026-08-09 13:11
@@ -1234,12 +1240,9 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-10 01:23
   - V2Get🛰️ 2026-10-13 01:26
-  - V2Get🛰️ 2026-10-15 01:34
   - 'V2Get🛰️ 2026-10-15 01:34 #2'
   - 'V2Get🛰️ 2026-10-15 01:34 #3'
   - V2Get🛰️ 2026-10-15 00:35
-  - V2Get🛰️ 2026-10-15 01:35
-  - 'V2Get🛰️ 2026-10-15 01:35 #2'
   - 'V2Get🛰️ 2026-10-15 01:35 #3'
   - 'V2Get🛰️ 2026-10-15 01:35 #4'
   - 'V2Get🛰️ 2026-10-15 01:35 #5'
@@ -1319,10 +1322,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-08 18:10
-  - V2Get🛰️ 2026-08-08 22:11
-  - V2Get🛰️ 2026-08-09 01:11
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 00:55
+  - V2Get🛰️ 2026-10-08 16:22
+  - V2Get🛰️ 2026-10-15 02:35
+  - V2Get🛰️ 2026-10-15 01:35
+  - 'V2Get🛰️ 2026-10-15 01:35 #2'
+  - V2Get🛰️ 2026-10-15 01:34
   - V2Get🛰️ 2026-08-09 11:11
   - 'V2Get🛰️ 2026-08-09 11:11 #2'
   - V2Get🛰️ 2026-08-09 13:11
@@ -1339,12 +1345,9 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-10 01:23
   - V2Get🛰️ 2026-10-13 01:26
-  - V2Get🛰️ 2026-10-15 01:34
   - 'V2Get🛰️ 2026-10-15 01:34 #2'
   - 'V2Get🛰️ 2026-10-15 01:34 #3'
   - V2Get🛰️ 2026-10-15 00:35
-  - V2Get🛰️ 2026-10-15 01:35
-  - 'V2Get🛰️ 2026-10-15 01:35 #2'
   - 'V2Get🛰️ 2026-10-15 01:35 #3'
   - 'V2Get🛰️ 2026-10-15 01:35 #4'
   - 'V2Get🛰️ 2026-10-15 01:35 #5'
