@@ -12,21 +12,19 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-10-14 14:34
+  type: vless
+  server: 78.135.77.55
   port: 443
-  password: mitivpn
+  uuid: 6c6be9c5-e364-4053-a8ef-c9c3ec5edd0b
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+  network: tcp
+  tls: true
+  servername: www.akakce.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QWyYs5c2v8Tmna5k3FJA7bcyv-oQQbsREtHclza4pH0
+    short-id: 209d915f3688b110
 - name: V2Get🛰️ 2026-10-10 01:23
   type: vless
   server: 104.18.35.86
@@ -1193,7 +1191,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-14 14:34
   - V2Get🛰️ 2026-10-10 01:23
   - V2Get🛰️ 2026-10-14 00:29
   - V2Get🛰️ 2026-10-08 16:22
@@ -1298,7 +1296,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-14 14:34
   - V2Get🛰️ 2026-10-10 01:23
   - V2Get🛰️ 2026-10-14 00:29
   - V2Get🛰️ 2026-10-08 16:22
