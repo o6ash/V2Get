@@ -12,21 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-08-09 13:11
+  type: vless
+  server: 169.40.42.133
   port: 443
-  password: mitivpn
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
-  sni: global.fastly.com
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+- name: V2Get🛰️ 2026-08-31 04:15
+  type: trojan
+  server: 188.42.145.180
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
   alpn:
   - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+    path: /assignment
+- name: V2Get🛰️ 2026-10-03 20:09
+  type: vless
+  server: 51.89.194.151
+  port: 2053
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
 - name: V2Get🛰️ 2026-10-08 16:22
   type: trojan
   server: 167.82.64.46
@@ -315,34 +340,6 @@ proxies:
     path: /sg-melbi?ed#Telegram---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-10-01 13:07
-  type: vless
-  server: 93.89.220.37
-  port: 443
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ibm.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-- name: V2Get🛰️ 2026-10-01 16:07
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-04 16:51
   type: trojan
   server: 104.21.37.56
@@ -1008,7 +1005,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-14 13:31
   - 'V2Get🛰️ 2026-10-14 13:31 #2'
@@ -1033,8 +1032,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 21:55
   - 'V2Get🛰️ 2026-10-14 11:32 #3'
   - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-10-01 13:07
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-04 16:51
   - V2Get🛰️ 2026-10-07 12:54
   - V2Get🛰️ 2026-10-07 23:55
@@ -1092,7 +1089,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-08-09 13:11
+  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-14 13:31
   - 'V2Get🛰️ 2026-10-14 13:31 #2'
@@ -1117,8 +1116,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-07 21:55
   - 'V2Get🛰️ 2026-10-14 11:32 #3'
   - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-10-01 13:07
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-04 16:51
   - V2Get🛰️ 2026-10-07 12:54
   - V2Get🛰️ 2026-10-07 23:55
