@@ -12,6 +12,47 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-08 00:55
+  type: trojan
+  server: 146.75.57.238
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ssl-mitivpn.fastly.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-4--vip.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-13 05:26
+  type: vless
+  server: app-ms-72.next-gen-shopping.com
+  port: 443
+  uuid: 090da6a8-69f7-4b49-8af9-a8f8bfb07f17
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: assets-ms-72.next-gen-shopping.com
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: yuWkqVdfhtZTbQbgOWXfvukhdwCe2vVy7-GWxVfirnQ
+    short-id: 6f24fe57975cc9b6
+- name: V2Get🛰️ 2026-10-07 22:55
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  network: ws
+  tls: true
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
 - name: V2Get🛰️ 2026-10-14 10:31
   type: vless
   server: 104.21.91.244
@@ -137,34 +178,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-09-30 15:05
-  type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  network: ws
-  tls: true
-  servername: sub.merky.top
-  client-fingerprint: firefox
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: V2Get🛰️ 2026-10-01 16:07
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-06 20:53
   type: ss
   server: c3.nastuh.link
@@ -172,19 +185,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: y7KeRTzmH0vXT2kp
   udp: true
-- name: V2Get🛰️ 2026-10-07 22:55
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  network: ws
-  tls: true
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
 - name: V2Get🛰️ 2026-10-07 23:55
   type: vless
   server: 31.77.114.114
@@ -1238,6 +1238,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-08 00:55
+  - V2Get🛰️ 2026-10-13 05:26
+  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-15 16:39
   - 'V2Get🛰️ 2026-10-15 16:39 #2'
@@ -1250,10 +1253,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-14 23:34
   - V2Get🛰️ 2026-10-15 15:41
   - V2Get🛰️ 2026-10-14 11:34
-  - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-06 20:53
-  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 09:21
   - V2Get🛰️ 2026-10-12 23:26
@@ -1343,6 +1343,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-08 00:55
+  - V2Get🛰️ 2026-10-13 05:26
+  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-15 16:39
   - 'V2Get🛰️ 2026-10-15 16:39 #2'
@@ -1355,10 +1358,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-14 23:34
   - V2Get🛰️ 2026-10-15 15:41
   - V2Get🛰️ 2026-10-14 11:34
-  - V2Get🛰️ 2026-09-30 15:05
-  - V2Get🛰️ 2026-10-01 16:07
   - V2Get🛰️ 2026-10-06 20:53
-  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-07 23:55
   - V2Get🛰️ 2026-10-08 09:21
   - V2Get🛰️ 2026-10-12 23:26
