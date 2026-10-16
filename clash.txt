@@ -12,27 +12,29 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-09-18 19:57
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: V2Get🛰️ 2026-10-09 14:23
-  type: vless
-  server: cf.090227.xyz
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  password: mitivpn
   udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   network: ws
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: lucasjow.us.ci
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-17 00:21
+  type: vless
+  server: 91.99.174.72
+  port: 2091
+  uuid: 099894db-0428-4852-b0eb-af7e983796e9
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-14 00:30
   type: vless
   server: host.taghvimtime.ir
@@ -1201,8 +1203,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-09-18 19:57
-  - V2Get🛰️ 2026-10-09 14:23
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-17 00:21
   - V2Get🛰️ 2026-10-14 00:30
   - V2Get🛰️ 2026-10-14 19:34
   - 'V2Get🛰️ 2026-10-14 19:34 #2'
@@ -1307,8 +1309,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-09-18 19:57
-  - V2Get🛰️ 2026-10-09 14:23
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-17 00:21
   - V2Get🛰️ 2026-10-14 00:30
   - V2Get🛰️ 2026-10-14 19:34
   - 'V2Get🛰️ 2026-10-14 19:34 #2'
