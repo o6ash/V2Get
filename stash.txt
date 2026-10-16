@@ -12,18 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-14 18:33
+- name: V2Get🛰️ 2026-08-05 11:19
   type: vless
-  server: 23.81.36.148
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  server: 159.89.87.21
+  port: 28190
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: www.forvo.com
+  servername: aws.amazon.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+- name: V2Get🛰️ 2026-10-15 02:36
+  type: vless
+  server: dnld.chaqalli.com
+  port: 8180
+  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-10-15 09:37
+  type: vless
+  server: 198.23.169.170
+  port: 443
+  uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: download-porter.hoyoverse.com
+  reality-opts:
+    public-key: FOl1qibUWpTggolWp30DD7VQ9_xKHZPEPVQs0sQs3gI
+    short-id: 2128e27b
 - name: V2Get🛰️ 2026-10-16 23:22
   type: vless
   server: 185.243.99.100
@@ -183,34 +207,6 @@ proxies:
     path: ws/?ed=2048/@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN/?2048
     headers:
       Host: rb24.ir
-- name: V2Get🛰️ 2026-10-14 22:33
-  type: vless
-  server: 82.202.178.132
-  port: 443
-  uuid: 03218c7c-acd1-45c0-87a1-9cc77101c6b4
-  udp: true
-  network: grpc
-  tls: true
-  servername: mobile-api-12.sova.toys
-  reality-opts:
-    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
-    short-id: 70c20a2f5a7d542e
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
-- name: V2Get🛰️ 2026-10-15 00:34
-  type: vless
-  server: swe.wizard.select
-  port: 443
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: swe.wizard.select
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
 - name: V2Get🛰️ 2026-10-15 18:41
   type: vmess
   server: 120.48.133.162
@@ -1031,7 +1027,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-10-14 18:33
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-10-15 02:36
+  - V2Get🛰️ 2026-10-15 09:37
   - V2Get🛰️ 2026-10-16 23:22
   - 'V2Get🛰️ 2026-10-16 23:22 #2'
   - 'V2Get🛰️ 2026-10-16 23:22 #3'
@@ -1045,8 +1043,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-16 11:46 #3'
   - V2Get🛰️ 2026-10-16 14:47
   - V2Get🛰️ 2026-10-16 14:49
-  - V2Get🛰️ 2026-10-14 22:33
-  - V2Get🛰️ 2026-10-15 00:34
   - V2Get🛰️ 2026-10-15 18:41
   - V2Get🛰️ 2026-10-16 13:50
   - V2Get🛰️ 2026-10-16 23:19
@@ -1119,7 +1115,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-10-14 18:33
+  - V2Get🛰️ 2026-08-05 11:19
+  - V2Get🛰️ 2026-10-15 02:36
+  - V2Get🛰️ 2026-10-15 09:37
   - V2Get🛰️ 2026-10-16 23:22
   - 'V2Get🛰️ 2026-10-16 23:22 #2'
   - 'V2Get🛰️ 2026-10-16 23:22 #3'
@@ -1133,8 +1131,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-16 11:46 #3'
   - V2Get🛰️ 2026-10-16 14:47
   - V2Get🛰️ 2026-10-16 14:49
-  - V2Get🛰️ 2026-10-14 22:33
-  - V2Get🛰️ 2026-10-15 00:34
   - V2Get🛰️ 2026-10-15 18:41
   - V2Get🛰️ 2026-10-16 13:50
   - V2Get🛰️ 2026-10-16 23:19
