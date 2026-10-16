@@ -12,21 +12,27 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-07-28 14:44
+  type: ss
+  server: 82.38.31.162
   port: 443
-  password: mitivpn
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-08-25 22:03
+  type: ss
+  server: 193.29.139.225
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-10-16 19:13
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: V2Get🛰️ 2026-10-08 16:22
   type: trojan
   server: 167.82.64.46
@@ -274,33 +280,6 @@ proxies:
   reality-opts:
     public-key: z-jRj-DGob9oKuUIglxJ84X4rAOlytlobr_A5ea7iCY
     short-id: 2d44aa61
-- name: V2Get🛰️ 2026-10-07 22:55
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  network: ws
-  tls: true
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: V2Get🛰️ 2026-10-08 00:55
-  type: trojan
-  server: 146.75.57.238
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ssl-mitivpn.fastly.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn-4--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-16 14:49
   type: vless
   server: 199.232.78.159
@@ -1222,7 +1201,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-07-28 14:44
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-16 19:13
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-15 00:35
   - V2Get🛰️ 2026-10-15 01:34
@@ -1244,8 +1225,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-16 19:07
   - V2Get🛰️ 2026-10-16 19:06
-  - V2Get🛰️ 2026-10-07 22:55
-  - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-16 14:49
   - 'V2Get🛰️ 2026-10-16 14:49 #2'
   - V2Get🛰️ 2026-10-16 15:50
@@ -1328,7 +1307,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-07-28 14:44
+  - V2Get🛰️ 2026-08-25 22:03
+  - V2Get🛰️ 2026-10-16 19:13
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-15 00:35
   - V2Get🛰️ 2026-10-15 01:34
@@ -1350,8 +1331,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-16 19:07
   - V2Get🛰️ 2026-10-16 19:06
-  - V2Get🛰️ 2026-10-07 22:55
-  - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-16 14:49
   - 'V2Get🛰️ 2026-10-16 14:49 #2'
   - V2Get🛰️ 2026-10-16 15:50
