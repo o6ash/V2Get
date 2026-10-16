@@ -12,47 +12,51 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-08 16:22
-  type: trojan
-  server: 167.82.64.46
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: play.google.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn-44--vip.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-10 01:23
+- name: V2Get🛰️ 2026-10-16 21:16
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /sg-melbi?ed#Telegram---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-10-15 00:35
-  type: trojan
-  server: 151.101.38.6
+  server: 151.101.39.60
   port: 443
-  password: mitivpn
+  uuid: a7cb5ab8-46c1-4d9a-b260-8c2a8c16f49f
   udp: true
-  sni: www.firefox.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: mitivpn--s3.global.ssl.fastly.net
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-16 21:16 #2'
+  type: vless
+  server: 43.249.72.254
+  port: 443
+  uuid: a7cb5ab8-46c1-4d9a-b260-8c2a8c16f49f
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-16 21:16 #3'
+  type: vless
+  server: 43.249.72.255
+  port: 443
+  uuid: a7cb5ab8-46c1-4d9a-b260-8c2a8c16f49f
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-16 21:13
   type: vless
   server: edge-lab-b.10media.top
@@ -1177,9 +1181,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-10-08 16:22
-  - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-10-15 00:35
+  - V2Get🛰️ 2026-10-16 21:16
+  - 'V2Get🛰️ 2026-10-16 21:16 #2'
+  - 'V2Get🛰️ 2026-10-16 21:16 #3'
   - V2Get🛰️ 2026-10-16 21:13
   - 'V2Get🛰️ 2026-10-16 21:13 #2'
   - 'V2Get🛰️ 2026-10-16 21:13 #3'
@@ -1283,9 +1287,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-10-08 16:22
-  - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-10-15 00:35
+  - V2Get🛰️ 2026-10-16 21:16
+  - 'V2Get🛰️ 2026-10-16 21:16 #2'
+  - 'V2Get🛰️ 2026-10-16 21:16 #3'
   - V2Get🛰️ 2026-10-16 21:13
   - 'V2Get🛰️ 2026-10-16 21:13 #2'
   - 'V2Get🛰️ 2026-10-16 21:13 #3'
