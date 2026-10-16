@@ -12,33 +12,46 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-08-03 13:35
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-- name: V2Get🛰️ 2026-08-31 04:15
+- name: V2Get🛰️ 2026-07-26 03:08
   type: trojan
-  server: 188.42.145.180
+  server: 199.232.78.160
   port: 443
-  password: humanity
+  password: mitivpn
   udp: true
-  sni: www.volumeroot.com
+  sni: global.fastly.com
   alpn:
   - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-16 11:46
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 6c66a1c2-ddb8-4329-96fa-40eabcb9a8d6
+  udp: true
+  network: xhttp
+  tls: true
+  servername: speedtest.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: 'V2Get🛰️ 2026-10-16 11:46 #2'
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
+  udp: true
+  network: ws
+  tls: true
+  servername: google.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-07 11:54
   type: vless
   server: 177.1.192.74
@@ -251,7 +264,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: IdBspBchqpInOZFK
   udp: true
-- name: V2Get🛰️ 2026-10-16 11:46
+- name: 'V2Get🛰️ 2026-10-16 11:46 #3'
   type: vless
   server: app-ms-33.ecom-ai-search.com
   port: 443
@@ -373,7 +386,7 @@ proxies:
   reality-opts:
     public-key: kdPUWBuYZw44o3trlZ--z8oqtOJIU2WCHEB7chLwqmM
     short-id: 27fc0e146ec37523
-- name: 'V2Get🛰️ 2026-10-16 11:46 #2'
+- name: 'V2Get🛰️ 2026-10-16 11:46 #4'
   type: vless
   server: 146.75.59.186
   port: 443
@@ -386,19 +399,6 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_2.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-16 11:46 #3'
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: d1cafeeb-2861-4d1e-a462-38f16442f5b2
-  udp: true
-  network: ws
-  tls: true
-  servername: google.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-16 19:16
   type: vless
   server: 72.56.241.230
@@ -413,7 +413,7 @@ proxies:
     short-id: aabbccdd
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-- name: 'V2Get🛰️ 2026-10-16 11:46 #4'
+- name: 'V2Get🛰️ 2026-10-16 11:46 #5'
   type: vless
   server: wwww.qarvian.ir
   port: 443
@@ -1198,8 +1198,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-16 11:46
+  - 'V2Get🛰️ 2026-10-16 11:46 #2'
   - V2Get🛰️ 2026-10-07 11:54
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-16 11:45
@@ -1218,7 +1219,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-15 09:37
   - 'V2Get🛰️ 2026-10-15 09:37 #2'
   - V2Get🛰️ 2026-10-15 15:41
-  - V2Get🛰️ 2026-10-16 11:46
+  - 'V2Get🛰️ 2026-10-16 11:46 #3'
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-16 21:18
   - 'V2Get🛰️ 2026-10-16 21:18 #2'
@@ -1228,10 +1229,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-16 21:18 #6'
   - 'V2Get🛰️ 2026-10-16 21:18 #7'
   - 'V2Get🛰️ 2026-10-16 21:19 #2'
-  - 'V2Get🛰️ 2026-10-16 11:46 #2'
-  - 'V2Get🛰️ 2026-10-16 11:46 #3'
-  - V2Get🛰️ 2026-10-16 19:16
   - 'V2Get🛰️ 2026-10-16 11:46 #4'
+  - V2Get🛰️ 2026-10-16 19:16
+  - 'V2Get🛰️ 2026-10-16 11:46 #5'
   - 'V2Get🛰️ 2026-10-16 19:16 #2'
   - V2Get🛰️ 2026-10-15 00:35
   - 'V2Get🛰️ 2026-10-16 19:16 #3'
@@ -1304,8 +1304,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-08-03 13:35
-  - V2Get🛰️ 2026-08-31 04:15
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-16 11:46
+  - 'V2Get🛰️ 2026-10-16 11:46 #2'
   - V2Get🛰️ 2026-10-07 11:54
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-16 11:45
@@ -1324,7 +1325,7 @@ proxy-groups:
   - V2Get🛰️ 2026-10-15 09:37
   - 'V2Get🛰️ 2026-10-15 09:37 #2'
   - V2Get🛰️ 2026-10-15 15:41
-  - V2Get🛰️ 2026-10-16 11:46
+  - 'V2Get🛰️ 2026-10-16 11:46 #3'
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-16 21:18
   - 'V2Get🛰️ 2026-10-16 21:18 #2'
@@ -1334,10 +1335,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-16 21:18 #6'
   - 'V2Get🛰️ 2026-10-16 21:18 #7'
   - 'V2Get🛰️ 2026-10-16 21:19 #2'
-  - 'V2Get🛰️ 2026-10-16 11:46 #2'
-  - 'V2Get🛰️ 2026-10-16 11:46 #3'
-  - V2Get🛰️ 2026-10-16 19:16
   - 'V2Get🛰️ 2026-10-16 11:46 #4'
+  - V2Get🛰️ 2026-10-16 19:16
+  - 'V2Get🛰️ 2026-10-16 11:46 #5'
   - 'V2Get🛰️ 2026-10-16 19:16 #2'
   - V2Get🛰️ 2026-10-15 00:35
   - 'V2Get🛰️ 2026-10-16 19:16 #3'
