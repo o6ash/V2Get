@@ -12,19 +12,50 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 14:50
+- name: V2Get🛰️ 2026-07-26 03:08
   type: trojan
-  server: 188.114.97.6
+  server: 199.232.78.160
   port: 443
-  password: humanity
+  password: mitivpn
   udp: true
-  sni: www.calmloud.com
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: www.calmloud.com
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-15 00:35
+  type: trojan
+  server: 151.101.38.6
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: www.firefox.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn--s3.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-08 16:22
+  type: trojan
+  server: 167.82.64.46
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: play.google.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-44--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-08-03 13:35
   type: vless
   server: 169.40.42.232
@@ -166,35 +197,6 @@ proxies:
     path: ws/?ed=2048/@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN/?2048
     headers:
       Host: rb24.ir
-- name: V2Get🛰️ 2026-10-15 00:35
-  type: trojan
-  server: 151.101.38.6
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: www.firefox.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn--s3.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-08 16:22
-  type: trojan
-  server: 167.82.64.46
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: play.google.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn-44--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-08 00:55
   type: trojan
   server: 146.75.57.238
@@ -1194,7 +1196,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-15 00:35
+  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-08-03 13:35
   - V2Get🛰️ 2026-10-07 11:54
   - V2Get🛰️ 2026-10-16 11:45
@@ -1206,8 +1210,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-25 22:03
   - 'V2Get🛰️ 2026-10-07 11:54 #2'
   - V2Get🛰️ 2026-10-16 02:42
-  - V2Get🛰️ 2026-10-15 00:35
-  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-08-26 22:06
@@ -1298,7 +1300,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-15 00:35
+  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-08-03 13:35
   - V2Get🛰️ 2026-10-07 11:54
   - V2Get🛰️ 2026-10-16 11:45
@@ -1310,8 +1314,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-25 22:03
   - 'V2Get🛰️ 2026-10-07 11:54 #2'
   - V2Get🛰️ 2026-10-16 02:42
-  - V2Get🛰️ 2026-10-15 00:35
-  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-08-26 22:06
