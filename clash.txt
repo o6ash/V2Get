@@ -12,21 +12,51 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
+- name: V2Get🛰️ 2026-10-16 11:47
+  type: vless
+  server: 151.101.39.60
   port: 443
-  password: mitivpn
+  uuid: e2e8a713-342d-4d4d-9159-03c3fcc92374
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
   network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    path: /
     headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-16 11:47 #2'
+  type: vless
+  server: 43.249.72.254
+  port: 443
+  uuid: e2e8a713-342d-4d4d-9159-03c3fcc92374
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-16 11:47 #3'
+  type: vless
+  server: 43.249.72.255
+  port: 443
+  uuid: e2e8a713-342d-4d4d-9159-03c3fcc92374
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-16 11:46
   type: vless
   server: 199.232.78.159
@@ -215,13 +245,6 @@ proxies:
   reality-opts:
     public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
     short-id: e88cb983f3c97528
-- name: V2Get🛰️ 2026-08-25 22:03
-  type: ss
-  server: 193.29.139.147
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
 - name: 'V2Get🛰️ 2026-10-07 11:54 #2'
   type: vless
   server: 31.76.35.27
@@ -303,20 +326,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.pleadcourt.org
-- name: V2Get🛰️ 2026-08-21 23:57
-  type: vless
-  server: 169.40.42.225
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-07 22:55
   type: vless
   server: 188.114.97.6
@@ -1207,7 +1216,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-16 11:47
+  - 'V2Get🛰️ 2026-10-16 11:47 #2'
+  - 'V2Get🛰️ 2026-10-16 11:47 #3'
   - V2Get🛰️ 2026-10-16 11:46
   - 'V2Get🛰️ 2026-10-16 11:46 #2'
   - 'V2Get🛰️ 2026-10-16 11:46 #3'
@@ -1222,7 +1233,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-15 11:38
   - 'V2Get🛰️ 2026-10-15 11:38 #2'
   - V2Get🛰️ 2026-10-01 13:07
-  - V2Get🛰️ 2026-08-25 22:03
   - 'V2Get🛰️ 2026-10-07 11:54 #2'
   - V2Get🛰️ 2026-10-16 02:42
   - V2Get🛰️ 2026-10-08 00:55
@@ -1230,7 +1240,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 22:06
   - V2Get🛰️ 2026-09-18 19:57
   - V2Get🛰️ 2026-09-07 20:34
-  - V2Get🛰️ 2026-08-21 23:57
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-13 01:26
   - V2Get🛰️ 2026-10-10 01:23
@@ -1312,7 +1321,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-16 11:47
+  - 'V2Get🛰️ 2026-10-16 11:47 #2'
+  - 'V2Get🛰️ 2026-10-16 11:47 #3'
   - V2Get🛰️ 2026-10-16 11:46
   - 'V2Get🛰️ 2026-10-16 11:46 #2'
   - 'V2Get🛰️ 2026-10-16 11:46 #3'
@@ -1327,7 +1338,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-15 11:38
   - 'V2Get🛰️ 2026-10-15 11:38 #2'
   - V2Get🛰️ 2026-10-01 13:07
-  - V2Get🛰️ 2026-08-25 22:03
   - 'V2Get🛰️ 2026-10-07 11:54 #2'
   - V2Get🛰️ 2026-10-16 02:42
   - V2Get🛰️ 2026-10-08 00:55
@@ -1335,7 +1345,6 @@ proxy-groups:
   - V2Get🛰️ 2026-08-26 22:06
   - V2Get🛰️ 2026-09-18 19:57
   - V2Get🛰️ 2026-09-07 20:34
-  - V2Get🛰️ 2026-08-21 23:57
   - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-13 01:26
   - V2Get🛰️ 2026-10-10 01:23
