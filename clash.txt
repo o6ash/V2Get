@@ -12,22 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-16 12:46
+  type: ss
+  server: 94.184.42.88
+  port: 8880
+  cipher: chacha20-ietf-poly1305
+  password: pmhhnyzwdm66q8cw
+  udp: true
+- name: 'V2Get🛰️ 2026-10-16 12:46 #2'
   type: vless
   server: 31.76.227.60
   port: 443
@@ -41,7 +33,7 @@ proxies:
   reality-opts:
     public-key: CcMEJ-JOS4clB3gXbc6wXgzkiJQbyNpKY90I8B6AqyU
     short-id: 4c188683e2c14a3c
-- name: 'V2Get🛰️ 2026-10-16 12:46 #2'
+- name: 'V2Get🛰️ 2026-10-16 12:46 #3'
   type: vless
   server: app-ss-48.shopping-spb.com
   port: 443
@@ -126,7 +118,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   grpc-opts:
     grpc-service-name: GunService
-- name: 'V2Get🛰️ 2026-10-16 12:46 #3'
+- name: 'V2Get🛰️ 2026-10-16 12:46 #4'
   type: vless
   server: 172.67.155.65
   port: 2053
@@ -1239,15 +1231,15 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-10-16 12:46
   - 'V2Get🛰️ 2026-10-16 12:46 #2'
+  - 'V2Get🛰️ 2026-10-16 12:46 #3'
   - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-15 00:35
   - V2Get🛰️ 2026-10-16 11:46
   - V2Get🛰️ 2026-10-10 01:23
-  - 'V2Get🛰️ 2026-10-16 12:46 #3'
+  - 'V2Get🛰️ 2026-10-16 12:46 #4'
   - V2Get🛰️ 2026-10-16 11:47
   - 'V2Get🛰️ 2026-10-16 11:47 #2'
   - 'V2Get🛰️ 2026-10-10 01:23 #2'
@@ -1345,15 +1337,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-10-16 12:46
   - 'V2Get🛰️ 2026-10-16 12:46 #2'
+  - 'V2Get🛰️ 2026-10-16 12:46 #3'
   - V2Get🛰️ 2026-10-08 00:55
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-15 00:35
   - V2Get🛰️ 2026-10-16 11:46
   - V2Get🛰️ 2026-10-10 01:23
-  - 'V2Get🛰️ 2026-10-16 12:46 #3'
+  - 'V2Get🛰️ 2026-10-16 12:46 #4'
   - V2Get🛰️ 2026-10-16 11:47
   - 'V2Get🛰️ 2026-10-16 11:47 #2'
   - 'V2Get🛰️ 2026-10-10 01:23 #2'
