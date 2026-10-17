@@ -12,19 +12,15 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 14:50
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-10-17 18:29
+  type: vmess
+  server: 94.249.244.36
+  port: 9090
+  uuid: e6a56d01-3739-4f42-9882-cf9f78c93934
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.calmloud.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
+  network: tcp
 - name: V2Get🛰️ 2026-07-30 11:01
   type: trojan
   server: www.speedtest.net
@@ -1236,7 +1232,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-10-17 18:29
   - V2Get🛰️ 2026-07-30 11:01
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-17 14:29
@@ -1342,7 +1338,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-10-17 18:29
   - V2Get🛰️ 2026-07-30 11:01
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-17 14:29
