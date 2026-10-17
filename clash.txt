@@ -12,16 +12,49 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-27 21:55
-  type: trojan
-  server: 45.80.111.7
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-10-17 10:29
+  type: vless
+  server: api.shakhle.ir
+  port: 2082
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
   udp: true
-  sni: www.calmlunch.com
+  network: httpupgrade
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-10-17 12:29
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  udp: true
   network: ws
+  tls: true
+  servername: cdn.topingr.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /assignment
+    path: /gropcdn
+    headers:
+      Host: cdn.topingr.ir
+- name: V2Get🛰️ 2026-10-17 11:30
+  type: vless
+  server: api.onlinernet.ir
+  port: 2082
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
+  udp: true
+  network: httpupgrade
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-10-17 11:30 #2'
+  type: vless
+  server: api2.onlinernet.ir
+  port: 8880
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
+  udp: true
+  network: httpupgrade
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-08-25 22:04
   type: vless
   server: 206.71.158.125
@@ -582,7 +615,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: wMDoEcxGxsmokU4dKZnWKQ
   udp: true
-- name: V2Get🛰️ 2026-10-17 12:29
+- name: 'V2Get🛰️ 2026-10-17 12:29 #2'
   type: vless
   server: de-allnet.onlinernet.ir
   port: 22000
@@ -596,7 +629,7 @@ proxies:
   reality-opts:
     public-key: IffRRgkO2Kn06y1prY-NT2TfW-Ezm_RBi__F_jhKoSw
     short-id: 1b0fa065866978d2
-- name: 'V2Get🛰️ 2026-10-17 12:29 #2'
+- name: 'V2Get🛰️ 2026-10-17 12:29 #3'
   type: vless
   server: ger-allnet.onlinernet.ir
   port: 22000
@@ -610,22 +643,6 @@ proxies:
   reality-opts:
     public-key: IffRRgkO2Kn06y1prY-NT2TfW-Ezm_RBi__F_jhKoSw
     short-id: 1b0fa065866978d2
-- name: 'V2Get🛰️ 2026-10-17 12:29 #3'
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.topingr.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
 - name: 'V2Get🛰️ 2026-10-17 12:29 #4'
   type: vless
   server: 199.232.78.199
@@ -713,7 +730,7 @@ proxies:
     path: ws/?ed=2048/@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN@GHOFLSHCAN/?2048
     headers:
       Host: rb24.ir
-- name: V2Get🛰️ 2026-10-17 10:29
+- name: 'V2Get🛰️ 2026-10-17 10:29 #2'
   type: vless
   server: avr.rlrlco.ir
   port: 443
@@ -723,7 +740,7 @@ proxies:
   tls: true
   servername: play.google.com
   client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 10:29 #2'
+- name: 'V2Get🛰️ 2026-10-17 10:29 #3'
   type: vless
   server: tulip.amydoodles.com
   port: 443
@@ -733,7 +750,7 @@ proxies:
   tls: true
   servername: google.com
   client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 10:29 #3'
+- name: 'V2Get🛰️ 2026-10-17 10:29 #4'
   type: vless
   server: pp-fx2.firelinkservers.ir
   port: 443
@@ -1059,24 +1076,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-17 11:30
-  type: vless
-  server: api2.onlinernet.ir
-  port: 8880
-  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
-  udp: true
-  network: httpupgrade
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-10-17 11:30 #2'
-  type: vless
-  server: api.onlinernet.ir
-  port: 2082
-  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
-  udp: true
-  network: httpupgrade
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-17 11:29
   type: vmess
   server: 94.249.244.36
@@ -1086,22 +1085,9 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-10-17 10:29 #4'
-  type: vless
-  server: 89.169.45.162
-  port: 8443
-  uuid: c96f941e-dd8a-00e6-89d5-740b79202ed0
-  udp: true
-  network: tcp
-  tls: true
-  servername: x5club.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
-    short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #5'
   type: vless
-  server: 200.165.236.141
+  server: 89.169.45.162
   port: 8443
   uuid: c96f941e-dd8a-00e6-89d5-740b79202ed0
   udp: true
@@ -1114,7 +1100,7 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #6'
   type: vless
-  server: 200.165.236.167
+  server: 200.165.236.141
   port: 8443
   uuid: c96f941e-dd8a-00e6-89d5-740b79202ed0
   udp: true
@@ -1127,7 +1113,7 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #7'
   type: vless
-  server: 95.181.170.25
+  server: 200.165.236.167
   port: 8443
   uuid: c96f941e-dd8a-00e6-89d5-740b79202ed0
   udp: true
@@ -1140,9 +1126,9 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #8'
   type: vless
-  server: 209.182.100.215
+  server: 95.181.170.25
   port: 8443
-  uuid: c96f941e-dd8a-0082-89d5-740b79202ed0
+  uuid: c96f941e-dd8a-00e6-89d5-740b79202ed0
   udp: true
   network: tcp
   tls: true
@@ -1153,7 +1139,7 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #9'
   type: vless
-  server: 89.169.45.162
+  server: 209.182.100.215
   port: 8443
   uuid: c96f941e-dd8a-0082-89d5-740b79202ed0
   udp: true
@@ -1166,9 +1152,9 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #10'
   type: vless
-  server: 31.76.71.48
+  server: 89.169.45.162
   port: 8443
-  uuid: c96f941e-dd8a-006e-89d5-740b79202ed0
+  uuid: c96f941e-dd8a-0082-89d5-740b79202ed0
   udp: true
   network: tcp
   tls: true
@@ -1179,7 +1165,7 @@ proxies:
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #11'
   type: vless
-  server: 89.169.45.162
+  server: 31.76.71.48
   port: 8443
   uuid: c96f941e-dd8a-006e-89d5-740b79202ed0
   udp: true
@@ -1194,7 +1180,7 @@ proxies:
   type: vless
   server: 89.169.45.162
   port: 8443
-  uuid: c96f941e-dd8a-4599-89d5-740b79202ed0
+  uuid: c96f941e-dd8a-006e-89d5-740b79202ed0
   udp: true
   network: tcp
   tls: true
@@ -1204,6 +1190,19 @@ proxies:
     public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
     short-id: 187eea0acfb7f778
 - name: 'V2Get🛰️ 2026-10-17 10:29 #13'
+  type: vless
+  server: 89.169.45.162
+  port: 8443
+  uuid: c96f941e-dd8a-4599-89d5-740b79202ed0
+  udp: true
+  network: tcp
+  tls: true
+  servername: x5club.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
+    short-id: 187eea0acfb7f778
+- name: 'V2Get🛰️ 2026-10-17 10:29 #14'
   type: vless
   server: 31.76.71.48
   port: 8443
@@ -1216,7 +1215,7 @@ proxies:
   reality-opts:
     public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
     short-id: 187eea0acfb7f778
-- name: 'V2Get🛰️ 2026-10-17 10:29 #14'
+- name: 'V2Get🛰️ 2026-10-17 10:29 #15'
   type: vless
   server: entry6.chick-chirik.com
   port: 443
@@ -1230,7 +1229,7 @@ proxies:
   reality-opts:
     public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
     short-id: 89e0494514ec
-- name: 'V2Get🛰️ 2026-10-17 10:29 #15'
+- name: 'V2Get🛰️ 2026-10-17 10:29 #16'
   type: vmess
   server: 153.52.92.39
   port: 2095
@@ -1245,7 +1244,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-10-17 10:29
+  - V2Get🛰️ 2026-10-17 12:29
+  - V2Get🛰️ 2026-10-17 11:30
+  - 'V2Get🛰️ 2026-10-17 11:30 #2'
   - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-28 02:21
@@ -1292,7 +1294,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 03:29
   - V2Get🛰️ 2026-10-17 10:30
   - 'V2Get🛰️ 2026-10-17 13:30 #5'
-  - V2Get🛰️ 2026-10-17 12:29
   - 'V2Get🛰️ 2026-10-17 12:29 #2'
   - 'V2Get🛰️ 2026-10-17 12:29 #3'
   - 'V2Get🛰️ 2026-10-17 12:29 #4'
@@ -1302,9 +1303,9 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 13:29
   - 'V2Get🛰️ 2026-10-17 13:29 #2'
   - 'V2Get🛰️ 2026-10-17 03:29 #4'
-  - V2Get🛰️ 2026-10-17 10:29
   - 'V2Get🛰️ 2026-10-17 10:29 #2'
   - 'V2Get🛰️ 2026-10-17 10:29 #3'
+  - 'V2Get🛰️ 2026-10-17 10:29 #4'
   - V2Get🛰️ 2026-10-16 19:11
   - V2Get🛰️ 2026-10-16 21:17
   - 'V2Get🛰️ 2026-10-16 21:17 #2'
@@ -1330,10 +1331,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 12:29 #24'
   - 'V2Get🛰️ 2026-10-17 12:29 #25'
   - 'V2Get🛰️ 2026-10-17 12:29 #26'
-  - V2Get🛰️ 2026-10-17 11:30
-  - 'V2Get🛰️ 2026-10-17 11:30 #2'
   - V2Get🛰️ 2026-10-17 11:29
-  - 'V2Get🛰️ 2026-10-17 10:29 #4'
   - 'V2Get🛰️ 2026-10-17 10:29 #5'
   - 'V2Get🛰️ 2026-10-17 10:29 #6'
   - 'V2Get🛰️ 2026-10-17 10:29 #7'
@@ -1345,13 +1343,17 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 10:29 #13'
   - 'V2Get🛰️ 2026-10-17 10:29 #14'
   - 'V2Get🛰️ 2026-10-17 10:29 #15'
+  - 'V2Get🛰️ 2026-10-17 10:29 #16'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-27 21:55
+  - V2Get🛰️ 2026-10-17 10:29
+  - V2Get🛰️ 2026-10-17 12:29
+  - V2Get🛰️ 2026-10-17 11:30
+  - 'V2Get🛰️ 2026-10-17 11:30 #2'
   - V2Get🛰️ 2026-08-25 22:04
   - V2Get🛰️ 2026-09-24 02:09
   - V2Get🛰️ 2026-09-28 02:21
@@ -1398,7 +1400,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 03:29
   - V2Get🛰️ 2026-10-17 10:30
   - 'V2Get🛰️ 2026-10-17 13:30 #5'
-  - V2Get🛰️ 2026-10-17 12:29
   - 'V2Get🛰️ 2026-10-17 12:29 #2'
   - 'V2Get🛰️ 2026-10-17 12:29 #3'
   - 'V2Get🛰️ 2026-10-17 12:29 #4'
@@ -1408,9 +1409,9 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 13:29
   - 'V2Get🛰️ 2026-10-17 13:29 #2'
   - 'V2Get🛰️ 2026-10-17 03:29 #4'
-  - V2Get🛰️ 2026-10-17 10:29
   - 'V2Get🛰️ 2026-10-17 10:29 #2'
   - 'V2Get🛰️ 2026-10-17 10:29 #3'
+  - 'V2Get🛰️ 2026-10-17 10:29 #4'
   - V2Get🛰️ 2026-10-16 19:11
   - V2Get🛰️ 2026-10-16 21:17
   - 'V2Get🛰️ 2026-10-16 21:17 #2'
@@ -1436,10 +1437,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 12:29 #24'
   - 'V2Get🛰️ 2026-10-17 12:29 #25'
   - 'V2Get🛰️ 2026-10-17 12:29 #26'
-  - V2Get🛰️ 2026-10-17 11:30
-  - 'V2Get🛰️ 2026-10-17 11:30 #2'
   - V2Get🛰️ 2026-10-17 11:29
-  - 'V2Get🛰️ 2026-10-17 10:29 #4'
   - 'V2Get🛰️ 2026-10-17 10:29 #5'
   - 'V2Get🛰️ 2026-10-17 10:29 #6'
   - 'V2Get🛰️ 2026-10-17 10:29 #7'
@@ -1451,6 +1449,7 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 10:29 #13'
   - 'V2Get🛰️ 2026-10-17 10:29 #14'
   - 'V2Get🛰️ 2026-10-17 10:29 #15'
+  - 'V2Get🛰️ 2026-10-17 10:29 #16'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
