@@ -12,6 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-08 16:22
+  type: trojan
+  server: 167.82.64.46
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: play.google.com
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn-44--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-16 19:16
   type: vless
   server: revers.bachidze.com
@@ -134,20 +163,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: tM0sV3CrjAU0nokd
   udp: true
-- name: V2Get🛰️ 2026-10-08 16:22
-  type: trojan
-  server: 167.82.64.46
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: play.google.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn-44--vip.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-17 22:30
   type: vless
   server: 146.75.59.186
@@ -199,20 +214,6 @@ proxies:
     path: /sg-melbi?ed#Telegram---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: V2Get🛰️ 2026-09-26 10:16
-  type: vless
-  server: 169.40.42.90
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
 - name: V2Get🛰️ 2026-10-15 02:37
   type: vless
   server: nl5.hap-plus.ru
@@ -1263,6 +1264,8 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-16 19:16
   - V2Get🛰️ 2026-10-17 21:31
   - V2Get🛰️ 2026-10-18 01:31
@@ -1274,12 +1277,10 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
-  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
   - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-10-15 02:37
   - V2Get🛰️ 2026-10-15 11:41
   - V2Get🛰️ 2026-10-17 20:31
@@ -1368,6 +1369,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-16 19:16
   - V2Get🛰️ 2026-10-17 21:31
   - V2Get🛰️ 2026-10-18 01:31
@@ -1379,12 +1382,10 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
-  - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
   - V2Get🛰️ 2026-10-03 20:09
   - V2Get🛰️ 2026-10-10 01:23
-  - V2Get🛰️ 2026-09-26 10:16
   - V2Get🛰️ 2026-10-15 02:37
   - V2Get🛰️ 2026-10-15 11:41
   - V2Get🛰️ 2026-10-17 20:31
