@@ -12,6 +12,14 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-10-17 12:29
+  type: vless
+  server: rrr.soreanapanel.com
+  port: 25566
+  uuid: 3c1dbb51-4160-4f9f-839e-218272142eaf
+  udp: true
+  network: tcp
+  skip-cert-verify: true
 - name: V2Get🛰️ 2026-10-17 19:31
   type: vmess
   server: 94.249.244.36
@@ -30,20 +38,6 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-07-30 11:01
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.gossipglove.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
 - name: V2Get🛰️ 2026-08-19 15:11
   type: ss
   server: 84.247.155.196
@@ -1126,9 +1120,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 19:31
   - 'V2Get🛰️ 2026-10-17 19:31 #2'
-  - V2Get🛰️ 2026-07-30 11:01
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-09-02 21:23
   - V2Get🛰️ 2026-10-07 22:55
@@ -1232,9 +1226,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 19:31
   - 'V2Get🛰️ 2026-10-17 19:31 #2'
-  - V2Get🛰️ 2026-07-30 11:01
   - V2Get🛰️ 2026-08-19 15:11
   - V2Get🛰️ 2026-09-02 21:23
   - V2Get🛰️ 2026-10-07 22:55
