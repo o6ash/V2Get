@@ -12,63 +12,243 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:08
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-08 16:22
-  type: trojan
-  server: 167.82.64.46
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: play.google.com
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn-44--vip.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-17 20:31
+- name: V2Get🛰️ 2026-10-08 09:21
   type: vless
-  server: 199.232.239.239
+  server: 177.1.192.81
   port: 443
-  uuid: af3a7e12-989a-454c-fcae-d00fd50c5237
+  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
+    short-id: 85766a81
+- name: V2Get🛰️ 2026-10-13 01:26
+  type: vmess
+  server: 2001:bc8:32d7:1a9::2
+  port: 18901
+  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+- name: V2Get🛰️ 2026-10-16 21:17
+  type: vless
+  server: 138.124.251.146
+  port: 23202
+  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
+  udp: true
+  network: xhttp
   tls: true
-  servername: apple.com
+  servername: www.sony.com
   client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-17 22:30
+  reality-opts:
+    public-key: OfDHr_l4SrRA6CFtpaYKkAqZL8aJ6DIPtChiGFmevBE
+    short-id: 64f13b45aaa7ff
+- name: V2Get🛰️ 2026-10-17 00:19
   type: vless
-  server: 146.75.59.186
+  server: 138.124.251.146
+  port: 8443
+  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
+  udp: true
+  network: tcp
+  tls: true
+  servername: npdev.uk
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7ir7yQsY_ua6Kwita5_03iGZHhi1hWgjhVingIgtSXk
+    short-id: 9495c26eb75f2d
+- name: V2Get🛰️ 2026-10-17 03:30
+  type: vless
+  server: pp-fx2.firelinkservers.ir
   port: 443
-  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  uuid: 53396072-303d-4717-b72f-f506daca3e32
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-10-17 03:30 #2'
+  type: vless
+  server: 167.82.76.31
+  port: 443
+  uuid: 53396072-303d-4717-b72f-f506daca3e32
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 03:30 #3'
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: 53396072-303d-4717-b72f-f506daca3e32
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 03:30 #4'
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: 27612d13-d4bb-4589-828a-1fe9a1558a27
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 03:30 #5'
+  type: vless
+  server: pp-fx2.firelinkservers.ir
+  port: 443
+  uuid: 27612d13-d4bb-4589-828a-1fe9a1558a27
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-10-17 03:30 #6'
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: 53396072-303d-4717-b72f-f506daca3e32
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-17 09:29
+  type: vless
+  server: 199.232.20.113
+  port: 443
+  uuid: 30ed2f7b-35c1-49ca-8d9f-687983382360
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: V2Get🛰️ 2026-10-17 10:29
+  type: vless
+  server: pp-fx2.firelinkservers.ir
+  port: 443
+  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: V2Get🛰️ 2026-10-17 12:29
+  type: vless
+  server: ops4asfseretuiyk.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
   udp: true
   network: ws
   tls: true
-  servername: firefox.com
+  servername: ops4asfseretuiyk.localip.ir
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /
+    path: /hokm
     headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-17 22:30 #2'
+      Host: ops4asfseretuiyk.localip.ir
+- name: 'V2Get🛰️ 2026-10-17 12:29 #2'
+  type: vless
+  server: hoert1rert.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  network: ws
+  tls: true
+  servername: hoert1rert.localip.ir
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: V2Get🛰️ 2026-10-17 15:29
+  type: vless
+  server: 146.75.57.238
+  port: 443
+  uuid: b9c1db57-56fd-42cb-acc4-62d7ce3d9d97
+  udp: true
+  network: xhttp
+  tls: true
+  servername: delivery.mp.microsoft.com
+  client-fingerprint: safari
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-10-17 15:30
+  type: vless
+  server: pp-fx2.firelinkservers.ir
+  port: 443
+  uuid: fff53a75-0fcf-4376-b543-af0e6e5b49fb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-10-17 15:30 #2'
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: fff53a75-0fcf-4376-b543-af0e6e5b49fb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 15:30 #3'
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: fff53a75-0fcf-4376-b543-af0e6e5b49fb
+  udp: true
+  network: xhttp
+  tls: true
+  servername: google.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 15:30 #4'
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: f526cda8-f421-48ef-9f5e-34ef1057e65e
+  udp: true
+  network: xhttp
+  tls: true
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-18 00:30
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: 15d46b9a-4f60-4019-b0ce-be22c852dcea
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-17 20:33
+  type: vless
+  server: 167.82.76.31
+  port: 443
+  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-17 22:30
   type: vless
   server: 199.232.78.159
   port: 443
@@ -81,55 +261,127 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-17 20:31 #2'
+- name: 'V2Get🛰️ 2026-10-17 22:30 #2'
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  udp: true
+  network: ws
+  tls: true
+  servername: firefox.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
+- name: 'V2Get🛰️ 2026-10-17 20:33 #2'
   type: vless
   server: 167.82.76.31
   port: 443
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
   udp: true
   network: xhttp
   tls: true
-  servername: default.ssl.fastly.net
-  client-fingerprint: random
-- name: 'V2Get🛰️ 2026-10-17 20:31 #3'
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 20:33 #3'
   type: vless
-  server: p11real1.greewebservices.ir
-  port: 1020
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  server: 199.232.237.79
+  port: 443
+  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: play.googleapis.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: GzjL8Jq6iNwatTxuqL9gXElWIUgtOfbbCDaZ_wHG5SY
-    short-id: 9b60d3
-- name: 'V2Get🛰️ 2026-10-17 20:31 #4'
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 20:33 #4'
   type: vless
-  server: p1tun01.greewebservices.ir
-  port: 38830
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  server: 199.232.237.79
+  port: 443
+  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: play.google.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: e3085d4f
-- name: 'V2Get🛰️ 2026-10-17 20:31 #5'
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 20:33 #5'
   type: vless
-  server: 62.60.146.32
-  port: 38820
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  server: pp-fx2.firelinkservers.ir
+  port: 443
+  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
   udp: true
-  network: tcp
+  network: xhttp
   tls: true
-  servername: play.google.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 66ded2
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-10-17 20:33 #6'
+  type: vless
+  server: 199.232.237.79
+  port: 443
+  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 20:33 #7'
+  type: vless
+  server: pp-fx2.firelinkservers.ir
+  port: 443
+  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: chrome
+- name: 'V2Get🛰️ 2026-10-17 20:33 #8'
+  type: vless
+  server: pp-cx1.firelinkservers.ir
+  port: 2083
+  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
+  udp: true
+  network: xhttp
+  tls: true
+  servername: hitdsf.varzeshfotsal.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-10-17 20:33 #9'
+  type: vless
+  server: render.com
+  port: 2083
+  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
+  udp: true
+  network: xhttp
+  tls: true
+  servername: hitdsf.varzeshfotsal.ir
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: 'V2Get🛰️ 2026-10-17 20:33 #10'
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-10-17 20:33 #11'
+  type: vless
+  server: fast.jkerm.com
+  port: 443
+  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
 - name: V2Get🛰️ 2026-10-17 23:32
   type: vless
   server: siderail-production-a302.up.railway.app
@@ -235,96 +487,6 @@ proxies:
   reality-opts:
     public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
     short-id: 66ded2
-- name: V2Get🛰️ 2026-10-14 19:34
-  type: vless
-  server: edge.bookmai.com
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-10-14 22:33
-  type: vless
-  server: 88.216.223.66
-  port: 443
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  udp: true
-  network: tcp
-  tls: true
-  servername: tcpswed1.figurapn.ru
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-- name: V2Get🛰️ 2026-10-15 02:37
-  type: vless
-  server: nl5.hap-plus.ru
-  port: 8443
-  uuid: 05d7a479-a099-40cf-aecf-41aa934767b0
-  udp: true
-  network: ws
-  tls: true
-  servername: nl5.hap-plus.ru
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /api/v1/events
-    headers:
-      Host: nl5.hap-plus.ru
-- name: V2Get🛰️ 2026-10-16 11:46
-  type: vless
-  server: app-ms-33.ecom-ai-search.com
-  port: 443
-  uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: assets-ms-33.ecom-ai-search.com
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: NHvzfpD0Jhc8h1TtYmdTRdd-zoMt6TwOfC5kgORzRFQ
-    short-id: 2f67100d7034a510
-- name: V2Get🛰️ 2026-10-16 21:13
-  type: ss
-  server: 176.32.32.108
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: V2Get🛰️ 2026-10-17 10:30
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 35544
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: 25c79e5856c7
-- name: V2Get🛰️ 2026-10-17 12:29
-  type: vless
-  server: 31.57.190.50
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  network: ws
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: V2Get🛰️ 2026-10-17 23:31
   type: vless
   server: 31.57.190.89
@@ -626,19 +788,6 @@ proxies:
   servername: s0.awsstatic.com
   reality-opts:
     public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
-- name: 'V2Get🛰️ 2026-10-17 20:31 #6'
-  type: vless
-  server: p1real4.greewebservices.ir
-  port: 1260
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.googleapis.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
 - name: 'V2Get🛰️ 2026-10-17 21:31 #2'
   type: vless
   server: 43.249.72.254
@@ -730,124 +879,6 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-10-17 20:33
-  type: vless
-  server: 167.82.76.31
-  port: 443
-  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #2'
-  type: vless
-  server: 199.232.237.79
-  port: 443
-  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #3'
-  type: vless
-  server: 199.232.237.79
-  port: 443
-  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #4'
-  type: vless
-  server: 199.232.237.79
-  port: 443
-  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #5'
-  type: vless
-  server: pp-cx1.firelinkservers.ir
-  port: 2083
-  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
-  udp: true
-  network: xhttp
-  tls: true
-  servername: hitdsf.varzeshfotsal.ir
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-10-17 20:33 #6'
-  type: vless
-  server: fast.jkerm.com
-  port: 443
-  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #7'
-  type: vless
-  server: fast.jkerm.com
-  port: 443
-  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #8'
-  type: vless
-  server: pp-fx2.firelinkservers.ir
-  port: 443
-  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: chrome
-- name: 'V2Get🛰️ 2026-10-17 20:33 #9'
-  type: vless
-  server: render.com
-  port: 2083
-  uuid: fbb91764-b2a8-42d6-9326-824b8987cf03
-  udp: true
-  network: xhttp
-  tls: true
-  servername: hitdsf.varzeshfotsal.ir
-  client-fingerprint: chrome
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-10-17 20:33 #10'
-  type: vless
-  server: 167.82.76.31
-  port: 443
-  uuid: 0a5767ae-083a-4ca0-a041-f96905ba3158
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: firefox
-- name: 'V2Get🛰️ 2026-10-17 20:33 #11'
-  type: vless
-  server: pp-fx2.firelinkservers.ir
-  port: 443
-  uuid: 7101fb9e-a32e-4281-9298-01f885783b26
-  udp: true
-  network: xhttp
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: chrome
 - name: V2Get🛰️ 2026-10-17 22:31
   type: vless
   server: ip-aelix.safire-soleiman.ir
@@ -1166,80 +1197,45 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: V2Get🛰️ 2026-10-17 20:32
-  type: vmess
-  server: 206.1.102.64
-  port: 2095
-  uuid: f895d952-81c4-4810-88f0-89b21b9df3f6
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-10-17 20:31 #7'
-  type: vless
-  server: 94.184.22.113
-  port: 38830
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
-  udp: true
-  network: tcp
-  tls: true
-  servername: play.google.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: e3085d4f
-- name: V2Get🛰️ 2026-10-17 19:31
-  type: vless
-  server: 199.232.237.245
-  port: 443
-  uuid: 20b1b935-57ee-4e0c-9236-cae1088b14e5
-  udp: true
-  network: xhttp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: safari
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-- name: 'V2Get🛰️ 2026-10-17 19:31 #2'
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: 20b1b935-57ee-4e0c-9236-cae1088b14e5
-  udp: true
-  network: xhttp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: ios
-- name: 'V2Get🛰️ 2026-10-17 19:31 #3'
-  type: vless
-  server: 199.232.79.166
-  port: 443
-  uuid: 20b1b935-57ee-4e0c-9236-cae1088b14e5
-  udp: true
-  network: xhttp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: ios
 proxy-groups:
 - name: 🚀 Select
   type: select
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-10-08 16:22
-  - V2Get🛰️ 2026-10-17 20:31
+  - V2Get🛰️ 2026-10-08 09:21
+  - V2Get🛰️ 2026-10-13 01:26
+  - V2Get🛰️ 2026-10-16 21:17
+  - V2Get🛰️ 2026-10-17 00:19
+  - V2Get🛰️ 2026-10-17 03:30
+  - 'V2Get🛰️ 2026-10-17 03:30 #2'
+  - 'V2Get🛰️ 2026-10-17 03:30 #3'
+  - 'V2Get🛰️ 2026-10-17 03:30 #4'
+  - 'V2Get🛰️ 2026-10-17 03:30 #5'
+  - 'V2Get🛰️ 2026-10-17 03:30 #6'
+  - V2Get🛰️ 2026-10-17 09:29
+  - V2Get🛰️ 2026-10-17 10:29
+  - V2Get🛰️ 2026-10-17 12:29
+  - 'V2Get🛰️ 2026-10-17 12:29 #2'
+  - V2Get🛰️ 2026-10-17 15:29
+  - V2Get🛰️ 2026-10-17 15:30
+  - 'V2Get🛰️ 2026-10-17 15:30 #2'
+  - 'V2Get🛰️ 2026-10-17 15:30 #3'
+  - 'V2Get🛰️ 2026-10-17 15:30 #4'
+  - V2Get🛰️ 2026-10-18 00:30
+  - V2Get🛰️ 2026-10-17 20:33
   - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
-  - 'V2Get🛰️ 2026-10-17 20:31 #2'
-  - 'V2Get🛰️ 2026-10-17 20:31 #3'
-  - 'V2Get🛰️ 2026-10-17 20:31 #4'
-  - 'V2Get🛰️ 2026-10-17 20:31 #5'
+  - 'V2Get🛰️ 2026-10-17 20:33 #2'
+  - 'V2Get🛰️ 2026-10-17 20:33 #3'
+  - 'V2Get🛰️ 2026-10-17 20:33 #4'
+  - 'V2Get🛰️ 2026-10-17 20:33 #5'
+  - 'V2Get🛰️ 2026-10-17 20:33 #6'
+  - 'V2Get🛰️ 2026-10-17 20:33 #7'
+  - 'V2Get🛰️ 2026-10-17 20:33 #8'
+  - 'V2Get🛰️ 2026-10-17 20:33 #9'
+  - 'V2Get🛰️ 2026-10-17 20:33 #10'
+  - 'V2Get🛰️ 2026-10-17 20:33 #11'
   - V2Get🛰️ 2026-10-17 23:32
   - 'V2Get🛰️ 2026-10-17 23:32 #2'
   - 'V2Get🛰️ 2026-10-17 23:32 #3'
@@ -1247,13 +1243,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 23:32 #5'
   - 'V2Get🛰️ 2026-10-17 23:32 #6'
   - V2Get🛰️ 2026-10-17 20:34
-  - V2Get🛰️ 2026-10-14 19:34
-  - V2Get🛰️ 2026-10-14 22:33
-  - V2Get🛰️ 2026-10-15 02:37
-  - V2Get🛰️ 2026-10-16 11:46
-  - V2Get🛰️ 2026-10-16 21:13
-  - V2Get🛰️ 2026-10-17 10:30
-  - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
   - 'V2Get🛰️ 2026-10-17 23:31 #3'
@@ -1281,7 +1270,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 23:31 #24'
   - 'V2Get🛰️ 2026-10-17 23:31 #25'
   - 'V2Get🛰️ 2026-10-17 23:31 #26'
-  - 'V2Get🛰️ 2026-10-17 20:31 #6'
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
   - 'V2Get🛰️ 2026-10-17 21:31 #3'
   - V2Get🛰️ 2026-10-17 23:30
@@ -1289,17 +1277,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 22:32 #2'
   - 'V2Get🛰️ 2026-10-17 22:32 #3'
   - 'V2Get🛰️ 2026-10-17 22:32 #4'
-  - V2Get🛰️ 2026-10-17 20:33
-  - 'V2Get🛰️ 2026-10-17 20:33 #2'
-  - 'V2Get🛰️ 2026-10-17 20:33 #3'
-  - 'V2Get🛰️ 2026-10-17 20:33 #4'
-  - 'V2Get🛰️ 2026-10-17 20:33 #5'
-  - 'V2Get🛰️ 2026-10-17 20:33 #6'
-  - 'V2Get🛰️ 2026-10-17 20:33 #7'
-  - 'V2Get🛰️ 2026-10-17 20:33 #8'
-  - 'V2Get🛰️ 2026-10-17 20:33 #9'
-  - 'V2Get🛰️ 2026-10-17 20:33 #10'
-  - 'V2Get🛰️ 2026-10-17 20:33 #11'
   - V2Get🛰️ 2026-10-17 22:31
   - 'V2Get🛰️ 2026-10-17 22:31 #2'
   - 'V2Get🛰️ 2026-10-17 20:33 #12'
@@ -1325,26 +1302,45 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 20:33 #18'
   - 'V2Get🛰️ 2026-10-17 20:33 #19'
   - 'V2Get🛰️ 2026-10-17 20:33 #20'
-  - V2Get🛰️ 2026-10-17 20:32
-  - 'V2Get🛰️ 2026-10-17 20:31 #7'
-  - V2Get🛰️ 2026-10-17 19:31
-  - 'V2Get🛰️ 2026-10-17 19:31 #2'
-  - 'V2Get🛰️ 2026-10-17 19:31 #3'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:08
-  - V2Get🛰️ 2026-10-08 16:22
-  - V2Get🛰️ 2026-10-17 20:31
+  - V2Get🛰️ 2026-10-08 09:21
+  - V2Get🛰️ 2026-10-13 01:26
+  - V2Get🛰️ 2026-10-16 21:17
+  - V2Get🛰️ 2026-10-17 00:19
+  - V2Get🛰️ 2026-10-17 03:30
+  - 'V2Get🛰️ 2026-10-17 03:30 #2'
+  - 'V2Get🛰️ 2026-10-17 03:30 #3'
+  - 'V2Get🛰️ 2026-10-17 03:30 #4'
+  - 'V2Get🛰️ 2026-10-17 03:30 #5'
+  - 'V2Get🛰️ 2026-10-17 03:30 #6'
+  - V2Get🛰️ 2026-10-17 09:29
+  - V2Get🛰️ 2026-10-17 10:29
+  - V2Get🛰️ 2026-10-17 12:29
+  - 'V2Get🛰️ 2026-10-17 12:29 #2'
+  - V2Get🛰️ 2026-10-17 15:29
+  - V2Get🛰️ 2026-10-17 15:30
+  - 'V2Get🛰️ 2026-10-17 15:30 #2'
+  - 'V2Get🛰️ 2026-10-17 15:30 #3'
+  - 'V2Get🛰️ 2026-10-17 15:30 #4'
+  - V2Get🛰️ 2026-10-18 00:30
+  - V2Get🛰️ 2026-10-17 20:33
   - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
-  - 'V2Get🛰️ 2026-10-17 20:31 #2'
-  - 'V2Get🛰️ 2026-10-17 20:31 #3'
-  - 'V2Get🛰️ 2026-10-17 20:31 #4'
-  - 'V2Get🛰️ 2026-10-17 20:31 #5'
+  - 'V2Get🛰️ 2026-10-17 20:33 #2'
+  - 'V2Get🛰️ 2026-10-17 20:33 #3'
+  - 'V2Get🛰️ 2026-10-17 20:33 #4'
+  - 'V2Get🛰️ 2026-10-17 20:33 #5'
+  - 'V2Get🛰️ 2026-10-17 20:33 #6'
+  - 'V2Get🛰️ 2026-10-17 20:33 #7'
+  - 'V2Get🛰️ 2026-10-17 20:33 #8'
+  - 'V2Get🛰️ 2026-10-17 20:33 #9'
+  - 'V2Get🛰️ 2026-10-17 20:33 #10'
+  - 'V2Get🛰️ 2026-10-17 20:33 #11'
   - V2Get🛰️ 2026-10-17 23:32
   - 'V2Get🛰️ 2026-10-17 23:32 #2'
   - 'V2Get🛰️ 2026-10-17 23:32 #3'
@@ -1352,13 +1348,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 23:32 #5'
   - 'V2Get🛰️ 2026-10-17 23:32 #6'
   - V2Get🛰️ 2026-10-17 20:34
-  - V2Get🛰️ 2026-10-14 19:34
-  - V2Get🛰️ 2026-10-14 22:33
-  - V2Get🛰️ 2026-10-15 02:37
-  - V2Get🛰️ 2026-10-16 11:46
-  - V2Get🛰️ 2026-10-16 21:13
-  - V2Get🛰️ 2026-10-17 10:30
-  - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
   - 'V2Get🛰️ 2026-10-17 23:31 #3'
@@ -1386,7 +1375,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 23:31 #24'
   - 'V2Get🛰️ 2026-10-17 23:31 #25'
   - 'V2Get🛰️ 2026-10-17 23:31 #26'
-  - 'V2Get🛰️ 2026-10-17 20:31 #6'
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
   - 'V2Get🛰️ 2026-10-17 21:31 #3'
   - V2Get🛰️ 2026-10-17 23:30
@@ -1394,17 +1382,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 22:32 #2'
   - 'V2Get🛰️ 2026-10-17 22:32 #3'
   - 'V2Get🛰️ 2026-10-17 22:32 #4'
-  - V2Get🛰️ 2026-10-17 20:33
-  - 'V2Get🛰️ 2026-10-17 20:33 #2'
-  - 'V2Get🛰️ 2026-10-17 20:33 #3'
-  - 'V2Get🛰️ 2026-10-17 20:33 #4'
-  - 'V2Get🛰️ 2026-10-17 20:33 #5'
-  - 'V2Get🛰️ 2026-10-17 20:33 #6'
-  - 'V2Get🛰️ 2026-10-17 20:33 #7'
-  - 'V2Get🛰️ 2026-10-17 20:33 #8'
-  - 'V2Get🛰️ 2026-10-17 20:33 #9'
-  - 'V2Get🛰️ 2026-10-17 20:33 #10'
-  - 'V2Get🛰️ 2026-10-17 20:33 #11'
   - V2Get🛰️ 2026-10-17 22:31
   - 'V2Get🛰️ 2026-10-17 22:31 #2'
   - 'V2Get🛰️ 2026-10-17 20:33 #12'
@@ -1430,11 +1407,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-17 20:33 #18'
   - 'V2Get🛰️ 2026-10-17 20:33 #19'
   - 'V2Get🛰️ 2026-10-17 20:33 #20'
-  - V2Get🛰️ 2026-10-17 20:32
-  - 'V2Get🛰️ 2026-10-17 20:31 #7'
-  - V2Get🛰️ 2026-10-17 19:31
-  - 'V2Get🛰️ 2026-10-17 19:31 #2'
-  - 'V2Get🛰️ 2026-10-17 19:31 #3'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
