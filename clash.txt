@@ -12,18 +12,42 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-26 03:09
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
+- name: V2Get🛰️ 2026-10-17 14:30
+  type: vless
+  server: 51.77.144.182
+  port: 8080
+  uuid: 58ec8bba-fb99-4840-805c-1871cbec26f3
   udp: true
-  sni: www.creationlong.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: twCZ2ZSURqQA2oUep4h2aj_3yJEEagFSQByn26bWWkI
+    short-id: 94d9456c33
+- name: 'V2Get🛰️ 2026-10-17 14:30 #2'
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: e51d3301-3fd2-46d6-b735-a7bde73539df
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: ios
+- name: 'V2Get🛰️ 2026-10-17 14:30 #3'
+  type: vless
+  server: 199.232.79.166
+  port: 443
+  uuid: e51d3301-3fd2-46d6-b735-a7bde73539df
+  udp: true
+  network: xhttp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: ios
 - name: V2Get🛰️ 2026-10-17 14:29
   type: vmess
   server: 91.107.169.224
@@ -133,32 +157,6 @@ proxies:
   network: httpupgrade
   flow: xtls-rprx-vision
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-10-14 14:35
-  type: vless
-  server: no.cnd.germany.myfilecdn.com
-  port: 443
-  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tradingview.com
-  reality-opts:
-    public-key: rj8GjMgtHuf5iZ5sWKmV62ihJbQWB6M4E-BJZBk1Z1A
-    short-id: 8a2b3c4d5e6f7012
-- name: V2Get🛰️ 2026-10-14 18:33
-  type: vless
-  server: blog.salphetka.ru
-  port: 443
-  uuid: 92295a0d-b610-4075-85e9-bfab09ec6f3a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.uni-bonn.de
-  reality-opts:
-    public-key: ahmKn2YPXJJ0gGtSKyEVCavB2YHyGQSbHCq40tgfHkA
-    short-id: e96c3d6878c984bf
 - name: V2Get🛰️ 2026-10-14 20:34
   type: vless
   server: 154.21.203.106
@@ -1237,7 +1235,9 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-10-17 14:30
+  - 'V2Get🛰️ 2026-10-17 14:30 #2'
+  - 'V2Get🛰️ 2026-10-17 14:30 #3'
   - V2Get🛰️ 2026-10-17 14:29
   - V2Get🛰️ 2026-10-16 13:46
   - 'V2Get🛰️ 2026-10-17 14:29 #2'
@@ -1248,8 +1248,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 11:30
   - 'V2Get🛰️ 2026-10-17 11:30 #2'
-  - V2Get🛰️ 2026-10-14 14:35
-  - V2Get🛰️ 2026-10-14 18:33
   - V2Get🛰️ 2026-10-14 20:34
   - V2Get🛰️ 2026-10-14 21:37
   - V2Get🛰️ 2026-10-14 22:33
@@ -1343,7 +1341,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-26 03:09
+  - V2Get🛰️ 2026-10-17 14:30
+  - 'V2Get🛰️ 2026-10-17 14:30 #2'
+  - 'V2Get🛰️ 2026-10-17 14:30 #3'
   - V2Get🛰️ 2026-10-17 14:29
   - V2Get🛰️ 2026-10-16 13:46
   - 'V2Get🛰️ 2026-10-17 14:29 #2'
@@ -1354,8 +1354,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 11:30
   - 'V2Get🛰️ 2026-10-17 11:30 #2'
-  - V2Get🛰️ 2026-10-14 14:35
-  - V2Get🛰️ 2026-10-14 18:33
   - V2Get🛰️ 2026-10-14 20:34
   - V2Get🛰️ 2026-10-14 21:37
   - V2Get🛰️ 2026-10-14 22:33
