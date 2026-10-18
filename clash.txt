@@ -12,20 +12,35 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-10-17 22:30
+- name: V2Get🛰️ 2026-10-17 21:30
   type: vless
-  server: 146.75.59.186
+  server: 43.249.72.255
   port: 443
-  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  uuid: ba33c872-d552-4c44-b0f2-b9bd8669d70c
   udp: true
   network: ws
   tls: true
-  servername: firefox.com
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: V2Get🛰️ 2026-10-17 21:30
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-17 21:30 #2'
+  type: vless
+  server: 151.101.39.60
+  port: 443
+  uuid: ba33c872-d552-4c44-b0f2-b9bd8669d70c
+  udp: true
+  network: ws
+  tls: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: henzoo.global.ssl.fastly.net
+- name: 'V2Get🛰️ 2026-10-17 21:30 #3'
   type: vless
   server: 43.249.72.254
   port: 443
@@ -42,6 +57,19 @@ proxies:
     path: /
     headers:
       Host: henzoo.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-17 22:30
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  udp: true
+  network: ws
+  tls: true
+  servername: firefox.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-07-26 03:09
   type: trojan
   server: 188.114.98.0
@@ -539,34 +567,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 'V2Get🛰️ 2026-10-17 21:30 #2'
-  type: vless
-  server: 151.101.39.60
-  port: 443
-  uuid: ba33c872-d552-4c44-b0f2-b9bd8669d70c
-  udp: true
-  network: ws
-  tls: true
-  servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: henzoo.global.ssl.fastly.net
-- name: 'V2Get🛰️ 2026-10-17 21:30 #3'
-  type: vless
-  server: 43.249.72.255
-  port: 443
-  uuid: ba33c872-d552-4c44-b0f2-b9bd8669d70c
-  udp: true
-  network: ws
-  tls: true
-  servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: henzoo.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-18 14:31
   type: vless
   server: 199.232.78.159
@@ -1267,8 +1267,10 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-10-17 21:30
+  - 'V2Get🛰️ 2026-10-17 21:30 #2'
+  - 'V2Get🛰️ 2026-10-17 21:30 #3'
+  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-07-26 03:09
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-07 08:40
@@ -1308,8 +1310,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 18:30
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
-  - 'V2Get🛰️ 2026-10-17 21:30 #2'
-  - 'V2Get🛰️ 2026-10-17 21:30 #3'
   - V2Get🛰️ 2026-10-18 14:31
   - V2Get🛰️ 2026-10-17 17:30
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
@@ -1373,8 +1373,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-10-17 21:30
+  - 'V2Get🛰️ 2026-10-17 21:30 #2'
+  - 'V2Get🛰️ 2026-10-17 21:30 #3'
+  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-07-26 03:09
   - V2Get🛰️ 2026-07-29 14:50
   - V2Get🛰️ 2026-08-07 08:40
@@ -1414,8 +1416,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 18:30
   - V2Get🛰️ 2026-10-17 23:31
   - 'V2Get🛰️ 2026-10-17 23:31 #2'
-  - 'V2Get🛰️ 2026-10-17 21:30 #2'
-  - 'V2Get🛰️ 2026-10-17 21:30 #3'
   - V2Get🛰️ 2026-10-18 14:31
   - V2Get🛰️ 2026-10-17 17:30
   - 'V2Get🛰️ 2026-10-17 21:31 #2'
