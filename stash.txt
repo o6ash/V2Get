@@ -12,19 +12,21 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
-- name: V2Get🛰️ 2026-07-29 14:50
+- name: V2Get🛰️ 2026-07-26 03:08
   type: trojan
-  server: 188.114.97.6
+  server: 199.232.78.160
   port: 443
-  password: humanity
+  password: mitivpn
   udp: true
-  sni: www.calmloud.com
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: www.calmloud.com
+      Host: mitivpn-dd.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-09-07 20:34
   type: trojan
   server: 8.47.69.0
@@ -1085,7 +1087,7 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-16 19:16
@@ -1173,7 +1175,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - V2Get🛰️ 2026-07-29 14:50
+  - V2Get🛰️ 2026-07-26 03:08
   - V2Get🛰️ 2026-09-07 20:34
   - V2Get🛰️ 2026-10-08 16:22
   - V2Get🛰️ 2026-10-16 19:16
