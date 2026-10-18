@@ -12,6 +12,34 @@ dns:
   - 8.8.8.8
   - 9.9.9.9
 proxies:
+- name: V2Get🛰️ 2026-07-26 03:08
+  type: trojan
+  server: 199.232.78.160
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-10-17 22:30
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  udp: true
+  network: ws
+  tls: true
+  servername: firefox.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-18 18:32
   type: vless
   server: 46.254.17.76
@@ -78,19 +106,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: V2Get🛰️ 2026-10-07 22:55
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  network: ws
-  tls: true
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
 - name: V2Get🛰️ 2026-10-14 10:31
   type: vless
   server: 104.21.91.244
@@ -223,7 +238,7 @@ proxies:
     path: /
     headers:
       Host: henzoo.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-17 22:30
+- name: 'V2Get🛰️ 2026-10-17 22:30 #2'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -236,19 +251,6 @@ proxies:
     path: /
     headers:
       Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-10-17 22:30 #2'
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
-  udp: true
-  network: ws
-  tls: true
-  servername: firefox.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-18 14:31
   type: vless
   server: 199.232.78.159
@@ -1097,12 +1099,13 @@ proxy-groups:
   proxies:
   - ♻️ Auto Select
   - DIRECT
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-10-18 18:32
   - 'V2Get🛰️ 2026-10-18 18:32 #2'
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 23:31
-  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-15 02:37
   - V2Get🛰️ 2026-10-17 18:30
@@ -1113,7 +1116,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 21:30
   - 'V2Get🛰️ 2026-10-17 21:30 #2'
   - 'V2Get🛰️ 2026-10-17 21:30 #3'
-  - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
   - V2Get🛰️ 2026-10-18 14:31
   - V2Get🛰️ 2026-10-18 19:32
@@ -1187,12 +1189,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - V2Get🛰️ 2026-07-26 03:08
+  - V2Get🛰️ 2026-10-17 22:30
   - V2Get🛰️ 2026-10-18 18:32
   - 'V2Get🛰️ 2026-10-18 18:32 #2'
   - V2Get🛰️ 2026-10-16 12:46
   - V2Get🛰️ 2026-10-17 12:29
   - V2Get🛰️ 2026-10-17 23:31
-  - V2Get🛰️ 2026-10-07 22:55
   - V2Get🛰️ 2026-10-14 10:31
   - V2Get🛰️ 2026-10-15 02:37
   - V2Get🛰️ 2026-10-17 18:30
@@ -1203,7 +1206,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-17 21:30
   - 'V2Get🛰️ 2026-10-17 21:30 #2'
   - 'V2Get🛰️ 2026-10-17 21:30 #3'
-  - V2Get🛰️ 2026-10-17 22:30
   - 'V2Get🛰️ 2026-10-17 22:30 #2'
   - V2Get🛰️ 2026-10-18 14:31
   - V2Get🛰️ 2026-10-18 19:32
