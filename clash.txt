@@ -21,6 +21,7 @@ proxies:
   sni: firefox.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
@@ -35,6 +36,7 @@ proxies:
   sni: firefox.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
@@ -49,6 +51,7 @@ proxies:
   sni: ns2.firefox.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
@@ -63,6 +66,7 @@ proxies:
   sni: ns1.firefox.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
@@ -77,6 +81,7 @@ proxies:
   sni: community.fastly.steamstatic.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
@@ -91,23 +96,39 @@ proxies:
   sni: firefox.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn.ac.ir
-- name: V2Get🛰️ 2026-10-18 23:12
+- name: V2Get🛰️ 2026-10-26 07:53
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 154.83.159.240
+  port: 8443
+  uuid: 0047a8bc-0025-4d45-899b-c75c669f3ede
   udp: true
-  network: ws
-  skip-cert-verify: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo
+    short-id: 6f15101ff2cc4887
+- name: V2Get🛰️ 2026-10-26 05:38
+  type: vless
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
+  uuid: 948a83ff-6277-48f1-a31e-f9b2f6b34fe4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hostgator.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
 - name: V2Get🛰️ 2026-10-25 02:22
   type: vless
   server: 146.75.59.186
@@ -157,6 +178,7 @@ proxies:
   sni: www.trusteeforward.com
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
@@ -419,20 +441,6 @@ proxies:
     path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
       Host: courses.mftplus.qzz.io
-- name: V2Get🛰️ 2026-10-26 05:38
-  type: vless
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  uuid: 948a83ff-6277-48f1-a31e-f9b2f6b34fe4
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: hostgator.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
 - name: V2Get🛰️ 2026-10-26 05:23
   type: vless
   server: gr.onlinernet.ir
@@ -932,6 +940,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
@@ -971,6 +980,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
@@ -1080,6 +1090,7 @@ proxies:
   port: 46383
   password: kef626g3ffzqf93l
   udp: true
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
@@ -1136,6 +1147,7 @@ proxies:
   port: 443
   password: 242a3d8eee5e4ed1a6bfa4141d549a25
   udp: true
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-10-26 02:38 #4'
   type: trojan
   server: 92.42.99.143
@@ -1143,6 +1155,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
@@ -1155,12 +1168,14 @@ proxies:
   password: dba20dcb635e430fa4d3bfc303a149d2
   udp: true
   sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
 - name: 'V2Get🛰️ 2026-10-26 02:38 #6'
   type: trojan
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
   port: 443
   password: dba20dcb635e430fa4d3bfc303a149d2
   udp: true
+  skip-cert-verify: true
 - name: V2Get🔓 2026-10-26 05:54 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -2101,166 +2116,6 @@ proxies:
     path: /
     headers:
       Host: cf.5208877.xyz
-- name: V2Get🔓 2026-10-25 17:43 (F&F 1)
-  type: vless
-  server: 104.19.13.194
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 2)
-  type: vless
-  server: 104.17.102.202
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 3)
-  type: vless
-  server: 104.17.33.174
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 4)
-  type: vless
-  server: 104.19.0.111
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 5)
-  type: vless
-  server: 104.19.95.104
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 6)
-  type: vless
-  server: 198.41.208.177
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 7)
-  type: vless
-  server: 172.67.152.132
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 8)
-  type: vless
-  server: 172.67.153.61
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 9)
-  type: vless
-  server: 198.41.208.70
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-25 17:43 (F&F 10)
-  type: vless
-  server: 172.67.153.81
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 - name: V2Get🔓 2026-10-25 23:38 (F&F 1)
   type: trojan
   server: 104.19.13.194
@@ -2401,7 +2256,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.trusteeforward.com
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 1) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 1)
   type: trojan
   server: 104.19.13.194
   port: 443
@@ -2415,7 +2270,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 2) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 2)
   type: trojan
   server: 104.17.102.202
   port: 443
@@ -2429,7 +2284,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 3) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 3)
   type: trojan
   server: 104.17.33.174
   port: 443
@@ -2443,7 +2298,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 4) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 4)
   type: trojan
   server: 104.19.0.111
   port: 443
@@ -2457,7 +2312,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 5) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 5)
   type: trojan
   server: 104.19.95.104
   port: 443
@@ -2471,7 +2326,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 6) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 6)
   type: trojan
   server: 198.41.208.177
   port: 443
@@ -2485,7 +2340,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 7) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 7)
   type: trojan
   server: 172.67.152.132
   port: 443
@@ -2499,7 +2354,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 8) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 8)
   type: trojan
   server: 172.67.153.61
   port: 443
@@ -2513,7 +2368,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 9) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 9)
   type: trojan
   server: 198.41.208.70
   port: 443
@@ -2527,7 +2382,7 @@ proxies:
     path: /download
     headers:
       Host: de01.node.qixi.best
-- name: 'V2Get🔓 2026-10-25 17:43 (F&F 10) #2'
+- name: V2Get🔓 2026-10-25 17:43 (F&F 10)
   type: trojan
   server: 172.67.153.81
   port: 443
@@ -3661,6 +3516,166 @@ proxies:
     path: /vl/eHqmDiNq0t0bKX1w6GbQ?ed=2560
     headers:
       Host: k8gfd2scra4rzea5.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 1) #7'
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 2) #7'
+  type: vless
+  server: 104.17.102.202
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 3) #7'
+  type: vless
+  server: 104.17.33.174
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 4) #7'
+  type: vless
+  server: 104.19.0.111
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 5) #7'
+  type: vless
+  server: 104.19.95.104
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 6) #7'
+  type: vless
+  server: 198.41.208.177
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 7) #7'
+  type: vless
+  server: 172.67.152.132
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 8) #7'
+  type: vless
+  server: 172.67.153.61
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 9) #7'
+  type: vless
+  server: 198.41.208.70
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+- name: 'V2Get🔓 2026-10-25 02:42 (F&F 10) #7'
+  type: vless
+  server: 172.67.153.81
+  port: 443
+  uuid: f0d1a8e3-94fd-4315-8ce1-415e1e41026b
+  udp: true
+  network: ws
+  tls: true
+  servername: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl/noWZJcXE1tTdrXXSLTs9sEbk?ed=2560
+    headers:
+      Host: qzxs5116ee8vnw-m9n80ona92wexvwj.pages.dev
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -3673,7 +3688,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-26 03:14 #2'
   - 'V2Get🛰️ 2026-10-26 03:14 #3'
   - 'V2Get🛰️ 2026-10-26 03:14 #4'
-  - V2Get🛰️ 2026-10-18 23:12
+  - V2Get🛰️ 2026-10-26 07:53
+  - V2Get🛰️ 2026-10-26 05:38
   - V2Get🛰️ 2026-10-25 02:22
   - V2Get🛰️ 2026-10-25 02:23
   - V2Get🛰️ 2026-10-25 21:39
@@ -3699,7 +3715,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-26 05:53 #3'
   - 'V2Get🛰️ 2026-10-26 05:53 #4'
   - 'V2Get🛰️ 2026-10-26 05:53 #5'
-  - V2Get🛰️ 2026-10-26 05:38
   - V2Get🛰️ 2026-10-26 05:23
   - 'V2Get🛰️ 2026-10-26 05:23 #2'
   - 'V2Get🛰️ 2026-10-26 05:23 #3'
@@ -3826,16 +3841,6 @@ proxy-groups:
   - V2Get🔓 2026-10-25 18:53 (F&F 8)
   - V2Get🔓 2026-10-25 18:53 (F&F 9)
   - V2Get🔓 2026-10-25 18:53 (F&F 10)
-  - V2Get🔓 2026-10-25 17:43 (F&F 1)
-  - V2Get🔓 2026-10-25 17:43 (F&F 2)
-  - V2Get🔓 2026-10-25 17:43 (F&F 3)
-  - V2Get🔓 2026-10-25 17:43 (F&F 4)
-  - V2Get🔓 2026-10-25 17:43 (F&F 5)
-  - V2Get🔓 2026-10-25 17:43 (F&F 6)
-  - V2Get🔓 2026-10-25 17:43 (F&F 7)
-  - V2Get🔓 2026-10-25 17:43 (F&F 8)
-  - V2Get🔓 2026-10-25 17:43 (F&F 9)
-  - V2Get🔓 2026-10-25 17:43 (F&F 10)
   - V2Get🔓 2026-10-25 23:38 (F&F 1)
   - V2Get🔓 2026-10-25 23:38 (F&F 2)
   - V2Get🔓 2026-10-25 23:38 (F&F 3)
@@ -3846,16 +3851,16 @@ proxy-groups:
   - V2Get🔓 2026-10-25 23:38 (F&F 8)
   - V2Get🔓 2026-10-25 23:38 (F&F 9)
   - V2Get🔓 2026-10-25 23:38 (F&F 10)
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 1) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 2) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 3) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 4) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 5) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 6) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 7) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 8) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 9) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 10) #2'
+  - V2Get🔓 2026-10-25 17:43 (F&F 1)
+  - V2Get🔓 2026-10-25 17:43 (F&F 2)
+  - V2Get🔓 2026-10-25 17:43 (F&F 3)
+  - V2Get🔓 2026-10-25 17:43 (F&F 4)
+  - V2Get🔓 2026-10-25 17:43 (F&F 5)
+  - V2Get🔓 2026-10-25 17:43 (F&F 6)
+  - V2Get🔓 2026-10-25 17:43 (F&F 7)
+  - V2Get🔓 2026-10-25 17:43 (F&F 8)
+  - V2Get🔓 2026-10-25 17:43 (F&F 9)
+  - V2Get🔓 2026-10-25 17:43 (F&F 10)
   - V2Get🔓 2026-10-25 16:38 (F&F 1)
   - V2Get🔓 2026-10-25 16:38 (F&F 2)
   - V2Get🔓 2026-10-25 16:38 (F&F 3)
@@ -3926,6 +3931,16 @@ proxy-groups:
   - 'V2Get🔓 2026-10-25 02:42 (F&F 8) #6'
   - 'V2Get🔓 2026-10-25 02:42 (F&F 9) #6'
   - 'V2Get🔓 2026-10-25 02:42 (F&F 10) #6'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 1) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 2) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 3) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 4) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 5) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 6) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 7) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 8) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 9) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 10) #7'
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -3938,7 +3953,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-26 03:14 #2'
   - 'V2Get🛰️ 2026-10-26 03:14 #3'
   - 'V2Get🛰️ 2026-10-26 03:14 #4'
-  - V2Get🛰️ 2026-10-18 23:12
+  - V2Get🛰️ 2026-10-26 07:53
+  - V2Get🛰️ 2026-10-26 05:38
   - V2Get🛰️ 2026-10-25 02:22
   - V2Get🛰️ 2026-10-25 02:23
   - V2Get🛰️ 2026-10-25 21:39
@@ -3964,7 +3980,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-26 05:53 #3'
   - 'V2Get🛰️ 2026-10-26 05:53 #4'
   - 'V2Get🛰️ 2026-10-26 05:53 #5'
-  - V2Get🛰️ 2026-10-26 05:38
   - V2Get🛰️ 2026-10-26 05:23
   - 'V2Get🛰️ 2026-10-26 05:23 #2'
   - 'V2Get🛰️ 2026-10-26 05:23 #3'
@@ -4091,16 +4106,6 @@ proxy-groups:
   - V2Get🔓 2026-10-25 18:53 (F&F 8)
   - V2Get🔓 2026-10-25 18:53 (F&F 9)
   - V2Get🔓 2026-10-25 18:53 (F&F 10)
-  - V2Get🔓 2026-10-25 17:43 (F&F 1)
-  - V2Get🔓 2026-10-25 17:43 (F&F 2)
-  - V2Get🔓 2026-10-25 17:43 (F&F 3)
-  - V2Get🔓 2026-10-25 17:43 (F&F 4)
-  - V2Get🔓 2026-10-25 17:43 (F&F 5)
-  - V2Get🔓 2026-10-25 17:43 (F&F 6)
-  - V2Get🔓 2026-10-25 17:43 (F&F 7)
-  - V2Get🔓 2026-10-25 17:43 (F&F 8)
-  - V2Get🔓 2026-10-25 17:43 (F&F 9)
-  - V2Get🔓 2026-10-25 17:43 (F&F 10)
   - V2Get🔓 2026-10-25 23:38 (F&F 1)
   - V2Get🔓 2026-10-25 23:38 (F&F 2)
   - V2Get🔓 2026-10-25 23:38 (F&F 3)
@@ -4111,16 +4116,16 @@ proxy-groups:
   - V2Get🔓 2026-10-25 23:38 (F&F 8)
   - V2Get🔓 2026-10-25 23:38 (F&F 9)
   - V2Get🔓 2026-10-25 23:38 (F&F 10)
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 1) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 2) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 3) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 4) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 5) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 6) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 7) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 8) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 9) #2'
-  - 'V2Get🔓 2026-10-25 17:43 (F&F 10) #2'
+  - V2Get🔓 2026-10-25 17:43 (F&F 1)
+  - V2Get🔓 2026-10-25 17:43 (F&F 2)
+  - V2Get🔓 2026-10-25 17:43 (F&F 3)
+  - V2Get🔓 2026-10-25 17:43 (F&F 4)
+  - V2Get🔓 2026-10-25 17:43 (F&F 5)
+  - V2Get🔓 2026-10-25 17:43 (F&F 6)
+  - V2Get🔓 2026-10-25 17:43 (F&F 7)
+  - V2Get🔓 2026-10-25 17:43 (F&F 8)
+  - V2Get🔓 2026-10-25 17:43 (F&F 9)
+  - V2Get🔓 2026-10-25 17:43 (F&F 10)
   - V2Get🔓 2026-10-25 16:38 (F&F 1)
   - V2Get🔓 2026-10-25 16:38 (F&F 2)
   - V2Get🔓 2026-10-25 16:38 (F&F 3)
@@ -4191,6 +4196,16 @@ proxy-groups:
   - 'V2Get🔓 2026-10-25 02:42 (F&F 8) #6'
   - 'V2Get🔓 2026-10-25 02:42 (F&F 9) #6'
   - 'V2Get🔓 2026-10-25 02:42 (F&F 10) #6'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 1) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 2) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 3) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 4) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 5) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 6) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 7) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 8) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 9) #7'
+  - 'V2Get🔓 2026-10-25 02:42 (F&F 10) #7'
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
