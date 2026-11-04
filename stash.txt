@@ -134,35 +134,39 @@ proxies:
       Host: mitivpn--mitivpn-mitivpn.ac.ir
 - name: V2Get🛰️ 2026-10-20 23:12
   type: vmess
-  server: 134.195.196.211
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-10-22 21:27
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-10-30 22:31
+  type: vless
+  server: 156.252.229.136
+  port: 8443
+  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-10-23 09:00
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
+  tls: true
+  servername: play.googleapis.com
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+- name: V2Get🛰️ 2026-11-04 01:10
+  type: vless
+  server: 45.141.202.69
+  port: 443
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
   udp: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: files.porsche.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
 - name: V2Get🛰️ 2026-10-25 14:16
   type: vless
   server: 172.237.88.103
@@ -2371,166 +2375,6 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: V2Get🔓 2026-10-31 07:46 (F&F 1)
-  type: vless
-  server: 104.19.13.194
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 2)
-  type: vless
-  server: 104.17.102.202
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 3)
-  type: vless
-  server: 104.17.33.174
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 4)
-  type: vless
-  server: 104.19.0.111
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 5)
-  type: vless
-  server: 104.19.95.104
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 6)
-  type: vless
-  server: 198.41.208.177
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 7)
-  type: vless
-  server: 172.67.152.132
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 8)
-  type: vless
-  server: 172.67.153.61
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 9)
-  type: vless
-  server: 198.41.208.70
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: V2Get🔓 2026-10-31 07:46 (F&F 10)
-  type: vless
-  server: 172.67.153.81
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 - name: V2Get🔓 2026-10-31 07:45 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -3491,6 +3335,166 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 1)
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 2)
+  type: vless
+  server: 104.17.102.202
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 3)
+  type: vless
+  server: 104.17.33.174
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 4)
+  type: vless
+  server: 104.19.0.111
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 5)
+  type: vless
+  server: 104.19.95.104
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 6)
+  type: vless
+  server: 198.41.208.177
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 7)
+  type: vless
+  server: 172.67.152.132
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 8)
+  type: vless
+  server: 172.67.153.61
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 9)
+  type: vless
+  server: 198.41.208.70
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
+- name: V2Get🔓 2026-10-31 04:31 (F&F 10)
+  type: vless
+  server: 172.67.153.81
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  network: ws
+  tls: true
+  servername: n.bitpulse.me
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    headers:
+      Host: n.bitpulse.me
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -3506,8 +3510,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-31 23:40 #3'
   - 'V2Get🛰️ 2026-10-31 23:40 #4'
   - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-23 09:00
+  - V2Get🛰️ 2026-10-30 22:31
+  - V2Get🛰️ 2026-11-04 01:10
   - V2Get🛰️ 2026-10-25 14:16
   - V2Get🛰️ 2026-10-25 16:24
   - V2Get🛰️ 2026-10-25 17:23
@@ -3661,16 +3665,6 @@ proxy-groups:
   - V2Get🔓 2026-10-31 08:00 (F&F 8)
   - V2Get🔓 2026-10-31 08:00 (F&F 9)
   - V2Get🔓 2026-10-31 08:00 (F&F 10)
-  - V2Get🔓 2026-10-31 07:46 (F&F 1)
-  - V2Get🔓 2026-10-31 07:46 (F&F 2)
-  - V2Get🔓 2026-10-31 07:46 (F&F 3)
-  - V2Get🔓 2026-10-31 07:46 (F&F 4)
-  - V2Get🔓 2026-10-31 07:46 (F&F 5)
-  - V2Get🔓 2026-10-31 07:46 (F&F 6)
-  - V2Get🔓 2026-10-31 07:46 (F&F 7)
-  - V2Get🔓 2026-10-31 07:46 (F&F 8)
-  - V2Get🔓 2026-10-31 07:46 (F&F 9)
-  - V2Get🔓 2026-10-31 07:46 (F&F 10)
   - V2Get🔓 2026-10-31 07:45 (F&F 1)
   - V2Get🔓 2026-10-31 07:45 (F&F 2)
   - V2Get🔓 2026-10-31 07:45 (F&F 3)
@@ -3731,6 +3725,16 @@ proxy-groups:
   - V2Get🔓 2026-10-31 05:31 (F&F 8)
   - V2Get🔓 2026-10-31 05:31 (F&F 9)
   - V2Get🔓 2026-10-31 05:31 (F&F 10)
+  - V2Get🔓 2026-10-31 04:31 (F&F 1)
+  - V2Get🔓 2026-10-31 04:31 (F&F 2)
+  - V2Get🔓 2026-10-31 04:31 (F&F 3)
+  - V2Get🔓 2026-10-31 04:31 (F&F 4)
+  - V2Get🔓 2026-10-31 04:31 (F&F 5)
+  - V2Get🔓 2026-10-31 04:31 (F&F 6)
+  - V2Get🔓 2026-10-31 04:31 (F&F 7)
+  - V2Get🔓 2026-10-31 04:31 (F&F 8)
+  - V2Get🔓 2026-10-31 04:31 (F&F 9)
+  - V2Get🔓 2026-10-31 04:31 (F&F 10)
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -3746,8 +3750,8 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-31 23:40 #3'
   - 'V2Get🛰️ 2026-10-31 23:40 #4'
   - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-23 09:00
+  - V2Get🛰️ 2026-10-30 22:31
+  - V2Get🛰️ 2026-11-04 01:10
   - V2Get🛰️ 2026-10-25 14:16
   - V2Get🛰️ 2026-10-25 16:24
   - V2Get🛰️ 2026-10-25 17:23
@@ -3901,16 +3905,6 @@ proxy-groups:
   - V2Get🔓 2026-10-31 08:00 (F&F 8)
   - V2Get🔓 2026-10-31 08:00 (F&F 9)
   - V2Get🔓 2026-10-31 08:00 (F&F 10)
-  - V2Get🔓 2026-10-31 07:46 (F&F 1)
-  - V2Get🔓 2026-10-31 07:46 (F&F 2)
-  - V2Get🔓 2026-10-31 07:46 (F&F 3)
-  - V2Get🔓 2026-10-31 07:46 (F&F 4)
-  - V2Get🔓 2026-10-31 07:46 (F&F 5)
-  - V2Get🔓 2026-10-31 07:46 (F&F 6)
-  - V2Get🔓 2026-10-31 07:46 (F&F 7)
-  - V2Get🔓 2026-10-31 07:46 (F&F 8)
-  - V2Get🔓 2026-10-31 07:46 (F&F 9)
-  - V2Get🔓 2026-10-31 07:46 (F&F 10)
   - V2Get🔓 2026-10-31 07:45 (F&F 1)
   - V2Get🔓 2026-10-31 07:45 (F&F 2)
   - V2Get🔓 2026-10-31 07:45 (F&F 3)
@@ -3971,6 +3965,16 @@ proxy-groups:
   - V2Get🔓 2026-10-31 05:31 (F&F 8)
   - V2Get🔓 2026-10-31 05:31 (F&F 9)
   - V2Get🔓 2026-10-31 05:31 (F&F 10)
+  - V2Get🔓 2026-10-31 04:31 (F&F 1)
+  - V2Get🔓 2026-10-31 04:31 (F&F 2)
+  - V2Get🔓 2026-10-31 04:31 (F&F 3)
+  - V2Get🔓 2026-10-31 04:31 (F&F 4)
+  - V2Get🔓 2026-10-31 04:31 (F&F 5)
+  - V2Get🔓 2026-10-31 04:31 (F&F 6)
+  - V2Get🔓 2026-10-31 04:31 (F&F 7)
+  - V2Get🔓 2026-10-31 04:31 (F&F 8)
+  - V2Get🔓 2026-10-31 04:31 (F&F 9)
+  - V2Get🔓 2026-10-31 04:31 (F&F 10)
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
