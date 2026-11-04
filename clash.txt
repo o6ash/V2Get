@@ -132,22 +132,47 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn--mitivpn-mitivpn.ac.ir
-- name: V2Get🛰️ 2026-10-20 23:12
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-11-03 19:43
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-10-25 18:39
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  network: ws
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.
+- name: V2Get🛰️ 2026-11-04 01:43
+  type: trojan
+  server: 199.68.156.250
+  port: 2087
+  password: 7bpe9s002exll38s
   udp: true
+  sni: nexoshop.netvia.ir
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: nexoshop.netvia.ir
+- name: V2Get🛰️ 2026-11-03 23:10
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
+  udp: true
+  network: ws
+  tls: true
+  servername: community.fastly.steamstatic.com
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-27 17:13
   type: ss
   server: 82.38.31.185
@@ -245,19 +270,6 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: HH7pKVkvqwZBs9yeZ6ffYZ1ColfFNT94Yek4GC4NLFs
-- name: V2Get🛰️ 2026-11-03 23:10
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
-  udp: true
-  network: ws
-  tls: true
-  servername: community.fastly.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-11-03 01:42
   type: vless
   server: wwww.qarvian.ir
@@ -3682,8 +3694,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-31 23:40 #2'
   - 'V2Get🛰️ 2026-10-31 23:40 #3'
   - 'V2Get🛰️ 2026-10-31 23:40 #4'
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-25 18:39
+  - V2Get🛰️ 2026-11-03 19:43
+  - V2Get🛰️ 2026-11-04 01:43
+  - V2Get🛰️ 2026-11-03 23:10
   - V2Get🛰️ 2026-10-27 17:13
   - V2Get🛰️ 2026-11-04 14:45
   - 'V2Get🛰️ 2026-11-04 14:45 #2'
@@ -3692,7 +3705,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-04 16:11
   - V2Get🛰️ 2026-10-29 08:04
   - V2Get🛰️ 2026-11-04 18:41
-  - V2Get🛰️ 2026-11-03 23:10
   - V2Get🛰️ 2026-11-03 01:42
   - 'V2Get🛰️ 2026-11-03 01:42 #2'
   - V2Get🛰️ 2026-11-04 09:56
@@ -3945,8 +3957,9 @@ proxy-groups:
   - 'V2Get🛰️ 2026-10-31 23:40 #2'
   - 'V2Get🛰️ 2026-10-31 23:40 #3'
   - 'V2Get🛰️ 2026-10-31 23:40 #4'
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-25 18:39
+  - V2Get🛰️ 2026-11-03 19:43
+  - V2Get🛰️ 2026-11-04 01:43
+  - V2Get🛰️ 2026-11-03 23:10
   - V2Get🛰️ 2026-10-27 17:13
   - V2Get🛰️ 2026-11-04 14:45
   - 'V2Get🛰️ 2026-11-04 14:45 #2'
@@ -3955,7 +3968,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-04 16:11
   - V2Get🛰️ 2026-10-29 08:04
   - V2Get🛰️ 2026-11-04 18:41
-  - V2Get🛰️ 2026-11-03 23:10
   - V2Get🛰️ 2026-11-03 01:42
   - 'V2Get🛰️ 2026-11-03 01:42 #2'
   - V2Get🛰️ 2026-11-04 09:56
