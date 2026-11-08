@@ -72,28 +72,51 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN
     headers:
       Host: MiTiVPN-1-mitivpn.ac.ir
-- name: V2Get🛰️ 2026-10-24 09:00
-  type: vmess
-  server: 2001:bc8:32d7:1a9::3
-  port: 18901
-  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-11-05 18:33
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: a55a4d25-76f0-4f0e-d395-3a92c0b34268
+  udp: true
+  network: xhttp
+  tls: true
+  servername: community.fastly.steamstatic.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-11-07 20:47
+  type: ss
+  server: 4.168.233.69
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: cdrSQWa9CwUAVdt3
+  udp: true
+- name: V2Get🛰️ 2026-11-07 20:32
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
   udp: true
   network: ws
+  tls: true
+  servername: cdn.akamai.steamstatic.com
   ws-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
-- name: 'V2Get🛰️ 2026-10-24 09:00 #2'
-  type: vmess
-  server: 2001:bc8:32d7:1a9::2
-  port: 18901
-  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-  alterId: 0
-  cipher: auto
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
+- name: 'V2Get🛰️ 2026-11-07 20:32 #2'
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
   udp: true
   network: ws
+  tls: true
+  servername: cdn.akamai.steamstatic.com
   ws-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-28 05:46
   type: trojan
   server: 199.232.78.160
@@ -109,32 +132,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/SG---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-11-07 20:32
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
-- name: 'V2Get🛰️ 2026-11-07 20:32 #2'
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-11-07 12:18
   type: trojan
   server: 167.82.64.7
@@ -3657,11 +3654,11 @@ proxy-groups:
   - V2Get🛰️ 2026-11-07 15:46
   - 'V2Get🛰️ 2026-11-07 15:46 #2'
   - 'V2Get🛰️ 2026-11-07 15:46 #3'
-  - V2Get🛰️ 2026-10-24 09:00
-  - 'V2Get🛰️ 2026-10-24 09:00 #2'
-  - V2Get🛰️ 2026-10-28 05:46
+  - V2Get🛰️ 2026-11-05 18:33
+  - V2Get🛰️ 2026-11-07 20:47
   - V2Get🛰️ 2026-11-07 20:32
   - 'V2Get🛰️ 2026-11-07 20:32 #2'
+  - V2Get🛰️ 2026-10-28 05:46
   - V2Get🛰️ 2026-11-07 12:18
   - 'V2Get🛰️ 2026-11-07 12:18 #2'
   - V2Get🛰️ 2026-10-25 17:24
@@ -3922,11 +3919,11 @@ proxy-groups:
   - V2Get🛰️ 2026-11-07 15:46
   - 'V2Get🛰️ 2026-11-07 15:46 #2'
   - 'V2Get🛰️ 2026-11-07 15:46 #3'
-  - V2Get🛰️ 2026-10-24 09:00
-  - 'V2Get🛰️ 2026-10-24 09:00 #2'
-  - V2Get🛰️ 2026-10-28 05:46
+  - V2Get🛰️ 2026-11-05 18:33
+  - V2Get🛰️ 2026-11-07 20:47
   - V2Get🛰️ 2026-11-07 20:32
   - 'V2Get🛰️ 2026-11-07 20:32 #2'
+  - V2Get🛰️ 2026-10-28 05:46
   - V2Get🛰️ 2026-11-07 12:18
   - 'V2Get🛰️ 2026-11-07 12:18 #2'
   - V2Get🛰️ 2026-10-25 17:24
