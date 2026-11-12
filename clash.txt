@@ -27,13 +27,19 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn.lifestyle
-- name: V2Get🛰️ 2026-11-05 11:46
-  type: ss
-  server: 152.53.1.57
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+- name: V2Get🛰️ 2026-11-12 17:55
+  type: vless
+  server: 8.6.112.0
+  port: 443
+  uuid: 0f7638c8-d7f1-5ef7-95d4-b281a631127d
   udp: true
+  network: ws
+  tls: true
+  servername: de1.v2less.site
+  ws-opts:
+    path: /vless
+    headers:
+      Host: de1.v2less.site
 - name: V2Get🛰️ 2026-11-12 12:52
   type: vless
   server: tulip.amydoodles.com
@@ -3521,7 +3527,7 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-11-05 11:46
+  - V2Get🛰️ 2026-11-12 17:55
   - V2Get🛰️ 2026-11-12 12:52
   - 'V2Get🛰️ 2026-11-12 12:52 #2'
   - V2Get🛰️ 2026-11-12 13:05
@@ -3776,7 +3782,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-11-05 11:46
+  - V2Get🛰️ 2026-11-12 17:55
   - V2Get🛰️ 2026-11-12 12:52
   - 'V2Get🛰️ 2026-11-12 12:52 #2'
   - V2Get🛰️ 2026-11-12 13:05
