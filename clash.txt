@@ -27,63 +27,74 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn.lifestyle
-- name: V2Get🛰️ 2026-10-21 23:59
-  type: ss
-  server: 82.38.31.62
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: V2Get🛰️ 2026-11-13 12:53
+  type: vless
+  server: tulip.amydoodles.com
+  port: 443
+  uuid: b478eed8-862c-40e1-a37f-5d4ac2211ba5
   udp: true
-- name: V2Get🛰️ 2026-10-22 21:27
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-11-13 12:53 #2'
+  type: vless
+  server: 167.82.76.31
+  port: 443
+  uuid: b478eed8-862c-40e1-a37f-5d4ac2211ba5
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: firefox
+- name: 'V2Get🛰️ 2026-11-13 12:53 #3'
+  type: ss
+  server: 66.bmi.ir.asopardaz.ir
+  port: 35176
+  cipher: 2022-blake3-aes-256-gcm
+  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ODg3ZjQxOGM2NzFhNGMzYWFhZTQ0NWE2YTY5NzljYjY=
+  udp: true
+- name: 'V2Get🛰️ 2026-11-13 12:53 #4'
+  type: vless
+  server: 66.bmi.ir.asopardaz.ir
+  port: 8443
+  uuid: 887f418c-671a-4c3a-aae4-45a6a6979cb6
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-10-22 21:28
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: V2Get🛰️ 2026-10-23 09:00
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hostgator.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+- name: 'V2Get🛰️ 2026-11-13 12:53 #5'
   type: vmess
-  server: 57.129.132.223
+  server: bmi2.kolman.com.de
   port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  uuid: 887f418c-671a-4c3a-aae4-45a6a6979cb6
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: V2Get🛰️ 2026-10-26 00:38
-  type: ss
-  server: 82.38.31.162
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-11-13 12:53 #6'
+  type: vmess
+  server: cd0.bmi.ir.kolman.com.de
+  port: 80
+  uuid: 887f418c-671a-4c3a-aae4-45a6a6979cb6
+  alterId: 0
+  cipher: auto
   udp: true
-- name: V2Get🛰️ 2026-10-27 07:39
-  type: ss
-  server: 82.38.31.207
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  network: httpupgrade
+- name: 'V2Get🛰️ 2026-11-13 12:53 #7'
+  type: vmess
+  server: bmi.ir.kolman.com.de
+  port: 80
+  uuid: 887f418c-671a-4c3a-aae4-45a6a6979cb6
+  alterId: 0
+  cipher: auto
   udp: true
-- name: V2Get🛰️ 2026-10-27 17:12
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
+  network: httpupgrade
 - name: V2Get🛰️ 2026-10-27 17:14
   type: ss
   server: 82.38.31.204
@@ -2904,13 +2915,13 @@ proxy-groups:
   - ♻️ Auto Select
   - DIRECT
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-21 23:59
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-22 21:28
-  - V2Get🛰️ 2026-10-23 09:00
-  - V2Get🛰️ 2026-10-26 00:38
-  - V2Get🛰️ 2026-10-27 07:39
-  - V2Get🛰️ 2026-10-27 17:12
+  - V2Get🛰️ 2026-11-13 12:53
+  - 'V2Get🛰️ 2026-11-13 12:53 #2'
+  - 'V2Get🛰️ 2026-11-13 12:53 #3'
+  - 'V2Get🛰️ 2026-11-13 12:53 #4'
+  - 'V2Get🛰️ 2026-11-13 12:53 #5'
+  - 'V2Get🛰️ 2026-11-13 12:53 #6'
+  - 'V2Get🛰️ 2026-11-13 12:53 #7'
   - V2Get🛰️ 2026-10-27 17:14
   - V2Get🛰️ 2026-10-27 17:25
   - V2Get🛰️ 2026-10-27 17:38
@@ -3120,13 +3131,13 @@ proxy-groups:
   tolerance: 50
   proxies:
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-21 23:59
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-22 21:28
-  - V2Get🛰️ 2026-10-23 09:00
-  - V2Get🛰️ 2026-10-26 00:38
-  - V2Get🛰️ 2026-10-27 07:39
-  - V2Get🛰️ 2026-10-27 17:12
+  - V2Get🛰️ 2026-11-13 12:53
+  - 'V2Get🛰️ 2026-11-13 12:53 #2'
+  - 'V2Get🛰️ 2026-11-13 12:53 #3'
+  - 'V2Get🛰️ 2026-11-13 12:53 #4'
+  - 'V2Get🛰️ 2026-11-13 12:53 #5'
+  - 'V2Get🛰️ 2026-11-13 12:53 #6'
+  - 'V2Get🛰️ 2026-11-13 12:53 #7'
   - V2Get🛰️ 2026-10-27 17:14
   - V2Get🛰️ 2026-10-27 17:25
   - V2Get🛰️ 2026-10-27 17:38
