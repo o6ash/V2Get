@@ -57,13 +57,60 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn.lifestyle
-- name: V2Get🛰️ 2026-10-22 21:29
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: V2Get🛰️ 2026-10-22 21:27
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-11-14 01:33
+  type: ss
+  server: 47.91.74.232
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: V2Get🛰️ 2026-11-15 02:28
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 2237ac4b-a8a8-4476-ff67-d140d96b7a38
+  udp: true
+  network: xhttp
+  tls: true
+  servername: community.fastly.steamstatic.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
+- name: V2Get🛰️ 2026-11-14 00:03
+  type: trojan
+  server: fastly2.dunnexa.ir
+  port: 443
+  password: jcTG9WSWMJAmR4rv10xpww
+  udp: true
+  sni: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
+    headers:
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+- name: V2Get🛰️ 2026-11-13 23:48
+  type: trojan
+  server: 199.232.78.159
+  port: 443
+  password: jcTG9WSWMJAmR4rv10xpww
+  udp: true
+  sni: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
+    headers:
+      Host: copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-11-11 21:18
   type: vless
   server: online.shop.ir.eeso.cc
@@ -90,32 +137,6 @@ proxies:
   reality-opts:
     public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
     short-id: cd0a1986719e44c8
-- name: V2Get🛰️ 2026-10-27 10:54
-  type: vless
-  server: 15.204.97.216
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-- name: V2Get🛰️ 2026-10-27 17:38
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
 - name: V2Get🛰️ 2026-11-12 23:05
   type: vless
   server: 199.232.78.120
@@ -545,32 +566,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: V2Get🛰️ 2026-11-13 23:48
-  type: trojan
-  server: 199.232.78.159
-  port: 443
-  password: jcTG9WSWMJAmR4rv10xpww
-  udp: true
-  sni: cdn.akamai.steamstatic.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
-    headers:
-      Host: copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.
-- name: V2Get🛰️ 2026-11-14 00:03
-  type: trojan
-  server: fastly2.dunnexa.ir
-  port: 443
-  password: jcTG9WSWMJAmR4rv10xpww
-  udp: true
-  sni: cdn.akamai.steamstatic.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
-    headers:
-      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-11-14 11:36
   type: vmess
   server: 154.47.19.225
@@ -3107,11 +3102,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-13 22:53 #3'
   - 'V2Get🛰️ 2026-11-13 22:53 #4'
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-22 21:29
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-11-14 01:33
+  - V2Get🛰️ 2026-11-15 02:28
+  - V2Get🛰️ 2026-11-14 00:03
+  - V2Get🛰️ 2026-11-13 23:48
   - V2Get🛰️ 2026-11-11 21:18
   - V2Get🛰️ 2026-11-15 20:46
-  - V2Get🛰️ 2026-10-27 10:54
-  - V2Get🛰️ 2026-10-27 17:38
   - V2Get🛰️ 2026-11-12 23:05
   - V2Get🛰️ 2026-11-13 01:03
   - V2Get🛰️ 2026-11-13 08:48
@@ -3154,8 +3151,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-12 22:54 #2'
   - V2Get🛰️ 2026-11-13 09:03
   - V2Get🛰️ 2026-11-13 13:03
-  - V2Get🛰️ 2026-11-13 23:48
-  - V2Get🛰️ 2026-11-14 00:03
   - V2Get🛰️ 2026-11-14 11:36
   - V2Get🛰️ 2026-11-14 19:55
   - 'V2Get🛰️ 2026-11-14 19:55 #2'
@@ -3339,11 +3334,13 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-13 22:53 #3'
   - 'V2Get🛰️ 2026-11-13 22:53 #4'
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-22 21:29
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-11-14 01:33
+  - V2Get🛰️ 2026-11-15 02:28
+  - V2Get🛰️ 2026-11-14 00:03
+  - V2Get🛰️ 2026-11-13 23:48
   - V2Get🛰️ 2026-11-11 21:18
   - V2Get🛰️ 2026-11-15 20:46
-  - V2Get🛰️ 2026-10-27 10:54
-  - V2Get🛰️ 2026-10-27 17:38
   - V2Get🛰️ 2026-11-12 23:05
   - V2Get🛰️ 2026-11-13 01:03
   - V2Get🛰️ 2026-11-13 08:48
@@ -3386,8 +3383,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-12 22:54 #2'
   - V2Get🛰️ 2026-11-13 09:03
   - V2Get🛰️ 2026-11-13 13:03
-  - V2Get🛰️ 2026-11-13 23:48
-  - V2Get🛰️ 2026-11-14 00:03
   - V2Get🛰️ 2026-11-14 11:36
   - V2Get🛰️ 2026-11-14 19:55
   - 'V2Get🛰️ 2026-11-14 19:55 #2'
