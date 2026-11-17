@@ -57,31 +57,55 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn-mitivpn.lifestyle
-- name: V2Get🛰️ 2026-10-20 23:12
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-10-22 21:27
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-10-22 21:29
+- name: V2Get🛰️ 2026-11-16 23:47
   type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 37.32.22.150
+  port: 9147
+  cipher: aes-256-gcm
+  password: MWFjZTE0Y2UwM2U1YTFmMDA4MjJiYWJhYzMyNzEw
   udp: true
+- name: V2Get🛰️ 2026-11-16 23:49
+  type: vless
+  server: 56.228.115.67
+  port: 2087
+  uuid: bc8d600c-46e3-4327-b70f-0822f612be2d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ
+    short-id: 4c36b466
+- name: V2Get🛰️ 2026-11-17 06:12
+  type: vless
+  server: 45.249.91.115
+  port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: my1.gofizz.in
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xE5R41I9u0Ro2Ru4TUDVqA0a1GRyS5K6zh1DJcJLEUw
+    short-id: 4af284210d
+- name: V2Get🛰️ 2026-11-16 10:55
+  type: vless
+  server: 185.231.101.94
+  port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuzora.net
+  client-fingerprint: edge
+  reality-opts:
+    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
+    short-id: 51057fb54d2364f4
 - name: V2Get🛰️ 2026-10-25 08:55
   type: ss
   server: 198.98.53.130
@@ -219,20 +243,6 @@ proxies:
   reality-opts:
     public-key: WgTZR-o6VbFYeqb7iZNBh-izcWAQlpotOyxibJnAXVc
     short-id: f51489cb3d7e8be2
-- name: V2Get🛰️ 2026-11-16 10:55
-  type: vless
-  server: 185.231.101.94
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuzora.net
-  client-fingerprint: edge
-  reality-opts:
-    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
-    short-id: 51057fb54d2364f4
 - name: 'V2Get🛰️ 2026-11-16 10:55 #2'
   type: vless
   server: 193.243.189.64
@@ -3768,9 +3778,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-13 22:53 #3'
   - 'V2Get🛰️ 2026-11-13 22:53 #4'
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-22 21:29
+  - V2Get🛰️ 2026-11-16 23:47
+  - V2Get🛰️ 2026-11-16 23:49
+  - V2Get🛰️ 2026-11-17 06:12
+  - V2Get🛰️ 2026-11-16 10:55
   - V2Get🛰️ 2026-10-25 08:55
   - V2Get🛰️ 2026-10-27 14:53
   - V2Get🛰️ 2026-10-27 17:38
@@ -3785,7 +3796,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-10 23:37
   - V2Get🛰️ 2026-11-13 23:48
   - V2Get🛰️ 2026-11-16 08:34
-  - V2Get🛰️ 2026-11-16 10:55
   - 'V2Get🛰️ 2026-11-16 10:55 #2'
   - V2Get🛰️ 2026-11-16 11:04
   - V2Get🛰️ 2026-11-16 11:34
@@ -4034,9 +4044,10 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-13 22:53 #3'
   - 'V2Get🛰️ 2026-11-13 22:53 #4'
   - V2Get🛰️ 2026-11-12 17:52
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-22 21:29
+  - V2Get🛰️ 2026-11-16 23:47
+  - V2Get🛰️ 2026-11-16 23:49
+  - V2Get🛰️ 2026-11-17 06:12
+  - V2Get🛰️ 2026-11-16 10:55
   - V2Get🛰️ 2026-10-25 08:55
   - V2Get🛰️ 2026-10-27 14:53
   - V2Get🛰️ 2026-10-27 17:38
@@ -4051,7 +4062,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-10 23:37
   - V2Get🛰️ 2026-11-13 23:48
   - V2Get🛰️ 2026-11-16 08:34
-  - V2Get🛰️ 2026-11-16 10:55
   - 'V2Get🛰️ 2026-11-16 10:55 #2'
   - V2Get🛰️ 2026-11-16 11:04
   - V2Get🛰️ 2026-11-16 11:34
