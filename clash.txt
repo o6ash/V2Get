@@ -42,23 +42,37 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN?26
     headers:
       Host: mitivpn.talk
-- name: V2Get🛰️ 2026-10-20 14:02
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: V2Get🛰️ 2026-11-19 00:29
+  type: vless
+  server: 216.24.57.1
+  port: 2095
+  uuid: 99d05f08-3192-4fdb-9796-59c689e0ff54
   udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: 'V2Get🛰️ 2026-11-19 00:29 #2'
+  type: vless
+  server: render.com
+  port: 2095
+  uuid: 99d05f08-3192-4fdb-9796-59c689e0ff54
+  udp: true
+  network: httpupgrade
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-11-19 00:17
+  type: vless
+  server: ipfast.kingmna.com
+  port: 443
+  uuid: 99d05f08-3192-4fdb-9796-59c689e0ff54
+  udp: true
+  network: ws
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  client-fingerprint: ios
+  ws-opts:
+    path: /
+    headers:
+      Host: looabomrhesamijji.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-10-20 23:12
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-10-20 23:12 #2'
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -449,20 +463,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-11-19 00:17
-  type: vless
-  server: ipfast.kingmna.com
-  port: 443
-  uuid: 99d05f08-3192-4fdb-9796-59c689e0ff54
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /
-    headers:
-      Host: looabomrhesamijji.global.ssl.fastly.net.
 - name: V2Get🛰️ 2026-11-19 00:18
   type: vless
   server: acornterminal.website
@@ -3427,9 +3427,10 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-17 15:26
   - 'V2Get🛰️ 2026-11-17 15:26 #2'
-  - V2Get🛰️ 2026-10-20 14:02
+  - V2Get🛰️ 2026-11-19 00:29
+  - 'V2Get🛰️ 2026-11-19 00:29 #2'
+  - V2Get🛰️ 2026-11-19 00:17
   - V2Get🛰️ 2026-10-20 23:12
-  - 'V2Get🛰️ 2026-10-20 23:12 #2'
   - V2Get🛰️ 2026-10-21 23:59
   - 'V2Get🛰️ 2026-10-21 23:59 #2'
   - V2Get🛰️ 2026-10-22 21:27
@@ -3467,7 +3468,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-18 22:01 #2'
   - V2Get🛰️ 2026-11-18 23:42
   - 'V2Get🛰️ 2026-11-18 23:42 #2'
-  - V2Get🛰️ 2026-11-19 00:17
   - V2Get🛰️ 2026-11-19 00:18
   - 'V2Get🛰️ 2026-11-19 00:18 #2'
   - 'V2Get🛰️ 2026-11-19 00:18 #3'
@@ -3677,9 +3677,10 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-17 15:26
   - 'V2Get🛰️ 2026-11-17 15:26 #2'
-  - V2Get🛰️ 2026-10-20 14:02
+  - V2Get🛰️ 2026-11-19 00:29
+  - 'V2Get🛰️ 2026-11-19 00:29 #2'
+  - V2Get🛰️ 2026-11-19 00:17
   - V2Get🛰️ 2026-10-20 23:12
-  - 'V2Get🛰️ 2026-10-20 23:12 #2'
   - V2Get🛰️ 2026-10-21 23:59
   - 'V2Get🛰️ 2026-10-21 23:59 #2'
   - V2Get🛰️ 2026-10-22 21:27
@@ -3717,7 +3718,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-18 22:01 #2'
   - V2Get🛰️ 2026-11-18 23:42
   - 'V2Get🛰️ 2026-11-18 23:42 #2'
-  - V2Get🛰️ 2026-11-19 00:17
   - V2Get🛰️ 2026-11-19 00:18
   - 'V2Get🛰️ 2026-11-19 00:18 #2'
   - 'V2Get🛰️ 2026-11-19 00:18 #3'
