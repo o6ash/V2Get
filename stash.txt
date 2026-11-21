@@ -42,20 +42,22 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN?26
     headers:
       Host: mitivpn.talk
-- name: V2Get🛰️ 2026-10-26 05:23
-  type: vless
-  server: 51.158.206.86
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: V2Get🛰️ 2026-11-21 17:48
+  type: vmess
+  server: 128.140.49.30
+  port: 443
+  uuid: 11edc5c6-bd3f-48f5-ae44-7b61758f323b
+  alterId: 0
+  cipher: auto
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
+  servername: germanyhetz.onlinernet.ir
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: germanyhetz.onlinernet.ir
 - name: V2Get🛰️ 2026-11-20 21:49
   type: vless
   server: 144.31.90.235
@@ -2713,7 +2715,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-17 15:26
   - 'V2Get🛰️ 2026-11-17 15:26 #2'
-  - V2Get🛰️ 2026-10-26 05:23
+  - V2Get🛰️ 2026-11-21 17:48
   - V2Get🛰️ 2026-11-20 21:49
   - V2Get🛰️ 2026-11-21 09:13
   - V2Get🛰️ 2026-11-21 17:47
@@ -2904,7 +2906,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-17 15:26
   - 'V2Get🛰️ 2026-11-17 15:26 #2'
-  - V2Get🛰️ 2026-10-26 05:23
+  - V2Get🛰️ 2026-11-21 17:48
   - V2Get🛰️ 2026-11-20 21:49
   - V2Get🛰️ 2026-11-21 09:13
   - V2Get🛰️ 2026-11-21 17:47
