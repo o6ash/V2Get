@@ -42,17 +42,21 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-11-18 02:13
-  type: vless
-  server: app.streamru14.net
+- name: V2Get🛰️ 2026-10-18 22:59
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  password: mitivpn
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app.streamru14.net
-  client-fingerprint: firefox
+  sni: global.fastly.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn-dd.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-11-17 15:03
   type: trojan
   server: 167.82.64.7
@@ -68,14 +72,17 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN?26#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: mitivpn.talk
-- name: V2Get🛰️ 2026-10-25 21:29
+- name: V2Get🛰️ 2026-11-18 02:13
   type: vless
-  server: 142.132.140.143
-  port: 1003
-  uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
+  server: app.streamru14.net
+  port: 443
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
   udp: true
   network: tcp
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.streamru14.net
+  client-fingerprint: firefox
 - name: V2Get🛰️ 2026-10-26 00:38
   type: ss
   server: 82.38.31.162
@@ -3539,9 +3546,9 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-11-18 02:13
+  - V2Get🛰️ 2026-10-18 22:59
   - V2Get🛰️ 2026-11-17 15:03
-  - V2Get🛰️ 2026-10-25 21:29
+  - V2Get🛰️ 2026-11-18 02:13
   - V2Get🛰️ 2026-10-26 00:38
   - V2Get🛰️ 2026-10-26 20:08
   - V2Get🛰️ 2026-10-27 12:39
@@ -3794,9 +3801,9 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-11-18 02:13
+  - V2Get🛰️ 2026-10-18 22:59
   - V2Get🛰️ 2026-11-17 15:03
-  - V2Get🛰️ 2026-10-25 21:29
+  - V2Get🛰️ 2026-11-18 02:13
   - V2Get🛰️ 2026-10-26 00:38
   - V2Get🛰️ 2026-10-26 20:08
   - V2Get🛰️ 2026-10-27 12:39
