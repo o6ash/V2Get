@@ -42,85 +42,119 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-18 22:59
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: mitivpn
+- name: V2Get🛰️ 2026-10-20 23:12
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: global.fastly.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: mitivpn-dd.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-25 16:24
+  network: tcp
+- name: V2Get🛰️ 2026-10-22 21:27
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-10-25 19:10
   type: vless
-  server: edge.bookmai.com
+  server: 47.253.226.114
   port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: mother-earth.fyi
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: V2Get🛰️ 2026-10-26 20:08
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+- name: V2Get🛰️ 2026-10-27 13:23
   type: ss
-  server: 185.164.175.81
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: V2Get🛰️ 2026-10-27 16:40
+  type: ss
+  server: 82.38.31.186
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 'V2Get🛰️ 2026-10-27 16:40 #2'
+  type: ss
+  server: 185.215.132.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: V2Get🛰️ 2026-10-30 00:04
-  type: trojan
-  server: 170.101.101.53
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: true
-- name: V2Get🛰️ 2026-11-05 10:01
-  type: ss
-  server: 151.241.19.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: V2Get🛰️ 2026-11-17 01:17
+- name: V2Get🛰️ 2026-10-27 17:38
   type: vless
-  server: 147.45.66.208
-  port: 43000
-  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
+  server: 62.210.91.2
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: 147.45.66.208
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+- name: V2Get🛰️ 2026-10-28 11:02
+  type: vless
+  server: 51.158.206.20
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- name: V2Get🛰️ 2026-10-28 23:04
+  type: ss
+  server: 82.38.31.180
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: V2Get🛰️ 2026-11-22 23:12
+  type: vless
+  server: 48.102.204.67
+  port: 8443
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tradingview.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
-    short-id: 4d3d8e15
-- name: V2Get🛰️ 2026-11-17 15:03
-  type: trojan
-  server: 167.82.64.7
-  port: 443
-  password: mitivpn
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+- name: V2Get🛰️ 2026-11-23 22:27
+  type: ss
+  server: 27.124.5.86
+  port: 8388
+  cipher: 2022-blake3-aes-256-gcm
+  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
   udp: true
-  sni: steamstatic.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN?26#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: mitivpn.talk
+- name: 'V2Get🛰️ 2026-11-23 22:27 #2'
+  type: ss
+  server: ser1.sublinkplas.ir
+  port: 2027
+  cipher: chacha20-ietf-poly1305
+  password: E3H6TlNVDSKNpKGhfClT8vMMCY4NVl4L
+  udp: true
 - name: V2Get🛰️ 2026-11-21 14:30
   type: vless
   server: 152.53.120.90
@@ -476,36 +510,6 @@ proxies:
   reality-opts:
     public-key: b0Lktn3zKpk-9K8iDBxeCXo6dI9e7-EuMeZCmG90NRQ
     short-id: 587512fcde507a56
-- name: V2Get🛰️ 2026-11-17 00:03
-  type: vless
-  server: 201.51.12.98
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: V2Get🛰️ 2026-11-17 10:48
-  type: vless
-  server: 146.19.254.171
-  port: 8443
-  uuid: 24fb9b5b-43b7-4058-a7e5-a0499ada1fda
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 146.19.254.171
-  client-fingerprint: firefox
-- name: V2Get🛰️ 2026-11-18 00:58
-  type: ss
-  server: 8.211.57.86
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
 - name: V2Get🛰️ 2026-11-18 03:47
   type: ss
   server: 178.162.254.38
@@ -710,14 +714,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-- name: V2Get🛰️ 2026-11-23 22:27
-  type: ss
-  server: ser1.sublinkplas.ir
-  port: 2027
-  cipher: chacha20-ietf-poly1305
-  password: E3H6TlNVDSKNpKGhfClT8vMMCY4NVl4L
-  udp: true
-- name: 'V2Get🛰️ 2026-11-23 22:27 #2'
+- name: 'V2Get🛰️ 2026-11-23 22:27 #3'
   type: vless
   server: 13.36.247.237
   port: 22222
@@ -725,7 +722,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-11-23 22:27 #3'
+- name: 'V2Get🛰️ 2026-11-23 22:27 #4'
   type: vless
   server: ser4.plasmoon.ir
   port: 2026
@@ -737,13 +734,6 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'V2Get🛰️ 2026-11-23 22:27 #4'
-  type: ss
-  server: 27.124.5.86
-  port: 8388
-  cipher: 2022-blake3-aes-256-gcm
-  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
-  udp: true
 - name: 'V2Get🛰️ 2026-11-23 22:27 #5'
   type: vless
   server: 13.36.247.237
@@ -1889,166 +1879,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: mhpanel.kigaping.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 1)
-  type: vless
-  server: 104.19.13.194
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 2)
-  type: vless
-  server: 104.17.102.202
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 3)
-  type: vless
-  server: 104.17.33.174
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 4)
-  type: vless
-  server: 104.19.0.111
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 5)
-  type: vless
-  server: 104.19.95.104
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 6)
-  type: vless
-  server: 198.41.208.177
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 7)
-  type: vless
-  server: 172.67.152.132
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 8)
-  type: vless
-  server: 172.67.153.61
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 9)
-  type: vless
-  server: 198.41.208.70
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: V2Get🔓 2026-11-22 18:43 (F&F 10)
-  type: vless
-  server: 172.67.153.81
-  port: 443
-  uuid: 364d2d52-e61e-4e52-80ec-2bc6bdf15349
-  udp: true
-  network: ws
-  tls: true
-  servername: fr-free.fastestrelay.com
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
 - name: V2Get🔓 2026-11-22 13:57 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -2529,6 +2359,166 @@ proxies:
     path: /proxyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: freeceshi6.frii.site
+- name: V2Get🔓 2026-11-21 09:41 (F&F 1)
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 2)
+  type: vless
+  server: 104.17.102.202
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 3)
+  type: vless
+  server: 104.17.33.174
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 4)
+  type: vless
+  server: 104.19.0.111
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 5)
+  type: vless
+  server: 104.19.95.104
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 6)
+  type: vless
+  server: 198.41.208.177
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 7)
+  type: vless
+  server: 172.67.152.132
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 8)
+  type: vless
+  server: 172.67.153.61
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 9)
+  type: vless
+  server: 198.41.208.70
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+- name: V2Get🔓 2026-11-21 09:41 (F&F 10)
+  type: vless
+  server: 172.67.153.81
+  port: 443
+  uuid: 6401d88e-b24c-4497-95db-fe26f7b772dd
+  udp: true
+  network: ws
+  tls: true
+  servername: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: t-r-x-h-internal-routing-gateway-local-network-ir.centerzula.ir
 - name: V2Get🔓 2026-11-21 08:56 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -3317,13 +3307,18 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-18 22:59
-  - V2Get🛰️ 2026-10-25 16:24
-  - V2Get🛰️ 2026-10-26 20:08
-  - V2Get🛰️ 2026-10-30 00:04
-  - V2Get🛰️ 2026-11-05 10:01
-  - V2Get🛰️ 2026-11-17 01:17
-  - V2Get🛰️ 2026-11-17 15:03
+  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-10-25 19:10
+  - V2Get🛰️ 2026-10-27 13:23
+  - V2Get🛰️ 2026-10-27 16:40
+  - 'V2Get🛰️ 2026-10-27 16:40 #2'
+  - V2Get🛰️ 2026-10-27 17:38
+  - V2Get🛰️ 2026-10-28 11:02
+  - V2Get🛰️ 2026-10-28 23:04
+  - V2Get🛰️ 2026-11-22 23:12
+  - V2Get🛰️ 2026-11-23 22:27
+  - 'V2Get🛰️ 2026-11-23 22:27 #2'
   - V2Get🛰️ 2026-11-21 14:30
   - V2Get🛰️ 2026-11-22 14:28
   - V2Get🛰️ 2026-11-22 23:57
@@ -3356,9 +3351,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-23 23:49 #2'
   - 'V2Get🛰️ 2026-11-23 23:49 #3'
   - V2Get🛰️ 2026-11-23 10:49
-  - V2Get🛰️ 2026-11-17 00:03
-  - V2Get🛰️ 2026-11-17 10:48
-  - V2Get🛰️ 2026-11-18 00:58
   - V2Get🛰️ 2026-11-18 03:47
   - V2Get🛰️ 2026-11-18 16:48
   - V2Get🛰️ 2026-11-18 17:48
@@ -3379,8 +3371,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-23 22:13
   - V2Get🛰️ 2026-11-23 22:26
   - 'V2Get🛰️ 2026-11-23 22:26 #2'
-  - V2Get🛰️ 2026-11-23 22:27
-  - 'V2Get🛰️ 2026-11-23 22:27 #2'
   - 'V2Get🛰️ 2026-11-23 22:27 #3'
   - 'V2Get🛰️ 2026-11-23 22:27 #4'
   - 'V2Get🛰️ 2026-11-23 22:27 #5'
@@ -3465,16 +3455,6 @@ proxy-groups:
   - V2Get🔓 2026-11-22 19:27 (F&F 8)
   - V2Get🔓 2026-11-22 19:27 (F&F 9)
   - V2Get🔓 2026-11-22 19:27 (F&F 10)
-  - V2Get🔓 2026-11-22 18:43 (F&F 1)
-  - V2Get🔓 2026-11-22 18:43 (F&F 2)
-  - V2Get🔓 2026-11-22 18:43 (F&F 3)
-  - V2Get🔓 2026-11-22 18:43 (F&F 4)
-  - V2Get🔓 2026-11-22 18:43 (F&F 5)
-  - V2Get🔓 2026-11-22 18:43 (F&F 6)
-  - V2Get🔓 2026-11-22 18:43 (F&F 7)
-  - V2Get🔓 2026-11-22 18:43 (F&F 8)
-  - V2Get🔓 2026-11-22 18:43 (F&F 9)
-  - V2Get🔓 2026-11-22 18:43 (F&F 10)
   - V2Get🔓 2026-11-22 13:57 (F&F 1)
   - V2Get🔓 2026-11-22 13:57 (F&F 2)
   - V2Get🔓 2026-11-22 13:57 (F&F 3)
@@ -3505,6 +3485,16 @@ proxy-groups:
   - V2Get🔓 2026-11-22 21:14 (F&F 8)
   - V2Get🔓 2026-11-22 21:14 (F&F 9)
   - V2Get🔓 2026-11-22 21:14 (F&F 10)
+  - V2Get🔓 2026-11-21 09:41 (F&F 1)
+  - V2Get🔓 2026-11-21 09:41 (F&F 2)
+  - V2Get🔓 2026-11-21 09:41 (F&F 3)
+  - V2Get🔓 2026-11-21 09:41 (F&F 4)
+  - V2Get🔓 2026-11-21 09:41 (F&F 5)
+  - V2Get🔓 2026-11-21 09:41 (F&F 6)
+  - V2Get🔓 2026-11-21 09:41 (F&F 7)
+  - V2Get🔓 2026-11-21 09:41 (F&F 8)
+  - V2Get🔓 2026-11-21 09:41 (F&F 9)
+  - V2Get🔓 2026-11-21 09:41 (F&F 10)
   - V2Get🔓 2026-11-21 08:56 (F&F 1)
   - V2Get🔓 2026-11-21 08:56 (F&F 2)
   - V2Get🔓 2026-11-21 08:56 (F&F 3)
@@ -3563,13 +3553,18 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-18 22:59
-  - V2Get🛰️ 2026-10-25 16:24
-  - V2Get🛰️ 2026-10-26 20:08
-  - V2Get🛰️ 2026-10-30 00:04
-  - V2Get🛰️ 2026-11-05 10:01
-  - V2Get🛰️ 2026-11-17 01:17
-  - V2Get🛰️ 2026-11-17 15:03
+  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-10-25 19:10
+  - V2Get🛰️ 2026-10-27 13:23
+  - V2Get🛰️ 2026-10-27 16:40
+  - 'V2Get🛰️ 2026-10-27 16:40 #2'
+  - V2Get🛰️ 2026-10-27 17:38
+  - V2Get🛰️ 2026-10-28 11:02
+  - V2Get🛰️ 2026-10-28 23:04
+  - V2Get🛰️ 2026-11-22 23:12
+  - V2Get🛰️ 2026-11-23 22:27
+  - 'V2Get🛰️ 2026-11-23 22:27 #2'
   - V2Get🛰️ 2026-11-21 14:30
   - V2Get🛰️ 2026-11-22 14:28
   - V2Get🛰️ 2026-11-22 23:57
@@ -3602,9 +3597,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-23 23:49 #2'
   - 'V2Get🛰️ 2026-11-23 23:49 #3'
   - V2Get🛰️ 2026-11-23 10:49
-  - V2Get🛰️ 2026-11-17 00:03
-  - V2Get🛰️ 2026-11-17 10:48
-  - V2Get🛰️ 2026-11-18 00:58
   - V2Get🛰️ 2026-11-18 03:47
   - V2Get🛰️ 2026-11-18 16:48
   - V2Get🛰️ 2026-11-18 17:48
@@ -3625,8 +3617,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-23 22:13
   - V2Get🛰️ 2026-11-23 22:26
   - 'V2Get🛰️ 2026-11-23 22:26 #2'
-  - V2Get🛰️ 2026-11-23 22:27
-  - 'V2Get🛰️ 2026-11-23 22:27 #2'
   - 'V2Get🛰️ 2026-11-23 22:27 #3'
   - 'V2Get🛰️ 2026-11-23 22:27 #4'
   - 'V2Get🛰️ 2026-11-23 22:27 #5'
@@ -3711,16 +3701,6 @@ proxy-groups:
   - V2Get🔓 2026-11-22 19:27 (F&F 8)
   - V2Get🔓 2026-11-22 19:27 (F&F 9)
   - V2Get🔓 2026-11-22 19:27 (F&F 10)
-  - V2Get🔓 2026-11-22 18:43 (F&F 1)
-  - V2Get🔓 2026-11-22 18:43 (F&F 2)
-  - V2Get🔓 2026-11-22 18:43 (F&F 3)
-  - V2Get🔓 2026-11-22 18:43 (F&F 4)
-  - V2Get🔓 2026-11-22 18:43 (F&F 5)
-  - V2Get🔓 2026-11-22 18:43 (F&F 6)
-  - V2Get🔓 2026-11-22 18:43 (F&F 7)
-  - V2Get🔓 2026-11-22 18:43 (F&F 8)
-  - V2Get🔓 2026-11-22 18:43 (F&F 9)
-  - V2Get🔓 2026-11-22 18:43 (F&F 10)
   - V2Get🔓 2026-11-22 13:57 (F&F 1)
   - V2Get🔓 2026-11-22 13:57 (F&F 2)
   - V2Get🔓 2026-11-22 13:57 (F&F 3)
@@ -3751,6 +3731,16 @@ proxy-groups:
   - V2Get🔓 2026-11-22 21:14 (F&F 8)
   - V2Get🔓 2026-11-22 21:14 (F&F 9)
   - V2Get🔓 2026-11-22 21:14 (F&F 10)
+  - V2Get🔓 2026-11-21 09:41 (F&F 1)
+  - V2Get🔓 2026-11-21 09:41 (F&F 2)
+  - V2Get🔓 2026-11-21 09:41 (F&F 3)
+  - V2Get🔓 2026-11-21 09:41 (F&F 4)
+  - V2Get🔓 2026-11-21 09:41 (F&F 5)
+  - V2Get🔓 2026-11-21 09:41 (F&F 6)
+  - V2Get🔓 2026-11-21 09:41 (F&F 7)
+  - V2Get🔓 2026-11-21 09:41 (F&F 8)
+  - V2Get🔓 2026-11-21 09:41 (F&F 9)
+  - V2Get🔓 2026-11-21 09:41 (F&F 10)
   - V2Get🔓 2026-11-21 08:56 (F&F 1)
   - V2Get🔓 2026-11-21 08:56 (F&F 2)
   - V2Get🔓 2026-11-21 08:56 (F&F 3)
