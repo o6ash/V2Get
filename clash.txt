@@ -42,15 +42,18 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-22 21:27
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-11-24 21:51
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 2a883efe-074e-4005-fc3b-f7f8f5a8c121
   udp: true
-  network: tcp
+  network: xhttp
+  tls: true
+  servername: community.fastly.steamstatic.com
+  client-fingerprint: firefox
+  alpn:
+  - h2
 - name: V2Get🛰️ 2026-11-24 13:28
   type: trojan
   server: ipfast.kingmna.com
@@ -2640,7 +2643,7 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-11-24 21:51
   - V2Get🛰️ 2026-11-24 13:28
   - V2Get🛰️ 2026-11-24 19:50
   - V2Get🛰️ 2026-11-16 23:18
@@ -2835,7 +2838,7 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-11-24 21:51
   - V2Get🛰️ 2026-11-24 13:28
   - V2Get🛰️ 2026-11-24 19:50
   - V2Get🛰️ 2026-11-16 23:18
