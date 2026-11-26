@@ -42,6 +42,33 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
+- name: V2Get🛰️ 2026-11-25 13:17
+  type: vless
+  server: karen.shahankhan.ir
+  port: 443
+  uuid: a6eed628-ef46-4eb1-b1c9-e13853e082c3
+  udp: true
+  network: tcp
+  skip-cert-verify: true
+- name: V2Get🛰️ 2026-11-26 14:17
+  type: vless
+  server: 185.200.244.37
+  port: 443
+  uuid: 7ce93cef-119d-4cba-9d9d-da0056ba979c
+  udp: true
+  network: xhttp
+  tls: true
+  servername: es1.green-tg.com
+  reality-opts:
+    public-key: EhKlZ3cHsJQRkNH7Qeya0ZeAy5jovCT-H4VNivwPyls
+    short-id: 0bf13fb706784403
+- name: V2Get🛰️ 2026-11-16 09:28
+  type: ss
+  server: 141.98.101.179
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: V2Get🛰️ 2026-11-26 20:52
   type: vmess
   server: US122208.ssgreen.org
@@ -148,13 +175,6 @@ proxies:
   - http/1.1
   ws-opts:
     path: /
-- name: V2Get🛰️ 2026-10-26 00:39
-  type: ss
-  server: 82.38.31.178
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
 - name: V2Get🛰️ 2026-10-27 07:08
   type: ss
   server: 82.38.31.182
@@ -416,13 +436,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: V2Get🛰️ 2026-11-16 09:28
-  type: ss
-  server: 141.98.101.179
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: V2Get🛰️ 2026-11-22 21:14
   type: vless
   server: 188.114.98.0
@@ -573,18 +586,6 @@ proxies:
   client-fingerprint: safari
   alpn:
   - h2
-- name: V2Get🛰️ 2026-11-26 14:17
-  type: vless
-  server: 185.200.244.37
-  port: 443
-  uuid: 7ce93cef-119d-4cba-9d9d-da0056ba979c
-  udp: true
-  network: xhttp
-  tls: true
-  servername: es1.green-tg.com
-  reality-opts:
-    public-key: EhKlZ3cHsJQRkNH7Qeya0ZeAy5jovCT-H4VNivwPyls
-    short-id: 0bf13fb706784403
 - name: V2Get🛰️ 2026-11-26 14:48
   type: ss
   server: 3.10.139.35
@@ -3551,6 +3552,9 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
+  - V2Get🛰️ 2026-11-25 13:17
+  - V2Get🛰️ 2026-11-26 14:17
+  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-26 20:52
   - 'V2Get🛰️ 2026-11-26 20:52 #2'
   - 'V2Get🛰️ 2026-11-26 20:52 #3'
@@ -3560,7 +3564,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-30 00:04
   - V2Get🛰️ 2026-11-18 19:04
   - V2Get🛰️ 2026-11-25 20:04
-  - V2Get🛰️ 2026-10-26 00:39
   - V2Get🛰️ 2026-10-27 07:08
   - 'V2Get🛰️ 2026-10-27 07:08 #2'
   - V2Get🛰️ 2026-10-27 07:09
@@ -3590,7 +3593,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-13 13:03
   - V2Get🛰️ 2026-11-13 22:18
   - V2Get🛰️ 2026-11-16 09:19
-  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-22 21:14
   - V2Get🛰️ 2026-11-23 20:07
   - V2Get🛰️ 2026-11-24 21:29
@@ -3604,7 +3606,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-26 09:17
   - V2Get🛰️ 2026-11-26 12:32
   - V2Get🛰️ 2026-11-26 13:03
-  - V2Get🛰️ 2026-11-26 14:17
   - V2Get🛰️ 2026-11-26 14:48
   - V2Get🛰️ 2026-11-26 15:05
   - V2Get🛰️ 2026-11-26 15:13
@@ -3816,6 +3817,9 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
+  - V2Get🛰️ 2026-11-25 13:17
+  - V2Get🛰️ 2026-11-26 14:17
+  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-26 20:52
   - 'V2Get🛰️ 2026-11-26 20:52 #2'
   - 'V2Get🛰️ 2026-11-26 20:52 #3'
@@ -3825,7 +3829,6 @@ proxy-groups:
   - V2Get🛰️ 2026-10-30 00:04
   - V2Get🛰️ 2026-11-18 19:04
   - V2Get🛰️ 2026-11-25 20:04
-  - V2Get🛰️ 2026-10-26 00:39
   - V2Get🛰️ 2026-10-27 07:08
   - 'V2Get🛰️ 2026-10-27 07:08 #2'
   - V2Get🛰️ 2026-10-27 07:09
@@ -3855,7 +3858,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-13 13:03
   - V2Get🛰️ 2026-11-13 22:18
   - V2Get🛰️ 2026-11-16 09:19
-  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-22 21:14
   - V2Get🛰️ 2026-11-23 20:07
   - V2Get🛰️ 2026-11-24 21:29
@@ -3869,7 +3871,6 @@ proxy-groups:
   - V2Get🛰️ 2026-11-26 09:17
   - V2Get🛰️ 2026-11-26 12:32
   - V2Get🛰️ 2026-11-26 13:03
-  - V2Get🛰️ 2026-11-26 14:17
   - V2Get🛰️ 2026-11-26 14:48
   - V2Get🛰️ 2026-11-26 15:05
   - V2Get🛰️ 2026-11-26 15:13
