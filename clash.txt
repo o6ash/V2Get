@@ -42,16 +42,17 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-20 23:12
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: V2Get🛰️ 2026-10-27 22:18
+  type: vless
+  server: api.ferrin.uk
+  port: 443
+  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
   udp: true
-  network: tcp
-- name: 'V2Get🛰️ 2026-10-20 23:12 #2'
+  network: xhttp
+  tls: true
+  servername: 7d1a74fd.ferrin.uk
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-10-20 23:12
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -60,7 +61,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 'V2Get🛰️ 2026-10-20 23:12 #3'
+- name: 'V2Get🛰️ 2026-10-20 23:12 #2'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -3615,9 +3616,9 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
+  - V2Get🛰️ 2026-10-27 22:18
   - V2Get🛰️ 2026-10-20 23:12
   - 'V2Get🛰️ 2026-10-20 23:12 #2'
-  - 'V2Get🛰️ 2026-10-20 23:12 #3'
   - V2Get🛰️ 2026-10-21 23:59
   - V2Get🛰️ 2026-10-22 21:29
   - 'V2Get🛰️ 2026-10-22 21:29 #2'
@@ -3881,9 +3882,9 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
+  - V2Get🛰️ 2026-10-27 22:18
   - V2Get🛰️ 2026-10-20 23:12
   - 'V2Get🛰️ 2026-10-20 23:12 #2'
-  - 'V2Get🛰️ 2026-10-20 23:12 #3'
   - V2Get🛰️ 2026-10-21 23:59
   - V2Get🛰️ 2026-10-22 21:29
   - 'V2Get🛰️ 2026-10-22 21:29 #2'
