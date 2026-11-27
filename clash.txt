@@ -42,31 +42,61 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-20 23:12
+- name: V2Get🛰️ 2026-11-25 09:18
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 47.86.90.31
+  port: 443
+  uuid: 234a8041-2b4d-44a3-a8d8-523cbfd58dc4
   alterId: 0
   cipher: auto
   udp: true
-  network: tcp
-- name: V2Get🛰️ 2026-10-22 21:27
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  network: ws
+  tls: true
+  servername: bywxdhirqkjj8xaz.v.3dns.vip
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: bywxdhirqkjj8xaz.v.3dns.vip
+- name: V2Get🛰️ 2026-11-27 09:52
+  type: vless
+  server: 196.240.125.11
+  port: 8443
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
   udp: true
   network: tcp
-- name: V2Get🛰️ 2026-10-26 08:08
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-v1-6b07048f.vmagnum.win
+  client-fingerprint: firefox
+- name: V2Get🛰️ 2026-11-27 13:52
+  type: vless
+  server: 136.234.173.231
+  port: 8881
+  uuid: e460e7b2-a146-4468-87ed-52510b2caae6
   udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: V2Get🛰️ 2026-11-27 10:53
+  type: vless
+  server: de.ggssstreaming.ru
+  port: 443
+  uuid: 9a9f167d-b461-466f-be50-f0ffd598a6f8
+  udp: true
+  network: xhttp
+  tls: true
+  servername: de.ggssstreaming.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI
+    short-id: f49f0d53a52920da
 - name: V2Get🛰️ 2026-10-26 18:38
   type: vless
   server: 57.131.21.102
@@ -1085,7 +1115,7 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-11-27 10:53
+- name: 'V2Get🛰️ 2026-11-27 10:53 #2'
   type: vless
   server: 81.94.148.30
   port: 443
@@ -1099,19 +1129,6 @@ proxies:
   reality-opts:
     public-key: 7Vxh4zGjWhTahJSLBItfK8ywBHKI_R1MULmNV7vn3DA
     short-id: 21c48be99d7e13c8
-- name: 'V2Get🛰️ 2026-11-27 10:53 #2'
-  type: vless
-  server: de.ggssstreaming.ru
-  port: 443
-  uuid: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  udp: true
-  network: xhttp
-  tls: true
-  servername: de.ggssstreaming.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI
-    short-id: f49f0d53a52920da
 - name: V2Get🔓 2026-11-27 10:03 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -1592,6 +1609,166 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
     headers:
       Host: freeceshi6.frii.site
+- name: V2Get🔓 2026-11-26 14:17 (F&F 1)
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 2)
+  type: vless
+  server: 104.17.102.202
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 3)
+  type: vless
+  server: 104.17.33.174
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 4)
+  type: vless
+  server: 104.19.0.111
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 5)
+  type: vless
+  server: 104.19.95.104
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 6)
+  type: vless
+  server: 198.41.208.177
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 7)
+  type: vless
+  server: 172.67.152.132
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 8)
+  type: vless
+  server: 172.67.153.61
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 9)
+  type: vless
+  server: 198.41.208.70
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: V2Get🔓 2026-11-26 14:17 (F&F 10)
+  type: vless
+  server: 172.67.153.81
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  network: ws
+  tls: true
+  servername: krc.80782636.xyz
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
 - name: V2Get🔓 2026-11-26 00:44 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -3492,146 +3669,6 @@ proxies:
     path: /
     headers:
       Host: damp-morning-6562.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 1)
-  type: trojan
-  server: 104.19.13.194
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 2)
-  type: trojan
-  server: 104.17.102.202
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 3)
-  type: trojan
-  server: 104.17.33.174
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 4)
-  type: trojan
-  server: 104.19.0.111
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 5)
-  type: trojan
-  server: 104.19.95.104
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 6)
-  type: trojan
-  server: 198.41.208.177
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 7)
-  type: trojan
-  server: 172.67.152.132
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 8)
-  type: trojan
-  server: 172.67.153.61
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 9)
-  type: trojan
-  server: 198.41.208.70
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
-- name: V2Get🔓 2026-11-25 23:59 (F&F 10)
-  type: trojan
-  server: 172.67.153.81
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bitter-math-4364.vpnetwork3567.workers.dev
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -3640,9 +3677,10 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-26 08:08
+  - V2Get🛰️ 2026-11-25 09:18
+  - V2Get🛰️ 2026-11-27 09:52
+  - V2Get🛰️ 2026-11-27 13:52
+  - V2Get🛰️ 2026-11-27 10:53
   - V2Get🛰️ 2026-10-26 18:38
   - V2Get🛰️ 2026-10-27 01:24
   - V2Get🛰️ 2026-10-27 07:53
@@ -3736,7 +3774,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-27 10:47 #4'
   - V2Get🛰️ 2026-11-27 11:18
   - V2Get🛰️ 2026-11-27 10:17
-  - V2Get🛰️ 2026-11-27 10:53
   - 'V2Get🛰️ 2026-11-27 10:53 #2'
   - V2Get🔓 2026-11-27 10:03 (F&F 1)
   - V2Get🔓 2026-11-27 10:03 (F&F 2)
@@ -3768,6 +3805,16 @@ proxy-groups:
   - V2Get🔓 2026-11-26 15:52 (F&F 8)
   - V2Get🔓 2026-11-26 15:52 (F&F 9)
   - V2Get🔓 2026-11-26 15:52 (F&F 10)
+  - V2Get🔓 2026-11-26 14:17 (F&F 1)
+  - V2Get🔓 2026-11-26 14:17 (F&F 2)
+  - V2Get🔓 2026-11-26 14:17 (F&F 3)
+  - V2Get🔓 2026-11-26 14:17 (F&F 4)
+  - V2Get🔓 2026-11-26 14:17 (F&F 5)
+  - V2Get🔓 2026-11-26 14:17 (F&F 6)
+  - V2Get🔓 2026-11-26 14:17 (F&F 7)
+  - V2Get🔓 2026-11-26 14:17 (F&F 8)
+  - V2Get🔓 2026-11-26 14:17 (F&F 9)
+  - V2Get🔓 2026-11-26 14:17 (F&F 10)
   - V2Get🔓 2026-11-26 00:44 (F&F 1)
   - V2Get🔓 2026-11-26 00:44 (F&F 2)
   - V2Get🔓 2026-11-26 00:44 (F&F 3)
@@ -3888,16 +3935,6 @@ proxy-groups:
   - 'V2Get🔓 2026-11-26 00:44 (F&F 8) #12'
   - 'V2Get🔓 2026-11-26 00:44 (F&F 9) #12'
   - 'V2Get🔓 2026-11-26 00:44 (F&F 10) #12'
-  - V2Get🔓 2026-11-25 23:59 (F&F 1)
-  - V2Get🔓 2026-11-25 23:59 (F&F 2)
-  - V2Get🔓 2026-11-25 23:59 (F&F 3)
-  - V2Get🔓 2026-11-25 23:59 (F&F 4)
-  - V2Get🔓 2026-11-25 23:59 (F&F 5)
-  - V2Get🔓 2026-11-25 23:59 (F&F 6)
-  - V2Get🔓 2026-11-25 23:59 (F&F 7)
-  - V2Get🔓 2026-11-25 23:59 (F&F 8)
-  - V2Get🔓 2026-11-25 23:59 (F&F 9)
-  - V2Get🔓 2026-11-25 23:59 (F&F 10)
 - name: ♻️ Auto Select
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -3906,9 +3943,10 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-20 23:12
-  - V2Get🛰️ 2026-10-22 21:27
-  - V2Get🛰️ 2026-10-26 08:08
+  - V2Get🛰️ 2026-11-25 09:18
+  - V2Get🛰️ 2026-11-27 09:52
+  - V2Get🛰️ 2026-11-27 13:52
+  - V2Get🛰️ 2026-11-27 10:53
   - V2Get🛰️ 2026-10-26 18:38
   - V2Get🛰️ 2026-10-27 01:24
   - V2Get🛰️ 2026-10-27 07:53
@@ -4002,7 +4040,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-27 10:47 #4'
   - V2Get🛰️ 2026-11-27 11:18
   - V2Get🛰️ 2026-11-27 10:17
-  - V2Get🛰️ 2026-11-27 10:53
   - 'V2Get🛰️ 2026-11-27 10:53 #2'
   - V2Get🔓 2026-11-27 10:03 (F&F 1)
   - V2Get🔓 2026-11-27 10:03 (F&F 2)
@@ -4034,6 +4071,16 @@ proxy-groups:
   - V2Get🔓 2026-11-26 15:52 (F&F 8)
   - V2Get🔓 2026-11-26 15:52 (F&F 9)
   - V2Get🔓 2026-11-26 15:52 (F&F 10)
+  - V2Get🔓 2026-11-26 14:17 (F&F 1)
+  - V2Get🔓 2026-11-26 14:17 (F&F 2)
+  - V2Get🔓 2026-11-26 14:17 (F&F 3)
+  - V2Get🔓 2026-11-26 14:17 (F&F 4)
+  - V2Get🔓 2026-11-26 14:17 (F&F 5)
+  - V2Get🔓 2026-11-26 14:17 (F&F 6)
+  - V2Get🔓 2026-11-26 14:17 (F&F 7)
+  - V2Get🔓 2026-11-26 14:17 (F&F 8)
+  - V2Get🔓 2026-11-26 14:17 (F&F 9)
+  - V2Get🔓 2026-11-26 14:17 (F&F 10)
   - V2Get🔓 2026-11-26 00:44 (F&F 1)
   - V2Get🔓 2026-11-26 00:44 (F&F 2)
   - V2Get🔓 2026-11-26 00:44 (F&F 3)
@@ -4154,16 +4201,6 @@ proxy-groups:
   - 'V2Get🔓 2026-11-26 00:44 (F&F 8) #12'
   - 'V2Get🔓 2026-11-26 00:44 (F&F 9) #12'
   - 'V2Get🔓 2026-11-26 00:44 (F&F 10) #12'
-  - V2Get🔓 2026-11-25 23:59 (F&F 1)
-  - V2Get🔓 2026-11-25 23:59 (F&F 2)
-  - V2Get🔓 2026-11-25 23:59 (F&F 3)
-  - V2Get🔓 2026-11-25 23:59 (F&F 4)
-  - V2Get🔓 2026-11-25 23:59 (F&F 5)
-  - V2Get🔓 2026-11-25 23:59 (F&F 6)
-  - V2Get🔓 2026-11-25 23:59 (F&F 7)
-  - V2Get🔓 2026-11-25 23:59 (F&F 8)
-  - V2Get🔓 2026-11-25 23:59 (F&F 9)
-  - V2Get🔓 2026-11-25 23:59 (F&F 10)
 rules:
 - GEOIP,private,DIRECT,no-resolve
 - GEOIP,IR,DIRECT
