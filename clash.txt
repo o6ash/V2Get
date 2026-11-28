@@ -42,29 +42,40 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-20 21:00
-  type: vless
-  server: 185.121.179.122
+- name: V2Get🛰️ 2026-11-13 22:18
+  type: ss
+  server: 141.98.101.178
   port: 443
-  uuid: 63c5f8b3-3d3d-46a9-ae1f-58635cdaf891
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+- name: V2Get🛰️ 2026-11-26 20:47
+  type: vless
+  server: hw8.iranichergh.com
+  port: 993
+  uuid: 978d2a58-bd01-4b61-b953-dc8e66728460
+  udp: true
+  network: ws
   tls: true
-  servername: de.stream-node6.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg
-    short-id: 98753667b2406829
-- name: V2Get🛰️ 2026-10-20 23:12
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: hw8.iranichergh.com.
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-11-28 13:58
+  type: vless
+  server: ipfast.kingmna.com
+  port: 443
+  uuid: 8e626387-6fc8-4d3c-9877-dc1fbaf2bc68
   udp: true
-  network: tcp
+  network: ws
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  ws-opts:
+    path: /
+    headers:
+      Host: ukoijji.global.ssl.fastly.net
 - name: V2Get🛰️ 2026-10-26 08:08
   type: ss
   server: 82.110.60.9
@@ -814,7 +825,7 @@ proxies:
   udp: true
   sni: cdn.mornismp.ru
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-11-28 13:58
+- name: 'V2Get🛰️ 2026-11-28 13:58 #2'
   type: vless
   server: logout.spacecdn.ir
   port: 1928
@@ -829,7 +840,7 @@ proxies:
     path: /signout
     headers:
       Host: login.zanjanphone.ir
-- name: 'V2Get🛰️ 2026-11-28 13:58 #2'
+- name: 'V2Get🛰️ 2026-11-28 13:58 #3'
   type: vless
   server: signup.spacecdn.ir
   port: 56066
@@ -1095,19 +1106,6 @@ proxies:
   udp: true
   network: tcp
   skip-cert-verify: true
-- name: 'V2Get🛰️ 2026-11-28 13:58 #3'
-  type: vless
-  server: ipfast.kingmna.com
-  port: 443
-  uuid: 8e626387-6fc8-4d3c-9877-dc1fbaf2bc68
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: ukoijji.global.ssl.fastly.net
 - name: 'V2Get🛰️ 2026-11-28 13:54 #4'
   type: vless
   server: working.prodarsalan808.workers.dev
@@ -1212,166 +1210,6 @@ proxies:
     path: /?ed=2048
     headers:
       Host: working.prodarsalan808.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 1)
-  type: vless
-  server: 104.19.13.194
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 2)
-  type: vless
-  server: 104.17.102.202
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 3)
-  type: vless
-  server: 104.17.33.174
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 4)
-  type: vless
-  server: 104.19.0.111
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 5)
-  type: vless
-  server: 104.19.95.104
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 6)
-  type: vless
-  server: 198.41.208.177
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 7)
-  type: vless
-  server: 172.67.152.132
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 8)
-  type: vless
-  server: 172.67.153.61
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 9)
-  type: vless
-  server: 198.41.208.70
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
-- name: V2Get🔓 2026-11-28 14:25 (F&F 10)
-  type: vless
-  server: 172.67.153.81
-  port: 443
-  uuid: a299e0aa-1613-476b-b488-8ee8337d9ae1
-  udp: true
-  network: ws
-  tls: true
-  servername: worker3.voxili9688.workers.dev
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /HGCmKaXbRNqpZqMv
-    headers:
-      Host: worker3.voxili9688.workers.dev
 - name: V2Get🔓 2026-11-28 13:54 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -2022,6 +1860,166 @@ proxies:
     path: /t.me-SubGift
     headers:
       Host: hiphop.moltafet.bond
+- name: V2Get🔓 2026-11-27 10:03 (F&F 1)
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 2)
+  type: vless
+  server: 104.17.102.202
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 3)
+  type: vless
+  server: 104.17.33.174
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 4)
+  type: vless
+  server: 104.19.0.111
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 5)
+  type: vless
+  server: 104.19.95.104
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 6)
+  type: vless
+  server: 198.41.208.177
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 7)
+  type: vless
+  server: 172.67.152.132
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 8)
+  type: vless
+  server: 172.67.153.61
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 9)
+  type: vless
+  server: 198.41.208.70
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: V2Get🔓 2026-11-27 10:03 (F&F 10)
+  type: vless
+  server: 172.67.153.81
+  port: 443
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
+  udp: true
+  network: ws
+  tls: true
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
 - name: V2Get🔓 2026-11-26 16:33 (F&F 1)
   type: vless
   server: 104.19.13.194
@@ -2830,14 +2828,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #4'
   type: vless
   server: 104.17.102.202
@@ -2846,14 +2844,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #4'
   type: vless
   server: 104.17.33.174
@@ -2862,14 +2860,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #4'
   type: vless
   server: 104.19.0.111
@@ -2878,14 +2876,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #4'
   type: vless
   server: 104.19.95.104
@@ -2894,14 +2892,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #4'
   type: vless
   server: 198.41.208.177
@@ -2910,14 +2908,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #4'
   type: vless
   server: 172.67.152.132
@@ -2926,14 +2924,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #4'
   type: vless
   server: 172.67.153.61
@@ -2942,14 +2940,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #4'
   type: vless
   server: 198.41.208.70
@@ -2958,14 +2956,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #4'
   type: vless
   server: 172.67.153.81
@@ -2974,14 +2972,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #5'
   type: vless
   server: 104.19.13.194
@@ -2990,14 +2988,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #5'
   type: vless
   server: 104.17.102.202
@@ -3006,14 +3004,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #5'
   type: vless
   server: 104.17.33.174
@@ -3022,14 +3020,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #5'
   type: vless
   server: 104.19.0.111
@@ -3038,14 +3036,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #5'
   type: vless
   server: 104.19.95.104
@@ -3054,14 +3052,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #5'
   type: vless
   server: 198.41.208.177
@@ -3070,14 +3068,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #5'
   type: vless
   server: 172.67.152.132
@@ -3086,14 +3084,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #5'
   type: vless
   server: 172.67.153.61
@@ -3102,14 +3100,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #5'
   type: vless
   server: 198.41.208.70
@@ -3118,14 +3116,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: quiet-wind-f608.vpnetwork3567.workers.dev
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #5'
   type: vless
   server: 172.67.153.81
@@ -3134,6 +3132,22 @@ proxies:
   udp: true
   network: ws
   tls: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #6'
+  type: vless
+  server: 104.19.13.194
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  network: ws
+  tls: true
   servername: quiet-wind-f608.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
@@ -3142,306 +3156,290 @@ proxies:
     path: /
     headers:
       Host: quiet-wind-f608.vpnetwork3567.workers.dev
-- name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #6'
-  type: trojan
-  server: 104.19.13.194
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #6'
-  type: trojan
+  type: vless
   server: 104.17.102.202
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #6'
-  type: trojan
+  type: vless
   server: 104.17.33.174
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #6'
-  type: trojan
+  type: vless
   server: 104.19.0.111
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #6'
-  type: trojan
+  type: vless
   server: 104.19.95.104
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #6'
-  type: trojan
+  type: vless
   server: 198.41.208.177
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #6'
-  type: trojan
+  type: vless
   server: 172.67.152.132
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #6'
-  type: trojan
+  type: vless
   server: 172.67.153.61
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #6'
-  type: trojan
+  type: vless
   server: 198.41.208.70
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #6'
-  type: trojan
+  type: vless
   server: 172.67.153.81
   port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
+  network: ws
+  tls: true
+  servername: quiet-wind-f608.vpnetwork3567.workers.dev
+  client-fingerprint: unsafe
   alpn:
   - http/1.1
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
+      Host: quiet-wind-f608.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #7'
-  type: vless
+  type: trojan
   server: 104.19.13.194
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #7'
-  type: vless
+  type: trojan
   server: 104.17.102.202
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #7'
-  type: vless
+  type: trojan
   server: 104.17.33.174
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #7'
-  type: vless
+  type: trojan
   server: 104.19.0.111
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #7'
-  type: vless
+  type: trojan
   server: 104.19.95.104
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #7'
-  type: vless
+  type: trojan
   server: 198.41.208.177
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #7'
-  type: vless
+  type: trojan
   server: 172.67.152.132
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #7'
-  type: vless
+  type: trojan
   server: 172.67.153.61
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #7'
-  type: vless
+  type: trojan
   server: 198.41.208.70
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #7'
-  type: vless
+  type: trojan
   server: 172.67.153.81
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  network: ws
-  tls: true
-  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
-  client-fingerprint: unsafe
+  sni: lingering-fire-1fe9.vpnetwork3567.workers.dev
   alpn:
   - http/1.1
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #8'
   type: vless
   server: 104.19.13.194
@@ -3450,14 +3448,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #8'
   type: vless
   server: 104.17.102.202
@@ -3466,14 +3464,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #8'
   type: vless
   server: 104.17.33.174
@@ -3482,14 +3480,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #8'
   type: vless
   server: 104.19.0.111
@@ -3498,14 +3496,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #8'
   type: vless
   server: 104.19.95.104
@@ -3514,14 +3512,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #8'
   type: vless
   server: 198.41.208.177
@@ -3530,14 +3528,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #8'
   type: vless
   server: 172.67.152.132
@@ -3546,14 +3544,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #8'
   type: vless
   server: 172.67.153.61
@@ -3562,14 +3560,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #8'
   type: vless
   server: 198.41.208.70
@@ -3578,14 +3576,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #8'
   type: vless
   server: 172.67.153.81
@@ -3594,14 +3592,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: soft-water-83f3.vpnetwork3567.workers.dev
+  servername: snowy-mountain-d4be.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: soft-water-83f3.vpnetwork3567.workers.dev
+      Host: snowy-mountain-d4be.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 1) #9'
   type: vless
   server: 104.19.13.194
@@ -3610,14 +3608,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 2) #9'
   type: vless
   server: 104.17.102.202
@@ -3626,14 +3624,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 3) #9'
   type: vless
   server: 104.17.33.174
@@ -3642,14 +3640,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 4) #9'
   type: vless
   server: 104.19.0.111
@@ -3658,14 +3656,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 5) #9'
   type: vless
   server: 104.19.95.104
@@ -3674,14 +3672,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 6) #9'
   type: vless
   server: 198.41.208.177
@@ -3690,14 +3688,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 7) #9'
   type: vless
   server: 172.67.152.132
@@ -3706,14 +3704,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 8) #9'
   type: vless
   server: 172.67.153.61
@@ -3722,14 +3720,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 9) #9'
   type: vless
   server: 198.41.208.70
@@ -3738,14 +3736,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 - name: 'V2Get🔓 2026-11-26 00:44 (F&F 10) #9'
   type: vless
   server: 172.67.153.81
@@ -3754,14 +3752,14 @@ proxies:
   udp: true
   network: ws
   tls: true
-  servername: wild-resonance-23be.vpnetwork3567.workers.dev
+  servername: soft-water-83f3.vpnetwork3567.workers.dev
   client-fingerprint: unsafe
   alpn:
   - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: wild-resonance-23be.vpnetwork3567.workers.dev
+      Host: soft-water-83f3.vpnetwork3567.workers.dev
 proxy-groups:
 - name: 🚀 Select
   type: select
@@ -3770,8 +3768,9 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-20 21:00
-  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-11-13 22:18
+  - V2Get🛰️ 2026-11-26 20:47
+  - V2Get🛰️ 2026-11-28 13:58
   - V2Get🛰️ 2026-10-26 08:08
   - V2Get🛰️ 2026-10-26 20:08
   - V2Get🛰️ 2026-10-26 23:38
@@ -3836,8 +3835,8 @@ proxy-groups:
   - V2Get🛰️ 2026-11-28 13:54
   - 'V2Get🛰️ 2026-11-28 13:54 #2'
   - 'V2Get🛰️ 2026-11-28 13:54 #3'
-  - V2Get🛰️ 2026-11-28 13:58
   - 'V2Get🛰️ 2026-11-28 13:58 #2'
+  - 'V2Get🛰️ 2026-11-28 13:58 #3'
   - V2Get🛰️ 2026-11-28 14:09
   - 'V2Get🛰️ 2026-11-28 14:09 #2'
   - V2Get🛰️ 2026-11-28 14:10
@@ -3860,7 +3859,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-28 14:25 #9'
   - V2Get🛰️ 2026-11-28 14:33
   - 'V2Get🛰️ 2026-11-28 14:33 #2'
-  - 'V2Get🛰️ 2026-11-28 13:58 #3'
   - 'V2Get🛰️ 2026-11-28 13:54 #4'
   - 'V2Get🛰️ 2026-11-28 13:54 #5'
   - 'V2Get🛰️ 2026-11-28 13:54 #6'
@@ -3868,16 +3866,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-28 13:54 #8'
   - 'V2Get🛰️ 2026-11-28 13:54 #9'
   - 'V2Get🛰️ 2026-11-28 13:54 #10'
-  - V2Get🔓 2026-11-28 14:25 (F&F 1)
-  - V2Get🔓 2026-11-28 14:25 (F&F 2)
-  - V2Get🔓 2026-11-28 14:25 (F&F 3)
-  - V2Get🔓 2026-11-28 14:25 (F&F 4)
-  - V2Get🔓 2026-11-28 14:25 (F&F 5)
-  - V2Get🔓 2026-11-28 14:25 (F&F 6)
-  - V2Get🔓 2026-11-28 14:25 (F&F 7)
-  - V2Get🔓 2026-11-28 14:25 (F&F 8)
-  - V2Get🔓 2026-11-28 14:25 (F&F 9)
-  - V2Get🔓 2026-11-28 14:25 (F&F 10)
   - V2Get🔓 2026-11-28 13:54 (F&F 1)
   - V2Get🔓 2026-11-28 13:54 (F&F 2)
   - V2Get🔓 2026-11-28 13:54 (F&F 3)
@@ -3918,6 +3906,16 @@ proxy-groups:
   - V2Get🔓 2026-11-27 18:54 (F&F 8)
   - V2Get🔓 2026-11-27 18:54 (F&F 9)
   - V2Get🔓 2026-11-27 18:54 (F&F 10)
+  - V2Get🔓 2026-11-27 10:03 (F&F 1)
+  - V2Get🔓 2026-11-27 10:03 (F&F 2)
+  - V2Get🔓 2026-11-27 10:03 (F&F 3)
+  - V2Get🔓 2026-11-27 10:03 (F&F 4)
+  - V2Get🔓 2026-11-27 10:03 (F&F 5)
+  - V2Get🔓 2026-11-27 10:03 (F&F 6)
+  - V2Get🔓 2026-11-27 10:03 (F&F 7)
+  - V2Get🔓 2026-11-27 10:03 (F&F 8)
+  - V2Get🔓 2026-11-27 10:03 (F&F 9)
+  - V2Get🔓 2026-11-27 10:03 (F&F 10)
   - V2Get🔓 2026-11-26 16:33 (F&F 1)
   - V2Get🔓 2026-11-26 16:33 (F&F 2)
   - V2Get🔓 2026-11-26 16:33 (F&F 3)
@@ -4036,8 +4034,9 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-10-20 21:00
-  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-11-13 22:18
+  - V2Get🛰️ 2026-11-26 20:47
+  - V2Get🛰️ 2026-11-28 13:58
   - V2Get🛰️ 2026-10-26 08:08
   - V2Get🛰️ 2026-10-26 20:08
   - V2Get🛰️ 2026-10-26 23:38
@@ -4102,8 +4101,8 @@ proxy-groups:
   - V2Get🛰️ 2026-11-28 13:54
   - 'V2Get🛰️ 2026-11-28 13:54 #2'
   - 'V2Get🛰️ 2026-11-28 13:54 #3'
-  - V2Get🛰️ 2026-11-28 13:58
   - 'V2Get🛰️ 2026-11-28 13:58 #2'
+  - 'V2Get🛰️ 2026-11-28 13:58 #3'
   - V2Get🛰️ 2026-11-28 14:09
   - 'V2Get🛰️ 2026-11-28 14:09 #2'
   - V2Get🛰️ 2026-11-28 14:10
@@ -4126,7 +4125,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-28 14:25 #9'
   - V2Get🛰️ 2026-11-28 14:33
   - 'V2Get🛰️ 2026-11-28 14:33 #2'
-  - 'V2Get🛰️ 2026-11-28 13:58 #3'
   - 'V2Get🛰️ 2026-11-28 13:54 #4'
   - 'V2Get🛰️ 2026-11-28 13:54 #5'
   - 'V2Get🛰️ 2026-11-28 13:54 #6'
@@ -4134,16 +4132,6 @@ proxy-groups:
   - 'V2Get🛰️ 2026-11-28 13:54 #8'
   - 'V2Get🛰️ 2026-11-28 13:54 #9'
   - 'V2Get🛰️ 2026-11-28 13:54 #10'
-  - V2Get🔓 2026-11-28 14:25 (F&F 1)
-  - V2Get🔓 2026-11-28 14:25 (F&F 2)
-  - V2Get🔓 2026-11-28 14:25 (F&F 3)
-  - V2Get🔓 2026-11-28 14:25 (F&F 4)
-  - V2Get🔓 2026-11-28 14:25 (F&F 5)
-  - V2Get🔓 2026-11-28 14:25 (F&F 6)
-  - V2Get🔓 2026-11-28 14:25 (F&F 7)
-  - V2Get🔓 2026-11-28 14:25 (F&F 8)
-  - V2Get🔓 2026-11-28 14:25 (F&F 9)
-  - V2Get🔓 2026-11-28 14:25 (F&F 10)
   - V2Get🔓 2026-11-28 13:54 (F&F 1)
   - V2Get🔓 2026-11-28 13:54 (F&F 2)
   - V2Get🔓 2026-11-28 13:54 (F&F 3)
@@ -4184,6 +4172,16 @@ proxy-groups:
   - V2Get🔓 2026-11-27 18:54 (F&F 8)
   - V2Get🔓 2026-11-27 18:54 (F&F 9)
   - V2Get🔓 2026-11-27 18:54 (F&F 10)
+  - V2Get🔓 2026-11-27 10:03 (F&F 1)
+  - V2Get🔓 2026-11-27 10:03 (F&F 2)
+  - V2Get🔓 2026-11-27 10:03 (F&F 3)
+  - V2Get🔓 2026-11-27 10:03 (F&F 4)
+  - V2Get🔓 2026-11-27 10:03 (F&F 5)
+  - V2Get🔓 2026-11-27 10:03 (F&F 6)
+  - V2Get🔓 2026-11-27 10:03 (F&F 7)
+  - V2Get🔓 2026-11-27 10:03 (F&F 8)
+  - V2Get🔓 2026-11-27 10:03 (F&F 9)
+  - V2Get🔓 2026-11-27 10:03 (F&F 10)
   - V2Get🔓 2026-11-26 16:33 (F&F 1)
   - V2Get🔓 2026-11-26 16:33 (F&F 2)
   - V2Get🔓 2026-11-26 16:33 (F&F 3)
