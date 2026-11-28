@@ -42,12 +42,60 @@ proxies:
     path: ?28
     headers:
       Host: mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-11-16 09:28
-  type: ss
-  server: 141.98.101.179
+- name: V2Get🛰️ 2026-10-20 23:12
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /vless/
+- name: V2Get🛰️ 2026-10-22 21:27
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: V2Get🛰️ 2026-10-22 21:28
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: V2Get🛰️ 2026-11-04 14:45
+  type: vmess
+  server: 188.114.96.1
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowsmsidownloads.com
+- name: V2Get🛰️ 2026-11-26 19:17
+  type: ss
+  server: 20.166.121.63
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: RoARJLTlMJOFVIuQ
   udp: true
 - name: V2Get🛰️ 2026-11-27 00:17
   type: trojan
@@ -62,49 +110,57 @@ proxies:
     path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
     headers:
       Host: loosnsj5aboijji.global.ssl.fastly.net
-- name: V2Get🛰️ 2026-10-26 18:53
+- name: V2Get🛰️ 2026-11-13 22:18
   type: ss
-  server: 193.29.139.147
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: V2Get🛰️ 2026-10-30 17:16
-  type: ss
-  server: 15.204.247.244
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: V2Get🛰️ 2026-11-02 22:28
-  type: ss
-  server: 15.204.247.206
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: V2Get🛰️ 2026-11-05 23:02
+- name: V2Get🛰️ 2026-11-26 20:47
   type: vless
-  server: swo2.nexfile.net
-  port: 4443
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  server: hw8.iranichergh.com
+  port: 993
+  uuid: 978d2a58-bd01-4b61-b953-dc8e66728460
   udp: true
-  network: xhttp
+  network: ws
   tls: true
-  servername: swo2.nexfile.net
+  servername: hw8.iranichergh.com.
   client-fingerprint: chrome
-- name: V2Get🛰️ 2026-11-06 00:32
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+- name: V2Get🛰️ 2026-11-25 18:03
   type: vless
-  server: 138.124.86.230
-  port: 48115
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  server: 162.159.254.201
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
   udp: true
-  network: grpc
+  network: ws
   tls: true
-  servername: 138-124-86-230.sslip.io
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
+  servername: freeceshi6.frii.site
+  client-fingerprint: unsafe
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: freeceshi6.frii.site
+- name: V2Get🛰️ 2026-11-07 22:08
+  type: ss
+  server: 79.127.184.104
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: V2Get🛰️ 2026-11-16 09:28
+  type: ss
+  server: 141.98.101.179
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: V2Get🛰️ 2026-11-07 17:49
   type: ss
   server: 193.108.116.98
@@ -294,13 +350,6 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: V2Get🛰️ 2026-11-13 22:18
-  type: ss
-  server: 141.98.101.178
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: V2Get🛰️ 2026-11-27 03:18
   type: ss
   server: 38.99.82.34
@@ -308,20 +357,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: TyWIy6paiFUX
   udp: true
-- name: V2Get🛰️ 2026-11-26 20:47
-  type: vless
-  server: hw8.iranichergh.com
-  port: 993
-  uuid: 978d2a58-bd01-4b61-b953-dc8e66728460
-  udp: true
-  network: ws
-  tls: true
-  servername: hw8.iranichergh.com.
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
 - name: V2Get🛰️ 2026-11-26 20:59
   type: ss
   server: leviko-ch0322.shopingggg.ir
@@ -329,22 +364,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: V2Get🛰️ 2026-11-25 18:03
-  type: vless
-  server: 162.159.254.201
-  port: 443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  udp: true
-  network: ws
-  tls: true
-  servername: freeceshi6.frii.site
-  client-fingerprint: unsafe
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
-    headers:
-      Host: freeceshi6.frii.site
 - name: V2Get🛰️ 2026-11-28 09:53
   type: vless
   server: api.tenneltheducks.ir
@@ -361,13 +380,6 @@ proxies:
   udp: true
   network: httpupgrade
   skip-cert-verify: true
-- name: V2Get🛰️ 2026-11-07 22:08
-  type: ss
-  server: 79.127.184.104
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: V2Get🛰️ 2026-11-08 18:39
   type: ss
   server: 156.67.120.205
@@ -3614,13 +3626,17 @@ proxy-groups:
   - DIRECT
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-11-16 09:28
+  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-10-22 21:28
+  - V2Get🛰️ 2026-11-04 14:45
+  - V2Get🛰️ 2026-11-26 19:17
   - V2Get🛰️ 2026-11-27 00:17
-  - V2Get🛰️ 2026-10-26 18:53
-  - V2Get🛰️ 2026-10-30 17:16
-  - V2Get🛰️ 2026-11-02 22:28
-  - V2Get🛰️ 2026-11-05 23:02
-  - V2Get🛰️ 2026-11-06 00:32
+  - V2Get🛰️ 2026-11-13 22:18
+  - V2Get🛰️ 2026-11-26 20:47
+  - V2Get🛰️ 2026-11-25 18:03
+  - V2Get🛰️ 2026-11-07 22:08
+  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-07 17:49
   - V2Get🛰️ 2026-11-08 09:37
   - V2Get🛰️ 2026-11-12 07:03
@@ -3641,14 +3657,10 @@ proxy-groups:
   - V2Get🛰️ 2026-11-27 01:52
   - V2Get🛰️ 2026-11-27 20:13
   - V2Get🛰️ 2026-11-28 09:54
-  - V2Get🛰️ 2026-11-13 22:18
   - V2Get🛰️ 2026-11-27 03:18
-  - V2Get🛰️ 2026-11-26 20:47
   - V2Get🛰️ 2026-11-26 20:59
-  - V2Get🛰️ 2026-11-25 18:03
   - V2Get🛰️ 2026-11-28 09:53
   - 'V2Get🛰️ 2026-11-28 09:53 #2'
-  - V2Get🛰️ 2026-11-07 22:08
   - V2Get🛰️ 2026-11-08 18:39
   - V2Get🛰️ 2026-11-12 06:33
   - V2Get🛰️ 2026-11-12 15:29
@@ -3880,13 +3892,17 @@ proxy-groups:
   proxies:
   - V2Get🛰️ 2026-11-22 15:48
   - 'V2Get🛰️ 2026-11-22 15:48 #2'
-  - V2Get🛰️ 2026-11-16 09:28
+  - V2Get🛰️ 2026-10-20 23:12
+  - V2Get🛰️ 2026-10-22 21:27
+  - V2Get🛰️ 2026-10-22 21:28
+  - V2Get🛰️ 2026-11-04 14:45
+  - V2Get🛰️ 2026-11-26 19:17
   - V2Get🛰️ 2026-11-27 00:17
-  - V2Get🛰️ 2026-10-26 18:53
-  - V2Get🛰️ 2026-10-30 17:16
-  - V2Get🛰️ 2026-11-02 22:28
-  - V2Get🛰️ 2026-11-05 23:02
-  - V2Get🛰️ 2026-11-06 00:32
+  - V2Get🛰️ 2026-11-13 22:18
+  - V2Get🛰️ 2026-11-26 20:47
+  - V2Get🛰️ 2026-11-25 18:03
+  - V2Get🛰️ 2026-11-07 22:08
+  - V2Get🛰️ 2026-11-16 09:28
   - V2Get🛰️ 2026-11-07 17:49
   - V2Get🛰️ 2026-11-08 09:37
   - V2Get🛰️ 2026-11-12 07:03
@@ -3907,14 +3923,10 @@ proxy-groups:
   - V2Get🛰️ 2026-11-27 01:52
   - V2Get🛰️ 2026-11-27 20:13
   - V2Get🛰️ 2026-11-28 09:54
-  - V2Get🛰️ 2026-11-13 22:18
   - V2Get🛰️ 2026-11-27 03:18
-  - V2Get🛰️ 2026-11-26 20:47
   - V2Get🛰️ 2026-11-26 20:59
-  - V2Get🛰️ 2026-11-25 18:03
   - V2Get🛰️ 2026-11-28 09:53
   - 'V2Get🛰️ 2026-11-28 09:53 #2'
-  - V2Get🛰️ 2026-11-07 22:08
   - V2Get🛰️ 2026-11-08 18:39
   - V2Get🛰️ 2026-11-12 06:33
   - V2Get🛰️ 2026-11-12 15:29
